@@ -1,5 +1,5 @@
 #To be used for testing Docker GH Actions
-name: testssl.sh
+name: docker-3.1dev
 
 on:
   push:
@@ -15,7 +15,8 @@ on:
 env:
   BUILD_VERSION: "3.1dev"
   DOCKER_CLI_EXPERIMENTAL: enabled
-  REPOSITORY: ${{ github.actor }}/${{ github.workflow }} 
+  #REPOSITORY: ${{ github.actor }}/${{ github.workflow }}
+  REPOSITORY: ${{ github.actor }}/testssl.sh
 
 jobs:
 
