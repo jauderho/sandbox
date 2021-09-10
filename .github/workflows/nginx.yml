@@ -81,7 +81,7 @@ jobs:
             OPENSSL_VERSION
             PCRE_VERSION
           cache-from: type=local,src=~/.cache/ccache
-          cache-to: type=local,dest=~/.cache/ccache-new,mode=max
+          cache-to: type=local,dest=/tmp/ccache,mode=max
           labels: ${{ steps.docker_meta.outputs.labels }}
           tags: |
             ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}
@@ -92,4 +92,4 @@ jobs:
       - name: Move cache
         run: |
           rm -rf ~/.cache/ccache
-          mv ~/.cache/ccache-new ~/.cache/ccache
+          mv /tmp/ccache ~/.cache/ccache
