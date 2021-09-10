@@ -6,6 +6,10 @@ ARG TIME_ZONE
 RUN ls -l /lib
 RUN uname -m
 RUN dpkg --print-architecture
+RUN arch
+RUN lscpu | grep Architecture | awk '{print $2}'
+RUN echo $MACHTYPE
+RUN echo $HOSTTYPE
 
 RUN mkdir -p /opt/var/cache/nginx && \
     cp -a --parents /usr/lib/nginx /opt && \
