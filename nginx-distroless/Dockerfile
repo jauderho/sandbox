@@ -4,6 +4,9 @@ FROM nginx:1.21.1 AS base
 ARG TIME_ZONE
 
 RUN ls -l /lib
+RUN uname -m
+RUN uname -p
+RUN uname -i
 
 RUN mkdir -p /opt/var/cache/nginx && \
     cp -a --parents /usr/lib/nginx /opt && \
