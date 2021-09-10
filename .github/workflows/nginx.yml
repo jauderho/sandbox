@@ -35,13 +35,13 @@ jobs:
         id: buildx
         uses: docker/setup-buildx-action@v1
 
-      - name: Setup cache
-        uses: actions/cache@v2.1.6
-        with:
-          path: ~/.cache/ccache
-          key: ${{ runner.os }}-buildx-${{ github.sha }}
-          restore-keys: |
-            ${{ runner.os }}-buildx-
+#      - name: Setup cache
+#        uses: actions/cache@v2.1.6
+#        with:
+#          path: ~/.cache/ccache
+#          key: ${{ runner.os }}-buildx-${{ github.sha }}
+#          restore-keys: |
+#            ${{ runner.os }}-buildx-
 
       - name: Set Docker metadata
         id: docker_meta
@@ -80,16 +80,18 @@ jobs:
             BUILD_VERSION
             OPENSSL_VERSION
             PCRE_VERSION
-          cache-from: type=local,src=~/.cache/ccache
-          cache-to: type=local,dest=/tmp/ccache,mode=max
+#          cache-from: type=local,src=~/.cache/ccache
+#          cache-to: type=local,dest=/tmp/ccache,mode=max
+          cache-from: type=gha,scope=${{ github.workflow }}
+          cache-to: type=gha,scope=${{ github.workflow }},mode=max
           labels: ${{ steps.docker_meta.outputs.labels }}
           tags: |
             ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}
             ghcr.io/${{ env.REPOSITORY }}:latest
 
-      # Temporary cache workaround
-      # See https://github.com/docker/build-push-action/issues/252#issuecomment-744400434
-      - name: Move cache
-        run: |
-          rm -rf ~/.cache/ccache
-          mv /tmp/ccache ~/.cache/ccache
+#      # Temporary cache workaround
+#      # See https://github.com/docker/build-push-action/issues/252#issuecomment-744400434
+#      - name: Move cache
+#        run: |
+#          rm -rf ~/.cache/ccache
+#          mv /tmp/ccache ~/.cache/ccache
