@@ -69,7 +69,7 @@ RUN \
     --with-http_v2_module \
     --add-module=/tmp/ngx_brotli \
     --with-cc-opt='-fuse-ld=lld -O3 -march=native -pipe -flto -ffat-lto-objects -fomit-frame-pointer -fstack-protector-all -fPIE -fexceptions --param=ssp-buffer-size=4 -grecord-gcc-switches -pie -fno-semantic-interposition -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -Wformat-security -Werror -Wno-error=strict-aliasing -Wextra -Wp,-D_FORTIFY_SOURCE=2' \
-    --with-ld-opt='-Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed' \
+    --with-ld-opt='-lrt -O3 -march=native -flto -ffat-lto-objects -fPIE -pie -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now' \
     --with-openssl=/tmp/openssl-${OPENSSL_VERSION} \
     --with-openssl-opt="enable-ec_nistp_64_gcc_128 threads no-ssl no-tls1 no-tls1_1 no-weak-ssl-ciphers no-tests" \
     --with-pcre-jit \
@@ -87,6 +87,8 @@ RUN \
   apk del ${build_pkgs} && \
   rm -rf /var/cache/apk/*
 
+#    --with-ld-opt='-Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed' \
+#
 LABEL org.opencontainers.image.authors "Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url "https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.documentation "https://github.com/jauderho/dockerfiles"
