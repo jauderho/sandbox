@@ -81,7 +81,7 @@ jobs:
             OPENSSL_VERSION
             PCRE_VERSION
           cache-from: type=local,src=~/.cache/ccache
-          cache-to: type=local,dest=~/.cache/ccache-cache-new,mode=max
+          cache-to: type=local,dest=~/.cache/ccache-new,mode=max
           labels: ${{ steps.docker_meta.outputs.labels }}
           tags: |
             ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}
