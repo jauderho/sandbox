@@ -16,8 +16,8 @@ ARG ZLIB_URL=https://github.com/cloudflare/zlib.git
 ARG BROTLI_URL=https://github.com/google/ngx_brotli.git
 
 RUN \
-  build_pkgs="build-base linux-headers openssl-dev pcre-dev wget zlib-dev perl-dev lld ccache" && \
-  runtime_pkgs="ca-certificates openssl pcre zlib tzdata git" && \
+  build_pkgs="build-base linux-headers openssl-dev pcre-dev wget zlib-dev perl-dev lld ccache openssl pcre zlib git" && \
+  runtime_pkgs="ca-certificates tzdata" && \
   apk --no-cache add ${build_pkgs} ${runtime_pkgs} && \
   cd /tmp && \
   wget -O - http://nginx.org/download/nginx-${BUILD_VERSION}.tar.gz --tries=3 | tar zxf - -C /tmp && \
@@ -87,8 +87,9 @@ RUN \
   apk del ${build_pkgs} && \
   rm -rf /var/cache/apk/*
 
+#  runtime_pkgs="ca-certificates openssl pcre zlib tzdata git" && \
 #    --with-ld-opt='-Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed' \
-#
+
 LABEL org.opencontainers.image.authors "Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url "https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.documentation "https://github.com/jauderho/dockerfiles"
