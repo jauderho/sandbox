@@ -5,8 +5,7 @@ ARG TIME_ZONE
 
 RUN ls -l /lib
 RUN uname -m
-RUN uname -p
-RUN uname -i
+RUN dpkg --print-architecture
 
 RUN mkdir -p /opt/var/cache/nginx && \
     cp -a --parents /usr/lib/nginx /opt && \
