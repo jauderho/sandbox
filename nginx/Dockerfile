@@ -36,6 +36,8 @@ RUN \
   patch -p1 < /tmp/patches/nginx/nginx__dynamic_tls_records_1015008.patch && \
   patch -p1 < /tmp/patches/nginx/nginx_hpack_push_1.15.3.patch && \
   patch -p1 < /tmp/patches/nginx/nginx-1.15.4-reprioritize-chacha-openssl-1.1.1.patch && \
+  patch -p1 < /tmp/patches/nginx/nginx-1.15.4-reprioritize-chacha-openssl-1.1.1.patch && \
+  PATH="/usr/lib/ccache:$PATH" && \
   ./configure \
     --prefix=/etc/nginx \
     --sbin-path=/usr/sbin/nginx \
@@ -66,15 +68,15 @@ RUN \
     --with-file-aio \
     --with-threads \
     --add-module=/tmp/ngx_brotli \
-    --with-cc-opt='-fuse-ld=lld -O3 -march=native -pipe -flto -ffat-lto-objects -fomit-frame-pointer -fstack-protector-all -fPIE -fexceptions --param=ssp-buffer-size=4 -grecord-gcc-switches -pie -fno-semantic-interposition -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -Wformat-security -Werror -Wno-error=strict-aliasing -Wextra -Wp,-D_FORTIFY_SOURCE=2' \
-    --with-ld-opt='-O3 -Wl,-Bsymbolic-functions -Wl,-z,relro' \
+    --with-cc-opt='-fuse-ld=lld -O3 -march=native -pipe -flto -ffat-lto-objects -fomit-frame-pointer -fstack-protector-all -fPIE -fexceptions --param=ssp-buffer-size=4 -grecord-gcc-switches -pie -fno-semantic-interposition -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -Wformat-security -Wno-error=strict-aliasing -Wextra -Wp,-D_FORTIFY_SOURCE=2' \
+    --with-ld-opt='-Wl,-Bsymbolic-functions -Wl,-z,relro' \
     --with-openssl=/tmp/openssl-${OPENSSL_VERSION} \
     --with-openssl-opt="enable-ec_nistp_64_gcc_128 threads no-ssl no-tls1 no-tls1_1 no-weak-ssl-ciphers no-tests" \
     --with-pcre-jit \
     --with-pcre=/tmp/pcre-${PCRE_VERSION} \
     --with-zlib=/tmp/zlib \
     && \
-  PATH="/usr/lib/ccache:${PATH}" make && \
+  make && \
   ccache -s && \
   strip objs/nginx && \
   make install && \
