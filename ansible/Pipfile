@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+ansible = "*"
+ansible-lint = "*"
+jmespath = "*"
+pywinrm = {extras = ["kerberos", "credssp"], version = "*"}
+requests-credssp = "*"
+requests-kerberos = "*"
+storops = "*"
+wheel = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
