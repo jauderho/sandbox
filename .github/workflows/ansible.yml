@@ -66,11 +66,11 @@ jobs:
           #platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/arm/v7
           #platforms: linux/amd64,linux/arm64,linux/ppc64le
           #platforms: linux/amd64,linux/arm64
-          platforms: linux/ppc64le
+          platforms: linux/s390x
           build-args: BUILD_VERSION
           cache-from: type=gha, scope=${{ github.workflow }}
           cache-to: type=gha, scope=${{ github.workflow }}
           labels: ${{ steps.docker_meta.outputs.labels }}
           tags: |
-            ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}
-            ghcr.io/${{ env.REPOSITORY }}:latest
+            ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}-s390x
+
