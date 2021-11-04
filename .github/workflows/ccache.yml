@@ -88,5 +88,5 @@ jobs:
           cache-to: type=gha, scope=${{ github.workflow }}
           labels: ${{ steps.docker_meta.outputs.labels }}
           tags: |
-            ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}-s390x
+            ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}-sandbox
 
