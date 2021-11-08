@@ -1,0 +1,42 @@
+# test update mechanism
+name: Update
+
+on:
+  #push:
+  #  branches: 
+  #    - main
+  #  paths:
+  #    - ccache/*
+  #    - .github/workflows/ccache.yml
+  workflow_dispatch:
+  #schedule:
+  #  - cron: "0 * * * *"
+
+env:
+  DOCKER_CLI_EXPERIMENTAL: enabled
+  REPOSITORY: ${{ github.actor }}/${{ github.workflow }} 
+
+jobs:
+
+  deploy:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Source checkout
+        uses: actions/checkout@v2.4.0 
+ 
+      - name: Add packages
+        run: |
+          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends git curl jq
+
+      - name: Update dependencies
+        run: |
+          ls -la
+          pwd
+
+#      - name: Push changes back into repo
+#        uses: ad-m/github-push-action@master
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          branch: ${{ github.ref }}
+
