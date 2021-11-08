@@ -40,15 +40,14 @@ jobs:
       - name: Update dependencies
         run: |
           PAT=${{ secrets.UPDATE_SECRET }} scripts/test.sh
-          git push
 
 #      - name: Source checkin
 #        run: |
 #          git push
 
-#      - name: Push changes back into repo
-#        uses: ad-m/github-push-action@master
-#        with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          branch: ${{ github.ref }}
+      - name: Push changes back into repo
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
 
