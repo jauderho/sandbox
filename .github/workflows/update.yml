@@ -29,7 +29,7 @@ jobs:
  
       - name: Add packages
         run: |
-          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends git curl jq
+          DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends git curl jq
 
       - name: Update dependencies
         run: |
