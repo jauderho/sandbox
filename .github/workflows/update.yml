@@ -30,6 +30,7 @@ jobs:
         uses: actions/checkout@v2.4.0 
         with:
           fetch-depth: 1
+          token: ${{ secrets.UPDATE_SECRET }} 
  
 #      - name: Add packages
 #        run: |
@@ -39,7 +40,7 @@ jobs:
 
       - name: Update dependencies
         run: |
-          PAT=${{ secrets.UPDATE_SECRET }} scripts/test.sh
+          PAT="${{ github.actor }}/${{ secrets.UPDATE_SECRET }}" scripts/test.sh
 
 #      - name: Source checkin
 #        run: |
