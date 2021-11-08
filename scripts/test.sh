@@ -13,8 +13,8 @@ REPO=(
 )
 
 # setup git
-git config user.name "Jauder Ho"
-git config user.email "jauderho@users.noreply.github.com"
+git config user.name "Update Bot"
+git config user.email "jauderho+update@users.noreply.github.com"
 
 # 
 # Pull in the latest version from GitHub and if there is a newer version, update GitHub Actions to trigger a new build
