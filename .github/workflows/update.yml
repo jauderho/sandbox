@@ -2,12 +2,6 @@
 name: Update
 
 on:
-  #push:
-  #  branches: 
-  #    - main
-  #  paths:
-  #    - ccache/*
-  #    - .github/workflows/ccache.yml
   workflow_dispatch:
   #schedule:
   #  - cron: "0 * * * *"
@@ -26,11 +20,12 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
+      # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
       - name: Source checkout
         uses: actions/checkout@v2.4.0 
         with:
-          fetch-depth: 1
           token: ${{ secrets.UPDATE_SECRET }} 
+          fetch-depth: 1
  
 #      - name: Add packages
 #        run: |
@@ -46,9 +41,9 @@ jobs:
 #        run: |
 #          git push
 
-      - name: Push changes back into repo
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+#      - name: Push changes back into repo
+#        uses: ad-m/github-push-action@master
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          branch: ${{ github.ref }}
 
