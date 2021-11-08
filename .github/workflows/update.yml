@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: Source checkout
         uses: actions/checkout@v2.4.0 
+        with:
+          fetch-depth: 1
  
       - name: Add packages
         run: |
