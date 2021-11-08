@@ -16,6 +16,9 @@ env:
   DOCKER_CLI_EXPERIMENTAL: enabled
   REPOSITORY: ${{ github.actor }}/${{ github.workflow }} 
 
+concurrency:
+  cancel-in-progress: true
+
 jobs:
 
   deploy:
@@ -36,6 +39,7 @@ jobs:
       - name: Update dependencies
         run: |
           PAT=${{ secrets.UPDATE_SECRET }} scripts/test.sh
+          git push
 
 #      - name: Source checkin
 #        run: |
