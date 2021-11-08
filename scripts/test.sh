@@ -63,4 +63,4 @@ do
 done
 
 # Make it so
-#git push
+git push

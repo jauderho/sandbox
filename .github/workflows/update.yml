@@ -37,10 +37,9 @@ jobs:
         run: |
           PAT=${{ secrets.UPDATE_SECRET }} scripts/test.sh
 
-      - name: Source checkin
-        uses: actions/checkout@v2.4.0 
-        run: |
-          git push
+#      - name: Source checkin
+#        run: |
+#          git push
 
 #      - name: Push changes back into repo
 #        uses: ad-m/github-push-action@master
