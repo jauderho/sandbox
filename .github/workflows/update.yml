@@ -27,11 +27,11 @@ jobs:
           token: ${{ secrets.UPDATE_SECRET }} 
           fetch-depth: 1
  
-#      - name: Add packages
-#        run: |
-#          DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends git curl jq
-#          ls -la
-#          pwd
+      - name: Add packages
+        run: |
+          DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends git curl jq pipenv
+          ls -la
+          pwd
 
       - name: Update dependencies
         run: |
