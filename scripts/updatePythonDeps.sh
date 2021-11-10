@@ -22,8 +22,8 @@ do
 	echo "Updating ${i} ..."
 	echo
 
-	pipenv lock && \
-	pipenv lock -r > requirements.txt
+	../.local/bin/pipenv lock && \
+	../.local/bin/pipenv lock -r > requirements.txt
 
 	git add Pipfile Pipfile.lock requirements.txt && \
 	git commit -m "Update requirements for ${i} ..." && \

@@ -48,11 +48,9 @@ jobs:
           token: ${{ secrets.UPDATE_SECRET }} 
           fetch-depth: 1
  
-      - name: Add packages
+      - name: Add pipenv
         run: |
-          DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends git curl jq pipenv
-          ls -la
-          pwd
+	  pip install --upgrade --user pipenv
 
       - name: Update Python dependencies
         run: |
