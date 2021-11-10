@@ -32,6 +32,7 @@ jobs:
 #          DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends git curl jq pipenv
 #          ls -la
 #          pwd
+#          pip install --upgrade --user pipenv
 
       - name: Update Dockerfile versions
         run: |
@@ -50,7 +51,7 @@ jobs:
  
       - name: Add pipenv
         run: |
-          pip install --upgrade --user pipenv
+          DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv pyenv
 
       - name: Update Python dependencies
         run: |
