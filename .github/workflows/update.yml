@@ -39,7 +39,7 @@ jobs:
 
       - name: Update Python dependencies
         run: |
-          PAT="${{ github.actor }}/${{ secrets.UPDATE_SECRET }}" scripts/moo.sh
+          scripts/updatePythonDeps.sh
 
 #      - name: Source checkin
 #        run: |
