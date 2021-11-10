@@ -33,9 +33,13 @@ jobs:
           ls -la
           pwd
 
-      - name: Update dependencies
+      - name: Update Docker dependencies
         run: |
           PAT="${{ github.actor }}/${{ secrets.UPDATE_SECRET }}" scripts/test.sh
+
+      - name: Update Python dependencies
+        run: |
+          PAT="${{ github.actor }}/${{ secrets.UPDATE_SECRET }}" scripts/moo.sh
 
 #      - name: Source checkin
 #        run: |
