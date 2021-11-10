@@ -21,11 +21,12 @@ do
 	echo "Updating ${i} ..."
 	echo
 
-	pipenv lock
+	pipenv lock && \
 	pipenv lock -r > requirements.txt
 
-	git add Pipfile Pipfile.lock requirements.txt
-	git commit -m "Update requirements for ${i} ..."
+	git add Pipfile Pipfile.lock requirements.txt && \
+	git commit -m "Update requirements for ${i} ..." && \
+	git push
 
 	echo
 	echo
@@ -33,5 +34,3 @@ do
 	cd ..
 done
 
-# Make it so
-git push
