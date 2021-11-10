@@ -15,6 +15,11 @@ git config user.name "updatebot"
 git config user.email "jauderho+update@users.noreply.github.com"
 git config pull.rebase false
 
+# setup pipenv and python
+PATH="$HOME/.local/bin:$PATH"
+pipenv install --python 3.9
+pipenv shell
+
 for i in "${APP[@]}"
 do
 	cd "${i}"
