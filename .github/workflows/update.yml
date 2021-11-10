@@ -16,7 +16,28 @@ concurrency:
 
 jobs:
 
-  deploy:
+  update-docker:
+    runs-on: ubuntu-20.04
+
+    steps:
+      # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
+      - name: Source checkout
+        uses: actions/checkout@v2.4.0 
+        with:
+          token: ${{ secrets.UPDATE_SECRET }} 
+          fetch-depth: 1
+ 
+#      - name: Add packages
+#        run: |
+#          DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends git curl jq pipenv
+#          ls -la
+#          pwd
+
+      - name: Update Dockerfile versions
+        run: |
+          PAT="${{ github.actor }}/${{ secrets.UPDATE_SECRET }}" scripts/test.sh
+
+  update-python:
     runs-on: ubuntu-20.04
 
     steps:
@@ -33,21 +54,7 @@ jobs:
           ls -la
           pwd
 
-      - name: Update Dockerfile versions
-        run: |
-          PAT="${{ github.actor }}/${{ secrets.UPDATE_SECRET }}" scripts/test.sh
-
       - name: Update Python dependencies
         run: |
           scripts/updatePythonDeps.sh
-
-#      - name: Source checkin
-#        run: |
-#          git push
-
-#      - name: Push changes back into repo
-#        uses: ad-m/github-push-action@master
-#        with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          branch: ${{ github.ref }}
 
