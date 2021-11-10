@@ -13,7 +13,7 @@ REPO=(
 )
 
 # setup git
-git config user.name "Update Bot"
+git config user.name "updatebot"
 git config user.email "jauderho+update@users.noreply.github.com"
 
 # 
