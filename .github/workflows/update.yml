@@ -33,7 +33,7 @@ jobs:
           ls -la
           pwd
 
-      - name: Update Docker dependencies
+      - name: Update Dockerfile versions
         run: |
           PAT="${{ github.actor }}/${{ secrets.UPDATE_SECRET }}" scripts/test.sh
 
