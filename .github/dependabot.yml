@@ -21,8 +21,35 @@ updates:
 
   # Maintain dependencies for Docker
   - package-ecosystem: "docker"
-    directory: /
+    directory: /ansible
+    open-pull-requests-limit: 20
+    schedule:
+      interval: "daily"
+
+  # Maintain dependencies for Docker
+  - package-ecosystem: "docker"
+    directory: /dive
+    open-pull-requests-limit: 20
+    schedule:
+      interval: "daily"
+
+  # Maintain dependencies for Docker
+  - package-ecosystem: "docker"
+    directory: /nginx
+    open-pull-requests-limit: 20
+    schedule:
+      interval: "daily"
+
+  # Maintain dependencies for Docker
+  - package-ecosystem: "docker"
+    directory: /sslyze
     open-pull-requests-limit: 20
     schedule:
       interval: "daily"
       
+  # Maintain dependencies for Docker
+  - package-ecosystem: "docker"
+    directory: /testssl.sh
+    open-pull-requests-limit: 20
+    schedule:
+      interval: "daily"
