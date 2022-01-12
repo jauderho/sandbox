@@ -8,6 +8,7 @@ on:
 
 env:
   GO_VERSION: 1.17.6
+  GIT_REPO: https://github.com/golang/go.git
 
 jobs:
   lint:
@@ -20,7 +21,8 @@ jobs:
       - name: Get Go commit short hash
         id: shorthash
         #run: git ls-remote https://github.com/golang/go.git HEAD | awk '{print $1}' | head -c 8
-        run: echo "::set-output name=hash::$(git ls-remote https://github.com/golang/go.git HEAD | awk '{print $1}' | head -c 8)"
+        #run: echo "::set-output name=hash::$(git ls-remote https://github.com/golang/go.git HEAD | awk '{print $1}' | head -c 8)"
+        run: echo "::set-output name=hash::$(git ls-remote ${{ env.GIT_REPO }} HEAD | awk '{print $1}' | head -c 8)"
       
       - name: Print the output
         run: echo "${{ steps.shorthash.outputs.hash }}"
