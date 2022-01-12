@@ -22,7 +22,8 @@ jobs:
         id: get-hash
         #run: git ls-remote https://github.com/golang/go.git HEAD | awk '{print $1}' | head -c 8
         #run: echo "::set-output name=hash::$(git ls-remote https://github.com/golang/go.git HEAD | awk '{print $1}' | head -c 8)"
-        run: echo "::set-output name=hash::$(git ls-remote ${{ env.UPSTREAM_REPO }} HEAD | awk '{print $1}' | head -c 8)"
+        #run: echo "::set-output name=hash::$(git ls-remote ${{ env.UPSTREAM_REPO }} HEAD | awk '{print $1}' | head -c 8)"
+        run: echo "::set-output name=hash::$(git ls-remote ${{ env.UPSTREAM_REPO }} HEAD | cut -f1 | head -c 8)"
       
       - name: Print the output
         run: echo "${{ steps.get-hash.outputs.hash }}"
