@@ -26,3 +26,9 @@ jobs:
       
       - name: Print the output
         run: echo "${{ steps.get-hash.outputs.hash }}"
+
+        # https://pakstech.com/blog/github-actions-workflow-commands/
+      - name: Print the output (using env variable)
+        run: echo "$HASH"
+        env:
+          HASH: ${{ steps.get-hash.outputs.hash }}
