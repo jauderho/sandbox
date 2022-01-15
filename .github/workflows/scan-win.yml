@@ -1,8 +1,10 @@
 #
 # Run a scan of SteamCMD using Trivy, Snyk and Anchore
 #
-name: Scan Win
+name: ScanWin
+
 on:
+  push:
   workflow_dispatch:
 
 concurrency:
