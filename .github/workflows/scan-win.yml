@@ -1,0 +1,105 @@
+#
+# Run a scan of SteamCMD using Trivy, Snyk and Anchore
+#
+name: Scan
+on:
+  workflow_dispatch:
+  #schedule:
+  #  - cron: "0 18 * * *"
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  trivy:
+    strategy:
+      fail-fast: false
+      matrix:
+        image: [steamcmd/steamcmd:windows-core]
+        #image: [cloudflared]
+        #image: [age, ali, ansible, bl3auto, black, cf-warp, cloudflared, coredns, dive, dnscontrol, dnscrypt-proxy, driftctl, dry, dsq, excalidraw, fq, gobgp, gocannon, hakrawler, headscale, httpie-go, httprobe, httpx, lego, log4j-scan, logmepwn,  miller, nebula, nginx, nginx-quic, ntfy, octosql, onetun, pwru, rclone, rustybgp, sftpd, spicedb, ssh-audit, sslyze, subfinder, tailscale, terraform, testssl.sh, tftpd, toxiproxy, yt-dlp]
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2.4.0
+
+      - name: Run Trivy to check ${{ matrix.image }} Docker image for vulnerabilities
+        uses: aquasecurity/trivy-action@master
+        with:
+          #image-ref: 'docker.io/${{ github.actor }}/${{ matrix.image }}:latest'
+          image-ref: '${{ matrix.image }}'
+          format: 'template'
+          template: '@/contrib/sarif.tpl'
+          output: 'trivy-${{ matrix.image }}.sarif'
+          severity: 'HIGH,CRITICAL'
+          hide-progress: false
+
+      - name: Upload result to GitHub Code Scanning
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: 'trivy-${{ matrix.image }}.sarif'
+
+  snyk:
+    #needs: trivy
+    strategy:
+      fail-fast: false
+      matrix:
+        image: [steamcmd/steamcmd:windows-core]
+        #image: [cloudflared]
+        #image: [age, ali, ansible, bl3auto, black, cf-warp, cloudflared, coredns, dive, dnscontrol, dnscrypt-proxy, driftctl, dry, dsq, excalidraw, fq, gobgp, gocannon, hakrawler, headscale, httpie-go, httprobe, httpx, lego, log4j-scan, logmepwn,  miller, nebula, nginx, nginx-quic, ntfy, octosql, onetun, pwru, rclone, rustybgp, sftpd, spicedb, ssh-audit, sslyze, subfinder, tailscale, terraform, testssl.sh, tftpd, toxiproxy, yt-dlp]
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2.4.0
+
+      - name: Run Snyk to check ${{ matrix.image }} Docker image for vulnerabilities
+        # Snyk can be used to break the build when it detects vulnerabilities.
+        # In this case we want to upload the issues to GitHub Code Scanning
+        continue-on-error: true
+        uses: snyk/actions/docker@master
+        env:
+          # In order to use the Snyk Action you will need to have a Snyk API token.
+          # More details in https://github.com/snyk/actions#getting-your-snyk-token
+          # or you can signup for free at https://snyk.io/login
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          #image: 'docker.io/${{ github.actor }}/${{ matrix.image }}:latest'
+          image: '${{ matrix.image }}'
+          args: --file=${{ matrix.image }}/Dockerfile --severity-threshold=high
+
+      - name: Upload result to GitHub Code Scanning
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: snyk.sarif
+
+  anchore:
+    #needs: snyk
+    strategy:
+      fail-fast: false
+      matrix:
+        image: [steamcmd/steamcmd:windows-core]
+        #image: [cloudflared]
+        #image: [age, ali, ansible, bl3auto, black, cf-warp, cloudflared, coredns, dive, dnscontrol, dnscrypt-proxy, driftctl, dry, dsq, excalidraw, fq, gobgp, gocannon, hakrawler, headscale, httpie-go, httprobe, httpx, lego, log4j-scan, logmepwn,  miller, nebula, nginx, nginx-quic, ntfy, octosql, onetun, pwru, rclone, rustybgp, sftpd, spicedb, ssh-audit, sslyze, subfinder, tailscale, terraform, testssl.sh, tftpd, toxiproxy, yt-dlp]
+    runs-on: ubuntu-20.04
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2.4.0
+
+      - name: Run Anchore to check ${{ matrix.image }} Docker image for vulnerabilities
+        uses: anchore/scan-action@v3
+        id: anchore-scan
+        with:
+          #image: 'docker.io/${{ github.actor }}/${{ matrix.image }}:latest'
+          image: '${{ matrix.image }}'
+          acs-report-enable: true
+          fail-build: false
+          severity-cutoff: high
+
+      - name: Upload result to GitHub Code Scanning
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: ${{ steps.anchore-scan.outputs.sarif }}
