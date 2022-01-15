@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        image: [steamcmd/steamcmd:windows-core]
+        image: [steamcmd/steamcmd]
         #image: [cloudflared]
         #image: [age, ali, ansible, bl3auto, black, cf-warp, cloudflared, coredns, dive, dnscontrol, dnscrypt-proxy, driftctl, dry, dsq, excalidraw, fq, gobgp, gocannon, hakrawler, headscale, httpie-go, httprobe, httpx, lego, log4j-scan, logmepwn,  miller, nebula, nginx, nginx-quic, ntfy, octosql, onetun, pwru, rclone, rustybgp, sftpd, spicedb, ssh-audit, sslyze, subfinder, tailscale, terraform, testssl.sh, tftpd, toxiproxy, yt-dlp]
     runs-on: ubuntu-20.04
@@ -28,7 +28,7 @@ jobs:
       - name: Run Trivy to check ${{ matrix.image }} Docker image for vulnerabilities
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: '${{ matrix.image }}'
+          image-ref: '${{ matrix.image }}:windows-core'
           format: 'template'
           template: '@/contrib/sarif.tpl'
           output: 'trivy-${{ matrix.image }}.sarif'
@@ -44,7 +44,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        image: [steamcmd/steamcmd:windows-core]
+        image: [steamcmd/steamcmd]
         #image: [cloudflared]
         #image: [age, ali, ansible, bl3auto, black, cf-warp, cloudflared, coredns, dive, dnscontrol, dnscrypt-proxy, driftctl, dry, dsq, excalidraw, fq, gobgp, gocannon, hakrawler, headscale, httpie-go, httprobe, httpx, lego, log4j-scan, logmepwn,  miller, nebula, nginx, nginx-quic, ntfy, octosql, onetun, pwru, rclone, rustybgp, sftpd, spicedb, ssh-audit, sslyze, subfinder, tailscale, terraform, testssl.sh, tftpd, toxiproxy, yt-dlp]
     runs-on: ubuntu-20.04
@@ -64,7 +64,7 @@ jobs:
           # or you can signup for free at https://snyk.io/login
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          image: '${{ matrix.image }}'
+          image: '${{ matrix.image }}:windows-core'
           args: --file=${{ matrix.image }}/Dockerfile --severity-threshold=high
 
       - name: Upload result to GitHub Code Scanning
@@ -76,7 +76,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        image: [steamcmd/steamcmd:windows-core]
+        image: [steamcmd/steamcmd]
         #image: [cloudflared]
         #image: [age, ali, ansible, bl3auto, black, cf-warp, cloudflared, coredns, dive, dnscontrol, dnscrypt-proxy, driftctl, dry, dsq, excalidraw, fq, gobgp, gocannon, hakrawler, headscale, httpie-go, httprobe, httpx, lego, log4j-scan, logmepwn,  miller, nebula, nginx, nginx-quic, ntfy, octosql, onetun, pwru, rclone, rustybgp, sftpd, spicedb, ssh-audit, sslyze, subfinder, tailscale, terraform, testssl.sh, tftpd, toxiproxy, yt-dlp]
     runs-on: ubuntu-20.04
@@ -89,7 +89,7 @@ jobs:
         uses: anchore/scan-action@v3
         id: anchore-scan
         with:
-          image: '${{ matrix.image }}'
+          image: '${{ matrix.image }}:windows-core'
           acs-report-enable: true
           fail-build: false
           severity-cutoff: high
