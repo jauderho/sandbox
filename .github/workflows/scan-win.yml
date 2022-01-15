@@ -4,8 +4,6 @@
 name: Scan
 on:
   workflow_dispatch:
-  #schedule:
-  #  - cron: "0 18 * * *"
 
 concurrency:
   group: ${{ github.workflow }}
@@ -28,7 +26,6 @@ jobs:
       - name: Run Trivy to check ${{ matrix.image }} Docker image for vulnerabilities
         uses: aquasecurity/trivy-action@master
         with:
-          #image-ref: 'docker.io/${{ github.actor }}/${{ matrix.image }}:latest'
           image-ref: '${{ matrix.image }}'
           format: 'template'
           template: '@/contrib/sarif.tpl'
@@ -42,7 +39,6 @@ jobs:
           sarif_file: 'trivy-${{ matrix.image }}.sarif'
 
   snyk:
-    #needs: trivy
     strategy:
       fail-fast: false
       matrix:
@@ -66,7 +62,6 @@ jobs:
           # or you can signup for free at https://snyk.io/login
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          #image: 'docker.io/${{ github.actor }}/${{ matrix.image }}:latest'
           image: '${{ matrix.image }}'
           args: --file=${{ matrix.image }}/Dockerfile --severity-threshold=high
 
@@ -76,7 +71,6 @@ jobs:
           sarif_file: snyk.sarif
 
   anchore:
-    #needs: snyk
     strategy:
       fail-fast: false
       matrix:
@@ -93,7 +87,6 @@ jobs:
         uses: anchore/scan-action@v3
         id: anchore-scan
         with:
-          #image: 'docker.io/${{ github.actor }}/${{ matrix.image }}:latest'
           image: '${{ matrix.image }}'
           acs-report-enable: true
           fail-build: false
