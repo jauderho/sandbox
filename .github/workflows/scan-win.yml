@@ -17,8 +17,8 @@ jobs:
       fail-fast: false
       matrix:
         #image: [steamcmd/steamcmd]
-        #image: [cloudflared]
-        image: [jauderho/cloudflared]
+        image: [cloudflared]
+        #image: [jauderho/cloudflared]
         #image: [age, ali, ansible, bl3auto, black, cf-warp, cloudflared, coredns, dive, dnscontrol, dnscrypt-proxy, driftctl, dry, dsq, excalidraw, fq, gobgp, gocannon, hakrawler, headscale, httpie-go, httprobe, httpx, lego, log4j-scan, logmepwn,  miller, nebula, nginx, nginx-quic, ntfy, octosql, onetun, pwru, rclone, rustybgp, sftpd, spicedb, ssh-audit, sslyze, subfinder, tailscale, terraform, testssl.sh, tftpd, toxiproxy, yt-dlp]
     runs-on: ubuntu-20.04
 
@@ -29,7 +29,7 @@ jobs:
       - name: Run Trivy to check ${{ matrix.image }} Docker image for vulnerabilities
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'docker.io/${{ matrix.image }}:latest'
+          image-ref: 'docker.io/jauderho/${{ matrix.image }}:latest'
           format: 'template'
           template: '@/contrib/sarif.tpl'
           output: 'trivy-${{ matrix.image }}.sarif'
