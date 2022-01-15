@@ -28,7 +28,7 @@ jobs:
       - name: Run Trivy to check ${{ matrix.image }} Docker image for vulnerabilities
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: '${{ matrix.image }}:windows-core'
+          image-ref: 'docker.io/${{ matrix.image }}:windows-core'
           format: 'template'
           template: '@/contrib/sarif.tpl'
           output: 'trivy-${{ matrix.image }}.sarif'
@@ -64,7 +64,7 @@ jobs:
           # or you can signup for free at https://snyk.io/login
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          image: '${{ matrix.image }}:windows-core'
+          image: 'docker.io/${{ matrix.image }}:windows-core'
           args: --file=${{ matrix.image }}/Dockerfile --severity-threshold=high
 
       - name: Upload result to GitHub Code Scanning
@@ -89,7 +89,7 @@ jobs:
         uses: anchore/scan-action@v3
         id: anchore-scan
         with:
-          image: '${{ matrix.image }}:windows-core'
+          image: 'docker.io/${{ matrix.image }}:windows-core'
           acs-report-enable: true
           fail-build: false
           severity-cutoff: high
