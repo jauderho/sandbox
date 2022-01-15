@@ -1,0 +1,40 @@
+#
+# Run a scan of SteamCMD using Trivy, Snyk and Anchore
+#
+name: ScanWin2
+
+on:
+  push:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  anchore:
+    strategy:
+      fail-fast: false
+      matrix:
+        image: [steamcmd]
+        #image: [cloudflared]
+        #image: [age, ali, ansible, bl3auto, black, cf-warp, cloudflared, coredns, dive, dnscontrol, dnscrypt-proxy, driftctl, dry, dsq, excalidraw, fq, gobgp, gocannon, hakrawler, headscale, httpie-go, httprobe, httpx, lego, log4j-scan, logmepwn,  miller, nebula, nginx, nginx-quic, ntfy, octosql, onetun, pwru, rclone, rustybgp, sftpd, spicedb, ssh-audit, sslyze, subfinder, tailscale, terraform, testssl.sh, tftpd, toxiproxy, yt-dlp]
+    runs-on: ubuntu-20.04
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2.4.0
+
+      - name: Run Anchore to check ${{ matrix.image }} Docker image for vulnerabilities
+        uses: anchore/scan-action@v3
+        id: anchore-scan
+        with:
+          image: 'docker.io/steamcmd/${{ matrix.image }}:windows-core'
+          acs-report-enable: true
+          fail-build: false
+          severity-cutoff: high
+
+      - name: Upload result to GitHub Code Scanning
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: ${{ steps.anchore-scan.outputs.sarif }}
