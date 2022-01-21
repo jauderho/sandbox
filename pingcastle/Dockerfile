@@ -4,8 +4,8 @@
 #FROM mcr.microsoft.com/windows/servercore:1809
 #FROM mcr.microsoft.com/windows:10.0.19042.1469
 #FROM mcr.microsoft.com/powershell:lts-nanoserver-1809
-FROM mcr.microsoft.com/powershell:lts-nanoserver-ltsc2022
-#FROM mcr.microsoft.com/powershell
+#FROM mcr.microsoft.com/powershell:lts-nanoserver-ltsc2022
+FROM mcr.microsoft.com/powershell
 WORKDIR /app
 EXPOSE 80
 
