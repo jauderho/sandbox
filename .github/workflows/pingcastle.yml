@@ -42,7 +42,7 @@ jobs:
 
       - name: Build and push
         run: |
-          docker build --file=${{ github.workflow }}/Dockerfile -t ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }} -t ghcr.io/${{ env.REPOSITORY }}:latest .
+          docker build --file=${{ github.workflow }}/Dockerfile -t ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }} -t ghcr.io/${{ env.REPOSITORY }}:latest --build-arg "BUILD_VERSION=${{ env.BUILD_VERSION }}" .
           docker push ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}
           docker push ghcr.io/${{ env.REPOSITORY }}:latest
 
