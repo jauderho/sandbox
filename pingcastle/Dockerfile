@@ -5,3 +5,7 @@ FROM mcr.microsoft.com/windows/nanoserver:1809
 WORKDIR /app
 EXPOSE 80
 
+# test download
+RUN wget -Uri https://github.com/vletoux/pingcastle/releases/download/2.10.1.0/PingCastle_2.10.1.0.zip -UseBasicParsing
+
+
