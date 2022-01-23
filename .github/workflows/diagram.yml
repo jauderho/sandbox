@@ -10,6 +10,8 @@ on:
   #pull_request:
   workflow_dispatch:
 
+permissions: read-all
+
 # Set the Job #
 jobs:
   build:
@@ -17,6 +19,8 @@ jobs:
     name: Generate diagram
     # Set the agent to run on
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     # Load all steps #
     steps:
