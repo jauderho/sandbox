@@ -1,1 +1,2 @@
-FROM docker.io/steamcmd/steamcmd:windows-core
+FROM steamcmd/steamcmd:windows-core-2019
+#FROM steamcmd/steamcmd:alpine-3
