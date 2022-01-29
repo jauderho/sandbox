@@ -31,7 +31,7 @@ do
 	pipenv lock && pipenv lock -r > requirements.txt
 
 	git add Pipfile Pipfile.lock requirements.txt && \
-	git commit -m "Update requirements for ${i} ..." && \
+	git commit -s -m "Update requirements for ${i} ..." && \
 	git pull && \
 	git push
 
