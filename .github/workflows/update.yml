@@ -2,6 +2,12 @@
 name: Update
 
 on:
+  push:
+    branches: 
+      - main
+    paths:
+      - scripts/*
+      - .github/workflows/update.yml
   workflow_dispatch:
   #schedule:
   #  - cron: "0 * * * *"
