@@ -1,4 +1,5 @@
-FROM ubuntu:21.04
+#FROM ubuntu:21.04
+FROM ubuntu@sha256:cfc189b67f53b322b0ceaabacfc9e2414c63435f362348807fe960d0fbce5ada
 #FROM python:3.9-slim
 #FROM python:3.9-alpine
 
