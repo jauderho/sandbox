@@ -50,6 +50,7 @@ jobs:
             pypi.org:443
             registry-1.docker.io:443
             security.ubuntu.com:443
+            storage.googleapis.com:443
             
       - name: Source checkout
         uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # v2.4.0 
