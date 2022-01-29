@@ -23,6 +23,7 @@ jobs:
     runs-on: windows-2022
     permissions:
       packages: write
+      id-token: write
 
     steps:
       - name: Harden Runner
@@ -53,3 +54,9 @@ jobs:
           docker build --file=${{ github.workflow }}/Dockerfile -t ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }} -t ghcr.io/${{ env.REPOSITORY }}:latest --build-arg "BUILD_VERSION=${{ env.BUILD_VERSION }}" .
           docker push ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}
           docker push ghcr.io/${{ env.REPOSITORY }}:latest
+          
+      - name: Install cosign
+        uses: sigstore/cosign-installer@116dc6872c0a067bcb78758f18955414cdbf918f # v1.4.1
+      
+      - name: Install syft
+        uses: anchore/sbom-action/download-syft@3626d7d7b13e87ee6c6f9ded3940dea05a3967bc # v0.6.0
