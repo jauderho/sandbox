@@ -28,6 +28,13 @@ updates:
 
   # Maintain dependencies for Docker
   - package-ecosystem: "docker"
+    directory: /age
+    open-pull-requests-limit: 20
+    schedule:
+      interval: "daily"
+
+  # Maintain dependencies for Docker
+  - package-ecosystem: "docker"
     directory: /ansible
     open-pull-requests-limit: 20
     schedule:
