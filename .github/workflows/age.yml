@@ -104,8 +104,6 @@ jobs:
           cache-to: type=gha, scope=${{ github.workflow }}, mode=max
           labels: ${{ steps.docker_meta.outputs.labels }}
           tags: |
-            docker.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}
-            docker.io/${{ env.REPOSITORY }}:latest
             ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}
             ghcr.io/${{ env.REPOSITORY }}:latest
 
@@ -127,20 +125,15 @@ jobs:
       
       - name: Sign the image digest and generate SBOM
         run: |
-          cosign sign docker.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
           cosign sign ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
-          syft docker.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }} -o json > docker_sbom.json
           syft ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }} -o json > ghcr_sbom.json
-          cosign attest --predicate docker_sbom.json docker.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
           cosign attest --predicate ghcr_sbom.json ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
         env:
           COSIGN_EXPERIMENTAL: 1
          
       - name: Verify the image digest and SBOM
         run: |
-          cosign verify docker.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
           cosign verify ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
-          cosign verify-attestation docker.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
           cosign verify-attestation ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
         env:
           COSIGN_EXPERIMENTAL: 1
