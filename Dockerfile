@@ -1,5 +1,8 @@
 # This is a dummy Dockerfile only used for tracking container digest to version mappings
 
+# Alpine 3.14.3
+FROM alpine:3.14.3@sha256:635f0aa53d99017b38d1a0aa5b2082f7812b03e3cdb299103fe77b5c8a07f1d2 AS alpine3.14-base
+
 # Alpine 3.15.0
 FROM alpine:3.15.0@sha256:21a3deaa0d32a8057914f36584b5288d2e5ecc984380bc0118285c70fa8c9300 AS alpine3.15-base
 
