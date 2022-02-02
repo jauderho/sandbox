@@ -95,7 +95,7 @@ jobs:
         with:
           registry: registry.gitlab.com
           username: ${{ github.actor }}
-          password: ${{ secrets.GITLAB_TOKEN }}
+          password: ${{ secrets.GITLAB_REGISTRY_TOKEN }}
 
       - name: Build and push (Ubuntu)
         id: push-step
