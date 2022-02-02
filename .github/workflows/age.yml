@@ -114,8 +114,8 @@ jobs:
           tags: |
             ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}
             ghcr.io/${{ env.REPOSITORY }}:latest
-            registry.gitlab.com/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}
-            registry.gitlab.com/${{ env.REPOSITORY }}:latest
+            registry.gitlab.com/${{ github.repository }}/${{ github.workflow }}:${{ env.BUILD_VERSION }}
+            registry.gitlab.com/${{ github.repository }}/${{ github.workflow }}:latest
 
       # The following is for testing container signing and generating SBOMs
       # Workaround for buildx bug: https://github.com/docker/build-push-action/issues/461
@@ -138,9 +138,9 @@ jobs:
           cosign sign ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
           syft ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }} -o json > ghcr_sbom.json
           cosign attest --predicate ghcr_sbom.json ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
-          cosign sign registry.gitlab.com//${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
-          syft registry.gitlab.com//${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }} -o json > gitlab_sbom.json
-          cosign attest --predicate gitlab_sbom.json registry.gitlab.com//${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
+          cosign sign registry.gitlab.com/${{ github.repository }}/${{ github.workflow }}@${{ steps.push-step.outputs.digest }}
+          syft registry.gitlab.com/${{ github.repository }}/${{ github.workflow }}@${{ steps.push-step.outputs.digest }} -o json > gitlab_sbom.json
+          cosign attest --predicate gitlab_sbom.json registry.gitlab.com/${{ github.repository }}/${{ github.workflow }}@${{ steps.push-step.outputs.digest }}
         env:
           COSIGN_EXPERIMENTAL: 1
          
@@ -148,8 +148,8 @@ jobs:
         run: |
           cosign verify ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
           cosign verify-attestation ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
-          cosign verify registry.gitlab.com/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
-          cosign verify-attestation registry.gitlab.com/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}          
+          cosign verify registry.gitlab.com/${{ github.repository }}/${{ github.workflow }}@${{ steps.push-step.outputs.digest }}
+          cosign verify-attestation registry.gitlab.com/${{ github.repository }}/${{ github.workflow }}@${{ steps.push-step.outputs.digest }}          
         env:
           COSIGN_EXPERIMENTAL: 1
           
