@@ -138,6 +138,9 @@ jobs:
           cosign sign ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
           syft ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }} -o json > ghcr_sbom.json
           cosign attest --predicate ghcr_sbom.json ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
+          cosign sign registry.gitlab.com//${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
+          syft registry.gitlab.com//${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }} -o json > gitlab_sbom.json
+          cosign attest --predicate gitlab_sbom.json registry.gitlab.com//${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
         env:
           COSIGN_EXPERIMENTAL: 1
          
@@ -145,6 +148,8 @@ jobs:
         run: |
           cosign verify ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
           cosign verify-attestation ghcr.io/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
+          cosign verify registry.gitlab.com/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}
+          cosign verify-attestation registry.gitlab.com/${{ env.REPOSITORY }}@${{ steps.push-step.outputs.digest }}          
         env:
           COSIGN_EXPERIMENTAL: 1
           
