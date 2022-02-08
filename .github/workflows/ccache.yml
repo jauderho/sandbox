@@ -26,11 +26,11 @@ jobs:
 
     steps:
       - name: Source checkout
-        uses: actions/checkout@v2.4.0 
+        uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # v2.4.0 
  
       - name: Setup QEMU
         id: qemu
-        uses: docker/setup-qemu-action@v1.2.0
+        uses: docker/setup-qemu-action@27d0a4f181a40b142cce983c5393082c365d1480 # v1.2.0
       
       - name: Setup Buildx
         id: buildx
@@ -47,7 +47,7 @@ jobs:
             org.opencontainers.image.title=${{ env.REPOSITORY }}
 
       - name: ccache
-        uses: hendrikmuhs/ccache-action@v1
+        uses: hendrikmuhs/ccache-action@37bc3a8bd27f1cfdc47fe51472b1a6f82ad1ace0 # v1
         with:
           key: ${{ runner.os }}-buildx-${{ github.sha }}
           max-size: 500M
@@ -59,7 +59,7 @@ jobs:
 
       - name: GitHub login
         if: ${{ github.event_name != 'pull_request' }}
-        uses: docker/login-action@v1.12.0
+        uses: docker/login-action@42d299face0c5c43a0487c477f595ac9cf22f1a7 # v1.12.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -67,7 +67,7 @@ jobs:
 
 #      - name: DockerHub login
 #        if: ${{ github.event_name != 'pull_request' }}
-#        uses: docker/login-action@v1.12.0
+#        uses: docker/login-action@42d299face0c5c43a0487c477f595ac9cf22f1a7 # v1.12.0
 #        with:
 #          username: ${{ secrets.DOCKERHUB_USERNAME }}
 #          password: ${{ secrets.DOCKERHUB_PASSWORD }}      
