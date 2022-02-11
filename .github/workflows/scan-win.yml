@@ -24,10 +24,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # v2.4.0
 
       - name: Run Trivy to check ${{ matrix.image }} Docker image for vulnerabilities
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@a7a829a4345428ddd92ca57b18257440f6a18c90 # master
         with:
           image-ref: 'docker.io/steamcmd/${{ matrix.image }}:windows-core'
           format: 'template'
@@ -37,7 +37,7 @@ jobs:
           hide-progress: false
 
       - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@v1
+        uses: github/codeql-action/upload-sarif@1a927e9307bc11970b2c679922ebc4d03a5bd980
         with:
           sarif_file: 'trivy-${{ matrix.image }}.sarif'
 
@@ -53,13 +53,13 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # v2.4.0
 
       - name: Run Snyk to check ${{ matrix.image }} Docker image for vulnerabilities
         # Snyk can be used to break the build when it detects vulnerabilities.
         # In this case we want to upload the issues to GitHub Code Scanning
         continue-on-error: true
-        uses: snyk/actions/docker@master
+        uses: snyk/actions/docker@d1ee3d73c6f24375d0efc597c74570b0cd08a323 # master
         env:
           # In order to use the Snyk Action you will need to have a Snyk API token.
           # More details in https://github.com/snyk/actions#getting-your-snyk-token
@@ -70,7 +70,7 @@ jobs:
           args: --file=${{ matrix.image }}/Dockerfile --severity-threshold=high
 
       - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@v1
+        uses: github/codeql-action/upload-sarif@1a927e9307bc11970b2c679922ebc4d03a5bd980
         with:
           sarif_file: snyk.sarif
 
@@ -86,10 +86,10 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # v2.4.0
 
       - name: Run Anchore to check ${{ matrix.image }} Docker image for vulnerabilities
-        uses: anchore/scan-action@v3
+        uses: anchore/scan-action@0001ba0daf81f40441d7f7f0413af69ed10f44b6 # v3
         id: anchore-scan
         with:
           image: 'docker.io/steamcmd/${{ matrix.image }}:windows-core'
@@ -98,6 +98,6 @@ jobs:
           severity-cutoff: high
 
       - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@v1
+        uses: github/codeql-action/upload-sarif@1a927e9307bc11970b2c679922ebc4d03a5bd980
         with:
           sarif_file: ${{ steps.anchore-scan.outputs.sarif }}

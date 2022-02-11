@@ -1,0 +1,55 @@
+name: homefront
+
+on:
+  push:
+    branches: 
+      - main
+    paths:
+      - homefront/*
+      - .github/workflows/homefront.yml
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * 1"
+
+env:
+  BUILD_VERSION: "2.10.1.0"
+  DOCKER_CLI_EXPERIMENTAL: enabled
+  REPOSITORY: ${{ github.actor }}/${{ github.workflow }} 
+
+permissions: read-all
+
+jobs:
+  deploy:
+    runs-on: windows-2022
+    permissions:
+      packages: write
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@14dc64f30986eaa2ad2dddcec073f5aab18e5a24 # v1
+        with:
+          egress-policy: audit
+          
+      - name: Source checkout
+        uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # v2.4.0 
+ 
+      - name: GitHub login
+        if: ${{ github.event_name != 'pull_request' }}
+        uses: docker/login-action@42d299face0c5c43a0487c477f595ac9cf22f1a7 # v1.12.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+#      - name: DockerHub login
+#        if: ${{ github.event_name != 'pull_request' }}
+#        uses: docker/login-action@42d299face0c5c43a0487c477f595ac9cf22f1a7 # v1.12.0
+#        with:
+#          username: ${{ secrets.DOCKERHUB_USERNAME }}
+#          password: ${{ secrets.DOCKERHUB_PASSWORD }}      
+
+      - name: Build and push
+        run: |
+          docker build --file=${{ github.workflow }}/Dockerfile -t ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }} -t ghcr.io/${{ env.REPOSITORY }}:latest --build-arg "BUILD_VERSION=${{ env.BUILD_VERSION }}" .
+          docker push ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}
+          docker push ghcr.io/${{ env.REPOSITORY }}:latest
