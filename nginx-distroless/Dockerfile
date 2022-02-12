@@ -1,15 +1,7 @@
-FROM nginx:1.21.1 AS base
+FROM nginx:1.21.6@sha256:2834dc507516af02784808c5f48b7cbe38b8ed5d0f4837f16e78d00deb7e7767 AS base
 
 # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 ARG TIME_ZONE
-
-#RUN ls -l /lib
-#RUN uname -m
-#RUN dpkg --print-architecture
-#RUN arch
-#RUN lscpu | grep Architecture | awk '{print $2}'
-#RUN echo $MACHTYPE
-#RUN echo $HOSTTYPE
 
 RUN mkdir -p /opt/var/cache/nginx && \
     cp -a --parents /usr/lib/nginx /opt && \
@@ -29,10 +21,12 @@ RUN mkdir -p /opt/var/cache/nginx && \
     cp -a --parents /lib/$(uname -m)-linux-gnu/libpthread* /opt && \
     cp -a --parents /lib/$(uname -m)-linux-gnu/libcrypt* /opt && \
     cp -a --parents /usr/lib/$(uname -m)-linux-gnu/libssl.so.* /opt && \
-    cp -a --parents /usr/lib/$(uname -m)-linux-gnu/libcrypto.so.* /opt && \
+    cp -a --parents /usr/lib/$(uname -m)-linux-gnu/libcrypto.so.* /opt && \   
     cp /usr/share/zoneinfo/${TIME_ZONE:-ROC} /opt/etc/localtime
 
-FROM gcr.io/distroless/base-debian11
+FROM gcr.io/distroless/base-debian11@sha256:03dcbf61f859d0ae4c69c6242c9e5c3d7e1a42e5d3b69eb235e81a5810dd768e
+#FROM gcr.io/distroless/base-debian11
+#FROM gcr.io/distroless/base-debian10
 
 COPY --from=base /opt /
 
