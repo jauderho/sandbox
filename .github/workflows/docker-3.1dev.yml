@@ -18,10 +18,13 @@ env:
   #REPOSITORY: ${{ github.actor }}/${{ github.workflow }}
   REPOSITORY: ${{ github.actor }}/testssl.sh
 
-jobs:
+permissions: read-all
 
+jobs:
   deploy:
     runs-on: ubuntu-20.04
+    permissions:
+      packages: write
 
     steps:
       - name: Source checkout

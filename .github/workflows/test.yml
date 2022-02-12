@@ -7,8 +7,10 @@ on:
   workflow_dispatch:
 
 env:
-  GO_VERSION: 1.17.6
+  GO_VERSION: 1.17.7
   UPSTREAM_REPO: https://github.com/golang/go.git
+
+permissions: read-all
 
 jobs:
   lint:

@@ -11,8 +11,13 @@ concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: true
 
+permissions: read-all
+
 jobs:
   trivy:
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
     strategy:
       fail-fast: false
       matrix:
@@ -43,6 +48,9 @@ jobs:
 
   snyk:
     needs: trivy
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
     strategy:
       fail-fast: false
       matrix:
@@ -76,6 +84,9 @@ jobs:
 
   anchore:
     needs: snyk
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
     strategy:
       fail-fast: false
       matrix:
