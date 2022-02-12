@@ -60,6 +60,13 @@ updates:
     open-pull-requests-limit: 20
     schedule:
       interval: "daily"
+  
+  # Maintain dependencies for Docker
+  - package-ecosystem: "docker"
+    directory: /steamcmd
+    open-pull-requests-limit: 20
+    schedule:
+      interval: "daily"
       
   # Maintain dependencies for Docker
   - package-ecosystem: "docker"
