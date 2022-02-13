@@ -5,7 +5,10 @@ name = "pypi"
 
 [packages]
 visidata = "*"
-darkdraw = { git = "https://github.com/devottys/darkdraw.git", editable = true }
+requests = "*"
+python-dateutil = "*"
+wcwidth = "*"
+#darkdraw = { git = "https://github.com/devottys/darkdraw.git", editable = true }
 
 [dev-packages]
 
