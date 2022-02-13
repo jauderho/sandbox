@@ -6,8 +6,9 @@ name: Generate diagram
 
 # Start the job on all push #
 on:
-  #push:
-  #pull_request:
+  push:
+    branches: 
+      - main
   workflow_dispatch:
 
 permissions: read-all
