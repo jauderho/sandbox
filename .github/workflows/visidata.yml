@@ -156,4 +156,4 @@ jobs:
           cosign verify-attestation registry.gitlab.com/${{ github.repository }}/${{ github.workflow }}@${{ steps.push-step.outputs.digest }}          
         env:
           COSIGN_EXPERIMENTAL: 1
-          
+                 
