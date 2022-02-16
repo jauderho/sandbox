@@ -5,24 +5,35 @@ on:
     branches: 
       - main
 
+permissions: read-all
+
 jobs:
   checkov-job:
-    runs-on: ubuntu-latest
     name: checkov-action
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
+    runs-on: ubuntu-latest
+
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@bdb12b622a910dfdc99a31fdfe6f45a16bc287a4 # v1
+        with:
+          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+
       - name: Checkout repo
-        uses: actions/checkout@master
+        uses: actions/checkout@61b9e3751b92087fd0b06925ba6dd6314e06f089 # master
 
       - name: Run Checkov action
         id: checkov
-        uses: bridgecrewio/checkov-action@master
+        uses: bridgecrewio/checkov-action@7f2d967e8827da02d996aec4385daf3c48a4bcb6 # master
         with:
           directory: .
           #check: CKV_AWS_1 # optional: run only a specific check_id. can be comma separated list
           #skip_check: CKV_AWS_2 # optional: skip a specific check_id. can be comma separated list
           #quiet: true # optional: display only failed checks
           soft_fail: true # optional: do not return an error code if there are failed checks
-          framework: all # optional: run only on a specific infrastructure {cloudformation,terraform,kubernetes,all}
+          framework: dockerfile # optional: run only on a specific infrastructure {cloudformation,terraform,kubernetes,all}
           output_format: sarif # optional: the output format, one of: cli, json, junitxml, github_failed_only, or sarif. Default: sarif
           download_external_modules: true # optional: download external terraform modules from public git repositories and terraform registry
           log_level: DEBUG # optional: set log level. Default WARNING
