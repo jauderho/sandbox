@@ -19,7 +19,12 @@ jobs:
       - name: Harden Runner
         uses: step-security/harden-runner@bdb12b622a910dfdc99a31fdfe6f45a16bc287a4 # v1
         with:
-          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+          egress-policy: audit
+          allowed-endpoints: >
+            api.github.com:443
+            github.com:443
+            pypi.org:443
+            www.bridgecrew.cloud:443
 
       - name: Checkout repo
         uses: actions/checkout@61b9e3751b92087fd0b06925ba6dd6314e06f089 # master
@@ -33,7 +38,7 @@ jobs:
           #skip_check: CKV_AWS_2 # optional: skip a specific check_id. can be comma separated list
           #quiet: true # optional: display only failed checks
           soft_fail: true # optional: do not return an error code if there are failed checks
-          framework: dockerfile # optional: run only on a specific infrastructure {cloudformation,terraform,kubernetes,all}
+          framework: all # optional: run only on a specific infrastructure {cloudformation,terraform,kubernetes,all}
           output_format: sarif # optional: the output format, one of: cli, json, junitxml, github_failed_only, or sarif. Default: sarif
           download_external_modules: true # optional: download external terraform modules from public git repositories and terraform registry
           log_level: DEBUG # optional: set log level. Default WARNING
