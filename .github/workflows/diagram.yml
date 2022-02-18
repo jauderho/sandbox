@@ -17,8 +17,8 @@ jobs:
   build:
     name: Generate diagram
     runs-on: ubuntu-20.04
-    #permissions:
-    #  contents: write
+    permissions:
+      contents: write
 
     steps:
       - name: Harden Runner
