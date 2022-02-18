@@ -1,4 +1,6 @@
 # This is a dummy Dockerfile only used for tracking container digest to version mappings
+USER nobody
+HEALTHCHECK echo
 
 # Alpine 3.14.3
 FROM alpine:3.14.3@sha256:635f0aa53d99017b38d1a0aa5b2082f7812b03e3cdb299103fe77b5c8a07f1d2 AS alpine3.14-base
