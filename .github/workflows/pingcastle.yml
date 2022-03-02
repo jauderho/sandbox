@@ -38,6 +38,18 @@ jobs:
         with:
           distribution: Alpine
 
+      - name: Set Docker metadata
+        id: docker_meta
+        uses: docker/metadata-action@e5622373a38e60fb6d795a4421e56882f2d7a681 # v3
+        with:
+          images: ${{ env.REPOSITORY }}
+          tags: |
+            type=sha,format=long,prefix=sha256:
+          labels: |
+            org.opencontainers.image.version=${{ env.BUILD_VERSION }}
+            org.opencontainers.image.revision=${{ github.sha }}
+            org.opencontainers.image.title=${{ env.REPOSITORY }}
+
       - name: GitHub login
         if: ${{ github.event_name != 'pull_request' }}
         uses: docker/login-action@dd4fa0671be5250ee6f50aedf4cb05514abda2c7 # v1.12.0
