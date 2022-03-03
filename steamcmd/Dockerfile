@@ -1,2 +1,2 @@
 #FROM steamcmd/steamcmd:windows-core-2019@sha256:bd201be10050af5eb09dc4293a38191a1258763641dbd9f1827cae2b0b3eab67
-FROM steamcmd/steamcmd:alpine-3@sha256:b9bc2d60469cb4d7deebd4f1e10430965ea7b4f8fe0baf9ea2e2b24ef3c47fe9
+FROM steamcmd/steamcmd:alpine-3@sha256:4fb230c13e116e666c8a26a939b9ab6713c7ea4397a042574d7c304a563088db
