@@ -1,2 +1,7 @@
 #FROM steamcmd/steamcmd:windows-core-2019@sha256:bd201be10050af5eb09dc4293a38191a1258763641dbd9f1827cae2b0b3eab67
 FROM steamcmd/steamcmd:alpine-3@sha256:4fb230c13e116e666c8a26a939b9ab6713c7ea4397a042574d7c304a563088db
+
+RUN test -n "${BUILD_VERSION}" \
+        && apk update \
+        && apk add --no-cache ca-certificates wine
+        
