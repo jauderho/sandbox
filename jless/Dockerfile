@@ -46,6 +46,8 @@ RUN /usr/local/bin/jless
 
 USER 1000
 
+HEALTHCHECK NONE
+
 ENTRYPOINT ["/usr/local/bin/jless"]
 #CMD ["--help"]
 
