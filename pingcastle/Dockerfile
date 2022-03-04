@@ -33,4 +33,6 @@ RUN c:\app\pingcastle.exe
 #RUN Expand-Archive -Path c:\pingcastle.zip -DestinationPath c:\
 #RUN Remove-Item c:\python-3.5.1.exe -Force
 
+HEALTHCHECK NONE
+
 CMD ["c:\app\pingcastle.exe"]

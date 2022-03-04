@@ -18,7 +18,7 @@ RUN test -n "${BUILD_VERSION}" \
     && mkdir -m 755 -p /home/testssl/etc /home/testssl/bin
 
 USER testssl
+HEALTHCHECK NONE
 
 ENTRYPOINT ["testssl.sh"]
-
 CMD ["--help"]

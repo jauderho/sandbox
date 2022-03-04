@@ -8,3 +8,5 @@ RUN test -n "${BUILD_VERSION}" \
 	&& update-ca-certificates 
 
 RUN gcc -v
+
+HEALTHCHECK NONE

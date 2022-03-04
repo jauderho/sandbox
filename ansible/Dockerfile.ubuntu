@@ -40,4 +40,6 @@ LABEL org.opencontainers.image.description="Ansible is a radically simple IT aut
 RUN mkdir -p /etc/ansible && \
     echo 'localhost' > /etc/ansible/hosts
 
+HEALTHCHECK NONE
+
 CMD [ "ansible-playbook", "--version" ]

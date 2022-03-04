@@ -36,6 +36,7 @@ LABEL org.opencontainers.image.description="Visidata is a terminal interface for
 WORKDIR /work
 
 ENV TERM="xterm-256color"
+HEALTHCHECK NONE
 
 ENTRYPOINT ["vd"]
 

@@ -31,5 +31,7 @@ LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/sslyze"
 LABEL org.opencontainers.image.description="SSLyze is a fast and powerful SSL/TLS scanning library"
 
+HEALTHCHECK NONE
+
 ENTRYPOINT ["sslyze"]
 CMD ["-h"]

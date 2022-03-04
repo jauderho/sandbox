@@ -73,12 +73,11 @@ LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/imapsync"
 LABEL org.opencontainers.image.description="Email IMAP tool for syncing, copying, migrating and archiving email mailboxes between servers"
 
-USER nobody:nogroup
-
-ENV HOME /var/tmp/
-
 WORKDIR /var/tmp/
 
+ENV HOME /var/tmp/
+USER nobody:nogroup
+HEALTHCHECK NONE
 STOPSIGNAL SIGINT
 
 #CMD ["/usr/bin/imapsync"]
