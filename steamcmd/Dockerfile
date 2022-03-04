@@ -7,3 +7,4 @@ RUN test -n "${BUILD_VERSION}" \
         && apk update \
         && apk add --no-cache ca-certificates wine
         
+HEALTHCHECK NONE
