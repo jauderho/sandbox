@@ -15,7 +15,7 @@ FROM ubuntu:21.10@sha256:1108598c6469492b0ec61c4c9bab6868a3d335ecf76deb4d31ff3b2
 FROM ubuntu:22.04@sha256:a02c32cf0c2a7e8743c74deef66637aa70e063c9bd40e9e1f8c0b3ea0750b0ba AS ubuntu22.04-base
 
 # Go 1.18 on Alpine 3.15
-FROM golang:1.18-rc-alpine3.15@sha256:a8c33744dfc0b56098eaaea862c35a944b6df0eb92cead5bb43acf620fb14080 AS golang1.18-rc-base
+FROM golang:1.18.0-alpine3.15@sha256:9efe6b075e2bd5eff0fae9ce2961897ac339ef31eec24732691e15be0a154eec AS golang1.18-base
 
 # node:16-alpine3.15 
 FROM node:16-alpine3.15@sha256:2f50f4a428f8b5280817c9d4d896dbee03f072e93f4e0c70b90cc84bd1fcfe0d AS node16-alpine3.15
