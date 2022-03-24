@@ -51,7 +51,8 @@ jobs:
             storage.googleapis.com:443
             toolbox-data.anchore.io:443
 
-      - uses: kvrhdn/gha-buildevents@b78f61a163d7027aba21a7c55761587e7dab38be # v1
+      - name: Honeycomb Buildevents
+        uses: kvrhdn/gha-buildevents@b78f61a163d7027aba21a7c55761587e7dab38be # v1
         with:
           # Required: a Honeycomb API key - needed to send traces.
           apikey: ${{ secrets.BUILDEVENTS_APIKEY }}
