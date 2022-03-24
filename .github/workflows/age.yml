@@ -49,6 +49,22 @@ jobs:
             toolbox-data.anchore.io:443
             v1.fulcio.sigstore.dev:443
 
+      - uses: kvrhdn/gha-buildevents@b78f61a163d7027aba21a7c55761587e7dab38be # v1
+        with:
+          # Required: a Honeycomb API key - needed to send traces.
+          apikey: ${{ secrets.BUILDEVENTS_APIKEY }}
+
+          # Required: the Honeycomb dataset to send traces to.
+          dataset: gha-buildevents_integration
+
+          # Required: the job status, this will be used in the post section and sent
+          # as status of the trace. Must always be ${{ job.status }}.
+          job-status: ${{ job.status }}
+
+          # Optional: this should only be used in combination with matrix builds. Set
+          # this to a value uniquely describing each matrix configuration.
+          #matrix-key: ${{ matrix.value }}
+
       - name: Source checkout
         uses: actions/checkout@a12a3943b4bdde767164f792f33f40b04645d846 # v2.4.0 
  
