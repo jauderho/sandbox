@@ -58,7 +58,7 @@ jobs:
           apikey: ${{ secrets.BUILDEVENTS_APIKEY }}
 
           # Required: the Honeycomb dataset to send traces to.
-          dataset: gha-buildevents_integration
+          dataset: gha-buildevents-sandbox
 
           # Required: the job status, this will be used in the post section and sent
           # as status of the trace. Must always be ${{ job.status }}.
