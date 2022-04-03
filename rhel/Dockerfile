@@ -1,0 +1,1 @@
+FROM registry.access.redhat.com/rhel7@sha256:e0af71a88d2746274936575fb47716e084ae37dc307660a7cd2e45e9e4630f06
