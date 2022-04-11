@@ -35,6 +35,6 @@ jobs:
           fetch-depth: 0
 
       - name: Update diagram
-        uses: githubocto/repo-visualizer@df8fb4ac26707173a57e51825142e53401a491e9 # 0.7.1
+        uses: githubocto/repo-visualizer@2dea7f0343abf8711244d179aa42405d91d9c97f # 0.7.1
         with:
           output_file: "diagram.svg"
