@@ -8,8 +8,8 @@ on:
 permissions: read-all
 
 jobs:
-  checkov:
-    name: checkov
+  workaround:
+    name: workaround
     permissions:
       contents: read # for actions/checkout to fetch code
       security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
@@ -20,7 +20,16 @@ jobs:
       - run: |
             sudo rm /etc/docker/daemon.json
             sudo systemctl restart docker
-            
+
+  checkov:
+    name: checkov
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
+    runs-on: ubuntu-22.04
+    needs: workaround
+
+    steps:         
       - name: Harden Runner
         uses: step-security/harden-runner@248ae51c2e8cc9622ecf50685c8bf7150c6e8813 # v1
         with:
