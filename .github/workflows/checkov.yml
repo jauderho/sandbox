@@ -8,26 +8,12 @@ on:
 permissions: read-all
 
 jobs:
-  workaround:
-    name: workaround
-    permissions:
-      contents: read # for actions/checkout to fetch code
-      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
-    runs-on: ubuntu-22.04
-
-    steps:
-      # See https://github.com/actions/virtual-environments/issues/5490#issuecomment-1118328567
-      - run: |
-            sudo rm /etc/docker/daemon.json
-            sudo systemctl restart docker
-
   checkov:
     name: checkov
     permissions:
       contents: read # for actions/checkout to fetch code
       security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
     runs-on: ubuntu-22.04
-    needs: workaround
 
     steps:         
       - name: Harden Runner
