@@ -7,7 +7,7 @@
 #FROM mcr.microsoft.com/windows:10.0.19042.1469
 #FROM mcr.microsoft.com/powershell:lts-nanoserver-1809
 #FROM mcr.microsoft.com/powershell:lts-nanoserver-ltsc2022
-FROM mcr.microsoft.com/powershell:lts-windowsservercore-ltsc2022@sha256:3bc717a0b50558578a5887f942bf2ddaa0e82399f1edb54a99b1ef0410332eb9
+FROM mcr.microsoft.com/powershell:lts-windowsservercore-ltsc2022@sha256:1103dcf22965f30ca7b15ad4ca5097edb24e6136bc62fe50783409e53a6fd6ef
 #FROM mcr.microsoft.com/powershell
 
 WORKDIR /app
