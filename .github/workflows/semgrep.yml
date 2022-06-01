@@ -44,7 +44,7 @@ jobs:
     #    SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
     
     # Run Semgrep and generate SARIF
-    - run: semgrep scan --sarif --output=semgrep.sarif --config=policy
+    - run: semgrep scan --sarif --output=semgrep.sarif --config=policy --metrics=off
       env:
         SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
         
