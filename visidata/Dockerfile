@@ -13,7 +13,7 @@ RUN \
 	apk update && \
 	build_pkgs="cargo build-base libffi-dev openssl-dev python3-dev" && \
 	runtime_pkgs="ca-certificates openssl python3 py3-pip" && \
-	apk add--no-cache --virtual build-dependencies ${build_pkgs} && \
+	apk --no-cache add --virtual build-dependencies ${build_pkgs} && \
 	apk add --no-cache ${runtime_pkgs} && \
 	ln -s /usr/bin/python3 /usr/bin/python && \
 	python3 -m pip install --no-cache-dir --upgrade pip && \
