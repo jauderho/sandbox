@@ -37,7 +37,7 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
 COPY requirements-test.txt requirements-extra.txt requirements-docs.txt /tmp/
 
-RUN $PYTHON -m pip install -U \
+RUN $PYTHON -m pip install --no-cache-dir -U \
     -r /tmp/requirements-extra.txt \
     -r /tmp/requirements-test.txt \
     -r /tmp/requirements-docs.txt \
