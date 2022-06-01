@@ -43,10 +43,13 @@ jobs:
     #  env:
     #    SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
     
+    - run: semgrep login
+    
     # Run Semgrep and generate SARIF
-    - run: semgrep scan --sarif --output=semgrep.sarif --config=policy --metrics=off
+    - run: semgrep scan --sarif --output=semgrep.sarif --config=policy
       env:
         SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
+        SEMGREP_SEND_METRICS: auto
         
     - name: Upload SARIF file for GitHub Advanced Security Dashboard
       uses: github/codeql-action/upload-sarif@a3a6c128d771b6b9bdebb1c9d0583ebd2728a108
