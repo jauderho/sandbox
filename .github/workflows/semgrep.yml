@@ -17,10 +17,9 @@ jobs:
   semgrep:
     name: Scan
     runs-on: ubuntu-22.04
-    env:
-      SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
     container:
       image: returntocorp/semgrep@sha256:cb81ff86d164e2aab37c8967a4e56e7338738bcdc1816efdabc10e0bc335a035
+    if: (github.actor != 'dependabot[bot]')
     steps:
     - name: Harden Runner
       uses: step-security/harden-runner@248ae51c2e8cc9622ecf50685c8bf7150c6e8813 # v1
@@ -34,3 +33,5 @@ jobs:
     - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
     
     - run: semgrep ci
+      env:
+        SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
