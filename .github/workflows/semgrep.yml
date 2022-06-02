@@ -41,6 +41,7 @@ jobs:
     - uses: returntocorp/semgrep-action@83f6d36c9a9266339fb5dd8db1dbefdf6701bf1d
       with:
         publishToken: ${{ secrets.SEMGREP_APP_TOKEN }}
+        config: >-
         generateSarif: "1"
         
     # Run Semgrep as CI
