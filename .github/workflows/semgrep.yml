@@ -22,11 +22,9 @@ jobs:
       security-events: write
       actions: read
       contents: read      
-    container:
-      image: returntocorp/semgrep
+    #container:
+    #  image: returntocorp/semgrep
     if: (github.actor != 'dependabot[bot]')
-    env:
-      SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
     
     steps:
     - name: Harden Runner
@@ -40,16 +38,21 @@ jobs:
           
     - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
     
+    - uses: returntocorp/semgrep-action@83f6d36c9a9266339fb5dd8db1dbefdf6701bf1d
+      with:
+        publishToken: ${{ secrets.SEMGREP_APP_TOKEN }}
+        generateSarif: "1"
+        
     # Run Semgrep as CI
     #- run: semgrep ci
     #  env:
     #    SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
 
     # Run Semgrep and generate SARIF
-    - run: semgrep scan --sarif --output=semgrep.sarif --config=policy
-      env:
-        SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
-        SEMGREP_SEND_METRICS: on
+    #- run: semgrep scan --sarif --output=semgrep.sarif --config=policy
+    #  env:
+    #    SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
+    #    SEMGREP_SEND_METRICS: on
         
     - name: Upload SARIF file for GitHub Advanced Security Dashboard
       uses: github/codeql-action/upload-sarif@a3a6c128d771b6b9bdebb1c9d0583ebd2728a108
