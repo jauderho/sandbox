@@ -1,5 +1,5 @@
 #FROM golang:alpine AS build
-FROM golang:1.19rc2-alpine3.16@sha256:bd51c467fc23886fbae4c49fb713fbbd15f875017ad0c251c930e6a78b450e86 AS build
+FROM golang:1.19.0-alpine3.16@sha256:f734a85923ff49da7caf82940b422bf679ca9bdec38cc56f501a4745b557d150 AS build
 
 WORKDIR /go/src/github.com/FiloSottile/age/
 
