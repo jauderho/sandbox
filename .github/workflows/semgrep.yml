@@ -38,7 +38,7 @@ jobs:
           
     - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
     
-    - uses: returntocorp/semgrep-action@e6b59f97548dacae5af603a5229702929eccb14e
+    - uses: returntocorp/semgrep-action@327d887b32eb314720a3e6bdcdc621bcab9af0eb
       with:
         publishToken: ${{ secrets.SEMGREP_APP_TOKEN }}
         
