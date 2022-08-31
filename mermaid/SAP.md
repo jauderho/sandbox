@@ -20,7 +20,7 @@ SAP strawman stack example #1
 SAP strawman stack example #2
 
 ```mermaid
-  flowchart TD
+  graph TD
   User-->FW_1 & FW_2
   FW_1 & FW_2-->VPN_1 & VPN_2
   FW_1 & FW_2-->ZT_1 & ZT_2
@@ -39,14 +39,15 @@ SAP strawman stack example #2
 SAP strawman stack example #3
 
 ```mermaid
-  flowchart TD
+  graph TD
   User-->Firewall
-  Firewall-->Proxy
+  Firewall<-->Proxy
   Proxy--URL2-->F5
   Proxy--URL1-->WebDispatcher
   F5-->WebDispatcher
   WebDispatcher-->App
   WebDispatcher-->ASCS/ERS
-  App-->HANA
-  HANA-->HANA_DR
+  App-->HANA_1
+  HANA_1--HSR-->HANA_2
+  HANA_2--HSR-->HANA_DR
 ```
