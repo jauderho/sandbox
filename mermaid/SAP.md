@@ -35,3 +35,18 @@ SAP strawman stack example #2
   HANA_1-->HANA_2
   HANA_2-->HANA_3_DR
 ```
+
+SAP strawman stack example #3
+
+```mermaid
+  flowchart TD
+  User-->Firewall
+  Firewall-->Proxy
+  Proxy--URL2-->F5
+  Proxy--URL1-->WebDispatcher
+  F5-->WebDispatcher
+  WebDispatcher-->App
+  WebDispatcher-->ASCS/ERS
+  App-->HANA
+  HANA-->HANA_DR
+```
