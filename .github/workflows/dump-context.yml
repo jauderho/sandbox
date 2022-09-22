@@ -1,11 +1,15 @@
 name: dump-context
 
 on:
+  push:
+    paths:
+      - .github/workflows/dump-context.yml
   workflow_dispatch:
 
 jobs:
-  one:
+  deploy:
     runs-on: ubuntu-22.04
+
     steps:
       - name: Dump GitHub context
         env:
