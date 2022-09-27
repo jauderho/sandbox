@@ -1,24 +1,7 @@
 ## Dockerfile for building a docker imapsync image
 
 # $Id: Dockerfile,v 1.38 2021/11/29 10:20:56 gilles Exp gilles $
-# I use the following command to build the image:
-#
-#  docker build -t gilleslamiral/imapsync . 
-#
-# where this Dockerfile is in the current directory
-# 
-# I thank you very much
-# I like thanks
-# I like stars
-# I also need money to keep on doing this stuff
 
-# Number of imapsync images pulled so far (2021_11_29): 608326
-# Command used:
-# curl -s https://hub.docker.com/v2/repositories/gilleslamiral/imapsync/ | jq '.pull_count'
-
-# Debian Buster is Debian 10
-
-#FROM ubuntu:21.10 
 FROM ubuntu:22.04@sha256:a02c32cf0c2a7e8743c74deef66637aa70e063c9bd40e9e1f8c0b3ea0750b0ba
 
 ARG BUILD_VERSION
