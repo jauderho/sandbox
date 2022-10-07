@@ -18,4 +18,4 @@ FROM golang:1.19.2-alpine3.16@sha256:2baa528036c1916b23de8b304083c68fb298c566120
 #FROM node:17-alpine3.15@sha256:6f8ae702a7609f6f18d81ac72998e5d6f5d0ace9a13b866318c76340c6d986b2 AS node17-alpine3.15
 
 # node:18-alpine3.15 
-FROM node:18-alpine3.15@sha256:ea4a1955fbf3293fb2642de3e13a50c01c7f23fc40046ed54513bd5939a67def AS node18-alpine3.15
+FROM node:18-alpine3.15@sha256:e2e77eeb87e4f6f5388f786a878dd1589a03298f84e8805bc75251d9db01af3e AS node18-alpine3.15
