@@ -1,4 +1,4 @@
 #FROM registry.suse.com/suse/sle15:15.3.150300.17.8.74@sha256:05dbff30f3ac1de42441af9e696093e0933a478680bce7d21472faa5e12134bd
 #FROM registry.suse.com/suse/sle15:15.3.150300.17.8.73@sha256:5dce66cf95b81c795b4073d3beda3b814ca423a7cfefbf8173be4d81b22bc7b0
-FROM registry.suse.com/bci/bci-base:15.4.27.11.28@sha256:8496eeaf0e89246e9815adc932dcb24cc122014584669e70d8cc1fa7e94d7787
+FROM registry.suse.com/bci/bci-base:15.4.27.11.29@sha256:e450d383bbd0e18a136c2c819c47212bf91b9621b20ad822343f00635e61f6f9
 
