@@ -1,0 +1,95 @@
+## Dockerfile for building a docker imapsync image
+
+# $Id: Dockerfile,v 1.38 2021/11/29 10:20:56 gilles Exp gilles $
+# I use the following command to build the image:
+#
+#  docker build -t gilleslamiral/imapsync . 
+#
+# where this Dockerfile is in the current directory
+# 
+# I thank you very much
+# I like thanks
+# I like stars
+# I also need money to keep on doing this stuff
+
+# Number of imapsync images pulled so far (2021_11_29): 608326
+# Command used:
+# curl -s https://hub.docker.com/v2/repositories/gilleslamiral/imapsync/ | jq '.pull_count'
+
+# Debian Buster is Debian 10
+
+#FROM debian:buster 
+FROM ubuntu:22.10@sha256:898852f07de8ff57e7810a5c28553e71f10db60ae79c2b7a06acc45bbb03741a
+
+LABEL   maintainer="Gilles LAMIRAL <gilles@lamiral.info>" \
+        description="Imapsync" \
+        documentation="https://imapsync.lamiral.info/#doc"
+
+# I put a copy of the Dockerfile in the image itself
+# It can help maintenance, isn't it?
+# Also put optionally my local and usually more recent imapsync on /, for testing purpose
+
+COPY Dockerfile imapsyn[c] prerequisites_imapsyn[c] /
+
+
+
+RUN set -xe && \
+  apt-get update \
+  && apt-get install -y \
+  libauthen-ntlm-perl \
+  libcgi-pm-perl \
+  libcrypt-openssl-rsa-perl \
+  libdata-uniqid-perl \
+  libencode-imaputf7-perl \
+  libfile-copy-recursive-perl \
+  libfile-tail-perl \
+  libio-compress-perl \
+  libio-socket-ssl-perl \
+  libio-socket-inet6-perl \
+  libio-tee-perl \
+  libhtml-parser-perl \
+  libjson-webtoken-perl \
+  libmail-imapclient-perl \
+  libparse-recdescent-perl \
+  libmodule-scandeps-perl \
+  libpar-packer-perl \
+  libreadonly-perl \
+  libregexp-common-perl \
+  libsys-meminfo-perl \
+  libterm-readkey-perl \
+  libtest-mockobject-perl \
+  libtest-pod-perl \
+  libunicode-string-perl \
+  liburi-perl  \
+  libwww-perl \
+  procps \
+  wget \
+  make \
+  cpanminus \
+  lsof \
+  ncat \
+  openssl \
+  ca-certificates \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN set -xe \
+  && cd /usr/bin/ \
+  && pwd \
+  && wget -N --no-check-certificate https://imapsync.lamiral.info/imapsync \
+        https://imapsync.lamiral.info/prerequisites_imapsync \
+        https://raw.githubusercontent.com/google/gmail-oauth2-tools/master/python/oauth2.py \
+  && chmod +x imapsync oauth2.py \
+  && /usr/bin/imapsync --testslive && /usr/bin/imapsync --tests # just_a_comment_to_force_update 2021_11_29_11_20_56
+
+USER nobody:nogroup
+
+ENV HOME /var/tmp/
+
+WORKDIR /var/tmp/
+
+STOPSIGNAL SIGINT
+
+CMD ["/usr/bin/imapsync"]
+
+# 
+# End of imapsync Dockerfile 

@@ -1,5 +1,5 @@
 #FROM debian:latest
-FROM ubuntu:22.04@sha256:2a7dffab37165e8b4f206f61cfd984f8bb279843b070217f6ad310c9c31c9c7c
+FROM ubuntu:22.10@sha256:898852f07de8ff57e7810a5c28553e71f10db60ae79c2b7a06acc45bbb03741ac
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
