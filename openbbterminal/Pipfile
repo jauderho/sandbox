@@ -4,7 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-greynoise = "*"
+#openbbterminal = "*"
+openbbterminal = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true, ref="0dbfd1b7dd400d4bddbde93e3863d8d9813b514a" }
 
 [dev-packages]
 
