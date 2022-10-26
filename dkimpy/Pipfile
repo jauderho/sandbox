@@ -4,7 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-dkimpy = "*"
+#dkimpy = "*"
+dkimpy = {extras = ["ed25519", "ARC", "asyncio"], version = "*"}
 
 [dev-packages]
 

@@ -29,8 +29,10 @@ LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
-LABEL org.opencontainers.image.title="jauderho/sslyze"
-LABEL org.opencontainers.image.description="SSLyze is a fast and powerful SSL/TLS scanning library"
+LABEL org.opencontainers.image.title="jauderho/dkimpy"
+LABEL org.opencontainers.image.description="dkimpy is a library that implements DKIM (DomainKeys Identified Mail) email signing and verification"
 
-ENTRYPOINT ["sslyze"]
-CMD ["-h"]
+CMD ["dkimpy"]
+#CMD ["dknewkey"]
+#CMD ["dkimsign"]
+#CMD ["dkimverify"]
