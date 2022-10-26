@@ -1,5 +1,5 @@
-FROM ubuntu:22.10@sha256:898852f07de8ff57e7810a5c28553e71f10db60ae79c2b7a06acc45bbb03741a
-#FROM python:3.11.0-slim-bullseye@sha256:f8cc89f5e47347703ec0c2b755464d7db2fa16f255ab860c4b24ba6ef2402020
+#FROM ubuntu:22.10@sha256:898852f07de8ff57e7810a5c28553e71f10db60ae79c2b7a06acc45bbb03741a
+FROM python:3.11.0-slim-bullseye@sha256:f8cc89f5e47347703ec0c2b755464d7db2fa16f255ab860c4b24ba6ef2402020
 #FROM python:3.9-alpine
 
 ARG BUILD_VERSION
@@ -29,8 +29,8 @@ LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
-LABEL org.opencontainers.image.title="jauderho/sslyze"
-LABEL org.opencontainers.image.description="SSLyze is a fast and powerful SSL/TLS scanning library"
+LABEL org.opencontainers.image.title="jauderho/openbbterminal"
+LABEL org.opencontainers.image.description="OpenBBTerminal is an awesome stock and crypto market terminal"
 
 ENTRYPOINT ["sslyze"]
 CMD ["-h"]
