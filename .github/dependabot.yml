@@ -48,7 +48,21 @@ updates:
     open-pull-requests-limit: 20
     schedule:
       interval: "daily"
-
+      
+  # Maintain dependencies for Docker
+  - package-ecosystem: "docker"
+    directory: /dkimpy
+    open-pull-requests-limit: 20
+    schedule:
+      interval: "daily"
+      
+  # Maintain dependencies for Docker
+  - package-ecosystem: "docker"
+    directory: /greynoise
+    open-pull-requests-limit: 20
+    schedule:
+      interval: "daily"      
+      
   # Maintain dependencies for Docker
   - package-ecosystem: "docker"
     directory: /nginx
