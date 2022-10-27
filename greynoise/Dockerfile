@@ -29,8 +29,8 @@ LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
-LABEL org.opencontainers.image.title="jauderho/sslyze"
-LABEL org.opencontainers.image.description="SSLyze is a fast and powerful SSL/TLS scanning library"
+LABEL org.opencontainers.image.title="jauderho/greynoise"
+LABEL org.opencontainers.image.description="GreyNoise is the sources for understanding internet noise"
 
-ENTRYPOINT ["sslyze"]
+ENTRYPOINT ["greynoise"]
 CMD ["-h"]
