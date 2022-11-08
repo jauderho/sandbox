@@ -55,7 +55,7 @@ jobs:
             org.opencontainers.image.title=${{ env.REPOSITORY }}
 
       - name: ccache
-        uses: hendrikmuhs/ccache-action@26f34fe608c394f91f0ffe30ddf874d15d4fbd9d # v1
+        uses: hendrikmuhs/ccache-action@657bab9aeb32eb6d913c2e6882efad4bb7536d94 # v1
         with:
           key: ${{ runner.os }}-buildx-${{ github.sha }}
           max-size: 500M
