@@ -1,42 +1,52 @@
--e git+https://github.com/mitogen-hq/mitogen.git@5b505f524a7ae170fe68613841ab92b299613d3f#egg=mitogen
-ansible-compat==2.2.5
-ansible-core==2.14.0
-ansible-lint==6.9.0
+-i https://pypi.org/simple
 ansible==7.0.0
+ansible-compat==2.2.6 ; python_version >= '3.8'
+ansible-core==2.14.0 ; python_version >= '3.9'
+ansible-lint==6.9.0
+attrs==22.1.0 ; python_version >= '3.5'
 bitmath==1.3.3.1
-bracex==2.3.post1
+black==22.10.0 ; python_version >= '3.7'
+bracex==2.3.post1 ; python_version >= '3.7'
 cachez==0.1.2
-certifi==2022.9.24
+certifi==2022.9.24 ; python_version >= '3.6'
 cffi==1.15.1
-charset-normalizer==3.0.1; python_version >= '3'
+charset-normalizer==2.1.1 ; python_full_version >= '3.6.0'
+click==8.1.3 ; python_version >= '3.7'
 commonmark==0.9.1
-cryptography==38.0.4
-enrich==1.2.7
-idna==3.4; python_version >= '3'
-jinja2==3.1.2
-markupsafe==2.1.1
-ntlm-auth==1.5.0
-packaging==21.3
-pathspec==0.10.2
+cryptography==38.0.4 ; python_version >= '3.6'
+filelock==3.8.0 ; python_version >= '3.7'
+idna==3.4 ; python_version >= '3.5'
+jinja2==3.1.2 ; python_version >= '3.7'
+jsonschema==4.17.3 ; python_version >= '3.7'
+markupsafe==2.1.1 ; python_version >= '3.7'
+-e git+https://github.com/mitogen-hq/mitogen.git@660d3e088501816edc12f4b98e9e92a35f68c707#egg=mitogen
+mypy-extensions==0.4.3
+ntlm-auth==1.5.0 ; python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'
+packaging==21.3 ; python_version >= '3.6'
+pathspec==0.10.2 ; python_version >= '3.7'
 persist-queue==0.8.0
+platformdirs==2.5.4 ; python_version >= '3.7'
 pycparser==2.21
-pygments==2.13.0
-pyparsing==3.0.9
-python-dateutil==2.8.2
+pygments==2.13.0 ; python_version >= '3.6'
+pyparsing==3.0.9 ; python_full_version >= '3.6.8'
+pyrsistent==0.19.2 ; python_version >= '3.7'
+python-dateutil==2.8.2 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
 pywinrm==0.4.3
-pyyaml==6.0
+pyyaml==6.0 ; python_version >= '3.6'
+requests==2.28.1 ; python_version >= '3.7' and python_version < '4'
 requests-ntlm==1.1.0
-requests==2.28.1
-resolvelib==0.9.0
+resolvelib==0.8.1
 retryz==0.1.9
-rich==12.6.0
-ruamel.yaml.clib==0.2.6; platform_python_implementation == 'CPython' and python_version < '3.11'
-ruamel.yaml==0.17.21
-six==1.16.0
+rich==12.6.0 ; python_full_version >= '3.6.3' and python_full_version < '4.0.0'
+ruamel.yaml==0.17.21 ; python_version >= '3'
+ruamel.yaml.clib==0.2.7 ; python_version < '3.11' and platform_python_implementation == 'CPython'
+setuptools==65.6.3 ; python_version >= '3.7'
+six==1.16.0 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
 storops==1.2.11
-subprocess-tee==0.3.5
-urllib3==1.26.12
-wcmatch==8.4.1
+subprocess-tee==0.4.0 ; python_version >= '3.8'
+tomli==2.0.1 ; python_full_version < '3.11.0a7'
+urllib3==1.26.13 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
+wcmatch==8.4.1 ; python_version >= '3.7'
 wheel==0.38.4
-xmltodict==0.13.0
-yamllint==1.28.0
+xmltodict==0.13.0 ; python_version >= '3.4'
+yamllint==1.28.0 ; python_version >= '3.6'
