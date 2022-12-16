@@ -19,6 +19,7 @@ jobs:
     permissions:
       # Needed to upload the results to code-scanning dashboard.
       security-events: write
+      id-token: write
       actions: read
       contents: read
 
@@ -27,12 +28,14 @@ jobs:
         uses: step-security/harden-runner@ebacdc22ef6c2cfb85ee5ded8f2e640f4c776dd5 # v2.0.0
         with:
           egress-policy: block
+          disable-telemetry: true
           allowed-endpoints:
             api.github.com:443
             api.osv.dev:443
             bestpractices.coreinfrastructure.org:443
             codeload.github.com:443
             github.com:443
+            fulcio.sigstore.dev:443
             oauth2.sigstore.dev:443
 
       - name: "Checkout code"
@@ -48,6 +51,7 @@ jobs:
           # Read-only PAT token. To create it,
           # follow the steps in https://github.com/ossf/scorecard-action#pat-token-creation.
           repo_token: ${{ secrets.SCORECARD_TOKEN }}
+          #repo_token: ${{ secrets.GITHUB_TOKEN }}
           # Publish the results for public repositories to enable scorecard badges. For more details, see
           # https://github.com/ossf/scorecard-action#publishing-results.
           # For private repositories, `publish_results` will automatically be set to `false`, regardless
