@@ -32,5 +32,5 @@ LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/openbbterminal"
 LABEL org.opencontainers.image.description="OpenBBTerminal is an awesome stock and crypto market terminal"
 
-ENTRYPOINT ["sslyze"]
-CMD ["-h"]
+ENTRYPOINT ["openbb"]
+#CMD ["-h"]
