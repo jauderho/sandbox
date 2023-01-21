@@ -72,6 +72,13 @@ updates:
 
   # Maintain dependencies for Docker
   - package-ecosystem: "docker"
+    directory: /openbbterminal
+    open-pull-requests-limit: 20
+    schedule:
+      interval: "daily"
+      
+  # Maintain dependencies for Docker
+  - package-ecosystem: "docker"
     directory: /pingcastle
     open-pull-requests-limit: 20
     schedule:
