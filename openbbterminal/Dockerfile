@@ -1,5 +1,5 @@
 #FROM ubuntu:22.10@sha256:4f9ec2c0aa321966bfe625bc485aa1d6e96549679cfdf98bb404dfcb8e141a7f
-FROM python:3.11.0-slim-bullseye@sha256:f8cc89f5e47347703ec0c2b755464d7db2fa16f255ab860c4b24ba6ef2402020
+FROM python:3.11.1-slim-bullseye@sha256:79095e304e31196bad049e74f666508ac81909d201ec9371f9f3cd68fa365cf6
 #FROM python:3.9-alpine
 
 ARG BUILD_VERSION
