@@ -34,7 +34,7 @@ jobs:
       - name: Source checkout
         uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v2.4.0 
 
-      - uses: Vampire/setup-wsl@230f54c1aaf45965739002df30b3e4de43349a37 # v1
+      - uses: Vampire/setup-wsl@b3c1614fcbc8def88aecae987d13b238552ba398 # v1
         with:
           distribution: Alpine
 
