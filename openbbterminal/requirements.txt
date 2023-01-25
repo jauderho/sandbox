@@ -25,7 +25,7 @@ blinker==1.5 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2,
 bs4==0.0.1
 bt==0.2.9 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
 cachetools==5.3.0 ; python_version ~= '3.7'
-ccxt==2.6.66
+ccxt==2.6.76
 certifi==2022.12.7 ; python_version >= '3.6'
 cffi==1.15.1
 charset-normalizer==2.1.1 ; python_full_version >= '3.6.0'
@@ -41,7 +41,7 @@ cycler==0.11.0 ; python_version >= '3.6'
 cython==0.29.33 ; python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'
 dateparser==1.1.6 ; python_version >= '3.7'
 datetime==5.0
-debugpy==1.6.5 ; python_version >= '3.7'
+debugpy==1.6.6 ; python_version >= '3.7'
 decorator==5.1.1 ; python_version >= '3.5'
 defusedxml==0.7.1 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 degiro-connector==2.0.21 ; python_full_version >= '3.7.1' and python_full_version < '4.0.0'
@@ -96,7 +96,7 @@ joblib==1.2.0 ; python_version >= '3.7'
 json5==0.9.11
 jsonschema==3.2.0
 jupyter-client==7.4.1 ; python_version >= '3.7'
-jupyter-core==5.1.3 ; python_version >= '3.8'
+jupyter-core==5.1.5 ; python_version >= '3.8'
 jupyter-server==1.23.5 ; python_version >= '3.7'
 jupyterlab==3.5.3 ; python_version >= '3.7'
 jupyterlab-pygments==0.2.2 ; python_version >= '3.7'
@@ -119,7 +119,7 @@ multitasking==0.0.11
 mypy-extensions==0.4.3
 nbclassic==0.4.8 ; python_version >= '3.7'
 nbclient==0.7.2 ; python_full_version >= '3.7.0'
-nbconvert==7.2.8 ; python_version >= '3.7'
+nbconvert==7.2.9 ; python_version >= '3.7'
 nbformat==5.7.3 ; python_version >= '3.7'
 nest-asyncio==1.5.6 ; python_version >= '3.5'
 notebook==6.5.2 ; python_version >= '3.7'
@@ -143,10 +143,10 @@ pexpect==4.8.0 ; sys_platform != 'win32'
 pickleshare==0.7.5
 pillow==9.4.0 ; python_version >= '3.7'
 platformdirs==2.6.2 ; python_version >= '3.7'
-plotly==5.12.0 ; python_version >= '3.6'
+plotly==5.13.0 ; python_version >= '3.6'
 praw==7.6.1 ; python_version ~= '3.7'
 prawcore==2.3.0 ; python_version ~= '3.6'
-prometheus-client==0.15.0 ; python_version >= '3.6'
+prometheus-client==0.16.0 ; python_version >= '3.6'
 prompt-toolkit==3.0.36 ; python_full_version >= '3.6.2'
 property-cached==1.6.4 ; python_version >= '3.5'
 protobuf==3.20.1
@@ -193,7 +193,7 @@ rich==12.6.0 ; python_full_version >= '3.6.3' and python_full_version < '4.0.0'
 robin-stocks==2.1.0 ; python_version >= '3'
 ruamel.yaml==0.17.21 ; python_version >= '3'
 ruamel.yaml.clib==0.2.7 ; python_version < '3.11' and platform_python_implementation == 'CPython'
-scikit-learn==1.2.0 ; python_version >= '3.8'
+scikit-learn==1.2.1 ; python_version >= '3.8'
 scipy==1.10.0 ; python_version < '3.12' and python_version >= '3.8'
 screeninfo==0.6.7
 seaborn==0.11.2 ; python_version >= '3.6'
