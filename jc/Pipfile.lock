@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d64add5386e993245685c7d571394cc74c86858d1c6d8f25710cb483fa9bea45"
+            "sha256": "54cad75b64d545cbd839a278ea613decda399bc64c508e9378f14afd332d0a01"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -11,6 +11,11 @@
             {
                 "name": "pypi",
                 "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            },
+            {
+                "name": "piwheels",
+                "url": "https://www.piwheels.org/simple",
                 "verify_ssl": true
             }
         ]
