@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c80facdb5b1a672c06b6441ee773105180618fa5a86310f0ba1154055cdd51b8"
+            "sha256": "5c2dc7a1b24c5ca7d841ec05c2653ad2a4ffe3d20f3777ed6a58b9569a24286d"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -9,6 +9,11 @@
             {
                 "name": "pypi",
                 "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            },
+            {
+                "name": "piwheels",
+                "url": "https://www.piwheels.org/simple",
                 "verify_ssl": true
             }
         ]
@@ -24,11 +29,11 @@
         },
         "beautifulsoup4": {
             "hashes": [
-                "sha256:58d5c3d29f5a36ffeb94f02f0d786cd53014cf9b3b3951d42e0080d8a9498d30",
-                "sha256:ad9aa55b65ef2808eb405f46cf74df7fcb7044d5cbc26487f96eb2ef2e436693"
+                "sha256:0e79446b10b3ecb499c1556f7e228a53e64a2bfcebd455f370d8927cb5b59e39",
+                "sha256:bc4bdda6717de5a2987436fb8d72f45dc90dd856bdfd512a1314ce90349a0106"
             ],
             "markers": "python_full_version >= '3.6.0'",
-            "version": "==4.11.1"
+            "version": "==4.11.2"
         },
         "certifi": {
             "hashes": [
