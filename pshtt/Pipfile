@@ -3,9 +3,15 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[[source]]
+url = "https://www.piwheels.org/simple"
+verify_ssl = true
+name = "piwheels"
+
 [packages]
 #pshtt = "*"
-pshtt = "0.6.10"
+#pshtt = "0.6.10"
+pshtt = { git = "https://github.com/cisagov/pshtt", editable = true }
 #pshtt = { git = "https://github.com/cisagov/pshtt", editable = true, ref="v0.6.10" }
 #pshtt = { git = "https://github.com/cisagov/pshtt", editable = true, ref="v0.6.6" }
 #openbbterminal = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true, ref="v2.2.0" }
