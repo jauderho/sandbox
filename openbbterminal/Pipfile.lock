@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d5d6b60d353709cd4f1a4a36b0bc1cab72291b460ed0eb3aba05a785e1b80f1d"
+            "sha256": "d3b35c7323dafb23014709e8614528ba8224dc58e4eab3dc216acc99989d964b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -11,6 +11,11 @@
             {
                 "name": "pypi",
                 "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            },
+            {
+                "name": "piwheels",
+                "url": "https://www.piwheels.org/simple",
                 "verify_ssl": true
             }
         ]
@@ -277,11 +282,11 @@
         },
         "beautifulsoup4": {
             "hashes": [
-                "sha256:58d5c3d29f5a36ffeb94f02f0d786cd53014cf9b3b3951d42e0080d8a9498d30",
-                "sha256:ad9aa55b65ef2808eb405f46cf74df7fcb7044d5cbc26487f96eb2ef2e436693"
+                "sha256:0e79446b10b3ecb499c1556f7e228a53e64a2bfcebd455f370d8927cb5b59e39",
+                "sha256:bc4bdda6717de5a2987436fb8d72f45dc90dd856bdfd512a1314ce90349a0106"
             ],
             "markers": "python_full_version >= '3.6.0'",
-            "version": "==4.11.1"
+            "version": "==4.11.2"
         },
         "bleach": {
             "hashes": [
@@ -330,10 +335,10 @@
         },
         "ccxt": {
             "hashes": [
-                "sha256:9b89b1d2f99a8c24cd0a5755ec3599cf1a3ade21a28b36ac34e98cf527d994f4",
-                "sha256:f1d950d859d98fa08b8c611f23f7043ad3edd04b93dff8a74ba156e042eaa9e4"
+                "sha256:2c9226b0e92f9fbcf43463d1bc727270e76b68255f1c0c2c3d8a900fbe2cf97e",
+                "sha256:a8424e68ff33b96aa1df5bf8bf0b68ece6abd05ed1dd886d0703f9a540b22c99"
             ],
-            "version": "==2.7.18"
+            "version": "==2.7.23"
         },
         "certifi": {
             "hashes": [
@@ -1104,11 +1109,11 @@
         },
         "ipykernel": {
             "hashes": [
-                "sha256:719eac0f1d86706589ee0910d6f785fd4c1ef123ab8e3466b8961c37991d0ef2",
-                "sha256:a9aaefb0cd6f44e3dcaeaafb9222862ae73831f71afd77f465fc83d6199d1888"
+                "sha256:1893c5b847033cd7a58f6843b04a9349ffb1031bc6588401cadc9adb58da428e",
+                "sha256:5d0675d5f48bf6a95fd517d7b70bcb3b2c5631b2069949b5c2d6e1d7477fb5a0"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==6.21.0"
+            "version": "==6.20.2"
         },
         "ipympl": {
             "hashes": [
@@ -1785,15 +1790,15 @@
         "openbbterminal": {
             "editable": true,
             "git": "https://github.com/OpenBB-finance/OpenBBTerminal.git",
-            "ref": "49641bd9e80067767662253ead032b7bf8e8829f"
+            "ref": "76c937cdcf34037108fbbadd2e69535c2f1fbc8d"
         },
         "openpyxl": {
             "hashes": [
-                "sha256:0ab6d25d01799f97a9464630abacbb34aafecdcaa0ef3cba6d6b3499867d0355",
-                "sha256:e47805627aebcf860edb4edf7987b1309c1b3632f3750538ed962bbcc3bd7449"
+                "sha256:24d7d361025d186ba91eff58135d50855cf035a84371b891e58fb6eb5125660f",
+                "sha256:eccedbe1cdd8b2494057e73959b496821141038dbb7eb9266ea59e3f34208231"
             ],
             "markers": "python_version >= '3.6'",
-            "version": "==3.0.10"
+            "version": "==3.1.0"
         },
         "packaging": {
             "hashes": [

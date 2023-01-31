@@ -1,4 +1,5 @@
 -i https://pypi.org/simple
+--extra-index-url https://www.piwheels.org/simple
 aiodns==3.0.0 ; python_full_version >= '3.5.2'
 aiohttp==3.8.3 ; python_version >= '3.6'
 aiosignal==1.3.1 ; python_version >= '3.7'
@@ -19,13 +20,13 @@ backcall==0.2.0
 backoff==2.2.1 ; python_version >= '3.7' and python_version < '4.0'
 base58==2.1.1 ; python_version >= '3.5'
 beartype==0.7.1 ; python_full_version >= '3.6.0'
-beautifulsoup4==4.11.1 ; python_full_version >= '3.6.0'
+beautifulsoup4==4.11.2 ; python_full_version >= '3.6.0'
 bleach==6.0.0 ; python_version >= '3.7'
 blinker==1.5 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 bs4==0.0.1
 bt==0.2.9 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
 cachetools==5.3.0 ; python_version ~= '3.7'
-ccxt==2.7.18
+ccxt==2.7.23
 certifi==2022.12.7 ; python_version >= '3.6'
 cffi==1.15.1
 charset-normalizer==2.1.1 ; python_full_version >= '3.6.0'
@@ -84,7 +85,7 @@ interface-meta==1.3.0 ; python_version >= '3.7' and python_version < '4.0'
 investiny==0.5.0 ; python_version >= '3.8' and python_version < '4.0'
 investpy==1.0.8 ; python_version >= '3.7'
 ipyflex==0.2.6 ; python_version >= '3.6'
-ipykernel==6.21.0 ; python_version >= '3.8'
+ipykernel==6.20.2 ; python_version >= '3.8'
 ipympl==0.8.4
 ipython==8.5.0 ; python_version >= '3.8'
 ipython-genutils==0.2.0
@@ -128,8 +129,8 @@ numpy==1.23.4 ; python_version >= '3.8'
 oandapyv20==0.6.3
 oauthlib==3.2.2 ; python_version >= '3.6'
 onetimepass==1.0.1
--e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@49641bd9e80067767662253ead032b7bf8e8829f#egg=openbbterminal
-openpyxl==3.0.10 ; python_version >= '3.6'
+-e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@76c937cdcf34037108fbbadd2e69535c2f1fbc8d#egg=openbbterminal
+openpyxl==3.1.0 ; python_version >= '3.6'
 packaging==23.0 ; python_version >= '3.7'
 pandas==1.5.3 ; python_version >= '3.8'
 pandas-datareader==0.10.0 ; python_version >= '3.6'
