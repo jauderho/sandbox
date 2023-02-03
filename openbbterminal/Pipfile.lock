@@ -335,10 +335,10 @@
         },
         "ccxt": {
             "hashes": [
-                "sha256:1124cb7da8ae3bcc99a1a70666fa29bfb91a505fc9c847321d89738c7647f2cc",
-                "sha256:f565e9d09242f36d307f7a2a8f28a81e5a2fbba62a5ead26755a8a6163d56c15"
+                "sha256:083ef9dda6c64a3c5b7873a454c999e49c3e6c857b190d50044349f03097a028",
+                "sha256:a5cd8e41ca8b6f9a2e35f967b84867a50be61e32bb9806e09e79ab784cd9cda1"
             ],
-            "version": "==2.7.31"
+            "version": "==2.7.32"
         },
         "certifi": {
             "hashes": [
@@ -618,11 +618,11 @@
         },
         "dateparser": {
             "hashes": [
-                "sha256:c47b6e4b8c4b2b2a21690111b6571b6991295ba327ec6503753abeebf5e80696",
-                "sha256:e703db1815270c020552f4b3e3a981937b48b2cbcfcef5347071b74788dd9214"
+                "sha256:fbed8b738a24c9cd7f47c4f2089527926566fe539e1a06125eddba75917b1eef",
+                "sha256:ff047d9cffad4d3113ead8ec0faf8a7fc43bab7d853ac8715e071312b53c465a"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==1.1.6"
+            "version": "==1.1.7"
         },
         "datetime": {
             "hashes": [
@@ -1109,11 +1109,11 @@
         },
         "ipykernel": {
             "hashes": [
-                "sha256:1893c5b847033cd7a58f6843b04a9349ffb1031bc6588401cadc9adb58da428e",
-                "sha256:5d0675d5f48bf6a95fd517d7b70bcb3b2c5631b2069949b5c2d6e1d7477fb5a0"
+                "sha256:1a04bb359212e23e46adc0116ec82ea128c1e5bd532fde4fbe679787ff36f0cf",
+                "sha256:a0f8eece39cab1ee352c9b59ec67bbe44d8299f8238e4c16ff7f4cf0052d3378"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==6.20.2"
+            "version": "==6.21.1"
         },
         "ipympl": {
             "hashes": [
@@ -1151,6 +1151,13 @@
                 "sha256:906714829fedbc89955d52806c903f2332e3948ed94e31e85037f9e0226b8376"
             ],
             "version": "==0.1.16"
+        },
+        "isodate": {
+            "hashes": [
+                "sha256:0751eece944162659049d35f4f549ed815792b38793f07cf73381c1c87cbed96",
+                "sha256:48c5881de7e8b0a0d648cb024c8062dc84e7b840ed81e864c7614fd3c127bde9"
+            ],
+            "version": "==0.6.1"
         },
         "jedi": {
             "hashes": [
@@ -1790,7 +1797,7 @@
         "openbbterminal": {
             "editable": true,
             "git": "https://github.com/OpenBB-finance/OpenBBTerminal.git",
-            "ref": "dbd20977b68c2bbddf1baca37c7744cb3d139334"
+            "ref": "366429133bcb1fbe208cce944a8caa0413a0c136"
         },
         "openpyxl": {
             "hashes": [
@@ -2611,6 +2618,14 @@
             "markers": "python_version >= '2.7'",
             "version": "==1.9.1"
         },
+        "rdflib": {
+            "hashes": [
+                "sha256:62dc3c86d1712db0f55785baf8047f63731fa59b2682be03219cb89262065942",
+                "sha256:85c34a86dfc517a41e5f2425a41a0aceacc23983462b32e68610b9fad1383bca"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==6.2.0"
+        },
         "regex": {
             "hashes": [
                 "sha256:052b670fafbe30966bbe5d025e90b2a491f85dfe5b2583a163b5e60a85a321ad",
@@ -2947,6 +2962,14 @@
             "markers": "python_version >= '3.6'",
             "version": "==2.3.2.post1"
         },
+        "sparqlwrapper": {
+            "hashes": [
+                "sha256:3fed3ebcc77617a4a74d2644b86fd88e0f32e7f7003ac7b2b334c026201731f1",
+                "sha256:c99a7204fff676ee28e6acef327dc1ff8451c6f7217dcd8d49e8872f324a8a20"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==2.0.0"
+        },
         "squarify": {
             "hashes": [
                 "sha256:54091f6ad175f7f201f8934574e647ce1b50dedc478c5fd968688eb7d7469f95",
@@ -3095,7 +3118,7 @@
                 "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc",
                 "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"
             ],
-            "markers": "python_version >= '3.7'",
+            "markers": "python_version < '3.11'",
             "version": "==2.0.1"
         },
         "toolz": {
