@@ -1,0 +1,31 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "897311e298b8eb90efadb9bc027b398e9c5167d840f02ded2b9e73d56979803a"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            },
+            {
+                "name": "piwheels",
+                "url": "https://www.piwheels.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "paperless-ngx": {
+            "editable": true,
+            "git": "https://github.com/paperless-ngx/paperless-ngx.git",
+            "ref": "bdf9b2453fcd8ef14045463bc90779f977ce5ed8"
+        }
+    },
+    "develop": {}
+}
