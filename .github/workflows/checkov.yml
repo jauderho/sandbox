@@ -31,7 +31,7 @@ jobs:
 
       - name: Run Checkov action
         id: checkov
-        uses: bridgecrewio/checkov-action@fd89aa667bf88e4c08b5c62ee4b930246c9adf9d # master
+        uses: bridgecrewio/checkov-action@f73b132aedb4299b54ed2573ae5c34a9dc69e94e # master
         with:
           directory: .
           #check: CKV_AWS_1 # optional: run only a specific check_id. can be comma separated list
