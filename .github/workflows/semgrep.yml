@@ -54,7 +54,7 @@ jobs:
     #    SEMGREP_SEND_METRICS: on
         
     - name: Upload SARIF file for GitHub Advanced Security Dashboard
-      uses: github/codeql-action/upload-sarif@39d8d7e78f59cf6b40ac3b9fbebef0c753d7c9e5
+      uses: github/codeql-action/upload-sarif@8775e868027fa230df8586bdf502bbd9b618a477
       with:
         sarif_file: semgrep.sarif
       if: always()
