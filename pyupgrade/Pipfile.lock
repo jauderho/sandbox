@@ -1,0 +1,42 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "41b28d0bc37ee06a67b53fccf6d1649c8e6d9cb4041cc4ac88cf24e9c060dc31"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            },
+            {
+                "name": "piwheels",
+                "url": "https://www.piwheels.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "pyupgrade": {
+            "hashes": [
+                "sha256:3b93641963df022d605c78aeae4b5956a5296ea24701eafaef9c487527b77e60",
+                "sha256:f88bce38b0ba92c2a9a5063c8629e456e8d919b67d2d42c7ecab82ff196f9813"
+            ],
+            "index": "pypi",
+            "version": "==3.3.1"
+        },
+        "tokenize-rt": {
+            "hashes": [
+                "sha256:3160bc0c3e8491312d0485171dea861fc160a240f5f5766b72a1165408d10740",
+                "sha256:c67772c662c6b3dc65edf66808577968fb10badfc2042e3027196bed4daf9e5a"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==5.0.0"
+        }
+    },
+    "develop": {}
+}
