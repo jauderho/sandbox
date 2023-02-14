@@ -59,10 +59,12 @@ bleach = "*"
 #
 
 # Pin this until piwheels is building 1.9 (see https://www.piwheels.org/project/scipy/)
-scipy = "==1.8.1"
+#scipy = "==1.8.1"
+scipy = "*"
 
 # Newer versions aren't building yet (see https://www.piwheels.org/project/cryptography/)
-cryptography = "==38.0.1"
+#cryptography = "==38.0.1"
+cryptography = "*"
 
 # Locked version until https://github.com/django/channels_redis/issues/332
 # is resolved
