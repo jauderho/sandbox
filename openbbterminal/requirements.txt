@@ -1,8 +1,10 @@
 -i https://pypi.org/simple
 --extra-index-url https://www.piwheels.org/simple
 aiodns==3.0.0 ; python_full_version >= '3.5.2'
+aiofiles==22.1.0 ; python_version >= '3.7' and python_version < '4.0'
 aiohttp==3.8.4 ; python_version >= '3.6'
 aiosignal==1.3.1 ; python_version >= '3.7'
+aiosqlite==0.18.0 ; python_version >= '3.7'
 alpha-vantage==2.3.1
 altair==4.2.2 ; python_version >= '3.7'
 ansiwrap==0.8.4
@@ -10,12 +12,13 @@ anyio==3.6.2 ; python_full_version >= '3.6.2'
 appdirs==1.4.4
 argon2-cffi==21.3.0 ; python_version >= '3.6'
 argon2-cffi-bindings==21.2.0 ; python_version >= '3.6'
+arrow==1.2.3 ; python_version >= '3.6'
 ascii-magic==1.6 ; python_version >= '3.5'
 astor==0.8.1 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
 asttokens==2.2.1
 async-timeout==4.0.2 ; python_version >= '3.6'
 attrs==22.2.0 ; python_version >= '3.6'
-babel==2.11.0 ; python_version >= '3.6'
+babel==2.12.1 ; python_version >= '3.7'
 backcall==0.2.0
 backoff==2.2.1 ; python_version >= '3.7' and python_version < '4.0'
 base58==2.1.1 ; python_version >= '3.5'
@@ -25,7 +28,7 @@ blinker==1.5 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2,
 bs4==0.0.1
 bt==0.2.9 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
 cachetools==5.3.0 ; python_version ~= '3.7'
-ccxt==2.8.37
+ccxt==2.8.67
 certifi==2022.12.7 ; python_version >= '3.6'
 cffi==1.15.1
 charset-normalizer==2.1.1 ; python_full_version >= '3.6.0'
@@ -51,27 +54,28 @@ entrypoints==0.4 ; python_version >= '3.6'
 et-xmlfile==1.1.0 ; python_version >= '3.6'
 exchange-calendars==4.2.5 ; python_version ~= '3.8'
 executing==1.2.0
-fastjsonschema==2.16.2
+fastjsonschema==2.16.3
 feedparser==6.0.10 ; python_version >= '3.6'
 ffn==0.3.6
-financedatabase==2.0.5
+financedatabase==2.0.8
 finnhub-python==2.4.16
 finviz==1.4.4
 finvizfinance==0.14.5 ; python_version >= '3.5'
 flake8==6.0.0 ; python_full_version >= '3.8.1'
 fonttools==4.38.0 ; python_version >= '3.7'
 formulaic==0.3.4 ; python_full_version >= '3.7.1' and python_full_version < '4.0.0'
+fqdn==1.5.1
 fred==3.1
 fredapi==0.4.3
-frozendict==2.3.4 ; python_version >= '3.6'
+frozendict==2.3.5 ; python_version >= '3.6'
 frozenlist==1.3.3 ; python_version >= '3.7'
 fundamentalanalysis==0.2.14
 future==0.18.3 ; python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'
 gitdb==4.0.10 ; python_version >= '3.7'
-gitpython==3.1.30 ; python_version >= '3.7'
-grpcio==1.51.1 ; python_version >= '3.7'
+gitpython==3.1.31 ; python_version >= '3.7'
+grpcio==1.51.3 ; python_version >= '3.7'
 hijri-converter==2.2.4 ; python_version >= '3.6'
-holidays==0.20 ; python_version >= '3.7'
+holidays==0.14.2 ; python_version >= '3.7'
 html5lib==1.1 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 idna==3.4 ; python_version >= '3.5'
 importlib-metadata==6.0.0 ; python_version >= '3.7'
@@ -86,17 +90,23 @@ ipython-genutils==0.2.0
 ipywidgets==8.0.4 ; python_version >= '3.7'
 iso8601==0.1.16
 isodate==0.6.1
+isoduration==20.11.0
 jedi==0.18.2 ; python_version >= '3.6'
 jinja2==3.1.2 ; python_version >= '3.7'
 joblib==1.2.0 ; python_version >= '3.7'
 json5==0.9.11
-jsonschema==3.2.0
+jsonpointer==2.3
+jsonschema==4.17.3 ; python_version >= '3.7'
 jupyter-client==7.4.1 ; python_version >= '3.7'
 jupyter-core==5.2.0 ; python_version >= '3.8'
-jupyter-server==1.23.5 ; python_version >= '3.7'
-jupyterlab==3.5.3 ; python_version >= '3.7'
+jupyter-events==0.6.3 ; python_version >= '3.7'
+jupyter-server==1.23.6 ; python_version >= '3.7'
+jupyter-server-fileid==0.8.0 ; python_version >= '3.7'
+jupyter-server-ydoc==0.6.1 ; python_version >= '3.7'
+jupyter-ydoc==0.2.2 ; python_version >= '3.7'
+jupyterlab==3.6.1 ; python_version >= '3.7'
 jupyterlab-pygments==0.2.2 ; python_version >= '3.7'
-jupyterlab-server==2.16.6 ; python_version >= '3.7'
+jupyterlab-server==2.19.0 ; python_version >= '3.7'
 jupyterlab-widgets==3.0.5 ; python_version >= '3.7'
 kiwisolver==1.4.4 ; python_version >= '3.7'
 korean-lunar-calendar==0.3.1
@@ -108,13 +118,13 @@ matplotlib==3.7.0 ; python_version >= '3.8'
 matplotlib-inline==0.1.6 ; python_version >= '3.5'
 mccabe==0.7.0 ; python_version >= '3.6'
 mistune==2.0.5
-more-itertools==9.0.0 ; python_version >= '3.7'
+more-itertools==9.1.0 ; python_version >= '3.7'
 mplfinance==0.12.9b7
 mstarpy==0.0.4
 multidict==6.0.4 ; python_version >= '3.7'
 multitasking==0.0.11
 mypy-extensions==1.0.0 ; python_version >= '3.5'
-nbclassic==0.5.1 ; python_version >= '3.7'
+nbclassic==0.5.2 ; python_version >= '3.7'
 nbclient==0.7.2 ; python_full_version >= '3.7.0'
 nbconvert==7.2.9 ; python_version >= '3.7'
 nbformat==5.7.3 ; python_version >= '3.7'
@@ -125,7 +135,7 @@ numpy==1.23.4 ; python_version >= '3.8'
 oandapyv20==0.6.3
 oauthlib==3.2.2 ; python_version >= '3.6'
 onetimepass==1.0.1
--e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@c2f88d44992e9a08a92915034aa1ebced43f6cd1#egg=openbbterminal
+-e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@b60661940bee141254fc777ccb29f1c1d8ee917c#egg=openbbterminal
 openpyxl==3.1.1 ; python_version >= '3.6'
 packaging==23.0 ; python_version >= '3.7'
 pandas==1.5.3 ; python_version >= '3.8'
@@ -141,10 +151,10 @@ pickleshare==0.7.5
 pillow==9.4.0 ; python_version >= '3.7'
 platformdirs==3.0.0 ; python_version >= '3.7'
 plotly==5.13.1 ; python_version >= '3.6'
-praw==7.6.1 ; python_version ~= '3.7'
+praw==7.7.0 ; python_version ~= '3.7'
 prawcore==2.3.0 ; python_version ~= '3.6'
 prometheus-client==0.16.0 ; python_version >= '3.6'
-prompt-toolkit==3.0.36 ; python_full_version >= '3.6.2'
+prompt-toolkit==3.0.38 ; python_full_version >= '3.7.0'
 property-cached==1.6.4 ; python_version >= '3.5'
 protobuf==3.20.1 ; python_version >= '3.7'
 psaw==0.0.12 ; python_version >= '3'
@@ -157,11 +167,12 @@ pycares==4.3.0
 pycodestyle==2.10.0 ; python_version >= '3.6'
 pycoingecko==2.3.0
 pycparser==2.21
+pycryptodome==3.17 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 pydeck==0.8.0 ; python_version >= '3.7'
 pyflakes==3.0.1 ; python_version >= '3.6'
 pygments==2.14.0 ; python_version >= '3.6'
 pyhdfe==0.1.2 ; python_version >= '3.6'
-pyluach==2.1.0 ; python_version >= '3.7'
+pyluach==2.2.0 ; python_version >= '3.7'
 pymeeus==0.5.12
 pympler==1.0.1 ; python_version >= '3.6'
 pyotp==2.8.0 ; python_version >= '3.7'
@@ -169,11 +180,12 @@ pyparsing==3.0.9 ; python_full_version >= '3.6.8'
 pyprind==2.11.3
 pyrsistent==0.18.1 ; python_version >= '3.7'
 pythclient==0.1.4 ; python_full_version >= '3.7.0'
-python-binance==1.0.16
+python-binance==1.0.17
 python-coinmarketcap==0.2
 python-dateutil==2.8.2 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
-python-dotenv==1.0.0 ; python_version >= '3.5'
+python-dotenv==0.19.2 ; python_version >= '3.5'
 python-i18n==0.3.9
+python-json-logger==2.0.7 ; python_version >= '3.6'
 pytrends==4.9.0 ; python_version >= '3.7'
 pytz==2022.7.1
 pytz-deprecation-shim==0.1.0.post0 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
@@ -184,14 +196,16 @@ rapidfuzz==2.13.7 ; python_version >= '3.7'
 rdflib==6.2.0 ; python_version >= '3.7'
 regex==2022.10.31 ; python_version >= '3.6'
 requests==2.28.2 ; python_version >= '3.7' and python_version < '4'
+requests-futures==1.0.0
 requests-oauthlib==1.3.1 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
 retrying==1.3.4
+rfc3339-validator==0.1.4 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+rfc3986-validator==0.1.1 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 rich==12.6.0 ; python_full_version >= '3.6.3' and python_full_version < '4.0.0'
 robin-stocks==2.1.0 ; python_version >= '3'
 ruamel.yaml==0.17.21 ; python_version >= '3'
-ruamel.yaml.clib==0.2.7 ; python_version < '3.11' and platform_python_implementation == 'CPython'
 scikit-learn==1.2.1 ; python_version >= '3.8'
-scipy==1.10.0 ; python_version < '3.12' and python_version >= '3.8'
+scipy==1.10.1 ; python_version < '3.12' and python_version >= '3.8'
 screeninfo==0.6.7
 seaborn==0.11.2 ; python_version >= '3.6'
 semver==2.13.0 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
@@ -202,7 +216,7 @@ sgmllib3k==1.0.0
 six==1.16.0 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
 smmap==5.0.0 ; python_version >= '3.6'
 sniffio==1.3.0 ; python_version >= '3.7'
-soupsieve==2.3.2.post1 ; python_version >= '3.6'
+soupsieve==2.4 ; python_version >= '3.7'
 sparqlwrapper==2.0.0 ; python_version >= '3.7'
 squarify==0.4.3
 stack-data==0.6.2
@@ -218,32 +232,37 @@ threadpoolctl==3.1.0 ; python_version >= '3.6'
 tinycss2==1.2.1 ; python_version >= '3.7'
 tokenterminal==1.0.1
 toml==0.10.2 ; python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'
-tomli==2.0.1 ; python_version < '3.11'
+tomli==2.0.1 ; python_version >= '3.7'
 toolz==0.12.0 ; python_version >= '3.5'
 tornado==6.2 ; python_version >= '3.7'
 tqdm==4.64.1 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
 tradingview-ta==3.3.0 ; python_version >= '3.6'
 traitlets==5.9.0 ; python_version >= '3.7'
-typing-extensions==4.4.0 ; python_version >= '3.7'
+tweepy==4.12.1 ; python_version >= '3.7'
+typing-extensions==4.5.0 ; python_version >= '3.7'
 tzdata==2022.7 ; python_version >= '3.6'
 tzlocal==4.2 ; python_version >= '3.6'
 ujson==5.7.0 ; python_version >= '3.7'
 update-checker==0.18.0
+uri-template==1.2.0
 urllib3==1.26.14 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
 user-agent==0.1.10
 vadersentiment==3.3.2
 validators==0.20.0 ; python_version >= '3.4'
 valinvest==0.0.2 ; python_version >= '3.6'
 voila==0.4.0 ; python_version >= '3.7'
-watchdog==2.3.0 ; python_version >= '3.6'
+watchdog==2.3.1 ; python_version >= '3.6'
 wcwidth==0.2.6
+webcolors==1.12
 webencodings==0.5.1
 websocket-client==1.5.1 ; python_version >= '3.7'
 websockets==10.4 ; python_version >= '3.7'
 widgetsnbextension==4.0.5 ; python_version >= '3.7'
-wrapt==1.14.1 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
-y-py==0.5.4
+wrapt==1.15.0 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+y-py==0.5.9
+yahooquery==2.3.0
 yarl==1.8.2 ; python_full_version >= '3.5.2'
-yfinance==0.2.11
-zipp==3.13.0 ; python_version >= '3.7'
+yfinance==0.2.12
+ypy-websocket==0.8.2 ; python_version >= '3.7'
+zipp==3.15.0 ; python_version >= '3.7'
 zope.interface==5.5.2 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
