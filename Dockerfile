@@ -11,7 +11,7 @@ FROM ubuntu:23.04@sha256:5ecfaeaaf7b0351f7ed301e389a13a6ff04f32f6e0e5e65f700b932
 # Alma Linux 9.1
 FROM almalinux:9.1-minimal@sha256:37d1d055ecc8f02a9142c82016712a797f3959da0c41c6ee93d7c2af8e0603dd AS almalinux9.1minimal-base
 
-# Go 1.19 on Alpine 3.17
+# Go 1.20 on Alpine 3.17
 FROM golang:1.20.2-alpine3.17@sha256:4e6bc0eafc261b6c8ba9bd9999b6698e8cefbe21e6d90fbc10c34599d75dc608 AS golang1.19-base
 
 # node:19-alpine3.17 
