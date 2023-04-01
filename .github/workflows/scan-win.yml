@@ -52,7 +52,7 @@ jobs:
           sarif_file: 'trivy-${{ matrix.image }}.sarif'
 
   snyk:
-    needs: trivy
+    #needs: trivy
     permissions:
       contents: read # for actions/checkout to fetch code
       security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
@@ -93,7 +93,7 @@ jobs:
           sarif_file: snyk.sarif
 
   anchore:
-    needs: snyk
+    #needs: snyk
     permissions:
       contents: read # for actions/checkout to fetch code
       security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
