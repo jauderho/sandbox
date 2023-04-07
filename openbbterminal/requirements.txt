@@ -22,7 +22,7 @@ babel==2.12.1 ; python_version >= '3.7'
 backcall==0.2.0
 backoff==2.2.1 ; python_version >= '3.7' and python_version < '4.0'
 base58==2.1.1 ; python_version >= '3.5'
-beautifulsoup4==4.12.1 ; python_full_version >= '3.6.0'
+beautifulsoup4==4.12.2 ; python_full_version >= '3.6.0'
 bleach==6.0.0 ; python_version >= '3.7'
 blinker==1.6 ; python_version >= '3.7'
 bs4==0.0.1
@@ -79,7 +79,7 @@ hijri-converter==2.2.4 ; python_version >= '3.6'
 holidays==0.14.2 ; python_version >= '3.7'
 html5lib==1.1 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 idna==3.4 ; python_version >= '3.5'
-importlib-metadata==6.1.0 ; python_version >= '3.7'
+importlib-metadata==6.2.0 ; python_version >= '3.7'
 inflection==0.5.1 ; python_version >= '3.5'
 interface-meta==1.3.0 ; python_version >= '3.7' and python_version < '4.0'
 intrinio-sdk==6.23.1
@@ -129,13 +129,13 @@ nbclient==0.7.3 ; python_full_version >= '3.7.0'
 nbconvert==7.3.0 ; python_version >= '3.7'
 nbformat==5.8.0 ; python_version >= '3.7'
 nest-asyncio==1.5.6 ; python_version >= '3.5'
-notebook==6.5.3 ; python_version >= '3.7'
+notebook==6.5.4 ; python_version >= '3.7'
 notebook-shim==0.2.2 ; python_version >= '3.7'
 numpy==1.23.4 ; python_version >= '3.8'
 oandapyv20==0.6.3
 oauthlib==3.2.2 ; python_version >= '3.6'
 onetimepass==1.0.1
--e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@b9ea4d5cd05a945e02c108af4d08b921d6b836d1#egg=openbbterminal
+-e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@3c86851140971c30662b5daeb26c1866ecc327ae#egg=openbbterminal
 openpyxl==3.1.2 ; python_version >= '3.6'
 packaging==23.0 ; python_version >= '3.7'
 pandas==1.5.3 ; python_version >= '3.8'
@@ -210,7 +210,6 @@ scikit-learn==1.2.2 ; python_version >= '3.8'
 scipy==1.10.1 ; python_version < '3.12' and python_version >= '3.8'
 screeninfo==0.6.7
 seaborn==0.11.2 ; python_version >= '3.6'
-semver==3.0.0 ; python_version >= '3.7'
 send2trash==1.8.0
 setuptools==65.4.1 ; python_version >= '3.7'
 setuptools-scm==6.4.2 ; python_version >= '3.6'
@@ -224,7 +223,7 @@ squarify==0.4.3
 stack-data==0.6.2
 statsmodels==0.13.5 ; python_version >= '3.7'
 stocksera==0.1.21 ; python_version >= '3.6'
-streamlit==1.20.0 ; python_version >= '3.7' and python_full_version != '3.9.7'
+streamlit==1.21.0 ; python_version >= '3.7' and python_full_version != '3.9.7'
 svglib==1.5.1 ; python_version >= '3.7'
 tabulate==0.9.0 ; python_version >= '3.7'
 tenacity==7.0.0 ; python_version >= '3.6'
@@ -259,7 +258,7 @@ wcwidth==0.2.6
 webcolors==1.13
 webencodings==0.5.1
 websocket-client==1.5.1 ; python_version >= '3.7'
-websockets==11.0 ; python_version >= '3.7'
+websockets==11.0.1 ; python_version >= '3.7'
 widgetsnbextension==4.0.7 ; python_version >= '3.7'
 wrapt==1.15.0 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 y-py==0.5.9
