@@ -75,6 +75,8 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/s390x
           #platforms: linux/amd64
           build-args: BUILD_VERSION
+          sbom: true
+          provenance: true
           cache-from: type=gha, scope=${{ github.workflow }}
           cache-to: type=gha, scope=${{ github.workflow }}
           labels: ${{ steps.docker_meta.outputs.labels }}
@@ -91,6 +93,8 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/s390x
           #platforms: linux/amd64
           build-args: BUILD_STABLE_VERSION
+          sbom: true
+          provenance: true
           cache-from: type=gha, scope=${{ github.workflow }}
           cache-to: type=gha, scope=${{ github.workflow }}
           labels: |
