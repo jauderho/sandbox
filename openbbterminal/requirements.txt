@@ -24,7 +24,7 @@ backoff==2.2.1 ; python_version >= '3.7' and python_version < '4.0'
 base58==2.1.1 ; python_version >= '3.5'
 beautifulsoup4==4.12.2 ; python_full_version >= '3.6.0'
 bleach==6.0.0 ; python_version >= '3.7'
-blinker==1.6 ; python_version >= '3.7'
+blinker==1.6.1 ; python_version >= '3.7'
 bs4==0.0.1
 bt==0.2.9 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
 cachetools==5.3.0 ; python_version ~= '3.7'
@@ -53,7 +53,7 @@ detecta==0.0.5 ; python_version >= '3.6'
 dnspython==2.3.0 ; python_version >= '3.7' and python_version < '4.0'
 entrypoints==0.4 ; python_version >= '3.6'
 et-xmlfile==1.1.0 ; python_version >= '3.6'
-exchange-calendars==4.2.5 ; python_version ~= '3.8'
+exchange-calendars==4.2.6 ; python_version ~= '3.8'
 executing==1.2.0
 fastjsonschema==2.16.3
 feedparser==6.0.10 ; python_version >= '3.6'
@@ -68,7 +68,7 @@ formulaic==0.3.4 ; python_full_version >= '3.7.1' and python_full_version < '4.0
 fqdn==1.5.1
 fred==3.1
 fredapi==0.4.3
-frozendict==2.3.6 ; python_version >= '3.6'
+frozendict==2.3.7 ; python_version >= '3.6'
 frozenlist==1.3.3 ; python_version >= '3.7'
 fundamentalanalysis==0.2.14
 future==0.18.3 ; python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'
@@ -79,7 +79,7 @@ hijri-converter==2.2.4 ; python_version >= '3.6'
 holidays==0.14.2 ; python_version >= '3.7'
 html5lib==1.1 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 idna==3.4 ; python_version >= '3.5'
-importlib-metadata==6.2.0 ; python_version >= '3.7'
+importlib-metadata==6.2.1 ; python_version >= '3.7'
 inflection==0.5.1 ; python_version >= '3.5'
 interface-meta==1.3.0 ; python_version >= '3.7' and python_version < '4.0'
 intrinio-sdk==6.23.1
@@ -101,7 +101,7 @@ jupyter-client==7.4.1 ; python_version >= '3.7'
 jupyter-core==5.3.0 ; python_version >= '3.8'
 jupyter-events==0.6.3 ; python_version >= '3.7'
 jupyter-server==1.23.6 ; python_version >= '3.7'
-jupyter-server-fileid==0.8.0 ; python_version >= '3.7'
+jupyter-server-fileid==0.9.0 ; python_version >= '3.7'
 jupyter-server-ydoc==0.8.0 ; python_version >= '3.7'
 jupyter-ydoc==0.2.3 ; python_version >= '3.7'
 jupyterlab==3.6.3 ; python_version >= '3.7'
@@ -135,7 +135,7 @@ numpy==1.23.4 ; python_version >= '3.8'
 oandapyv20==0.6.3
 oauthlib==3.2.2 ; python_version >= '3.6'
 onetimepass==1.0.1
--e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@8b30f1a11702ccecfcd03f42bd350b2419ec3610#egg=openbbterminal
+-e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@2b52337da98f8383db55557b1ac82b2d60d9d570#egg=openbbterminal
 openpyxl==3.1.2 ; python_version >= '3.6'
 packaging==23.0 ; python_version >= '3.7'
 pandas==1.5.3 ; python_version >= '3.8'
@@ -264,7 +264,7 @@ wrapt==1.15.0 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2
 y-py==0.5.9
 yahooquery==2.3.1
 yarl==1.8.2 ; python_full_version >= '3.5.2'
-yfinance==0.2.14
+yfinance==0.2.16
 ypy-websocket==0.8.2 ; python_version >= '3.7'
 zipp==3.15.0 ; python_version >= '3.7'
 zope.interface==6.0 ; python_version >= '3.7'
