@@ -75,7 +75,7 @@ future==0.18.3 ; python_version >= '2.6' and python_version not in '3.0, 3.1, 3.
 gitdb==4.0.10 ; python_version >= '3.7'
 gitpython==3.1.31 ; python_version >= '3.7'
 grpcio==1.54.0 ; python_version >= '3.7'
-hijri-converter==2.3.0.post1 ; python_version >= '3.7'
+hijri-converter==2.3.1 ; python_version >= '3.7'
 holidays==0.14.2 ; python_version >= '3.7'
 html5lib==1.1 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 idna==3.4 ; python_version >= '3.5'
@@ -126,7 +126,7 @@ multidict==6.0.4 ; python_version >= '3.7'
 multitasking==0.0.11
 mypy-extensions==1.0.0 ; python_version >= '3.5'
 nbclassic==0.5.5 ; python_version >= '3.7'
-nbclient==0.7.3 ; python_full_version >= '3.7.0'
+nbclient==0.7.4 ; python_full_version >= '3.7.0'
 nbconvert==7.3.1 ; python_version >= '3.7'
 nbformat==5.8.0 ; python_version >= '3.7'
 nest-asyncio==1.5.6 ; python_version >= '3.5'
@@ -135,7 +135,7 @@ notebook-shim==0.2.3 ; python_version >= '3.7'
 numpy==1.23.4 ; python_version >= '3.8'
 oandapyv20==0.6.3
 onetimepass==1.0.1
--e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@8ce8380ef3fa44231aa1b3b372c070b11152362b#egg=openbbterminal
+-e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@76134c7b0a2475634be8ad3d528f5a58d1be1d5a#egg=openbbterminal
 openpyxl==3.1.2 ; python_version >= '3.6'
 packaging==23.1 ; python_version >= '3.7'
 pandas==1.5.3 ; python_version >= '3.8'
@@ -149,7 +149,7 @@ patsy==0.5.3
 pexpect==4.8.0 ; sys_platform != 'win32'
 pickleshare==0.7.5
 pillow==9.5.0 ; python_version >= '3.7'
-platformdirs==3.2.0 ; python_version >= '3.7'
+platformdirs==3.3.0 ; python_version >= '3.7'
 plotly==5.14.1 ; python_version >= '3.6'
 pmaw==3.0.0 ; python_version >= '3.5'
 praw==7.7.0 ; python_version ~= '3.7'
@@ -189,7 +189,7 @@ python-json-logger==2.0.7 ; python_version >= '3.6'
 pytrends==4.9.2 ; python_version >= '3.7'
 pytz==2023.3
 pytz-deprecation-shim==0.1.0.post0 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
-pywry==0.4.7 ; python_version >= '3.8'
+pywry==0.4.8 ; python_version >= '3.8'
 pyyaml==6.0 ; python_version >= '3.6'
 pyzmq==25.0.2 ; python_version >= '3.6'
 quandl==3.7.0 ; python_version >= '3.6'
@@ -209,6 +209,7 @@ scipy==1.10.1 ; python_version < '3.12' and python_version >= '3.8'
 screeninfo==0.6.7
 seaborn==0.11.2 ; python_version >= '3.6'
 send2trash==1.8.0
+setproctitle==1.3.2 ; python_version >= '3.7'
 setuptools==65.4.1 ; python_version >= '3.7'
 setuptools-scm[toml]==7.1.0 ; python_version >= '3.7'
 sgmllib3k==1.0.0
