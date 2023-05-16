@@ -1,4 +1,4 @@
-FROM ubuntu:23.04
+FROM ubuntu:23.10@sha256:fc60884034bc6c05862dbcfd55875c6dccd0114ebdb908f56ea7645e978373db
 
 ARG BUILD_VERSION
 ARG ARCHIVE_URL=https://dl.dell.com/FOLDER08713913M/1/pstcli-${BUILD_VERSION}.x86_64.release.rpm
