@@ -1,0 +1,28 @@
+
+services:
+  prodfiler:
+    container_name: prodfiler
+    #image: optimyze/pf-host-agent:stable
+    image: optimyze/pf-host-agent:stable@sha256:37bc615b918be63ac9e2e43891bfacdcd2dee17b90077d4e2151bdf0153ac5cc
+    #image: optimyze/pf-host-agent:v2.5.4@sha256:37bc615b918be63ac9e2e43891bfacdcd2dee17b90077d4e2151bdf0153ac5cc
+    #image: jwilder/whoami
+    privileged: true
+    pid: host
+    restart: unless-stopped
+    command: ["/root/pf-host-agent", "-t", "all"]
+    cap_add:
+      #- BPF
+      - NET_ADMIN
+      - SYS_ADMIN
+      - SYS_CHROOT
+      - SYS_RESOURCE
+    environment:
+      - PRODFILER_PROJECT_ID=${PRODFILER_PROJECT_ID} 
+      - PRODFILER_SECRET_TOKEN=${PRODFILER_SECRET_TOKEN}
+      - PRODFILER_COLLECTION_AGENT=${PRODFILER_COLLECTION_AGENT}
+    volumes:
+      - '/etc/machine-id:/etc/machine-id:ro'
+      - '/var/run/docker.sock:/var/run/docker.sock'
+      - '/sys/kernel/debug:/sys/kernel/debug:ro'
+      - '/dev/null:/etc/prodfiler/prodfiler.conf'
+
