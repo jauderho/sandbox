@@ -5,7 +5,7 @@ on:
     branches: 
       - main
     paths:
-      - visidata/*
+      - done/visidata/*
       - .github/workflows/visidata.yml
   workflow_dispatch:
   schedule:
@@ -71,6 +71,7 @@ jobs:
         id: docker_meta
         uses: docker/metadata-action@c4ee3adeed93b1fa6a762f209fb01608c1a22f1e # v3
         with:
+          context: git
           images: ${{ env.REPOSITORY }}
           labels: |
             org.opencontainers.image.version=${{ env.BUILD_VERSION }}
@@ -107,7 +108,7 @@ jobs:
         with:
           push: ${{ github.event_name != 'pull_request' }}
           context: ${{ github.workflow }}
-          file: ${{ github.workflow }}/Dockerfile
+          file: done/${{ github.workflow }}/Dockerfile
           #platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/arm/v7
           #platforms: linux/amd64,linux/arm64
           #platforms: linux/amd64
