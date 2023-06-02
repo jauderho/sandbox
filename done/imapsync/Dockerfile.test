@@ -75,7 +75,7 @@ RUN set -xe && \
 RUN set -xe \
   && cd /usr/bin/ \
   && pwd \
-  && wget -N --no-check-certificate https://imapsync.lamiral.info/imapsync \
+  && wget -N https://imapsync.lamiral.info/imapsync \
         https://imapsync.lamiral.info/prerequisites_imapsync \
         https://raw.githubusercontent.com/google/gmail-oauth2-tools/master/python/oauth2.py \
   && chmod +x imapsync oauth2.py \
