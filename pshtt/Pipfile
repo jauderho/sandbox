@@ -9,12 +9,11 @@ verify_ssl = true
 name = "piwheels"
 
 [packages]
-pshtt = "*"
+#pshtt = "*"
 #pshtt = "0.6.10"
-#pshtt = { git = "https://github.com/cisagov/pshtt", editable = true }
+pshtt = { git = "https://github.com/cisagov/pshtt", editable = true }
 #pshtt = { git = "https://github.com/cisagov/pshtt", editable = true, ref="v0.6.10" }
-#cryptography = "*"
-cryptography = "41.0.0"
+cryptography = "*"
 
 [dev-packages]
 
