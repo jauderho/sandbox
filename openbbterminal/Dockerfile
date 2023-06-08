@@ -1,6 +1,6 @@
 FROM ubuntu:23.10@sha256:2cde79b4627d38d1448fc264f93e465f18b653bc9a62ee8ec85d99d4e8f39d4c
 #FROM python:3.11.2-slim-bullseye
-#FROM python:3.11.4-alpine3.18@sha256:995c7fcdf9a10e0e1a4555861dac63436b456822a167f07b6599d4f105de6fa0
+#FROM python:3.9-alpine
 
 ARG BUILD_VERSION
 ARG DEBIAN_FRONTEND=noninteractive
