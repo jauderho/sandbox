@@ -10,7 +10,7 @@ autobahn==23.6.2 ; python_version >= '3.9'
 automat==22.10.0
 billiard==4.1.0 ; python_version >= '3.7'
 bleach==6.0.0
-celery[redis]==5.3.0
+celery[redis]==5.3.1
 certifi==2023.5.7 ; python_version >= '3.6'
 cffi==1.15.1
 channels==3.0.5
@@ -34,7 +34,7 @@ django-extensions==3.2.3
 django-filter==22.1
 djangorestframework==3.14.0
 filelock==3.12.2
-flower==1.2.0
+flower==2.0.0
 gunicorn==20.1.0
 h11==0.14.0 ; python_version >= '3.7'
 hiredis==2.2.3
@@ -80,7 +80,7 @@ pytz==2023.3
 pyyaml==6.0
 pyzbar==0.1.9
 rapidfuzz==3.1.1
-redis[hiredis]==4.5.5
+redis==4.5.4
 regex==2023.6.3 ; python_version >= '3.6'
 reportlab==4.0.4 ; python_version >= '3.7' and python_version < '4'
 requests==2.31.0 ; python_version >= '3.7'
