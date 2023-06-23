@@ -7,11 +7,11 @@ ARG ARCHIVE_URL=https://dl.dell.com/FOLDER08713913M/1/pstcli-${BUILD_VERSION}.x8
 RUN test -n "${BUILD_VERSION}" \
 	&& apk update \
 	&& apk upgrade -a \
-	&& build_pkgs="wget alien rpm cpio dpkg dpkg-dev build-dependencies" \
+	&& build_pkgs="curl alien rpm cpio dpkg dpkg-dev build-dependencies" \
 	&& runtime_pkgs="ca-certificates" \
 	&& apk --no-cache add --virtual build-dependencies ${build_pkgs} \
 	&& apk --no-cache add ${runtime_pkgs} \
-	&& wget -q "${ARCHIVE_URL}" \
+	&& curl -O "${ARCHIVE_URL}" \
 	&& alien --target=all --scripts -i -v pstcli-${BUILD_VERSION}.x86_64.release.rpm \
 	&& rm -rf pstcli-${BUILD_VERSION}.x86_64.release.rpm \
 	&& apk del build-dependencies \

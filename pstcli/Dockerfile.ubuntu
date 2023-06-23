@@ -6,8 +6,8 @@ ARG ARCHIVE_URL=https://dl.dell.com/FOLDER08713913M/1/pstcli-${BUILD_VERSION}.x8
 RUN test -n "${BUILD_VERSION}" \
 	&& apt-get update \
 	&& apt-get -y dist-upgrade \
-	&& DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends ca-certificates wget alien \
-	&& wget "${ARCHIVE_URL}" \
+	&& DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends ca-certificates curl alien \
+	&& curl -O "${ARCHIVE_URL}" \
 	&& alien -i pstcli-${BUILD_VERSION}.x86_64.release.rpm \
 	&& apt-get -y purge wget alien \
 	&& apt-get -y autoclean \
