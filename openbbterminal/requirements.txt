@@ -66,7 +66,7 @@ finviz==1.4.6
 finvizfinance==0.14.5 ; python_version >= '3.5'
 flake8==6.0.0 ; python_full_version >= '3.8.1'
 fonttools==4.40.0 ; python_version >= '3.8'
-formulaic==0.6.1 ; python_full_version >= '3.7.2'
+formulaic==0.6.2 ; python_full_version >= '3.7.2'
 fqdn==1.5.1
 fred==3.1
 fredapi==0.4.3
@@ -77,7 +77,7 @@ fundamentalanalysis==0.2.14
 gitdb==4.0.10 ; python_version >= '3.7'
 gitpython==3.1.31 ; python_version >= '3.7'
 greenlet==2.0.2 ; platform_machine == 'aarch64' or (platform_machine == 'ppc64le' or (platform_machine == 'x86_64' or (platform_machine == 'amd64' or (platform_machine == 'AMD64' or (platform_machine == 'win32' or platform_machine == 'WIN32')))))
-grpcio==1.54.2 ; python_version >= '3.7'
+grpcio==1.56.0 ; python_version >= '3.7'
 hijri-converter==2.3.1 ; python_version >= '3.7'
 holidays==0.14.2 ; python_version >= '3.7'
 html5lib==1.1 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
@@ -86,7 +86,7 @@ importlib-metadata==6.7.0 ; python_version >= '3.7'
 inflection==0.5.1 ; python_version >= '3.5'
 interface-meta==1.3.0 ; python_version >= '3.7' and python_version < '4.0'
 intrinio-sdk==6.24.0
-ipykernel==6.23.2 ; python_version >= '3.8'
+ipykernel==6.23.3 ; python_version >= '3.8'
 ipympl==0.8.4
 ipython==8.11.0 ; python_version >= '3.8'
 ipython-genutils==0.2.0
@@ -100,7 +100,7 @@ joblib==1.2.0 ; python_version >= '3.7'
 json5==0.9.14
 jsonpointer==2.4
 jsonschema==4.17.3 ; python_version >= '3.7'
-jupyter-client==8.2.0 ; python_version >= '3.8'
+jupyter-client==8.3.0 ; python_version >= '3.8'
 jupyter-core==5.3.1 ; python_version >= '3.8'
 jupyter-events==0.6.3 ; python_version >= '3.7'
 jupyter-server==2.6.0 ; python_version >= '3.8'
@@ -116,7 +116,7 @@ kiwisolver==1.4.4 ; python_version >= '3.7'
 korean-lunar-calendar==0.3.1
 langchain==0.0.191 ; python_version < '4.0' and python_full_version >= '3.8.1'
 linearmodels==4.31 ; python_version >= '3.8'
-llama-index==0.6.30
+llama-index==0.6.32
 loguru==0.7.0 ; python_version >= '3.5'
 lxml==4.9.2 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 markupsafe==2.1.3 ; python_version >= '3.7'
@@ -146,7 +146,7 @@ oandapyv20==0.6.3
 onetimepass==1.0.1
 openai==0.27.8 ; python_full_version >= '3.7.1'
 openapi-schema-pydantic==1.2.4 ; python_full_version >= '3.6.1'
--e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@f516173fdca24cfe6781043a0f7b422fde51c181#egg=openbbterminal
+-e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@4bc4368ff102d69933ba2349c4088a3cfd89363a#egg=openbbterminal
 openpyxl==3.1.2 ; python_version >= '3.6'
 overrides==7.3.1 ; python_version >= '3.6'
 packaging==23.1 ; python_version >= '3.7'
@@ -161,7 +161,7 @@ patsy==0.5.3
 pexpect==4.8.0 ; sys_platform != 'win32'
 pickleshare==0.7.5
 pillow==9.5.0 ; python_version >= '3.7'
-platformdirs==3.7.0 ; python_version >= '3.7'
+platformdirs==3.8.0 ; python_version >= '3.7'
 plotly==5.15.0 ; python_version >= '3.6'
 pmaw==3.0.0 ; python_version >= '3.5'
 posthog==3.0.1
@@ -232,7 +232,7 @@ smmap==5.0.0 ; python_version >= '3.6'
 sniffio==1.3.0 ; python_version >= '3.7'
 soupsieve==2.4.1 ; python_version >= '3.7'
 sparqlwrapper==2.0.0 ; python_version >= '3.7'
-sqlalchemy==2.0.16 ; python_version >= '3.7'
+sqlalchemy==2.0.17 ; python_version >= '3.7'
 squarify==0.4.3
 stack-data==0.6.2
 statsmodels==0.13.5 ; python_version >= '3.7'
@@ -270,7 +270,7 @@ watchdog==2.3.1 ; python_version >= '3.6'
 wcwidth==0.2.6
 webcolors==1.13
 webencodings==0.5.1
-websocket-client==1.6.0 ; python_version >= '3.7'
+websocket-client==1.6.1 ; python_version >= '3.7'
 websockets==11.0.3 ; python_version >= '3.7'
 widgetsnbextension==4.0.7 ; python_version >= '3.7'
 wrapt==1.15.0 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
