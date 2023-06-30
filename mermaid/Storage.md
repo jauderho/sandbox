@@ -3,16 +3,16 @@ Storage
 
 ```mermaid
   graph TD
-  P9-->9148S_1
-  P9-->9148S_2
+  P9-->91S_1
+  P9-->91S_2
   
-  P10-->9148T_1
-  P10-->9148T_2
+  P10-->91T_1
+  P10-->91T_2
   
-  9148S_1-->Unity
-  9148S_2-->Unity
-  9148S_1-->PowerStore
-  9148S_2-->PowerStore
-  9148T_1-->PowerStore
-  9148T_2-->PowerStore
+  91S_1-->U
+  91S_2-->U
+  91S_1-->PStore
+  91S_2-->PStore
+  91T_1-->PStore
+  91T_2-->PStore
 ```
