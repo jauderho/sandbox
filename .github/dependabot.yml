@@ -20,10 +20,10 @@ updates:
     open-pull-requests-limit: 50
     schedule:
       interval: "daily"
-    groups:
-      python:
-        patterns:
-          - "*"
+    #groups:
+    #  python:
+    #    patterns:
+    #      - "*"
 
   # Maintain dependencies for Docker
   - package-ecosystem: "docker"
