@@ -9,10 +9,15 @@ verify_ssl = true
 name = "piwheels"
 
 [packages]
-openbbterminal = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true }
-langchain = "0.0.225"
+#openbb = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true }
+openbb = "*"
+grpcio = "*"
+langchain = "*"
+tornado = "*"
+#langchain = "0.0.225"
+#grpcio = "1.51.3"
 
 [dev-packages]
 
-[requires]
-python_version = "3"
+#[requires]
+#python_version = "3"
