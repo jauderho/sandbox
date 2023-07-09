@@ -9,18 +9,8 @@ verify_ssl = true
 name = "piwheels"
 
 [packages]
-#
-#openbbterminal = "*"
-#openbbterminal = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true, ref="0dbfd1b7dd400d4bddbde93e3863d8d9813b514a" }
-#openbbterminal = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true, ref="v2.5.1" }
 openbbterminal = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true }
-#openbbterminal = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true, ref="v1.9.0", extras = ["prediction"] }
-#u8darts = {extras = ["torch"], version = "*"}
-#pytorch-lightning ="*"
-#setuptools = "66.1.0"
-setuptools = "*"
-#protobuf = "3.20.2"
-protobuf = "*"
+langchain = "0.0.225"
 
 [dev-packages]
 
