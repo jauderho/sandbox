@@ -435,14 +435,6 @@
             "index": "pypi",
             "version": "==3.14.0"
         },
-        "exceptiongroup": {
-            "hashes": [
-                "sha256:12c3e887d6485d16943a309616de20ae5582633e0a2eda17f4e10fd61c1e8af5",
-                "sha256:e346e69d186172ca7cf029c8c1d16235aa0e04035e5750b4b95039e65204328f"
-            ],
-            "markers": "python_version < '3.11'",
-            "version": "==1.1.2"
-        },
         "filelock": {
             "hashes": [
                 "sha256:002740518d8aa59a26b0c76e10fb8c6e15eae825d34b6fdf670333fd7b938d81",
@@ -1696,7 +1688,7 @@
                 "sha256:440d5dd3af93b060174bf433bccd69b0babc3b15b1a8dca43789fd7f61514b36",
                 "sha256:b75ddc264f0ba5615db7ba217daeb99701ad295353c45f9e95963337ceeeffb2"
             ],
-            "markers": "python_version < '3.11'",
+            "markers": "python_version >= '3.7'",
             "version": "==4.7.1"
         },
         "tzdata": {
@@ -2200,14 +2192,6 @@
             ],
             "version": "==0.6.2"
         },
-        "exceptiongroup": {
-            "hashes": [
-                "sha256:12c3e887d6485d16943a309616de20ae5582633e0a2eda17f4e10fd61c1e8af5",
-                "sha256:e346e69d186172ca7cf029c8c1d16235aa0e04035e5750b4b95039e65204328f"
-            ],
-            "markers": "python_version < '3.11'",
-            "version": "==1.1.2"
-        },
         "execnet": {
             "hashes": [
                 "sha256:88256416ae766bc9e8895c76a87928c0012183da3cc4fc18016e6f050e025f41",
@@ -2226,11 +2210,11 @@
         },
         "faker": {
             "hashes": [
-                "sha256:801d1a2d71f1fc54d332de2ab19de7452454309937233ea2f7485402882d67b3",
-                "sha256:84bcf92bb725dd7341336eea4685df9a364f16f2470c4d29c1d7e6c5fd5a457d"
+                "sha256:14bfe8e861efdfcdf2a3e66ff61a780d911410a474a667295bae4f8c4586456b",
+                "sha256:d37406dff33ae63ae019bd7bf95e33251e703cddbcb2857e0611002062f774e8"
             ],
-            "markers": "python_version >= '3.7'",
-            "version": "==18.13.0"
+            "markers": "python_version >= '3.8'",
+            "version": "==19.0.0"
         },
         "filelock": {
             "hashes": [
@@ -2848,14 +2832,6 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==2.3.0"
-        },
-        "tomli": {
-            "hashes": [
-                "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc",
-                "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"
-            ],
-            "markers": "python_version < '3.11'",
-            "version": "==2.0.1"
         },
         "urllib3": {
             "hashes": [
