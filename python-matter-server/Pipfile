@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://www.piwheels.org/simple"
+verify_ssl = true
+name = "piwheels"
+
+[packages]
+python-matter-server = { git = "https://github.com/home-assistant-libs/python-matter-server.git", editable = true }
+
+[dev-packages]
+
+[requires]
+python_version = "3"
