@@ -1,3 +1,4 @@
+
 [[source]]
 url = "https://pypi.org/simple"
 verify_ssl = true
@@ -15,9 +16,11 @@ pyyaml = "*"
 scapy = "*"
 gym = "*"
 scipy = "*"
-#stable-baselines = "*"
-#tensorflow = "*"
-#tensorflow-estimator = "*"
+#stable-baselines = "2.8.0"
+#stable-baselines3 = "*"
+#tensorflow = "2.13.0"
+tensorflow = "2.12.0"
+tensorflow-estimator = "*"
 tweepy = "*"
 file-read-backwards = "*"
 numpy = "*"
@@ -29,11 +32,12 @@ gast = "*"
 flask = "*"
 flask-cors = "*"
 flask-wtf = "*"
-#dbus-python = "*"
+#dbus-python = "1.2.16"
 toml = "*"
 python-dateutil = "*"
 websockets = "*"
-importlib-metadata = "*"
+#importlib-metadata = "*"
+#keras_preprocessing = "*"
 
 [dev-packages]
 
