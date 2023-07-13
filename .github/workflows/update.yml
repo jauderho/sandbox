@@ -28,6 +28,10 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
+      - uses: GitHubSecurityLab/actions-permissions/monitor@v1
+        with:
+          config: ${{ vars.PERMISSIONS_CONFIG }} 
+      
       # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
       - name: Harden Runner
         uses: step-security/harden-runner@55d479fb1c5bcad5a4f9099a5d9f37c8857b2845
@@ -55,6 +59,10 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
+      - uses: GitHubSecurityLab/actions-permissions/monitor@v1
+        with:
+          config: ${{ vars.PERMISSIONS_CONFIG }} 
+      
       # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
       - name: Harden Runner
         uses: step-security/harden-runner@55d479fb1c5bcad5a4f9099a5d9f37c8857b2845
