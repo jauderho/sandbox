@@ -42,14 +42,14 @@ git config pull.rebase false
 #PATH="$HOME/.local/bin:$PATH"
 #pipenv install --python 3.9
 #pipenv shell
-#DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.11
-#python3.11 -m pip install --no-cache-dir --upgrade pip
-#python3.11 -m pip install --no-cache-dir --upgrade --user pipenv
-#python3.11 -m pip install --no-cache-dir --upgrade --user certifi
-DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv 
-python -m pip install --no-cache-dir --upgrade pip
-python -m pip install --no-cache-dir --upgrade --user pipenv
-python -m pip install --no-cache-dir --upgrade --user certifi
+DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.11
+python3.11 -m pip install --no-cache-dir --upgrade pip
+python3.11 -m pip install --no-cache-dir --upgrade --user pipenv
+python3.11 -m pip install --no-cache-dir --upgrade --user certifi
+#DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv 
+#python -m pip install --no-cache-dir --upgrade pip
+#python -m pip install --no-cache-dir --upgrade --user pipenv
+#python -m pip install --no-cache-dir --upgrade --user certifi
 
 for i in "${APP[@]}"
 do
@@ -58,8 +58,8 @@ do
 	echo "Updating ${i} ..."
 	echo
 
-	#pipenv --python 3.11 lock && pipenv --python 3.11 requirements > requirements.txt
-	pipenv lock && pipenv requirements > requirements.txt
+	pipenv --python 3.11 lock && pipenv --python 3.11 requirements > requirements.txt
+	#pipenv lock && pipenv requirements > requirements.txt
 
 	git add Pipfile Pipfile.lock requirements.txt && \
 	git commit -s -m "Update requirements for ${i} ..." && \
