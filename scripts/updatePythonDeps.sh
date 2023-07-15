@@ -44,8 +44,9 @@ git config pull.rebase false
 #pipenv shell
 DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.11
 python3.11 -m pip install --no-cache-dir --upgrade pip
-python3.11 -m pip install --no-cache-dir --upgrade --user pipenv
-python3.11 -m pip install --no-cache-dir --upgrade --user certifi
+python3.11 -m pip install --no-cache-dir --upgrade --user pipenv certifi
+#python3.11 -m pip install --no-cache-dir --upgrade --user pipenv
+#python3.11 -m pip install --no-cache-dir --upgrade --user certifi
 #DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv 
 #python -m pip install --no-cache-dir --upgrade pip
 #python -m pip install --no-cache-dir --upgrade --user pipenv
