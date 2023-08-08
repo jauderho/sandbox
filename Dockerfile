@@ -15,4 +15,4 @@ FROM almalinux:9.2-minimal@sha256:0240ad1be8c11dda3af295a293e619f9bafcd6041f21c1
 FROM golang:1.21rc4-alpine3.18@sha256:5ea6526bdfd433b6533575247c02671815a7998531f42dbbcb6dc2553f04f2d1 AS golang1.21-base
 
 # node:20-alpine3.18 
-FROM node:20.5-alpine3.18@sha256:d0b7a0bb4d1f3d4f49988541caebcfa4408892288e93097e4b89c92131163234 AS node20-base
+FROM node:20.5-alpine3.18@sha256:59ecf4c430fc6e15b3e6f2ee3ae8fa9773b2508856baf376fcd9ad7b1e6934a9 AS node20-base
