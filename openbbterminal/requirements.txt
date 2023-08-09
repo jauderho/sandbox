@@ -11,15 +11,15 @@ frozenlist==1.4.0; python_version >= '3.8'
 greenlet==2.0.2; platform_machine == 'aarch64' or (platform_machine == 'ppc64le' or (platform_machine == 'x86_64' or (platform_machine == 'amd64' or (platform_machine == 'AMD64' or (platform_machine == 'win32' or platform_machine == 'WIN32')))))
 grpcio==1.56.2
 idna==3.4; python_version >= '3.5'
-langchain==0.0.257
-langsmith==0.0.19; python_version < '4.0' and python_full_version >= '3.8.1'
+langchain==0.0.259
+langsmith==0.0.20; python_version < '4.0' and python_full_version >= '3.8.1'
 marshmallow==3.20.1; python_version >= '3.8'
 multidict==6.0.4; python_version >= '3.7'
 mypy-extensions==1.0.0; python_version >= '3.5'
 numexpr==2.8.5; python_version >= '3.7'
 numpy==1.25.2; python_version >= '3.9'
 openapi-schema-pydantic==1.2.4; python_full_version >= '3.6.1'
-openbb @ git+https://github.com/OpenBB-finance/OpenBBTerminal.git@74a7fcb41600bd0d5e47436c131e036fb86047e0
+openbb @ git+https://github.com/OpenBB-finance/OpenBBTerminal.git@1523f3f1c740391c7b2688adea153a6aa9561f27
 packaging==23.1; python_version >= '3.7'
 pydantic==1.10.12; python_version >= '3.7'
 pyyaml==6.0.1; python_version >= '3.6'
