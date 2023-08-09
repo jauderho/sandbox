@@ -1,5 +1,5 @@
 FROM ubuntu:23.10@sha256:2c12b887bd41265d2a3a5e993060c9da28dfc7eaab138c908aec196e087a3c86
-#FROM python:3.11.4-slim-bookworm@sha256:36b544be6e796eb5caa0bf1ab75a17d2e20211cad7f66f04f6f5c9eeda930ef5
+#FROM python:3.12.0rc1-slim-bookworm@sha256:42c2f3997e45d3c07c33a7a652e12d1f231d396bf26ae14029ae8928766d137f
 
 ARG BUILD_VERSION
 ARG DEBIAN_FRONTEND=noninteractive
