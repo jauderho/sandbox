@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  GO_VERSION: 1.17.7
+  GO_VERSION: 1.21.0
   UPSTREAM_REPO: https://github.com/golang/go.git
 
 permissions: read-all
@@ -30,7 +30,8 @@ jobs:
         #run: git ls-remote https://github.com/golang/go.git HEAD | awk '{print $1}' | head -c 8
         #run: echo "::set-output name=hash::$(git ls-remote https://github.com/golang/go.git HEAD | awk '{print $1}' | head -c 8)"
         #run: echo "::set-output name=hash::$(git ls-remote ${{ env.UPSTREAM_REPO }} HEAD | awk '{print $1}' | head -c 8)"
-        run: echo "::set-output name=hash::$(git ls-remote ${{ env.UPSTREAM_REPO }} HEAD | cut -f1 | head -c 8)"
+        #run: echo "::set-output name=hash::$(git ls-remote ${{ env.UPSTREAM_REPO }} HEAD | cut -f1 | head -c 8)"
+        run: echo "hash=$(git ls-remote ${{ env.UPSTREAM_REPO }} HEAD | awk '{print $1}' | head -c 8)" >> $GITHUB_OUTPUT
       
       - name: Print the output
         run: echo "${{ steps.get-hash.outputs.hash }}"
