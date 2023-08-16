@@ -6,7 +6,7 @@ HEALTHCHECK echo
 FROM alpine:3.18.3@sha256:7144f7bab3d4c2648d7e59409f15ec52a18006a128c733fcff20d3a4a54ba44a AS alpine3.18-base
 
 # Ubuntu 23.10
-FROM ubuntu:23.10@sha256:2c12b887bd41265d2a3a5e993060c9da28dfc7eaab138c908aec196e087a3c86 AS ubuntu23.10-base
+FROM ubuntu:23.10@sha256:4ece736cc64e12426819d31e82f17f81555148adc3093474908ca1df00222d62 AS ubuntu23.10-base
 
 # Alma Linux 9.2
 FROM almalinux:9.2-minimal@sha256:0240ad1be8c11dda3af295a293e619f9bafcd6041f21c1123c6b5f2698298e49 AS almalinux9.2minimal-base
