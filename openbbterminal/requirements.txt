@@ -2,6 +2,7 @@
 --extra-index-url https://www.piwheels.org/simple
 aiohttp==3.8.5; python_version >= '3.6'
 aiosignal==1.3.1; python_version >= '3.7'
+annotated-types==0.5.0; python_version >= '3.7'
 async-timeout==4.0.3; python_version >= '3.7'
 attrs==23.1.0; python_version >= '3.7'
 certifi==2023.7.22; python_version >= '3.6'
@@ -11,17 +12,18 @@ frozenlist==1.4.0; python_version >= '3.8'
 greenlet==2.0.2; platform_machine == 'aarch64' or (platform_machine == 'ppc64le' or (platform_machine == 'x86_64' or (platform_machine == 'amd64' or (platform_machine == 'AMD64' or (platform_machine == 'win32' or platform_machine == 'WIN32')))))
 grpcio==1.57.0
 idna==3.4; python_version >= '3.5'
-langchain==0.0.266
-langsmith==0.0.23; python_version < '4.0' and python_full_version >= '3.8.1'
+langchain==0.0.267
+langsmith==0.0.24; python_version < '4.0' and python_full_version >= '3.8.1'
 marshmallow==3.20.1; python_version >= '3.8'
 multidict==6.0.4; python_version >= '3.7'
 mypy-extensions==1.0.0; python_version >= '3.5'
 numexpr==2.8.5; python_version >= '3.7'
 numpy==1.25.2; python_version >= '3.9'
 openapi-schema-pydantic==1.2.4; python_full_version >= '3.6.1'
-openbb @ git+https://github.com/OpenBB-finance/OpenBBTerminal.git@cedd48f41b200c3ab3355ba48073d5aba8c329e7
+openbb @ git+https://github.com/OpenBB-finance/OpenBBTerminal.git@a6e66f7a730fb2aa23e805fd8abe8dddba8990a4
 packaging==23.1; python_version >= '3.7'
-pydantic==1.10.12; python_version >= '3.7'
+pydantic==2.2.0; python_version >= '3.7'
+pydantic-core==2.6.0; python_version >= '3.7'
 pyyaml==6.0.1; python_version >= '3.6'
 requests==2.31.0; python_version >= '3.7'
 sqlalchemy==2.0.20; python_version >= '3.7'
