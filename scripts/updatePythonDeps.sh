@@ -5,38 +5,39 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-#APP=(
-#  "aranet4" \
-#  "autoflake" \
-#  "chatgpt-linux-assistant" \
-#  "codespell" \
-#  "datasette" \
-#  "dnsdiag" \
-#  "dnsrecon" \
-#  "dnsvalidator" \
-#  "greynoise" \
-#  "hdbcli" \
-#  "jc" \
-#  "memray" \
-#  "openbbterminal" \
-#  "paperless-ngx" \
-#  "pip-audit" \
-#  "prowler" \
-#  "pshtt" \
-#  "pwnagotchi" \
-#  "pyaranet4" \
-#  "pyupgrade" \
-#  "ruff" \
-#  "scrapeghost" \
-#  "sgpt" \
-#  "ssh-mitm" \
-#  "wolverine" \
-#)
-
 APP=(
+  "aranet4" \
+  "autoflake" \
+  "cantools" \
+  "chatgpt-linux-assistant" \
+  "codespell" \
+  "datasette" \
+  "dnsdiag" \
+  "dnsrecon" \
+  "dnsvalidator" \
+  "greynoise" \
+  "hdbcli" \
+  "jc" \
+  "memray" \
+  "openbbterminal" \
+  "paperless-ngx" \
+  "pip-audit" \
+  "prowler" \
   "pshtt" \
   "pwnagotchi" \
+  "pyaranet4" \
+  "pyupgrade" \
+  "ruff" \
+  "scrapeghost" \
+  "sgpt" \
+  "ssh-mitm" \
+  "wolverine" \
 )
+
+#APP=(
+#  "pshtt" \
+#  "pwnagotchi" \
+#)
 
 # setup git
 git config user.name "Jauder Ho"
