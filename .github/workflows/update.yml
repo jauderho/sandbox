@@ -75,9 +75,9 @@ jobs:
           token: ${{ secrets.UPDATE_SECRET }} 
           fetch-depth: 1
  
-      - name: Add pipenv
-        run: |
-          DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.9
+#      - name: Add pipenv
+#        run: |
+#          DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.9
 
       - name: Update Python dependencies
         run: |
