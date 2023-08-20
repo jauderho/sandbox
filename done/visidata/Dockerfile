@@ -12,6 +12,7 @@ COPY requirements.txt .visidatarc ./
 
 RUN \
 	apk update && \
+	apk upgrade -a && \
 	build_pkgs="cargo build-base libffi-dev openssl-dev python3-dev" && \
 	runtime_pkgs="ca-certificates openssl python3 py3-pip" && \
 	apk --no-cache add --virtual build-dependencies ${build_pkgs} && \
