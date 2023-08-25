@@ -5,12 +5,12 @@ alive-progress==3.1.4; python_version >= '3.7' and python_version < '4'
 awsipranges==0.3.3; python_version >= '3.7' and python_version < '4.0'
 azure-common==1.1.28
 azure-core==1.29.3; python_version >= '3.7'
-azure-identity==1.13.0; python_version >= '3.7'
+azure-identity==1.14.0; python_version >= '3.7'
 azure-mgmt-authorization==4.0.0; python_version >= '3.7'
 azure-mgmt-core==1.4.0; python_version >= '3.7'
 azure-mgmt-security==5.0.0; python_version >= '3.7'
 azure-mgmt-sql==3.0.1
-azure-mgmt-storage==21.0.0; python_version >= '3.7'
+azure-mgmt-storage==21.1.0; python_version >= '3.7'
 azure-mgmt-subscription==3.1.1; python_version >= '3.7'
 azure-storage-blob==12.17.0; python_version >= '3.7'
 boto3==1.26.165; python_version >= '3.7'
@@ -25,8 +25,9 @@ colorama==0.4.6; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.
 contextlib2==21.6.0; python_version >= '3.6'
 cryptography==41.0.3; python_version >= '3.7'
 detect-secrets==1.4.0
+filelock==3.12.2; python_version >= '3.7'
 google-api-core==2.11.1; python_version >= '3.7'
-google-api-python-client==2.95.0; python_version >= '3.7'
+google-api-python-client==2.97.0; python_version >= '3.7'
 google-auth==2.22.0; python_version >= '3.6'
 google-auth-httplib2==0.1.0
 googleapis-common-protos==1.60.0; python_version >= '3.7'
@@ -42,7 +43,7 @@ msrest==0.7.1; python_version >= '3.6'
 oauthlib==3.2.2; python_version >= '3.6'
 portalocker==2.7.0; python_version >= '3.5' and platform_system != 'Windows'
 protobuf==4.24.1; python_version >= '3.7'
-prowler==3.8.2; python_version >= '3.9' and python_version < '4.0'
+prowler==3.9.0; python_version >= '3.9' and python_version < '4.0'
 pyasn1==0.5.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
 pyasn1-modules==0.3.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
 pycparser==2.21
@@ -52,14 +53,16 @@ pyparsing==3.1.1; python_version >= '3.1'
 python-dateutil==2.8.2; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
 pyyaml==6.0.1; python_version >= '3.6'
 requests==2.31.0; python_version >= '3.7'
+requests-file==1.5.1
 requests-oauthlib==1.3.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
 rsa==4.9; python_version >= '3.6' and python_version < '4'
 s3transfer==0.6.2; python_version >= '3.7'
 schema==0.7.5
-shodan==1.29.1
+shodan==1.30.0
 six==1.16.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
 slack-sdk==3.21.3; python_full_version >= '3.6.0'
 tabulate==0.9.0; python_version >= '3.7'
+tldextract==3.4.4; python_version >= '3.7'
 typing-extensions==4.7.1; python_version >= '3.7'
 uritemplate==4.1.1; python_version >= '3.6'
 urllib3==1.26.16; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
