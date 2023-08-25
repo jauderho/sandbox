@@ -29,7 +29,7 @@ blinker==1.6.2; python_version >= '3.7'
 bs4==0.0.1
 bt==0.2.9; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
 cachetools==5.3.1; python_version >= '3.7'
-ccxt==4.0.74
+ccxt==4.0.75
 certifi==2023.7.22; python_version >= '3.6'
 cffi==1.15.1
 charset-normalizer==3.2.0; python_full_version >= '3.7.0'
@@ -43,7 +43,7 @@ cryptography==41.0.3; python_version >= '3.7'
 cssselect==1.2.0; python_version >= '3.7'
 cssselect2==0.7.0; python_version >= '3.7'
 cycler==0.11.0; python_version >= '3.6'
-cython==3.0.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+cython==3.0.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
 dataclasses-json==0.5.14; python_version < '3.13' and python_version >= '3.7'
 dateparser==1.1.8; python_version >= '3.7'
 datetime==5.2; python_version >= '3.7'
@@ -80,9 +80,12 @@ gitdb==4.0.10; python_version >= '3.7'
 gitpython==3.1.32; python_version >= '3.7'
 greenlet==2.0.2; platform_machine == 'aarch64' or (platform_machine == 'ppc64le' or (platform_machine == 'x86_64' or (platform_machine == 'amd64' or (platform_machine == 'AMD64' or (platform_machine == 'win32' or platform_machine == 'WIN32')))))
 grpcio==1.57.0; python_version >= '3.7'
+h11==0.14.0; python_version >= '3.7'
 hijri-converter==2.3.1; python_version >= '3.7'
 holidays==0.14.2; python_version >= '3.7'
 html5lib==1.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+httpcore==0.17.3; python_version >= '3.7'
+httpx==0.24.1; python_version >= '3.7'
 idna==3.4; python_version >= '3.5'
 importlib-metadata==6.8.0; python_version >= '3.8'
 inflection==0.5.1; python_version >= '3.5'
@@ -116,10 +119,10 @@ jupyterlab-server==2.24.0; python_version >= '3.7'
 jupyterlab-widgets==3.0.8; python_version >= '3.7'
 kiwisolver==1.4.5; python_version >= '3.7'
 korean-lunar-calendar==0.3.1
-langchain==0.0.237; python_version < '4.0' and python_full_version >= '3.8.1'
-langsmith==0.0.10; python_version < '4.0' and python_full_version >= '3.8.1'
+langchain==0.0.266; python_version < '4.0' and python_full_version >= '3.8.1'
+langsmith==0.0.26; python_version < '4.0' and python_full_version >= '3.8.1'
 linearmodels==4.31; python_version >= '3.8'
-llama-index==0.7.11
+llama-index==0.8.9
 loguru==0.7.0; python_version >= '3.5'
 lxml==4.9.3; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 markupsafe==2.1.3; python_version >= '3.7'
@@ -140,6 +143,8 @@ nbclient==0.8.0; python_full_version >= '3.8.0'
 nbconvert==7.7.4; python_version >= '3.8'
 nbformat==5.9.2; python_version >= '3.8'
 nest-asyncio==1.5.7; python_version >= '3.5'
+nixtlats==0.1.11; python_version >= '3.7'
+nltk==3.8.1; python_version >= '3.7'
 notebook==6.5.5; python_version >= '3.7'
 notebook-shim==0.2.3; python_version >= '3.7'
 numexpr==2.8.5; python_version >= '3.7'
@@ -148,7 +153,7 @@ oandapyv20==0.6.3
 onetimepass==1.0.1
 openai==0.27.9; python_full_version >= '3.7.1'
 openapi-schema-pydantic==1.2.4; python_full_version >= '3.6.1'
-openbb@ git+https://github.com/OpenBB-finance/OpenBBTerminal.git@141dd68e68b6cb76abdd1a9ef5c16bf545d020a8
+openbb@ git+https://github.com/OpenBB-finance/OpenBBTerminal.git@8a5592b0342886ce06fdc4152caa6a5207131b82
 openpyxl==3.1.2; python_version >= '3.6'
 packaging==23.1; python_version >= '3.7'
 pandas==1.5.3; python_version >= '3.8'
