@@ -10,7 +10,7 @@ name = "piwheels"
 
 [packages]
 #deepdiff = "*"
-deepdiff = {extras = ["cli", "optimize"], version = "*"}
+deepdiff = {extras = ["cli","optimize","murmur"], version = "*"}
 clevercsv = "*"
 
 [dev-packages]
