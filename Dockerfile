@@ -12,7 +12,7 @@ FROM ubuntu:23.10@sha256:ed5b80e7117fe03f4197adc76c64a86a290d31898a5d491e32f66c7
 FROM almalinux:9.2-minimal@sha256:0240ad1be8c11dda3af295a293e619f9bafcd6041f21c1123c6b5f2698298e49 AS almalinux9.2minimal-base
 
 # Go 1.21 on Alpine 3.18
-FROM golang:1.21.0-alpine3.18@sha256:445f34008a77b0b98bf1821bf7ef5e37bb63cc42d22ee7c21cc17041070d134f AS golang1.21-base
+FROM golang:1.21.1-alpine3.18@sha256:96634e55b363cb93d39f78fb18aa64abc7f96d372c176660d7b8b6118939d97b AS golang1.21-base
 
 # node:20-alpine3.18 
 FROM node:20.6-alpine3.18@sha256:c843f4a4060246a25f62c80b3d4cf4a6b4c4639cdce421e4f2ee3102257225b4 AS node20-base
