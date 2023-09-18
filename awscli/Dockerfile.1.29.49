@@ -1,5 +1,5 @@
 #FROM ubuntu:23.04@sha256:b5d5cddaeb8d2f150660cf8f9a1203dd450ac765e6c07630176ac6486eceaddb
-FROM ubuntu:20.04@sha256:33a5cc25d22c45900796a1aca487ad7a7cb09f09ea00b779e3b2026b4fc2faba
+FROM ubuntu:23.10
 
 ARG BUILD_VERSION
 ARG DEBIAN_FRONTEND=noninteractive
@@ -14,8 +14,8 @@ COPY requirements.${BUILD_VERSION}.txt .
 RUN apt-get update && \
 	apt-get dist-upgrade -y && \
 	DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends python3-pip git && \
-	python3 -m pip install --no-cache-dir --upgrade pip && \
-	pip3 install --no-cache-dir -r requirements.${BUILD_VERSION}.txt && \
+	python3 -m pip install --no-cache-dir --upgrade pip --break-system-packages && \
+	pip3 install --no-cache-dir -r requirements.${BUILD_VERSION}.txt --break-system-packages && \
 	apt-get purge -y git && \
 	apt-get autoremove -y --purge && \
 	rm -rf /var/lib/apt/lists/* && \
