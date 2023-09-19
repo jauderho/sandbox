@@ -20,7 +20,7 @@ jobs:
   deploy:
     strategy:
       matrix:
-        ver: [1.16.14, 1.29.49]
+        ver: [1.16.14, 1.29.50]
     runs-on: ubuntu-22.04
     permissions:
       packages: write
