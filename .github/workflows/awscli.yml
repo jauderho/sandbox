@@ -20,7 +20,7 @@ jobs:
   deploy:
     strategy:
       matrix:
-      	ver: [2, 4]
+        ver: [1.16.14, 1.29.49]
     runs-on: ubuntu-22.04
     permissions:
       packages: write
@@ -117,7 +117,7 @@ jobs:
         with:
           push: ${{ github.event_name != 'pull_request' }}
           context: done/${{ github.workflow }}
-	  file: ${{ github.workflow }}/Dockerfile.${{ matrix.ver }}
+          file: ${{ github.workflow }}/Dockerfile.${{ matrix.ver }}
           #platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6,linux/ppc64le
           platforms: linux/amd64,linux/386,linux/arm64,linux/arm/v7,linux/arm/v6,linux/s390x
           #platforms: linux/amd64,linux/arm64
