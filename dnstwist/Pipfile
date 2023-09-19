@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://www.piwheels.org/simple"
+verify_ssl = true
+name = "piwheels"
+
+[packages]
+#dnstwist = { git = "https://github.com/elceef/dnstwist", editable = true }
+dnstwist = "*"
+geoip2 = "*"
+dnspython = "*"
+ppdeep = "*"
+py-tlsh = "*"
+tld = "*"
+idna = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3"
