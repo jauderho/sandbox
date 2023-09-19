@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://www.piwheels.org/simple"
+verify_ssl = true
+name = "piwheels"
+
+[packages]
+#awscli = "1.16.14"
+#awscli = "1.29.49"
+awscli = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3"
