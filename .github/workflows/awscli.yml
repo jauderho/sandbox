@@ -19,9 +19,8 @@ jobs:
 
   deploy:
     strategy:
-      fail-fast: false
       matrix:
-      	ver: ['1.16.14']
+      	ver: [2, 4]
     runs-on: ubuntu-22.04
     permissions:
       packages: write
