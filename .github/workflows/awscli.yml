@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  BUILD_VERSION: "1.29.49"
+  #BUILD_VERSION: "1.29.49"
   DOCKER_CLI_EXPERIMENTAL: enabled
   REPOSITORY: ${{ github.actor }}/${{ github.workflow }}
 
@@ -21,7 +21,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-      	version: [1.16.14, ${{ env.BUILD_VERSION }}]
+      	version: [1.16.14, 1.29.49]
     runs-on: ubuntu-22.04
     permissions:
       packages: write
@@ -118,13 +118,14 @@ jobs:
         with:
           push: ${{ github.event_name != 'pull_request' }}
           context: done/${{ github.workflow }}
+	  file: ${{ github.workflow }}/Dockerfile.${{ matrix.version }}
           #platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6,linux/ppc64le
           platforms: linux/amd64,linux/386,linux/arm64,linux/arm/v7,linux/arm/v6,linux/s390x
           #platforms: linux/amd64,linux/arm64
           #platforms: linux/amd64
           #platforms: ${{ matrix.arch }}
           build-args: |
-            BUILD_VERSION
+            BUILD_VERSION=${{ matrix.version }}
           sbom: true
           provenance: true
           cache-from: type=gha, scope=${{ github.workflow }}
