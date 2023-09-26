@@ -55,6 +55,13 @@ updates:
   
   # Maintain dependencies for Docker
   - package-ecosystem: "docker"
+    directory: /pstcli
+    open-pull-requests-limit: 20
+    schedule:
+      interval: "daily"
+  
+  # Maintain dependencies for Docker
+  - package-ecosystem: "docker"
     directory: /sles
     open-pull-requests-limit: 20
     schedule:
