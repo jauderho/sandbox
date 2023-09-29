@@ -4,7 +4,7 @@ annotated-types==0.5.0; python_version >= '3.7'
 attrs==23.1.0; python_version >= '3.7'
 beautifulsoup4==4.12.2; python_full_version >= '3.6.0'
 certifi==2023.7.22; python_version >= '3.6'
-cffi==1.15.1
+cffi==1.16.0; python_version >= '3.8'
 chardet==5.2.0; python_version >= '3.7'
 charset-normalizer==3.2.0; python_full_version >= '3.7.0'
 cryptography==41.0.4; python_version >= '3.7'
@@ -18,7 +18,7 @@ nassl==5.1.0; python_version >= '3.7'
 packaging==23.1
 path==16.7.1; python_version >= '3.8'
 pathvalidate==3.2.0; python_version >= '3.7'
--e git+https://github.com/jauderho/pshtt@12f8b76dfae798d04dd1481cc9b841932fdd1ac4#egg=pshtt
+-e git+https://github.com/jauderho/pshtt@9b114ac7abbaffa9d926b00d4dae4d3bcd666e09#egg=pshtt
 publicsuffixlist[update]==0.10.0.20230927; python_version >= '2.6'
 pycparser==2.21
 pydantic==2.3.0; python_version >= '3.7'
