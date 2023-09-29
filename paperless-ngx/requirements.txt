@@ -10,9 +10,9 @@ autobahn==23.6.2; python_version >= '3.9'
 automat==22.10.0
 billiard==4.1.0; python_version >= '3.7'
 bleach==6.0.0; python_version >= '3.7'
-celery[redis]==5.3.1; python_version >= '3.8'
+celery[redis]==5.3.4; python_version >= '3.8'
 certifi==2023.7.22; python_version >= '3.6'
-cffi==1.15.1
+cffi==1.16.0; python_version >= '3.8'
 channels==3.0.5; python_version >= '3.7'
 channels-redis==3.4.1; python_version >= '3.7'
 charset-normalizer==3.2.0; python_full_version >= '3.7.0'
@@ -81,7 +81,7 @@ pytz==2023.3.post1
 pyyaml==6.0.1
 pyzbar==0.1.9
 rapidfuzz==3.3.1; python_version >= '3.7'
-redis[hiredis]==5.0.1; python_version >= '3.7'
+redis[hiredis]==4.6.0; python_version >= '3.7'
 regex==2023.8.8; python_version >= '3.6'
 reportlab==4.0.5; python_version >= '3.7' and python_version < '4'
 requests==2.31.0; python_version >= '3.7'
@@ -109,7 +109,7 @@ uvloop==0.17.0
 vine==5.0.0; python_version >= '3.6'
 watchdog==2.3.1; python_version >= '3.6'
 watchfiles==0.20.0
-wcwidth==0.2.6
+wcwidth==0.2.7
 webencodings==0.5.1
 websockets==11.0.3
 whitenoise==6.5.0; python_version >= '3.7'
