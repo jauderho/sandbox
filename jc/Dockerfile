@@ -1,6 +1,5 @@
 FROM alpine:edge@sha256:f2d1645cd73c7e54584dc225da0b5229d19223412d719669ebda764f41396853
 #FROM python:3.12.0rc3-alpine3.18@sha256:f68646d4ca421128a4f9b24a8bc39338ae574019fa5e845d5d8c57ecb143145f
-#FROM python:3.12.0rc3-alpine3.18@sha256:f68646d4ca421128a4f9b24a8bc39338ae574019fa5e845d5d8c57ecb143145f
 
 ARG BUILD_VERSION
 
@@ -18,9 +17,9 @@ RUN \
 	runtime_pkgs="ca-certificates openssl python3 py3-pip" && \
 	apk --no-cache add --virtual build-dependencies ${build_pkgs} && \
 	apk --no-cache add ${runtime_pkgs} && \
-	python3 -m pip install --no-cache-dir --upgrade pip && \
-	pip3 install --no-cache-dir --upgrade wheel && \
-	pip3 install --no-cache-dir -r requirements.txt && \
+	python3 -m pip install --no-cache-dir --upgrade pip --break-system-packages && \
+	pip3 install --no-cache-dir --upgrade wheel --break-system-packages && \
+	pip3 install --no-cache-dir -r requirements.txt --break-system-packages && \
 	apk del build-dependencies && \
 	rm -rf /var/cache/apk/* && \
 	rm -rf /root/.cache/pip && \
@@ -37,3 +36,4 @@ LABEL org.opencontainers.image.description="jc JSONifies the output of many CLI 
 
 ENTRYPOINT ["jc"]
 CMD ["-h"]
+
