@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  BUILD_VERSION: 1.29.54
+  BUILD_VERSION: 1.29.59
   DOCKER_CLI_EXPERIMENTAL: enabled
   REPOSITORY: ${{ github.actor }}/${{ github.workflow }}
 
@@ -21,7 +21,7 @@ jobs:
   deploy:
     strategy:
       matrix:
-        ver: [1.16.14, 1.29.54]
+        ver: [1.16.14, 1.29.59]
     runs-on: ubuntu-22.04
     permissions:
       packages: write
