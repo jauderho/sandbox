@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  BUILD_VERSION: 1.29.54
+  BUILD_VERSION: 1.29.59
   DOCKER_CLI_EXPERIMENTAL: enabled
   REPOSITORY: ${{ github.actor }}/${{ github.workflow }}
 
@@ -21,7 +21,7 @@ jobs:
   deploy:
     strategy:
       matrix:
-        ver: [1.16.14, 1.29.54]
+        ver: [1.16.14, 1.29.59]
     runs-on: ubuntu-22.04
     permissions:
       packages: write
@@ -29,7 +29,7 @@ jobs:
 
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@8ca2b8b2ece13480cda6dacd3511b49857a23c09 # v2.5.1
+        uses: step-security/harden-runner@1b05615854632b887b69ae1be8cbefe72d3ae423 # v2.6.0
         with:
           disable-telemetry: false
           disable-sudo: true
