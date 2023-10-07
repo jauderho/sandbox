@@ -1,6 +1,6 @@
 -i https://pypi.org/simple
 --extra-index-url https://www.piwheels.org/simple
-annotated-types==0.5.0; python_version >= '3.7'
+annotated-types==0.6.0; python_version >= '3.8'
 attrs==23.1.0; python_version >= '3.7'
 beautifulsoup4==4.12.2; python_full_version >= '3.6.0'
 certifi==2023.7.22; python_version >= '3.6'
@@ -18,7 +18,7 @@ nassl==5.1.0; python_version >= '3.7'
 packaging==23.2
 path==16.7.1; python_version >= '3.8'
 pathvalidate==3.2.0; python_version >= '3.7'
--e git+https://github.com/jauderho/pshtt@876f43a93f386260aad619a6ea3315c2e314d56b#egg=pshtt
+-e git+https://github.com/jauderho/pshtt@5ae6a1f6b2c15f7c698e95da4f29a8c375aab122#egg=pshtt
 publicsuffixlist[update]==0.10.0.20231002; python_version >= '2.6'
 pycparser==2.21
 pydantic==2.3.0; python_version >= '3.7'
