@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "6de51b01317412ebfa8032b733f5191a7e85696ab136666303d5648e31498dd8"
+            "sha256": "44e270cd0009d3da14823cd64bb94e995290ea141c4590d26afe0c689d77b0dc"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -493,6 +493,12 @@
             "markers": "python_version >= '3.7'",
             "version": "==2.16.1"
         },
+        "pykerberos": {
+            "hashes": [
+                "sha256:9d701ebd8fc596c99d3155d5ba45813bd5908d26ef83ba0add250edb622abed4"
+            ],
+            "version": "==1.2.4"
+        },
         "pyspnego": {
             "hashes": [
                 "sha256:3d5c5c28dbd0cd6a679acf45219630254db3c0e5ad4a16de521caa0585b088c0",
@@ -510,11 +516,14 @@
             "version": "==2.8.2"
         },
         "pywinrm": {
+            "extras": [
+                "credssp",
+                "kerberos"
+            ],
             "hashes": [
                 "sha256:995674bf5ac64b2562c9c56540473109e530d36bde10c262d5a5296121ad5565",
                 "sha256:c476c1e20dd0875da6fe4684c4d8e242dd537025907c2f11e1990c5aee5c9526"
             ],
-            "index": "pypi",
             "version": "==0.4.3"
         },
         "pyyaml": {
@@ -588,6 +597,13 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==2.31.0"
+        },
+        "requests-credssp": {
+            "hashes": [
+                "sha256:229afe2f6e1c9fabef64fc2bdf2a10e794ca6c4a0c00a687d53fbfaf7b8ee71d",
+                "sha256:47c8b250eef663f9b55af179f341e823f1f7f63b8b2b9037063e641a2df4bfa3"
+            ],
+            "version": "==2.0.0"
         },
         "requests-ntlm": {
             "hashes": [

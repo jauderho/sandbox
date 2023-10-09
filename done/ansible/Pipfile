@@ -12,8 +12,8 @@ name = "piwheels"
 ansible = "*"
 ansible-lint = "*"
 #jmespath = "*"
-pywinrm = "*"
-#pywinrm = {extras = ["kerberos", "credssp"], version = "*"}
+#pywinrm = "*"
+pywinrm = {extras = ["kerberos", "credssp"], version = "*"}
 #requests-credssp = "*"
 #requests-kerberos = "*"
 storops = "*"
