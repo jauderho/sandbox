@@ -9,7 +9,8 @@ verify_ssl = true
 name = "piwheels"
 
 [packages]
-huggingface_hub = "*"
+#huggingface_hub = "*"
+huggingface_hub = {extras = ["cli"], version = "*"}
 
 [dev-packages]
 
