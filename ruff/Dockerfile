@@ -14,13 +14,13 @@ COPY requirements.txt .
 RUN \
 	apk update && \
 	apk upgrade -a && \
-	build_pkgs="build-base python3-dev" && \
+	build_pkgs="" && \
 	runtime_pkgs="ca-certificates openssl python3 py3-pip" && \
 	apk --no-cache add --virtual build-dependencies ${build_pkgs} && \
 	apk --no-cache add ${runtime_pkgs} && \
-	python3 -m pip install --no-cache-dir --upgrade pip && \
-	pip3 install --no-cache-dir --upgrade wheel && \
-	pip3 install --no-cache-dir -r requirements.txt && \
+	python3 -m pip install --no-cache-dir --upgrade pip --break-system-packages && \
+	pip3 install --no-cache-dir --upgrade wheel --break-system-packages && \
+	pip3 install --no-cache-dir -r requirements.txt --break-system-packages && \
 	apk del build-dependencies && \
 	rm -rf /var/cache/apk/* && \
 	rm -rf /root/.cache/pip && \
@@ -32,8 +32,9 @@ LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
-LABEL org.opencontainers.image.title="jauderho/jc"
-LABEL org.opencontainers.image.description="jc JSONifies the output of many CLI tools, file-types, and common strings for easier parsing in scripts"
+LABEL org.opencontainers.image.title="jauderho/ruff"
+LABEL org.opencontainers.image.description="ruff is an extremely fast Python linter and code formatter, written in Rust"
 
-ENTRYPOINT ["jc"]
-CMD ["-h"]
+ENTRYPOINT ["ruff"]
+#CMD ["-h"]
+
