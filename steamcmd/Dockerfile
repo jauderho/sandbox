@@ -1,5 +1,5 @@
 #FROM steamcmd/steamcmd:windows-core-2019@sha256:bd201be10050af5eb09dc4293a38191a1258763641dbd9f1827cae2b0b3eab67
-FROM steamcmd/steamcmd:alpine-3@sha256:c94774df066bf83ba56bd8600726d99b869c0e030789e5b9934c6caffb948308
+FROM steamcmd/steamcmd:alpine-3@sha256:65ae8146623ec00347ec40e255847c2a1176c64cb896f55a1db2b5c7b2b52105
 
 ARG BUILD_VERSION
 
