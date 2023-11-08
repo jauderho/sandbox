@@ -1000,7 +1000,7 @@
                 "sha256:e44ccb93f30c75dfc0c3aa3ce38f33486a75ec9abadabd4e59f114994a9c4617",
                 "sha256:e509cbc488c735b43b5ffea175235cec24bbc57b227ef1acc691725beb230d1c"
             ],
-            "markers": "python_version < '3.13' and python_version >= '3.9'",
+            "markers": "python_version < '3.13' and python_version >= '3.9' and platform_machine == 'x86_64'",
             "version": "==1.26.1"
         },
         "ocrmypdf": {
@@ -1529,11 +1529,11 @@
         },
         "reportlab": {
             "hashes": [
-                "sha256:069aa35da7c882921f419f6e26327e14dac1d9d0adeb40b584cdadd974d99fc0",
-                "sha256:ec062675202eb76f6100ed44da64f38ed3c7feb5016cf4fe7f17ce35423ab14a"
+                "sha256:956d5874ee56e88753cf4c49452d6a7fa54a64e049a0382bd0c0b2013a26ef9a",
+                "sha256:967c77f00efd918cc231cf8b6d8f4e477dc973b5c16557e3bd18dfaeb5a70234"
             ],
             "markers": "python_version >= '3.7' and python_version < '4'",
-            "version": "==4.0.6"
+            "version": "==4.0.7"
         },
         "rich": {
             "hashes": [
@@ -2787,7 +2787,7 @@
                 "sha256:e44ccb93f30c75dfc0c3aa3ce38f33486a75ec9abadabd4e59f114994a9c4617",
                 "sha256:e509cbc488c735b43b5ffea175235cec24bbc57b227ef1acc691725beb230d1c"
             ],
-            "markers": "python_version < '3.13' and python_version >= '3.9'",
+            "markers": "python_version < '3.13' and python_version >= '3.9' and platform_machine == 'x86_64'",
             "version": "==1.26.1"
         },
         "packaging": {
@@ -2971,12 +2971,12 @@
         },
         "pytest-django": {
             "hashes": [
-                "sha256:7e90a183dec8c715714864e5dc8da99bb219502d437a9769a3c9e524af57e43a",
-                "sha256:ebc12a64f822a1284a281caf434d693f96bff69a9b09c677f538ecaa2f470b37"
+                "sha256:4e1c79d5261ade2dd58d91208017cd8f62cb4710b56e012ecd361d15d5d662a2",
+                "sha256:92d6fd46b1d79b54fb6b060bbb39428073396cec717d5f2e122a990d4b6aa5e8"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.8'",
-            "version": "==4.6.0"
+            "version": "==4.7.0"
         },
         "pytest-env": {
             "hashes": [
