@@ -17,7 +17,7 @@ jobs:
 
     steps:         
       - name: Harden Runner
-        uses: step-security/harden-runner@1b05615854632b887b69ae1be8cbefe72d3ae423 # v1
+        uses: step-security/harden-runner@eb238b55efaa70779f274895e782ed17c84f2895 # v1
         with:
           egress-policy: block
           allowed-endpoints: >
@@ -31,7 +31,7 @@ jobs:
 
       - name: Run Checkov action
         id: checkov
-        uses: bridgecrewio/checkov-action@97aba41cade0724966fe1c6fb70dbf4f36c3bb22 # master
+        uses: bridgecrewio/checkov-action@4a42e4c8ac5ffdd0e8daf9fc58121a89fb818709 # master
         with:
           directory: .
           #check: CKV_AWS_1 # optional: run only a specific check_id. can be comma separated list

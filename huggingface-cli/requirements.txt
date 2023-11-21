@@ -1,18 +1,18 @@
 -i https://pypi.org/simple
 --extra-index-url https://www.piwheels.org/simple
-certifi==2023.7.22; python_version >= '3.6'
-charset-normalizer==3.3.1; python_full_version >= '3.7.0'
+certifi==2023.11.17; python_version >= '3.6'
+charset-normalizer==3.3.2; python_full_version >= '3.7.0'
 filelock==3.13.1; python_version >= '3.8'
 fsspec==2023.10.0; python_version >= '3.8'
-huggingface-hub[cli]==0.18.0; python_full_version >= '3.8.0'
+huggingface-hub[cli]==0.19.4; python_full_version >= '3.8.0'
 idna==3.4; python_version >= '3.5'
 inquirerpy==0.3.4
 packaging==23.2; python_version >= '3.7'
 pfzy==0.3.4; python_version >= '3.7' and python_version < '4.0'
-prompt-toolkit==3.0.39; python_full_version >= '3.7.0'
+prompt-toolkit==3.0.41; python_full_version >= '3.7.0'
 pyyaml==6.0.1; python_version >= '3.6'
 requests==2.31.0; python_version >= '3.7'
 tqdm==4.66.1; python_version >= '3.7'
 typing-extensions==4.8.0; python_version >= '3.8'
-urllib3==2.0.7; python_version >= '3.7'
-wcwidth==0.2.9
+urllib3==2.1.0; python_version >= '3.8'
+wcwidth==0.2.10

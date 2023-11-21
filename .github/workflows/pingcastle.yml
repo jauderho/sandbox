@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@1b05615854632b887b69ae1be8cbefe72d3ae423 # v1
+        uses: step-security/harden-runner@eb238b55efaa70779f274895e782ed17c84f2895 # v1
         with:
           egress-policy: audit
           disable-telemetry: false
@@ -35,7 +35,7 @@ jobs:
       - name: Source checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v2.4.0 
 
-      - uses: Vampire/setup-wsl@188b420ddc69713cdd990715aba161526aed7f6d # v1
+      - uses: Vampire/setup-wsl@c5a800f46e4525a2e9f0b4d2be3262c85dea9f57 # v1
         with:
           distribution: Alpine
 
