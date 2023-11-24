@@ -4,6 +4,7 @@ aenum==3.1.15
 aiohttp==3.9.0; python_version >= '3.8'
 aiorun==2023.7.2; python_version >= '3.7'
 aiosignal==1.3.1; python_version >= '3.7'
+async-timeout==4.0.3; python_version >= '3.7'
 attrs==23.1.0; python_version >= '3.7'
 coloredlogs==15.0.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 dacite==1.8.1; python_version >= '3.6'
@@ -13,5 +14,5 @@ humanfriendly==10.0; python_version >= '2.7' and python_version not in '3.0, 3.1
 idna==3.4; python_version >= '3.5'
 multidict==6.0.4; python_version >= '3.7'
 orjson==3.9.10; python_version >= '3.8'
--e git+https://github.com/home-assistant-libs/python-matter-server.git@0a0049bae4a8e800e0676921bdb35c02f28fb61e#egg=python-matter-server
-yarl==1.9.2; python_version >= '3.7'
+-e git+https://github.com/home-assistant-libs/python-matter-server.git@f7827568ca30aceed1bb41a067088215ed926b5c#egg=python-matter-server
+yarl==1.9.3; python_version >= '3.7'
