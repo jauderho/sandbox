@@ -8,6 +8,7 @@ IFS=$'\n\t'
 APP=(
   "aranet4" \
   "autoflake" \
+  "awscli" \
   "cantools" \
   "chatgpt-linux-assistant" \
   "codespell" \
