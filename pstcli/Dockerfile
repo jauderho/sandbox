@@ -6,7 +6,7 @@ ARG ARCHIVE_URL=https://dl.dell.com/protected/drivers/FOLDER10048546M/1/pstcli-$
 
 # https://dl.dell.com/protected/drivers/FOLDER10048546M/1/pstcli-3.5.0.0.891.x86_64.release.rpm
 
-COPY pstcli-3.5.0.0.891.x86_64.release.rpm .
+COPY pstcli-3.6.0.0.1007.x86_64.release.rpm .
 
 RUN test -n "${BUILD_VERSION}" \
   && microdnf -y upgrade --refresh \ 
