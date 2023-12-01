@@ -10,7 +10,8 @@ name = "piwheels"
 
 [packages]
 #openbb = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true }
-openbb = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true, ref = "develop" }
+#openbb = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true, ref = "develop" }
+openbb-terminal = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true, ref = "develop" }
 #openbb = "*"
 grpcio = "*"
 langchain = "*"
