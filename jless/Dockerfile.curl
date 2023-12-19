@@ -1,5 +1,5 @@
 #FROM alpine:3.19.0@sha256:51b67269f354137895d43f3b3d810bfacd3945438e94dc5ac55fdac340352f48 AS build
-FROM rust:1.71.1-alpine3.18@sha256:72f04c53b30becd3de46458344a02e651d26f4d4268c392c439bf34eebe0dacf AS build
+FROM rust:1.74.1-alpine3.18@sha256:e6e45a7d5d8b7acb2a2915a35c4b12868b6cc089da61f4fbbb719673f2fcd60c AS build
 
 WORKDIR /usr/src/github.com/PaulJuliusMartinez/jless/
 #COPY Cargo.toml Cargo.toml
