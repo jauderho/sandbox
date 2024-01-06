@@ -27,7 +27,7 @@ blinker==1.7.0; python_version >= '3.8'
 bs4==0.0.1
 bt==0.2.9; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
 cachetools==5.3.2; python_version >= '3.7'
-ccxt==4.2.6
+ccxt==4.2.7
 certifi==2023.11.17; python_version >= '3.6'
 cffi==1.16.0; python_version >= '3.8'
 charset-normalizer==3.3.2; python_full_version >= '3.7.0'
@@ -122,7 +122,7 @@ langsmith==0.0.77; python_version < '4.0' and python_full_version >= '3.8.1'
 linearmodels==4.31; python_version >= '3.8'
 llama-index==0.8.29
 loguru==0.7.2; python_version >= '3.5'
-lxml==5.0.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+lxml==5.0.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 markupsafe==2.1.3; python_version >= '3.7'
 marshmallow==3.20.1; python_version >= '3.8'
 matplotlib==3.8.2; python_version >= '3.9'
@@ -151,7 +151,7 @@ oandapyv20==0.6.3
 onetimepass==1.0.1
 openai==0.28.1; python_full_version >= '3.7.1'
 openapi-schema-pydantic==1.2.4; python_full_version >= '3.6.1'
--e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@b170e2947877cfdfab1391b33c5bcdf891e78048#egg=openbb-terminal
+-e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@a7514bc588e70bd1fbcff95d7d43742c4168ebc3#egg=openbb-terminal
 openpyxl==3.1.2; python_version >= '3.6'
 packaging==23.2; python_version >= '3.7'
 pandas==1.5.3; python_version >= '3.8'
@@ -212,7 +212,7 @@ pyyaml==6.0.1; python_version >= '3.6'
 pyzmq==24.0.1; python_version >= '3.6'
 quandl==3.7.0; python_version >= '3.6'
 rdflib==7.0.0; python_full_version >= '3.8.1' and python_full_version < '4.0.0'
-referencing==0.32.0; python_version >= '3.8'
+referencing==0.32.1; python_version >= '3.8'
 regex==2023.12.25; python_version >= '3.7'
 reportlab==3.6.13; python_version >= '3.7' and python_version < '4'
 requests==2.31.0; python_version >= '3.7'
@@ -262,7 +262,7 @@ tornado==6.4; python_version >= '3.8'
 tqdm==4.66.1; python_version >= '3.7'
 tradingview-ta==3.3.0; python_version >= '3.6'
 traitlets==5.14.1; python_version >= '3.8'
-types-python-dateutil==2.8.19.14
+types-python-dateutil==2.8.19.20240106; python_version >= '3.8'
 typing-extensions==4.9.0; python_version >= '3.8'
 typing-inspect==0.9.0
 tzdata==2023.4; python_version >= '2'
@@ -277,7 +277,7 @@ vadersentiment==3.3.2
 validators==0.22.0; python_version >= '3.8'
 valinvest==0.0.2; python_version >= '3.6'
 watchdog==2.3.1; python_version >= '3.6'
-wcwidth==0.2.12
+wcwidth==0.2.13
 webcolors==1.13
 webencodings==0.5.1
 websocket-client==1.7.0; python_version >= '3.8'
