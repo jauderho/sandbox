@@ -41,7 +41,7 @@ cryptography==41.0.7; python_version >= '3.7'
 cssselect==1.2.0; python_version >= '3.7'
 cssselect2==0.7.0; python_version >= '3.7'
 cycler==0.12.1; python_version >= '3.8'
-cython==3.0.7; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+cython==3.0.8; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
 dataclasses-json==0.5.14; python_version < '3.13' and python_version >= '3.7'
 dateparser==1.2.0; python_version >= '3.7'
 datetime==5.4; python_version >= '3.7'
@@ -75,7 +75,7 @@ fsspec==2023.12.2; python_version >= '3.8'
 fundamentalanalysis==0.2.14
 future==0.18.3; python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'
 gitdb==4.0.11; python_version >= '3.7'
-gitpython==3.1.40; python_version >= '3.7'
+gitpython==3.1.41; python_version >= '3.7'
 greenlet==3.0.3; platform_machine == 'aarch64' or (platform_machine == 'ppc64le' or (platform_machine == 'x86_64' or (platform_machine == 'amd64' or (platform_machine == 'AMD64' or (platform_machine == 'win32' or platform_machine == 'WIN32')))))
 grpcio==1.60.0; python_version >= '3.7'
 h11==0.14.0; python_version >= '3.7'
@@ -98,7 +98,7 @@ iso8601==0.1.16
 isodate==0.6.1
 isoduration==20.11.0
 jedi==0.19.1; python_version >= '3.6'
-jinja2==3.1.2; python_version >= '3.7'
+jinja2==3.1.3; python_version >= '3.7'
 joblib==1.3.2; python_version >= '3.7'
 json5==0.9.14
 jsonpointer==2.4
@@ -151,7 +151,7 @@ oandapyv20==0.6.3
 onetimepass==1.0.1
 openai==0.28.1; python_full_version >= '3.7.1'
 openapi-schema-pydantic==1.2.4; python_full_version >= '3.6.1'
--e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@cf9536d8697bd778191aab07967864074acc8a2f#egg=openbb-terminal
+-e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@f2b9054f66807b4fd9d6d6414ed0919d4a51e7b7#egg=openbb-terminal
 openpyxl==3.1.2; python_version >= '3.6'
 packaging==23.2; python_version >= '3.7'
 pandas==1.5.3; python_version >= '3.8'
@@ -169,7 +169,7 @@ pillow==10.2.0; python_version >= '3.8'
 platformdirs==4.1.0; python_version >= '3.8'
 plotly==5.18.0; python_version >= '3.6'
 pmaw==3.0.0; python_version >= '3.5'
-posthog==3.3.0
+posthog==3.3.1
 praw==7.7.1; python_version ~= '3.7'
 prawcore==2.4.0; python_version ~= '3.8'
 prometheus-client==0.19.0; python_version >= '3.8'
@@ -185,7 +185,7 @@ pycares==4.4.0; python_version >= '3.8'
 pycodestyle==2.11.1; python_version >= '3.8'
 pycoingecko==3.1.0
 pycparser==2.21
-pycryptodome==3.19.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+pycryptodome==3.20.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 pydantic==1.10.13; python_version >= '3.7'
 pydeck==0.8.1b0; python_version >= '3.7'
 pyflakes==3.2.0; python_version >= '3.8'
