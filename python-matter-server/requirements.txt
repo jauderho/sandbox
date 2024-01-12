@@ -9,10 +9,10 @@ attrs==23.2.0; python_version >= '3.7'
 coloredlogs==15.0.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 dacite==1.8.1; python_version >= '3.6'
 frozenlist==1.4.1; python_version >= '3.8'
-home-assistant-chip-clusters==2023.12.0; python_version >= '3.7'
+home-assistant-chip-clusters==2024.1.0; python_version >= '3.7'
 humanfriendly==10.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 idna==3.6; python_version >= '3.5'
 multidict==6.0.4; python_version >= '3.7'
 orjson==3.9.10; python_version >= '3.8'
--e git+https://github.com/home-assistant-libs/python-matter-server.git@6bbca7bb52c78be5cb3329e8739e065d18ffcb14#egg=python-matter-server
+-e git+https://github.com/home-assistant-libs/python-matter-server.git@e555cbcac9cfb2b23776fc99e37d030a92dbea24#egg=python-matter-server
 yarl==1.9.4; python_version >= '3.7'
