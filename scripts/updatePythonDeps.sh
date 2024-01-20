@@ -41,9 +41,9 @@ APP=(
 #)
 
 # setup git
-git config user.name "Jauder Ho"
-git config user.email "jauderho@users.noreply.github.com"
-git config pull.rebase false
+git config --global user.name "Jauder Ho"
+git config --global user.email "jauderho@users.noreply.github.com"
+git config --global pull.rebase false
 
 # setup pipenv and python
 #PATH="$HOME/.local/bin:$PATH"
@@ -71,7 +71,7 @@ do
 	#pipenv lock && pipenv requirements > requirements.txt
 
 	git add Pipfile Pipfile.lock requirements.txt && \
-	git commit -S -m "Update requirements for ${i} ..." && \
+	git commit -m "Update requirements for ${i} ..." && \
 	git pull && \
 	git push
 
