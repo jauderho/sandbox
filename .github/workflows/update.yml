@@ -26,9 +26,9 @@ jobs:
 
   update-docker:
     runs-on: ubuntu-22.04
-
     permissions:
-        id-token: write
+      packages: write
+      id-token: write
 
     steps:
 #      - uses: GitHubSecurityLab/actions-permissions/monitor@v1
@@ -64,9 +64,9 @@ jobs:
 
   update-python:
     runs-on: ubuntu-22.04
-
     permissions:
-    	id-token: write
+      packages: write
+      id-token: write
 
     steps:
 #      - uses: GitHubSecurityLab/actions-permissions/monitor@v1
