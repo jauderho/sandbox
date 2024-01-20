@@ -27,7 +27,6 @@ jobs:
   update-docker:
     runs-on: ubuntu-22.04
     permissions:
-      packages: write
       id-token: write
 
     steps:
@@ -65,7 +64,6 @@ jobs:
   update-python:
     runs-on: ubuntu-22.04
     permissions:
-      packages: write
       id-token: write
 
     steps:
