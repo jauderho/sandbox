@@ -32,12 +32,13 @@ jobs:
 #        with:
 #          config: ${{ vars.PERMISSIONS_CONFIG }} 
       
-      # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
-#      - name: Harden Runner
-#        uses: step-security/harden-runner@8ca2b8b2ece13480cda6dacd3511b49857a23c09
-#        with:
-#          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+      - name: Harden Runner
+        uses: step-security/harden-runner@eb238b55efaa70779f274895e782ed17c84f2895
+        with:
+          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+          disable-telemetry: true
 
+      # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
       - name: Source checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v2.4.0 
         with:
@@ -51,6 +52,8 @@ jobs:
 #          pwd
 #          pip install --upgrade --user pipenv
 
+      - uses: chainguard-dev/actions/setup-gitsign@main
+
       - name: Update Dockerfile versions
         run: |
           PAT="${{ github.actor }}/${{ secrets.UPDATE_SECRET }}" scripts/test.sh
@@ -63,12 +66,13 @@ jobs:
 #        with:
 #          config: ${{ vars.PERMISSIONS_CONFIG }} 
       
-      # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
-#      - name: Harden Runner
-#        uses: step-security/harden-runner@8ca2b8b2ece13480cda6dacd3511b49857a23c09
-#        with:
-#          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+      - name: Harden Runner
+        uses: step-security/harden-runner@eb238b55efaa70779f274895e782ed17c84f2895
+        with:
+          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+          disable-telemetry: true
 
+      # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
       - name: Source checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v2.4.0 
         with:
