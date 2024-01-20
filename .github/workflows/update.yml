@@ -38,7 +38,7 @@ jobs:
         uses: step-security/harden-runner@eb238b55efaa70779f274895e782ed17c84f2895
         with:
           egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
-          disable-sudo: true
+          disable-sudo: false
           disable-telemetry: true
 
       # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
@@ -75,7 +75,7 @@ jobs:
         uses: step-security/harden-runner@eb238b55efaa70779f274895e782ed17c84f2895
         with:
           egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
-          disable-sudo: true
+          disable-sudo: false
           disable-telemetry: true
 
       # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
