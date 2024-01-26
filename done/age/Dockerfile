@@ -1,4 +1,4 @@
-FROM golang:1.22rc1-alpine3.19@sha256:7bb386995715147a760fb481302c85143ce80e1481f6bbddcd393c5485ff09b8 AS build
+FROM golang:1.22rc2-alpine3.19@sha256:4532dcab2919d1f74b57449ef73b53d78f2c1ff29100062c8328426ea0266b25 AS build
 
 WORKDIR /go/src/github.com/FiloSottile/age/
 
