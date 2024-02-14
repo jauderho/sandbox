@@ -27,7 +27,7 @@ blinker==1.7.0; python_version >= '3.8'
 bs4==0.0.1
 bt==0.2.9; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
 cachetools==5.3.2; python_version >= '3.7'
-ccxt==4.2.43
+ccxt==4.2.44
 certifi==2024.2.2; python_version >= '3.6'
 cffi==1.16.0; platform_python_implementation != 'PyPy'
 charset-normalizer==3.3.2; python_full_version >= '3.7.0'
@@ -118,7 +118,7 @@ jupyterlab-widgets==3.0.10; python_version >= '3.7'
 kiwisolver==1.4.5; python_version >= '3.7'
 korean-lunar-calendar==0.3.1
 langchain==0.0.266; python_version < '4.0' and python_full_version >= '3.8.1'
-langsmith==0.0.87; python_version < '4.0' and python_full_version >= '3.8.1'
+langsmith==0.0.91; python_version < '4.0' and python_full_version >= '3.8.1'
 linearmodels==4.31; python_version >= '3.8'
 llama-index==0.8.29
 loguru==0.7.2; python_version >= '3.5'
@@ -151,7 +151,7 @@ oandapyv20==0.6.3
 onetimepass==1.0.1
 openai==0.28.1; python_full_version >= '3.7.1'
 openapi-schema-pydantic==1.2.4; python_full_version >= '3.6.1'
--e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@6648f51ab5c5cc4158bf4a18cb5a2f4a3dc24db5#egg=openbb-terminal
+-e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@2516cfbc72d23a7656715314ea94cc34d4c994ee#egg=openbb-terminal
 openpyxl==3.1.2; python_version >= '3.6'
 packaging==23.2; python_version >= '3.7'
 pandas==1.5.3; python_version >= '3.8'
@@ -169,7 +169,7 @@ pillow==10.2.0; python_version >= '3.8'
 platformdirs==4.2.0; python_version >= '3.8'
 plotly==5.18.0; python_version >= '3.6'
 pmaw==3.0.0; python_version >= '3.5'
-posthog==3.4.0
+posthog==3.4.1
 praw==7.7.1; python_version ~= '3.7'
 prawcore==2.4.0; python_version ~= '3.8'
 prometheus-client==0.19.0; python_version >= '3.8'
@@ -222,7 +222,7 @@ rfc3339-validator==0.1.4; python_version >= '2.7' and python_version not in '3.0
 rfc3986-validator==0.1.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 rich==12.6.0; python_full_version >= '3.6.3' and python_full_version < '4.0.0'
 robin-stocks==2.1.0; python_version >= '3'
-rpds-py==0.17.1; python_version >= '3.8'
+rpds-py==0.18.0; python_version >= '3.8'
 rsa==4.9; python_version >= '3.6' and python_version < '4'
 ruamel.yaml==0.17.40; python_version >= '3'
 ruamel.yaml.clib==0.2.8; python_version < '3.13' and platform_python_implementation == 'CPython'
@@ -240,7 +240,7 @@ smmap==5.0.1; python_version >= '3.7'
 sniffio==1.3.0; python_version >= '3.7'
 soupsieve==2.5; python_version >= '3.8'
 sparqlwrapper==2.0.0; python_version >= '3.7'
-sqlalchemy==2.0.26; python_version >= '3.7'
+sqlalchemy==2.0.27; python_version >= '3.7'
 squarify==0.4.3
 stack-data==0.6.3
 statsmodels==0.13.5; python_version >= '3.7'
