@@ -4,7 +4,7 @@ aiodns==3.1.1; python_full_version >= '3.5.2'
 aiofiles==22.1.0; python_version >= '3.7' and python_version < '4.0'
 aiohttp==3.9.3; python_version >= '3.8'
 aiosignal==1.3.1; python_version >= '3.7'
-aiosqlite==0.19.0; python_version >= '3.7'
+aiosqlite==0.20.0; python_version >= '3.8'
 alpha-vantage==2.3.1
 altair==5.2.0; python_version >= '3.8'
 ansiwrap==0.8.4
@@ -27,7 +27,7 @@ blinker==1.7.0; python_version >= '3.8'
 bs4==0.0.1
 bt==0.2.9; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
 cachetools==5.3.2; python_version >= '3.7'
-ccxt==4.2.46
+ccxt==4.2.48
 certifi==2024.2.2; python_version >= '3.6'
 cffi==1.16.0; platform_python_implementation != 'PyPy'
 charset-normalizer==3.3.2; python_full_version >= '3.7.0'
@@ -88,7 +88,7 @@ idna==3.6; python_version >= '3.5'
 importlib-metadata==7.0.1; python_version >= '3.8'
 inflection==0.5.1; python_version >= '3.5'
 interface-meta==1.3.0; python_version >= '3.7' and python_version < '4.0'
-intrinio-sdk==6.26.7
+intrinio-sdk==6.26.8
 ipykernel==6.29.2; python_version >= '3.8'
 ipympl==0.8.4
 ipython==8.11.0; python_version >= '3.8'
@@ -100,7 +100,7 @@ isoduration==20.11.0
 jedi==0.19.1; python_version >= '3.6'
 jinja2==3.1.3; python_version >= '3.7'
 joblib==1.3.2; python_version >= '3.7'
-json5==0.9.14
+json5==0.9.17; python_version >= '3.8'
 jsonpointer==2.4
 jsonschema[format-nongpl]==4.21.1; python_version >= '3.8'
 jsonschema-specifications==2023.12.1; python_version >= '3.8'
@@ -138,7 +138,7 @@ multitasking==0.0.11
 mypy-extensions==1.0.0; python_version >= '3.5'
 nbclassic==1.0.0; python_version >= '3.7'
 nbclient==0.9.0; python_full_version >= '3.8.0'
-nbconvert==7.16.0; python_version >= '3.8'
+nbconvert==7.16.1; python_version >= '3.8'
 nbformat==5.9.2; python_version >= '3.8'
 nest-asyncio==1.6.0; python_version >= '3.5'
 nixtlats==0.1.20; python_version >= '3.7'
@@ -151,7 +151,7 @@ oandapyv20==0.6.3
 onetimepass==1.0.1
 openai==0.28.1; python_full_version >= '3.7.1'
 openapi-schema-pydantic==1.2.4; python_full_version >= '3.6.1'
--e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@9f1891931cca50ea43587bc38dfeb49006222a65#egg=openbb-terminal
+-e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@f8a5f5fb3769a0332f46eb6bdcb62abde3ed61e6#egg=openbb-terminal
 openpyxl==3.1.2; python_version >= '3.6'
 packaging==23.2; python_version >= '3.7'
 pandas==1.5.3; python_version >= '3.8'
@@ -169,7 +169,7 @@ pillow==10.2.0; python_version >= '3.8'
 platformdirs==4.2.0; python_version >= '3.8'
 plotly==5.19.0; python_version >= '3.8'
 pmaw==3.0.0; python_version >= '3.5'
-posthog==3.4.1
+posthog==3.4.2
 praw==7.7.1; python_version ~= '3.7'
 prawcore==2.4.0; python_version ~= '3.8'
 prometheus-client==0.20.0; python_version >= '3.8'
@@ -197,7 +197,7 @@ pyotp==2.9.0; python_version >= '3.7'
 pyparsing==3.1.1; python_full_version >= '3.6.8'
 pyprind==2.11.3
 pyrsistent==0.19.3; python_version >= '3.7'
-pythclient==0.1.21; python_full_version >= '3.9.0'
+pythclient==0.1.22; python_full_version >= '3.9.0'
 python-binance==1.0.19
 python-coinmarketcap==0.2
 python-dateutil==2.8.2; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
