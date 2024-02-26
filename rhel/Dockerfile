@@ -1,1 +1,1 @@
-FROM registry.access.redhat.com/rhel7@sha256:25af0b34ae19269a45f70d44473cd1cc2e58e53ab2ed264e01ab79236a114f7b
+FROM registry.access.redhat.com/rhel7@sha256:63c21de9bbbb32199f633f70259fd0818d4f56adb445ee300271ff2db6dd1383
