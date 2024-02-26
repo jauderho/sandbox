@@ -1,0 +1,32 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://www.piwheels.org/simple"
+verify_ssl = true
+name = "piwheels"
+
+[packages]
+#bgperf2 = { git = "https://github.com/netenglabs/bgperf2.git", editable = true }
+docker = "*"
+jinja2 = "*"
+#pyyaml = "*"
+pyroute2 = "*"
+nsenter = "*"
+netaddr = "*"
+mako = "*"
+six = "*"
+packaging = "*"
+psutil = "*"
+pyyaml = "*"
+matplotlib = "*"
+numpy = "*"
+toml = "*"
+textfsm = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3"
