@@ -27,7 +27,7 @@ blinker==1.7.0; python_version >= '3.8'
 bs4==0.0.1
 bt==0.2.9; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
 cachetools==5.3.3; python_version >= '3.7'
-ccxt==4.2.56
+ccxt==4.2.57
 certifi==2024.2.2; python_version >= '3.6'
 cffi==1.16.0; platform_python_implementation != 'PyPy'
 charset-normalizer==3.3.2; python_full_version >= '3.7.0'
@@ -98,7 +98,7 @@ isoduration==20.11.0
 jedi==0.19.1; python_version >= '3.6'
 jinja2==3.1.3; python_version >= '3.7'
 joblib==1.3.2; python_version >= '3.7'
-json5==0.9.17; python_version >= '3.8'
+json5==0.9.18; python_version >= '3.8'
 jsonpatch==1.33; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6'
 jsonpointer==2.4; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6'
 jsonschema[format-nongpl]==4.21.1; python_version >= '3.8'
@@ -119,7 +119,7 @@ korean-lunar-calendar==0.3.1
 langchain==0.1.9; python_version < '4.0' and python_full_version >= '3.8.1'
 langchain-community==0.0.24; python_version < '4.0' and python_full_version >= '3.8.1'
 langchain-core==0.1.28; python_version < '4.0' and python_full_version >= '3.8.1'
-langsmith==0.1.10; python_version < '4.0' and python_full_version >= '3.8.1'
+langsmith==0.1.12; python_version < '4.0' and python_full_version >= '3.8.1'
 linearmodels==4.31; python_version >= '3.8'
 loguru==0.7.2; python_version >= '3.5'
 lxml==5.1.0; python_version >= '3.6'
@@ -146,7 +146,7 @@ nltk==3.8.1; python_version >= '3.7'
 notebook==6.5.6; python_version >= '3.7'
 notebook-shim==0.2.4; python_version >= '3.7'
 numpy==1.23.4; python_version >= '3.8'
--e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@ba18734f8e1db035bd6b5185e08be3876fa6e144#egg=openbb-terminal
+-e git+https://github.com/OpenBB-finance/OpenBBTerminal.git@5f5fad05e75eae92e419f7b9661c2b010ad91d59#egg=openbb-terminal
 openpyxl==3.1.2; python_version >= '3.6'
 orjson==3.9.15; python_version >= '3.8'
 packaging==23.2; python_version >= '3.7'
@@ -195,7 +195,7 @@ pyrsistent==0.19.3; python_version >= '3.7'
 pythclient==0.1.24; python_full_version >= '3.9.0'
 python-binance==1.0.19
 python-coinmarketcap==0.2
-python-dateutil==2.9.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+python-dateutil==2.9.0.post0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
 python-dotenv==1.0.1; python_version >= '3.8'
 python-i18n==0.3.9
 python-jose==3.3.0
