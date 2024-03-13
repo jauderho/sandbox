@@ -34,7 +34,7 @@ jobs:
           egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
 
       - name: Checkout code
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v2.4.0
+        uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v2.4.0
 
       - name: Run Trivy to check ${{ matrix.image }} Docker image for vulnerabilities
         uses: aquasecurity/trivy-action@062f2592684a31eb3aa050cc61e7ca1451cecd3d # master
@@ -47,7 +47,7 @@ jobs:
           hide-progress: false
 
       - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@8a470fddafa5cbb6266ee11b37ef4d8aae19c571
+        uses: github/codeql-action/upload-sarif@3ab4101902695724f9365a384f86c1074d94e18c
         with:
           sarif_file: 'trivy-${{ matrix.image }}.sarif'
 
@@ -71,7 +71,7 @@ jobs:
           egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
 
       - name: Checkout code
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v2.4.0
+        uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v2.4.0
 
       - name: Run Snyk to check ${{ matrix.image }} Docker image for vulnerabilities
         # Snyk can be used to break the build when it detects vulnerabilities.
@@ -88,7 +88,7 @@ jobs:
           args: --file=${{ matrix.image }}/Dockerfile --severity-threshold=high
 
       - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@8a470fddafa5cbb6266ee11b37ef4d8aae19c571
+        uses: github/codeql-action/upload-sarif@3ab4101902695724f9365a384f86c1074d94e18c
         with:
           sarif_file: snyk.sarif
 
@@ -112,7 +112,7 @@ jobs:
           egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
 
       - name: Checkout code
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v2.4.0
+        uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v2.4.0
 
       - name: Run Anchore to check ${{ matrix.image }} Docker image for vulnerabilities
         uses: anchore/scan-action@3343887d815d7b07465f6fdcd395bd66508d486a # v3
@@ -124,6 +124,6 @@ jobs:
           severity-cutoff: high
 
       - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@8a470fddafa5cbb6266ee11b37ef4d8aae19c571
+        uses: github/codeql-action/upload-sarif@3ab4101902695724f9365a384f86c1074d94e18c
         with:
           sarif_file: ${{ steps.anchore-scan.outputs.sarif }}

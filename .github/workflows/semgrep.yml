@@ -36,7 +36,7 @@ jobs:
           github.com:443
           semgrep.dev:443
           
-    - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+    - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633
     
     - uses: returntocorp/semgrep-action@713efdd345f3035192eaa63f56867b88e63e4e5d
       with:
@@ -54,7 +54,7 @@ jobs:
     #    SEMGREP_SEND_METRICS: on
         
     - name: Upload SARIF file for GitHub Advanced Security Dashboard
-      uses: github/codeql-action/upload-sarif@8a470fddafa5cbb6266ee11b37ef4d8aae19c571
+      uses: github/codeql-action/upload-sarif@3ab4101902695724f9365a384f86c1074d94e18c
       with:
         sarif_file: semgrep.sarif
       if: always()
