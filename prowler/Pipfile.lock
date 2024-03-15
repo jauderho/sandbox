@@ -181,6 +181,14 @@
             "markers": "python_version >= '3.7'",
             "version": "==1.15.0"
         },
+        "azure-keyvault-keys": {
+            "hashes": [
+                "sha256:05eff85600f2f288a38e5c818ff77c5121840d327e66188cfa7ad333defb545b",
+                "sha256:08632dcd6ece28657204e9a256ad64369fe2b0e385ed43349f932f007d89f774"
+            ],
+            "markers": "python_version >= '3.8'",
+            "version": "==4.9.0"
+        },
         "azure-mgmt-applicationinsights": {
             "hashes": [
                 "sha256:2b1ffd9a0114974455795c73a3a5d17c849e32b961d707d2db393b99254b576f",
@@ -205,6 +213,14 @@
             "markers": "python_version >= '3.7'",
             "version": "==30.5.0"
         },
+        "azure-mgmt-containerservice": {
+            "hashes": [
+                "sha256:0941a26a9c61930e004001e7340812dadb8a726e2ccc5b4d30ce4e6403fe1f43",
+                "sha256:46887178bb1035933f06fa63121c1ac9d4c5871f202ae2b86bc4af6e1e3b354f"
+            ],
+            "markers": "python_version >= '3.8'",
+            "version": "==29.1.0"
+        },
         "azure-mgmt-core": {
             "hashes": [
                 "sha256:81071675f186a585555ef01816f2774d49c1c9024cb76e5720c3c0f6b337bb7d",
@@ -221,13 +237,29 @@
             "markers": "python_version >= '3.7'",
             "version": "==9.4.0"
         },
-        "azure-mgmt-network": {
+        "azure-mgmt-keyvault": {
             "hashes": [
-                "sha256:114c4292d223b1d1e247b41af65b8d5a3793567e6adbfa230772055223f4182a",
-                "sha256:c76181e79d689df40b8160c4ffa8dd2bbf6ba064ed4d164fdefd8fb53b781641"
+                "sha256:183b4164cf1868b8ea7efeaa98edad7d2a4e14a9bd977c2818b12b75150cd2a2",
+                "sha256:3410cf6c703e9570ed3c8e9716e483c02b1804adde6ab437ddc8feac4545acd6"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==25.2.0"
+            "version": "==10.3.0"
+        },
+        "azure-mgmt-monitor": {
+            "hashes": [
+                "sha256:5ffbf500e499ab7912b1ba6d26cef26480d9ae411532019bb78d72562196e07b",
+                "sha256:fe4cf41e6680b74a228f81451dc5522656d599c6f343ecf702fc790fda9a357b"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==6.0.2"
+        },
+        "azure-mgmt-network": {
+            "hashes": [
+                "sha256:87b5338d14c957bd3a28a5ec85fb74043749d1a16a48cd5978ef51c4a1036af3",
+                "sha256:dce2cafb1ae0e563e0b5efc537dc98a7c0ad824d4261e64bed75f788196dd5c6"
+            ],
+            "markers": "python_version >= '3.8'",
+            "version": "==25.3.0"
         },
         "azure-mgmt-rdbms": {
             "hashes": [
@@ -236,6 +268,14 @@
             ],
             "markers": "python_version >= '3.6'",
             "version": "==10.1.0"
+        },
+        "azure-mgmt-resource": {
+            "hashes": [
+                "sha256:c2ba6cfd99df95f55f36eadc4245e3dc713257302a1fd0277756d94bd8cb28e0",
+                "sha256:f185eec72bbc39f42bcb83ae6f1bad744f0e3f20a12d9b2b3e70d16c74ad9cc0"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==23.0.1"
         },
         "azure-mgmt-security": {
             "hashes": [
@@ -268,13 +308,21 @@
             "markers": "python_version >= '3.7'",
             "version": "==3.1.1"
         },
-        "azure-storage-blob": {
+        "azure-mgmt-web": {
             "hashes": [
-                "sha256:26c0a4320a34a3c2a1b74528ba6812ebcb632a04cd67b1c7377232c4b01a5897",
-                "sha256:7bbc2c9c16678f7a420367fef6b172ba8730a7e66df7f4d7a55d5b3c8216615b"
+                "sha256:28e88602ad9d6d03ed3ba89f966f478b6148e28d292d165e5f371c92c59621df",
+                "sha256:efcfe6f7f520ed0abcfe86517e1c8cf02a712f737a3db0db7cb46c6d647981ed"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==12.19.0"
+            "version": "==7.2.0"
+        },
+        "azure-storage-blob": {
+            "hashes": [
+                "sha256:13e16ba42fc54ac2c7e8f976062173a5c82b9ec0594728e134aac372965a11b0",
+                "sha256:c5530dc51c21c9564e4eb706cd499befca8819b10dd89716d3fc90d747556243"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==12.19.1"
         },
         "boto3": {
             "hashes": [
@@ -647,11 +695,11 @@
         },
         "google-api-python-client": {
             "hashes": [
-                "sha256:9d83b178496b180e058fd206ebfb70ea1afab49f235dd326f557513f56f496d5",
-                "sha256:ebf4927a3f5184096647be8f705d090e7f06d48ad82b0fa431a2fe80c2cbe182"
+                "sha256:77447bf2d6b6ea9e686fd66fc2f12ee7a63e3889b7427676429ebf09fcb5dcf9",
+                "sha256:a5953e60394b77b98bcc7ff7c4971ed784b3b693e9a569c176eaccb1549330f2"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==2.118.0"
+            "version": "==2.122.0"
         },
         "google-auth": {
             "hashes": [
@@ -1121,12 +1169,12 @@
         },
         "prowler": {
             "hashes": [
-                "sha256:731aa3fe07e6a51679509cc14bb43ee123bb424b1113a5d8968f438a70a07008",
-                "sha256:9b8550769c58a7971f2da7af197944b28dcb092ad0dd515d3ed7bc3e56e5eed7"
+                "sha256:04624bf7cc3c3125236cfdec9ebfd05a070066a3d4b66882353f104bf6a3a916",
+                "sha256:1336ef87dc0f2bf731aa426c017da8fb0524363d0afd42c5e983f5e965f2c4cb"
             ],
             "index": "pypi",
             "markers": "python_version < '3.13' and python_version >= '3.9'",
-            "version": "==3.14.0"
+            "version": "==3.15.0"
         },
         "pyasn1": {
             "hashes": [
@@ -1452,11 +1500,11 @@
         },
         "slack-sdk": {
             "hashes": [
-                "sha256:811472ce598db855ab3c02f098fa430323ccb253cfe17ba20c7b05ab206d984d",
-                "sha256:a901c68cb5547d5459cdefd81343d116db56d65f6b33f4081ddf1cdd243bf07e"
+                "sha256:85d86b34d807c26c8bb33c1569ec0985876f06ae4a2692afba765b7a5490d28c",
+                "sha256:c108e509160cf1324c5c8b1f47ca52fb5e287021b8caf9f4ec78ad737ab7b1d9"
             ],
             "markers": "python_version >= '3.6'",
-            "version": "==3.27.0"
+            "version": "==3.27.1"
         },
         "sniffio": {
             "hashes": [
@@ -1766,11 +1814,11 @@
         },
         "zipp": {
             "hashes": [
-                "sha256:c1bb803ed69d2cce2373152797064f7e79bc43f0a3748eb494096a867e0ebf79",
-                "sha256:df8d042b02765029a09b157efd8e820451045890acc30f8e37dd2f94a060221f"
+                "sha256:206f5a15f2af3dbaee80769fb7dc6f249695e940acca08dfb2a4769fe61e538b",
+                "sha256:2884ed22e7d8961de1c9a05142eb69a247f120291bc0206a00a7642f09b5b715"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==3.18.0"
+            "version": "==3.18.1"
         }
     },
     "develop": {}
