@@ -1,16 +1,99 @@
+/*
+
+
+
+*/
+
 {
- "recommendations": [
-    "ms-azuretools.vscode-docker",
-    "redhat.vscode-yaml",
-    "ms-vscode-remote.remote-containers",
-    "eamodio.gitlens",
-    "mhutchie.git-graph",
-    "Gruntfuggly.todo-tree",
-    "aaron-bond.better-comments",
-    "CoenraadS.bracket-pair-colorizer-2",
-    "oderwat.indent-rainbow",
-    "streetsidesoftware.code-spell-checker",
-    "yzhang.markdown-all-in-one",
-    "DavidAnson.vscode-markdownlint"
- ]
+   "recommendations": [
+      // Git
+      "eamodio.gitlens", // GitLens — Supercharge the Git capabilities built into Visual Studio Code. [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+      "mhutchie.git-graph", // Git Graph — Visualize your Git repositories. [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+      
+      // GitHub
+      "GitHub.vscode-pull-request-github", // GitHub Pull Requests and Issues — Work with GitHub pull requests and issues. [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+      "GitHub.remotehub", // GitHub Repositories — Work with GitHub repositories. [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub)
+      "github.vscode-github-actions", // GitHub Actions for VS Code — Manage your workflows, view the workflow run history, and helps with authoring workflows. [GitHub Actions for VS Code](https://marketplace.visualstudio.com/items?itemName=github.vscode-github-actions)
+      "me-dutour-mathieu.vscode-github-actions", // GitHub Actions for VS Code — Another version of the GitHub Actions extension. [GitHub Actions for VS Code](https://marketplace.visualstudio.com/items?itemName=me-dutour-mathieu.vscode-github-actions)
+
+      // Productivity
+      "Gruntfuggly.todo-tree", // Todo Tree — Show TODOs and FIXMEs in a tree view. [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+      "aaron-bond.better-comments", // Better Comments — Improve your code commenting by annotating with alerts, queries, TODOs, and more. [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+      "oderwat.indent-rainbow", // Indent Rainbow — Makes indentation more readable. [Indent Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+
+      // Code Spellcheck
+      "streetsidesoftware.code-spell-checker", // Code Spell Checker — Spell check your code. [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+
+      // Security
+      //"aquasecurityofficial.trivy-vulnerability-scanner", // Trivy — A simple and comprehensive vulnerability scanner for containers and other artifacts. [Trivy](https://marketplace.visualstudio.com/items?itemName=aquasecurityofficial.trivy-vulnerability-scanner)
+      //"snyk-security.snyk-vulnerability-scanner", // Snyk — Find and fix vulnerabilities in your code. [Snyk](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner)
+
+      // Remote
+      "ms-vscode.remote-repositories", // Remote Repositories — Work with repositories on remote servers. [Remote Repositories](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-repositories)
+      "ms-vscode-remote.remote-containers", // Remote - Containers — Use a Docker container as a full-featured development environment. [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+      "ms-vscode-remote.remote-ssh", // Remote - SSH — Use any remote machine with a SSH server as your development environment. [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
+      "ms-vscode-remote.remote-ssh-edit", // Remote - SSH: Editing Configuration Files — Edit SSH configuration files. [Remote - SSH: Editing Configuration Files](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit)
+      //"ms-vscode.remote-server", // Remote Server — Work with remote servers. [Remote Server](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-server)
+      //"ms-vscode-remote.vscode-remote-extensionpack", // Remote - Extension Pack — A collection of extensions that can be installed together to work with remote development. [Remote - Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+      "ms-vscode.remote-explorer", // Remote Explorer — Work with remote servers. [Remote Explorer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-explorer)
+
+      // Bash Shell
+      "timonwong.shellcheck", // ShellCheck — Lint shell scripts. [ShellCheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck)
+  
+      // Golang
+      "golang.go", // Go — Rich language support for the Go programming language. [Go](https://marketplace.visualstudio.com/items?itemName=golang.go)
+  
+      // JavaScript
+      "dbaeumer.vscode-eslint", // ESLint — Integrates ESLint into VS Code. [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+      "esbenp.prettier-vscode", // Prettier - Code formatter — Prettier is an opinionated code formatter. [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  
+      // Markdown
+      "yzhang.markdown-all-in-one", // Markdown All in One — Keyboard shortcuts, table of contents, auto preview and more. [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+      "DavidAnson.vscode-markdownlint", // MarkdownLint — Markdown linting and style checking for Visual Studio Code. [MarkdownLint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+
+      // Marp
+      "marp-team.marp-vscode", // Marp — Create slide decks using Markdown. [Marp](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)
+  
+      // PowerShell
+      "ms-vscode.PowerShell", // PowerShell — Provides rich language support for PowerShell. [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
+  
+      // Python
+      "ms-python.python", // Python — Rich support for the Python language. [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+      "ms-python.vscode-pylance", // Pylance — Pylance is a Python language server that uses the Language Server Protocol to provide rich language support for Python in Visual Studio Code. [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
+      "ms-python.debugpy", // Debugpy — Debugger for Python. [Debugpy](https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy)
+      "ms-python.black-formatter", // Black — Black is the uncompromising Python code formatter. [Black](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
+      "ms-python.isort", // isort — isort is a Python utility/library to sort imports alphabetically, and automatically separated into sections. [isort](https://marketplace.visualstudio.com/items?itemName=ms-python.isort)
+  
+      // Rust
+      "rust-lang.rust", // Rust (rls) — Rich language support for Rust. [Rust](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust)
+      "matklad.rust-analyzer", // Rust Analyzer — A language server for Rust. [Rust Analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer)
+      
+      // YAML
+      "redhat.vscode-yaml", // YAML — YAML Language Support by Red Hat with JSON Schema support. [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+  
+      // Ansible
+      "redhat.ansible", // Ansible — Ansible support in Visual Studio Code. [Ansible](https://marketplace.visualstudio.com/items?itemName=redhat.ansible)
+  
+      // Terraform
+      "HashiCorp.terraform", // Terraform — Syntax highlighting, linting, and more for Terraform files. [Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
+  
+      // Azure
+      //"ms-azuretools.vscode-azurefunctions", // Azure Functions — Create, debug, and deploy Azure Functions from VS Code. [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
+      //"ms-azuretools.vscode-azureappservice", // Azure App Service — Develop and deploy to Azure App Service. [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
+      "ms-azuretools.vscode-azurecli", // Azure CLI Tools — Execute Azure CLI commands from VS Code. [Azure CLI Tools](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurecli)
+      "ms-azuretools.vscode-azure-account", // Azure Account — Sign in to Azure Cloud. [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-account)
+      "ms-azuretools.vscode-azure-storage", // Azure Storage — Manage Azure Storage resources. [Azure Storage](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-storage)
+      "ms-azuretools.vscode-azureterraform", // Azure Terraform — Manage Azure resources using Terraform directly from VS Code. [Azure Terraform](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureterraform)
+      "msazurermtools.azurerm-vscode-tools", // Azure Resource Manager (ARM) Tools — Manage Azure resources directly from VS Code. [Azure Resource Manager (ARM) Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
+      "azurepolicy.azurepolicyextension", // Azure Policy — Manage and assign Azure policies directly from VS Code. [Azure Policy](https://marketplace.visualstudio.com/items?itemName=azurepolicy.azurepolicyextension)
+  
+      // AWS
+      "aws-toolkit-vscode.aws-toolkit-vscode", // AWS Toolkit for Visual Studio Code — Develop and deploy applications on AWS. [AWS Toolkit](https://marketplace.visualstudio.com/items?itemName=aws-toolkit-vscode.aws-toolkit-vscode)
+  
+      // Docker
+      "ms-azuretools.vscode-docker", // Docker — Adds syntax highlighting, commands, and more for Dockerfile and docker-compose files. [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+  
+      // WSL
+      "ms-vscode-remote.remote-wsl" // Remote - WSL — Use the Windows Subsystem for Linux as your full-time development environment. [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+   ]
 }
