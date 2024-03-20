@@ -1,9 +1,3 @@
-/*
-
-
-
-*/
-
 {
    "recommendations": [
       // Git
@@ -65,8 +59,10 @@
       "ms-python.isort", // isort — isort is a Python utility/library to sort imports alphabetically, and automatically separated into sections. [isort](https://marketplace.visualstudio.com/items?itemName=ms-python.isort)
   
       // Rust
-      "rust-lang.rust", // Rust (rls) — Rich language support for Rust. [Rust](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust)
-      "matklad.rust-analyzer", // Rust Analyzer — A language server for Rust. [Rust Analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer)
+      "rust-lang.rust-analyzer", // Rust (rls) — Rich language support for Rust. [Rust](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+      
+      // TOML
+      "tamasfe.even-better-toml",
       
       // YAML
       "redhat.vscode-yaml", // YAML — YAML Language Support by Red Hat with JSON Schema support. [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
