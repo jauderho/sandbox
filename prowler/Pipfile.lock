@@ -207,11 +207,11 @@
         },
         "azure-mgmt-compute": {
             "hashes": [
-                "sha256:b65a6c1e22be7334604257d8d9f96a9c6dc4c6d4869f95d0d551c7c8170a2e71",
-                "sha256:ed3ea34b799db0d52ee55e2f1ab4b0f09fa4a08f35e061ecb9aad9fb5a218844"
+                "sha256:4d80d723ec6d4cb9583617ebec0716e7d74b2732acbaed023ed2e3cc7053d00e",
+                "sha256:9f6d29864ebe080796d4020533e79e4c8508512d3c53ec5a7a8930e4bd2f0bd4"
             ],
-            "markers": "python_version >= '3.7'",
-            "version": "==30.5.0"
+            "markers": "python_version >= '3.8'",
+            "version": "==30.6.0"
         },
         "azure-mgmt-containerservice": {
             "hashes": [
@@ -703,11 +703,11 @@
         },
         "google-auth": {
             "hashes": [
-                "sha256:80b8b4969aa9ed5938c7828308f20f035bc79f9d8fb8120bf9dc8db20b41ba30",
-                "sha256:9fd67bbcd40f16d9d42f950228e9cf02a2ded4ae49198b27432d0cded5a74c38"
+                "sha256:672dff332d073227550ffc7457868ac4218d6c500b155fe6cc17d2b13602c360",
+                "sha256:d452ad095688cd52bae0ad6fafe027f6a6d6f560e810fec20914e17a09526415"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==2.28.2"
+            "version": "==2.29.0"
         },
         "google-auth-httplib2": {
             "hashes": [
@@ -856,12 +856,26 @@
             ],
             "version": "==1.3.1"
         },
+        "microsoft-kiota-serialization-form": {
+            "hashes": [
+                "sha256:5bc76fb2fc67d7c1f878f876d252ea814e4fc38df505099b9b86de52d974380a",
+                "sha256:663ece0cb1a41fe9ddfc9195aa3f15f219e14d2a1ee51e98c53ad8d795b2785d"
+            ],
+            "version": "==0.1.0"
+        },
         "microsoft-kiota-serialization-json": {
             "hashes": [
                 "sha256:72bf65d81c0356ad87c229694733f4eb558628a13c5ee8dd274980c4b2d9b64b",
                 "sha256:a32c73dd92ef2677dbf1deca2fb44b5111c0ef572b15c47205bff521800cd750"
             ],
             "version": "==1.1.0"
+        },
+        "microsoft-kiota-serialization-multipart": {
+            "hashes": [
+                "sha256:14e89e92582e6630ddbc70ac67b70bf189dacbfc41a96d3e1d10339e86c8dde5",
+                "sha256:ef183902e77807806b8a181cdde53ba5bc04c6c9bdb2f7d80f8bad5d720e0015"
+            ],
+            "version": "==0.1.0"
         },
         "microsoft-kiota-serialization-text": {
             "hashes": [
@@ -896,11 +910,11 @@
         },
         "msgraph-sdk": {
             "hashes": [
-                "sha256:661b6ddcc76391434af505bef0c3729405418402b3a7e673f1d094cb4fd5f80a",
-                "sha256:c81bbd7c82b1237a25baee46d2a40ea3eabd15e06c5e50621ad4a9045012da5d"
+                "sha256:4a9f706413c0a497cdfffd0b741122a5e73206333d566d115089cef9f4adadb7",
+                "sha256:689eec74fcb5cb29446947e4761fa57edeeb3ec1dccd7975c44d12d8d9db9c4f"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==1.1.0"
+            "version": "==1.2.0"
         },
         "msrest": {
             "hashes": [
@@ -1169,12 +1183,12 @@
         },
         "prowler": {
             "hashes": [
-                "sha256:04624bf7cc3c3125236cfdec9ebfd05a070066a3d4b66882353f104bf6a3a916",
-                "sha256:1336ef87dc0f2bf731aa426c017da8fb0524363d0afd42c5e983f5e965f2c4cb"
+                "sha256:cf66aac163559d6141fdf11ed08267bbb889361572e0e07f35f2bc3ab9c54a2f",
+                "sha256:dc431d06b42097169a2ed3ebb3533eb504120718fe5f3c54f02fab945fff58ea"
             ],
             "index": "pypi",
             "markers": "python_version < '3.13' and python_version >= '3.9'",
-            "version": "==3.15.0"
+            "version": "==3.15.1"
         },
         "pyasn1": {
             "hashes": [
