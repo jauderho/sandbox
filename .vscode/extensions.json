@@ -31,6 +31,9 @@
       //"ms-vscode-remote.vscode-remote-extensionpack", // Remote - Extension Pack — A collection of extensions that can be installed together to work with remote development. [Remote - Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
       "ms-vscode.remote-explorer", // Remote Explorer — Work with remote servers. [Remote Explorer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-explorer)
 
+      // GenAI
+      "phind.phind", // Phind — Enhance your coding efficiency with Phind's AI-powered code search and analysis. [Phind](https://marketplace.visualstudio.com/items?itemName=phind.phind)
+
       // Bash Shell
       "timonwong.shellcheck", // ShellCheck — Lint shell scripts. [ShellCheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck)
   
@@ -59,11 +62,11 @@
       "ms-python.isort", // isort — isort is a Python utility/library to sort imports alphabetically, and automatically separated into sections. [isort](https://marketplace.visualstudio.com/items?itemName=ms-python.isort)
   
       // Rust
-      "rust-lang.rust-analyzer", // Rust (rls) — Rich language support for Rust. [Rust](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+      "rust-lang.rust-analyzer", // Rust Analyzer - Provides rich language support for Rust, including features like code completion, syntax highlighting, and more. [Rust Analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
       
       // TOML
-      "tamasfe.even-better-toml",
-      
+      "tamasfe.even-better-toml", // Even Better TOML - Enhances TOML language support with features like syntax highlighting, formatting, and more. [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml)
+
       // YAML
       "redhat.vscode-yaml", // YAML — YAML Language Support by Red Hat with JSON Schema support. [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
   
@@ -72,17 +75,27 @@
   
       // Terraform
       "HashiCorp.terraform", // Terraform — Syntax highlighting, linting, and more for Terraform files. [Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
-  
+
       // Azure
-      //"ms-azuretools.vscode-azurefunctions", // Azure Functions — Create, debug, and deploy Azure Functions from VS Code. [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
-      //"ms-azuretools.vscode-azureappservice", // Azure App Service — Develop and deploy to Azure App Service. [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
       "ms-azuretools.vscode-azurecli", // Azure CLI Tools — Execute Azure CLI commands from VS Code. [Azure CLI Tools](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurecli)
-      "ms-azuretools.vscode-azure-account", // Azure Account — Sign in to Azure Cloud. [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-account)
-      "ms-azuretools.vscode-azure-storage", // Azure Storage — Manage Azure Storage resources. [Azure Storage](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-storage)
+      "ms-vscode.azure-account", // Azure Account — Provides a unified Azure login experience in Visual Studio Code. [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
       "ms-azuretools.vscode-azureterraform", // Azure Terraform — Manage Azure resources using Terraform directly from VS Code. [Azure Terraform](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureterraform)
       "msazurermtools.azurerm-vscode-tools", // Azure Resource Manager (ARM) Tools — Manage Azure resources directly from VS Code. [Azure Resource Manager (ARM) Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
       "azurepolicy.azurepolicyextension", // Azure Policy — Manage and assign Azure policies directly from VS Code. [Azure Policy](https://marketplace.visualstudio.com/items?itemName=azurepolicy.azurepolicyextension)
-  
+
+      //"ms-vscode.vscode-node-azure-pack", // Node Azure Pack — A collection of essential Azure Node.js extensions for VS Code. [Node Azure Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
+      //"ms-azuretools.vscode-azurefunctions", // Azure Functions — Create, debug, and deploy Azure Functions from VS Code. [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
+      //"ms-azuretools.vscode-azureappservice", // Azure App Service — Develop and deploy to Azure App Service. [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
+      //"ms-azuretools.vscode-cosmosdb", // Azure Cosmos DB — Work with Azure Cosmos DB databases. [Azure Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
+      "ms-azuretools.vscode-azurestorage", // Azure Storage — Manage Azure Storage resources directly from VS Code. [Azure Storage](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestorage)
+      "ms-azuretools.vscode-azurevirtualmachines", // Azure Virtual Machines — Manage Azure VMs directly from VS Code. [Azure Virtual Machines](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurevirtualmachines)
+      //"ms-azuretools.vscode-azurestaticwebapps", // Azure Static Web Apps — Develop and deploy static web apps and serverless functions from VS Code. [Azure Static Web Apps](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps)
+      "ms-azuretools.azure-dev", // Azure Developer Tools — A collection of tools and extensions for working with Azure services. [Azure Developer Tools](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.azure-dev)
+      //"ms-azuretools.vscode-azurecontainerapps", // Azure Container Apps — Create, manage, and deploy containerized applications to Azure Container Apps. [Azure Container Apps](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurecontainerapps)
+
+      "ms-azuretools.vscode-azureresourcegroups", // Azure Resource Groups — View and manage Azure Resource Groups directly from VS Code. [Azure Resource Groups](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups)
+      //"ms-vscode.azure-repos", // Azure Repos — Provides integration with Azure DevOps Repos. [Azure Repos](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-repos)
+      
       // AWS
       "aws-toolkit-vscode.aws-toolkit-vscode", // AWS Toolkit for Visual Studio Code — Develop and deploy applications on AWS. [AWS Toolkit](https://marketplace.visualstudio.com/items?itemName=aws-toolkit-vscode.aws-toolkit-vscode)
   
