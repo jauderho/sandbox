@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  BUILD_VERSION: 1.32.60
+  BUILD_VERSION: 1.32.72
   DOCKER_CLI_EXPERIMENTAL: enabled
   REPOSITORY: ${{ github.actor }}/${{ github.workflow }}
 
