@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  BUILD_VERSION: "5.2.0"
+  BUILD_VERSION: "6.0.0"
   DOCKER_CLI_EXPERIMENTAL: enabled
   REPOSITORY: ${{ github.actor }}/${{ github.workflow }}-sandbox 
 
@@ -30,7 +30,7 @@ jobs:
       
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142 # v1
+        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de6.0.04a18142 # v1
         with:
           egress-policy: audit
           disable-telemetry: false
