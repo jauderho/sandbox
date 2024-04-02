@@ -10,9 +10,9 @@ name = "piwheels"
 
 [packages]
 #pshtt = "*"
-pshtt = "0.7.1"
+#pshtt = "0.7.1"
 #pshtt = { git = "https://github.com/cisagov/pshtt", editable = true }
-#pshtt = { git = "https://github.com/jauderho/pshtt", editable = true }
+pshtt = { git = "https://github.com/jauderho/pshtt", editable = true }
 #sslyze = { git = "https://github.com/jauderho/sslyze", editable = true }
 #pshtt = { git = "https://github.com/cisagov/pshtt", editable = true, ref="v0.6.10" }
 cryptography = "*"
