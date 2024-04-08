@@ -2,11 +2,11 @@ FROM almalinux:9.3-minimal@sha256:b353d3bd6c1b5142d943d88a8c5d452ba11687ecd68015
 # FROM rockylinux:9.1-minimal@sha256:9f700bae74355a24f30a7715aeb70d3605746c51776f5ce26486a5ec27243666
 
 ARG BUILD_VERSION
-ARG ARCHIVE_URL=https://dl.dell.com/protected/drivers/FOLDER10048546M/1/pstcli-${BUILD_VERSION}.x86_64.release.rpm
+ARG ARCHIVE_URL=https://dl.dell.com/FOLDER11395572M/1/pstcli-${BUILD_VERSION}.x86_64.release.rpm
 
-# https://dl.dell.com/protected/drivers/FOLDER10048546M/1/pstcli-3.5.0.0.891.x86_64.release.rpm
+# https://dl.dell.com/FOLDER11395572M/1/pstcli-3.6.1.0.1084.x86_64.release.rpm
 
-COPY pstcli-3.6.0.0.1007.x86_64.release.rpm .
+COPY pstcli-3.6.1.0.1084.x86_64.release.rpm .
 
 RUN test -n "${BUILD_VERSION}" \
   && microdnf -y upgrade --refresh \ 
