@@ -35,6 +35,8 @@ LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/ruff"
 LABEL org.opencontainers.image.description="ruff is an extremely fast Python linter and code formatter, written in Rust"
 
+WORKDIR /data
+
 ENTRYPOINT ["ruff"]
 #CMD ["-h"]
 
