@@ -38,5 +38,5 @@ LABEL org.opencontainers.image.description="ruff is an extremely fast Python lin
 WORKDIR /data
 
 ENTRYPOINT ["ruff"]
-#CMD ["-h"]
+CMD ["-h"]
 
