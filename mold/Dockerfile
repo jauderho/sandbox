@@ -3,7 +3,7 @@
 # $ docker build -t rui314/mold-builder:v1-$(uname -m) .
 # $ docker push rui314/mold-builder:v1-$(uname -m)
 
-FROM ubuntu:24.04@sha256:3e1fb4aeedc137fc8cffe5f0a7c25bfd216ffab624460c8c17031724d9dc61e4
+FROM ubuntu:24.04@sha256:723ad8033f109978f8c7e6421ee684efb624eb5b9251b70c6788fdb2405d050b
 
 ARG DEBIAN_FRONTEND=noninteractive
 
