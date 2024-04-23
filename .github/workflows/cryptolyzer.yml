@@ -1,12 +1,12 @@
-name: crytolyzer
+name: cryptolyzer
 
 on:
   push:
     branches: 
       - main
     paths:
-      - ruff/*
-      - .github/workflows/ruff.yml
+      - cryptolyzer/*
+      - .github/workflows/cryptolyzer.yml
   workflow_dispatch:
   schedule:
     - cron: "0 8 * * 1"
