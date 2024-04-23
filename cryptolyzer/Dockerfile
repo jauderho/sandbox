@@ -36,6 +36,6 @@ LABEL org.opencontainers.image.description="cryptolyzer is a comprehensive crypt
 
 WORKDIR /data
 
-ENTRYPOINT ["cryptolyzer"]
+ENTRYPOINT ["cryptolyze"]
 CMD ["-h"]
 
