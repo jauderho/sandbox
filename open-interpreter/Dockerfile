@@ -13,7 +13,7 @@ COPY requirements.txt .
 RUN \
 	apk update && \
 	apk upgrade -a && \
-	build_pkgs="gcc python3-dev musl-dev linux-headers" && \
+	build_pkgs="build-base gcc python3-dev musl-dev linux-headers" && \
 	runtime_pkgs="ca-certificates openssl python3 py3-pip" && \
 	apk --no-cache add --virtual build-dependencies ${build_pkgs} && \
 	apk --no-cache add ${runtime_pkgs} && \
