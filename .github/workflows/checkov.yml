@@ -31,7 +31,7 @@ jobs:
 
       - name: Run Checkov action
         id: checkov
-        uses: bridgecrewio/checkov-action@65ca23ae4ebac97e587bdb6ef94b708d7b9cc6ea # master
+        uses: bridgecrewio/checkov-action@221db08a55f1fa00d22adee11e36240767f4a1ae # master
         with:
           directory: .
           #check: CKV_AWS_1 # optional: run only a specific check_id. can be comma separated list
@@ -47,6 +47,6 @@ jobs:
           #container_user: 1000 # optional: Define what UID and / or what GID to run the container under to prevent permission issues
 
       - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@d39d31e687223d841ef683f52467bd88e9b21c14
+        uses: github/codeql-action/upload-sarif@ccf74c947955fd1cf117aef6a0e4e66191ef6f61
         with:
           sarif_file: 'results.sarif'
