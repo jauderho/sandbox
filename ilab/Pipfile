@@ -9,7 +9,10 @@ verify_ssl = true
 name = "piwheels"
 
 [packages]
-ilab = "*"
+#ilab = "*"
+ilab = { git = "https://github.com/instructlab/instructlab", editable = true }
+#ilab = { git = "https://github.com/instructlab/instructlab", editable = true, ref="v0.14.1" }
+#ilab = { git = "https://github.com/instructlab/instructlab", editable = true, ref="stable" }
 
 [dev-packages]
 
