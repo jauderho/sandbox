@@ -36,6 +36,6 @@ LABEL org.opencontainers.image.description="Open Interpreter is a new way to use
 
 WORKDIR /data
 
-ENTRYPOINT ["intepreter"]
+ENTRYPOINT ["interpreter"]
 CMD ["-h"]
 
