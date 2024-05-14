@@ -25,7 +25,7 @@ jobs:
         #image: [cloudflared]
         #image: [jauderho/cloudflared]
         #image: [age, ali, ansible, bl3auto, black, cf-warp, cloudflared, coredns, dive, dnscontrol, dnscrypt-proxy, driftctl, dry, dsq, excalidraw, fq, gobgp, gocannon, hakrawler, headscale, httpie-go, httprobe, httpx, lego, log4j-scan, logmepwn,  miller, nebula, nginx, nginx-quic, ntfy, octosql, onetun, pwru, rclone, rustybgp, sftpd, spicedb, ssh-audit, sslyze, subfinder, tailscale, terraform, testssl.sh, tftpd, toxiproxy, yt-dlp]
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Harden Runner
@@ -62,7 +62,7 @@ jobs:
         image: [steamcmd]
         #image: [cloudflared]
         #image: [age, ali, ansible, bl3auto, black, cf-warp, cloudflared, coredns, dive, dnscontrol, dnscrypt-proxy, driftctl, dry, dsq, excalidraw, fq, gobgp, gocannon, hakrawler, headscale, httpie-go, httprobe, httpx, lego, log4j-scan, logmepwn,  miller, nebula, nginx, nginx-quic, ntfy, octosql, onetun, pwru, rclone, rustybgp, sftpd, spicedb, ssh-audit, sslyze, subfinder, tailscale, terraform, testssl.sh, tftpd, toxiproxy, yt-dlp]
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Harden Runner
@@ -103,7 +103,7 @@ jobs:
         image: [steamcmd]
         #image: [cloudflared]
         #image: [age, ali, ansible, bl3auto, black, cf-warp, cloudflared, coredns, dive, dnscontrol, dnscrypt-proxy, driftctl, dry, dsq, excalidraw, fq, gobgp, gocannon, hakrawler, headscale, httpie-go, httprobe, httpx, lego, log4j-scan, logmepwn,  miller, nebula, nginx, nginx-quic, ntfy, octosql, onetun, pwru, rclone, rustybgp, sftpd, spicedb, ssh-audit, sslyze, subfinder, tailscale, terraform, testssl.sh, tftpd, toxiproxy, yt-dlp]
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     
     steps:
       - name: Harden Runner
