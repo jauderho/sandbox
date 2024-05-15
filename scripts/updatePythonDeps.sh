@@ -50,8 +50,8 @@ git config --global pull.rebase false
 #pipenv install --python 3.9
 #pipenv shell
 DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.12
-python3.12 -m pip install --no-cache-dir --upgrade pip
-python3.12 -m pip install --no-cache-dir --upgrade --user pipenv certifi wheel setuptools packaging
+python3.12 -m pip install --no-cache-dir --upgrade pip --break-system-packages
+python3.12 -m pip install --no-cache-dir --upgrade --user pipenv certifi wheel setuptools packaging --break-system-packages
 #python3.11 -m pip install --no-cache-dir --upgrade --user pipenv
 #python3.11 -m pip install --no-cache-dir --upgrade --user certifi
 #DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv 
