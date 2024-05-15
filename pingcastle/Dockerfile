@@ -20,7 +20,7 @@ ARG ARCHIVE_URL=https://github.com/vletoux/pingcastle/releases/download/
 #RUN wget -Uri https://github.com/vletoux/pingcastle/releases/download/2.10.1.0/PingCastle_2.10.1.0.zip -UseBasicParsing
 #RUN powershell -Command Invoke-WebRequest -Method Get -Uri ${ARCHIVE_URL}${BUILD_VERSION}/PingCastle_${BUILD_VERSION}.zip -OutFile c:\pingcastle.zip
 RUN powershell -Command \
-	Invoke-WebRequest -Method Get -Uri https://github.com/vletoux/pingcastle/releases/download/3.0.0.0/PingCastle_3.0.0.0.zip -OutFile c:\app\pingcastle.zip ; \
+	Invoke-WebRequest -Method Get -Uri https://github.com/vletoux/pingcastle/releases/download/3.2.0.1/PingCastle_3.2.0.1.zip -OutFile c:\app\pingcastle.zip ; \
 	Expand-Archive -Path c:\app\pingcastle.zip -DestinationPath c:\app ; \
 	Remove-Item c:\app\pingcastle.zip -Force
 
