@@ -35,7 +35,7 @@ jobs:
       - name: Source checkout
         uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v2.4.0 
 
-      - uses: Vampire/setup-wsl@d4e837996638afd047e7b468de70e28fe76cf75a # v1
+      - uses: Vampire/setup-wsl@6f87de3102a29ac6b92800f33bf1e8d9164ac0a1 # v1
         with:
           distribution: Alpine
 
@@ -53,7 +53,7 @@ jobs:
 
       - name: GitHub login
         if: ${{ github.event_name != 'pull_request' }}
-        uses: docker/login-action@e92390c5fb421da1463c202d546fed0ec5c39f20 # v1.12.0
+        uses: docker/login-action@0d4c9c5ea7693da7b068278f7b52bda2a190a446 # v1.12.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -61,7 +61,7 @@ jobs:
 
 #      - name: DockerHub login
 #        if: ${{ github.event_name != 'pull_request' }}
-#        uses: docker/login-action@e92390c5fb421da1463c202d546fed0ec5c39f20 # v1.12.0
+#        uses: docker/login-action@0d4c9c5ea7693da7b068278f7b52bda2a190a446 # v1.12.0
 #        with:
 #          username: ${{ secrets.DOCKERHUB_USERNAME }}
 #          password: ${{ secrets.DOCKERHUB_PASSWORD }}      
