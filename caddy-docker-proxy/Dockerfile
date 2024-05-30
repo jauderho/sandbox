@@ -1,6 +1,6 @@
-ARG CADDY_VERSION=2.6.4
+ARG CADDY_VERSION=2.8
 
-FROM caddy:${CADDY_VERSION}-builder AS builder
+FROM caddy:${CADDY_VERSION}-builder-alpine AS builder
 
 RUN apk add -U --no-cache ca-certificates && xcaddy build \
     --with github.com/lucaslorentz/caddy-docker-proxy/v2 \
