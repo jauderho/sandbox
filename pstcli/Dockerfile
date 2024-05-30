@@ -2,11 +2,11 @@ FROM almalinux:9.4-minimal@sha256:7b061ba0f4d69efe44565d12974f9032b4ee48dbc9cbcf
 # FROM rockylinux:9.1-minimal@sha256:9f700bae74355a24f30a7715aeb70d3605746c51776f5ce26486a5ec27243666
 
 ARG BUILD_VERSION
-ARG ARCHIVE_URL=https://dl.dell.com/FOLDER11395572M/1/pstcli-${BUILD_VERSION}.x86_64.release.rpm
+ARG ARCHIVE_URL=https://dl.dell.com/FOLDER11658103M/1/pstcli-${BUILD_VERSION}.x86_64.release.rpm
 
 # https://dl.dell.com/FOLDER11395572M/1/pstcli-3.6.1.0.1084.x86_64.release.rpm
 
-COPY pstcli-3.6.1.0.1084.x86_64.release.rpm .
+COPY pstcli-4.0.0.0.1198.x86_64.release.rpm .
 
 RUN test -n "${BUILD_VERSION}" \
   && microdnf -y upgrade --refresh \ 
