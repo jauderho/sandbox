@@ -9,7 +9,8 @@ verify_ssl = true
 name = "piwheels"
 
 [packages]
-llama-cpp-agent = "*"
+#llama-cpp-agent = "*"
+llama-cpp-agent = {extras = ["rag"], version = "*"}
 
 [dev-packages]
 
