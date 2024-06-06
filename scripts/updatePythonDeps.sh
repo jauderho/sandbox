@@ -19,6 +19,7 @@ APP=(
   "greynoise" \
   "hdbcli" \
   "jc" \
+  "llama-cpp-agent" \
   "memray" \
   "openbbterminal" \
   "paperless-ngx" \
