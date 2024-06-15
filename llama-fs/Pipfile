@@ -1,0 +1,34 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://www.piwheels.org/simple"
+verify_ssl = true
+name = "piwheels"
+
+[packages]
+#llama-fs = "*"
+#llama-fs = { git = "https://github.com/iyaja/llama-fs.git", editable = true }
+ollama = "*"
+chromadb = "*"
+llama-index = "*"
+litellm = "*"
+groq = "*"
+docx2txt = "*"
+colorama = "*"
+termcolor = "*"
+click = "*"
+asciitree = "*"
+fastapi = "*"
+weave = "*"
+agentops = "*"
+langchain = "*"
+langchain_core = "*"
+watchdog = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3"
