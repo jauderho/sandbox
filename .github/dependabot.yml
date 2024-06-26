@@ -29,12 +29,7 @@ updates:
   - package-ecosystem: "docker"
     directories:
       - "/"
-      - "/greynoise"
-      - "/openbbterminal"
-      - "/pingcastle"
-      - "/pstcli"
-      - "/sles"
-      - "/steamcmd"
-    open-pull-requests-limit: 20
+      - "/*"
+    open-pull-requests-limit: 50
     schedule:
       interval: "daily"
