@@ -16,7 +16,9 @@ updates:
 
   # Maintain dependencies for Python
   - package-ecosystem: "pip"
-    directory: /
+    directories:
+      - "/*"
+      - "/done/*"
     open-pull-requests-limit: 50
     schedule:
       interval: "daily"
@@ -30,6 +32,7 @@ updates:
     directories:
       - "/"
       - "/*"
+      - "/done/*"
     open-pull-requests-limit: 50
     schedule:
       interval: "daily"
