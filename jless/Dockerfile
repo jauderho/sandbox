@@ -1,5 +1,5 @@
 #FROM alpine:3.20.1@sha256:b89d9c93e9ed3597455c90a0b88a8bbb5cb7188438f70953fede212a0c4394e0 AS build
-FROM rust:1.74.1-alpine3.18@sha256:e6e45a7d5d8b7acb2a2915a35c4b12868b6cc089da61f4fbbb719673f2fcd60c AS build
+FROM rust:1.78.0-alpine3.18@sha256:34f1c35f62e192f39cd0c809982bf90c354f7e5746682a2f4c9e4c43bd516dbc AS build
 #FROM rust:1.58.0-alpine3.15
 
 WORKDIR /usr/src/github.com/PaulJuliusMartinez/jless/
