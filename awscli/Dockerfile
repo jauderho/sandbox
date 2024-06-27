@@ -13,7 +13,7 @@ COPY requirements.txt .
 RUN apt-get update && \
 	apt-get dist-upgrade -y && \
 	DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends python3-pip git && \
-	python3 -m pip install --no-cache-dir --upgrade pip --ignore-installed packaging --break-system-packages && \
+	python3 -m pip install --no-cache-dir --upgrade pip --ignore-installed --break-system-packages && \
 	pip3 install --no-cache-dir -r requirements.txt --break-system-packages && \
 	apt-get purge -y git && \
 	apt-get autoremove -y --purge && \
@@ -26,6 +26,12 @@ LABEL org.opencontainers.image.documentation="https://github.com/jauderho/docker
 LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/awscliv1"
 LABEL org.opencontainers.image.description="AWS CLI v1"
+
+# EXPOSE
+# ENV
+# STOPSIGNAL
+HEALTHCHECK NONE
+# USER
 
 ENTRYPOINT ["/usr/local/bin/aws"]
 CMD ["--version"]
