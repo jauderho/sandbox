@@ -42,9 +42,9 @@ APP=(
 #)
 
 # setup git
-git config --global user.name "Jauder Ho Bot"
-git config --global user.email "jauderho-bot@users.noreply.github.com"
-git config --global pull.rebase false
+git config --local user.name "Jauder Ho Bot"
+git config --local user.email "jauderho-bot@users.noreply.github.com"
+git config --local pull.rebase false
 
 # setup pipenv and python
 #PATH="$HOME/.local/bin:$PATH"
