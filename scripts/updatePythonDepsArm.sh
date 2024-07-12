@@ -20,7 +20,7 @@ git config --local user.email "jauderho-bot@users.noreply.github.com"
 git config --local pull.rebase false
 
 # setup pipenv and python
-#PATH="$HOME/.local/bin:$PATH"
+PATH="/Users/runner/Library/Python/3.12/bin:$HOME/.local/bin:$PATH"
 #pipenv install --python 3.9
 #pipenv shell
 #DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.12
