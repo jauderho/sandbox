@@ -1,0 +1,60 @@
+# test update mechanism
+name: Update Arm
+
+on:
+  push:
+    branches: 
+      - main
+    paths:
+      - scripts/*
+      - .github/workflows/update-arm.yml
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
+
+env:
+  DOCKER_CLI_EXPERIMENTAL: enabled
+  REPOSITORY: ${{ github.actor }}/${{ github.workflow }} 
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+permissions: read-all
+
+jobs:
+
+  update-python:
+    runs-on: macos-14
+    permissions:
+      id-token: write
+
+    steps:
+#      - uses: GitHubSecurityLab/actions-permissions/monitor@v1
+#        with:
+#          config: ${{ vars.PERMISSIONS_CONFIG }} 
+      
+      - name: Harden Runner
+        uses: step-security/harden-runner@17d0e2bd7d51742c71671bd19fa12bdc9d40a3d6
+        with:
+          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+          disable-sudo: false
+          disable-telemetry: true
+
+      # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
+      - name: Source checkout
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v2.4.0 
+        with:
+          token: ${{ secrets.UPDATE_SECRET }} 
+          fetch-depth: 1
+ 
+#      - name: Add pipenv
+#        run: |
+#          DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.9
+
+      - uses: chainguard-dev/actions/setup-gitsign@main
+
+      - name: Update Python dependencies
+        run: |
+          scripts/updatePythonDepsArm.sh
+
