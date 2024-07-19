@@ -30,7 +30,7 @@ jobs:
       
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@v2.8.1 # v1
+        uses: step-security/harden-runner@v2.9.0 # v1
         with:
           egress-policy: audit
           disable-telemetry: false
