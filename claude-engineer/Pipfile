@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://www.piwheels.org/simple"
+verify_ssl = true
+name = "piwheels"
+
+[packages]
+#claude-engineer = { git = "https://github.com/Doriandarko/claude-engineer.git", editable = true }
+anthropic = "*"
+python-dotenv = "*"
+tavily-python = "*"
+pillow = "*"
+rich = "*"
+aiohttp = "*"
+prompt_toolkit = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3"
