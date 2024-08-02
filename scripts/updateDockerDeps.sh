@@ -15,6 +15,7 @@ REPO=(
 # setup git
 git config --local user.name "Jauder Ho Bot"
 git config --local user.email "jauderho-bot@users.noreply.github.com"
+git config --local pull.rebase false
 
 # 
 # Pull in the latest version from GitHub and if there is a newer version, update GitHub Actions to trigger a new build
@@ -51,7 +52,7 @@ do
 
 		sed -i -e "s/$dver/$rver/" ".github/workflows/${prog}.yml" && \
 		git add ".github/workflows/${prog}.yml" && \
-		git commit -s -m "Updated ${prog} to ${rver}"
+		git commit -S -s -m "Updated ${prog} to ${rver}"
 
 	else
 		echo "No update needed ..."

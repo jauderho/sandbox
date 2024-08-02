@@ -47,14 +47,26 @@ jobs:
         with:
           token: ${{ secrets.UPDATE_SECRET }} 
           fetch-depth: 1
- 
-#      - name: Add pipenv
-#        run: |
-#          DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.9
 
-      - uses: chainguard-dev/actions/setup-gitsign@main
+#      - uses: chainguard-dev/actions/setup-gitsign@main
+
+      - name: Setup SSH keys
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.JBOT_SSH_PRIVATE_KEY }}
+          SSH_PUBLIC_KEY: ${{ secrets.JBOT_SSH_PUBLIC_KEY }}
+        run: |
+          mkdir -m 700 -p ~/.ssh
+          echo "$JBOT_SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          echo "$JBOT_SSH_PUBLIC_KEY" > ~/.ssh/id_ed25519.pub
+          chmod 600 ~/.ssh/id_ed25519
+          chmod 644 ~/.ssh/id_ed25519.pub
 
       - name: Update Python dependencies
         run: |
+          git config --global user.name "Jauder Ho Bot"
+          git config --global user.email "jauderho-bot@users.noreply.github.com"
+          git config --global user.signingkey ~/.ssh/id_ed25519.pub
+          git config --global gpg.format ssh
+          git config --global commit.gpgsign true
           scripts/updatePythonDepsArm.sh
-
+          rm -rf ~/.ssh
