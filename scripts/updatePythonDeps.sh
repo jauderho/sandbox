@@ -6,32 +6,56 @@ set -euo pipefail
 IFS=$'\n\t'
 
 APP=(
+  "aider" \
   "aranet4" \
   "autoflake" \
   "awscli" \
+  "badkeys" \
+  "bgperf2" \
   "cantools" \
   "chatgpt-linux-assistant" \
+  "claude-engineer" \
   "codespell" \
+  "cryptolyzer" \
   "datasette" \
+  "deepdiff" \
+  "diagrams" \
   "dnsdiag" \
   "dnsrecon" \
+  "dnstwist" \
   "dnsvalidator" \
+  "finanace_dl" \
+  "gallery-dl" \
   "greynoise" \
   "hdbcli" \
+  "huggingface-cli" \
+  "ilab" \
+  "internetarchive" \
   "jc" \
   "llama-cpp-agent" \
+  "llama-fs" \
+  "llm" \
   "memray" \
+  "mlx" \
+  "notdiamond" \
   "openbbterminal" \
+  "open-interpreter" \
   "paperless-ngx" \
   "pip-audit" \
+  "posting" \
   "prowler" \
   "pshtt" \
+  "puncia" \
   "pwnagotchi" \
   "pyaranet4" \
+  "pyinfra" \
+  "python-matter-server" \
   "pyupgrade" \
+  "routellm" \
   "ruff" \
   "scrapeghost" \
   "sgpt" \
+  "shodan" \
   "ssh-mitm" \
   "wolverine" \
 )
