@@ -1,4 +1,4 @@
-FROM golang:1.23rc2-alpine@sha256:4e01b8bb65905d246d7932d6417f6e68b4ad1833940c085917ca2d6dab96933d AS build
+FROM golang:1.23-alpine@sha256:d0b31558e6b3e4cc59f6011d79905835108c919143ebecc58f35965bf79948f4 AS build
 
 WORKDIR /go/src/github.com/wagoodman/dive/
 
