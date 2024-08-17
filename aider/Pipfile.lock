@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3307a0c91bb2514af4cbf2da5237550adb7822a68858f57901bc841fbd8d572a"
+            "sha256": "24ccb6f11eae654536abf96c18ad10ce47b7fc0531b980942b3107471e5b284a"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,11 @@
             {
                 "name": "piwheels",
                 "url": "https://www.piwheels.org/simple",
+                "verify_ssl": true
+            },
+            {
+                "name": "pytorch",
+                "url": "https://download.pytorch.org/whl/cpu",
                 "verify_ssl": true
             }
         ]

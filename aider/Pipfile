@@ -8,6 +8,11 @@ url = "https://www.piwheels.org/simple"
 verify_ssl = true
 name = "piwheels"
 
+[[source]]
+url = "https://download.pytorch.org/whl/cpu"
+verify_ssl = true
+name = "pytorch"
+
 [packages]
 aider-chat = "*"
 
