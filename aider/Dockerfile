@@ -31,8 +31,8 @@ LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
-LABEL org.opencontainers.image.title="jauderho/ruff"
-LABEL org.opencontainers.image.description="ruff is an extremely fast Python linter and code formatter, written in Rust"
+LABEL org.opencontainers.image.title="jauderho/aider"
+LABEL org.opencontainers.image.description="Aider is AI pair programming in your terminal"
 
 WORKDIR /data
 
