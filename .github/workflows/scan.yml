@@ -35,7 +35,7 @@ jobs:
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v2.4.0
 
       - name: Run Anchore to check ${{ matrix.image }} Docker image for vulnerabilities
-        uses: anchore/scan-action@bc9adf64917dd9444d6cf4dd68620c34ca3a5f69 # v3
+        uses: anchore/scan-action@64a33b277ea7a1215a3c142735a1091341939ff5 # v3
         id: anchore-scan
         with:
           image: 'ghcr.io/${{ github.actor }}/${{ matrix.image }}:latest'
@@ -43,6 +43,6 @@ jobs:
           severity-cutoff: high
 
       - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@429e1977040da7a23b6822b13c129cd1ba93dbb2
+        uses: github/codeql-action/upload-sarif@f0f3afee809481da311ca3a6ff1ff51d81dbeb24
         with:
           sarif_file: ${{ steps.anchore-scan.outputs.sarif }}
