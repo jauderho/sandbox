@@ -1,0 +1,32 @@
+[project]
+name = "openbb-cli"
+version = "1.1.1"
+description = "OpenBB Platform CLI"
+authors = ["OpenBB <hello@openbb.co>"]
+requires-python = ">=3.12"
+dependencies = [
+    "openbb-cli",
+    "grpcio",
+    "langchain",
+    "tornado",
+    "wheel",
+]
+
+    #"ansible==10.3.0",
+#    "mitogen@git+https://github.com/mitogen-hq/mitogen.git#egg=bd3cfb4230a485c57a7ad63687ad15249ed341f8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+default = true
+
+[[tool.poetry.source]]
+name = "piwheels"
+url = "https://www.piwheels.org/simple"
+
+[tool.pip-tools]
+generate-hashes = false
