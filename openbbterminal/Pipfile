@@ -11,16 +11,14 @@ name = "piwheels"
 [packages]
 #openbb = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true }
 #openbb = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true, ref = "develop" }
-openbb-terminal = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true, ref = "develop" }
+#openbb-cli = { git = "https://github.com/OpenBB-finance/OpenBBTerminal.git", editable = true, ref = "develop" }
+openbb-cli = "*"
 #openbb = "*"
 grpcio = "*"
 langchain = "*"
 tornado = "*"
 distutils = "*"
 wheel = "*"
-#wheel = "0.42.0"
-#langchain = "0.0.225"
-#grpcio = "1.51.3"
 
 [dev-packages]
 
