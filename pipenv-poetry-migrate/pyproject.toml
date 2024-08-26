@@ -1,0 +1,26 @@
+[project]
+name = "pipenv-poetry-migrate"
+version = "0.5.8"
+description = "Simple migration script to migrate from pipenv to poetry"
+authors = ["Yoshiyuki Hino <yhinoz@gmail.com>"]
+requires-python = ">=3.12"
+dependencies = [
+    "pipenv-poetry-migrate",
+    "poetry",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+default = true
+
+[[tool.poetry.source]]
+name = "piwheels"
+url = "https://www.piwheels.org/simple"
+
+[tool.pip-tools]
+generate-hashes = false
