@@ -92,7 +92,7 @@ do
 	echo "Updating ${i} ..."
 	echo
 
-	pipenv --python 3.12 lock -v && pipenv --python 3.12 requirements --hash > requirements.txt
+	pipenv --python 3.12 lock -v && pipenv --python 3.12 requirements > requirements.txt
 	#pipenv lock && pipenv requirements > requirements.txt
 
 	git add Pipfile Pipfile.lock requirements.txt && \
