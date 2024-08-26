@@ -1,127 +1,127 @@
 -i https://pypi.org/simple
 --extra-index-url https://www.piwheels.org/simple
-aiohappyeyeballs==2.4.0; python_version >= '3.8'
-aiohttp==3.10.5; python_version >= '3.8'
-aiosignal==1.3.1; python_version >= '3.7'
-annotated-types==0.7.0; python_version >= '3.8'
-anyio==4.4.0; python_version >= '3.8'
-astor==0.8.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+aiohappyeyeballs==2.4.0
+aiohttp==3.10.5
+aiosignal==1.3.1
+annotated-types==0.7.0
+anyio==4.4.0
+astor==0.8.1
 asttokens==2.4.1
-attrs==24.2.0; python_version >= '3.7'
-blessed==1.20.0; python_version >= '2.7'
-cachetools==5.5.0; python_version >= '3.7'
-certifi==2024.7.4; python_version >= '3.6'
-charset-normalizer==3.3.2; python_full_version >= '3.7.0'
-click==8.1.7; python_version >= '3.7'
-comm==0.2.2; python_version >= '3.8'
-contourpy==1.2.1; python_version >= '3.9'
-cycler==0.12.1; python_version >= '3.8'
-debugpy==1.8.5; python_version >= '3.8'
-decorator==5.1.1; python_version >= '3.5'
-distro==1.9.0; python_version >= '3.6'
-editor==1.6.6; python_version >= '3.8'
-executing==2.0.1; python_version >= '3.5'
-filelock==3.15.4; python_version >= '3.8'
-fonttools==4.53.1; python_version >= '3.8'
-frozenlist==1.4.1; python_version >= '3.8'
-fsspec==2024.6.1; python_version >= '3.8'
+attrs==24.2.0
+blessed==1.20.0
+cachetools==5.5.0
+certifi==2024.7.4
+charset-normalizer==3.3.2
+click==8.1.7
+comm==0.2.2
+contourpy==1.2.1
+cycler==0.12.1
+debugpy==1.8.5
+decorator==5.1.1
+distro==1.9.0
+editor==1.6.6
+executing==2.0.1
+filelock==3.15.4
+fonttools==4.53.1
+frozenlist==1.4.1
+fsspec==2024.6.1
 git-python==1.0.3
-gitdb==4.0.11; python_version >= '3.7'
-gitpython==3.1.43; python_version >= '3.7'
-google-ai-generativelanguage==0.6.6; python_version >= '3.7'
-google-api-core[grpc]==2.19.1; python_version >= '3.7'
-google-api-python-client==2.142.0; python_version >= '3.7'
-google-auth==2.34.0; python_version >= '3.7'
+gitdb==4.0.11
+gitpython==3.1.43
+google-ai-generativelanguage==0.6.6
+google-api-core[grpc]==2.19.1
+google-api-python-client==2.142.0
+google-auth==2.34.0
 google-auth-httplib2==0.2.0
-google-generativeai==0.7.2; python_version >= '3.9'
-googleapis-common-protos==1.63.2; python_version >= '3.7'
+google-generativeai==0.7.2
+googleapis-common-protos==1.63.2
 grpcio==1.66.0
 grpcio-status==1.62.3
-h11==0.14.0; python_version >= '3.7'
-html2image==2.0.4.3; python_version >= '3.6' and python_version < '4.0'
-httpcore==1.0.5; python_version >= '3.8'
-httplib2==0.22.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
-httpx==0.27.0; python_version >= '3.8'
-huggingface-hub==0.24.6; python_full_version >= '3.8.0'
-idna==3.8; python_version >= '3.6'
-importlib-metadata==8.4.0; python_version >= '3.8'
-inquirer==3.4.0; python_full_version >= '3.8.1'
-ipykernel==6.29.5; python_version >= '3.8'
-ipython==8.26.0; python_version >= '3.10'
-jedi==0.19.1; python_version >= '3.6'
-jinja2==3.1.4; python_version >= '3.7'
-jiter==0.5.0; python_version >= '3.8'
-joblib==1.4.2; python_version >= '3.8'
-jsonschema==4.23.0; python_version >= '3.8'
-jsonschema-specifications==2023.12.1; python_version >= '3.8'
-jupyter-client==8.6.2; python_version >= '3.8'
-jupyter-core==5.7.2; python_version >= '3.8'
-kiwisolver==1.4.5; python_version >= '3.7'
-litellm==1.44.5; python_version not in '2.7, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7' and python_version >= '3.8'
-markdown-it-py==3.0.0; python_version >= '3.8'
-markupsafe==2.1.5; python_version >= '3.7'
-matplotlib==3.9.2; python_version >= '3.9'
-matplotlib-inline==0.1.7; python_version >= '3.8'
-mdurl==0.1.2; python_version >= '3.7'
-multidict==6.0.5; python_version >= '3.7'
-nest-asyncio==1.6.0; python_version >= '3.5'
-nltk==3.9.1; python_version >= '3.8'
-numpy==2.1.0; python_version >= '3.10'
-open-interpreter==0.3.8; python_version >= '3.9' and python_version < '4'
-openai==1.42.0; python_full_version >= '3.7.1'
-packaging==24.1; python_version >= '3.8'
-parso==0.8.4; python_version >= '3.6'
-pexpect==4.9.0; sys_platform != 'win32' and sys_platform != 'emscripten'
-pillow==10.4.0; python_version >= '3.8'
-platformdirs==4.2.2; python_version >= '3.8'
-prompt-toolkit==3.0.47; python_full_version >= '3.7.0'
-proto-plus==1.24.0; python_version >= '3.7'
-protobuf==4.25.4; python_version >= '3.8'
-psutil==5.9.8; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
+h11==0.14.0
+html2image==2.0.4.3
+httpcore==1.0.5
+httplib2==0.22.0
+httpx==0.27.0
+huggingface-hub==0.24.6
+idna==3.8
+importlib-metadata==8.4.0
+inquirer==3.4.0
+ipykernel==6.29.5
+ipython==8.26.0
+jedi==0.19.1
+jinja2==3.1.4
+jiter==0.5.0
+joblib==1.4.2
+jsonschema==4.23.0
+jsonschema-specifications==2023.12.1
+jupyter-client==8.6.2
+jupyter-core==5.7.2
+kiwisolver==1.4.5
+litellm==1.44.5
+markdown-it-py==3.0.0
+markupsafe==2.1.5
+matplotlib==3.9.2
+matplotlib-inline==0.1.7
+mdurl==0.1.2
+multidict==6.0.5
+nest-asyncio==1.6.0
+nltk==3.9.1
+numpy==2.1.0
+open-interpreter==0.3.8
+openai==1.42.0
+packaging==24.1
+parso==0.8.4
+pexpect==4.9.0
+pillow==10.4.0
+platformdirs==4.2.2
+prompt-toolkit==3.0.47
+proto-plus==1.24.0
+protobuf==4.25.4
+psutil==5.9.8
 ptyprocess==0.7.0
 pure-eval==0.2.3
-pyasn1==0.6.0; python_version >= '3.8'
-pyasn1-modules==0.4.0; python_version >= '3.8'
-pydantic==2.8.2; python_version >= '3.8'
-pydantic-core==2.20.1; python_version >= '3.8'
-pygments==2.18.0; python_version >= '3.8'
-pyparsing==3.1.4; python_full_version >= '3.6.8'
+pyasn1==0.6.0
+pyasn1-modules==0.4.0
+pydantic==2.8.2
+pydantic-core==2.20.1
+pygments==2.18.0
+pyparsing==3.1.4
 pyperclip==1.9.0
-python-dateutil==2.9.0.post0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
-python-dotenv==1.0.1; python_version >= '3.8'
-pyyaml==6.0.2; python_version >= '3.8'
-pyzmq==26.2.0; python_version >= '3.7'
-readchar==4.2.0; python_version >= '3.8'
-referencing==0.35.1; python_version >= '3.8'
-regex==2024.7.24; python_version >= '3.8'
-requests==2.32.3; python_version >= '3.8'
-rich==13.7.1; python_full_version >= '3.7.0'
-rpds-py==0.20.0; python_version >= '3.8'
-rsa==4.9; python_version >= '3.6' and python_version < '4'
-runs==1.2.2; python_version >= '3.8'
-send2trash==1.8.3; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
-setuptools==73.0.1; python_version >= '3.8'
-shortuuid==1.0.13; python_version >= '3.6'
-six==1.16.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
-smmap==5.0.1; python_version >= '3.7'
-sniffio==1.3.1; python_version >= '3.7'
+python-dateutil==2.9.0.post0
+python-dotenv==1.0.1
+pyyaml==6.0.2
+pyzmq==26.2.0
+readchar==4.2.0
+referencing==0.35.1
+regex==2024.7.24
+requests==2.32.3
+rich==13.7.1
+rpds-py==0.20.0
+rsa==4.9
+runs==1.2.2
+send2trash==1.8.3
+setuptools==73.0.1
+shortuuid==1.0.13
+six==1.16.0
+smmap==5.0.1
+sniffio==1.3.1
 stack-data==0.6.3
-starlette==0.37.2; python_version >= '3.8'
-termcolor==2.3.0; python_version >= '3.7'
-tiktoken==0.7.0; python_version >= '3.8'
-tokenizers==0.20.0; python_version >= '3.7'
-tokentrim==0.1.13; python_version >= '3.8' and python_version < '4.0'
-toml==0.10.2; python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'
-tornado==6.4.1; python_version >= '3.8'
-tqdm==4.66.5; python_version >= '3.7'
-traitlets==5.14.3; python_version >= '3.8'
-typing-extensions==4.12.2; python_version >= '3.8'
-uritemplate==4.1.1; python_version >= '3.6'
-urllib3==2.2.2; python_version >= '3.8'
+starlette==0.37.2
+termcolor==2.3.0
+tiktoken==0.7.0
+tokenizers==0.20.0
+tokentrim==0.1.13
+toml==0.10.2
+tornado==6.4.1
+tqdm==4.66.5
+traitlets==5.14.3
+typing-extensions==4.12.2
+uritemplate==4.1.1
+urllib3==2.2.2
 wcwidth==0.2.13
-websocket-client==1.8.0; python_version >= '3.8'
+websocket-client==1.8.0
 wget==3.2
-xmod==1.8.1; python_version >= '3.8'
-yarl==1.9.4; python_version >= '3.7'
-yaspin==3.0.2; python_version >= '3.9' and python_version < '4.0'
-zipp==3.20.0; python_version >= '3.8'
+xmod==1.8.1
+yarl==1.9.4
+yaspin==3.0.2
+zipp==3.20.0
