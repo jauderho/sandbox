@@ -52,7 +52,6 @@ APP=(
   "python-matter-server" \
   "pyupgrade" \
   "routellm" \
-  "ruff" \
   "scrapeghost" \
   "sgpt" \
   "shodan" \
