@@ -1,6 +1,6 @@
 FROM ghcr.io/jauderho/alpine:3.20.2@sha256:6f037df56ca0bf09c6854daa341457f5105b1f2ec73b52bc5090026770feb1be
-#FROM python:3.13.0rc1-alpine3.20@sha256:605c95494a23fdcfb9406dc0685dc9d9a82ff6a46d90a64c822c7702265b98bf
-#FROM python:3.13.0rc1-alpine3.20@sha256:605c95494a23fdcfb9406dc0685dc9d9a82ff6a46d90a64c822c7702265b98bf
+#FROM python:3.13.0b1-alpine3.19@sha256:f2028c7ea4005bfa797d91717dc8f5f8990bb592d10d5b014513ac4405f99267
+#FROM python:3.13.0b1-alpine3.19@sha256:f2028c7ea4005bfa797d91717dc8f5f8990bb592d10d5b014513ac4405f99267
 
 ARG BUILD_VERSION
 
@@ -32,8 +32,8 @@ LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
-LABEL org.opencontainers.image.title="jauderho/jc"
-LABEL org.opencontainers.image.description="jc JSONifies the output of many CLI tools, file-types, and common strings for easier parsing in scripts"
+LABEL org.opencontainers.image.title="jauderho/autoflake"
+LABEL org.opencontainers.image.description="autoflake"
 
-ENTRYPOINT ["jc"]
+ENTRYPOINT ["autoflake"]
 CMD ["-h"]
