@@ -1,4 +1,4 @@
-FROM alpine:3.20.2@sha256:0a4eaa0eecf5f8c050e5bba433f58c052be7587ee8af3e8b3910ef9ab5fbe9f5
+FROM alpine:3.20.3@sha256:beefdbd8a1da6d2915566fde36db9db0b524eb737fc57cd1367effd16dc0d06d
 #FROM python:3.13.0rc1-alpine3.20@sha256:605c95494a23fdcfb9406dc0685dc9d9a82ff6a46d90a64c822c7702265b98bf
 #FROM python:3.13.0rc1-alpine3.20@sha256:605c95494a23fdcfb9406dc0685dc9d9a82ff6a46d90a64c822c7702265b98bf
 
