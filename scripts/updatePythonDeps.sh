@@ -36,7 +36,6 @@ APP=(
   "llama-fs" \
   "llm" \
   "memray" \
-  "mlx" \
   "notdiamond" \
   "openbbterminal" \
   "open-interpreter" \
