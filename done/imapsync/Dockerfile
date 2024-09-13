@@ -2,7 +2,7 @@
 
 # $Id: Dockerfile,v 1.38 2021/11/29 10:20:56 gilles Exp gilles $
 
-FROM ubuntu:24.04@sha256:3e1fb4aeedc137fc8cffe5f0a7c25bfd216ffab624460c8c17031724d9dc61e4
+FROM ubuntu:24.10@sha256:94c7f49d0a4485b5ea6f00c14aebb699bc14d3e16ad4d0bd44042da6016c510a
 
 ARG BUILD_VERSION
 
