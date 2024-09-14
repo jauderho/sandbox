@@ -6,7 +6,7 @@ ARG ARCHIVE_URL=https://dl.dell.com/FOLDER11658103M/1/pstcli-${BUILD_VERSION}.x8
 
 # https://dl.dell.com/FOLDER11395572M/1/pstcli-3.6.1.0.1084.x86_64.release.rpm
 
-COPY pstcli-4.0.0.0.1198.x86_64.release.rpm .
+COPY pstcli-${BUILD_VERSION}.x86_64.release.rpm .
 
 RUN test -n "${BUILD_VERSION}" \
   && microdnf -y upgrade --refresh \ 
