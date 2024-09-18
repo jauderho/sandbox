@@ -23,12 +23,12 @@
     "default": {
         "agentops": {
             "hashes": [
-                "sha256:40f895019f29bc5a6c023110cbec32870e5edb3e3926f8100974db8d3e299e2a",
-                "sha256:b304d366691281e08c1f02307aabdd551ae4f68b0de82bbbb4cf6f651af2dd16"
+                "sha256:38a2ffeeac1d722cb72c32d70e1c840424902b57934c647ef10de15478fe8f27",
+                "sha256:75fe10b8fc86c7f5c2633139ac1c06959611f22434fc1aaa8688c3c223fde8b5"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.7'",
-            "version": "==0.3.10"
+            "version": "==0.3.11"
         },
         "aiofiles": {
             "hashes": [
@@ -1092,11 +1092,11 @@
         },
         "llama-index-agent-openai": {
             "hashes": [
-                "sha256:21886081ae74574d8cad1ec4886f2d4b082284b9364adb46fff87aba1a25e9b9",
-                "sha256:41c9aa5b7cebc5043adddb3442e3167e97971589466e36448e04e0a767f5b9aa"
+                "sha256:9e0ecae8f105dac2557282d8b5ca6a2795a8d2cbd5ff4996ddaef5eaa10afcc8",
+                "sha256:ffd6228e02714e0ea3bd71ca47dc948b3ccc04525937e91218267d19a22aec16"
             ],
             "markers": "python_version < '4.0' and python_full_version >= '3.8.1'",
-            "version": "==0.3.1"
+            "version": "==0.3.2"
         },
         "llama-index-cli": {
             "hashes": [
@@ -1140,11 +1140,11 @@
         },
         "llama-index-llms-openai": {
             "hashes": [
-                "sha256:a709a26b32f8270ce862131941372abf764cc0f81b0713133848c7effc7d30fb",
-                "sha256:bd94b56957eb1a24b14e3bae44bdb0bd247ffbdcc9b8e2f7d90bac55e61a4e18"
+                "sha256:7af5d0900db70d4ada46d2959d03dabdd7a772119eb0ae92367b5ad48ca18fe1",
+                "sha256:a0dd54b88334cefe726a6c06c1db3c3c260b10e38d39e6a6818149b8564e2351"
             ],
             "markers": "python_version < '4.0' and python_full_version >= '3.8.1'",
-            "version": "==0.2.7"
+            "version": "==0.2.8"
         },
         "llama-index-multi-modal-llms-openai": {
             "hashes": [
@@ -1185,6 +1185,14 @@
             ],
             "markers": "python_version < '4.0' and python_full_version >= '3.8.1'",
             "version": "==0.3.0"
+        },
+        "llama-index-utils-openai": {
+            "hashes": [
+                "sha256:5bc9282c9f8d0de55bddd2ac98c7806acbe1993c6673c3b61c15d8e8e93c90b1",
+                "sha256:ca6ff0d3afef0be365a10e8111e191260acca56958856bebaa0df15cd82de061"
+            ],
+            "markers": "python_version < '4.0' and python_full_version >= '3.8.1'",
+            "version": "==0.1.0"
         },
         "llama-parse": {
             "hashes": [
@@ -2007,7 +2015,7 @@
                 "sha256:d155cef71265d1e9807ed1c32b4c8deec042a44a50a4188b25ac67ecd81a9c0f",
                 "sha256:f048cec7b26778210e28a0459867920654d48e5e62db0958433636cde4254f12"
             ],
-            "markers": "python_full_version < '3.12.4'",
+            "markers": "python_version >= '3.8'",
             "version": "==2.9.2"
         },
         "pydantic-core": {
