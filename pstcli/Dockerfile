@@ -18,6 +18,13 @@ RUN test -n "${BUILD_VERSION}" \
   && microdnf -y clean all
   #&& rpm -i pstcli-${BUILD_VERSION}.x86_64.release.rpm 
 
+LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
+LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
+LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
+LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
+LABEL org.opencontainers.image.title="jauderho/pstcli"
+LABEL org.opencontainers.image.description="CLI for PowerStore"
+
 # EXPOSE
 # ENV
 # STOPSIGNAL
