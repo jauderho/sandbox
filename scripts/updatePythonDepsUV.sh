@@ -43,7 +43,6 @@ do
 	echo "Updating ${i} ..."
 	echo
 
-	ls -l pyproject.toml
 	pwd
 	uv lock && uv pip compile pyproject.toml --no-annotate  > requirements.txt 
 
