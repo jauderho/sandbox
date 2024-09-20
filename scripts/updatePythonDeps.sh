@@ -33,7 +33,6 @@ APP=(
   "jc" \
   "llama-cpp-agent" \
   "llama-fs" \
-  "llm" \
   "memray" \
   "notdiamond" \
   "open-interpreter" \

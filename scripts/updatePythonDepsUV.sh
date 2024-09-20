@@ -7,6 +7,7 @@ IFS=$'\n\t'
 
 APP=(
   "aider" \
+  "llm" \
   "openbbterminal" \
 )
 
