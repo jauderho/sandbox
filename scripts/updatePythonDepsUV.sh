@@ -23,9 +23,11 @@ git config --local pull.rebase false
 #PATH="$HOME/.local/bin:$PATH"
 #pipenv install --python 3.9
 #pipenv shell
-DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.12
-python3.12 -m pip install --no-cache-dir --upgrade pip --break-system-packages
-python3.12 -m pip install --no-cache-dir --upgrade --user pipenv certifi wheel setuptools packaging --break-system-packages
+
+###DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.12
+###python3.12 -m pip install --no-cache-dir --upgrade pip --break-system-packages
+###python3.12 -m pip install --no-cache-dir --upgrade --user pipenv certifi wheel setuptools packaging --break-system-packages
+
 #python3.11 -m pip install --no-cache-dir --upgrade --user pipenv
 #python3.11 -m pip install --no-cache-dir --upgrade --user certifi
 #DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv 
@@ -42,6 +44,7 @@ do
 	echo
 
 	ls -l pyproject.toml
+	pwd
 	uv lock && uv pip compile pyproject.toml --no-annotate  > requirements.txt 
 
 	git add pyproject.toml uv.lock requirements.txt && \
