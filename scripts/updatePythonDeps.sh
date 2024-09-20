@@ -36,7 +36,6 @@ APP=(
   "llm" \
   "memray" \
   "notdiamond" \
-  "openbbterminal" \
   "open-interpreter" \
   "paperless-ngx" \
   "pip-audit" \
