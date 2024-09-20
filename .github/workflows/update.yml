@@ -98,6 +98,54 @@ jobs:
 
 #      - uses: chainguard-dev/actions/setup-gitsign@main
 
+      - name: Setup SSH keys
+        env:
+          BOT_SSH_PRIVATE_KEY: ${{ secrets.JBOT_SSH_PRIVATE_KEY }}
+          BOT_SSH_PUBLIC_KEY: ${{ secrets.JBOT_SSH_PUBLIC_KEY }}
+        run: |
+          mkdir -m 700 -p ~/.ssh
+          echo "$BOT_SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          echo "$BOT_SSH_PUBLIC_KEY" > ~/.ssh/id_ed25519.pub
+          chmod 600 ~/.ssh/id_ed25519
+          chmod 644 ~/.ssh/id_ed25519.pub
+
+      - name: Update Python dependencies
+        run: |
+          git config --global user.name "Jauder Ho Bot"
+          git config --global user.email "jauderho-bot@users.noreply.github.com"
+          git config --global user.signingkey ~/.ssh/id_ed25519.pub
+          git config --global gpg.format ssh
+          git config --global commit.gpgsign true
+          scripts/updatePythonDeps.sh
+          rm -rf ~/.ssh
+
+  update-python-uv:
+    needs: update-docker
+    runs-on: ubuntu-24.04
+    permissions:
+      id-token: write
+
+    steps:
+#      - uses: GitHubSecurityLab/actions-permissions/monitor@v1
+#        with:
+#          config: ${{ vars.PERMISSIONS_CONFIG }} 
+      
+      - name: Harden Runner
+        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7
+        with:
+          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+          disable-sudo: false
+          disable-telemetry: true
+
+      # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
+      - name: Source checkout
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v2.4.0 
+        with:
+          token: ${{ secrets.UPDATE_SECRET }} 
+          fetch-depth: 1
+
+#      - uses: chainguard-dev/actions/setup-gitsign@main
+
       - name: Install uv
         uses: astral-sh/setup-uv@v3
         with:
@@ -126,5 +174,6 @@ jobs:
           git config --global user.signingkey ~/.ssh/id_ed25519.pub
           git config --global gpg.format ssh
           git config --global commit.gpgsign true
-          scripts/updatePythonDeps.sh
+          scripts/updatePythonDepsUV.sh
           rm -rf ~/.ssh
+

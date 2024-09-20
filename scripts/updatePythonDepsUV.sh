@@ -6,55 +6,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 APP=(
-  "aranet4" \
-  "autoflake" \
-  "awscli" \
-  "badkeys" \
-  "bgperf2" \
-  "cantools" \
-  "chatgpt-linux-assistant" \
-  "claude-engineer" \
-  "codespell" \
-  "cryptolyzer" \
-  "datasette" \
-  "deepdiff" \
-  "diagrams" \
-  "dnsdiag" \
-  "dnsrecon" \
-  "dnstwist" \
-  "dnsvalidator" \
-  "finanace_dl" \
-  "gallery-dl" \
-  "greynoise" \
-  "hdbcli" \
-  "huggingface-cli" \
-  "ilab" \
-  "internetarchive" \
-  "jc" \
-  "llama-cpp-agent" \
-  "llama-fs" \
-  "llm" \
-  "memray" \
-  "notdiamond" \
-  "openbbterminal" \
-  "open-interpreter" \
-  "paperless-ngx" \
-  "pip-audit" \
-  "posting" \
-  "prowler" \
-  "pshtt" \
-  "puncia" \
-  "pwnagotchi" \
-  "pyaranet4" \
-  "pyinfra" \
-  "python-matter-server" \
-  "pyupgrade" \
-  "routellm" \
-  "scrapeghost" \
-  "sgpt" \
-  "shodan" \
-  "ssh-mitm" \
-  "wolverine" \
+  "aider" \
 )
 
 #APP=(
@@ -89,10 +41,9 @@ do
 	echo "Updating ${i} ..."
 	echo
 
-	pipenv --python 3.12 lock -v && pipenv --python 3.12 requirements --exclude-markers > requirements.txt
-	#pipenv lock && pipenv requirements > requirements.txt
+	uv lock && uv pip compile pyproject.toml --no-annotate  > requirements.txt 
 
-	git add Pipfile Pipfile.lock requirements.txt && \
+	git add pyproject.toml uv.lock requirements.txt && \
 	git commit -S -s -m "Update requirements for ${i} ..." && \
 	git pull && \
 	git push
