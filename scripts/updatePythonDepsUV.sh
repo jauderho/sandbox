@@ -41,6 +41,7 @@ do
 	echo "Updating ${i} ..."
 	echo
 
+	ls -l pyproject.toml
 	uv lock && uv pip compile pyproject.toml --no-annotate  > requirements.txt 
 
 	git add pyproject.toml uv.lock requirements.txt && \
