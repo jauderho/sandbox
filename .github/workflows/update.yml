@@ -102,7 +102,7 @@ jobs:
         uses: astral-sh/setup-uv@v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-#          enable-cache: true
+          enable-cache: true
 #          cache-dependency-glob: |
 #            "**/requirements*.txt"
 #            "**/pyproject.toml"
@@ -130,7 +130,7 @@ jobs:
           rm -rf ~/.ssh
 
   update-python:
-    needs: update-python-uv
+    needs: update-docker
     runs-on: ubuntu-24.04
     permissions:
       id-token: write
