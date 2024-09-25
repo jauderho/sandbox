@@ -33,7 +33,7 @@ jobs:
           egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
 
       - name: Checkout code
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v2.4.0
+        uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938 # v2.4.0
 
       - name: Run Anchore to check ${{ matrix.image }} Docker image for vulnerabilities
         uses: anchore/scan-action@64a33b277ea7a1215a3c142735a1091341939ff5 # v3
