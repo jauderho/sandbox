@@ -5,6 +5,7 @@ description = "OpenBB Platform CLI"
 authors = ["OpenBB <hello@openbb.co>"]
 requires-python = ">=3.12"
 dependencies = [
+    "openbb",
     "openbb-cli",
     "grpcio",
     "langchain",

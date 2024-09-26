@@ -1,4 +1,4 @@
-#FROM ghcr.io/jauderho/alpine:3.20.3@sha256:620ca6236d21aaaa9f7e3a52c7284a11e99f94993cb8e7abe6c230f5215dfb3e AS build
+#FROM ghcr.io/jauderho/alpine:3.20.3@sha256:7d51dd030c8c83a805f71a1487c8bc5673771985842515dc468ef52ace748ffe AS build
 FROM rust:1.78.0-alpine3.18@sha256:34f1c35f62e192f39cd0c809982bf90c354f7e5746682a2f4c9e4c43bd516dbc AS build
 #FROM rust:1.58.0-alpine3.15
 
@@ -25,7 +25,7 @@ WORKDIR /config
 
 
 #FROM scratch
-FROM ghcr.io/jauderho/alpine:3.20.3@sha256:620ca6236d21aaaa9f7e3a52c7284a11e99f94993cb8e7abe6c230f5215dfb3e
+FROM ghcr.io/jauderho/alpine:3.20.3@sha256:7d51dd030c8c83a805f71a1487c8bc5673771985842515dc468ef52ace748ffe
 
 LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
