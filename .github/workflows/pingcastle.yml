@@ -33,7 +33,7 @@ jobs:
           disable-telemetry: false
           
       - name: Source checkout
-        uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938 # v2.4.0 
+        uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v2.4.0 
 
       - uses: Vampire/setup-wsl@6f87de3102a29ac6b92800f33bf1e8d9164ac0a1 # v1
         with:
