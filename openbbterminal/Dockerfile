@@ -1,6 +1,6 @@
 FROM ubuntu:24.10@sha256:67541378af7d535606e684a8234d56ca0725b6a4d8b0bbf19cebefed98e06f42
 #FROM python:3.13.0rc2-slim-bookworm@sha256:a784730b8b6dfcbcfb7904cfdf3ccb1f27ddcde453fb3c41c28f606c5b9d5b33
-#FROM python:3.13.0rc3-alpine3.20@sha256:5b0eec332a70e36e9303d9df9afb33714bb1b35a26e8d69adfcb9f03c1ae6e2a
+#FROM python:3.13.0-alpine3.20@sha256:81362dd1ee15848b118895328e56041149e1521310f238ed5b2cdefe674e6dbf
 
 ARG BUILD_VERSION
 ARG DEBIAN_FRONTEND=noninteractive
