@@ -15,5 +15,5 @@ FROM almalinux:9.4-minimal@sha256:95af18fcbd89bafbf02988a4278167367cedefd83bec82
 FROM golang:1.23.3-alpine3.20@sha256:25db3a0508ff009054bf467f25e1ab395fced0f93b69459dd736ae523e61c781 AS golang1.23-base
 
 # Node 22 on Alpine 3.20 
-FROM node:23.1-alpine3.20@sha256:5672de224fa400409f65e9b890254c1caf93a3d84665737960626f9419ae4f77 AS node22-base
+FROM node:23.1-alpine3.20@sha256:340cd3926b5116aae1207d6ca1e444d1009aad687c4ad37aa3afbe8a3db591d5 AS node22-base
 
