@@ -14,7 +14,7 @@ RUN \
 	apk update && \
 	apk upgrade -a && \
 	build_pkgs="build-base python3-dev musl-dev linux-headers" && \
-	runtime_pkgs="ca-certificates openssl python3 py3-pip git" && \
+	runtime_pkgs="ca-certificates openssl python3 py3-pip git pandoc-cli" && \
 	apk --no-cache add --virtual build-dependencies ${build_pkgs} && \
 	apk --no-cache add ${runtime_pkgs} && \
 	#python3 -m pip install --no-cache-dir --upgrade pip --break-system-packages && \
