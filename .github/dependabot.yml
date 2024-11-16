@@ -15,6 +15,16 @@ updates:
       interval: "daily"
 
   # Maintain dependencies for Docker
+  - package-ecosystem: "pip"
+    directories:
+      - "/"
+      - "/*"
+      - "/done/*"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+
+  # Maintain dependencies for Docker
   - package-ecosystem: "docker"
     directories:
       - "/"
