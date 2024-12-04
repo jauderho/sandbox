@@ -23,12 +23,12 @@
     "default": {
         "agentops": {
             "hashes": [
-                "sha256:4d509754df7be52579597cc9f53939c5218131a0379463e0ff6f6f40cde9fcc4",
-                "sha256:8b48d8a1662f276653430fd541c77fa4f9a15a43e881b518ff88ea56925afcf7"
+                "sha256:1888a47dd3d9b92c5f246cdeeab333def5acbd26833d3148c63e8793457405b3",
+                "sha256:ca0d4ba35ae699169ae20f74f72ca6a5780a8768ba2a2c32589fc5292ed81674"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.7'",
-            "version": "==0.3.18"
+            "version": "==0.3.19"
         },
         "aiohappyeyeballs": {
             "hashes": [
@@ -1698,6 +1698,14 @@
             "hashes": [
                 "sha256:07c10378380bbb01a7f621a5ce833fc1fab816e971140cd3ea1cd587840bc0e6",
                 "sha256:6083d9300863aab35bfce7c172d5fc1007686e6f8dff366eae460cd9a21592e2"
+            ],
+            "markers": "python_version >= '3.8'",
+            "version": "==1.28.2"
+        },
+        "opentelemetry-exporter-otlp-proto-http": {
+            "hashes": [
+                "sha256:af921c18212a56ef4be68458ba475791c0517ebfd8a2ff04669c9cd477d90ff2",
+                "sha256:d9b353d67217f091aaf4cfe8693c170973bb3e90a558992570d97020618fda79"
             ],
             "markers": "python_version >= '3.8'",
             "version": "==1.28.2"
