@@ -1,6 +1,6 @@
 # Build using git repo
 
-FROM ghcr.io/jauderho/alpine:3.20.3@sha256:620ca6236d21aaaa9f7e3a52c7284a11e99f94993cb8e7abe6c230f5215dfb3e
+FROM ghcr.io/jauderho/alpine:3.21.0@sha256:f1c32703dfc24d994cb29a14dba612df8cd56ef5c4df8e443803d11cacadd150
 
 WORKDIR /home/testssl
 
