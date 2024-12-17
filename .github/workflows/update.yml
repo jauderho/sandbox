@@ -43,7 +43,7 @@ jobs:
 
       # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
       - name: Source checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v2.4.0 
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.4.2 
         with:
           token: ${{ secrets.UPDATE_SECRET }} 
           fetch-depth: 1
@@ -91,7 +91,7 @@ jobs:
 
       # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
       - name: Source checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v2.4.0 
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.4.2 
         with:
           token: ${{ secrets.UPDATE_SECRET }} 
           fetch-depth: 1
@@ -149,7 +149,7 @@ jobs:
 
       # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
       - name: Source checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v2.4.0 
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.4.2 
         with:
           token: ${{ secrets.UPDATE_SECRET }} 
           fetch-depth: 1

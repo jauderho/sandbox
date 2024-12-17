@@ -23,7 +23,7 @@ jobs:
           egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
 
       - name: Check out code into the Go module directory
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v2.4.0
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.4.2
         
       - name: Get commit short hash from remote repo
         id: get-hash
