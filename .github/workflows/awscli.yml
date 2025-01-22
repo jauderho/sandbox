@@ -46,6 +46,9 @@ jobs:
             registry-1.docker.io:443
             registry.gitlab.com:443
 
+      - name: Collect Workflow Telemetry
+        uses: catchpoint/workflow-telemetry-action@v2
+
       - name: Honeycomb Buildevents
         uses: honeycombio/gha-buildevents@e891e91ad0fcd80b71430a97ebf5a9baecac388a # v1
         with:
