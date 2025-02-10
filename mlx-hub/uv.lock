@@ -83,8 +83,8 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "huggingface-hub", specifier = ">=0.23.4" },
-    { name = "mlx-hub", git = "https://github.com/g-aggarwal/mlx-hub/src" },
+    { name = "huggingface-hub" },
+    { name = "mlx-hub" },
 ]
 
 [[package]]
@@ -167,7 +167,7 @@ name = "tqdm"
 version = "4.64.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", marker = "platform_system == 'Windows'" },
+    { name = "colorama", marker = "sys_platform == 'win32'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/c1/c2/d8a40e5363fb01806870e444fc1d066282743292ff32a9da54af51ce36a2/tqdm-4.64.1.tar.gz", hash = "sha256:5f4f682a004951c1b450bc753c710e9280c5746ce6ffedee253ddbcbf54cf1e4", size = 169599 }
 wheels = [
