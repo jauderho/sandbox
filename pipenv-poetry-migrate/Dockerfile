@@ -1,4 +1,4 @@
-FROM ghcr.io/jauderho/alpine:3.21.2@sha256:e7f3117165afa2d56675922cdb717f94b22f724b385e07bfa096ede4ee58c323
+FROM ghcr.io/jauderho/alpine:3.21.3@sha256:8213095e3d59b3739372e8e8dac2ab7adab19754c0899b66cc2062a7a97586ed
 #FROM python:3.14.0a5-alpine3.21@sha256:85ae1b2efa2818d696ea3b1bdb1f1602db7b342b5628a977b51a41b3eec36147
 
 ARG BUILD_VERSION
