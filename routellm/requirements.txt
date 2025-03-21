@@ -8,6 +8,7 @@ anyio==4.9.0
 asttokens==3.0.0
 attrs==25.3.0
 certifi==2025.1.31
+cffi==1.17.1
 charset-normalizer==3.4.1
 click==8.1.8
 contourpy==1.3.1
@@ -59,7 +60,7 @@ nvidia-cusparselt-cu12==0.6.2
 nvidia-nccl-cu12==2.21.5
 nvidia-nvjitlink-cu12==12.4.127
 nvidia-nvtx-cu12==12.4.127
-openai==1.67.0
+openai==1.68.0
 packaging==24.2
 pandarallel==1.6.5
 pandas==2.2.3
@@ -72,6 +73,7 @@ psutil==7.0.0
 ptyprocess==0.7.0
 pure-eval==0.2.3
 pyarrow==19.0.1
+pycparser==2.22
 pydantic==2.10.6
 pydantic-core==2.27.2
 pygments==2.19.1
@@ -89,11 +91,12 @@ safetensors==0.5.3
 scikit-learn==1.6.1
 scipy==1.15.2
 setproctitle==1.3.5
-setuptools==77.0.1
+setuptools==77.0.3
 sglang==0.4.4.post1
 shortuuid==1.0.13
 six==1.17.0
 sniffio==1.3.1
+sounddevice==0.5.1
 stack-data==0.6.3
 starlette==0.46.1
 sympy==1.13.1
