@@ -9,9 +9,11 @@ anyio==4.9.0
 attrs==25.3.0
 cachetools==5.5.2
 certifi==2025.1.31
+cffi==1.17.1
 charset-normalizer==3.4.1
 click==8.1.8
 cohere==5.14.0
+cryptography==44.0.2
 dataclasses-json==0.6.7
 defusedxml==0.7.1
 distro==1.9.0
@@ -60,7 +62,7 @@ markupsafe==3.0.2
 marshmallow==3.26.1
 multidict==6.2.0
 mypy-extensions==1.0.0
-notdiamond[create]==0.3.41
+notdiamond[create]==0.3.42
 numpy==1.26.4
 openai==1.68.2
 orjson==3.10.16
@@ -71,12 +73,13 @@ proto-plus==1.26.1
 protobuf==4.25.6
 pyasn1==0.6.1
 pyasn1-modules==0.4.1
+pycparser==2.22
 pydantic==2.10.6
 pydantic-core==2.27.2
 pydantic-partial==0.5.5
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
-python-dotenv==1.0.1
+python-dotenv==1.1.0
 python-multipart[rag]==0.0.18
 pytz==2025.2
 pyyaml==6.0.2
