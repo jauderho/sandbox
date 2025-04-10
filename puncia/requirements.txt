@@ -1,8 +1,18 @@
 -i https://pypi.org/simple
 --extra-index-url https://www.piwheels.org/simple
+aiofiles==24.1.0
+aiohappyeyeballs==2.6.1
+aiohttp==3.11.16
+aiosignal==1.3.2
+asyncio==3.4.3
+attrs==25.3.0
 certifi==2025.1.31
 charset-normalizer==3.4.1
+frozenlist==1.5.0
 idna==3.10
--e git+https://github.com/ARPSyndicate/puncia.git@048866b2c6ead8a4cb9f4e2278ebd6fbd0ab469d#egg=puncia
+multidict==6.4.2
+propcache==0.3.1
+-e git+https://github.com/ARPSyndicate/puncia.git@cae810da07b732650479675724ba310c38eb9ac2#egg=puncia
 requests==2.32.3
 urllib3==2.3.0
+yarl==1.19.0
