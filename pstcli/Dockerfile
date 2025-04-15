@@ -1,4 +1,4 @@
-FROM almalinux:9.5-minimal@sha256:bde69332d9f27f4baef07c85dbff64bc34aaa678871680d57cf7b0ffa2becd06
+FROM almalinux:9.5-minimal@sha256:9d3e33caf50a138f24b49f45dc463720c628444ed46e19feb902cc63c417e957
 # FROM rockylinux:9.3-minimal@sha256:305de618a5681ff75b1d608fd22b10f362867dff2f550a4f1d427d21cd7f42b4
 
 ARG BUILD_VERSION
