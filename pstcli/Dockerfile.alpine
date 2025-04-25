@@ -1,5 +1,5 @@
 #FROM ghcr.io/jauderho/alpine:3.21.0@sha256:f1c32703dfc24d994cb29a14dba612df8cd56ef5c4df8e443803d11cacadd150 AS build
-FROM ghcr.io/jauderho/alpine:3.21.3@sha256:64129a9b2376c40874f00bb0809a236db11232cb34c42a658f6f36ee8dade089 AS build
+FROM ghcr.io/jauderho/alpine:3.21.3@sha256:97544ae64f3bad300d3130639f26ffa5465257222c0dc58e08be0276d017df68 AS build
 
 ARG BUILD_VERSION
 ARG ARCHIVE_URL=https://dl.dell.com/FOLDER08713913M/1/pstcli-${BUILD_VERSION}.x86_64.release.rpm
