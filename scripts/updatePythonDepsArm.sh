@@ -20,12 +20,12 @@ git config --local user.email "jauderho-bot@users.noreply.github.com"
 git config --local pull.rebase false
 
 # setup pipenv and python
-PATH="/Users/runner/Library/Python/3.12/bin:$HOME/.local/bin:$PATH"
+PATH="/Users/runner/Library/Python/3.13/bin:$HOME/.local/bin:$PATH"
 #pipenv install --python 3.9
 #pipenv shell
-#DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.12
-python3.12 -m pip install --no-cache-dir --upgrade pip --break-system-packages
-python3.12 -m pip install --no-cache-dir --upgrade --user pipenv certifi wheel setuptools packaging --break-system-packages
+#DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.13
+python3.13 -m pip install --no-cache-dir --upgrade pip --break-system-packages
+python3.13 -m pip install --no-cache-dir --upgrade --user pipenv certifi wheel setuptools packaging --break-system-packages
 #python3.11 -m pip install --no-cache-dir --upgrade --user pipenv
 #python3.11 -m pip install --no-cache-dir --upgrade --user certifi
 #DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv 
@@ -41,7 +41,7 @@ do
 	echo "Updating ${i} ..."
 	echo
 
-	pipenv --python 3.12 lock -v && pipenv --python 3.12 requirements --exclude-markers > requirements.txt
+	pipenv --python 3.13 lock -v && pipenv --python 3.13 requirements --exclude-markers > requirements.txt
 	#pipenv lock && pipenv requirements > requirements.txt
 
 	git add Pipfile Pipfile.lock requirements.txt && \
