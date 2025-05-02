@@ -1,0 +1,35 @@
+[project]
+name = "bgperf2-project"
+version = "0.1.0"
+description = "Performance measurement tool for BGP implementations"
+readme = "README.md"
+requires-python = ">=3.7"
+
+dependencies = [
+  "bgperf2 @ git+https://github.com/netenglabs/bgperf2.git",
+  "docker",
+  "jinja2",
+  "pyyaml",
+  "pyroute2",
+  "nsenter",
+  "netaddr",
+  "mako",
+  "six",
+  "packaging",
+  "psutil",
+  "matplotlib",
+  "numpy",
+  "toml",
+  "textfsm"
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+piwheels = { url = "https://www.piwheels.org/simple" }
+
+[dependency-groups]
+dev = [
+  # Add development dependencies here, e.g.,
+  # "pytest",
+  # "black"
+]

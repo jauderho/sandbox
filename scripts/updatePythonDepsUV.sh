@@ -10,8 +10,11 @@ APP=(
   "aranet4" \
   "autoflake" \
   "awscli" \
+  "badkeys" \
+  "cantools" \
   "llm" \
   "openbbterminal" \
+  "pshtt" \
 )
 
 #APP=(

@@ -1,0 +1,29 @@
+[project]
+name = "cantools-project"
+version = "40.2.1"
+description = "CAN BUS tools in Python 3. DBC, KCD, SYM, ARXML 3&4 and CDD file parsing. CAN message encoding and decoding. Simple and extended signal multiplexing."
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+  "cantools",
+  "matplotlib",
+  "bitstruct",
+  "python-can",
+  "textparser",
+  "diskcache",
+  "argparse_addons",
+  "typing_extensions",
+  "crccheck"
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+piwheels = { url = "https://www.piwheels.org/simple" }
+
+[dependency-groups]
+dev = [
+  # Add development dependencies here, e.g.,
+  # "pytest",
+  # "black"
+]

@@ -6,9 +6,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 APP=(
-  "badkeys" \
   "bgperf2" \
-  "cantools" \
   "chatgpt-linux-assistant" \
   "claude-engineer" \
   "codespell" \
@@ -37,7 +35,6 @@ APP=(
   "pip-audit" \
   "posting" \
   "prowler" \
-  "pshtt" \
   "puncia" \
   "pwnagotchi" \
   "pyaranet4" \
