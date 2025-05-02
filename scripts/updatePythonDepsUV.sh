@@ -7,6 +7,9 @@ IFS=$'\n\t'
 
 APP=(
   "aider" \
+  "aranet4" \
+  "autoflake" \
+  "awscli" \
   "llm" \
   "openbbterminal" \
 )

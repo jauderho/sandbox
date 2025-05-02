@@ -6,9 +6,6 @@ set -euo pipefail
 IFS=$'\n\t'
 
 APP=(
-  "aranet4" \
-  "autoflake" \
-  "awscli" \
   "badkeys" \
   "bgperf2" \
   "cantools" \
