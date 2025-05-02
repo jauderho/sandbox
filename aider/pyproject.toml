@@ -1,46 +1,25 @@
-[build-system]
-requires = ["setuptools>=61.0.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "mlx-hub"
-#dynamic = ["version"]
-version = "1.0.0"
-description = "A command line tool for downloading and managing MLX models"
+name = "aider-chat-project"
+version = "0.82.2"
+description = "Aider project migrated from Pipenv to uv"
 readme = "README.md"
-requires-python = ">=3.9"
-license = {text = "MIT License"}
-authors = [
-    {name = "Gaurav Aggarwal", email = "gauravaggarwal@mail.com"},
-]
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: MacOS :: MacOS X",
-]
+requires-python = ">=3.12"
+
 dependencies = [
-    "aider-chat",
-    "aiohappyeyeballs",
-    "litellm",
-    "openai",
+  "aider-chat",
+  "aiohappyeyeballs",
+  "litellm",
+  "openai"
 ]
-#    "pytest-playwright",
-#    "playwright",
 
-[project.urls]
-Homepage = "https://github.com/g-aggarwal/mlx-hub"
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+piwheels = { url = "https://www.piwheels.org/simple" }
+pytorch = { url = "https://download.pytorch.org/whl/cpu" }
 
-[project.scripts]
-mlx-hub-cli = "mlx_hub.cli:main"
-
-[tool.setuptools]
-package-dir = {"" = "src"}
-
-[tool.setuptools.packages.find]
-where = ["src"]
-
-[tool.setuptools.package-data]
-"mlx_hub" = ["data/*.txt"]
-
-[tool.setuptools.dynamic]
-version = {attr = "mlx_hub.__version__"}
+[dependency-groups]
+dev = [
+  # Uncomment the following lines to include these packages as development dependencies
+  # "pytest-playwright",
+  # "playwright"
+]
