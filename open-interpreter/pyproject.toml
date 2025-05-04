@@ -1,0 +1,23 @@
+[project]
+name = "open-interpreter-project"
+version = "0.0.229"
+description = "Open Interpreter is a lightweight, open-source implementation of OpenAI's Code Interpreter."
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+  "open-interpreter",
+  "google-api-core[grpc]",
+  "urllib3[socks]",
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+piwheels = { url = "https://www.piwheels.org/simple" }
+
+[dependency-groups]
+dev = [
+  # Add development dependencies here, e.g.,
+  # "pytest",
+  # "black"
+]

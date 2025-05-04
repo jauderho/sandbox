@@ -29,8 +29,6 @@ APP=(
   "llama-cpp-agent" \
   "llama-fs" \
   "memray" \
-  "notdiamond" \
-  "open-interpreter" \
   "paperless-ngx" \
   "pip-audit" \
   "posting" \

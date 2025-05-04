@@ -1,0 +1,21 @@
+[project]
+name = "notdiamond-project"
+version = "0.4.3"
+description = "Not Diamond is an AI model router that automatically determines which LLM is best-suited to respond to any query, improving LLM output quality by combining multiple LLMs into a meta-model that learns when to call each LLM."
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+
+dependencies = [
+  "notdiamond[create]"
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+piwheels = { url = "https://www.piwheels.org/simple" }
+
+[dependency-groups]
+dev = [
+  # Add development dependencies here, e.g.,
+  # "pytest",
+  # "black"
+]
