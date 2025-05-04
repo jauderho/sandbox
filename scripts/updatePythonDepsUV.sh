@@ -55,7 +55,7 @@ do
 	echo "Updating ${i} ..."
 	echo
 
-	uv lock --prerelease=allow && uv pip compile pyproject.toml --prerelease=allow > requirements.txt 
+	uv lock --prerelease=allow && uv pip compile pyproject.toml --no-annotate --prerelease=allow > requirements.txt 
 
 	git add pyproject.toml uv.lock requirements.txt && \
 	git commit -S -s -m "Update requirements for ${i} ..." && \
