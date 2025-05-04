@@ -9,6 +9,9 @@ resolution-markers = [
     "python_full_version < '3.5'",
 ]
 
+[options]
+prerelease-mode = "allow"
+
 [[package]]
 name = "codespell"
 version = "1.17.1"
