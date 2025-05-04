@@ -1,0 +1,21 @@
+[project]
+name = "revchatgpt-project"
+version = "6.8.6"
+description = "ChatGPT is a reverse engineering of OpenAI's ChatGPT API."
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+  "revChatGPT"
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+piwheels = { url = "https://www.piwheels.org/simple" }
+
+[dependency-groups]
+dev = [
+  # Add development dependencies here, e.g.,
+  # "pytest",
+  # "black"
+]
