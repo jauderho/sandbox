@@ -12,11 +12,13 @@ APP=(
   "awscli" \
   "badkeys" \
   "cantools" \
+  "codespell" \
   "llm" \
   "notdiamond" \
   "openbbterminal" \
   "open-interpreter" \
   "pshtt" \
+  "revchatgpt" \
 )
 
 #APP=(

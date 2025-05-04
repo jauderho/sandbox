@@ -1,0 +1,26 @@
+[project]
+name = "claude-engineer-project"
+version = "0.1.0"
+description = "Engineer Claude with tools and memory."
+requires-python = ">=3.7"
+
+dependencies = [
+  "anthropic",
+  "python-dotenv",
+  "tavily-python",
+  "pillow",
+  "rich",
+  "aiohttp",
+  "prompt_toolkit",
+  "claude-engineer @ git+https://github.com/Doriandarko/claude-engineer.git"
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+piwheels = { url = "https://www.piwheels.org/simple" }
+
+[dependency-groups]
+dev = []
+
+[tool.hatch.metadata]
+allow-implicit-readme = true

@@ -7,9 +7,7 @@ IFS=$'\n\t'
 
 APP=(
   "bgperf2" \
-  "chatgpt-linux-assistant" \
   "claude-engineer" \
-  "codespell" \
   "cryptolyzer" \
   "datasette" \
   "deepdiff" \

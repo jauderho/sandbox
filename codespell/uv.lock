@@ -1,0 +1,80 @@
+version = 1
+revision = 2
+requires-python = ">=3.0"
+resolution-markers = [
+    "python_full_version >= '3.8'",
+    "python_full_version == '3.7.*'",
+    "python_full_version == '3.6.*'",
+    "python_full_version == '3.5.*'",
+    "python_full_version < '3.5'",
+]
+
+[[package]]
+name = "codespell"
+version = "1.17.1"
+source = { registry = "https://www.piwheels.org/simple" }
+resolution-markers = [
+    "python_full_version < '3.5'",
+]
+wheels = [
+    { url = "https://www.piwheels.org/simple/codespell/codespell-1.17.1-py3-none-any.whl", hash = "sha256:0ba864d8b25c4dc1b2a3fb067377ec11edb84c1a967a33d9e9cac73f386f3a0a" },
+]
+
+[[package]]
+name = "codespell"
+version = "2.1.0"
+source = { registry = "https://www.piwheels.org/simple" }
+resolution-markers = [
+    "python_full_version == '3.5.*'",
+]
+wheels = [
+    { url = "https://www.piwheels.org/simple/codespell/codespell-2.1.0-py3-none-any.whl", hash = "sha256:b864c7d917316316ac24272ee992d7937c3519be4569209c5b60035ac5d569b5" },
+]
+
+[[package]]
+name = "codespell"
+version = "2.2.1"
+source = { registry = "https://www.piwheels.org/simple" }
+resolution-markers = [
+    "python_full_version == '3.6.*'",
+]
+wheels = [
+    { url = "https://www.piwheels.org/simple/codespell/codespell-2.2.1-py3-none-any.whl", hash = "sha256:380882744cb8202d31a5a5ea477f61cafe80b50cc8a3eef0b2147545f7ea8dec" },
+]
+
+[[package]]
+name = "codespell"
+version = "2.2.5"
+source = { registry = "https://www.piwheels.org/simple" }
+resolution-markers = [
+    "python_full_version == '3.7.*'",
+]
+wheels = [
+    { url = "https://www.piwheels.org/simple/codespell/codespell-2.2.5-py3-none-any.whl", hash = "sha256:5d9a45072072028133cd44936224ae05bc299deb1225aeca02afb57ace8b5b69" },
+]
+
+[[package]]
+name = "codespell"
+version = "2.4.1"
+source = { registry = "https://www.piwheels.org/simple" }
+resolution-markers = [
+    "python_full_version >= '3.8'",
+]
+wheels = [
+    { url = "https://www.piwheels.org/simple/codespell/codespell-2.4.1-py3-none-any.whl", hash = "sha256:389934d247786bf11ec067cf6a23fe53f81e407bacbb54a555dddb96c4fb0181" },
+]
+
+[[package]]
+name = "codespell-env"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "codespell", version = "1.17.1", source = { registry = "https://www.piwheels.org/simple" }, marker = "python_full_version < '3.5'" },
+    { name = "codespell", version = "2.1.0", source = { registry = "https://www.piwheels.org/simple" }, marker = "python_full_version == '3.5.*'" },
+    { name = "codespell", version = "2.2.1", source = { registry = "https://www.piwheels.org/simple" }, marker = "python_full_version == '3.6.*'" },
+    { name = "codespell", version = "2.2.5", source = { registry = "https://www.piwheels.org/simple" }, marker = "python_full_version == '3.7.*'" },
+    { name = "codespell", version = "2.4.1", source = { registry = "https://www.piwheels.org/simple" }, marker = "python_full_version >= '3.8'" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "codespell" }]
