@@ -6,7 +6,7 @@ asgiref==3.8.1
 billiard==4.2.1
 bleach==6.2.0
 brotli==1.1.0
-celery[redis]==5.3.1
+celery[redis]==5.5.2
 certifi==2025.4.26
 cffi==1.17.1
 channels==4.2.2
@@ -22,13 +22,13 @@ cryptography==44.0.3
 dateparser==1.2.1
 deprecated==1.2.18
 deprecation==2.1.0
-django==4.2.20
+django==4.2.21
 django-celery-results==2.6.0
 django-compression-middleware==0.5.0
 django-cors-headers==4.7.0
 django-extensions==4.1
 django-filter==23.5
-django-guardian==2.4.0
+django-guardian==3.0.0
 django-multiselectfield==0.1.13
 djangorestframework==3.16.0
 djangorestframework-guardian==0.3.0
@@ -70,6 +70,7 @@ prompt-toolkit==3.0.51
 psycopg2==2.9.10
 pycparser==2.22
 pygments==2.19.1
+pyjwt==2.9.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.1.0
 python-gnupg==0.5.4
@@ -79,7 +80,7 @@ pytz==2025.2
 pyyaml==6.0.2
 pyzbar==0.1.9
 rapidfuzz==3.13.0
-redis[hiredis]==6.0.0
+redis[hiredis]==5.3.0
 regex==2024.11.6
 reportlab==4.4.0
 rich==14.0.0
