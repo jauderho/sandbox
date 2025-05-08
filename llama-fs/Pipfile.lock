@@ -826,6 +826,20 @@
             "markers": "python_version >= '3.8'",
             "version": "==0.16.0"
         },
+        "hf-xet": {
+            "hashes": [
+                "sha256:0322c42551e275fcb7949c083a54a81b2898e50787c9aa74284fcb8d2c58c12c",
+                "sha256:3aee847da362393331f515c4010d0aaa1c2669acfcca1f4b28946d6949cc0086",
+                "sha256:4ee9222bf9274b1c198b88a929de0b5a49349c4962d89c5b3b2f0f7f47d9761c",
+                "sha256:667153a0304ac2debf2af95a8ff7687186f885b493f4cd16344869af270cd110",
+                "sha256:68c5813a6074aa36e12ef5983230e3b03148cce61e0fcdd294096493795565b4",
+                "sha256:73153eab9abf3d6973b21e94a67ccba5d595c3e12feb8c0bf50be02964e7f126",
+                "sha256:995eeffb119636ea617b96c7d7bf3c3f5ea8727fa57974574e25d700b8532d48",
+                "sha256:a7c2a4c2b6eee9ce0a1a367a82b60d95ba634420ef1c250addad7aa4af419cf4"
+            ],
+            "markers": "python_version >= '3.8'",
+            "version": "==1.1.0"
+        },
         "httpcore": {
             "hashes": [
                 "sha256:2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
@@ -893,11 +907,11 @@
         },
         "huggingface-hub": {
             "hashes": [
-                "sha256:68ff05969927058cfa41df4f2155d4bb48f5f54f719dd0390103eefa9b191e28",
-                "sha256:9a7897c5b6fd9dad3168a794a8998d6378210f5b9688d0dfc180b1a228dc2466"
+                "sha256:43f73124819b48b42d140cbc0d7a2e6bd15b2853b1b9d728d4d55ad1750cac5b",
+                "sha256:492bb5f545337aa9e2f59b75ef4c5f535a371e8958a6ce90af056387e67f1180"
             ],
             "markers": "python_full_version >= '3.8.0'",
-            "version": "==0.30.2"
+            "version": "==0.31.1"
         },
         "humanfriendly": {
             "hashes": [
@@ -1080,12 +1094,12 @@
         },
         "langchain-core": {
             "hashes": [
-                "sha256:266f90d2a079fe9510190ad3be88bd993baad43e6cee0f822a883767a4bfdd5b",
-                "sha256:6ee2282b02fa65bf4ee1afa869d431505536757ff2f1f9f0b432d8ca755d66c6"
+                "sha256:052a37cf298c505144f007e5aeede6ecff2dc92c827525d1ef59101eb3a4551c",
+                "sha256:9686baaff43f2c8175535da13faf40e6866769015e93130c3c1e4243e7244d70"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.9'",
-            "version": "==0.3.58"
+            "version": "==0.3.59"
         },
         "langchain-text-splitters": {
             "hashes": [
@@ -1997,11 +2011,11 @@
         },
         "platformdirs": {
             "hashes": [
-                "sha256:a03875334331946f13c549dbd8f4bac7a13a50a895a0eb1e8c6a8ace80d40a94",
-                "sha256:eb437d586b6a0986388f0d6f74aa0cde27b48d0e3d66843640bfb6bdcdb6e351"
+                "sha256:3d512d96e16bcb959a814c9f348431070822a6496326a4be0911c40b5a74c2bc",
+                "sha256:ff7059bb7eb1179e2685604f4aaf157cfd9535242bd23742eadc3c13542139b4"
             ],
             "markers": "python_version >= '3.9'",
-            "version": "==4.3.7"
+            "version": "==4.3.8"
         },
         "posthog": {
             "hashes": [
@@ -3130,20 +3144,20 @@
         },
         "wandb": {
             "hashes": [
-                "sha256:010772d26cd259eee2b7e0c8a8d59ad53de050ba96b0bc56e3ee23ff4f1436bb",
-                "sha256:1a518b94b0b481230e62c069d341a1c35f5bf0ac0011bc06554b33b213ea6d40",
-                "sha256:1dbe1aa6f321a761a6be35f55dedb120c50a37fb807f6cb72714c51a6e987444",
-                "sha256:1df6a5ad4f4eea1732453598360e99350b6a14e5d911d305d595bd1c412ff0e8",
-                "sha256:3dfabb4fa64b84663d34fd11c53bd6e4a3a42026e7776519966cd45a4c39f93a",
-                "sha256:5eeaeabcf6e90cc96292ee47d08b2e180e81a560773e3127bafa8c02c96c0029",
-                "sha256:92d6889f6f291f954ac27019ea6c4b5115d1670846f2474c875c98baf93f8f51",
-                "sha256:ae6b09efaa3c5b70146710fc153889f4faf059ea2e0bd2c1fb821dc59a77f50a",
-                "sha256:c0ed28c56005fa899eed2f03db50b3c579682797afd0baf925c73e9e5d38e2f6",
-                "sha256:c290791a58a2afdf0ec76d02e9f5d750387d52797bc46b12e889cf9baeec2880",
-                "sha256:cb3b88eb69d4e17fd7cdfb89970eff06b7328862ec6dd739ae524b7b17cd8a9f"
+                "sha256:0823fd9aa6343f40c04e01959997ca8c6d6adf1bd81c8d45261fa4915f1c6b67",
+                "sha256:38dea43c7926d8800405a73b80b9adfe81eb315fc6f2ac6885c77eb966634421",
+                "sha256:3f50a27dfadbb25946a513ffe856c0e8e538b5626ef207aa50b00c3b0356bff8",
+                "sha256:73402003c56ddc2198878492ab2bff55bb49bce5587eae5960e737d27c0c48f7",
+                "sha256:858bc5023fa1b3285d89d15f62be78afdb28301064daa49ea3f4ebde5dcedad2",
+                "sha256:90e4b57649896acb16c3dd41b3093df1a169c2f1d94ff15d76af86b8a60dcdac",
+                "sha256:c758ef5439599d9023db5b3cf1698477055d82f9fae48af2779f63f1d289167c",
+                "sha256:cfff738850770d26b13f8f3fe400a6456f1e39e87f3f29d5aa241b249476df95",
+                "sha256:de2dfd4911e7691735e271654c735e7b90cdee9d29a3796fbf06e9e92d48f3d7",
+                "sha256:e8ff673007448df11cc69379ae0df28ead866800dc1ec7bc151b402db0bbcf40",
+                "sha256:ff3bf050ba25ebae7aedc9a775ffab90c28068832edfe5458423f488c2558f82"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==0.19.10"
+            "version": "==0.19.11"
         },
         "watchdog": {
             "hashes": [
@@ -3261,12 +3275,12 @@
         },
         "weave": {
             "hashes": [
-                "sha256:0b88ef54adc71b64e0aeb8a506ded424cba564eaa1cd5888fc1201e65b53ea6e",
-                "sha256:6948e1410a52ea3c88e05c12bc177b620152d562672492637fa29304816a59c1"
+                "sha256:586e692945a69ef6cedbffd30e2e84a40979ed8486a65d71f29320000e60f91b",
+                "sha256:e18db4773acc28e9326e512f1e63c8ab04c0fdeb15035d29902bce820d8c0e10"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.9'",
-            "version": "==0.51.44"
+            "version": "==0.51.45"
         },
         "websocket-client": {
             "hashes": [
