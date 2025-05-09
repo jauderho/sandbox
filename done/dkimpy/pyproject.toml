@@ -1,0 +1,16 @@
+[project]
+name = "dkimpy-project"
+version = "0.1.0"
+description = "DKIMpy with extras (ed25519, ARC, asyncio)"
+requires-python = ">=3.10"
+dependencies = [
+  #"dkimpy[ed25519,ARC,asyncio]",
+  "dkimpy",
+  "aiodns",
+  "authres",
+  "pynacl",
+]
+
+[tool.uv]
+index-url = "https://pypi.org/simple"
+#extra-index-url = ["https://www.piwheels.org/simple"]
