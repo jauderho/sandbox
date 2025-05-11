@@ -14,7 +14,8 @@ maintainers = [
 ]
 
 dependencies = [
-  "awscli"
+  "awscli",
+  #"awscli==1.16.14",
 ]
 
 keywords = ["aws", "cli", "cloud", "amazon"]
