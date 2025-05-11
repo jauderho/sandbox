@@ -1,36 +1,53 @@
-[build-system]
-requires = ["setuptools>=61.0.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "mlx-project"
-#dynamic = ["version"]
-version = "1.0.0"
-description = "A command line tool for downloading and managing MLX models"
+version = "0.25.2"
+description = "A framework for machine learning on Apple silicon."
+authors = [
+  { name = "MLX Contributors" }
+]
+maintainers = [
+  { name = "Awni Hannun" },
+  { name = "Angelos Katharopoulos" }
+]
+license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.9"
-license = {text = "MIT License"}
-authors = [
-    {name = "Gaurav Aggarwal", email = "gauravaggarwal@mail.com"},
-]
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: MacOS :: MacOS X",
-]
 dependencies = [
-    #"mlx@git+https://github.com/ml-explore/mlx",
-    "mlx",
-    #"setuptools>=42",
-    #"nanobind>=2.1.0",
-    #"cmake>=3.24",
+  "mlx; sys_platform == 'darwin'"
+]
+keywords = ["machine learning", "apple silicon", "gpu", "array", "framework"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
 ]
 
 [project.urls]
 Homepage = "https://github.com/ml-explore/mlx"
+Documentation = "https://ml-explore.github.io/mlx/"
+Source = "https://github.com/ml-explore/mlx"
+Issues = "https://github.com/ml-explore/mlx/issues"
 
 [project.scripts]
 mlx-hub-cli = "mlx_hub.cli:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+index-url = "https://pypi.org/simple"
+#environments = [
+    #"sys_platform == 'darwin'",
+#    "sys_platform == 'darwin' and platform_machine == 'aarch64'",
+#]
 
 [tool.setuptools]
 package-dir = {"" = "src"}

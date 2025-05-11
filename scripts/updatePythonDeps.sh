@@ -12,7 +12,6 @@ APP=(
   "datasette" \
   "deepdiff" \
   "diagrams" \
-  "dnsdiag" \
   "dnsrecon" \
   "dnstwist" \
   "dnsvalidator" \
@@ -28,7 +27,6 @@ APP=(
   "memray" \
   "paperless-ngx" \
   "pip-audit" \
-  "posting" \
   "prowler" \
   "puncia" \
   "pwnagotchi" \

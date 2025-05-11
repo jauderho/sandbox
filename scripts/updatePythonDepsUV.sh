@@ -13,11 +13,13 @@ APP=(
   "badkeys" \
   "cantools" \
   "codespell" \
+  "dnsdiag" \
   "finance_dl" \
   "llm" \
   "notdiamond" \
   "openbbterminal" \
   "open-interpreter" \
+  "posting" \
   "pshtt" \
   "revchatgpt" \
 )
