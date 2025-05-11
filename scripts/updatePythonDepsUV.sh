@@ -14,7 +14,7 @@ APP=(
   "cantools" \
   "codespell" \
   "dnsdiag" \
-  "finance_dl" \
+  "finanace_dl" \
   "llm" \
   "notdiamond" \
   "openbbterminal" \
