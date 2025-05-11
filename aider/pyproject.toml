@@ -1,7 +1,7 @@
 [project]
 name = "aider-chat-project"
-version = "0.82.2"
-description = "Aider project migrated from Pipenv to uv"
+dynamic = ["version"]
+description = "AI Pair Programming in Your Terminal"
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "MIT" }
