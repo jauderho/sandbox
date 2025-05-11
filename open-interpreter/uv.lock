@@ -1359,8 +1359,7 @@ wheels = [
 
 [[package]]
 name = "open-interpreter-project"
-version = "0.0.229"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "google-api-core", extra = ["grpc"] },
     { name = "open-interpreter" },

@@ -1,14 +1,49 @@
 [project]
 name = "open-interpreter-project"
-version = "0.0.229"
+dynamic = ["version"]
 description = "Open Interpreter is a lightweight, open-source implementation of OpenAI's Code Interpreter."
 readme = "README.md"
 requires-python = ">=3.12"
+license = { text = "MIT" }
+
+authors = [
+  { name = "Killian Lucas", email = "killianlucas@gmail.com" }
+]
+
+maintainers = [
+  # Add if different from authors, or leave blank
+]
 
 dependencies = [
   "open-interpreter",
   "google-api-core[grpc]",
   "urllib3[socks]",
+]
+
+keywords = ["interpreter", "openai", "code", "assistant", "llm"]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Interpreters",
+]
+
+[project.urls]
+Homepage = "https://github.com/open-interpreter/open-interpreter"
+Repository = "https://github.com/open-interpreter/open-interpreter"
+Issues = "https://github.com/open-interpreter/open-interpreter/issues"
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
 ]
 
 [tool.uv.sources]
