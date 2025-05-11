@@ -13,6 +13,7 @@ APP=(
   "badkeys" \
   "cantools" \
   "codespell" \
+  "finance_dl" \
   "llm" \
   "notdiamond" \
   "openbbterminal" \

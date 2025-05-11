@@ -16,7 +16,6 @@ APP=(
   "dnsrecon" \
   "dnstwist" \
   "dnsvalidator" \
-  "finanace_dl" \
   "gallery-dl" \
   "greynoise" \
   "hdbcli" \

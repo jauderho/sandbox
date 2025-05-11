@@ -1,0 +1,12 @@
+[project]
+name = "finance_dl-project"
+version = "1.3.4"
+description = "Tools for automatically downloading/scraping personal financial data."
+requires-python = ">=3.10"
+dependencies = [
+  "finance_dl",
+]
+
+[tool.uv]
+index-url = "https://pypi.org/simple"
+#extra-index-url = ["https://www.piwheels.org/simple"]
