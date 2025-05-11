@@ -28,8 +28,7 @@ wheels = [
 
 [[package]]
 name = "awscli-project"
-version = "1.40.6"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "awscli" },
 ]

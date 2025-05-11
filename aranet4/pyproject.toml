@@ -1,6 +1,6 @@
 [project]
 name = "aranet4-project"
-version = "2.5.1"
+dynamic = ["version"]
 description = "Python client for Aranet4 CO₂ sensors"
 readme = "README.md"
 requires-python = ">=3.7"
@@ -35,6 +35,12 @@ Issues = "https://github.com/Anrijs/Aranet4-Python/issues"
 [build-system]
 requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
 
 [tool.uv.sources]
 pypi = { url = "https://pypi.org/simple" }

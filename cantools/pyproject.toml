@@ -1,9 +1,17 @@
 [project]
 name = "cantools-project"
-version = "40.2.1"
+dynamic = ["version"]
 description = "CAN BUS tools in Python 3. DBC, KCD, SYM, ARXML 3&4 and CDD file parsing. CAN message encoding and decoding. Simple and extended signal multiplexing."
 readme = "README.md"
 requires-python = ">=3.9"
+license = { text = "MIT" }
+
+authors = [
+  { name = "Christian Sandberg", email = "christer.sandberg@gmail.com" }
+]
+maintainers = [
+  { name = "Christian Sandberg", email = "christer.sandberg@gmail.com" }
+]
 
 dependencies = [
   "cantools",
@@ -15,6 +23,32 @@ dependencies = [
   "argparse_addons",
   "typing_extensions",
   "crccheck"
+]
+
+keywords = ["can", "dbc", "arxml", "sym", "kcd", "tools", "bus", "parser"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Intended Audience :: Developers",
+  "Development Status :: 5 - Production/Stable"
+]
+
+[project.urls]
+Homepage = "https://github.com/cantools/cantools"
+Repository = "https://github.com/cantools/cantools"
+Issues = "https://github.com/cantools/cantools/issues"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
 ]
 
 [tool.uv.sources]
