@@ -22,7 +22,6 @@ APP=(
   "llama-fs" \
   "memray" \
   "pip-audit" \
-  "prowler" \
   "puncia" \
   "pwnagotchi" \
   "pyinfra" \

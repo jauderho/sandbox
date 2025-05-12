@@ -26,6 +26,7 @@ APP=(
   "open-interpreter" \
   "paperless-ngx" \
   "posting" \
+  "prowler" \
   "pshtt" \
   "pyaranet4" \
   "revchatgpt" \
