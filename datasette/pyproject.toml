@@ -1,0 +1,61 @@
+[project]
+name = "datasette-project"
+dynamic = ["version"]
+description = "An open source multi-tool for exploring and publishing data"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+
+authors = [
+  { name = "Simon Willison", email = "simon@example.com" }
+]
+maintainers = [
+  { name = "Simon Willison", email = "simon@example.com" }
+]
+
+dependencies = [
+  "datasette"
+]
+
+keywords = ["datasette", "data", "sqlite", "publishing", "exploration"]
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Topic :: Database",
+  "Topic :: Internet :: WWW/HTTP :: Dynamic Content"
+]
+
+[project.urls]
+Homepage = "https://datasette.io/"
+Repository = "https://github.com/simonw/datasette"
+Issues = "https://github.com/simonw/datasette/issues"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+index-url = "https://pypi.org/simple"
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+
+[dependency-groups]
+dev = [
+  # Add development dependencies here, e.g.,
+  # "pytest",
+  # "black"
+]

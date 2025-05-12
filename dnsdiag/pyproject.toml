@@ -1,16 +1,22 @@
 [project]
 name = "dnsdiag-project"
-version = "2.6.0"
+dynamic = ["version"]
 description = "DNS Measurement, Troubleshooting and Security Auditing Toolset (ping, traceroute)"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "BSD License" }
+
 authors = [
   { name = "Babak Farrokhi" }
 ]
-license = { text = "BSD License" }
-readme = "README.md"
-requires-python = ">=3.9"
+maintainers = [
+  { name = "Babak Farrokhi" }
+]
+
 dependencies = [
   "dnsdiag"
 ]
+
 keywords = ["dns", "traceroute", "ping", "performance"]
 classifiers = [
   "Development Status :: 5 - Production/Stable",
@@ -28,5 +34,25 @@ classifiers = [
   "Topic :: System :: Networking"
 ]
 
+[project.urls]
+Homepage = "https://github.com/farrokhi/dnsdiag"
+Repository = "https://github.com/farrokhi/dnsdiag"
+Issues = "https://github.com/farrokhi/dnsdiag/issues"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
 [tool.uv]
 index-url = "https://pypi.org/simple"
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
+
+[dependency-groups]
+dev = [
+  # Add development dependencies here, e.g.,
+  # "pytest",
+  # "black"
+]

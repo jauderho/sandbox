@@ -1,88 +1,28 @@
 version = 1
 revision = 2
-requires-python = ">=3.0"
-resolution-markers = [
-    "python_full_version >= '3.8'",
-    "python_full_version == '3.7.*'",
-    "python_full_version == '3.6.*'",
-    "python_full_version == '3.5.*'",
-    "python_full_version < '3.5'",
-]
+requires-python = ">=3.12"
 
 [options]
 prerelease-mode = "allow"
 
 [[package]]
 name = "codespell"
-version = "1.17.1"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version < '3.5'",
-]
-sdist = { url = "https://files.pythonhosted.org/packages/7e/37/b15b4133e90bbef5acecfd2f3f3871c1352ee281c042fd64a22a72735fb8/codespell-1.17.1.tar.gz", hash = "sha256:25a2ecd86b9cdc111dc40a30d0ed28c578e13a0ce158d1c383f9d47811bfcd23", size = 160708, upload-time = "2020-05-22T03:11:48.242Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/65/13/29b81cd42d79198395f8a125089da1109f22b48137b569e8604acb06e9b0/codespell-1.17.1-py3-none-any.whl", hash = "sha256:0ba864d8b25c4dc1b2a3fb067377ec11edb84c1a967a33d9e9cac73f386f3a0a", size = 163190, upload-time = "2020-05-22T03:11:47.136Z" },
-]
-
-[[package]]
-name = "codespell"
-version = "2.1.0"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version == '3.5.*'",
-]
-sdist = { url = "https://files.pythonhosted.org/packages/26/37/c524f1750635cb8806240013af1fd4147a60019f9a80e788759e3d2fb644/codespell-2.1.0.tar.gz", hash = "sha256:19d3fe5644fef3425777e66f225a8c82d39059dcfe9edb3349a8a2cf48383ee5", size = 185923, upload-time = "2021-06-10T19:15:51.677Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/e0/f2/c3a9dbd0e920ac9e3d995057f06f256d748bd7f4f7366ec86e7dec8ff1af/codespell-2.1.0-py3-none-any.whl", hash = "sha256:b864c7d917316316ac24272ee992d7937c3519be4569209c5b60035ac5d569b5", size = 177512, upload-time = "2021-06-10T19:15:50.396Z" },
-]
-
-[[package]]
-name = "codespell"
-version = "2.2.1"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version == '3.6.*'",
-]
-sdist = { url = "https://files.pythonhosted.org/packages/71/66/d5e8b69e1572e0165be57fd980ef74394dcea0f49d810407eab2c46449ef/codespell-2.2.1.tar.gz", hash = "sha256:569b67e5e5c3ade02a1e23f6bbc56c64b608a3ab48ddd943ece0a03e6c346ed1", size = 208802, upload-time = "2022-08-18T13:53:23.891Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/7d/ef/9f87a6b98129416b0415bfc0fd5333831f768f6f76b547883deb3e8c04c0/codespell-2.2.1-py3-none-any.whl", hash = "sha256:0c53a70f466952706407383d87142a78f319a0e18602802c4aadd3d93158bfc6", size = 202096, upload-time = "2022-08-18T13:53:21.968Z" },
-]
-
-[[package]]
-name = "codespell"
-version = "2.2.5"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version == '3.7.*'",
-]
-sdist = { url = "https://files.pythonhosted.org/packages/81/30/e1b32067c551d745df2bdc9f1d510422d8a5819ca3b610b4433654cf578c/codespell-2.2.5.tar.gz", hash = "sha256:6d9faddf6eedb692bf80c9a94ec13ab4f5fb585aabae5f3750727148d7b5be56", size = 242918, upload-time = "2023-06-14T18:00:23.441Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/1d/bc/4bd1cdb7cf940ab8e8e619d3ad24c88b0257b030c6b0dd64cba3fdfa7bb8/codespell-2.2.5-py3-none-any.whl", hash = "sha256:efa037f54b73c84f7bd14ce8e853d5f822cdd6386ef0ff32e957a3919435b9ec", size = 242673, upload-time = "2023-06-14T18:00:21.806Z" },
-]
-
-[[package]]
-name = "codespell"
 version = "2.4.1"
 source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version >= '3.8'",
-]
 sdist = { url = "https://files.pythonhosted.org/packages/15/e0/709453393c0ea77d007d907dd436b3ee262e28b30995ea1aa36c6ffbccaf/codespell-2.4.1.tar.gz", hash = "sha256:299fcdcb09d23e81e35a671bbe746d5ad7e8385972e65dbb833a2eaac33c01e5", size = 344740, upload-time = "2025-01-28T18:52:39.411Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/20/01/b394922252051e97aab231d416c86da3d8a6d781eeadcdca1082867de64e/codespell-2.4.1-py3-none-any.whl", hash = "sha256:3dadafa67df7e4a3dbf51e0d7315061b80d265f9552ebd699b3dd6834b47e425", size = 344501, upload-time = "2025-01-28T18:52:37.057Z" },
 ]
 
 [[package]]
-name = "codespell-env"
-version = "0.1.0"
-source = { virtual = "." }
+name = "codespell-project"
+source = { editable = "." }
 dependencies = [
-    { name = "codespell", version = "1.17.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.5'" },
-    { name = "codespell", version = "2.1.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.5.*'" },
-    { name = "codespell", version = "2.2.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.6.*'" },
-    { name = "codespell", version = "2.2.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.7.*'" },
-    { name = "codespell", version = "2.4.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.8'" },
+    { name = "codespell" },
 ]
 
 [package.metadata]
 requires-dist = [{ name = "codespell" }]
+
+[package.metadata.requires-dev]
+dev = []

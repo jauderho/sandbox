@@ -1,8 +1,16 @@
 [project]
 name = "claude-engineer-project"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Engineer Claude with tools and memory."
-requires-python = ">=3.7"
+readme = "readme.md"
+requires-python = ">=3.12"
+
+authors = [
+  { name = "Doriandarko" }
+]
+maintainers = [
+  { name = "Doriandarko" }
+]
 
 dependencies = [
   "anthropic",
@@ -12,15 +20,48 @@ dependencies = [
   "rich",
   "aiohttp",
   "prompt_toolkit",
-  "claude-engineer @ git+https://github.com/Doriandarko/claude-engineer.git"
+  "ce3 @ git+https://github.com/jauderho/claude-engineer.git"
+]
+
+keywords = ["claude", "ai", "tools", "memory", "assistant"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[project.urls]
+Homepage = "https://github.com/Doriandarko/claude-engineer"
+Repository = "https://github.com/Doriandarko/claude-engineer"
+Issues = "https://github.com/Doriandarko/claude-engineer/issues"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
 ]
 
 [tool.uv.sources]
 pypi = { url = "https://pypi.org/simple" }
-piwheels = { url = "https://www.piwheels.org/simple" }
 
 [dependency-groups]
-dev = []
+dev = [
+  # "pytest",
+  # "black"
+]
 
 [tool.hatch.metadata]
 allow-implicit-readme = true

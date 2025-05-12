@@ -7,10 +7,6 @@ IFS=$'\n\t'
 
 APP=(
   "bgperf2" \
-  "claude-engineer" \
-  "cryptolyzer" \
-  "datasette" \
-  "deepdiff" \
   "diagrams" \
   "dnsrecon" \
   "dnstwist" \

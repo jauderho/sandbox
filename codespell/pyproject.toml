@@ -1,12 +1,52 @@
 [project]
-name = "codespell-env"
-version = "0.1.0"
+name = "codespell-project"
+dynamic = ["version"]
 description = "Environment for codespell"
-requires-python = ">=3.0"
-dependencies = [
-    "codespell",
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+
+authors = [
+  { name = "Your Name", email = "your@email.com" }
 ]
+maintainers = [
+  { name = "Your Name", email = "your@email.com" }
+]
+
+dependencies = [
+  "codespell"
+]
+
+keywords = ["codespell", "lint", "spellcheck", "static-analysis"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Quality Assurance"
+]
+
+[project.urls]
+Homepage = "https://pypi.org/project/codespell/"
+Repository = "https://github.com/codespell-project/codespell"
+Issues = "https://github.com/codespell-project/codespell/issues"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
 
 [tool.uv]
 index-url = "https://pypi.org/simple"
-#extra-index-url = ["https://www.piwheels.org/simple"]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
+
+[dependency-groups]
+dev = [
+  # Add development dependencies here, e.g.,
+  # "pytest",
+  # "black"
+]

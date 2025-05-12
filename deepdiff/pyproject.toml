@@ -1,0 +1,28 @@
+[project]
+name = "deepdiff-project"
+dynamic = ["version"]
+description = "Deep Difference of dictionaries, iterables, strings and other objects. It will recursively look for all the changes."
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+  "deepdiff[cli,optimize]",
+  "clevercsv",
+  "tomli-w"
+]
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+
+[dependency-groups]
+dev = [
+  # Add development dependencies here, e.g.,
+  # "pytest",
+  # "black"
+]

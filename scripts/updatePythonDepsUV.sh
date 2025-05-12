@@ -12,7 +12,11 @@ APP=(
   "awscli" \
   "badkeys" \
   "cantools" \
+  "claude-engineer" \
   "codespell" \
+  "cryptolyzer" \
+  "datasette" \
+  "deepdiff" \
   "dnsdiag" \
   "finanace_dl" \
   "llm" \

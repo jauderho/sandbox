@@ -1,12 +1,48 @@
 [project]
 name = "finance_dl-project"
-version = "1.3.4"
+#version = "1.3.4"
+dynamic = ["version"]
 description = "Tools for automatically downloading/scraping personal financial data."
+readme = "README.md"
 requires-python = ">=3.10"
+license = { text = "MIT" }
+
+authors = [
+  { name = "Andrew Dunham", email = "andrew@du.nham.ca" }
+]
+maintainers = [
+  { name = "Andrew Dunham", email = "andrew@du.nham.ca" }
+]
+
 dependencies = [
   "finance_dl",
 ]
 
+keywords = ["finance", "personal", "scraper", "download", "banking"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: End Users/Desktop",
+  "Topic :: Office/Business :: Financial :: Accounting"
+]
+
+[project.urls]
+Homepage = "https://github.com/andrew-d/finance-dl"
+Repository = "https://github.com/andrew-d/finance-dl"
+Issues = "https://github.com/andrew-d/finance-dl/issues"
+
 [tool.uv]
 index-url = "https://pypi.org/simple"
-#extra-index-url = ["https://www.piwheels.org/simple"]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+
+[dependency-groups]
+dev = [
+  # "pytest",
+  # "black"
+]
