@@ -1,13 +1,12 @@
 [project]
 name = "posting-project"
-version = "2.7.0"
 description = "A powerful HTTP client that lives in your terminal."
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "Apache Software License" }
 authors = [
   { name = "Darren Burns", email = "darrenb900@gmail.com" }
 ]
-license = { text = "Apache Software License" }
-readme = "README.md"
-requires-python = ">=3.11"
 dependencies = [
   "posting",
   "rich",
@@ -43,6 +42,17 @@ classifiers = [
   "Topic :: Software Development :: Libraries :: Python Modules",
   "Topic :: Terminals"
 ]
+dynamic = ["version"]
 
 [tool.uv]
 index-url = "https://pypi.org/simple"
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+
+[dependency-groups]
+dev = []

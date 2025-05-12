@@ -1,23 +1,23 @@
 [project]
 name = "pshtt-project"
-version = "0.7.1"
 description = "pshtt (\"pushed\") is a tool to scan domains for HTTPS best practices. It saves its results to a CSV (or JSON) file."
 readme = "README.md"
-requires-python = ">=3.7"
-
+requires-python = ">=3.13"
 dependencies = [
   "cryptography",
   "typepy[datetime]",
   "pshtt @ git+https://github.com/jauderho/pshtt.git"
 ]
+dynamic = ["version"]
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
 
 [tool.uv.sources]
 pypi = { url = "https://pypi.org/simple" }
-piwheels = { url = "https://www.piwheels.org/simple" }
 
 [dependency-groups]
-dev = [
-  # Add development dependencies here, e.g.,
-  # "pytest",
-  # "black"
-]
+dev = []
