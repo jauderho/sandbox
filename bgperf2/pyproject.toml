@@ -1,12 +1,10 @@
 [project]
 name = "bgperf2-project"
-version = "0.1.0"
 description = "Performance measurement tool for BGP implementations"
 readme = "README.md"
-requires-python = ">=3.7"
-
+requires-python = ">=3.13"
 dependencies = [
-  "bgperf2 @ git+https://github.com/netenglabs/bgperf2.git",
+  #"bgperf2 @ git+https://github.com/jauderho/bgperf2.git",
   "docker",
   "jinja2",
   "pyyaml",
@@ -22,14 +20,29 @@ dependencies = [
   "toml",
   "textfsm"
 ]
+dynamic = ["version"]
+authors = [
+  { name = "NetEngLabs" }
+]
+license = "Apache-2.0"
+keywords = ["bgp", "performance", "networking"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: System :: Networking"
+]
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
 
 [tool.uv.sources]
 pypi = { url = "https://pypi.org/simple" }
-piwheels = { url = "https://www.piwheels.org/simple" }
 
 [dependency-groups]
-dev = [
-  # Add development dependencies here, e.g.,
-  # "pytest",
-  # "black"
-]
+dev = []

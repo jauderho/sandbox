@@ -7,10 +7,6 @@ IFS=$'\n\t'
 
 APP=(
   "bgperf2" \
-  "diagrams" \
-  "dnsrecon" \
-  "dnstwist" \
-  "dnsvalidator" \
   "gallery-dl" \
   "greynoise" \
   "hdbcli" \

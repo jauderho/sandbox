@@ -1,0 +1,45 @@
+[project]
+name = "dnsvalidator-project"
+description = "A tool to validate a list of resolvers, check their performance and reliability."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "dnsvalidator @ git+https://github.com/vortexau/dnsvalidator.git",
+  "requests",
+  "dnspython",
+  "colorclass",
+  "netaddr",
+  "ipaddress"
+]
+dynamic = ["version"]
+authors = [
+  { name = "vortexau" }
+]
+license = { text = "MIT" }
+keywords = ["dns", "resolvers", "networking", "security"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Internet",
+  "Topic :: Security"
+]
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+
+[dependency-groups]
+dev = [
+  "pytest"
+]

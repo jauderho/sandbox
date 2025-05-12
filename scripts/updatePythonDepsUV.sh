@@ -17,7 +17,11 @@ APP=(
   "cryptolyzer" \
   "datasette" \
   "deepdiff" \
+  "diagrams" \
   "dnsdiag" \
+  "dnsrecon" \
+  "dnstwist" \
+  "dnsvalidator" \
   "finanace_dl" \
   "llm" \
   "mlx-hub" \
