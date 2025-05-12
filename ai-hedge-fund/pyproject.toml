@@ -1,0 +1,46 @@
+[project]
+name = "ai-hedge-fund-project"
+description = "An AI-powered hedge fund that uses multiple agents to make trading decisions"
+readme = "README.md"
+license = { text = "MIT License" }
+authors = [{ name = "Your Name", email = "your.email@example.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain",
+    "langchain-openai",
+    "langchain-anthropic",
+    "langgraph",
+    "pandas",
+    "numpy",
+    "python-dotenv",
+    "matplotlib",
+    "ai-hedge-fund @ git+https://github.com/virattt/ai-hedge-fund.git"
+]
+dynamic = ["version"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS :: MacOS X"
+]
+keywords = ["AI", "trading", "hedge fund", "multi-agent", "langchain"]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4.0",
+  "black>=23.7.0",
+  "isort>=5.12.0",
+  "flake8>=6.1.0"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
