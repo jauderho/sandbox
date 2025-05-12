@@ -9,6 +9,7 @@ verify_ssl = true
 name = "piwheels"
 
 [packages]
+dnsrecon = { git = "https://github.com/darkoperator/dnsrecon.git", editable = true }
 dnspython = "*"
 netaddr = "*"
 lxml = "*"
