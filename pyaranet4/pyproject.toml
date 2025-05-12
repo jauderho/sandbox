@@ -1,0 +1,22 @@
+[project]
+name = "pyaranet4-project"
+description = "Python interface for Aranet4 sensors using BLE."
+requires-python = ">=3.13"
+dependencies = [
+  "pyaranet4",
+  "bleak",
+  "requests"
+]
+dynamic = ["version"]
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+
+[dependency-groups]
+dev = []

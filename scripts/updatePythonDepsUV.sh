@@ -25,6 +25,7 @@ APP=(
   "open-interpreter" \
   "posting" \
   "pshtt" \
+  "pyaranet4" \
   "revchatgpt" \
 )
 

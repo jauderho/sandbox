@@ -26,7 +26,6 @@ APP=(
   "prowler" \
   "puncia" \
   "pwnagotchi" \
-  "pyaranet4" \
   "pyinfra" \
   "python-matter-server" \
   "pyupgrade" \
