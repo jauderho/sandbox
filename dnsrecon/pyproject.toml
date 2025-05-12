@@ -1,0 +1,47 @@
+[project]
+name = "dnsrecon-project"
+description = "DNS reconnaissance tool written in Python."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "dnsrecon @ git+https://github.com/darkoperator/dnsrecon.git",
+  #"dnspython",
+  #"netaddr",
+  #"lxml",
+  #"flake8",
+]
+dynamic = ["version"]
+authors = [
+  { name = "Carlos Perez", email = "darkoperator@gmail.com" }
+]
+license = { text = "BSD-3-Clause" }
+keywords = ["dns", "recon", "security", "enumeration"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security",
+  "Topic :: Internet",
+  "Operating System :: OS Independent"
+]
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+
+[dependency-groups]
+dev = [
+  "pytest"
+]

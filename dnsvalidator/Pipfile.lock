@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "af25dff18c3932a89c16427c4467dd4cc1d70847f70c572c15980d6e1996b842"
+            "sha256": "f7453759b33958a8d8fa907f9085604a239f89152d1a89d50d5f21ab6bb7df28"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -145,6 +145,11 @@
             "markers": "python_version >= '3.9'",
             "version": "==2.7.0"
         },
+        "dnsvalidator": {
+            "editable": true,
+            "git": "https://github.com/vortexau/dnsvalidator.git",
+            "ref": "146c9b0e24d806b25697fbb541bf9f19a3086d41"
+        },
         "idna": {
             "hashes": [
                 "sha256:12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9",
@@ -152,6 +157,14 @@
             ],
             "markers": "python_version >= '3.6'",
             "version": "==3.10"
+        },
+        "ipaddress": {
+            "hashes": [
+                "sha256:6e0f4a39e66cb5bb9a137b00276a2eff74f93b71dcbdad6f10ff7df9d3557fcc",
+                "sha256:b7f8e0369580bb4a24d5ba1d7cc29660a4a6987763faf1d8a8046830e020e7e2"
+            ],
+            "index": "pypi",
+            "version": "==1.0.23"
         },
         "netaddr": {
             "hashes": [

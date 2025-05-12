@@ -9,10 +9,12 @@ verify_ssl = true
 name = "piwheels"
 
 [packages]
-dnspython = "*"
+dnsvalidator = { git = "https://github.com/vortexau/dnsvalidator.git", editable = true }
 requests = "*"
+dnspython = "*"
 colorclass = "*"
 netaddr = "*"
+ipaddress = "*"
 
 [dev-packages]
 pytest = "*"
