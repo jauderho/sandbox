@@ -1,30 +1,35 @@
 [project]
 name = "openbb-cli-project"
-version = "1.1.1"
+version = "1.1.9"
+#dynamic = ["version"]
 description = "OpenBB Platform CLI"
-authors = ["OpenBB <hello@openbb.co>"]
+readme = "README.md"
+authors = [{ name = "OpenBB", email = "hello@openbb.co" }]
 requires-python = ">=3.12"
 dependencies = [
-    "openbb",
-    "openbb-cli",
-    "grpcio",
-    "langchain",
-    "tornado",
-    "wheel",
+  "openbb",
+  "openbb-cli",
+  "grpcio",
+  "langchain",
+  "tornado",
+  "wheel"
 ]
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[[tool.poetry.source]]
-name = "pypi"
-url = "https://pypi.org/simple"
-default = true
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
 
-[[tool.poetry.source]]
-name = "piwheels"
-url = "https://www.piwheels.org/simple"
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+
+[dependency-groups]
+dev = []
 
 [tool.pip-tools]
 generate-hashes = false
