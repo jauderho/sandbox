@@ -20,6 +20,7 @@ APP=(
   "dnsdiag" \
   "finanace_dl" \
   "llm" \
+  "mlx-hub" \
   "notdiamond" \
   "openbbterminal" \
   "open-interpreter" \
