@@ -1,11 +1,9 @@
 [project]
-name = "pyaranet4-project"
-description = "Python interface for Aranet4 sensors using BLE."
+name = "paperless-ngx-project"
+description = "Document management system with OCR, tagging, and a web interface."
 requires-python = ">=3.13"
 dependencies = [
-  "pyaranet4",
-  "bleak",
-  "requests",
+  "paperless-ngx @ git+https://github.com/paperless-ngx/paperless-ngx.git"
 ]
 dynamic = ["version"]
 

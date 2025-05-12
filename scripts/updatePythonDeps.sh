@@ -21,7 +21,6 @@ APP=(
   "llama-cpp-agent" \
   "llama-fs" \
   "memray" \
-  "paperless-ngx" \
   "pip-audit" \
   "prowler" \
   "puncia" \

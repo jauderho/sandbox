@@ -23,6 +23,7 @@ APP=(
   "notdiamond" \
   "openbbterminal" \
   "open-interpreter" \
+  "paperless-ngx" \
   "posting" \
   "pshtt" \
   "pyaranet4" \
