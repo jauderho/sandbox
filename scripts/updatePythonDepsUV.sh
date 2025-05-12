@@ -30,6 +30,8 @@ APP=(
   "pshtt" \
   "pyaranet4" \
   "revchatgpt" \
+  "scrapeghost" \
+  "shodan" \
 )
 
 #APP=(

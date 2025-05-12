@@ -28,9 +28,7 @@ APP=(
   "python-matter-server" \
   "pyupgrade" \
   "routellm" \
-  "scrapeghost" \
   "sgpt" \
-  "shodan" \
   "ssh-mitm" \
   "wolverine" \
 )

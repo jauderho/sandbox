@@ -1,0 +1,38 @@
+[project]
+name = "shodan-project"
+description = "Python library and command-line utility for accessing Shodan, the search engine for Internet-connected devices."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "shodan"
+]
+dynamic = ["version"]
+authors = [
+  { name = "John Matherly", email = "john@shodan.io" }
+]
+license = { text = "MIT" }
+keywords = ["shodan", "security", "internet", "search", "api", "iot"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Security"
+]
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
+
+[dependency-groups]
+dev = []
