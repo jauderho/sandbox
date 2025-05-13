@@ -1,0 +1,25 @@
+[project]
+name = "gallery-dl-project"
+dynamic = ["version"]
+description = "Command-line program to download image galleries and collections from various image hosting sites"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "GPL-2.0-only" }
+keywords = ["gallery-dl", "images", "downloader"]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "gallery-dl"
+]
+
+[tool.uv]
+cache-keys = [
+    { file = "pyproject.toml" },
+    { git = { commit = true, tags = true } }
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }

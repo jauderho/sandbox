@@ -1,0 +1,25 @@
+[project]
+name = "greynoise-project"
+dynamic = ["version"]
+description = "GreyNoise Python SDK and CLI"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT License" }
+keywords = ["greynoise", "threat intelligence", "api", "sdk"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "greynoise",
+]
+
+[tool.uv]
+cache-keys = [
+    { file = "pyproject.toml" },
+    { git = { commit = true, tags = true } }
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }

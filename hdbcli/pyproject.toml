@@ -1,0 +1,23 @@
+[project]
+name = "hdbcli-project"
+description = "Python interface for SAP HANA"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "SAP Developer License Agreement" }
+authors = [
+  { name = "SAP", email = "support@sap.com" }
+]
+keywords = ["sap", "hana", "database", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.13",
+  "License :: Other/Proprietary License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "hdbcli",
+]
+dynamic = ["version"]
+
+[tool.uv]
+cache-keys = [{ file = "pyproject.toml" }, { git = { commit = true, tags = true } }]

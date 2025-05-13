@@ -24,12 +24,17 @@ APP=(
   "dnstwist" \
   "dnsvalidator" \
   "finanace_dl" \
+  "gallery-dl" \
+  "greynoise" \
+  "hdbcli" \
+  "huggingface-cli" \
   "llm" \
   "mlx-hub" \
   "notdiamond" \
   "openbbterminal" \
   "open-interpreter" \
   "paperless-ngx" \
+  "pipenv-poetry-migrate" \
   "posting" \
   "prowler" \
   "pshtt" \

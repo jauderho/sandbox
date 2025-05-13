@@ -7,10 +7,6 @@ IFS=$'\n\t'
 
 APP=(
   "bgperf2" \
-  "gallery-dl" \
-  "greynoise" \
-  "hdbcli" \
-  "huggingface-cli" \
   "ilab" \
   "internetarchive" \
   "jc" \

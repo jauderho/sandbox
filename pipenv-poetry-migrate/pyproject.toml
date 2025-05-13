@@ -1,26 +1,31 @@
 [project]
-name = "pipenv-poetry-migrate"
-version = "0.5.8"
-description = "Simple migration script to migrate from pipenv to poetry"
-authors = ["Yoshiyuki Hino <yhinoz@gmail.com>"]
+name = "pipenv-poetry-migrate-project"
+description = "Utility for migrating Pipenv to Poetry"
+authors = [{ name = "Yoshiyuki Hino", email = "yhinoz@gmail.co" }]
+readme = "README.md"
 requires-python = ">=3.13"
+license = { text = "MIT" }
 dependencies = [
-    "pipenv-poetry-migrate",
-    "poetry",
+  "pipenv-poetry-migrate",
+  "poetry"
 ]
+dynamic = ["version"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+keywords = ["pipenv", "poetry", "migration", "dependency", "pyproject.toml"]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
 
-[[tool.poetry.source]]
-name = "pypi"
-url = "https://pypi.org/simple"
-default = true
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
 
-[[tool.poetry.source]]
-name = "piwheels"
-url = "https://www.piwheels.org/simple"
-
-[tool.pip-tools]
-generate-hashes = false
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }

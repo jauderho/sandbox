@@ -1,0 +1,23 @@
+[project]
+name = "huggingface-hub-project"
+description = "Client library to download and publish models, datasets and other repos on the Hugging Face Hub"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "Apache 2.0" }
+authors = [
+  { name = "HuggingFace Inc.", email = "contact@huggingface.co" }
+]
+keywords = ["transformers", "datasets", "models", "huggingface"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.13",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "huggingface_hub[cli]",
+]
+dynamic = ["version"]
+
+[tool.uv]
+cache-keys = [{ file = "pyproject.toml" }, { git = { commit = true, tags = true } }]
