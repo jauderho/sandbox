@@ -105,7 +105,7 @@ dependencies = [
 requires-dist = [
     { name = "bleak" },
     { name = "pyaranet4" },
-    { name = "requests" },
+    { name = "requests", specifier = ">=2.31.0" },
 ]
 
 [package.metadata.requires-dev]
