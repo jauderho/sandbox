@@ -80,9 +80,9 @@ do
 
 	#uv lock --prerelease=allow && uv pip compile pyproject.toml --no-annotate --prerelease=allow > requirements.txt 
 	if [[ "$i" == "openbbterminal" ]]; then
-		uv lock --prerelease=allow && uv pip compile pyproject.toml --no-annotate --generate-hashes --prerelease=allow > requirements.txt
+		uv lock --prerelease=allow && uv pip compile pyproject.toml --no-annotate --prerelease=allow > requirements.txt
 	else
-		uv lock && uv pip compile pyproject.toml --no-annotate --generate-hashes > requirements.txt
+		uv lock && uv pip compile pyproject.toml --no-annotate > requirements.txt
 	fi
 
 	git add pyproject.toml uv.lock requirements.txt && \
