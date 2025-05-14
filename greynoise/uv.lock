@@ -2,9 +2,6 @@ version = 1
 revision = 2
 requires-python = ">=3.13"
 
-[options]
-prerelease-mode = "allow"
-
 [[package]]
 name = "ansimarkup"
 version = "2.1.0"
@@ -19,11 +16,11 @@ wheels = [
 
 [[package]]
 name = "cachetools"
-version = "6.0.0b4"
+version = "5.5.2"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/60/b7/dd154d639a1d3e3996be434069e0578f86451ab9e1b69a03f1910f5c3bd1/cachetools-6.0.0b4.tar.gz", hash = "sha256:68f2b8280a571c99546f4091b60b9679af3b438d5503cb97c5611b15b4abdb8c", size = 30050, upload-time = "2025-05-02T11:50:55.176Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6c/81/3747dad6b14fa2cf53fcf10548cf5aea6913e96fab41a3c198676f8948a5/cachetools-5.5.2.tar.gz", hash = "sha256:1a661caa9175d26759571b2e19580f9d6393969e5dfca11fdb1f947a23e640d4", size = 28380, upload-time = "2025-02-20T21:01:19.524Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3d/40/39c61d9f91f5ce77491006990d5b75ed7953846d1f2bbfe3a3c31df46028/cachetools-6.0.0b4-py3-none-any.whl", hash = "sha256:3fd0add8246cdacb4f46a8b0c591e9ffb3f00ceed8a7dcacfdc54083a48f94d7", size = 10935, upload-time = "2025-05-02T11:50:53.102Z" },
+    { url = "https://files.pythonhosted.org/packages/72/76/20fa66124dbe6be5cafeb312ece67de6b61dd91a0247d1ea13db4ebb33c2/cachetools-5.5.2-py3-none-any.whl", hash = "sha256:d26a22bcc62eb95c3beabd9f1ee5e820d3d2704fe2967cbe350e20c8ffcd3f0a", size = 10080, upload-time = "2025-02-20T21:01:16.647Z" },
 ]
 
 [[package]]
