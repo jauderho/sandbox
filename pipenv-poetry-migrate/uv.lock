@@ -2,9 +2,6 @@ version = 1
 revision = 2
 requires-python = ">=3.13"
 
-[options]
-prerelease-mode = "allow"
-
 [[package]]
 name = "anyio"
 version = "4.9.0"
@@ -423,15 +420,15 @@ install = [
 
 [[package]]
 name = "pipenv-poetry-migrate"
-version = "0.5.8"
+version = "0.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "tomlkit" },
     { name = "typer" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/8c/8a/0b62486c4c556eda248c12e6d74669428c732006f1df6b40a9e991fedaa3/pipenv_poetry_migrate-0.5.8.tar.gz", hash = "sha256:7edbea3d7f68dd2ba448a1f4259f95b98c15a23bdacbea3824ee915fedf73f6f", size = 9337, upload-time = "2024-07-01T13:44:39.412Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/25/b4/61ac16347b8cce71213d9da867e222c06a0b392d6b4f77c71f0de7142686/pipenv_poetry_migrate-0.6.2.tar.gz", hash = "sha256:2d2a8fe61dda00e5abe117201158c8cca350247af858f6638ef306a9f06283ca", size = 9101, upload-time = "2025-03-02T09:02:41.586Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2c/8d/db9eea5fc5afc82de9545978aca41d6d80849d7772a5e6ed5223970ea0c5/pipenv_poetry_migrate-0.5.8-py3-none-any.whl", hash = "sha256:1e9f22b0680f57e65531b9f2e700e46c037dca3efc1a02ed0c455690caf3cdf4", size = 10673, upload-time = "2024-07-01T13:44:37.645Z" },
+    { url = "https://files.pythonhosted.org/packages/a3/32/e603e950fa4d818356d80c18830c8eea0aceec20c025dff381a2162423c4/pipenv_poetry_migrate-0.6.2-py3-none-any.whl", hash = "sha256:1103d2857732dada9039c6464efa21d0fc7365942df8e24e1a3f69144124086c", size = 10679, upload-time = "2025-03-02T09:02:39.6Z" },
 ]
 
 [[package]]
@@ -639,11 +636,11 @@ wheels = [
 
 [[package]]
 name = "tomlkit"
-version = "0.12.5"
+version = "0.13.2"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/2b/ab/18f4c8f2bec75eb1a7aebcc52cdb02ab04fd39ff7025bb1b1c7846cc45b8/tomlkit-0.12.5.tar.gz", hash = "sha256:eef34fba39834d4d6b73c9ba7f3e4d1c417a4e56f89a7e96e090dd0d24b8fb3c", size = 191420, upload-time = "2024-05-08T13:50:19.363Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b1/09/a439bec5888f00a54b8b9f05fa94d7f901d6735ef4e55dcec9bc37b5d8fa/tomlkit-0.13.2.tar.gz", hash = "sha256:fff5fe59a87295b278abd31bec92c15d9bc4a06885ab12bcea52c71119392e79", size = 192885, upload-time = "2024-08-14T08:19:41.488Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/73/6d/b5406752c4e4ba86692b22fab0afed8b48f16bdde8f92e1d852976b61dc6/tomlkit-0.12.5-py3-none-any.whl", hash = "sha256:af914f5a9c59ed9d0762c7b64d3b5d5df007448eb9cd2edc8a46b1eafead172f", size = 37685, upload-time = "2024-05-08T13:50:17.343Z" },
+    { url = "https://files.pythonhosted.org/packages/f9/b6/a447b5e4ec71e13871be01ba81f5dfc9d0af7e473da256ff46bc0e24026f/tomlkit-0.13.2-py3-none-any.whl", hash = "sha256:7a974427f6e119197f670fbbbeae7bef749a6c14e793db934baefc1b5f03efde", size = 37955, upload-time = "2024-08-14T08:19:40.05Z" },
 ]
 
 [[package]]
@@ -657,7 +654,7 @@ wheels = [
 
 [[package]]
 name = "typer"
-version = "0.12.5"
+version = "0.15.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -665,9 +662,9 @@ dependencies = [
     { name = "shellingham" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c5/58/a79003b91ac2c6890fc5d90145c662fd5771c6f11447f116b63300436bc9/typer-0.12.5.tar.gz", hash = "sha256:f592f089bedcc8ec1b974125d64851029c3b1af145f04aca64d69410f0c9b722", size = 98953, upload-time = "2024-08-24T21:17:57.346Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/98/1a/5f36851f439884bcfe8539f6a20ff7516e7b60f319bbaf69a90dc35cc2eb/typer-0.15.3.tar.gz", hash = "sha256:818873625d0569653438316567861899f7e9972f2e6e0c16dab608345ced713c", size = 101641, upload-time = "2025-04-28T21:40:59.204Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a8/2b/886d13e742e514f704c33c4caa7df0f3b89e5a25ef8db02aa9ca3d9535d5/typer-0.12.5-py3-none-any.whl", hash = "sha256:62fe4e471711b147e3365034133904df3e235698399bc4de2b36c8579298d52b", size = 47288, upload-time = "2024-08-24T21:17:55.451Z" },
+    { url = "https://files.pythonhosted.org/packages/48/20/9d953de6f4367163d23ec823200eb3ecb0050a2609691e512c8b95827a9b/typer-0.15.3-py3-none-any.whl", hash = "sha256:c86a65ad77ca531f03de08d1b9cb67cd09ad02ddddf4b34745b5008f43b239bd", size = 45253, upload-time = "2025-04-28T21:40:56.269Z" },
 ]
 
 [[package]]
