@@ -8,12 +8,7 @@ IFS=$'\n\t'
 APP=(
   "bgperf2" \
   "ilab" \
-  "internetarchive" \
-  "jc" \
-  "llama-cpp-agent" \
   "llama-fs" \
-  "memray" \
-  "pip-audit" \
   "puncia" \
   "pwnagotchi" \
   "pyinfra" \

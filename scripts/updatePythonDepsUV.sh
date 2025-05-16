@@ -42,6 +42,11 @@ APP=(
   "revchatgpt" \
   "scrapeghost" \
   "shodan" \
+  "internetarchive" \
+  "jc" \
+  "llama-cpp-agent" \
+  "memray" \
+  "pip-audit" \
 )
 
 #APP=(
