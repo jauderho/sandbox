@@ -6,8 +6,8 @@ set -euo pipefail
 IFS=$'\n\t'
 
 APP=(
-  "aider" \
   "ai-hedge-fund" \
+  "aider" \
   "aranet4" \
   "autoflake" \
   "awscli" \
@@ -28,12 +28,17 @@ APP=(
   "greynoise" \
   "hdbcli" \
   "huggingface-cli" \
+  "internetarchive" \
+  "jc" \
+  "llama-cpp-agent" \
   "llm" \
+  "memray" \
   "mlx-hub" \
   "notdiamond" \
-  "openbbterminal" \
   "open-interpreter" \
+  "openbbterminal" \
   "paperless-ngx" \
+  "pip-audit" \
   "pipenv-poetry-migrate" \
   "posting" \
   "prowler" \
@@ -42,11 +47,7 @@ APP=(
   "revchatgpt" \
   "scrapeghost" \
   "shodan" \
-  "internetarchive" \
-  "jc" \
-  "llama-cpp-agent" \
-  "memray" \
-  "pip-audit" \
+  "wolverine" \
 )
 
 #APP=(

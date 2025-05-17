@@ -9,15 +9,7 @@ APP=(
   "bgperf2" \
   "ilab" \
   "llama-fs" \
-  "puncia" \
   "pwnagotchi" \
-  "pyinfra" \
-  "python-matter-server" \
-  "pyupgrade" \
-  "routellm" \
-  "sgpt" \
-  "ssh-mitm" \
-  "wolverine" \
 )
 
 #APP=(

@@ -1,0 +1,44 @@
+[project]
+name = "wolverine-project"
+dynamic = ["version"]
+description = "Project using wolverine and related packages"
+authors = [{ name = "Jauder Ho" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.13"
+keywords = ["wolverine", "asyncio", "aiohttp", "openai", "flake8"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  "aiohttp",
+  "aiosignal",
+  "async-timeout",
+  "attrs",
+  "certifi",
+  "charset-normalizer",
+  "fire",
+  "flake8",
+  "frozenlist",
+  "idna",
+  "mccabe",
+  "multidict",
+  "openai",
+  "pycodestyle",
+  "pyflakes",
+  "requests",
+  "six",
+  "termcolor",
+  "tqdm",
+  "urllib3",
+  "yarl",
+  "wolverine"
+]
+
+[tool.uv]
+cache-keys = [{ file = "pyproject.toml" }, { git = { commit = true, tags = true } }]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }

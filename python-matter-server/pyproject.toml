@@ -1,0 +1,23 @@
+[project]
+name = "python-matter-server-project"
+dynamic = ["version"]
+description = "Matter server component for Python, from Home Assistant"
+authors = [{ name = "Jauder Ho" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.13"
+keywords = ["matter", "home-assistant", "iot"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  "python-matter-server @ git+https://github.com/home-assistant-libs/python-matter-server.git"
+]
+
+[tool.uv]
+cache-keys = [{ file = "pyproject.toml" }, { git = { commit = true, tags = true } }]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
