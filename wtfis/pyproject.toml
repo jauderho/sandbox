@@ -1,0 +1,31 @@
+[project]
+name = "wtfis-project"
+description = "A CLI tool for enriching IPs, domains, and URLs using multiple threat intelligence sources"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT License" }
+authors = [{ name = "pirxthepilot", email = "pirxthepilot@users.noreply.github.com" }]
+keywords = ["threat-intelligence", "cli", "security", "ip", "domain", "url"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.13",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  "wtfis"
+]
+dynamic = ["version"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }

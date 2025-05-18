@@ -47,6 +47,7 @@ APP=(
   "revchatgpt" \
   "scrapeghost" \
   "shodan" \
+  "wtfis" \
   "wolverine" \
 )
 
