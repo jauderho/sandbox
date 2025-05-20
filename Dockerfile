@@ -9,7 +9,7 @@ FROM alpine:3.21.3@sha256:a8560b36e8b8210634f77d9f7f9efd7ffa463e380b75e2e74aff45
 FROM ubuntu:25.10@sha256:36bbb8adc0662496d3e314bc8a25cb41c0c2e42ed25daaa07f8369d36d16f082 AS ubuntu25.04-base
 
 # Alma Linux 9.5
-FROM almalinux:9.5-minimal@sha256:9d3e33caf50a138f24b49f45dc463720c628444ed46e19feb902cc63c417e957 AS almalinux9.5minimal-base
+FROM almalinux:9.5-minimal@sha256:054913f426ef57ab028b8b5978d7b94b6a88e8fed69541bc710e7cf00301a23a AS almalinux9.5minimal-base
 
 # Go 1.24 on Alpine 3.21
 FROM golang:1.24.3-alpine3.21@sha256:ef18ee7117463ac1055f5a370ed18b8750f01589f13ea0b48642f5792b234044 AS golang1.24-base
