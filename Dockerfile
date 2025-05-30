@@ -2,8 +2,8 @@
 USER nobody
 HEALTHCHECK echo
 
-# Alpine 3.21
-FROM alpine:3.21.3@sha256:a8560b36e8b8210634f77d9f7f9efd7ffa463e380b75e2e74aff4511df3ef88c AS alpine-base
+# Alpine 3.22
+FROM alpine:3.22.0@sha256:a8bf99cad4d74d1ec021670fa473e6ff716e401b0542918ce68e94c3234910e1 AS alpine-base
 
 # Ubuntu 25.10
 FROM ubuntu:25.10@sha256:36bbb8adc0662496d3e314bc8a25cb41c0c2e42ed25daaa07f8369d36d16f082 AS ubuntu-base
