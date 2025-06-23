@@ -9,6 +9,7 @@ ENV PIP_NO_CACHE_DIR=1
 # requirements.txt now generated from Pipfile
 # pipenv lock -r > requirements.txt
 COPY requirements.txt . 
+RUN addgroup -S ruffuser && adduser -S -G ruffuser ruffuser
 
 RUN \
 	apk update && \
@@ -27,6 +28,8 @@ RUN \
 	find /usr/lib/ -name '*.pyc' -print0 | xargs -0 -n1 rm -rf && \
 	rm -rf /root/.cargo
 
+RUN mkdir -p /data && chown ruffuser:ruffuser /data
+
 LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
@@ -34,6 +37,7 @@ LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/ruff"
 LABEL org.opencontainers.image.description="ruff is an extremely fast Python linter and code formatter, written in Rust"
 
+USER ruffuser
 WORKDIR /data
 
 ENTRYPOINT ["ruff"]
