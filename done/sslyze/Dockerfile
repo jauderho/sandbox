@@ -13,6 +13,7 @@ ENV PIP_NO_CACHE_DIR=1
 # requirements.txt now generated from Pipfile
 # pipenv lock -r > requirements.txt
 COPY requirements.txt . 
+RUN groupadd sslyzeuser && useradd -ms /bin/bash -g sslyzeuser sslyzeuser
 
 RUN apt-get update && \
 	DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends python3-pip && \
@@ -20,6 +21,9 @@ RUN apt-get update && \
 	apt-get autoremove -y --purge && \
 	rm -rf /var/lib/apt/lists/* && \
 	apt-get clean
+
+RUN mkdir /app && chown sslyzeuser:sslyzeuser /app
+WORKDIR /app
 
 #	apt-get purge -y python3-dev && \
 #RUN pip install sslyze==${BUILD_VERSION}
@@ -32,6 +36,7 @@ LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/sslyze"
 LABEL org.opencontainers.image.description="SSLyze is a fast and powerful SSL/TLS scanning library"
 
+USER sslyzeuser
 HEALTHCHECK NONE
 
 ENTRYPOINT ["sslyze"]
