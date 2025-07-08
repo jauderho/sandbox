@@ -22,6 +22,7 @@ click==8.2.1
 colorama==0.4.6
 coloredlogs==15.0.1
 dataclasses-json==0.6.7
+defusedxml==0.7.1
 deprecated==1.2.18
 dirtyjson==1.0.8
 diskcache==5.6.3
@@ -29,7 +30,7 @@ distro==1.9.0
 docx2txt==0.9
 durationpy==0.10
 emoji==2.14.1
-fastapi==0.115.14
+fastapi==0.116.0
 filelock==3.18.0
 filetype==1.2.0
 flatbuffers==25.2.10
@@ -67,7 +68,7 @@ langchain==0.3.26
 langchain-core==0.3.68
 langchain-text-splitters==0.3.8
 langsmith==0.4.4
-litellm==1.74.0
+litellm==1.74.0.post1
 llama-cloud==0.1.30
 llama-cloud-services==0.6.41
 llama-index==0.12.47
@@ -75,13 +76,13 @@ llama-index-agent-openai==0.4.12
 llama-index-cli==0.4.4
 llama-index-core==0.12.47
 llama-index-embeddings-openai==0.3.1
-llama-index-indices-managed-llama-cloud==0.7.8
+llama-index-indices-managed-llama-cloud==0.7.9
 llama-index-instrumentation==0.2.0
 llama-index-llms-openai==0.4.7
-llama-index-multi-modal-llms-openai==0.5.1
+llama-index-multi-modal-llms-openai==0.5.3
 llama-index-program-openai==0.3.2
 llama-index-question-gen-openai==0.3.1
-llama-index-readers-file==0.4.9
+llama-index-readers-file==0.4.11
 llama-index-readers-llama-parse==0.4.0
 llama-index-workflows==1.0.1
 llama-parse==0.6.41
@@ -100,7 +101,7 @@ numpy==2.3.1
 oauthlib==3.3.1
 ollama==0.5.1
 onnxruntime==1.22.0
-openai==1.93.0
+openai==1.93.1
 opentelemetry-api==1.34.1
 opentelemetry-exporter-otlp-proto-common==1.34.1
 opentelemetry-exporter-otlp-proto-grpc==1.34.1
