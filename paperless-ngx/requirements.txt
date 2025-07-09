@@ -2,7 +2,7 @@
 #    uv pip compile pyproject.toml --no-annotate
 amqp==5.3.1
 anyio==4.9.0
-asgiref==3.9.0
+asgiref==3.9.1
 attrs==25.3.0
 billiard==4.2.1
 bleach==6.2.0
@@ -54,7 +54,7 @@ httpx-oauth==0.16.1
 humanize==4.12.3
 hyperframe==6.1.0
 idna==3.10
-imap-tools==1.10.0
+imap-tools==1.11.0
 img2pdf==0.6.1
 inflection==0.5.1
 inotify-simple==1.3.5
@@ -75,8 +75,8 @@ numpy==2.3.1
 oauthlib==3.3.1
 ocrmypdf==16.10.4
 packaging==25.0
-paperless-ngx @ git+https://github.com/paperless-ngx/paperless-ngx.git@3d2a3ede710d0de6170df3f42143f073a3df9600
-pathvalidate==3.2.3
+paperless-ngx @ git+https://github.com/paperless-ngx/paperless-ngx.git@feb320cae99fad3964165f146b7c52ececb87445
+pathvalidate==3.3.1
 pdf2image==1.17.0
 pdfminer-six==20250506
 pi-heif==1.0.0
@@ -106,7 +106,7 @@ requests==2.32.4
 requests-oauthlib==2.0.0
 rich==14.0.0
 rpds-py==0.26.0
-scikit-learn==1.6.1
+scikit-learn==1.7.0
 scipy==1.16.0
 setproctitle==1.3.6
 six==1.17.0
