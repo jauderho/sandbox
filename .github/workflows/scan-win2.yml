@@ -45,6 +45,6 @@ jobs:
           severity-cutoff: high
 
       - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@181d5eefc20863364f96762470ba6f862bdef56b
+        uses: github/codeql-action/upload-sarif@d6bbdef45e766d081b84a2def353b0055f728d3e
         with:
           sarif_file: ${{ steps.anchore-scan.outputs.sarif }}
