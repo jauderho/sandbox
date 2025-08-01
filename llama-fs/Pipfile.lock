@@ -31,12 +31,12 @@
         },
         "agentops": {
             "hashes": [
-                "sha256:bf9673e46b4d7d7e0548f4671d6074f7ead52366e1d8aca620a2101c0444fc5f",
-                "sha256:d61761fce23fc825a013dff4636a7d3767c0aed584ca1e464df9f673164d5a45"
+                "sha256:63e5b770cf6b0c2fac5eb783054d506eb739a53e163cc7fb237b70c8facc37d9",
+                "sha256:848f679075d6f95f4c9345ce2d89cce59f8827f5fb8a70a68c870b1611ba8193"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.9'",
-            "version": "==0.4.18"
+            "version": "==0.4.19"
         },
         "aiohappyeyeballs": {
             "hashes": [
@@ -1287,20 +1287,20 @@
         },
         "langsmith": {
             "hashes": [
-                "sha256:50eccb744473dd6bd3e0fe024786e2196b1f8598f8defffce7ac31113d6c140f",
-                "sha256:ca2f6024ab9d2cd4d091b2e5b58a5d2cb0c354a0c84fe214145a89ad450abae0"
+                "sha256:559c8d3687e9e5e89e3b24f0400f946dd4681c5e10184ea9172e0825790c6b67",
+                "sha256:7eab704109914e3b52124b7a9932ea074c3d022a8ded6354b8deb4f83ab741af"
             ],
             "markers": "python_version >= '3.9'",
-            "version": "==0.4.8"
+            "version": "==0.4.9"
         },
         "litellm": {
             "hashes": [
-                "sha256:9247808f90247073cb63657fb23e00d8ec2c46af8792476f61d9517e7c9633ae",
-                "sha256:968cc4ef2afa701a3da78389d1fd1514ace1574c09e46785972c1e1d594547f1"
+                "sha256:67d9067c27c1ea23606b8463ba72342b01d25594555d1aa97f2b783636948835",
+                "sha256:d73bdc6beedfe9ca985ca0e78e27677a8725ca1100e4560d20ebef6e0f62204e"
             ],
             "index": "pypi",
             "markers": "python_version not in '2.7, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7' and python_version >= '3.8'",
-            "version": "==1.74.9.post1"
+            "version": "==1.74.12"
         },
         "llama-cloud": {
             "hashes": [
@@ -1320,52 +1320,44 @@
         },
         "llama-index": {
             "hashes": [
-                "sha256:21e05e5a02b3601e18358eeed8748384eac8d35d384fdcbe16d03f0ffb09ea61",
-                "sha256:3a81fa4fbf1a36e30502d2fb7da26d53bc1a1ab02db1db12e62f06bb014d5ad9"
+                "sha256:00f4c61d96a83af5d770a992006f0039eb671c2a64eaab9da3660bee921177f2",
+                "sha256:028986e73d948b8119dbf2ed6aa2719ece34b4e2d66dd91ae3473de672fc1361"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.9' and python_version < '4.0'",
-            "version": "==0.12.52"
-        },
-        "llama-index-agent-openai": {
-            "hashes": [
-                "sha256:6dbb6276b2e5330032a726b28d5eef5140825f36d72d472b231f08ad3af99665",
-                "sha256:d2fe53feb69cfe45752edb7328bf0d25f6a9071b3c056787e661b93e5b748a28"
-            ],
-            "markers": "python_version >= '3.9' and python_version < '4.0'",
-            "version": "==0.4.12"
+            "version": "==0.13.0"
         },
         "llama-index-cli": {
             "hashes": [
-                "sha256:1070593cf79407054735ab7a23c5a65a26fc18d264661e42ef38fc549b4b7658",
-                "sha256:c3af0cf1e2a7e5ef44d0bae5aa8e8872b54c5dd6b731afbae9f13ffeb4997be0"
+                "sha256:2eb9426232e8d89ffdf0fa6784ff8da09449d920d71d0fcc81d07be93cf9369f",
+                "sha256:e331ca98005c370bfe58800fa5eed8b10061d0b9c656b84a1f5f6168733a2a7b"
             ],
             "markers": "python_version >= '3.9' and python_version < '4.0'",
-            "version": "==0.4.4"
+            "version": "==0.5.0"
         },
         "llama-index-core": {
             "hashes": [
-                "sha256:3e28d65d238bad8ec5ce372659ae0a3878851c6ba9c9447d6ddb4de138694b1f",
-                "sha256:ac6f447271e5ac4c12e1901373ec4b5ac7814ea33bd1ad3c3c8e9ac9771834ab"
+                "sha256:01fec50d3d807e3c3bc17a62ed1f5b93dad2205cda52f7d0c2d34cc6a6ab2b92",
+                "sha256:46c14fc2a26b8f7618c2dd2daf6e430e3f94b1908474baee539f705c9c638348"
             ],
             "markers": "python_version >= '3.9' and python_version < '4.0'",
-            "version": "==0.12.52.post1"
+            "version": "==0.13.0"
         },
         "llama-index-embeddings-openai": {
             "hashes": [
-                "sha256:1368aad3ce24cbaed23d5ad251343cef1eb7b4a06d6563d6606d59cb347fef20",
-                "sha256:f15a3d13da9b6b21b8bd51d337197879a453d1605e625a1c6d45e741756c0290"
+                "sha256:ac587839a111089ea8a6255f9214016d7a813b383bbbbf9207799be1100758eb",
+                "sha256:d817edb22e3ff475e8cd1833faf1147028986bc1d688f7894ef947558864b728"
             ],
             "markers": "python_version >= '3.9' and python_version < '4.0'",
-            "version": "==0.3.1"
+            "version": "==0.5.0"
         },
         "llama-index-indices-managed-llama-cloud": {
             "hashes": [
-                "sha256:762de10d3949e04997766f6a665ed4503394d82ea4b3339139a365edde6e753e",
-                "sha256:817d6bd4715d45522e7165d29208e093d06179cc1bc5f9590382245f73dfd7aa"
+                "sha256:392910b84fcd479d5e728553741af4f99dac7d4c56d6f0fc8e401b23f1462d09",
+                "sha256:fbaadb6ae3ee712daf439aa9be367ede1f8b190018b55010d7c35375d29ce4b7"
             ],
             "markers": "python_version >= '3.9' and python_version < '4.0'",
-            "version": "==0.8.0"
+            "version": "==0.9.0"
         },
         "llama-index-instrumentation": {
             "hashes": [
@@ -1377,51 +1369,27 @@
         },
         "llama-index-llms-openai": {
             "hashes": [
-                "sha256:3b8d9d3c1bcadc2cff09724de70f074f43eafd5b7048a91247c9a41b7cd6216d",
-                "sha256:564af8ab39fb3f3adfeae73a59c0dca46c099ab844a28e725eee0c551d4869f8"
+                "sha256:0899673282c58d19a5bbf22616a01090244e308726d392a24e4649399324760f",
+                "sha256:fc66f3921e128d54ef8b953167f740d3d4f192d8877efd36b7276d5d6222739a"
             ],
             "markers": "python_version >= '3.9' and python_version < '4.0'",
-            "version": "==0.4.7"
-        },
-        "llama-index-multi-modal-llms-openai": {
-            "hashes": [
-                "sha256:b755a8b47d8d2f34b5a3d249af81d9bfb69d3d2cf9ab539d3a42f7bfa3e2391a",
-                "sha256:be6237df8f9caaa257f9beda5317287bbd2ec19473d777a30a34e41a7c5bddf8"
-            ],
-            "markers": "python_version >= '3.9' and python_version < '4.0'",
-            "version": "==0.5.3"
-        },
-        "llama-index-program-openai": {
-            "hashes": [
-                "sha256:04c959a2e616489894bd2eeebb99500d6f1c17d588c3da0ddc75ebd3eb7451ee",
-                "sha256:451829ae53e074e7b47dcc60a9dd155fcf9d1dcbc1754074bdadd6aab4ceb9aa"
-            ],
-            "markers": "python_version >= '3.9' and python_version < '4.0'",
-            "version": "==0.3.2"
-        },
-        "llama-index-question-gen-openai": {
-            "hashes": [
-                "sha256:1ce266f6c8373fc8d884ff83a44dfbacecde2301785db7144872db51b8b99429",
-                "sha256:5e9311b433cc2581ff8a531fa19fb3aa21815baff75aaacdef11760ac9522aa9"
-            ],
-            "markers": "python_version >= '3.9' and python_version < '4.0'",
-            "version": "==0.3.1"
+            "version": "==0.5.0"
         },
         "llama-index-readers-file": {
             "hashes": [
-                "sha256:1b21cb66d78dd5f60e8716607d9a47ccd81bb39106d459665be1ca7799e9597b",
-                "sha256:e71192d8d6d0bf95131762da15fa205cf6e0cc248c90c76ee04d0fbfe160d464"
+                "sha256:7fc47a9dbf11d07e78992581c20bca82b21bf336e646b4f53263f3909cb02c58",
+                "sha256:f324617bfc4d9b32136d25ff5351b92bc0b569a296173ee2a8591c1f886eff0c"
             ],
             "markers": "python_version >= '3.9' and python_version < '4.0'",
-            "version": "==0.4.11"
+            "version": "==0.5.0"
         },
         "llama-index-readers-llama-parse": {
             "hashes": [
-                "sha256:574e48386f28d2c86c3f961ca4a4906910312f3400dd0c53014465bfbc6b32bf",
-                "sha256:e99ec56f4f8546d7fda1a7c1ae26162fb9acb7ebcac343b5abdb4234b4644e0f"
+                "sha256:891b21fb63fe1fe722e23cfa263a74d9a7354e5d8d7a01f2d4040a52f8d8feef",
+                "sha256:e63ebf2248c4a726b8a1f7b029c90383d82cdc142942b54dbf287d1f3aee6d75"
             ],
             "markers": "python_version >= '3.9' and python_version < '4.0'",
-            "version": "==0.4.0"
+            "version": "==0.5.0"
         },
         "llama-index-workflows": {
             "hashes": [
