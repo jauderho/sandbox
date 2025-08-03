@@ -9,9 +9,9 @@ bleach==6.2.0
 brotli==1.1.0
 cached-property==2.0.1
 celery==5.5.3
-certifi==2025.7.14
+certifi==2025.8.3
 cffi==1.17.1
-channels==4.3.0
+channels==4.3.1
 channels-redis==4.3.0
 charset-normalizer==3.4.2
 click==8.2.1
@@ -75,17 +75,18 @@ numpy==2.3.2
 oauthlib==3.3.1
 ocrmypdf==16.10.4
 packaging==25.0
-paperless-ngx @ git+https://github.com/paperless-ngx/paperless-ngx.git@8505fa3e54b2fd9eae342ac093ee6940f918423e
+paperless-ngx @ git+https://github.com/paperless-ngx/paperless-ngx.git@07c298523a7c9105aa109fe75db160739e613e0d
 pathvalidate==3.3.1
 pdf2image==1.17.0
 pdfminer-six==20250506
-pi-heif==1.0.0
+pi-heif==1.1.0
 pikepdf==9.10.2
 pillow==11.3.0
 pluggy==1.6.0
 portalocker==3.2.0
 prometheus-client==0.22.1
 prompt-toolkit==3.0.51
+psycopg-pool==3.2.6
 pycparser==2.22
 pygments==2.19.2
 pyjwt==2.10.1
@@ -101,7 +102,7 @@ qrcode==8.2
 rapidfuzz==3.13.0
 redis==5.2.1
 referencing==0.36.2
-regex==2025.7.31
+regex==2025.7.34
 requests==2.32.4
 requests-oauthlib==2.0.0
 rich==14.1.0
@@ -116,6 +117,7 @@ threadpoolctl==3.6.0
 tika-client==0.9.0
 tornado==6.5.1
 tqdm==4.67.1
+typing-extensions==4.14.1
 tzdata==2025.2
 tzlocal==5.3.1
 uritemplate==4.2.0
