@@ -27,6 +27,9 @@ WORKDIR /config
 #FROM scratch
 FROM ghcr.io/jauderho/alpine:3.22.1@sha256:6cedbe16d634f856346fb6224aeddf939413076aaf08bc0216a2ee1759917a56
 
+# EXPOSE
+# ENV
+# STOPSIGNAL
 LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
@@ -49,4 +52,3 @@ HEALTHCHECK NONE
 
 ENTRYPOINT ["/usr/local/bin/jless"]
 #CMD ["--help"]
-
