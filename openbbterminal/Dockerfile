@@ -1,5 +1,5 @@
 FROM ubuntu:25.10@sha256:10b61aabaaf0123f3670112057c3b3ccf27c808ddb892ba5a4e32366bff7f3fe
-#FROM python:3.14.0rc1-slim-bookworm@sha256:c5520cd29ab2ef461b9fc81a365c0d54a7a0065d21a419eccfdb832b15c83b25
+#FROM python:3.14.0rc2-slim-bookworm@sha256:f754dc851a1fa4c61e3f7a2c9dc9abe837990765561b7742256be2f60d835208
 #FROM python:3.14.0rc1-alpine3.22@sha256:b0cfd0b2234c48a78d5ee6c7b082583a0c654317a6b0f03466db18ddd73b4fd6
 
 ARG BUILD_VERSION
