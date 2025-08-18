@@ -32,7 +32,7 @@ jobs:
           egress-policy: audit
 
       - name: Source checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.4.2 
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v4.4.2 
  
       - name: Setup QEMU
         id: qemu
@@ -105,7 +105,7 @@ jobs:
         uses: sigstore/cosign-installer@d58896d6a1865668819e1d91763c7751a165e159 # v1.4.1
       
       - name: Install syft
-        uses: anchore/sbom-action/download-syft@7b36ad622f042cab6f59a75c2ac24ccb256e9b45 # v0.6.0
+        uses: anchore/sbom-action/download-syft@da167eac915b4e86f08b264dbdbc867b61be6f0c # v0.6.0
       
       - name: Sign the image digest and generate SBOM
         run: |
