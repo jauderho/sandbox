@@ -43,6 +43,7 @@ COPY --from=build /go/src/github.com/wagoodman/dive/dive-bin /usr/local/bin/dive
 COPY --from=build --chown=nobody:nogroup /config /config
 
 #USER docker
+USER nobody
 HEALTHCHECK NONE
 
 ENTRYPOINT ["/usr/local/bin/dive"]
