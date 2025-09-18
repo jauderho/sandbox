@@ -8,7 +8,7 @@ on:
     paths:
       - scripts/*
       - mlx/*
-      - .github/workflows/update-arm.yml
+      - .github/workflows/update-macos.yml
   workflow_dispatch:
   schedule:
     - cron: "0 6 * * *"
