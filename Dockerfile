@@ -12,7 +12,7 @@ FROM almalinux:10.0-minimal@sha256:cd55007b9804e36134bf488df6437171615c7a318addb
 FROM alpine:3.22.1@sha256:4bcff63911fcb4448bd4fdacec207030997caf25e9bea4045fa6c8c44de311d1 AS alpine-base
 
 # Go 1.24 on Alpine 3.22
-FROM golang:1.25.1-alpine3.22@sha256:b6ed3fd0452c0e9bcdef5597f29cc1418f61672e9d3a2f55bf02e7222c014abd AS golang-base
+FROM golang:1.25.2-alpine3.22@sha256:6104e2bbe9f6a07a009159692fe0df1a97b77f5b7409ad804b17d6916c635ae5 AS golang-base
 
 # Node 24 on Alpine 3.22
 FROM node:24.9-alpine3.22@sha256:77f3c4d1f33c17dfa4af4b0add57d86957187873e313c2c37f52831d117645c8 AS node-base
