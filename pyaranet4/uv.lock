@@ -1,9 +1,6 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.13"
-
-[options]
-prerelease-mode = "allow"
 
 [[package]]
 name = "bleak"
@@ -105,7 +102,7 @@ dependencies = [
 requires-dist = [
     { name = "bleak" },
     { name = "pyaranet4" },
-    { name = "requests", specifier = ">=2.31.0" },
+    { name = "requests" },
 ]
 
 [package.metadata.requires-dev]
