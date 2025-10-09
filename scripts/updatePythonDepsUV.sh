@@ -92,6 +92,7 @@ do
 		uv lock && uv pip compile pyproject.toml --no-annotate > requirements.txt
 	fi
 
+	git pull && \
 	git add pyproject.toml uv.lock requirements.txt && \
 	git commit -S -s -m "Update requirements for ${i} ..." && \
 	git pull && \
