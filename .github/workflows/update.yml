@@ -131,7 +131,7 @@ jobs:
           rm -rf ~/.ssh
 
   update-python:
-    needs: update-docker
+    needs: update-python-uv
     runs-on: ubuntu-24.04
     permissions:
       id-token: write
