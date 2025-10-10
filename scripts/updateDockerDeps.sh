@@ -46,6 +46,8 @@ do
 	echo "    Dockerfile version is $dver"
 	echo "    Repo version is	  $rver"
 	echo
+	
+	git pull
 
 	if [ "$dver" != "$rver" ]; then
 		echo "Updating to ${rver} ..." 
