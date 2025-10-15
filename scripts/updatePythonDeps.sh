@@ -26,7 +26,8 @@ git config --local pull.rebase false
 #PATH="$HOME/.local/bin:$PATH"
 #pipenv install --python 3.9
 #pipenv shell
-DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.13
+#DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.13
+DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv
 python3.13 -m pip install --no-cache-dir --upgrade pip --break-system-packages
 python3.13 -m pip install --no-cache-dir --upgrade --user pipenv certifi wheel setuptools packaging --break-system-packages
 #python3.11 -m pip install --no-cache-dir --upgrade --user pipenv
