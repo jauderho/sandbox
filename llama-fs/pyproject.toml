@@ -1,0 +1,39 @@
+[project]
+name = "llama-fs-project"
+dynamic = ["version"]
+description = "Project using llama-fs and related AI and API tools"
+authors = [{ name = "Jauder Ho" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.13"
+keywords = ["llama-fs", "ollama", "chromadb", "llama-index", "fastapi", "langchain", "AI"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  #"llama-fs @ git+https://github.com/iyaja/llama-fs.git",
+  "ollama",
+  "chromadb",
+  "llama-index",
+  "litellm",
+  "groq",
+  "docx2txt",
+  "colorama",
+  "termcolor",
+  "click",
+  "asciitree",
+  "fastapi",
+  "weave",
+  "agentops",
+  "langchain",
+  "langchain_core",
+  "watchdog"
+]
+
+[tool.uv]
+cache-keys = [{ file = "pyproject.toml" }, { git = { commit = true, tags = true } }]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
