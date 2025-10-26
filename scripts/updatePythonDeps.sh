@@ -6,10 +6,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 APP=(
-  "bgperf2" \
   "ilab" \
-  "llama-fs" \
-  "pwnagotchi" \
 )
 
 #APP=(

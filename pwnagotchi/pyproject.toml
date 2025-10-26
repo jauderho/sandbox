@@ -1,0 +1,44 @@
+[project]
+name = "pwntagochi-project"
+dynamic = ["version"]
+description = "Project using pwntagochi"
+authors = [{ name = "Jauder Ho" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.13"
+keywords = ["pwntagochi", "AI"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  "pycryptodome",
+  "requests",
+  "pyyaml",
+  "scapy",
+  "gym",
+  "scipy",
+  "tensorflow",
+  "tensorflow-estimator",
+  "tweepy",
+  "file-read-backwards",
+  "numpy",
+  "inky",
+  "smbus2",
+  "pillow",
+  "spidev",
+  "gast",
+  "flask",
+  "flask-cors",
+  "flask-wtf",
+  "toml",
+  "python-dateutil",
+  "websockets",
+]
+
+[tool.uv]
+cache-keys = [{ file = "pyproject.toml" }, { git = { commit = true, tags = true } }]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }

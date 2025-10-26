@@ -12,6 +12,7 @@ APP=(
   "autoflake" \
   "awscli" \
   "badkeys" \
+  "bgperf2" \
   "cantools" \
   "claude-engineer" \
   "codespell" \
@@ -31,6 +32,7 @@ APP=(
   "internetarchive" \
   "jc" \
   "llama-cpp-agent" \
+  "llama-fs" \
   "llm" \
   "memray" \
   "mlx-hub" \
@@ -44,6 +46,7 @@ APP=(
   "prowler" \
   "pshtt" \
   "pyaranet4" \
+  "pwnagotchi" \
   "revchatgpt" \
   "scrapeghost" \
   "shodan" \
