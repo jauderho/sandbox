@@ -7,6 +7,11 @@ FROM ubuntu:26.04@sha256:17b7f58eea25af8108b0cbff97a231fe71e0a2ee647221ab2dc7b3b
 
 ARG DEBIAN_FRONTEND=noninteractive
 
+# EXPOSE
+# ENV
+# STOPSIGNAL
+HEALTHCHECK NONE
+# USER
 RUN apt-get update && \
   DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends software-properties-common build-essential git wget cmake libstdc++-11-dev zlib1g-dev clang-14 && \
   apt clean && \

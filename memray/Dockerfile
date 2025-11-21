@@ -1,6 +1,10 @@
 #FROM debian:latest
 FROM ubuntu:26.04@sha256:17b7f58eea25af8108b0cbff97a231fe71e0a2ee647221ab2dc7b3b350cca41f
 
+# EXPOSE
+# STOPSIGNAL
+HEALTHCHECK NONE
+# USER
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     build-essential \
