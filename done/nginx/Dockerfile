@@ -90,12 +90,12 @@ RUN \
 #    --with-cc-opt='-fuse-ld=lld -O3 -march=native -pipe -flto -ffat-lto-objects -fomit-frame-pointer -fstack-protector-all -fexceptions --param=ssp-buffer-size=4 -grecord-gcc-switches -fPIE -pie -fno-semantic-interposition -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -Wformat-security -Wno-error=strict-aliasing -Wextra -Wp,-D_FORTIFY_SOURCE=2' \
 #    --with-ld-opt='-Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed' \
 
-LABEL org.opencontainers.image.authors "Jauder Ho <jauderho@users.noreply.github.com>"
-LABEL org.opencontainers.image.url "https://github.com/jauderho/dockerfiles"
-LABEL org.opencontainers.image.documentation "https://github.com/jauderho/dockerfiles"
-LABEL org.opencontainers.image.source "https://github.com/jauderho/dockerfiles"
-LABEL org.opencontainers.image.title "jauderho/nginx"
-LABEL org.opencontainers.image.description "nginx is a web server"
+LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
+LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
+LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
+LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
+LABEL org.opencontainers.image.title="jauderho/nginx"
+LABEL org.opencontainers.image.description="nginx is a web server"
 
 COPY files/index.html /etc/nginx/html/
 COPY files/nginx.conf /etc/nginx/nginx.conf
