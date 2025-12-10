@@ -1,4 +1,4 @@
-FROM ghcr.io/jauderho/alpine:3.22.2@sha256:04d9f90216e3b84c1919a9cd1f7f06fdb3e44091d822c203e44f1ee282cd4c3a
+FROM ghcr.io/jauderho/alpine:3.23.0@sha256:df8f76a45aada5bde7a3769b5050c0a71bd3a6567acc2db7a8c88ecf95b3255d
 #FROM python:3.12.0-slim-bookworm@sha256:43a49c9cc2e614468e3d1a903aabe17a97a4c788c76cf5337b5cdc3535b07d4f
 #FROM python:3.14.0b2-alpine3.22@sha256:371485ef9694c129864ddaf84cc0d97258060c87cf38e20f03b4d1f64141c24b
 
