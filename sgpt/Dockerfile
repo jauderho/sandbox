@@ -1,4 +1,4 @@
-FROM python:3.15.0a3-slim-trixie@sha256:2a4bfec6078e2e8fbd2abc58e33868b3ef5f9ed25e2267a7f1da08e754d70e2c
+FROM python:3.15.0a3-slim-trixie@sha256:fdbcc5a0eedcd5afaa46c0fa758ac390fe648588edea09476ae86fc05de2b3d4
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
