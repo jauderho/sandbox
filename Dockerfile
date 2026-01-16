@@ -3,7 +3,7 @@ USER nobody
 HEALTHCHECK echo
 
 # Ubuntu 25.10
-FROM ubuntu:26.04@sha256:12aa2ae97b9b295d28962e83cb36cb478f3afbdda68196e5fd62e68bde3a67d5 AS ubuntu-base
+FROM ubuntu:26.04@sha256:18bd5e273e139bdcee3a3c38b711ec140d20b74f9f005e3df0f21185f8870cfa AS ubuntu-base
 
 # Alma Linux 10.0
 FROM almalinux:10.1-minimal@sha256:4f02be934419e0cc0b89f95be6463be8a7736eb75017f99ab66c9b0c59680cc6 AS almalinux-base
