@@ -1,4 +1,4 @@
-FROM ghcr.io/jauderho/golang:1.25.5-alpine3.23@sha256:af19078930f6ab508355e5ed169253d7c862153fe2ccefec67e4eacd3c1d5c84 AS build
+FROM ghcr.io/jauderho/golang:1.25.5-alpine3.23@sha256:1ba396ac6fe617faf47076e9f5e79b8ac29775862ccf8ece3b96a84618c9ff49 AS build
 
 WORKDIR /go/src/github.com/wagoodman/dive/
 
