@@ -3,6 +3,10 @@ FROM ubuntu:26.04@sha256:4095ef613201918336b5d7d00be15d8b09c72ddb77c80bca249c255
 ENV DEBIAN_FRONTEND noninteractive
 ENV TZ Etc/UTC
 
+# EXPOSE
+# STOPSIGNAL
+HEALTHCHECK NONE
+# USER
 RUN \
   apt-get update -qq && \
   apt-get install -qqy tzdata mlocate hollywood && \
