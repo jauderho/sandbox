@@ -72,7 +72,7 @@ hpack==4.1.0
 httpcore==1.0.9
 httpx==0.28.1
 httpx-oauth==0.16.1
-huggingface-hub==0.36.0
+huggingface-hub==1.3.4
 humanize==4.15.0
 hyperframe==6.1.0
 idna==3.11
@@ -92,7 +92,7 @@ llama-index-embeddings-huggingface==0.6.1
 llama-index-embeddings-openai==0.5.1
 llama-index-instrumentation==0.4.2
 llama-index-llms-ollama==0.9.1
-llama-index-llms-openai==0.6.13
+llama-index-llms-openai==0.6.15
 llama-index-vector-stores-faiss==0.5.2
 llama-index-workflows==2.13.1
 lxml==6.0.2
@@ -113,7 +113,7 @@ ocrmypdf==16.13.0
 ollama==0.6.1
 openai==2.15.0
 packaging==26.0
-paperless-ngx @ git+https://github.com/paperless-ngx/paperless-ngx.git@444ff6951e7f6b9e276600f230c162a3fef4568f
+paperless-ngx @ git+https://github.com/paperless-ngx/paperless-ngx.git@6997a2ab8bc610807b3b139cf7cc7493d6d2158b
 pathvalidate==3.3.1
 pdf2image==1.17.0
 pdfminer-six==20260107
@@ -150,9 +150,10 @@ rpds-py==0.30.0
 safetensors==0.7.0
 scikit-learn==1.7.2
 scipy==1.17.0
-sentence-transformers==5.2.0
+sentence-transformers==5.2.1
 setproctitle==1.3.7
 setuptools==80.10.2
+shellingham==1.5.4
 six==1.17.0
 sniffio==1.3.1
 sqlalchemy==2.0.46
@@ -166,7 +167,8 @@ tokenizers==0.22.2
 torch==2.9.1+cpu
 tornado==6.5.4
 tqdm==4.67.1
-transformers==4.57.6
+transformers==5.0.0
+typer-slim==0.21.1
 typing-extensions==4.15.0
 typing-inspect==0.9.0
 typing-inspection==0.4.2
@@ -176,7 +178,7 @@ uritemplate==4.2.0
 urllib3==2.6.3
 vine==5.1.0
 watchfiles==1.1.1
-wcwidth==0.4.0
+wcwidth==0.5.0
 webencodings==0.5.1
 whitenoise==6.11.0
 whoosh-reloaded==2.7.5
