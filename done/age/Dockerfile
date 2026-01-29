@@ -1,4 +1,4 @@
-FROM ghcr.io/jauderho/golang:1.25.5-alpine3.23@sha256:c0d5b18853a32da9e45facfb9812a98c09078f4b781fe3a9d3310ea4a20efea1 AS build
+FROM ghcr.io/jauderho/golang:1.25.5-alpine3.23@sha256:54a52a41624cf31de9f2ec29588c2d1501657273bfadbf063c595acb753e6fac AS build
 
 WORKDIR /go/src/github.com/FiloSottile/age/
 
