@@ -15,4 +15,4 @@ FROM alpine:3.23.3@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f
 FROM golang:1.26rc2-alpine3.22@sha256:198bbce3aee16fcc1d90a7f0fe9b938b9efab15f5068917936080a64be390ef1 AS golang-base
 
 # Node 24 on Alpine 3.22
-FROM node:25.6-alpine3.22@sha256:5452fc71d230d527fcd186156215af690e3604b2b9d9bcf5f85b9b0bbadb0284 AS node-base
+FROM node:25.6-alpine3.22@sha256:8c582bc73db57610b25f2ba4f71bd2d6f17f0b47367310c949acad09ea4dfcb3 AS node-base
