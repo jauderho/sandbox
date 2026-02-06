@@ -45,7 +45,7 @@ do
 
 	#pipenv --python 3.13 lock -v && pipenv --python 3.13 requirements --exclude-markers > requirements.txt
 	#pipenv lock && pipenv requirements > requirements.txt
-	uv lock --prerelease=allow && uv pip compile pyproject.toml --python-platform aarch64-apple-darwin --no-annotate --prerelease=allow > requirements.txt
+	uv lock --prerelease=allow -U && uv pip compile pyproject.toml --python-platform aarch64-apple-darwin --no-annotate --prerelease=allow > requirements.txt
 
 	#git add Pipfile Pipfile.lock requirements.txt && \
 	git add pyproject.toml uv.lock requirements.txt && \
