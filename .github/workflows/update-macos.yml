@@ -31,12 +31,12 @@ jobs:
       id-token: write
 
     steps:
-#      - uses: GitHubSecurityLab/actions-permissions/monitor@v1
+#      - uses: GitHubSecurityLab/actions-permissions/monitor@bf82d13b9b10051d224345ab9184f5ede0a94289 # v1.0
 #        with:
 #          config: ${{ vars.PERMISSIONS_CONFIG }} 
       
       - name: Harden Runner
-        uses: step-security/harden-runner@5ef0c079ce82195b2a36a210272d6b661572d83e
+        uses: step-security/harden-runner@5ef0c079ce82195b2a36a210272d6b661572d83e # v2.14.2
         with:
           egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
           disable-sudo: false
@@ -44,13 +44,12 @@ jobs:
 
       # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
       - name: Source checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v4.4.2 
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           token: ${{ secrets.UPDATE_SECRET }} 
           fetch-depth: 1
 
-#      - uses: chainguard-dev/actions/setup-gitsign@main
-
+#      - uses: chainguard-dev/actions/setup-gitsign@88f70f8cd86f2ab5e0dc1b40f94df0a56ba29db5
       - name: Install uv
         uses: astral-sh/setup-uv@eac588ad8def6316056a12d4907a9d4d84ff7a3b # v7.3.0
         with:

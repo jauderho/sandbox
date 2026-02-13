@@ -27,21 +27,21 @@ jobs:
 
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@5ef0c079ce82195b2a36a210272d6b661572d83e # v1
+        uses: step-security/harden-runner@5ef0c079ce82195b2a36a210272d6b661572d83e # v2.14.2
         with:
           egress-policy: audit
           disable-telemetry: false
           
       - name: Source checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v4.4.2 
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
-      - uses: Vampire/setup-wsl@6a8db447be7ed35f2f499c02c6e60ff77ef11278 # v1
+      - uses: Vampire/setup-wsl@6a8db447be7ed35f2f499c02c6e60ff77ef11278 # v6.0.0
         with:
           distribution: Alpine
 
       - name: Set Docker metadata
         id: docker_meta
-        uses: docker/metadata-action@c299e40c65443455700f0fdfc63efafe5b349051 # v3
+        uses: docker/metadata-action@c299e40c65443455700f0fdfc63efafe5b349051 # v5.10.0
         with:
           images: ${{ env.REPOSITORY }}
           tags: |
@@ -53,7 +53,7 @@ jobs:
 
       - name: GitHub login
         if: ${{ github.event_name != 'pull_request' }}
-        uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v1.12.0
+        uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3.7.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -61,7 +61,7 @@ jobs:
 
 #      - name: DockerHub login
 #        if: ${{ github.event_name != 'pull_request' }}
-#        uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v1.12.0
+#        uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3.7.0
 #        with:
 #          username: ${{ secrets.DOCKERHUB_USERNAME }}
 #          password: ${{ secrets.DOCKERHUB_PASSWORD }}      
@@ -83,10 +83,10 @@ jobs:
       # https://github.com/anchore/syft
       
       #- name: Install cosign
-      #  uses: sigstore/cosign-installer@9becc617647dfa20ae7b1151972e9b3a2c338a2b # v1.4.1
+      #  uses: sigstore/cosign-installer@9becc617647dfa20ae7b1151972e9b3a2c338a2b
       
       #- name: Install syft
-      #  uses: anchore/sbom-action/download-syft@54e36e45f34bc64728f51adb8044404daca492a6 # v0.6.0
+      #  uses: anchore/sbom-action/download-syft@54e36e45f34bc64728f51adb8044404daca492a6 # v0.13.2
       
       #- name: Sign the image digest and generate SBOM
       #  run: |
