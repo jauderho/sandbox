@@ -38,7 +38,7 @@ deprecation==2.1.0
 dirtyjson==1.0.8
 distro==1.9.0
 django==5.2.11
-django-allauth==65.14.1
+django-allauth==65.14.3
 django-auditlog==3.4.1
 django-cachalot==2.9.0
 django-celery-results==2.6.0
@@ -97,7 +97,7 @@ llama-index-instrumentation==0.4.2
 llama-index-llms-ollama==0.9.1
 llama-index-llms-openai==0.6.18
 llama-index-vector-stores-faiss==0.5.3
-llama-index-workflows==2.14.1
+llama-index-workflows==2.14.2
 lxml==6.0.2
 markdown-it-py==4.0.0
 markupsafe==3.0.3
@@ -114,16 +114,16 @@ numpy==2.4.2
 oauthlib==3.3.1
 ocrmypdf==16.13.0
 ollama==0.6.1
-openai==2.20.0
+openai==2.21.0
 packaging==26.0
-paperless-ngx @ git+https://github.com/paperless-ngx/paperless-ngx.git@1c70d3f8a824e09aae2f93c5bf93946120a1e726
+paperless-ngx @ git+https://github.com/paperless-ngx/paperless-ngx.git@56d1b5677a2ebbe13bdfbb02fb0836e233ccb4dd
 pathvalidate==3.3.1
 pdf2image==1.17.0
 pdfminer-six==20260107
 pi-heif==1.2.0
 pikepdf==10.3.0
 pillow==12.1.1
-platformdirs==4.7.0
+platformdirs==4.8.0
 pluggy==1.6.0
 portalocker==3.2.0
 prometheus-client==0.24.1
@@ -141,7 +141,6 @@ python-ipware==3.0.0
 python-magic==0.4.27
 pytz==2025.2
 pyyaml==6.0.3
-pyzbar==0.1.9
 qrcode==8.2
 rapidfuzz==3.14.3
 redis==5.2.1
@@ -171,8 +170,8 @@ torch==2.10.0+cpu
 tornado==6.5.4
 tqdm==4.67.3
 transformers==5.1.0
-typer==0.23.0
-typer-slim==0.23.0
+typer==0.23.1
+typer-slim==0.23.1
 typing-extensions==4.15.0
 typing-inspect==0.9.0
 typing-inspection==0.4.2
@@ -189,4 +188,4 @@ whoosh-reloaded==2.7.5
 wrapt==2.1.1
 yarl==1.22.0
 zstandard==0.25.0
-zxing-cpp==2.3.0
+zxing-cpp==3.0.0
