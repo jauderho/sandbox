@@ -11,7 +11,7 @@ anyio==4.12.1
 asgiref==3.11.1
 attrs==25.4.0
 azure-ai-documentintelligence==1.0.2
-azure-core==1.38.1
+azure-core==1.38.2
 babel==2.18.0
 banks==2.4.1
 billiard==4.2.4
@@ -90,7 +90,7 @@ jsonschema==4.26.0
 jsonschema-specifications==2025.9.1
 kombu==5.6.2
 langdetect==1.0.9
-llama-index-core==0.14.14
+llama-index-core==0.14.15
 llama-index-embeddings-huggingface==0.6.1
 llama-index-embeddings-openai==0.5.1
 llama-index-instrumentation==0.4.2
@@ -120,7 +120,7 @@ paperless-ngx @ git+https://github.com/paperless-ngx/paperless-ngx.git@eda0e61ce
 pathvalidate==3.3.1
 pdf2image==1.17.0
 pdfminer-six==20260107
-pi-heif==1.2.0
+pi-heif==1.2.1
 pikepdf==10.3.0
 pillow==12.1.1
 platformdirs==4.9.2
@@ -165,6 +165,7 @@ tenacity==9.1.4
 threadpoolctl==3.6.0
 tika-client==0.10.0
 tiktoken==0.12.0
+tinytag==2.2.0
 tokenizers==0.22.2
 torch==2.10.0+cpu
 tornado==6.5.4
