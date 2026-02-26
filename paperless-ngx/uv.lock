@@ -1543,15 +1543,15 @@ wheels = [
 
 [[package]]
 name = "llama-index-llms-openai"
-version = "0.6.19"
+version = "0.6.21"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "llama-index-core" },
     { name = "openai" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/42/f0/810b09cab0d56de6f9476642d0e016c779f2ac3ec7845eb44ddc12a1796d/llama_index_llms_openai-0.6.19.tar.gz", hash = "sha256:a5e0fcddb7da875759406036e09b949cd64a2bb98da709d933147e41e0e6f78a", size = 25956, upload-time = "2026-02-20T11:18:03.527Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d8/5b/775289b3064302966cc839bbccfdbe314f706eaf58ad4233b86e5d53343d/llama_index_llms_openai-0.6.21.tar.gz", hash = "sha256:0b92dcfb01cbc7752f5b8bdf6d93430643d295210cf9392b45291d6fdd81e0ee", size = 25961, upload-time = "2026-02-26T04:19:33.604Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3c/dd/a8d4e90dad458c830f364e9e7614fad4d2eb8b61c46974c760b08053d495/llama_index_llms_openai-0.6.19-py3-none-any.whl", hash = "sha256:0e83126158f6eb51c153f2b1f7b729bb4bfb6af0191d65b33754b4512180befd", size = 26958, upload-time = "2026-02-20T11:18:02.545Z" },
+    { url = "https://files.pythonhosted.org/packages/e3/d7/5b513acbf0bfc2b6ef281b6bbca764062facc431e8f13763c16005fbd34b/llama_index_llms_openai-0.6.21-py3-none-any.whl", hash = "sha256:ef8c048849f844c7db9ff4208cca9878a799bc5fcdd72954197ea11e64b37c97", size = 26965, upload-time = "2026-02-26T04:19:34.561Z" },
 ]
 
 [[package]]
@@ -2017,7 +2017,7 @@ wheels = [
 [[package]]
 name = "paperless-ngx"
 version = "2.20.8"
-source = { git = "https://github.com/paperless-ngx/paperless-ngx.git#c431370bdeb974b1c8c4e9da1f63b0fcf2f6ed5e" }
+source = { git = "https://github.com/paperless-ngx/paperless-ngx.git#c9278f88ca9151416f5eb365788051ccf16a8eb1" }
 dependencies = [
     { name = "azure-ai-documentintelligence" },
     { name = "babel" },
