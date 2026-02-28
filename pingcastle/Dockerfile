@@ -10,6 +10,10 @@
 FROM mcr.microsoft.com/powershell:lts-windowsservercore-ltsc2022@sha256:4d58db7a0242824875f60449f8ebe482e14c15470b2a9a7ca1bce0172770240c
 #FROM mcr.microsoft.com/powershell
 
+# EXPOSE
+# ENV
+# STOPSIGNAL
+# USER
 WORKDIR /app
 #EXPOSE 80
 

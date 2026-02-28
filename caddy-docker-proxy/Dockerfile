@@ -18,7 +18,9 @@ WORKDIR /
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
+# STOPSIGNAL
+HEALTHCHECK NONE
+# USER
 ENTRYPOINT ["/usr/bin/caddy"]
 CMD ["docker-proxy"]
 #CMD ["caddy", "docker-proxy"]
-
