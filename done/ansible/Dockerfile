@@ -1,12 +1,15 @@
 FROM ubuntu:26.04@sha256:fed6ddb82c61194e1814e93b59cfcb6759e5aa33c4e41bb3782313c2386ed6df
 
-WORKDIR /ansible
+WORKDIR /home/ansible/app
 
 ARG BUILD_VERSION
 ARG DEBIAN_FRONTEND=noninteractive
 
 #ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 ENV PIP_NO_CACHE_DIR=1
+
+RUN addgroup -S ansible && adduser -S -G ansible ansible
+RUN mkdir -p /home/ansible/app && chown -R ansible:ansible /home/ansible/app
 
 # requirements.txt now generated from Pipfile
 # pipenv lock -r > requirements.txt
@@ -37,8 +40,11 @@ LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/ansible"
 LABEL org.opencontainers.image.description="Ansible is a radically simple IT automation platform"
 
-RUN mkdir -p /etc/ansible && \
+RUN mkdir -p /home/ansible/.ansible/tmp && \
+    chown -R ansible:ansible /home/ansible/.ansible && \
     echo 'localhost' > /etc/ansible/hosts
+
+USER ansible
 
 HEALTHCHECK NONE
 
