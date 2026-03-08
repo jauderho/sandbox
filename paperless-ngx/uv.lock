@@ -1580,16 +1580,16 @@ wheels = [
 
 [[package]]
 name = "llama-index-workflows"
-version = "2.15.0"
+version = "2.15.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "llama-index-instrumentation" },
     { name = "pydantic" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/bb/21/0357ededbc3aead4d170ba5a7b33345ee45e07f77423367725ef623c08a6/llama_index_workflows-2.15.0.tar.gz", hash = "sha256:06630ca3887b9bf27da776f10e42811aeedf3534591eb654796319ef898d2d7b", size = 81504, upload-time = "2026-02-28T00:02:28.904Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/89/9e/c885c97afd3fb5db397ede05d5c288f26539e1d5de775b97d03c523d4fde/llama_index_workflows-2.15.1.tar.gz", hash = "sha256:5e46dae2c683d3a9de800a4faf472b4aa915026b3f41bd36baba307b12cd3e7f", size = 81696, upload-time = "2026-03-07T17:32:05.011Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b3/43/ae0902d0ec6d75b6724f8db8de7cebaac7b2e7d285d31ac5f58279973d9b/llama_index_workflows-2.15.0-py3-none-any.whl", hash = "sha256:31634e32dcc2ec248b8c4a03d54c98a8e87cefce641edd573bdbd548d89f3c0c", size = 104367, upload-time = "2026-02-28T00:02:27.074Z" },
+    { url = "https://files.pythonhosted.org/packages/72/fa/a1aabbce40485d741067b46c6754c1ce81792ef56445777769d3da760a5d/llama_index_workflows-2.15.1-py3-none-any.whl", hash = "sha256:a36b4a8f30e5899c33391e99bad5768b9ca8331ace75f2f5bbbc0c0d380c2a0e", size = 104505, upload-time = "2026-03-07T17:32:06.163Z" },
 ]
 
 [[package]]
@@ -2029,7 +2029,7 @@ wheels = [
 [[package]]
 name = "paperless-ngx"
 version = "2.20.10"
-source = { git = "https://github.com/paperless-ngx/paperless-ngx.git#91ddda925675a58e52cfc9b3b2026893ff011f77" }
+source = { git = "https://github.com/paperless-ngx/paperless-ngx.git#0c3298f03072eaed232162e01bf8b5ea0bf1092b" }
 dependencies = [
     { name = "azure-ai-documentintelligence" },
     { name = "babel" },
