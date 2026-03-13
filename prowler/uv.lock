@@ -564,15 +564,15 @@ wheels = [
 
 [[package]]
 name = "azure-core"
-version = "1.38.2"
+version = "1.38.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "requests" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/00/fe/5c7710bc611a4070d06ba801de9a935cc87c3d4b689c644958047bdf2cba/azure_core-1.38.2.tar.gz", hash = "sha256:67562857cb979217e48dc60980243b61ea115b77326fa93d83b729e7ff0482e7", size = 363734, upload-time = "2026-02-18T19:33:05.6Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c8/29/9641b73248745774a52c7ce7f965ed1febbdea787ec21caad3ae6891d18a/azure_core-1.38.3.tar.gz", hash = "sha256:a7931fd445cb4af8802c6f39c6a326bbd1e34b115846550a8245fa656ead6f8e", size = 367267, upload-time = "2026-03-12T20:28:21.122Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/42/23/6371a551800d3812d6019cd813acd985f9fac0fedc1290129211a73da4ae/azure_core-1.38.2-py3-none-any.whl", hash = "sha256:074806c75cf239ea284a33a66827695ef7aeddac0b4e19dda266a93e4665ead9", size = 217957, upload-time = "2026-02-18T19:33:07.696Z" },
+    { url = "https://files.pythonhosted.org/packages/9a/3d/ac86083efa45a439d0bbfb7947615227813d368b9e1e93d23fd30de6fec0/azure_core-1.38.3-py3-none-any.whl", hash = "sha256:bf59d29765bf4748ab9edf25f98a30b7ea9797f43e367c06d846a30b29c1f845", size = 218231, upload-time = "2026-03-12T20:28:22.462Z" },
 ]
 
 [[package]]
@@ -1509,16 +1509,15 @@ wheels = [
 
 [[package]]
 name = "google-auth"
-version = "2.49.0"
+version = "2.49.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cryptography" },
     { name = "pyasn1-modules" },
-    { name = "rsa" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7d/59/7371175bfd949abfb1170aa076352131d7281bd9449c0f978604fc4431c3/google_auth-2.49.0.tar.gz", hash = "sha256:9cc2d9259d3700d7a257681f81052db6737495a1a46b610597f4b8bafe5286ae", size = 333444, upload-time = "2026-03-06T21:53:06.07Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ea/80/6a696a07d3d3b0a92488933532f03dbefa4a24ab80fb231395b9a2a1be77/google_auth-2.49.1.tar.gz", hash = "sha256:16d40da1c3c5a0533f57d268fe72e0ebb0ae1cc3b567024122651c045d879b64", size = 333825, upload-time = "2026-03-12T19:30:58.135Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/37/45/de64b823b639103de4b63dd193480dce99526bd36be6530c2dba85bf7817/google_auth-2.49.0-py3-none-any.whl", hash = "sha256:f893ef7307f19cf53700b7e2f61b5a6affe3aa0edf9943b13788920ab92d8d87", size = 240676, upload-time = "2026-03-06T21:52:38.304Z" },
+    { url = "https://files.pythonhosted.org/packages/e9/eb/c6c2478d8a8d633460be40e2a8a6f8f429171997a35a96f81d3b680dec83/google_auth-2.49.1-py3-none-any.whl", hash = "sha256:195ebe3dca18eddd1b3db5edc5189b76c13e96f29e73043b923ebcf3f1a860f7", size = 240737, upload-time = "2026-03-12T19:30:53.159Z" },
 ]
 
 [[package]]
@@ -1642,11 +1641,11 @@ wheels = [
 
 [[package]]
 name = "iamdata"
-version = "0.1.202603121"
+version = "0.1.202603131"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/8f/7f/6a17347028d4db0b9c54f4369df99fd4fffb667f2fb0bc11e30774bc5387/iamdata-0.1.202603121.tar.gz", hash = "sha256:98e26a66c10bf4366a6857ada90fafbfeb618bdb74085eca9d1163e503341399", size = 777816, upload-time = "2026-03-12T05:08:13.407Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/23/db/8d2b4aa7801301d122e21b38a49dd2a03b4df9de248289d5c0b01a074874/iamdata-0.1.202603131.tar.gz", hash = "sha256:7b1df12e592cc905e5903e7364de291340ad64c95b500ec75a9b35f5ae0a01ed", size = 777934, upload-time = "2026-03-13T05:06:29.891Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e4/16/bdacea834c17b5387da640aa9e7751014aa263c6527df7ed098a372e202c/iamdata-0.1.202603121-py3-none-any.whl", hash = "sha256:3265c09c8dcac6fb4a9e7efb397069d263a24e5c7b7450df7abe92d8d36089ae", size = 1236846, upload-time = "2026-03-12T05:08:11.917Z" },
+    { url = "https://files.pythonhosted.org/packages/fc/87/2a120c521f91181febc4baf4a248942096c660c9e189a36d879e970b223d/iamdata-0.1.202603131-py3-none-any.whl", hash = "sha256:295c7417de5b110d3bea5a38768bd6e8388a4bdcfda75af3a49825f6a9ec4da8", size = 1236923, upload-time = "2026-03-13T05:06:27.995Z" },
 ]
 
 [[package]]
@@ -2441,7 +2440,7 @@ wheels = [
 
 [[package]]
 name = "prowler"
-version = "5.19.0"
+version = "5.20.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "alibabacloud-actiontrail20200706" },
@@ -2521,9 +2520,9 @@ dependencies = [
     { name = "tzlocal" },
     { name = "uuid6" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/57/c5/706c2ac22b1da236685e771a94a0e20e3a389ab176f5e3351e2107d602b1/prowler-5.19.0.tar.gz", hash = "sha256:2f4155222ac4ab97ecd318ba1e6a87512a37b870045f6d803e0f3878ca50717c", size = 6020446, upload-time = "2026-03-04T11:41:47.068Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/20/c5/d57b5636dd99cbffc5449a886edc9324c33a67da6add0e6bbdbc7f4a3596/prowler-5.20.0.tar.gz", hash = "sha256:c8ccbcfa21f5ba375c8fc50d4d2f18da04a1bd6f64d152ddf2f65b4f3fcfa16b", size = 6094921, upload-time = "2026-03-12T16:42:48.052Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/72/cd/a5c661e651a6c87c51f532aeee12e34daaefc22f60781dc12b84c24abbf6/prowler-5.19.0-py3-none-any.whl", hash = "sha256:d3b824f6ef52c898b906fdad7ac1bdc7e2ae5d2a436facad94e5bf42c13caa0e", size = 8873158, upload-time = "2026-03-04T11:41:44.408Z" },
+    { url = "https://files.pythonhosted.org/packages/ff/b2/b1edb14a92937f28d10afd79e74e149a6b980ce4d1cf7cc2e437a645a099/prowler-5.20.0-py3-none-any.whl", hash = "sha256:206e0712394fa071ad9e25ea6186701a62e84440a728af1a388dbb6606ee2d47", size = 8997119, upload-time = "2026-03-12T16:42:45.138Z" },
 ]
 
 [[package]]
@@ -2714,11 +2713,11 @@ wheels = [
 
 [[package]]
 name = "pyjwt"
-version = "2.11.0"
+version = "2.12.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/5c/5a/b46fa56bf322901eee5b0454a34343cdbdae202cd421775a8ee4e42fd519/pyjwt-2.11.0.tar.gz", hash = "sha256:35f95c1f0fbe5d5ba6e43f00271c275f7a1a4db1dab27bf708073b75318ea623", size = 98019, upload-time = "2026-01-30T19:59:55.694Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a8/10/e8192be5f38f3e8e7e046716de4cae33d56fd5ae08927a823bb916be36c1/pyjwt-2.12.0.tar.gz", hash = "sha256:2f62390b667cd8257de560b850bb5a883102a388829274147f1d724453f8fb02", size = 102511, upload-time = "2026-03-12T17:15:30.831Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6f/01/c26ce75ba460d5cd503da9e13b21a33804d38c2165dec7b716d06b13010c/pyjwt-2.11.0-py3-none-any.whl", hash = "sha256:94a6bde30eb5c8e04fee991062b534071fd1439ef58d2adc9ccb823e7bcd0469", size = 28224, upload-time = "2026-01-30T19:59:54.539Z" },
+    { url = "https://files.pythonhosted.org/packages/15/70/70f895f404d363d291dcf62c12c85fdd47619ad9674ac0f53364d035925a/pyjwt-2.12.0-py3-none-any.whl", hash = "sha256:9bb459d1bdd0387967d287f5656bf7ec2b9a26645d1961628cda1764e087fd6e", size = 29700, upload-time = "2026-03-12T17:15:29.257Z" },
 ]
 
 [package.optional-dependencies]
@@ -2974,18 +2973,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/85/70/92482ccffb96f5441aab93e26c4d66489eb599efdcf96fad90c14bbfb976/rpds_py-0.30.0-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:dbd936cde57abfee19ab3213cf9c26be06d60750e60a8e4dd85d1ab12c8b1f40", size = 556030, upload-time = "2025-11-30T20:24:10.956Z" },
     { url = "https://files.pythonhosted.org/packages/20/53/7c7e784abfa500a2b6b583b147ee4bb5a2b3747a9166bab52fec4b5b5e7d/rpds_py-0.30.0-cp314-cp314t-win32.whl", hash = "sha256:dc824125c72246d924f7f796b4f63c1e9dc810c7d9e2355864b3c3a73d59ade0", size = 211570, upload-time = "2025-11-30T20:24:12.735Z" },
     { url = "https://files.pythonhosted.org/packages/d0/02/fa464cdfbe6b26e0600b62c528b72d8608f5cc49f96b8d6e38c95d60c676/rpds_py-0.30.0-cp314-cp314t-win_amd64.whl", hash = "sha256:27f4b0e92de5bfbc6f86e43959e6edd1425c33b5e69aab0984a72047f2bcf1e3", size = 226532, upload-time = "2025-11-30T20:24:14.634Z" },
-]
-
-[[package]]
-name = "rsa"
-version = "4.9.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pyasn1" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/da/8a/22b7beea3ee0d44b1916c0c1cb0ee3af23b700b6da9f04991899d0c555d4/rsa-4.9.1.tar.gz", hash = "sha256:e7bdbfdb5497da4c07dfd35530e1a902659db6ff241e39d9953cad06ebd0ae75", size = 29034, upload-time = "2025-04-16T09:51:18.218Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/64/8d/0133e4eb4beed9e425d9a98ed6e081a55d195481b7632472be1af08d2f6b/rsa-4.9.1-py3-none-any.whl", hash = "sha256:68635866661c6836b8d39430f97a996acbd61bfa49406748ea243539fe239762", size = 34696, upload-time = "2025-04-16T09:51:17.142Z" },
 ]
 
 [[package]]
