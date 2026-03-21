@@ -1320,7 +1320,7 @@ wheels = [
 
 [[package]]
 name = "huggingface-hub"
-version = "1.7.1"
+version = "1.7.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "filelock" },
@@ -1333,9 +1333,9 @@ dependencies = [
     { name = "typer" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b4/a8/94ccc0aec97b996a3a68f3e1fa06a4bd7185dd02bf22bfba794a0ade8440/huggingface_hub-1.7.1.tar.gz", hash = "sha256:be38fe66e9b03c027ad755cb9e4b87ff0303c98acf515b5d579690beb0bf3048", size = 722097, upload-time = "2026-03-13T09:36:07.758Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/19/15/eafc1c57bf0f8afffb243dcd4c0cceb785e956acc17bba4d9bf2ae21fc9c/huggingface_hub-1.7.2.tar.gz", hash = "sha256:7f7e294e9bbb822e025bdb2ada025fa4344d978175a7f78e824d86e35f7ab43b", size = 724684, upload-time = "2026-03-20T10:36:08.767Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6f/75/ca21955d6117a394a482c7862ce96216239d0e3a53133ae8510727a8bcfa/huggingface_hub-1.7.1-py3-none-any.whl", hash = "sha256:38c6cce7419bbde8caac26a45ed22b0cea24152a8961565d70ec21f88752bfaa", size = 616308, upload-time = "2026-03-13T09:36:06.062Z" },
+    { url = "https://files.pythonhosted.org/packages/08/de/3ad061a05f74728927ded48c90b73521b9a9328c85d841bdefb30e01fb85/huggingface_hub-1.7.2-py3-none-any.whl", hash = "sha256:288f33a0a17b2a73a1359e2a5fd28d1becb2c121748c6173ab8643fb342c850e", size = 618036, upload-time = "2026-03-20T10:36:06.824Z" },
 ]
 
 [[package]]
@@ -1666,28 +1666,28 @@ wheels = [
 
 [[package]]
 name = "llama-index-llms-ollama"
-version = "0.10.0"
+version = "0.10.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "llama-index-core" },
     { name = "ollama" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/eb/65/ea14d8cfb504a598752df8e3972f40d0323ce6de7e121b9bc71539515dcd/llama_index_llms_ollama-0.10.0.tar.gz", hash = "sha256:7582673b20e90288898372dcab17eb4f813d5964865b90d0745b3f0ab38c6ed4", size = 9077, upload-time = "2026-03-12T20:27:29.592Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/17/8c/dcda55d685d1094bcffa3f4f2b30bb45ade5aa93694617272bf6c81d5822/llama_index_llms_ollama-0.10.1.tar.gz", hash = "sha256:470ed836dee43bc0171dc05c68c2daa3618a7c38166b8044d7f8360cd8cd8fa6", size = 9145, upload-time = "2026-03-20T18:14:39.603Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e6/54/d23b6486b9fb0388af5f83c2457820f8aac403b974d4ab1c1731be9e02f1/llama_index_llms_ollama-0.10.0-py3-none-any.whl", hash = "sha256:e647c4592d6f3ebfccfb6843deab838d2598c483d7978915aba573183ded57ed", size = 8727, upload-time = "2026-03-12T20:27:30.596Z" },
+    { url = "https://files.pythonhosted.org/packages/c0/87/ecb53ae8f4a79e9e8b2e2f9ef649840ab985c5a095438b2f53b72674b66f/llama_index_llms_ollama-0.10.1-py3-none-any.whl", hash = "sha256:8badbebba5a8b7b36912aa1399319652e2110c36ce58485b9965a1b8238b4bdb", size = 8801, upload-time = "2026-03-20T18:14:38.831Z" },
 ]
 
 [[package]]
 name = "llama-index-llms-openai"
-version = "0.7.2"
+version = "0.7.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "llama-index-core" },
     { name = "openai" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b7/52/06ab2dadb9cacedc45f4ceaa3f80622f81df1afeff133901e92aa78ae388/llama_index_llms_openai-0.7.2.tar.gz", hash = "sha256:367a47769f63a9f662e6e3fa9024ffdbb4349d76d667ecde4c068360dcc9de83", size = 27300, upload-time = "2026-03-13T22:08:08.825Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/23/bb/be01df250251feb9ce8d94fbb3ef947ec8f41c98ac57a2766cce38562175/llama_index_llms_openai-0.7.3.tar.gz", hash = "sha256:16c72a9eed24266afe25ebe97a16d9405865dda8e27a4d11b93d038ccc2d164a", size = 27318, upload-time = "2026-03-20T18:06:07.216Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1f/80/59f219bdb5d1b9c1384b388bc49f13b1b6973bd5e60be09c9d25c3bd5e20/llama_index_llms_openai-0.7.2-py3-none-any.whl", hash = "sha256:d32287c4e4feabf623574c24783c746091c769c049135bf3b25480ac122be826", size = 28357, upload-time = "2026-03-13T22:08:09.819Z" },
+    { url = "https://files.pythonhosted.org/packages/99/1f/da6ec7e5f998fac3257def0b99a3f8a69dbcb17dc685dba65944e6fd3962/llama_index_llms_openai-0.7.3-py3-none-any.whl", hash = "sha256:f1ec398a44a6e7c513b86802e5fbd67cd01adf695155ee5034b899e537fe2226", size = 28372, upload-time = "2026-03-20T18:06:07.981Z" },
 ]
 
 [[package]]
@@ -1704,16 +1704,16 @@ wheels = [
 
 [[package]]
 name = "llama-index-workflows"
-version = "2.17.0"
+version = "2.17.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "llama-index-instrumentation" },
     { name = "pydantic" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/00/50/7dc3affce3ac34dbcdeac7794fa5bde74081e2a366e4f9ea976928a59503/llama_index_workflows-2.17.0.tar.gz", hash = "sha256:fa1566926825d17ca33164224883c085fae0b4c5a038d5e3258a54ef3840e597", size = 86167, upload-time = "2026-03-17T23:56:58.301Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e2/a8/2198a81d96394686f598857d12164256ce11699b99a76fdbaf38b8bc1a2c/llama_index_workflows-2.17.1.tar.gz", hash = "sha256:c62fabe509cf0003ddfe5b2b27f48b3443c7c9a84e9cdc904c6f9ed5f8cbe25d", size = 86723, upload-time = "2026-03-20T15:45:14.216Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/28/15/7fca72c10314bdbc1fc0c3469266a130f97008c74e715a29179880368e1e/llama_index_workflows-2.17.0-py3-none-any.whl", hash = "sha256:6f4d9f7140a3a34ea7730feaeb827c29cd41051ccd0e9ddb0080e224faf8c91f", size = 109819, upload-time = "2026-03-17T23:56:57.325Z" },
+    { url = "https://files.pythonhosted.org/packages/8c/28/20dc2db83adc2d9a11e042eac568f52788eb850e9381ffb1087d51f46672/llama_index_workflows-2.17.1-py3-none-any.whl", hash = "sha256:0d78fc36c2ab5430887c9f34367d59d4c22cf1e6c40ecdc3596214234c2b5010", size = 110539, upload-time = "2026-03-20T15:45:15.341Z" },
 ]
 
 [[package]]
@@ -2157,7 +2157,7 @@ wheels = [
 [[package]]
 name = "paperless-ngx"
 version = "2.20.11"
-source = { git = "https://github.com/paperless-ngx/paperless-ngx.git#d671e345590db7bd59ad2f38d8eab254c8ab6d85" }
+source = { git = "https://github.com/paperless-ngx/paperless-ngx.git#a9756f94626a8b770aa9622553c262a2fd047919" }
 dependencies = [
     { name = "azure-ai-documentintelligence" },
     { name = "babel" },
