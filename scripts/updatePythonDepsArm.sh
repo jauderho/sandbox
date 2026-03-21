@@ -48,6 +48,7 @@ do
 	uv lock --prerelease=allow -U && uv pip compile pyproject.toml --python-platform aarch64-apple-darwin --no-annotate --prerelease=allow > requirements.txt
 
 	#git add Pipfile Pipfile.lock requirements.txt && \
+	git pull && \
 	git add pyproject.toml uv.lock requirements.txt && \
 	git commit -S -s -m "Update requirements for ${i} ..." && \
 	git pull && \

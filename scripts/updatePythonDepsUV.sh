@@ -48,6 +48,7 @@ APP=(
   "pyaranet4" \
   "pwnagotchi" \
   "revchatgpt" \
+  "routellm" \
   "scrapeghost" \
   "shodan" \
   "wtfis" \
