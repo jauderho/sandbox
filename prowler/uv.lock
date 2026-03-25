@@ -513,14 +513,14 @@ wheels = [
 
 [[package]]
 name = "anyio"
-version = "4.12.1"
+version = "4.13.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "idna" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/96/f0/5eb65b2bb0d09ac6776f2eb54adee6abe8228ea05b20a5ad0e4945de8aac/anyio-4.12.1.tar.gz", hash = "sha256:41cfcc3a4c85d3f05c932da7c26d0201ac36f72abd4435ba90d0464a3ffed703", size = 228685, upload-time = "2026-01-06T11:45:21.246Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/19/14/2c5dd9f512b66549ae92767a9c7b330ae88e1932ca57876909410251fe13/anyio-4.13.0.tar.gz", hash = "sha256:334b70e641fd2221c1505b3890c69882fe4a2df910cba14d97019b90b24439dc", size = 231622, upload-time = "2026-03-24T12:59:09.671Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/38/0e/27be9fdef66e72d64c0cdc3cc2823101b80585f8119b5c112c2e8f5f7dab/anyio-4.12.1-py3-none-any.whl", hash = "sha256:d405828884fc140aa80a3c667b8beed277f1dfedec42ba031bd6ac3db606ab6c", size = 113592, upload-time = "2026-01-06T11:45:19.497Z" },
+    { url = "https://files.pythonhosted.org/packages/da/42/e921fccf5015463e32a3cf6ee7f980a6ed0f395ceeaa45060b61d86486c2/anyio-4.13.0-py3-none-any.whl", hash = "sha256:08b310f9e24a9594186fd75b4f73f4a4152069e3853f1ed8bfbf58369f4ad708", size = 114353, upload-time = "2026-03-24T12:59:08.246Z" },
 ]
 
 [[package]]
@@ -2151,11 +2151,11 @@ wheels = [
 
 [[package]]
 name = "narwhals"
-version = "2.18.0"
+version = "2.18.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/47/b4/02a8add181b8d2cd5da3b667cd102ae536e8c9572ab1a130816d70a89edb/narwhals-2.18.0.tar.gz", hash = "sha256:1de5cee338bc17c338c6278df2c38c0dd4290499fcf70d75e0a51d5f22a6e960", size = 620222, upload-time = "2026-03-10T15:51:27.14Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/59/96/45218c2fdec4c9f22178f905086e85ef1a6d63862dcc3cd68eb60f1867f5/narwhals-2.18.1.tar.gz", hash = "sha256:652a1fcc9d432bbf114846688884c215f17eb118aa640b7419295d2f910d2a8b", size = 620578, upload-time = "2026-03-24T15:11:25.456Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fe/75/0b4a10da17a44cf13567d08a9c7632a285297e46253263f1ae119129d10a/narwhals-2.18.0-py3-none-any.whl", hash = "sha256:68378155ee706ac9c5b25868ef62ecddd62947b6df7801a0a156bc0a615d2d0d", size = 444865, upload-time = "2026-03-10T15:51:24.085Z" },
+    { url = "https://files.pythonhosted.org/packages/3f/c3/06490e98393dcb4d6ce2bf331a39335375c300afaef526897881fbeae6ab/narwhals-2.18.1-py3-none-any.whl", hash = "sha256:a0a8bb80205323851338888ba3a12b4f65d352362c8a94be591244faf36504ad", size = 444952, upload-time = "2026-03-24T15:11:23.801Z" },
 ]
 
 [[package]]
@@ -2444,7 +2444,7 @@ wheels = [
 
 [[package]]
 name = "prowler"
-version = "5.21.1"
+version = "5.22.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "alibabacloud-actiontrail20200706" },
@@ -2524,9 +2524,9 @@ dependencies = [
     { name = "tzlocal" },
     { name = "uuid6" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c6/36/901ed8fa4144368e24334eaaf3df1d5f0e9bc7ae75a8660bbcd83a4838a1/prowler-5.21.1.tar.gz", hash = "sha256:c72dc9a178d13efb1b63ea9fce602aed8984f4994f62677c41f2d9db6052ee36", size = 6211795, upload-time = "2026-03-20T08:01:28.926Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6f/d4/9eebc6c7c8822fbb8714a2d9386437d7b9b6e6c47229c74c14088dcd03cb/prowler-5.22.0.tar.gz", hash = "sha256:d4897f28d0733d24f57ae46284e8e23a057a79fba3909c30ee5127287cd12882", size = 6212179, upload-time = "2026-03-24T12:19:53.345Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/dd/4a/2cf0a588c752212c701c18a0a7d2a4bf4b5786dad4a2252f3fe7c7e3014e/prowler-5.21.1-py3-none-any.whl", hash = "sha256:4404f3f4eddf22d19cdce5756a99041a903102d9e92e1e132c65a341c0fa3cd5", size = 9130714, upload-time = "2026-03-20T08:01:26.007Z" },
+    { url = "https://files.pythonhosted.org/packages/75/0e/334fcf497edbd2e183043b5693d33a3cba660f0ff871688fe74b30c80a10/prowler-5.22.0-py3-none-any.whl", hash = "sha256:d270ebda76e9e2daac1c8f8d8280bf3455c96ef625380638f1c4496d6a81f55d", size = 9131103, upload-time = "2026-03-24T12:19:50.953Z" },
 ]
 
 [[package]]
