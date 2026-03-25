@@ -10,8 +10,8 @@ RUN apk add -U --no-cache ca-certificates && xcaddy build \
 FROM scratch
 
 EXPOSE 80 443 2019
-ENV XDG_CONFIG_HOME /config
-ENV XDG_DATA_HOME /data
+ENV XDG_CONFIG_HOME=/config
+ENV XDG_DATA_HOME=/data
 
 WORKDIR /
 

@@ -60,7 +60,7 @@ LABEL org.opencontainers.image.description="Email IMAP tool for syncing, copying
 
 WORKDIR /var/tmp/
 
-ENV HOME /var/tmp/
+ENV HOME=/var/tmp/
 USER nobody:nogroup
 HEALTHCHECK NONE
 STOPSIGNAL SIGINT
