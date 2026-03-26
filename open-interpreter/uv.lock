@@ -172,15 +172,15 @@ wheels = [
 
 [[package]]
 name = "blessed"
-version = "1.33.0"
+version = "1.34.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jinxed", marker = "sys_platform == 'win32'" },
     { name = "wcwidth" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/68/5c/92dc10a25a4eafb4b9bef5dad522a0b7d5d5b55d2d76f9a6721b2e49ca2c/blessed-1.33.0.tar.gz", hash = "sha256:c732a1043042d84f411423a1a7b74643e1dd3a2271bd6e5955682dd4a321b0ef", size = 13980368, upload-time = "2026-03-07T00:00:06.288Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/34/b4/a8ae4b4c9c80c36d0bfe026001e39c79b4d5d0947d7eed961ae3b5854fd1/blessed-1.34.0.tar.gz", hash = "sha256:3d17468c3d47e11ed8d6ca3da1270b8aba8ac8bd0a55a1f8189e4d04f223a1f0", size = 13987443, upload-time = "2026-03-26T03:02:06.196Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/22/04/2b4e111e0b902b1ac0b25e5e010af71c79fca093a3399bd7f8b82adcc536/blessed-1.33.0-py3-none-any.whl", hash = "sha256:1bc8ecac6d139286ea51ec1683433528ce75b0c60db77b7d881112bf9fc85b0f", size = 111519, upload-time = "2026-03-07T00:00:00.202Z" },
+    { url = "https://files.pythonhosted.org/packages/2c/0c/5cda0371d6f884535856ef4282ccdc2aee0b10090d13790741a97943e092/blessed-1.34.0-py3-none-any.whl", hash = "sha256:eb403f9ce2efab633bd1e7a05fbb35b979a7b9f213ddc41478dd55dd6999e8bf", size = 114553, upload-time = "2026-03-26T03:02:03.565Z" },
 ]
 
 [[package]]
@@ -970,14 +970,14 @@ wheels = [
 
 [[package]]
 name = "jinxed"
-version = "1.3.0"
+version = "1.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansicon", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/20/d0/59b2b80e7a52d255f9e0ad040d2e826342d05580c4b1d7d7747cfb8db731/jinxed-1.3.0.tar.gz", hash = "sha256:1593124b18a41b7a3da3b078471442e51dbad3d77b4d4f2b0c26ab6f7d660dbf", size = 80981, upload-time = "2024-07-31T22:39:18.854Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/3c/e9/96633f12b6829eb1e91e70e5846704c0b1293ec47bd65a7b681e19c8eeff/jinxed-1.4.0.tar.gz", hash = "sha256:8f7801a10799de39e509eb5abc6d131ee169c1ce4fd5d568aa85b5f56ed58068", size = 37169, upload-time = "2026-03-26T01:49:38.337Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/27/e3/0e0014d6ab159d48189e92044ace13b1e1fe9aa3024ba9f4e8cf172aa7c2/jinxed-1.3.0-py2.py3-none-any.whl", hash = "sha256:b993189f39dc2d7504d802152671535b06d380b26d78070559551cbf92df4fc5", size = 33085, upload-time = "2024-07-31T22:39:17.426Z" },
+    { url = "https://files.pythonhosted.org/packages/71/b7/9ab2b79bcbcc53cf8772a19d26713dd9574d4d81ee4fea29678d8cadcec7/jinxed-1.4.0-py2.py3-none-any.whl", hash = "sha256:95876a8b270081b8e28a9bbcbabe4fa98327faa91102526f724ed1904f9a55ac", size = 34522, upload-time = "2026-03-26T01:49:36.762Z" },
 ]
 
 [[package]]
