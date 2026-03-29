@@ -2,6 +2,7 @@ FROM alpine:3.23.3@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f
 
 ARG BUILDKIT_SBOM_SCAN_STAGE=true
 ARG BUILD_VERSION
+RUN addgroup -S vduser && adduser -S -G vduser -h /home/vduser vduser
 
 #ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 ENV PIP_NO_CACHE_DIR=1
@@ -27,6 +28,8 @@ RUN \
 	find /usr/lib/ -name '*.pyc' -print0 | xargs -0 -n1 rm -rf && \
 	rm -rf /root/.cargo
 
+RUN mkdir -p /home/vduser && mv /.visidatarc /home/vduser/.visidatarc && chown -R vduser:vduser /home/vduser && rm -f /requirements.txt
+
 LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
@@ -34,6 +37,9 @@ LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/visidata"
 LABEL org.opencontainers.image.description="Visidata is a terminal interface for exploring and arranging tabular data"
 
+RUN mkdir -p /work && chown vduser:vduser /work
+USER vduser
+ENV HOME /home/vduser
 WORKDIR /work
 
 ENV TERM="xterm-256color"
