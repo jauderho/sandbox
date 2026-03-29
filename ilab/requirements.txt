@@ -4,14 +4,13 @@ absl-py==2.4.0
 accelerate==1.13.0
 aiofiles==25.1.0
 aiohappyeyeballs==2.6.1
-aiohttp==3.13.3
+aiohttp==3.13.4
 aiosignal==1.4.0
 annotated-doc==0.0.4
 annotated-types==0.7.0
 antlr4-python3-runtime==4.9.3
 anyio==4.13.0
 appdirs==1.4.4
-async-timeout==4.0.3
 attrs==26.1.0
 backoff==2.2.1
 beautifulsoup4==4.14.3
@@ -45,12 +44,10 @@ docling-ibm-models==3.13.0
 docling-parse==5.6.1
 docstring-parser==0.17.0
 et-xmlfile==2.0.0
-eval-type-backport==0.3.1
 evaluate==0.4.6
-exceptiongroup==1.3.1
 faker==40.11.1
 fastapi==0.135.2
-filelock==3.19.1
+filelock==3.25.2
 filetype==1.2.0
 fonttools==4.62.1
 frozenlist==1.8.0
@@ -71,8 +68,6 @@ httpx-sse==0.4.3
 huggingface-hub[hf-transfer]==0.36.2
 identify==2.6.18
 idna==3.11
-importlib-metadata==9.0.0
-importlib-resources==6.5.2
 -e git+https://github.com/instructlab/instructlab@253a7a46e3f14fd7e85fa8a4b2e26a6b86e0b220#egg=instructlab
 instructlab-eval==0.6.0
 instructlab-quantize==0.1.0
@@ -126,7 +121,7 @@ networkx==3.6.1
 nltk==3.9.4
 nodeenv==1.10.0
 numba==0.64.0
-numpy==1.26.4
+numpy==2.4.3
 nvidia-cublas==13.1.0.3
 nvidia-cuda-cupti==13.0.85
 nvidia-cuda-nvrtc==13.0.88
@@ -187,7 +182,7 @@ pyyaml==6.0.3
 ragas==0.4.3
 rapidocr==3.7.0
 referencing==0.37.0
-regex==2026.2.28
+regex==2026.3.32
 requests==2.33.0
 requests-toolbelt==1.0.0
 rich==14.3.3
@@ -243,11 +238,10 @@ triton==3.6.0
 trl==0.29.1
 typepy[datetime]==1.3.4
 typer==0.21.2
-typing==3.7.4.3
 typing-extensions==4.15.0
 typing-inspect==0.9.0
 typing-inspection==0.4.2
-urllib3==1.26.20
+urllib3==2.6.3
 uuid-utils==0.14.1
 uvicorn==0.42.0
 virtualenv==21.2.0
@@ -260,5 +254,4 @@ xlsxwriter==3.2.9
 xxhash==3.6.0
 yamllint==1.38.0
 yarl==1.23.0
-zipp==3.23.0
 zstandard==0.25.0
