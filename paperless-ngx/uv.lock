@@ -770,14 +770,14 @@ wheels = [
 
 [[package]]
 name = "django-guardian"
-version = "3.3.0"
+version = "3.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "django" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d5/eb/bbeb4efd10d6cca8993697f571f17574e9fa7a912cead3ab39ce1d3793cd/django_guardian-3.3.0.tar.gz", hash = "sha256:abf1487399212cffdce7b3c909182a26fbe7e89746007299a8cab99f3d5ff009", size = 107443, upload-time = "2026-02-24T19:43:28.819Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5f/9a/e332f886bc38dd8bb7b0cdf7305d8dcf6acc376459b87b1ce73697666d55/django_guardian-3.3.1.tar.gz", hash = "sha256:7a50eada72161e355a9dbf9fe0838855c0ec851dd9b39f4f16e2decb5f4c7988", size = 109557, upload-time = "2026-03-30T09:44:59.008Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7c/3c/6517c5e27c6f9c165f989a5884f8798d66d25ce86fe44bf8c19aa4120351/django_guardian-3.3.0-py3-none-any.whl", hash = "sha256:4dca4fce104c7306e41b947a57d1cd6be46d9982548bef194ac8a6ad61d83686", size = 144003, upload-time = "2026-02-24T19:43:27Z" },
+    { url = "https://files.pythonhosted.org/packages/4f/4f/f798f8a2cb2f84def1fd2bf38f497c45a2ebd093f6bdb1f349eb52faa466/django_guardian-3.3.1-py3-none-any.whl", hash = "sha256:2a3a4b94cdc7e8fc99b74eef163db69d17703dc397c3e9085c7231f2b2bcf431", size = 146125, upload-time = "2026-03-30T09:44:57.599Z" },
 ]
 
 [[package]]
@@ -1682,15 +1682,15 @@ wheels = [
 
 [[package]]
 name = "llama-index-llms-openai"
-version = "0.7.4"
+version = "0.7.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "llama-index-core" },
     { name = "openai" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/40/15/1c79fd19e19c38abcb4d6f16bc4c7ce36651bef1efa31973e01603df235b/llama_index_llms_openai-0.7.4.tar.gz", hash = "sha256:e7e078816babe33b29fa17ea0a771cf9589b2e95f1902cd8f1ec283a3a35c675", size = 27323, upload-time = "2026-03-27T15:32:18.154Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/65/27/18a7fd0873023aed145332dab5a09b95b298e4fff1c21685eaf22b629d87/llama_index_llms_openai-0.7.5.tar.gz", hash = "sha256:54123e679a7cddc1f2e969f278a4654050730daf84691731a0c53ae14feac3c7", size = 27423, upload-time = "2026-03-30T16:30:33.973Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/50/e8/1edce9dad3c7b55e37ca27723f7e8918e71e270bb3e67b49e90abdfaa32f/llama_index_llms_openai-0.7.4-py3-none-any.whl", hash = "sha256:b2cf35ce0d0ecf3209a0406da7383efdbd8f70a1c83eef287e4346c36ea24cba", size = 28378, upload-time = "2026-03-27T15:32:17.205Z" },
+    { url = "https://files.pythonhosted.org/packages/63/62/a847e9a94c2f92926c30188259f9f86e019dcc45122bbb222dea35a74c02/llama_index_llms_openai-0.7.5-py3-none-any.whl", hash = "sha256:c302c6386873420df3714c3d538f45379b6de27ab6a531f30c67419b39a538f5", size = 28492, upload-time = "2026-03-30T16:30:32.979Z" },
 ]
 
 [[package]]
@@ -2160,7 +2160,7 @@ wheels = [
 [[package]]
 name = "paperless-ngx"
 version = "2.20.13"
-source = { git = "https://github.com/paperless-ngx/paperless-ngx.git#3d4353dc2b07504a55f44ae0175ba26a107f1ad9" }
+source = { git = "https://github.com/paperless-ngx/paperless-ngx.git#020057e1a403cc6762f0af39db002153904ddb2f" }
 dependencies = [
     { name = "azure-ai-documentintelligence" },
     { name = "babel" },
@@ -2914,7 +2914,7 @@ wheels = [
 
 [[package]]
 name = "requests"
-version = "2.33.0"
+version = "2.33.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "certifi" },
@@ -2922,9 +2922,9 @@ dependencies = [
     { name = "idna" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/34/64/8860370b167a9721e8956ae116825caff829224fbca0ca6e7bf8ddef8430/requests-2.33.0.tar.gz", hash = "sha256:c7ebc5e8b0f21837386ad0e1c8fe8b829fa5f544d8df3b2253bff14ef29d7652", size = 134232, upload-time = "2026-03-25T15:10:41.586Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5f/a4/98b9c7c6428a668bf7e42ebb7c79d576a1c3c1e3ae2d47e674b468388871/requests-2.33.1.tar.gz", hash = "sha256:18817f8c57c6263968bc123d237e3b8b08ac046f5456bd1e307ee8f4250d3517", size = 134120, upload-time = "2026-03-30T16:09:15.531Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/56/5d/c814546c2333ceea4ba42262d8c4d55763003e767fa169adc693bd524478/requests-2.33.0-py3-none-any.whl", hash = "sha256:3324635456fa185245e24865e810cecec7b4caf933d7eb133dcde67d48cee69b", size = 65017, upload-time = "2026-03-25T15:10:40.382Z" },
+    { url = "https://files.pythonhosted.org/packages/d7/8e/7540e8a2036f79a125c1d2ebadf69ed7901608859186c856fa0388ef4197/requests-2.33.1-py3-none-any.whl", hash = "sha256:4e6d1ef462f3626a1f0a0a9c42dd93c63bad33f9f1c1937509b8c5c8718ab56a", size = 64947, upload-time = "2026-03-30T16:09:13.83Z" },
 ]
 
 [[package]]
