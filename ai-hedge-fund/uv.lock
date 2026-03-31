@@ -748,7 +748,7 @@ wheels = [
 
 [[package]]
 name = "google-ai-generativelanguage"
-version = "0.10.0"
+version = "0.11.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "google-api-core", extra = ["grpc"] },
@@ -757,14 +757,14 @@ dependencies = [
     { name = "proto-plus" },
     { name = "protobuf" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b0/f0/d999b2ef7e6d59c3b17d61eaf01f80889cf88d04899115584c2a5e512260/google_ai_generativelanguage-0.10.0.tar.gz", hash = "sha256:17e998094003a566e0fa52249fdd49e8f4c030cebe7fe0c521b40d605aba783e", size = 1524340, upload-time = "2026-01-15T13:14:46.162Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b3/36/9365ca196c4753d0d22951ee0147ecb2124382a010d5dbfb9f3ecd57f2cf/google_ai_generativelanguage-0.11.0.tar.gz", hash = "sha256:d9e24e9836e894a85b52ca03d03530988aeb492d48df71cd1573dc1c3b6d81fc", size = 1539696, upload-time = "2026-03-30T22:51:43.143Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e1/71/124c4f3f5685ec64d3bf984a21be702397a1fbfa00a2c03efe7f75bd5b2d/google_ai_generativelanguage-0.10.0-py3-none-any.whl", hash = "sha256:b6ebcb7c9e51848097901fb6a75375ca8f957538e7918d055ffeb8076fbc537a", size = 1416801, upload-time = "2026-01-09T14:52:31.833Z" },
+    { url = "https://files.pythonhosted.org/packages/06/8c/dc1faf90d7a6ec77e09a6706abefabb41ae5b8d838e5e5b16914da26ee1e/google_ai_generativelanguage-0.11.0-py3-none-any.whl", hash = "sha256:f797f307f0969ae49622e09c1d1a23aa86c7538ffae881279506548166e91d45", size = 1432183, upload-time = "2026-03-30T22:47:56.02Z" },
 ]
 
 [[package]]
 name = "google-api-core"
-version = "2.30.0"
+version = "2.30.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "google-auth" },
@@ -773,9 +773,9 @@ dependencies = [
     { name = "protobuf" },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/22/98/586ec94553b569080caef635f98a3723db36a38eac0e3d7eb3ea9d2e4b9a/google_api_core-2.30.0.tar.gz", hash = "sha256:02edfa9fab31e17fc0befb5f161b3bf93c9096d99aed584625f38065c511ad9b", size = 176959, upload-time = "2026-02-18T20:28:11.926Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f7/0b/b6e296aff70bef900766934cf4e83eaacc3f244adb61936b66d24b204080/google_api_core-2.30.1.tar.gz", hash = "sha256:7304ef3bd7e77fd26320a36eeb75868f9339532bfea21694964f4765b37574ee", size = 176742, upload-time = "2026-03-30T22:50:52.637Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/45/27/09c33d67f7e0dcf06d7ac17d196594e66989299374bfb0d4331d1038e76b/google_api_core-2.30.0-py3-none-any.whl", hash = "sha256:80be49ee937ff9aba0fd79a6eddfde35fe658b9953ab9b79c57dd7061afa8df5", size = 173288, upload-time = "2026-02-18T20:28:10.367Z" },
+    { url = "https://files.pythonhosted.org/packages/43/86/a00ea4596780ef3f0721c1f073c0c5ae992da4f35cf12f0d8c92d19267a6/google_api_core-2.30.1-py3-none-any.whl", hash = "sha256:3be893babbb54a89c6807b598383ddf212112130e3d24d06c681b5d18f082e08", size = 173238, upload-time = "2026-03-30T22:48:50.586Z" },
 ]
 
 [package.optional-dependencies]
