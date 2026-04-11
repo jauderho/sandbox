@@ -11,6 +11,10 @@ ENV PIP_NO_CACHE_DIR=1
 # pipenv lock -r > requirements.txt
 COPY requirements.txt . 
 
+# EXPOSE
+# STOPSIGNAL
+HEALTHCHECK NONE
+# USER
 RUN apt-get update && \
 	apt-get dist-upgrade -y && \
 	DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends git python3-pip && \
