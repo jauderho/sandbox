@@ -18,7 +18,7 @@ build==1.4.3
 cachetools==7.0.5
 certifi==2026.2.25
 cffi==2.0.0 ; platform_python_implementation != 'PyPy'
-chardet==7.4.2
+chardet==7.4.3
 charset-normalizer==3.4.7
 chromadb==1.5.7
 cint==1.0.0
@@ -84,7 +84,7 @@ llama-index-core==0.14.20
 llama-index-embeddings-openai==0.6.0
 llama-index-instrumentation==0.5.0
 llama-index-llms-openai==0.7.5
-llama-index-workflows==2.17.3
+llama-index-workflows==2.18.0
 markdown-it-py==4.0.0
 markupsafe==3.0.3
 marshmallow==3.26.2
@@ -123,8 +123,8 @@ protobuf==6.33.6
 psutil==7.0.0
 pybase64==1.4.3
 pycparser==3.0 ; implementation_name != 'PyPy' and platform_python_implementation != 'PyPy'
-pydantic==2.12.5
-pydantic-core==2.41.5
+pydantic==2.13.0
+pydantic-core==2.46.0
 pydantic-settings==2.13.1
 pygments==2.20.0
 pypika==0.51.1
@@ -140,7 +140,7 @@ requests-oauthlib==2.0.0
 requests-toolbelt==1.0.0
 rich==15.0.0
 rpds-py==0.30.0
-sentry-sdk==2.57.0
+sentry-sdk==2.58.0
 setuptools==82.0.1
 shellingham==1.5.4
 six==1.17.0
@@ -165,7 +165,7 @@ urllib3==2.6.3
 uuid-utils==0.14.1
 uvicorn==0.44.0
 uvloop==0.22.1 ; platform_python_implementation != 'PyPy' and sys_platform != 'cygwin' and sys_platform != 'win32'
-wandb==0.25.1
+wandb==0.26.0
 watchdog==6.0.0
 watchfiles==1.1.1
 weave==0.52.36
@@ -174,5 +174,5 @@ websockets==16.0
 wrapt==1.17.3
 xxhash==3.6.0
 yarl==1.23.0
-zipp==3.23.0
+zipp==3.23.1
 zstandard==0.25.0
