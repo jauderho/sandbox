@@ -13,16 +13,24 @@ updates:
     open-pull-requests-limit: 50
     schedule:
       interval: "daily"
+    groups:
+      actions-deps:
+        patterns:
+          - "*"
 
   # Maintain dependencies for Docker
   - package-ecosystem: "pip"
     directories:
       #- "/"
       - "/*"
-      #- "/done/*"
+      - "/done/*"
     open-pull-requests-limit: 50
     schedule:
       interval: "daily"
+    groups:
+      actions-deps:
+        patterns:
+          - "*"
 
   # Maintain dependencies for Docker
   - package-ecosystem: "docker"
@@ -33,3 +41,7 @@ updates:
     open-pull-requests-limit: 50
     schedule:
       interval: "daily"
+    groups:
+      actions-deps:
+        patterns:
+          - "*"
