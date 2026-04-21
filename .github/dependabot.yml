@@ -28,7 +28,7 @@ updates:
     schedule:
       interval: "daily"
     groups:
-      actions-deps:
+      python:
         patterns:
           - "*"
 
@@ -42,6 +42,6 @@ updates:
     schedule:
       interval: "daily"
     groups:
-      actions-deps:
+      docker:
         patterns:
           - "*"
