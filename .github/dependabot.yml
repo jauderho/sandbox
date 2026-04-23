@@ -27,6 +27,8 @@ updates:
     open-pull-requests-limit: 50
     schedule:
       interval: "daily"
+    cooldown:
+      default-days: 7
     groups:
       python:
         patterns:
