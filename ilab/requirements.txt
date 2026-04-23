@@ -14,13 +14,13 @@ appdirs==1.4.4
 attrs==26.1.0
 backoff==2.2.1
 beautifulsoup4==4.14.3
-boto3==1.42.93
-botocore==1.42.93
-certifi==2026.2.25
+boto3==1.42.94
+botocore==1.42.94
+certifi==2026.4.22
 cfgv==3.5.0
 chardet==5.2.0
 charset-normalizer==3.4.7
-click==8.3.2
+click==8.3.3
 click-didyoumean==0.3.1
 colorama==0.4.6
 colorlog==6.10.1
@@ -39,9 +39,9 @@ diskcache==5.6.3
 distlib==0.4.0
 distro==1.9.0
 docling[tesserocr]==2.90.0
-docling-core[chunking]==2.74.0
-docling-ibm-models==3.13.0
-docling-parse==5.9.0
+docling-core[chunking]==2.74.1
+docling-ibm-models==3.13.1
+docling-parse==5.10.0
 docstring-parser==0.18.0
 et-xmlfile==2.0.0
 evaluate==0.4.6
@@ -66,7 +66,7 @@ httpx==0.28.1
 httpx-sse==0.4.3
 huggingface-hub[hf-transfer]==1.11.0
 identify==2.6.19
-idna==3.12
+idna==3.13
 -e git+https://github.com/instructlab/instructlab@253a7a46e3f14fd7e85fa8a4b2e26a6b86e0b220#egg=instructlab
 instructlab-eval==0.6.0
 instructlab-quantize==0.1.0
@@ -190,7 +190,7 @@ rpds-py==0.30.0
 rtree==1.4.1
 ruamel.yaml==0.18.17
 ruamel.yaml.clib==0.2.15
-s3transfer==0.16.0
+s3transfer==0.16.1
 sacrebleu==2.6.0
 safetensors[numpy,torch]==0.7.0
 scikit-learn==1.8.0
@@ -227,9 +227,9 @@ toml==0.10.2
 torch==2.11.0
 torchvision==0.26.0
 tqdm==4.67.3
-transformers==5.5.4
+transformers==5.6.0
 tree-sitter==0.25.2
-tree-sitter-c==0.24.1
+tree-sitter-c==0.24.2
 tree-sitter-javascript==0.25.0
 tree-sitter-python==0.25.0
 tree-sitter-typescript==0.23.2
@@ -247,7 +247,7 @@ virtualenv==21.2.4
 wandb==0.26.0
 wcwidth==0.6.0
 websockets==16.0
-wheel==0.46.3
+wheel==0.47.0
 word2number==1.1
 xdg-base-dirs==6.0.2
 xlsxwriter==3.2.9
