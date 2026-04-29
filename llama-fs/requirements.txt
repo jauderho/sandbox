@@ -40,8 +40,6 @@ filetype==1.2.0
 flatbuffers==25.12.19
 frozenlist==1.8.0
 fsspec==2026.3.0
-gitdb==4.0.12
-gitpython==3.1.48
 googleapis-common-protos==1.74.0
 gql==4.0.0
 graphql-core==3.2.8
@@ -78,7 +76,7 @@ langgraph==1.1.10
 langgraph-checkpoint==4.0.3
 langgraph-prebuilt==1.0.12
 langgraph-sdk==0.3.13
-langsmith==0.7.37
+langsmith==0.7.38
 litellm==1.83.0
 llama-index==0.14.21
 llama-index-core==0.14.21
@@ -144,7 +142,6 @@ sentry-sdk==2.58.0
 setuptools==82.0.1
 shellingham==1.5.4
 six==1.17.0
-smmap==5.0.3
 sniffio==1.3.1
 sortedcontainers==2.4.0
 sqlalchemy==2.0.49
@@ -164,10 +161,9 @@ urllib3==2.6.3
 uuid-utils==0.14.1
 uvicorn==0.46.0
 uvloop==0.22.1 ; platform_python_implementation != 'PyPy' and sys_platform != 'cygwin' and sys_platform != 'win32'
-wandb==0.26.1
 watchdog==6.0.0
 watchfiles==1.1.1
-weave==0.52.37
+weave==0.52.38
 websocket-client==1.9.0
 websockets==16.0
 wrapt==1.17.3
