@@ -5,7 +5,7 @@ anyio==4.13.0
 backports-zstd==1.5.0 ; python_full_version < '3.14'
 build==1.5.0
 cachecontrol==0.14.4
-certifi==2026.4.22
+certifi==2026.5.20
 cffi==2.0.0 ; (platform_python_implementation != 'PyPy' and sys_platform == 'linux') or sys_platform == 'darwin'
 charset-normalizer==3.4.7
 cleo==2.1.0
@@ -14,7 +14,7 @@ colorama==0.4.6 ; os_name == 'nt' or sys_platform == 'win32'
 crashtest==0.4.1
 cryptography==48.0.0 ; sys_platform == 'linux'
 distlib==0.4.0
-dulwich==1.2.1
+dulwich==1.2.3
 fastjsonschema==2.21.2
 filelock==3.29.0
 findpython==0.8.0
@@ -51,7 +51,7 @@ rich==15.0.0
 secretstorage==3.5.0 ; sys_platform == 'linux'
 shellingham==1.5.4
 tomlkit==0.14.0
-trove-classifiers==2026.5.7.17
+trove-classifiers==2026.5.20.19
 typer==0.21.2
 urllib3==2.7.0
 virtualenv==21.3.3
