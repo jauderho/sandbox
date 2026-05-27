@@ -706,15 +706,6 @@ wheels = [
 ]
 
 [[package]]
-name = "fastjsonschema"
-version = "2.21.2"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/20/b5/23b216d9d985a956623b6bd12d4086b60f0059b27799f23016af04a74ea1/fastjsonschema-2.21.2.tar.gz", hash = "sha256:b1eb43748041c880796cd077f1a07c3d94e93ae84bba5ed36800a33554ae05de", size = 374130, upload-time = "2025-08-14T18:49:36.666Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/cb/a8/20d0723294217e47de6d9e2e40fd4a9d2f7c4b6ef974babd482a59743694/fastjsonschema-2.21.2-py3-none-any.whl", hash = "sha256:1c797122d0a86c5cace2e54bf4e819c36223b552017172f32c5c024a6b77e463", size = 24024, upload-time = "2025-08-14T18:49:34.776Z" },
-]
-
-[[package]]
 name = "fastmcp"
 version = "3.4.0b1"
 source = { registry = "https://pypi.org/simple" }
@@ -1164,19 +1155,6 @@ wheels = [
 ]
 
 [[package]]
-name = "jupyter-core"
-version = "5.9.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "platformdirs" },
-    { name = "traitlets" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/02/49/9d1284d0dc65e2c757b74c6687b6d319b02f822ad039e5c512df9194d9dd/jupyter_core-5.9.1.tar.gz", hash = "sha256:4d09aaff303b9566c3ce657f580bd089ff5c91f5f89cf7d8846c3cdf465b5508", size = 89814, upload-time = "2025-10-16T19:19:18.444Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/e7/e7/80988e32bf6f73919a113473a604f5a8f09094de312b9d52b79c2df7612b/jupyter_core-5.9.1-py3-none-any.whl", hash = "sha256:ebf87fdc6073d142e114c72c9e29a9d7ca03fad818c5d300ce2adc1fb0743407", size = 29032, upload-time = "2025-10-16T19:19:16.783Z" },
-]
-
-[[package]]
 name = "keyring"
 version = "25.7.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1204,16 +1182,16 @@ wheels = [
 
 [[package]]
 name = "langchain"
-version = "1.3.1"
+version = "1.3.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "langchain-core" },
     { name = "langgraph" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/11/e5/6350e77a9e2764eaafcb2d581cbf0b800f53c6bc98fdf5ebc85f3a931ded/langchain-1.3.1.tar.gz", hash = "sha256:bc283c220233230f48b8e50ab1fbf1b688bcb206d933fa448d40a9b143177f62", size = 581329, upload-time = "2026-05-15T18:14:55.368Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d5/d0/c7f9d3d26c0e3f8bb146c6d707ee0fc1d30d8da65a59626e8a580085e929/langchain-1.3.2.tar.gz", hash = "sha256:ffd5f204a46b5fa1a38bf89ba3b45ca0902c02d18fa7d2a2eaeaeb1f5bf19d0a", size = 600598, upload-time = "2026-05-26T18:17:57.715Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/78/11/3d7ed10b535413a07ed5e15682abcb77f3c4204ac49586977a495f9b24e6/langchain-1.3.1-py3-none-any.whl", hash = "sha256:154e9c30c90b391eba4315296f6bf6b6fac6b058ddea4cc771a10470968fe36f", size = 114345, upload-time = "2026-05-15T18:14:53.984Z" },
+    { url = "https://files.pythonhosted.org/packages/f8/82/a54edcd1c48163de5642eb10fa2cb58b13a8889c659964f63f0306b58b1e/langchain-1.3.2-py3-none-any.whl", hash = "sha256:900f6b3f4ee08b9ba3cdbe667dbf42525bd6f66a4a07a7f1db26262673e41ed6", size = 121225, upload-time = "2026-05-26T18:17:56.075Z" },
 ]
 
 [[package]]
@@ -1250,7 +1228,7 @@ wheels = [
 
 [[package]]
 name = "langgraph"
-version = "1.2.1"
+version = "1.2.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "langchain-core" },
@@ -1260,9 +1238,9 @@ dependencies = [
     { name = "pydantic" },
     { name = "xxhash" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1c/8e/34a57e338a319e3b32c1bd183c2a9a04f7f35d683d3f3d8f597f6eacbc4e/langgraph-1.2.1.tar.gz", hash = "sha256:28314f844678d9d307cbd63e7b48b0145bf17177d84b40ee2921061e07b6f966", size = 693750, upload-time = "2026-05-21T18:33:07.478Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e6/5a/ffc12434ee8aecab830d58b4d204ddea45073eae7639c963310f671a5bf5/langgraph-1.2.2.tar.gz", hash = "sha256:f54a98458976b3ff0774683867df125fb52d8dbedeb2441d0b0656a51331cee5", size = 695730, upload-time = "2026-05-26T18:07:28.49Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/73/8c/313912e26866893bd15be9b4ea3442dc86f69270b0ad01a4961d1eba7118/langgraph-1.2.1-py3-none-any.whl", hash = "sha256:5cc4020de8f1e2a048d773f6e9128646a2af8c68a8067ab9cab177a2fcc8d221", size = 235317, upload-time = "2026-05-21T18:33:05.687Z" },
+    { url = "https://files.pythonhosted.org/packages/42/9b/b08d578bba73e25351152dfd3d6d21e81210a5fff1b6f26e56f33197c8f5/langgraph-1.2.2-py3-none-any.whl", hash = "sha256:0a851bf4ba5939c5474a2fd57e6b439b5315283e254e42943bd392c2d71a5e03", size = 236376, upload-time = "2026-05-26T18:07:26.577Z" },
 ]
 
 [[package]]
@@ -1592,21 +1570,6 @@ wheels = [
 ]
 
 [[package]]
-name = "nbformat"
-version = "5.10.4"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "fastjsonschema" },
-    { name = "jsonschema" },
-    { name = "jupyter-core" },
-    { name = "traitlets" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/6d/fd/91545e604bc3dad7dca9ed03284086039b294c6b3d75c0d2fa45f9e9caf3/nbformat-5.10.4.tar.gz", hash = "sha256:322168b14f937a5d11362988ecac2a4952d3d8e3a2cbeb2319584631226d5b3a", size = 142749, upload-time = "2024-04-04T11:20:37.371Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/a9/82/0340caa499416c78e5d8f5f05947ae4bc3cba53c9f038ab6e9ed964e22f1/nbformat-5.10.4-py3-none-any.whl", hash = "sha256:3b48d6c8fbca4b299bf3982ea7db1af21580e4fec269ad087b9e81588891200b", size = 78454, upload-time = "2024-04-04T11:20:34.895Z" },
-]
-
-[[package]]
 name = "numpy"
 version = "2.4.6"
 source = { registry = "https://pypi.org/simple" }
@@ -1670,7 +1633,7 @@ wheels = [
 
 [[package]]
 name = "openbb"
-version = "4.7.1"
+version = "4.7.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-benzinga" },
@@ -1704,9 +1667,9 @@ dependencies = [
     { name = "openbb-us-eia" },
     { name = "openbb-yfinance" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0f/c2/f7d33931d73c59b5c8138504bf722795e3c874b99661de59f2870cbdadac/openbb-4.7.1.tar.gz", hash = "sha256:89c363f4aa8814940d36dfdeb9b8e61449e7ef80edd99d1cbbd9eb98c4e67b2b", size = 5702, upload-time = "2026-03-09T16:16:50.693Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d5/3c/c7fcea294369f483869cbee9761e1839a22f46c1ca141b7e55f271cb21a6/openbb-4.7.2.tar.gz", hash = "sha256:24ca5e5c7a6c71423cf5947a0ed300c98c4033d4c8f1c30a5cd5e44b76b3476e", size = 5753, upload-time = "2026-05-26T18:24:35.673Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0a/62/791dee5d4b0b654f4541329c6572a9530d8b98ccf642526a249c10b8867a/openbb-4.7.1-py3-none-any.whl", hash = "sha256:d2f7bf1fecc3c01dd19e4f627b1ce272ba6eb5f7c3b2fd02beed9b05fc7b746c", size = 5977, upload-time = "2026-03-09T16:16:51.577Z" },
+    { url = "https://files.pythonhosted.org/packages/c4/9f/0f7e22703d6b26320bc03ac24f394923ee78d044b9a09378be0a8c1ffbfb/openbb-4.7.2-py3-none-any.whl", hash = "sha256:00ed7cc3e817c888c02009debebcb20d76f2d0e5d2fda96fb99be8cc0abf58c0", size = 6153, upload-time = "2026-05-26T18:24:36.58Z" },
 ]
 
 [package.optional-dependencies]
@@ -1735,91 +1698,91 @@ all = [
 
 [[package]]
 name = "openbb-alpha-vantage"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/8d/83/c2fbfa43563629d8ac066fa00d19523c5dd9f8b75d8954838aa47b641948/openbb_alpha_vantage-1.6.0.tar.gz", hash = "sha256:9d43b2ead7efd03f1726ec25ed03978a80461268ff62c7562ba8a5adb220a757", size = 6902, upload-time = "2026-03-05T01:41:55.721Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/25/82/3bc8d2b689010d32a06651500b4b8fb4e632e2cfe9c30008ad32af4120c8/openbb_alpha_vantage-1.6.1.tar.gz", hash = "sha256:429ce237693ea71ee70c09b3de0230060e8d69d78f45a89e5dda19260bc1fc44", size = 6903, upload-time = "2026-05-26T17:01:30.559Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/52/43/0aca88facc9a945ec308d3908b7bfbee980cd1cafd3399461ea6cc965acd/openbb_alpha_vantage-1.6.0-py3-none-any.whl", hash = "sha256:b461940e40727260df890d12441f14006b062a76cd1616658ca8e6308ddbff8c", size = 9931, upload-time = "2026-03-05T01:41:56.884Z" },
+    { url = "https://files.pythonhosted.org/packages/21/d5/1fe6f29cd1e2731614665ece4dd762eec1963bead4215aa0ac9f0443803d/openbb_alpha_vantage-1.6.1-py3-none-any.whl", hash = "sha256:77a5c6409efb9ddba1de8ecd976b3d054c4d73ba7e30aed85b7c6884ff2f40eb", size = 9929, upload-time = "2026-05-26T17:01:31.527Z" },
 ]
 
 [[package]]
 name = "openbb-benzinga"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d3/01/71ebccf8b59d115d2693fd9842827a21ba56309c11d546c32a126be7b024/openbb_benzinga-1.6.0.tar.gz", hash = "sha256:ea3804697edddee432de7deae0651e639a55ec3db27fb7c03afbccbeaca57f1c", size = 8037, upload-time = "2026-03-05T01:42:05.074Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c8/4f/8ece1061315614c77b3bda2e33371554088e7af04fb27f0126a01833ff19/openbb_benzinga-1.6.1.tar.gz", hash = "sha256:ffb90defb8a76d734f3e2ed77320643f374a136a587aea5bb12cef9ca1759824", size = 8036, upload-time = "2026-05-26T17:01:36.694Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/70/ef/ded2771b0a873ebfdd3a6107589bd7e6b802d571536932d1719c64396c03/openbb_benzinga-1.6.0-py3-none-any.whl", hash = "sha256:85b14bcf35b18fc94b61ff9ca54e6318598cd7915f3a6ce87e06fb0fcd7ac35b", size = 13914, upload-time = "2026-03-05T01:42:05.924Z" },
+    { url = "https://files.pythonhosted.org/packages/e0/26/e1e923705e58f69c00bd98e2f5d9bb76bb243694112b24f9f46205a50ce5/openbb_benzinga-1.6.1-py3-none-any.whl", hash = "sha256:52079194ecec27825b23c56fb9467dde51cf520c792078baf2a74f621a8c141a", size = 13914, upload-time = "2026-05-26T17:01:38.228Z" },
 ]
 
 [[package]]
 name = "openbb-biztoc"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/77/94/acca0de57abe84a01d91598060f624dc609719c1171f22f4f41e801bfa65/openbb_biztoc-1.6.0.tar.gz", hash = "sha256:7a92dd20057146de2fd46c2faea51eaa481438cb2a4bf29167881ecc12562d74", size = 3379, upload-time = "2026-03-05T01:42:14.052Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/79/67/f78d7fc128121a8500fd3efd4faa4b2f3ca6d2fcfd0204f418face702650/openbb_biztoc-1.6.1.tar.gz", hash = "sha256:6a2aa15c7fdbd37989e6a2e710dbcb07a39234740cc74b422210378d848cddd8", size = 3383, upload-time = "2026-05-26T17:01:43.069Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c1/4f/8c51077b3d2d809b8d010dc811bb1d0c57fd9c168b81e6c7f721cc4f930a/openbb_biztoc-1.6.0-py3-none-any.whl", hash = "sha256:1a536512e81201e223ba84de3558efebd1cc9ac73020139c94c07a88024839e0", size = 4774, upload-time = "2026-03-05T01:42:14.88Z" },
+    { url = "https://files.pythonhosted.org/packages/b3/8e/ba341077452972bd33ef0e99c0748148494483ba3150aa3dffb35477a3cf/openbb_biztoc-1.6.1-py3-none-any.whl", hash = "sha256:bb304ad88de4d6acb7e51279c1188af5ffb0953f1aa21160470178fcdce709d4", size = 4773, upload-time = "2026-05-26T17:01:43.752Z" },
 ]
 
 [[package]]
 name = "openbb-bls"
-version = "1.3.0"
+version = "1.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/33/7a/0508b61acd397e8c0d66a204da9d3242e67c034af1c3d48fd8c45a9aea26/openbb_bls-1.3.0.tar.gz", hash = "sha256:06cdb42ad940547291d8e9b6364b1d44bcfa5ff6147e3975899fb300d8759621", size = 9829091, upload-time = "2026-03-05T01:42:32.982Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e4/15/3556c8665a2dee56c08fe1040c368ab2b086bf4b35db2d0792378169a6aa/openbb_bls-1.3.1.tar.gz", hash = "sha256:09cbdc29216a0f3bfe0a86110d7d4e03749040f4cdd9544b488579e2b9afbcc7", size = 9829088, upload-time = "2026-05-26T17:01:52Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5f/78/22c0aca017442c229e179f46d8536b6da5417aabb5f674f9efed1e1be05d/openbb_bls-1.3.0-py3-none-any.whl", hash = "sha256:f244bc97df093fdc4c34994c9d6d37cda61d278e010b6e9f4567d38141f0a780", size = 9818269, upload-time = "2026-03-05T01:42:42.944Z" },
+    { url = "https://files.pythonhosted.org/packages/c8/26/f1655dfa032a493d677a3bb4f0275c30e5897325d9c589a6b6e244cb7de5/openbb_bls-1.3.1-py3-none-any.whl", hash = "sha256:d429bbc317bf66aaacebcd880a2ba1126377afed087056455a9071f7c235faf1", size = 9818267, upload-time = "2026-05-26T17:02:00.22Z" },
 ]
 
 [[package]]
 name = "openbb-cboe"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp-client-cache" },
     { name = "aiosqlite" },
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ec/1f/97e091225c0b8592497cb7ea274bccf2268af0fc91da84e3b058ddac36b9/openbb_cboe-1.6.0.tar.gz", hash = "sha256:4ca52536962172af3f6367eade7d9f29b0a42899e55a44705e94346c9def279b", size = 16293, upload-time = "2026-03-05T01:42:53.1Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6b/84/12ce3fd9b6045ecbe0c44557a2b036af961399481e7684ab85a5e77fce50/openbb_cboe-1.6.1.tar.gz", hash = "sha256:a9533664bfa85d2eb996586657636497d6e5a9a3fb48d8089abcad535bbdb3e2", size = 16293, upload-time = "2026-05-26T17:02:05.815Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e2/b1/5ba88355a960ae0528eaafad4414e3abff01e77bda8808947a0786ae981f/openbb_cboe-1.6.0-py3-none-any.whl", hash = "sha256:f8f1692b8e571240dcafb7ee1e0c93b55d6255e4bb98c4075c4904cb44ab4d4b", size = 27463, upload-time = "2026-03-05T01:42:53.889Z" },
+    { url = "https://files.pythonhosted.org/packages/08/75/91f0f562173c5977fdf06aa93d57964c6af144c80e2ff787d4652828439f/openbb_cboe-1.6.1-py3-none-any.whl", hash = "sha256:3334a3a8f5f720d1d67468db0ef81066f967d1a2be6d3d0110f35d77cc1e399d", size = 27463, upload-time = "2026-05-26T17:02:06.634Z" },
 ]
 
 [[package]]
 name = "openbb-cftc"
-version = "1.3.0"
+version = "1.4.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
+    { name = "openbb-platform-api" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/82/c1/691c594a2543ca832ecc5bc177f06be560399264d0f30ee31165eb7fb0e1/openbb_cftc-1.3.0.tar.gz", hash = "sha256:51c82ff2ac56e91d699f748fcd73edf6831d5b54b2a89e23facffeecb0e3391c", size = 10563, upload-time = "2026-03-05T01:43:01.489Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e5/9a/ee99830947be3ccc8c9047771b0a3e76ea0aa24c0ae1768f8fd1def7fc6d/openbb_cftc-1.4.1.tar.gz", hash = "sha256:f575666cff83a3308558de16dd52fc24b339c9b2c8de9913fac57b5648a44e5d", size = 17726, upload-time = "2026-05-26T17:02:11.399Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b9/bb/77e0471b3855136b7b6122785088d4f08ec9efbc0b6c93242a398cbea930/openbb_cftc-1.3.0-py3-none-any.whl", hash = "sha256:d573abaf2ee867d3d62041e17c900fb5ce0025b881b74995e0b88c13ace4e7b6", size = 12677, upload-time = "2026-03-05T01:43:02.129Z" },
+    { url = "https://files.pythonhosted.org/packages/d5/fd/033ce80b91dce6e34ec3dac3fff40b7157dc87e2f1f6a38fc91a1617fce4/openbb_cftc-1.4.1-py3-none-any.whl", hash = "sha256:fb4b7146940d3b05ce30a3e9b5f455fc6448950652a0c3bbe1d3261c1993845d", size = 19346, upload-time = "2026-05-26T17:02:12.102Z" },
 ]
 
 [[package]]
 name = "openbb-charting"
-version = "2.5.1"
+version = "3.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "nbformat" },
     { name = "openbb-core" },
     { name = "pandas-ta-openbb" },
     { name = "plotly" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d4/b8/6067388efca56c9080b2bb3ec87b2ef8078025212e1ed8ce27b785c0bb49/openbb_charting-2.5.1.tar.gz", hash = "sha256:2f5b12c52da850c4de95c46e794c6b7b6b3515482b2a5d56785d900599b0e752", size = 3646254, upload-time = "2026-03-05T01:47:23.436Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8a/43/b7819f3f7cb8d7985186232339c41cff91224e583181321dd264fbc3a2f0/openbb_charting-3.0.0.tar.gz", hash = "sha256:d5609f057f7c502461e1e7ebb788c2d9f67dc724dec4dc1fa7b7b4fcab870f71", size = 487435, upload-time = "2026-05-26T17:04:37.407Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3c/58/9d911e47fade82849b0efe22b39a25192ebdbad32e7b80a94398f491fc36/openbb_charting-2.5.1-py3-none-any.whl", hash = "sha256:b900d26453a5bd923cb7b7b6e77110f7fe405876748186f2ca3e0e085cfa4ee6", size = 3667715, upload-time = "2026-03-05T01:47:27.016Z" },
+    { url = "https://files.pythonhosted.org/packages/24/c4/1bf11f329a82baa85d772324bca64b287971580c50a95e9aec9fc4363c71/openbb_charting-3.0.0-py3-none-any.whl", hash = "sha256:b0ba4389e3ea406306e26f4586e273669fe1f9e90310bb8901452ba3eff74dbf", size = 501779, upload-time = "2026-05-26T17:04:39.637Z" },
 ]
 
 [[package]]
@@ -1867,31 +1830,31 @@ dev = []
 
 [[package]]
 name = "openbb-commodity"
-version = "1.5.1"
+version = "1.5.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/cf/76/a966d7060532d3b93d5a17df88c43710e2d59fee3f3d7d7abc50304fbac8/openbb_commodity-1.5.1.tar.gz", hash = "sha256:53f0e542bece0785617fd00a4bfa887fbadb127eaba44a271c3b21eff12c0c78", size = 3748, upload-time = "2026-03-05T01:35:36.488Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/76/14/6b0f073a4b405756e8170cbeb49f5cddc1fc4e7f9aadd5e0a4d8668d22f7/openbb_commodity-1.5.2.tar.gz", hash = "sha256:508d686e4781f8c14c1578eb896e968bcd3f86f779249f28726479a948735ad6", size = 3750, upload-time = "2026-05-26T16:50:35.566Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4d/84/9d5ab9fb33e4e4cce7572ea912ee6f7f2cea62d31f72d5afe32ba65a9fce/openbb_commodity-1.5.1-py3-none-any.whl", hash = "sha256:131c040e2b5eedac70a8f7094452811ec3ed35d51bee7c7e726abf1d452261f5", size = 5398, upload-time = "2026-03-05T01:35:37.147Z" },
+    { url = "https://files.pythonhosted.org/packages/b7/9f/3a5e22e9af975600eb8796324f0f25a37ea7daa648119ddfba4de13a2a70/openbb_commodity-1.5.2-py3-none-any.whl", hash = "sha256:12291626bfacb60a808a79470814b9626b2821feae52c836d5791d213ff7608f", size = 5399, upload-time = "2026-05-26T16:50:36.769Z" },
 ]
 
 [[package]]
 name = "openbb-congress-gov"
-version = "1.2.2"
+version = "1.2.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/25/24/f6959d326a9fa02719d953a71b96e95a57cfb7877b390043497ddbf20020/openbb_congress_gov-1.2.2.tar.gz", hash = "sha256:c5e36e2f48f6fefc6ddaf053f4dcbc2c5756eb65fe27d09b240d94c36fa5bfbd", size = 16136, upload-time = "2026-03-09T23:51:01.268Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/9d/c6/a6a10a5ab74587f21e48c5f829398f6e7e7125097651cc147de2fa961402/openbb_congress_gov-1.2.3.tar.gz", hash = "sha256:58918abb2f8662048339579e945fb35cfde46d25ae705d4c06c976469aff0c49", size = 42388, upload-time = "2026-05-26T17:02:16.535Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f4/18/abac8654b1d69025223184710c5056e29ce8175db9c2e9cb1529a4d20b3b/openbb_congress_gov-1.2.2-py3-none-any.whl", hash = "sha256:603da98f172ade642b6021c25886a617ae62f8a0481a372e96e53e5d14a652ec", size = 21048, upload-time = "2026-03-09T23:51:02.342Z" },
+    { url = "https://files.pythonhosted.org/packages/7a/8e/61cd35681fa0e7136783010652244b6ff422e6e9fa4c17d12d2a7e7fd4b6/openbb_congress_gov-1.2.3-py3-none-any.whl", hash = "sha256:d32effe085e95daaf173e944ad5238a22f41e24b8c1348f2859b5a46017feb1b", size = 55256, upload-time = "2026-05-26T17:02:17.327Z" },
 ]
 
 [[package]]
 name = "openbb-core"
-version = "1.6.9"
+version = "1.6.10"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
@@ -1909,90 +1872,90 @@ dependencies = [
     { name = "uvicorn" },
     { name = "websockets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/67/d3/4c99668437ea5fea84c3b2ac609cbaaf68827258f723da10583195127933/openbb_core-1.6.9.tar.gz", hash = "sha256:3cfaeae08104f395c80ce2949ed93142b835075b5cb7e7e8a1729d81cac65d01", size = 244609, upload-time = "2026-05-08T01:18:59.891Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/24/b6/dec06838f0d08e0a69da32a793188737dfdcff17abebb9e66fdf7a034d70/openbb_core-1.6.10.tar.gz", hash = "sha256:37e5aabc0a03fdac4f05f460127bfcb81c249afc6d6033997c246a97be70d0fe", size = 245140, upload-time = "2026-05-26T15:56:57.475Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f3/5e/91641f227ef4d7fa5fed0d13c92cf191089bf256b9456f4bdca0db1eb3bc/openbb_core-1.6.9-py3-none-any.whl", hash = "sha256:09172982421960bf66ff0c8944921eaea0e1a79b8e4a6aa71550ec03b5944981", size = 380273, upload-time = "2026-05-08T01:19:01.197Z" },
+    { url = "https://files.pythonhosted.org/packages/54/92/07026f3b29e1fe213b8e356b4d2cd234c1a4bf9c8e9f906bad4888d457fb/openbb_core-1.6.10-py3-none-any.whl", hash = "sha256:45b036ee816f2d5b1f25124f0a76f437c8a6304aa3b7d09b4c954339c6f0c447", size = 380988, upload-time = "2026-05-26T15:56:58.706Z" },
 ]
 
 [[package]]
 name = "openbb-crypto"
-version = "1.6.1"
+version = "1.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/5f/34/de330cfae848fef5de257f907d4afa8d37cc53b3d4786c29dfe80aae88b8/openbb_crypto-1.6.1.tar.gz", hash = "sha256:a3acfe776cdd685de4d7a707c6ba1b2ff1344cf756c6aa071510689032875172", size = 1954, upload-time = "2026-03-05T01:39:13.152Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8a/8d/529108637ec2060bb93e1bcdf0229c9cca182051cf9774a63ffc2cc07f20/openbb_crypto-1.6.2.tar.gz", hash = "sha256:5bf427fb9178389496a4041d4ae5da8eef250ddb34edb48415de75d9c0974ea0", size = 1956, upload-time = "2026-05-26T16:53:52.324Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a8/18/dc1fb4879299df4d9aaa1c1b859c3edc0758783d92def4a9c798aac07610/openbb_crypto-1.6.1-py3-none-any.whl", hash = "sha256:ecf31c023594e44605163438e61ffcaf10226a7cf5cd2cda2b521126d86b7e67", size = 3975, upload-time = "2026-03-05T01:39:14.175Z" },
+    { url = "https://files.pythonhosted.org/packages/96/87/f005338b3ac39cf0915cbe2eeab191817dfa44e54198b4c672c7175b74da/openbb_crypto-1.6.2-py3-none-any.whl", hash = "sha256:3928420531ee6331a69f35ebb48570fd9a1abf090052a66f818a385b2584baa9", size = 3977, upload-time = "2026-05-26T16:53:53.091Z" },
 ]
 
 [[package]]
 name = "openbb-currency"
-version = "1.6.1"
+version = "1.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/56/c9/edeaa9161f6346cbf209948540da92493afdce52a9ea1bede4c9e44c2e1b/openbb_currency-1.6.1.tar.gz", hash = "sha256:50f872c258e7855647450204cd9098cd4ac41cb556fb03a072aaf99336644878", size = 2755, upload-time = "2026-03-05T01:39:22.531Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2e/15/3148975cc4d2953905fd1817fde5f13a0b9042b33b0ec67713646edf049b/openbb_currency-1.6.2.tar.gz", hash = "sha256:ab5756c6bec000e45ac6749425200eaba9274a31ab79544694375be8bac2f07e", size = 2757, upload-time = "2026-05-26T17:00:14.115Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/14/5e/eedec42b18ad2ac1c77f3de1b1eec77b18cbd42f9105b993ddf82d54e51b/openbb_currency-1.6.1-py3-none-any.whl", hash = "sha256:e31e04139833358c088f913888d3d47aafc1977cbc2faec845bc7532d0222e94", size = 4877, upload-time = "2026-03-05T01:39:23.58Z" },
+    { url = "https://files.pythonhosted.org/packages/ea/04/d8ddc56e41e42a4382afcc1a33ff70f9d2df3cf43328e2f2f2496ffada76/openbb_currency-1.6.2-py3-none-any.whl", hash = "sha256:e904ea0e8d95eaab981254ae1da3b43885b1e9e4e341d41c28362c2f46143e6e", size = 4879, upload-time = "2026-05-26T17:00:15.168Z" },
 ]
 
 [[package]]
 name = "openbb-deribit"
-version = "1.2.0"
+version = "1.2.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "async-lru" },
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/41/93/9a8b9326cfaa4caf34a97f454d6e9e54cd79d754595d04652292e138facb/openbb_deribit-1.2.0.tar.gz", hash = "sha256:c60e004bebac96c6200a7fc5fde777b2f8f12ae2991a8a3bfc06ec530df3f476", size = 11431, upload-time = "2026-03-05T01:43:19.721Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/40/11/4002e4cbc20438016911e76cea2e74992228ebbb4954844f32142d172bb3/openbb_deribit-1.2.1.tar.gz", hash = "sha256:66d69b04ad779abdb84651ed09ce312be9c9afb5dc068e241761d00b708d5a65", size = 11430, upload-time = "2026-05-26T17:02:21.704Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/91/06/cea74b9dab5e031c41402a506c4c130e27cccdb355bb0324f9c694c29add/openbb_deribit-1.2.0-py3-none-any.whl", hash = "sha256:228b221f27877c04b206b03b271b66d95d015ea75d8deaec45c8771e2ad5196f", size = 17255, upload-time = "2026-03-05T01:43:20.757Z" },
+    { url = "https://files.pythonhosted.org/packages/91/8e/7bed5d7a8520bbf03ecc4d44436af63babf18b9236123de5888eab8776be/openbb_deribit-1.2.1-py3-none-any.whl", hash = "sha256:1c57b508e4dce510f4588197b6cc2ddc8250d7d9b9a36f0ccd12e3bb606988f9", size = 17255, upload-time = "2026-05-26T17:02:22.598Z" },
 ]
 
 [[package]]
 name = "openbb-derivatives"
-version = "1.6.1"
+version = "1.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e4/5c/ca3c9dd9ed1f2c85a7eaf2cba99b2ca1b6b7abe2c3e56b99f0bea498fbe7/openbb_derivatives-1.6.1.tar.gz", hash = "sha256:d00ccbb29be3bf200101b9942f0be54fc1306a603419066cdbaf0ed860127c26", size = 7480, upload-time = "2026-03-05T01:39:31.257Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/4a/83/d4414d15204ec115d85e2a82437082bb678a24cabc01572228e741450db4/openbb_derivatives-1.6.2.tar.gz", hash = "sha256:df83b68c20b73b7de84a671b0ca846e632bce389ce6600cc0ef590ca8732f14e", size = 7484, upload-time = "2026-05-26T17:00:19.904Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fb/2f/47d04a75e76aecffd40967c2244b2ff86e326b84aed32dd5f2dc84d65a23/openbb_derivatives-1.6.1-py3-none-any.whl", hash = "sha256:bde02ce81ba98a45fa0a7a8e548327c2b64fa6d903de2ac79b2b29874b42d7ab", size = 10167, upload-time = "2026-03-05T01:39:32.383Z" },
+    { url = "https://files.pythonhosted.org/packages/5d/25/197ededdb5c4ef3be455ddf883e4da89aaf8f5d9c4409884efa51bb22474/openbb_derivatives-1.6.2-py3-none-any.whl", hash = "sha256:e37a4ac61ac5566553dfdb96dae57d71503d1ef4df8565f953d725e44fb90694", size = 10168, upload-time = "2026-05-26T17:00:20.843Z" },
 ]
 
 [[package]]
 name = "openbb-ecb"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
     { name = "xmltodict" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/fb/b6/145ec5c53c3790c445ae6a7fb4a1cba128f4b89b2a0f83624ec4fa7fa563/openbb_ecb-1.6.0.tar.gz", hash = "sha256:6552541605902995499cad9536a94dfcac420da49d9ef8c066b4c168c6d8a917", size = 7552, upload-time = "2026-03-05T01:43:29.539Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/33/9b/539dcb99cbca18ad1d06bfde3bcb96c5ff8f7cc5af6d2d9bd7d4cd483684/openbb_ecb-1.6.1.tar.gz", hash = "sha256:76de91f34d4aae2610bc9b04e8951b2e1ac4c9be086dae7724489604e0006164", size = 7556, upload-time = "2026-05-26T17:02:27.183Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e2/49/4a6c05ccc039820aa0481dc971e8448cf837a1db94772768c1693c20d85e/openbb_ecb-1.6.0-py3-none-any.whl", hash = "sha256:b925f5b06907c8fee45bc4502952e7ce2e6ba5bc8d61f3ade8e2b823eb1a37e5", size = 10942, upload-time = "2026-03-05T01:43:30.54Z" },
+    { url = "https://files.pythonhosted.org/packages/7a/a9/00e4c3a85e1c6e3547f90d3b2ae8205cce1b4fbfc1b8c04f7f4c0e015704/openbb_ecb-1.6.1-py3-none-any.whl", hash = "sha256:06cec48505c7060299ea601beef82d5ebfe24e9553fe2f867c0d18c79964419e", size = 10940, upload-time = "2026-05-26T17:02:28.315Z" },
 ]
 
 [[package]]
 name = "openbb-econdb"
-version = "1.5.0"
+version = "1.5.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp-client-cache" },
     { name = "aiosqlite" },
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/49/d1/0d1ada5d6a81eb4ebca64a0bfda90191234d62fa8d48cd0798e4fb61d22f/openbb_econdb-1.5.0.tar.gz", hash = "sha256:f9753934bec7b1f59d87126e7bbc73d6f5b20b6f26df235ca77c3e0f85d48cef", size = 86016, upload-time = "2026-03-05T01:43:49.973Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/55/1f/d0582bd7b6b9e53202765d18b3e0b3dc1dc345f60a7485a193f89216e00a/openbb_econdb-1.5.1.tar.gz", hash = "sha256:a380f05c507e8437a5699a3dccfeaa0b44efd4ddaee7154b48766b107077ba2b", size = 86014, upload-time = "2026-05-26T17:02:32.958Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2a/1f/86f5a1d53fcbccfb70ae0e8c2f58f65983a289ba44301af9f592f474bdd2/openbb_econdb-1.5.0-py3-none-any.whl", hash = "sha256:d613305ac0c3ef1205eec7d4086d49719ea3a75d12d4e5dd401d5f73c4c58e64", size = 99836, upload-time = "2026-03-05T01:43:55.494Z" },
+    { url = "https://files.pythonhosted.org/packages/80/ae/f833ad9162bf8f0fdbd55e34da65db210508cdb570d4eb3c4e8ea3e64e95/openbb_econdb-1.5.1-py3-none-any.whl", hash = "sha256:4ed973dd6cb807d69239e9f82bfd6a15482516c3f4d375caa92f05d2ed7f12c4", size = 99835, upload-time = "2026-05-26T17:02:33.893Z" },
 ]
 
 [[package]]
 name = "openbb-econometrics"
-version = "1.7.1"
+version = "1.7.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "arch" },
@@ -2000,62 +1963,62 @@ dependencies = [
     { name = "openbb-core" },
     { name = "pandas-ta-openbb" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e2/4a/a860253ed0099f1d874c4755dd9b4baf51f05f463f56c5aabe79eb18bbfe/openbb_econometrics-1.7.1.tar.gz", hash = "sha256:bf99a9e5341c08a7e94761ee8596da16aea7715eab17e7b4f710c893f4a6b3d9", size = 10330, upload-time = "2026-03-05T01:39:52.394Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a0/5e/c6be11453a316ad76c9b2fc58842b34fb9799a2a8267a967eee01657f7e7/openbb_econometrics-1.7.2.tar.gz", hash = "sha256:fd42e3381573d390d91685756e7a0fb9c7146b31734c2e69f2e7e33fca24da59", size = 10331, upload-time = "2026-05-26T17:00:25.469Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/48/cb/363887f25048998d0475d99795691e0cfc773f73d69a208bb5e7b8206587/openbb_econometrics-1.7.1-py3-none-any.whl", hash = "sha256:03c73fcfa7f060d5d4065cdacc9f184a7c821e4fe1b172a1e7904b0749cdad2d", size = 12154, upload-time = "2026-03-05T01:39:53.039Z" },
+    { url = "https://files.pythonhosted.org/packages/75/3b/2a1021257ef9a087bbab84f60b71873f53e999f56fb07a846c088da3d40b/openbb_econometrics-1.7.2-py3-none-any.whl", hash = "sha256:f545b839d4b4b8ce54ab4dd20b62718097c7a40ccca646afd64a9f4400125708", size = 12152, upload-time = "2026-05-26T17:00:26.652Z" },
 ]
 
 [[package]]
 name = "openbb-economy"
-version = "1.6.1"
+version = "1.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0d/c4/8a2d4b42c20888407148bbc22a877103ca878435765893f06de1b6785523/openbb_economy-1.6.1.tar.gz", hash = "sha256:ff69ac293742d4b9d2812f9d58faa5f4e8b3d7cc1e681c598434ff3371310c26", size = 12813, upload-time = "2026-03-05T01:40:01.816Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/81/33/1e070b7d9b4613c0aba9ebcc829cef60153791f41a077f551c0e3878ef59/openbb_economy-1.6.2.tar.gz", hash = "sha256:adbc4a7e46fb8502b05a3bbea03b0551879f89c977487734b7c3b26b2e1341dc", size = 12816, upload-time = "2026-05-26T17:00:31.327Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1c/c5/73e05d11fdebddda0e6786d15976ed41e90ac92ec526a0a5171a92194b65/openbb_economy-1.6.1-py3-none-any.whl", hash = "sha256:d9da6acb0ca56fa8316fd04d54c88bb4edd7df3fad68128e80c429c8499b7669", size = 15913, upload-time = "2026-03-05T01:40:02.598Z" },
+    { url = "https://files.pythonhosted.org/packages/56/28/9a0135b93db96926d96d4084ead1bb157ef9f926fc5802763f073f8053b3/openbb_economy-1.6.2-py3-none-any.whl", hash = "sha256:2a58ea55c5c7b5b19d995bd36e297f78446edab46b155ceda5d470dd36a5b5f8", size = 15916, upload-time = "2026-05-26T17:00:32.405Z" },
 ]
 
 [[package]]
 name = "openbb-equity"
-version = "1.6.1"
+version = "1.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f1/b7/c3b1aa9acd07876db89222c4c71b18c7911bd2552625690b8501b2763c24/openbb_equity-1.6.1.tar.gz", hash = "sha256:0114e71b5bd3e423f06a71514e6eff3272f5c5d8cce0a7368fe3ac25f2887f54", size = 8409, upload-time = "2026-03-05T01:40:10.81Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/17/71/93a5980580b3eda4f1566ff4346a71385f68efe12538b46c53c0264b1cf0/openbb_equity-1.6.2.tar.gz", hash = "sha256:143bfcc2766227af14e804312645e3e77762b2954d0750ead0a1c7f8ec2e64dc", size = 8412, upload-time = "2026-05-26T17:00:36.972Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/37/eb/90c59ffb3bd0582e0743f30b887dfbb0f91b535f3a280f7e17137a08f564/openbb_equity-1.6.1-py3-none-any.whl", hash = "sha256:f3c94c0415d4bc6fdb254f6040d137be76bcf73223edc00703162b0d0c57ac33", size = 16477, upload-time = "2026-03-05T01:40:11.704Z" },
+    { url = "https://files.pythonhosted.org/packages/87/40/52c233b85883e7ee88412dc36175601b57beeb2a62ec88eae3677a7bf5da/openbb_equity-1.6.2-py3-none-any.whl", hash = "sha256:4985c3184d3b23e2eb232d925f2bbd6fbd404e1e00158bcb0703ba93617b4277", size = 16478, upload-time = "2026-05-26T17:00:37.94Z" },
 ]
 
 [[package]]
 name = "openbb-etf"
-version = "1.6.1"
+version = "1.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/42/68/09cb2fad6dd30714d6bcd70d30bf842fffc4e4abc7915943dc197d287f4b/openbb_etf-1.6.1.tar.gz", hash = "sha256:1dbf9f750212e67d140a3a4ee8f65784a9172303e96645cd7c08f980a128eb0f", size = 3330, upload-time = "2026-03-05T01:40:19.482Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f5/fd/8dc8b45a2ffa1443f2afe44cfa9674b7d62d882d31dd8d5220fe893545b1/openbb_etf-1.6.2.tar.gz", hash = "sha256:d6bed2d7922db3bccb5ae8a9b1929812d2732e98dfc8c6deec978a5deac2c175", size = 3333, upload-time = "2026-05-26T17:00:42.367Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/61/cf/6a6b6af20fae1bb996e2afd0202307aed0e893442a87817d68c637e706c8/openbb_etf-1.6.1-py3-none-any.whl", hash = "sha256:b62bfd1ce781c60c5e7f045ad56adb831db077535a15d2afd03901decb31abc2", size = 5312, upload-time = "2026-03-05T01:40:20.193Z" },
+    { url = "https://files.pythonhosted.org/packages/97/e9/5c3a37e3cff2dfe4ebae52eb975ec8e8ca8422d7030d90d084f3232cfdfd/openbb_etf-1.6.2-py3-none-any.whl", hash = "sha256:8eff3c7b4e8f7a25195b3229e90bca53abba179e325221262e50a5faf61314a8", size = 5313, upload-time = "2026-05-26T17:00:43.448Z" },
 ]
 
 [[package]]
 name = "openbb-famafrench"
-version = "1.2.0"
+version = "1.2.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/24/23/7f24207e0a72cebabfa9716176f549c3bd6fa145015d181d60c2da39b2b3/openbb_famafrench-1.2.0.tar.gz", hash = "sha256:401c8a9ec4ec76c7515ad773ac5413cf210873bb1c695db6f85f8e38be04b740", size = 28229, upload-time = "2026-03-05T01:44:13.639Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2e/c8/ba51f03e665c44615cc7c0c0a30590abb5d0a1d069fbe0dfd71d95ad6fca/openbb_famafrench-1.2.1.tar.gz", hash = "sha256:bca59c75e1efdc8b2745b6375864cdd3c53008aadefc8431402fb09096d96d11", size = 28231, upload-time = "2026-05-26T17:02:43.508Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/80/c4/496288b801ef0bcc5e520a90f03f735b3b9519e82c0448a154ff728f3a8a/openbb_famafrench-1.2.0-py3-none-any.whl", hash = "sha256:c93151eaa282c31925d5d7f7f8a5fdb1bca164897e408f2253594b426eaeaa21", size = 38359, upload-time = "2026-03-05T01:44:14.453Z" },
+    { url = "https://files.pythonhosted.org/packages/66/f1/be086a1b0969a62349d77f9dbab9327e694cd22ded520ebb5f0aec236db0/openbb_famafrench-1.2.1-py3-none-any.whl", hash = "sha256:068fb6558c32074ccbd6853d2d40c350c8cb6f621cb2970d4d004a01ba8faef2", size = 38357, upload-time = "2026-05-26T17:02:44.249Z" },
 ]
 
 [[package]]
 name = "openbb-federal-reserve"
-version = "1.6.1"
+version = "1.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "beautifulsoup4" },
@@ -2065,88 +2028,88 @@ dependencies = [
     { name = "openbb-platform-api" },
     { name = "openpyxl" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/23/1c/27fda960c2fc270ef3c0760ee9a72e156498cde8ab8ef986c649dea5df27/openbb_federal_reserve-1.6.1.tar.gz", hash = "sha256:50cff43e31535f7de176589f94aa0f2f2fe835fc755f00794a4e3a1c52cf423c", size = 83992, upload-time = "2026-03-24T23:20:32.473Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/33/73/7c04c097823f13d2da50242bfca781998e915fde45f490a8cc9a5f94afd8/openbb_federal_reserve-1.6.2.tar.gz", hash = "sha256:d6bd86e4aa6af5944036bd54802f4c17cfd5de215352e46ceec007bbf69cdaae", size = 83992, upload-time = "2026-05-26T17:02:49.215Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bf/d4/b0c9b36e47230d43230f1ccbc2a61875157a6caa9efce6bc8ad2b251350b/openbb_federal_reserve-1.6.1-py3-none-any.whl", hash = "sha256:73f8bbac7f9fb729a9c872d9fc9c3ae3234bf6ece237e1235d00b1853cea599c", size = 97699, upload-time = "2026-03-24T23:20:33.547Z" },
+    { url = "https://files.pythonhosted.org/packages/27/99/d1af28ba03e40dd5866783ffed1032a2090e0d325f1a1d0f6069a658b1d2/openbb_federal_reserve-1.6.2-py3-none-any.whl", hash = "sha256:d4c15db089e04738162611eaa74f72388ebbcbc621b6eb152c5c4cead6843a01", size = 97699, upload-time = "2026-05-26T17:02:50.347Z" },
 ]
 
 [[package]]
 name = "openbb-finra"
-version = "1.6.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "openbb-core" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/19/df/7d4be0c4078f45ca3eefede86d7db70bb7618e7f0becbf5fcfa891b9e378/openbb_finra-1.6.0.tar.gz", hash = "sha256:a3bf7514eed3b8d1e799bed78d5bc6ae8aa0a6afb0fe19f5bba77df9cdcb1a42", size = 5013, upload-time = "2026-03-05T01:44:22.234Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/73/e6/ccad51b0e2a69a49b3f03b871a94c688e1cfe793e523f19e2140e8508434/openbb_finra-1.6.0-py3-none-any.whl", hash = "sha256:338a921dd921aa48d18bf2254f6d9663e5f472418e942979bc6e0be7e92db428", size = 7464, upload-time = "2026-03-05T01:44:23.084Z" },
-]
-
-[[package]]
-name = "openbb-finviz"
-version = "1.5.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "finvizfinance" },
-    { name = "openbb-core" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/0f/00/e995029583bdb4f2996eade92368025dd573aaa4424b3a9041b7c27e5f93/openbb_finviz-1.5.0.tar.gz", hash = "sha256:86f98641550371450e2ef8ece647d636322e364f609cbf1a90aabf346e9573a7", size = 31443, upload-time = "2026-03-05T01:44:32.22Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/49/2e/0dbdf30348dc318a3dbfe9801030feed0b6a5aa6c1139abf99d8ce3177df/openbb_finviz-1.5.0-py3-none-any.whl", hash = "sha256:6a31d3a48ec9fd1f71069516d80fb21562007025024bf0cd929ebb970d1f0d36", size = 46973, upload-time = "2026-03-05T01:44:33.257Z" },
-]
-
-[[package]]
-name = "openbb-fixedincome"
 version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0f/d0/0d67451bb7a9caf2c2124f67b4ddfc3857f6cdd69a4fd93a23dd96de5f4e/openbb_fixedincome-1.6.1.tar.gz", hash = "sha256:34068e569a104a764542aa4a8f925eadbd71170da85153f3a71989afa199e658", size = 7979, upload-time = "2026-03-05T01:40:28.572Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d1/48/dd656730f9dbf3bf21177db348528a19ee11e574f493de876944e533afda/openbb_finra-1.6.1.tar.gz", hash = "sha256:7b2a1f8e8522f455c1e1a32e31feeed901c75bde45a16b343228b66ab6927d89", size = 5555, upload-time = "2026-05-26T17:02:54.528Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/da/24/ccd355a56c51652845e5325e880ddbedcda287dc838f3b6bea4dc560e526/openbb_fixedincome-1.6.1-py3-none-any.whl", hash = "sha256:2293c933415855342c659aadd1da5919bbed8fe2aa06bb9c14199df090ff449f", size = 12534, upload-time = "2026-03-05T01:40:29.717Z" },
+    { url = "https://files.pythonhosted.org/packages/13/1b/2082cede11063e7aeb821f5ef288745483c681837746d32e8b3b4e0d699c/openbb_finra-1.6.1-py3-none-any.whl", hash = "sha256:3d91ed2ed3758be27fc0d94c2961d4b133990b181962857f2afe0227cf87a2bc", size = 8076, upload-time = "2026-05-26T17:02:55.379Z" },
+]
+
+[[package]]
+name = "openbb-finviz"
+version = "1.5.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "finvizfinance" },
+    { name = "openbb-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e1/10/f3f33c0cf61644890fd4ae38a99d4ee7d85345d9810bf43a3ac63144af0d/openbb_finviz-1.5.1.tar.gz", hash = "sha256:1936283eabbcda04980d631e8249aa2590d8e91df13bc3325c26fa0c5ff49507", size = 31448, upload-time = "2026-05-26T17:03:00.141Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c1/dc/db673e17ef647eeabaca09bbfd5f4b60db667fac4f8366eaf50e1d5a4204/openbb_finviz-1.5.1-py3-none-any.whl", hash = "sha256:d60cfb489e3d356ba3cefc26b958470cd9d9692b931a3a3c539a2c1370e22de3", size = 46971, upload-time = "2026-05-26T17:03:00.969Z" },
+]
+
+[[package]]
+name = "openbb-fixedincome"
+version = "1.6.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "openbb-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/cd/f9/66288dfa406ed63c858d3851902c5f2c6ae6cde7c75e9b09caf2fd6e48f2/openbb_fixedincome-1.6.2.tar.gz", hash = "sha256:d48f0e32b4850d2957f3a1e9309f14fca7c7505fb65efe96ba0bb4b2071c1928", size = 7978, upload-time = "2026-05-26T17:00:47.788Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/67/ba/8ce330c6af98d94d3196e58e5ffa823780b188f90313d87ad1be9fd3805f/openbb_fixedincome-1.6.2-py3-none-any.whl", hash = "sha256:30026586db96cb88c5c2b46f0cd403655bd2262077dc0dd9d4b148df8243c6d4", size = 12532, upload-time = "2026-05-26T17:00:48.457Z" },
 ]
 
 [[package]]
 name = "openbb-fmp"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/55/72/632b6b83acfa48f8d0ec2a0291f2f3edb966b7165b02c7c42e1fdd22cd94/openbb_fmp-1.6.0.tar.gz", hash = "sha256:6ac2adb0f7d69465324c778198bc1af3703dd4be9f425ae98babf6e681ae352e", size = 60630, upload-time = "2026-03-05T01:44:41.628Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a1/e6/58f475ce8fe1023eeba28f6b79bcb7970ccaaa8c2ab36d6f8e43b29cad25/openbb_fmp-1.6.1.tar.gz", hash = "sha256:5f6f27af6283075912df42f373c45ed37bc6970097342ed73110fb6101be5517", size = 60634, upload-time = "2026-05-26T17:03:05.675Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e3/41/7b24ef17be52daf3bc5aa85ed582f63f226e540f3ed59ea49b59dbd0e077/openbb_fmp-1.6.0-py3-none-any.whl", hash = "sha256:833a70a4d7e9cb4a83e9ea25f9fcdd943e68666d131f9917ba85b6f84af86e8c", size = 125522, upload-time = "2026-03-05T01:44:42.687Z" },
+    { url = "https://files.pythonhosted.org/packages/4c/0c/aed61cf40be9ef587eb354b9c4fc1c53e9b489c1407651a7dd38feac424a/openbb_fmp-1.6.1-py3-none-any.whl", hash = "sha256:b2d6f9b073a9593cde2c4836f2afc78a89301a42e32fb176495f06bfedc780ed", size = 125519, upload-time = "2026-05-26T17:03:06.737Z" },
 ]
 
 [[package]]
 name = "openbb-fred"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/35/3f/b031f0a8a126fe5cf9a25146b974096314d0b639cf2d4ee45ba0f2313b6c/openbb_fred-1.6.0.tar.gz", hash = "sha256:ae286a6ee84e07366855a102a96a8afa3edf81633615cfd7c0e71e5c2b10b14f", size = 64536, upload-time = "2026-03-05T01:44:50.773Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f1/83/a4a7de89a0221c2de0611329264f9df8a6516ce2a4e512875883304dbb56/openbb_fred-1.6.1.tar.gz", hash = "sha256:ce9b1c33ae900199ed95c93bec4f04c4f617b8e9185c68e6c639a84fe0728f2f", size = 64537, upload-time = "2026-05-26T17:03:11.649Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2d/72/f3515f491faa7fefedf1c71e70abaf63d368750a863b251f1a15b608125f/openbb_fred-1.6.0-py3-none-any.whl", hash = "sha256:9a9e6f356e0a05f350e11879de5bfa39f7b92157ea93aad9e066a4d72257ec23", size = 107831, upload-time = "2026-03-05T01:44:51.662Z" },
+    { url = "https://files.pythonhosted.org/packages/68/41/def52a549a4b024f5099aa7230c674582d870f4f4945f89677838125e896/openbb_fred-1.6.1-py3-none-any.whl", hash = "sha256:563880b68349c59a237a3fed92ddb9b54e15ab3c0aa55921e8fbacc95cd740e3", size = 107828, upload-time = "2026-05-26T17:03:13.04Z" },
 ]
 
 [[package]]
 name = "openbb-government-us"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
     { name = "random-user-agent" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/3a/d5/e04912855cb37446635ce9682b87ad1f82a2e2cbc9853ca21af87394e6a2/openbb_government_us-1.6.0.tar.gz", hash = "sha256:983aeb7eda58e64e1ab269549c09ccc60e8168f4024c35df9902f8c5f651d180", size = 35844, upload-time = "2026-03-05T01:44:59.741Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/25/8f/71b97dbdc0bcf8cfa5c01b717df376fde3fbc1297e28b1ff69958347c847/openbb_government_us-1.6.1.tar.gz", hash = "sha256:c3b12656cc390b2b076b21cfb1ca9f290fc5f4de7957f90cdf074830ef24bea1", size = 35847, upload-time = "2026-05-26T17:03:17.455Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/79/2b/17ec9aafa8607ad56da2ffcc5174867736071ae220707f86c0edb0e9c91f/openbb_government_us-1.6.0-py3-none-any.whl", hash = "sha256:8a8f8a472ab416e271f6f55fd43e391948b38024d1f021196132f5c967ed148c", size = 43417, upload-time = "2026-03-05T01:45:00.595Z" },
+    { url = "https://files.pythonhosted.org/packages/a0/4c/d3574df9bbd3a2cfaadb2d27027a0739dc12622df86ebde32400a97eedef/openbb_government_us-1.6.1-py3-none-any.whl", hash = "sha256:257ff5fc244502a6bf3a502b6860cd45adf23641e0f70cdb3a9747ee748b8f15", size = 43417, upload-time = "2026-05-26T17:03:18.273Z" },
 ]
 
 [[package]]
 name = "openbb-imf"
-version = "2.1.2"
+version = "2.1.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "async-lru" },
@@ -2155,64 +2118,64 @@ dependencies = [
     { name = "openbb-economy" },
     { name = "openbb-platform-api" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7a/1e/337a5d9799abc9253f7518f95c0453fb2de50aed59f31180c0168a1082c1/openbb_imf-2.1.2.tar.gz", hash = "sha256:0180ce1b16ba4313d9ffa39e1ecf7d45ed739129574e2241965f6b02e44ad4e7", size = 3057604, upload-time = "2026-04-06T04:22:14.799Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/19/f4/73bbfdd13f388917baaa16f9db0949309f6bc6c5f6539f8a970ea43005a3/openbb_imf-2.1.3.tar.gz", hash = "sha256:891ffbb940c49993944410fdb499757f127e8ffc940f33e4d4346a981787798f", size = 3057599, upload-time = "2026-05-26T17:03:24.368Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2e/2f/757b27e97c53b64e8faf8fef477414e505f7a03747a0f8cac2837487ff3e/openbb_imf-2.1.2-py3-none-any.whl", hash = "sha256:4401c629195a8ca1d28f16c1c1dcf489ef320b846aa3ac712545d03502c2ab23", size = 3071480, upload-time = "2026-04-06T04:22:16.893Z" },
+    { url = "https://files.pythonhosted.org/packages/50/0a/55c609bd2c66d418dc91f94f7d5dfc8f4354e8c8e3b017720ad68a47cef6/openbb_imf-2.1.3-py3-none-any.whl", hash = "sha256:9fe312dc601b1cbb161c2ca417dab9d84f3a15ca2fb01a7a031c2181de347b11", size = 3071475, upload-time = "2026-05-26T17:03:26.921Z" },
 ]
 
 [[package]]
 name = "openbb-index"
-version = "1.6.1"
+version = "1.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/84/cc/9dca91b2653fde7363fb0dbcbcd011c84006b808785ccb6a334cbc48bcbf/openbb_index-1.6.1.tar.gz", hash = "sha256:e5f6f0a72b230bd324064982cc475060d7762079008dee54f925ca6c29bb28e4", size = 2163, upload-time = "2026-03-05T01:40:37.086Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/53/43/cb25bba9911f876640b50bf18ab754ddc3b892655218e8732d294aa1634e/openbb_index-1.6.2.tar.gz", hash = "sha256:3756a33c1ab4513a21ec66cc85b15952b6e2047f072b90df8f56bee1fb468993", size = 2165, upload-time = "2026-05-26T17:00:52.603Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b1/6c/5dc34e935b57dabc144c28cc126cca815cf964e861c376a8adb9452f8569/openbb_index-1.6.1-py3-none-any.whl", hash = "sha256:6ffc696d57caea15a2dd4132e7dfd0c1187311cc3ea3383570ce4f0e249a646f", size = 4172, upload-time = "2026-03-05T01:40:37.835Z" },
+    { url = "https://files.pythonhosted.org/packages/aa/9a/d544391f5b20f343e680d8576aea279bf970237234af2bb03648544a27fc/openbb_index-1.6.2-py3-none-any.whl", hash = "sha256:cecb498a8423c1c05bcb8f338b65d61acb06a730e7377f09da5f0e6621a8c768", size = 4172, upload-time = "2026-05-26T17:00:53.317Z" },
 ]
 
 [[package]]
 name = "openbb-intrinio"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
     { name = "requests-cache" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/9c/d6/0f400db31ea61328677018dc46487db8dd22d6f76150cbb981f400aca7b7/openbb_intrinio-1.6.0.tar.gz", hash = "sha256:05554edce55eb0b0230e88698db3302d64238b4e3b85f36d3f7015c3acaddea3", size = 56559, upload-time = "2026-03-05T01:45:09.42Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/31/4a/3c3a2acd5caa3eda9d2623cca3e4c716f3c98e87a21c0ab39e53d1e8d07d/openbb_intrinio-1.6.1.tar.gz", hash = "sha256:031755b93b0dc5c165a7541d8c4790ddb1c07700cd74a17ca83df5e0802c8c4c", size = 56558, upload-time = "2026-05-26T17:03:32.033Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e5/78/5e9bd71565f049323248501ccefbbf7eb96c48231be14b4b8e0e7e996099/openbb_intrinio-1.6.0-py3-none-any.whl", hash = "sha256:38b66722986d2d88504641f98d828506edcf3220534d114ea64d1d96b20e592d", size = 98572, upload-time = "2026-03-05T01:45:10.549Z" },
+    { url = "https://files.pythonhosted.org/packages/1b/0e/e1205fbe5d06b94461f5e7a8ffdc231dbaf0ca97d1aff85c64925f946c06/openbb_intrinio-1.6.1-py3-none-any.whl", hash = "sha256:0034d3af9c65e55450a4e194391eb828564adb7a40afb8e21bd0c0d601fca65b", size = 98574, upload-time = "2026-05-26T17:03:33.097Z" },
 ]
 
 [[package]]
 name = "openbb-mcp-server"
-version = "1.4.0"
+version = "1.4.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "fastmcp" },
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ba/cf/83bb718aefe50f7bb1ea0c5e671f3f8757f61143b6028f1bb628096530d0/openbb_mcp_server-1.4.0.tar.gz", hash = "sha256:3b43f7f13257852b020eb7946f83349ae07fba3146b31983c7a7913213b29b4c", size = 68259, upload-time = "2026-04-10T19:46:15.996Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/eb/8e/d5c1446022aff5480123ad55c42d3757041a66766d4373740afc0c8bef84/openbb_mcp_server-1.4.1.tar.gz", hash = "sha256:a8bc6b092630dc25e93b6b484d5bd2ff17cbde7c4ce5afad0c4fbb8ca9934c39", size = 68253, upload-time = "2026-05-26T17:00:58.422Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c5/24/51c02ed54eb4b92b94148c6113a63525169bfe1f641cfa7314ad3a24453e/openbb_mcp_server-1.4.0-py3-none-any.whl", hash = "sha256:bafc4f288b13068e3d96d30b1b0c5383eed80ecea578b07710f52cdef9256edd", size = 69614, upload-time = "2026-04-10T19:46:17.265Z" },
+    { url = "https://files.pythonhosted.org/packages/a2/23/a23957ba860ddb02c6627fc3533d3a189d91820416069e0a195a7dea5fcb/openbb_mcp_server-1.4.1-py3-none-any.whl", hash = "sha256:ec51ed594b55c808fe8bd9cb1780c8bc7925578c4e24ec544b5dc0fb1fce73f1", size = 69616, upload-time = "2026-05-26T17:00:59.597Z" },
 ]
 
 [[package]]
 name = "openbb-multpl"
-version = "1.3.0"
+version = "1.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/6d/e0/9eb53e02bdf94f971231ccf3e53ad987341fae789901898da48e10764ed1/openbb_multpl-1.3.0.tar.gz", hash = "sha256:4cafbdea0417b3c69098e577728efa5845ec1f8d031c0594446f85f612e6c384", size = 2888, upload-time = "2026-03-05T01:45:18.496Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/22/02/6b79212a28ceb67e6741e002b628df96ead8a1eb4dabafbc6066c067f6df/openbb_multpl-1.3.1.tar.gz", hash = "sha256:61ebbe2faab4bba7ca0bb0eeef47a78ed350cda5ec628d4c217d9977c105e06d", size = 2888, upload-time = "2026-05-26T17:03:37.368Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5e/18/5d4c286e75e6d036100040a84cfbe5702a4115dfa4ce09c3850394e24217/openbb_multpl-1.3.0-py3-none-any.whl", hash = "sha256:ef03030b1e8466f70563d5918a2d04aa43a4a99369bc1ab0e3fa0934bc88c855", size = 4306, upload-time = "2026-03-05T01:45:20.603Z" },
+    { url = "https://files.pythonhosted.org/packages/51/90/d2d08896c4b9679e74faba174e48e3dbb13b883e47abe37b8a3e9e3d2920/openbb_multpl-1.3.1-py3-none-any.whl", hash = "sha256:bf1023a6ad3f34adfa4a2357b28d0d910e14f5566f195ec371ed5dd2573df045", size = 4302, upload-time = "2026-05-26T17:03:38.244Z" },
 ]
 
 [[package]]
 name = "openbb-nasdaq"
-version = "1.6.1"
+version = "1.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "async-lru" },
@@ -2221,77 +2184,77 @@ dependencies = [
     { name = "openbb-platform-api" },
     { name = "random-user-agent" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/18/ea/7e1965887a88dd560909481ce1d39f974f9d81445da48f0d2dc579eeb670/openbb_nasdaq-1.6.1.tar.gz", hash = "sha256:71ef9b77abc41835be5313e9b8a653944236736187b93e834f34b036b194c997", size = 20095, upload-time = "2026-03-09T16:11:02.423Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/07/eb/6f6ed4bee25bd3da247dd888f4deb91b995c223b8fcfc6025e44b1b51d21/openbb_nasdaq-1.6.2.tar.gz", hash = "sha256:ca231259804fc1ea7873274cbc4870ea0f189e4c23910cb5819c8871e30bb6cc", size = 20099, upload-time = "2026-05-26T17:03:42.695Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e8/99/4b629109a54fd13b525d073203532ae21069e8b54d1811b6c3a10b367f6e/openbb_nasdaq-1.6.1-py3-none-any.whl", hash = "sha256:1ed381ead22b0d49c6641baf1270b105d7cc39e803de9ee7d7bb99f3470e1a68", size = 30141, upload-time = "2026-03-09T16:11:03.488Z" },
+    { url = "https://files.pythonhosted.org/packages/46/1b/eb96f8648ab001ddff25e8560c08283bb6c6583fa301462acbf329b73d89/openbb_nasdaq-1.6.2-py3-none-any.whl", hash = "sha256:4e8ff1b0195612d91f3d0d403a1797637fa3fd45e486c03fdd8fa42bdaa9be51", size = 30143, upload-time = "2026-05-26T17:03:43.513Z" },
 ]
 
 [[package]]
 name = "openbb-news"
-version = "1.6.1"
+version = "1.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b4/4d/ea2e60413877166f787eeed580d015d0bf17c3a784f83401633eca6da676/openbb_news-1.6.1.tar.gz", hash = "sha256:20c702d18fd5b78f117063e553c258242d49fc0414f2a22554ac1a2905e2f420", size = 1709, upload-time = "2026-03-05T01:41:01.147Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5a/54/32ba6cac0f99f59eb386d6f6db2e20f73c3ab053d302cb946eb09a89e67b/openbb_news-1.6.2.tar.gz", hash = "sha256:b0eb35d6ec9ade25450cfaa5d1ebc01a67459e73136ad1ca0efd3cd3d7c255fe", size = 1709, upload-time = "2026-05-26T17:01:03.886Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/27/e1/25d005f5d152ca955ff62f0c0949336f6f26a277f069d613b7421b3ed296/openbb_news-1.6.1-py3-none-any.whl", hash = "sha256:ffcb5216e98c87d8839d7454fb0fdda84f46de449bb7b2f39a5273fd17be6cd4", size = 2771, upload-time = "2026-03-05T01:41:02.068Z" },
+    { url = "https://files.pythonhosted.org/packages/a5/96/8cd4c047f98194ff1083e8471849be10a5d3728a3ebe02a35e8e9f2c921e/openbb_news-1.6.2-py3-none-any.whl", hash = "sha256:9fa7e6dfc7faa0a8e85cc55fd06e3b9cf9fd11a991cb28e0d3a7b99a4269b0ff", size = 2770, upload-time = "2026-05-26T17:01:04.61Z" },
 ]
 
 [[package]]
 name = "openbb-oecd"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "defusedxml" },
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e2/00/8eb3d2a1728527ed93c2ba1a8a6cf9cd10f09cb76d537297c1b0c26d1e39/openbb_oecd-1.6.0.tar.gz", hash = "sha256:d3e6cb09895ed4db2511e5d4c5872b9395b24b1852b1bdb4bc44a45d083531d5", size = 14870, upload-time = "2026-03-05T01:45:29.973Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c6/1b/99d48e49f54c4a9db26f32ba2e5dd0a3e2b14cab122c52d71219d5d80c43/openbb_oecd-1.6.1.tar.gz", hash = "sha256:2cc208ca10e3bea033fb90cdfa08fd62835484e9087ed4ce5f6c66c17e9d43b9", size = 14871, upload-time = "2026-05-26T17:03:47.968Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/8a/e8/b2ef937be02bdb1d28616019e7c10a21b258849f85349e32fd8ad042e142/openbb_oecd-1.6.0-py3-none-any.whl", hash = "sha256:554b3791e0eb300509e9c14230aba53b434d5ffe1d0466a8cd78384b0150c45f", size = 30168, upload-time = "2026-03-05T01:45:31.091Z" },
+    { url = "https://files.pythonhosted.org/packages/58/ab/b5b405f372f9a13a8c99e785d2f388a7f1a3efb71dfc89952101a28b71a1/openbb_oecd-1.6.1-py3-none-any.whl", hash = "sha256:8035383ee796b8ad8ebcaa2d741a454e04d3a7b023cc4410560e9d01347634c0", size = 30168, upload-time = "2026-05-26T17:03:48.798Z" },
 ]
 
 [[package]]
 name = "openbb-platform-api"
-version = "1.3.5"
+version = "1.3.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "deepdiff" },
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b3/6b/e4f2c4cae8d55860090dfd57584d2698acd7a3629c1987ce10f27340fec7/openbb_platform_api-1.3.5.tar.gz", hash = "sha256:40816bb6ffe18481d7e023a5c36304761e5334d18098c72af7bd6d44f4235932", size = 44445, upload-time = "2026-03-18T22:38:49.733Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8e/64/7c5b2e09ac7f9d338c3f84712b2d76b2411a36c0607e8847dbf6de97b9bc/openbb_platform_api-1.3.6.tar.gz", hash = "sha256:4a23a6ca542a1bbe309a1b9c1246d9e905ec03ab28c3da8e9a8f9a0db6ff8659", size = 44094, upload-time = "2026-05-26T17:01:09.01Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/30/9f/20fda903668b2d282f97356b195486682b530a7acf495614c80c6310e934/openbb_platform_api-1.3.5-py3-none-any.whl", hash = "sha256:dfa0175006aede9e09906b81832105075747d836b135e945e73af51060731066", size = 43734, upload-time = "2026-03-18T22:38:50.991Z" },
+    { url = "https://files.pythonhosted.org/packages/56/5a/f5cf82bfa38c243633b98493d99a4fb9c99832722607014d5d87003b8af3/openbb_platform_api-1.3.6-py3-none-any.whl", hash = "sha256:c749d33dfcd1a4679990629b10feda181930bfedd66ddbd402c2ae56c322cb86", size = 43385, upload-time = "2026-05-26T17:01:10.139Z" },
 ]
 
 [[package]]
 name = "openbb-quantitative"
-version = "1.6.1"
+version = "1.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
     { name = "pandas-ta-openbb" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ad/f8/52126aef9f005686b7a43d12ebf5dbb76cd5ef184e69a81c829a5573f41e/openbb_quantitative-1.6.1.tar.gz", hash = "sha256:8e282528a0e982a816dfd637b4af1dcd4fa9f28dd477d697343096994eb5f404", size = 9630, upload-time = "2026-03-05T01:41:26.242Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/08/bf/d639ff88b9703d082d51a47fda01e7d42f26363f0a5520eb1f67e45a001f/openbb_quantitative-1.6.2.tar.gz", hash = "sha256:511cb4d60bf0209d3aec61871b135aa213dbc366896742e364a4025b144edb6f", size = 9636, upload-time = "2026-05-26T17:01:14.627Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ba/ad/1216d8f611a5316f925bc4eede0398bc8c06ad732b0a4835871ba84a6e87/openbb_quantitative-1.6.1-py3-none-any.whl", hash = "sha256:52974bb00bfb8107c3872c8aaba45ac3c71a71875c3974313dfd0879e85d9f8a", size = 15357, upload-time = "2026-03-05T01:41:28.258Z" },
+    { url = "https://files.pythonhosted.org/packages/33/07/cb10d0f6a8608fdb3210870b7498ef59e61320776a187d97c38ba5da40af/openbb_quantitative-1.6.2-py3-none-any.whl", hash = "sha256:f9c377b1efb7fb0e6a0dba5be6f8732d8b6c97a47e665bcd21cafac1413a1147", size = 15353, upload-time = "2026-05-26T17:01:15.343Z" },
 ]
 
 [[package]]
 name = "openbb-regulators"
-version = "1.6.1"
+version = "1.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1a/44/f409698fbcaa7299c7f0a2ac7163b8734fdd589440943f4a8f1ec35dc827/openbb_regulators-1.6.1.tar.gz", hash = "sha256:f24952ba49bc7299b63d6a69ca94ec92bdb10556595688454d04a729f26a9bca", size = 3026, upload-time = "2026-03-05T01:41:36.553Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b5/94/1cc28f71b8d4d8aa52fd525e116641058731ffe2b2bb2a4e67597a5cf7e1/openbb_regulators-1.6.2.tar.gz", hash = "sha256:f22574d535c22a5a945e6e8d4d56c1014a60532483bb594cbed2cf318c50a0f9", size = 2676, upload-time = "2026-05-26T17:01:19.544Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/8e/66/43079f34e53ed5f67a786790601485ae862656635e70403f1486ed4be31c/openbb_regulators-1.6.1-py3-none-any.whl", hash = "sha256:098d5c8a81fa859f00103ed2f26c0de0480f927c513503454a5ab25cb52e493c", size = 5273, upload-time = "2026-03-05T01:41:37.191Z" },
+    { url = "https://files.pythonhosted.org/packages/d5/ce/b8e9037de399030fb696cea4e024db88dabbe49f62fd66d617adcd5ccd6a/openbb_regulators-1.6.2-py3-none-any.whl", hash = "sha256:39c9b08b391083d365591388c11bcdb9dde0aa5fc691eba49a20411b5da80357", size = 4144, upload-time = "2026-05-26T17:01:20.513Z" },
 ]
 
 [[package]]
 name = "openbb-sec"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp-client-cache" },
@@ -2302,64 +2265,64 @@ dependencies = [
     { name = "openbb-core" },
     { name = "xmltodict" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/bf/7b/12794b7dc6cdd3f31484eb3ce82d21c3bfa11ea4aa31dd62c02d9db68c78/openbb_sec-1.6.0.tar.gz", hash = "sha256:1ec3e6f9d3e61fd6377b8824e5272fcedd91a5fb7a73a582ce13799aa571c024", size = 172601, upload-time = "2026-03-05T01:45:40.003Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/24/f2/90c74f1c864e8d6d79d7c2b0db814f8c16d6e74731f7c294e6cd492da92f/openbb_sec-1.6.1.tar.gz", hash = "sha256:d6875b1ce2736829baa183181fe287c0778ac9bdf7ab613be7975557704ebfb2", size = 366075, upload-time = "2026-05-26T17:03:54.053Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/74/52/c055d73003fa96c7653bf1e21093a9d9f559474f193b7e728bdc7e71124c/openbb_sec-1.6.0-py3-none-any.whl", hash = "sha256:c1cd758e9f1ff7141e703d7357c6bfd19b21bace552cfad1b5c36abc1f148315", size = 190339, upload-time = "2026-03-05T01:45:41.274Z" },
+    { url = "https://files.pythonhosted.org/packages/08/5e/5f331cbc5ddb2e6fc0bc9452607a4efeea0606ddc9ab6abe00f4441b2956/openbb_sec-1.6.1-py3-none-any.whl", hash = "sha256:f59d52dfbffc399404c66bcd1f494b9f2ff45032accbe0b752bff63c487488be", size = 402442, upload-time = "2026-05-26T17:03:55.174Z" },
 ]
 
 [[package]]
 name = "openbb-seeking-alpha"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/af/13/3f1b32a6883677c1570618d65b39ec5c7fb61625bf90b37f42f4286e2ca3/openbb_seeking_alpha-1.6.0.tar.gz", hash = "sha256:7fd10fdaacd2a30bc90adc097c0b6a6f07970afb8e160cc4a9b2229925be0aa5", size = 5878, upload-time = "2026-03-05T01:45:49.29Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d9/7d/bbf706e1c91b6098173ce43eb71854eec2bfffd98acb4b166086ccbbe0c5/openbb_seeking_alpha-1.6.1.tar.gz", hash = "sha256:2da8fc2b6c1a6f11ed57e255f8f7ea53df4b25696a199a7aca395fa42b3bc3da", size = 5878, upload-time = "2026-05-26T17:03:59.77Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4a/62/ccd5141da5a9853f0ce5450a3c5f5eda0a3f305114c03f386974790536e6/openbb_seeking_alpha-1.6.0-py3-none-any.whl", hash = "sha256:8ef937da415162a75ee0bf72b77cd449cfe0c7adde6d366c67574d022a799af5", size = 10586, upload-time = "2026-03-05T01:45:50.332Z" },
+    { url = "https://files.pythonhosted.org/packages/37/3f/d9053e8b1c5e8d0df181c0019334d461f69906dd53e74e4593d62bdba0da/openbb_seeking_alpha-1.6.1-py3-none-any.whl", hash = "sha256:3f19dd84e95d17dcac562abbcfb2034fc7687d247e53bc07815899fb14a9ed23", size = 10582, upload-time = "2026-05-26T17:04:00.459Z" },
 ]
 
 [[package]]
 name = "openbb-stockgrid"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e1/71/d89cf8a0011f81e69ea368a3ee2b60b338114603870d75d99be339c0da8e/openbb_stockgrid-1.6.0.tar.gz", hash = "sha256:fc8cd2e063275cd43ab5ad3cea581b6869d931251c732114a5949c73f4f3fec8", size = 2008, upload-time = "2026-03-05T01:45:57.755Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e2/7e/8466bf8f53bb183646a33ecedaa479c1a2d71a4d8176ee84c20ff6412c14/openbb_stockgrid-1.6.1.tar.gz", hash = "sha256:9a8fa4598134836b02c20856659f9c0b3de7ad1b63756acf6455319d33738782", size = 2011, upload-time = "2026-05-26T17:04:04.676Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/87/40/37a72ca484553b2d8b4b0ce16d9b9c9388486410cfef0c6c6f86d017c63e/openbb_stockgrid-1.6.0-py3-none-any.whl", hash = "sha256:8fdbcf29b81365f4b94d3f52d1416319d7893867ca606411fd662f6b58823e12", size = 3088, upload-time = "2026-03-05T01:45:58.904Z" },
+    { url = "https://files.pythonhosted.org/packages/f9/cc/3994e03a30acfd14e0e667bc4f57ce4c03f880b6f263590d716ad2e6f8ef/openbb_stockgrid-1.6.1-py3-none-any.whl", hash = "sha256:14bf16ca33e3f4ac7111c54623126843c509383077faedd8acb5569cbe42cb90", size = 3086, upload-time = "2026-05-26T17:04:05.361Z" },
 ]
 
 [[package]]
 name = "openbb-technical"
-version = "1.6.1"
+version = "1.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
     { name = "pandas-ta-openbb" },
     { name = "scikit-learn" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f8/92/347ffaddc361cba2e0c34436f691647eb579ff2c151caf90140335d6d8cb/openbb_technical-1.6.1.tar.gz", hash = "sha256:7c2a3a62db07ccd1fde757171ba8837be2a719aefa0a3cd3e1507262700f446b", size = 23114, upload-time = "2026-03-05T01:41:46.302Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/de/1a/01dc34b17130ef50506eb8977b226b854349027cc3eb1d2e2717d960560e/openbb_technical-1.6.2.tar.gz", hash = "sha256:6c7056582521858d8a6f0b60bcb70ebb8d3b8132583f87c7c6c16a3c55a302dc", size = 23118, upload-time = "2026-05-26T17:01:25.246Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ee/40/f9dd76762d9720c72fb8b8aff3340dbe8d048f6268d2ffe51f962d6ee981/openbb_technical-1.6.1-py3-none-any.whl", hash = "sha256:6af1a4f9f62e117223b3726a22984628e950e2ebabe4171b30cc14c62513ae7c", size = 26518, upload-time = "2026-03-05T01:41:47.231Z" },
+    { url = "https://files.pythonhosted.org/packages/a5/4b/b5274517f4f6f987e877b9fbbe060d02f99903ab8020b439dee0bb4e5bb5/openbb_technical-1.6.2-py3-none-any.whl", hash = "sha256:1f6fe4c9fde80e977e1f26b4bf10d3c879a1d309edee64e349b7f58ce68cde65", size = 26516, upload-time = "2026-05-26T17:01:26.15Z" },
 ]
 
 [[package]]
 name = "openbb-tiingo"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/96/ed/7623e969afc39012697fc916b4fab94340f202c7c8ecf50656f72b427b2f/openbb_tiingo-1.6.0.tar.gz", hash = "sha256:1c184b7c538a4809799d8ce1fcf099ea7d0c4e8cdb99c3e7457638cdda4b22b6", size = 6190, upload-time = "2026-03-05T01:46:10.253Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/81/bf/41e5316d209e3e2d21bc9d6317f99320835c7cbf3a2d2d5030637197dc62/openbb_tiingo-1.6.1.tar.gz", hash = "sha256:ade7a4067cb4acbb9d849f87af9f177610dff95260d1ac09ee8b3475d19c72ee", size = 6190, upload-time = "2026-05-26T17:04:09.565Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/cf/55/cfee1850456ba5c212d150de81f73413d2057bcea89f7c6cbc21e29f66dd/openbb_tiingo-1.6.0-py3-none-any.whl", hash = "sha256:6417ce0545e52c6d2477d9289ca83b8b00e07dedc332142d05d7a3fc7e8919ff", size = 13675, upload-time = "2026-03-05T01:46:11.306Z" },
+    { url = "https://files.pythonhosted.org/packages/13/ca/5900347fd676b5c74bf1ac874177f7e46f9640ba6e1ab8eee459573a49a7/openbb_tiingo-1.6.1-py3-none-any.whl", hash = "sha256:ed0947bdb2f3ffe310e9b93e8572054c69a80222cc67cde075673d8f4ddbdeba", size = 13674, upload-time = "2026-05-26T17:04:10.285Z" },
 ]
 
 [[package]]
 name = "openbb-tmx"
-version = "1.5.1"
+version = "1.5.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp-client-cache" },
@@ -2368,38 +2331,38 @@ dependencies = [
     { name = "openbb-core" },
     { name = "random-user-agent" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/af/75/fc6163aed67c4afb6afdb190624dacdcab3887bef08586b082ef65fa1117/openbb_tmx-1.5.1.tar.gz", hash = "sha256:21b218ebca55668f88b37d18e9926df8988e9f953c1a6b203ac7ad3866e046bf", size = 36121, upload-time = "2026-04-10T20:07:04.123Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/65/56/f46d7d06066c89ea400b6eef9ae730859bf1cab8b7059fb58e3fad81e0ac/openbb_tmx-1.5.2.tar.gz", hash = "sha256:64d22c51aa8ba068ec13bc3a40ab64c2ad145c48100abb5eb7981d70a73c69dc", size = 36122, upload-time = "2026-05-26T17:04:14.96Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/19/6d/ea2cc68f610c6014d2ada82870a87c4c2c8962d3e4d3c54b435cace667f1/openbb_tmx-1.5.1-py3-none-any.whl", hash = "sha256:26b23855f84f37f39c3d8420e6b874c80ba406d39226d9527d1c17537a6e25d2", size = 60412, upload-time = "2026-04-10T20:07:05.367Z" },
+    { url = "https://files.pythonhosted.org/packages/0b/73/079c839cc434752beef6dd87683c2fe3b39fce67adb26c1834d46b74520b/openbb_tmx-1.5.2-py3-none-any.whl", hash = "sha256:4f6a83612c9ff1ee65996d36efd2cf30acba03e8a147cb947770603f13b1c228", size = 60411, upload-time = "2026-05-26T17:04:15.792Z" },
 ]
 
 [[package]]
 name = "openbb-tradier"
-version = "1.5.0"
+version = "1.5.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d3/0c/88e81c6b1fa7e9aacbbfcbfb6b5eaf4a10b280cb6ba6357c4c61f38b7903/openbb_tradier-1.5.0.tar.gz", hash = "sha256:d2ca0c3d2ffb7e072d6d3dd9d4fe13a01a8297df2e7a4fe4bab12c6750918f70", size = 8178, upload-time = "2026-03-05T01:46:30.853Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e2/fc/563031b9e37c6120ad6c27d1447b601e662e113b8532c82ac48a99563888/openbb_tradier-1.5.1.tar.gz", hash = "sha256:3165e40b8b667cf20678ae12d93a638c9070d9e4c5b568ec728e566035bd6f74", size = 8176, upload-time = "2026-05-26T17:04:20.427Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/34/a9/80b70c139089640ccb4093d0dbb9979aca2d4b4442dc8056fda5c8786d83/openbb_tradier-1.5.0-py3-none-any.whl", hash = "sha256:2e6886ac8fa5c384c3d1445d27f6a7278d74dba08b596288e67619ffe6f25508", size = 13560, upload-time = "2026-03-05T01:46:31.507Z" },
+    { url = "https://files.pythonhosted.org/packages/b7/d7/2326e254a33cfa879532a22d6725b67912cf238a8653a52fed7f3b29949f/openbb_tradier-1.5.1-py3-none-any.whl", hash = "sha256:70f88b9a7d4caabaa620760f42a3d4257aa67ea85da6e53a974b6c2fcbb7bed3", size = 13556, upload-time = "2026-05-26T17:04:21.253Z" },
 ]
 
 [[package]]
 name = "openbb-tradingeconomics"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/76/a9/73b3b5be0d3cf5102e0db409eef44fd128867ec5ea824a84dfaf08cf570f/openbb_tradingeconomics-1.6.0.tar.gz", hash = "sha256:a661ea0ad8cbacdf4fb26fda83b013aab087416c95f277ffa1fc1e841a5e98d2", size = 6130, upload-time = "2026-03-05T01:46:39.821Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/10/06/c2edaec362fe78acce505aa24e6c3b795844cde3b1c93935c072313e4985/openbb_tradingeconomics-1.6.1.tar.gz", hash = "sha256:96f1d5ea4c7020c60f6ac47ea57045a854e64ce28886015e09a7a60cf77a0d8c", size = 6128, upload-time = "2026-05-26T17:04:25.486Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fc/5a/a972475b683f1c1a344dc28bc7c7f5a9685931c76aceaf46290d9aa19b5a/openbb_tradingeconomics-1.6.0-py3-none-any.whl", hash = "sha256:338a7ec9fecb031ec493941f91fac12bd851c8fe1c1d4720c8d124cd353f8c3c", size = 8214, upload-time = "2026-03-05T01:46:40.547Z" },
+    { url = "https://files.pythonhosted.org/packages/c5/ce/6f95b6e92c6317a94c45606692ee66365acfc0f623b64eb1ccee2e71aaa7/openbb_tradingeconomics-1.6.1-py3-none-any.whl", hash = "sha256:7c4991a0a2586001061cfe9e32ab6c40a50e5a041ff5b07998a55ec70e96dc2c", size = 8213, upload-time = "2026-05-26T17:04:26.299Z" },
 ]
 
 [[package]]
 name = "openbb-us-eia"
-version = "1.3.0"
+version = "1.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "async-lru" },
@@ -2407,34 +2370,34 @@ dependencies = [
     { name = "openpyxl" },
     { name = "xlrd" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/23/98/c18262d9f6c897e7eda604647869a5bc062ffbc9b2d2731764a53805240b/openbb_us_eia-1.3.0.tar.gz", hash = "sha256:337c257387669ec25a6e5871f5300a6f82ae88f585ab85041d2cac121a5b6216", size = 26390, upload-time = "2026-03-05T01:44:05.014Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/62/26/da7bfa58abc0f4f583342e9d29135f33aefd099e08402b58a27bbfc1943a/openbb_us_eia-1.3.1.tar.gz", hash = "sha256:e22944c10fd846ba97524f9f8a5b6c0cbee080d98fcefdadcb14244ec5fc96cf", size = 26392, upload-time = "2026-05-26T17:02:38.417Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/79/d2/71a8de2471b8a898925d0d6b2a680c4b2b665820fb2c188b88ec0e5992f8/openbb_us_eia-1.3.0-py3-none-any.whl", hash = "sha256:ffd3667064d43d9307bf6977fdf00a641ddd3aabebca7c2a416ae6e7ab1a4365", size = 28393, upload-time = "2026-03-05T01:44:05.888Z" },
+    { url = "https://files.pythonhosted.org/packages/92/40/e9e51fbe324faadd1a35e52152537ff5cf689872bcd97d12e737c5046232/openbb_us_eia-1.3.1-py3-none-any.whl", hash = "sha256:56411716eed3f694c77d4c0ad7c7b4c5462aa9fd1f127c7016c9e88e2e408d8f", size = 28393, upload-time = "2026-05-26T17:02:39.209Z" },
 ]
 
 [[package]]
 name = "openbb-wsj"
-version = "1.6.0"
+version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/95/22/42c2053390e9d2912386c23a7f269f3c6e49f25177f6e719e372501a5aa4/openbb_wsj-1.6.0.tar.gz", hash = "sha256:bc123dee8d4717beeb8684531f3c17b4396f7fd937e05a1c36a8fc6f71e8f01f", size = 2740, upload-time = "2026-03-05T01:46:48.519Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2c/b3/4b353e933d830bb08c9204d21cda767edf812e71845380ecede34adece79/openbb_wsj-1.6.1.tar.gz", hash = "sha256:2cc4797ef922210bf1d8c58b44dc31d1a61c6774f08209a2303f5e71ea20d7cc", size = 2740, upload-time = "2026-05-26T17:04:30.52Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/06/de/1908619d10475f4f60bc95b641a5524cad4bafd9e82189d0a070a02eb261/openbb_wsj-1.6.0-py3-none-any.whl", hash = "sha256:4bb676edad6af914b0235e5f5e84d117592bbeaba4fae7c8fc18353782e4d737", size = 6045, upload-time = "2026-03-05T01:46:49.44Z" },
+    { url = "https://files.pythonhosted.org/packages/40/b3/eee9fafab0470baf260a2d1fb6f4a699cae901dcd7d53014703e3f2ed5ed/openbb_wsj-1.6.1-py3-none-any.whl", hash = "sha256:e8bde3586caec57a6fbdba6cebf6204eb86288b87e3e5bc4590072b264caa839", size = 6043, upload-time = "2026-05-26T17:04:31.247Z" },
 ]
 
 [[package]]
 name = "openbb-yfinance"
-version = "1.6.2"
+version = "1.6.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "openbb-core" },
     { name = "yfinance" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/cf/37/eb9abe8a04b6b5b2d8b6e6bccd96e3e9fc9582d82339e9b895e940ebf70d/openbb_yfinance-1.6.2.tar.gz", hash = "sha256:353690e9d2e4c69e0c63347f5b131c8b124208f5be04fdb04cdd3dc1ddfc1fad", size = 39114, upload-time = "2026-04-18T00:26:48.155Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/10/62/810ce26ce3bdda302104780d9fa70a727ce9dceb50e41968c27c049787e7/openbb_yfinance-1.6.3.tar.gz", hash = "sha256:b25bc0fe17552f2331c771f9f91ab66c138e7bb54b07af282381dec2c273bd5b", size = 39225, upload-time = "2026-05-26T16:25:04.513Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f5/34/b68ed02b55387ce6f451218cb4ff9512d2124498735213e52f21985fde60/openbb_yfinance-1.6.2-py3-none-any.whl", hash = "sha256:437573b2386a5e0ab6343b8d709ea01fcb4b7a7d989dad8ba7fe76edb66c4575", size = 66147, upload-time = "2026-04-18T00:26:49.357Z" },
+    { url = "https://files.pythonhosted.org/packages/6e/11/05f7a5d28a6ddea35a1bf02153e4f90e0243304b03231904f4130dde428e/openbb_yfinance-1.6.3-py3-none-any.whl", hash = "sha256:45c1cb61ddeb748cfe3b2d03bd5c4dd949e35119f346f018bcd4f48510199ea1", size = 66253, upload-time = "2026-05-26T16:25:05.69Z" },
 ]
 
 [[package]]
@@ -3491,15 +3454,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/5a/76/4921c00511f88af86a33de770d64141170f1cfd9c00311aea689949e274e/tornado-6.5.5-cp39-abi3-win32.whl", hash = "sha256:dd3eafaaeec1c7f2f8fdcd5f964e8907ad788fe8a5a32c4426fbbdda621223b7", size = 448582, upload-time = "2026-03-10T21:30:57.142Z" },
     { url = "https://files.pythonhosted.org/packages/2c/23/f6c6112a04d28eed765e374435fb1a9198f73e1ec4b4024184f21faeb1ad/tornado-6.5.5-cp39-abi3-win_amd64.whl", hash = "sha256:6443a794ba961a9f619b1ae926a2e900ac20c34483eea67be4ed8f1e58d3ef7b", size = 448990, upload-time = "2026-03-10T21:30:58.857Z" },
     { url = "https://files.pythonhosted.org/packages/b7/c8/876602cbc96469911f0939f703453c1157b0c826ecb05bdd32e023397d4e/tornado-6.5.5-cp39-abi3-win_arm64.whl", hash = "sha256:2c9a876e094109333f888539ddb2de4361743e5d21eece20688e3e351e4990a6", size = 448016, upload-time = "2026-03-10T21:31:00.43Z" },
-]
-
-[[package]]
-name = "traitlets"
-version = "5.15.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/1b/22/40f55b26baeab80c2d7b3f1db0682f8954e4617fee7d90ce634022ef05c6/traitlets-5.15.0.tar.gz", hash = "sha256:4fead733f81cf1c4c938e06f8ca4633896833c9d89eff878159457f4d4392971", size = 163197, upload-time = "2026-05-06T08:05:58.016Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/da/98/a9937a969d018a23badfea0b381f66783649d48e0ea6c41923265c3cbeb3/traitlets-5.15.0-py3-none-any.whl", hash = "sha256:fb36a18867a6803deab09f3c5e0fa81bb7b26a5c9e82501c9933f759166eff40", size = 85877, upload-time = "2026-05-06T08:05:55.853Z" },
 ]
 
 [[package]]
