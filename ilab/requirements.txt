@@ -14,8 +14,8 @@ appdirs==1.4.4
 attrs==26.1.0
 backoff==2.2.1
 beautifulsoup4==4.14.3
-boto3==1.43.16
-botocore==1.43.16
+boto3==1.43.17
+botocore==1.43.17
 certifi==2026.5.20
 cfgv==3.5.0
 chardet==6.0.0.post1
@@ -37,11 +37,11 @@ dill==0.4.1
 diskcache==5.6.3
 distlib==0.4.0
 distro==1.9.0
-docling[tesserocr]==2.95.0
+docling[tesserocr]==2.96.0
 docling-core[chunking]==2.77.1
 docling-ibm-models==3.13.2
-docling-parse==5.11.0
-docling-slim[feat-ocr-tesserocr,standard]==2.95.0
+docling-parse==6.2.0
+docling-slim[feat-ocr-tesserocr,standard]==2.96.0
 docstring-parser==0.18.0
 et-xmlfile==2.0.0
 evaluate==0.4.6
@@ -64,9 +64,9 @@ hf-xet==1.5.0
 httpcore==1.0.9
 httpx==0.28.1
 httpx-sse==0.4.3
-huggingface-hub[hf-transfer]==1.16.4
+huggingface-hub[hf-transfer]==1.17.0
 identify==2.6.19
-idna==3.16
+idna==3.17
 -e git+https://github.com/instructlab/instructlab@253a7a46e3f14fd7e85fa8a4b2e26a6b86e0b220#egg=instructlab
 instructlab-eval==0.6.0
 instructlab-quantize==0.1.0
@@ -90,7 +90,7 @@ langchain-classic==1.0.7
 langchain-community==0.4.2
 langchain-core==1.4.0
 langchain-openai==1.1.9
-langchain-protocol==0.0.15
+langchain-protocol==0.0.16
 langchain-text-splitters==1.1.2
 langgraph==1.2.2
 langgraph-checkpoint==4.1.1
@@ -152,7 +152,7 @@ platformdirs==4.10.0
 pluggy==1.6.0
 polyfactory==3.3.0
 portalocker==3.2.0
-posthog==7.16.1
+posthog==7.16.2
 pre-commit==4.6.0
 prompt-toolkit==3.0.52
 propcache==0.5.2
@@ -185,11 +185,11 @@ requests==2.34.2
 requests-toolbelt==1.0.0
 rich==14.3.4
 rouge-score==0.1.2
-rpds-py==0.30.0
+rpds-py==2026.5.1
 rtree==1.4.1
 ruamel.yaml==0.18.17
 ruamel.yaml.clib==0.2.15
-s3transfer==0.17.1
+s3transfer==0.18.0
 sacrebleu==2.6.0
 safetensors[numpy,torch]==0.7.0
 scikit-learn==1.8.0
@@ -210,7 +210,7 @@ soupsieve==2.8.4
 sqlalchemy==2.0.50
 sqlitedict==2.1.0
 sse-starlette==3.4.4
-starlette==1.1.0
+starlette==1.2.0
 starlette-context==0.3.6
 submodlib-py==0.0.3
 sympy==1.14.0
