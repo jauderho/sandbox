@@ -720,19 +720,19 @@ wheels = [
 
 [[package]]
 name = "fastmcp"
-version = "3.4.0b1"
+version = "3.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "fastmcp-slim", extra = ["client", "server"] },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d8/05/a220636a141f59f28fea8bccaa233de7c387e585aa15b031b8b60233ae22/fastmcp-3.4.0b1.tar.gz", hash = "sha256:f9b1ed8ddac992f86877133973c67629ffd3b20440c4d2ec0bd4aecd7a1d7542", size = 28725146, upload-time = "2026-05-23T14:32:34.926Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/64/24/519739e98daf92ebc64580e9d3320649bf9a1612c029a913dd88c3474d73/fastmcp-3.4.0.tar.gz", hash = "sha256:29055fb6816f4862c615aabaf0112ae8feb8b469740db13403a0ce5b799ec1dc", size = 28754939, upload-time = "2026-06-03T02:32:40.206Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bb/fb/34113a9e823a9daad6dea5d2cbbfdc93d02ec5edde8c4743697709aea8e2/fastmcp-3.4.0b1-py3-none-any.whl", hash = "sha256:ca6dd0e145e8e9d425191612fb4e59cf2db1c0a725c5ecd2989bc96da90e7c68", size = 8040, upload-time = "2026-05-23T14:32:37.432Z" },
+    { url = "https://files.pythonhosted.org/packages/e9/72/9f9bbfc3a8d26870dbdbbd633cd1c6f42b8d3bec379426c760676d936e86/fastmcp-3.4.0-py3-none-any.whl", hash = "sha256:34523083d6149400a0655a8aa769eb34f85b1ce6dac6d66efb07503ebbe5f44b", size = 8017, upload-time = "2026-06-03T02:32:38.05Z" },
 ]
 
 [[package]]
 name = "fastmcp-slim"
-version = "3.4.0b1"
+version = "3.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "platformdirs" },
@@ -742,9 +742,9 @@ dependencies = [
     { name = "rich" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ad/f7/37a87076d001a573247e0484fa923adf587574e73dab635779dd702f5fb0/fastmcp_slim-3.4.0b1.tar.gz", hash = "sha256:4d0ecda6292ad0bb2ad58ace7483c4f819e43aca10f38b5d9c3820fc3e7bd187", size = 571877, upload-time = "2026-05-23T14:32:15.399Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e7/b0/4da6078c2d6aa0a38a8b1ae0271e1ed400f9e2cd1b3b46e6453fb1fe2b75/fastmcp_slim-3.4.0.tar.gz", hash = "sha256:faa0ccf16e85ec4b9f79c006fed3546b866d7e6dba3f60cd32cd98e84753a496", size = 575895, upload-time = "2026-06-03T02:32:18.744Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c1/a7/9436799f224a1b9b251d995198e4724247f2c7665b638c122db4b06262fd/fastmcp_slim-3.4.0b1-py3-none-any.whl", hash = "sha256:0c5e42f113c5f74e69e530e47934627cc6ab2497d0fce22f789b145394f45810", size = 743573, upload-time = "2026-05-23T14:32:13.846Z" },
+    { url = "https://files.pythonhosted.org/packages/58/66/cc283d4efd3faf325c26f51cfb43a118270ea732e70dda509f49d80ea625/fastmcp_slim-3.4.0-py3-none-any.whl", hash = "sha256:17cd0a1535972d3748d8c2416f0826dfc86c18df7a6cbc38602373277d44baa6", size = 748849, upload-time = "2026-06-03T02:32:17.435Z" },
 ]
 
 [package.optional-dependencies]
