@@ -28,6 +28,11 @@ LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/awscliv1"
 LABEL org.opencontainers.image.description="AWS CLI v1"
 
+# EXPOSE
+# ENV
+# STOPSIGNAL
+HEALTHCHECK NONE
+# USER
+
 ENTRYPOINT ["/usr/local/bin/aws"]
 CMD ["--version"]
-
