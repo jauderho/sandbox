@@ -25,7 +25,7 @@ permissions: read-all
 jobs:
 
   update-docker:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       id-token: write
 
@@ -82,7 +82,7 @@ jobs:
 
   update-python-uv:
     needs: update-docker
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       id-token: write
 
@@ -153,7 +153,7 @@ jobs:
 
   update-python:
     needs: update-python-uv
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       id-token: write
 
