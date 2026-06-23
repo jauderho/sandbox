@@ -573,16 +573,17 @@ wheels = [
 
 [[package]]
 name = "cyclopts"
-version = "5.0.0a6"
+version = "5.0.0a7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
     { name = "docstring-parser" },
     { name = "rich" },
+    { name = "rich-rst" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d0/85/50f3ab8e645be7de39689d0ba8f9020009de3e15bd4cad26d11425f73a5d/cyclopts-5.0.0a6.tar.gz", hash = "sha256:e66ad6823c97e00dd4081277d9d5f95d9a67914750c595b9aae6ef2f93a7e17b", size = 171447, upload-time = "2026-03-23T14:51:23.769Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/47/e0/2718af0353632bd92bad5c54e738f3364df3283b38cfa68c4e92e0edab86/cyclopts-5.0.0a7.tar.gz", hash = "sha256:1de3e5e0adb7bd03083e1be63a941f799b845d4fbd2141a83b080d7f57496359", size = 191043, upload-time = "2026-06-23T00:57:57.719Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b3/5e/61b12b46657a4cd38f07ed90aab2a6f4e6110448276826940defa0eb5830/cyclopts-5.0.0a6-py3-none-any.whl", hash = "sha256:2098634e797a498f561ee87429babfe4c16068d50e9ebfe6b35626207e741799", size = 209583, upload-time = "2026-03-23T14:51:24.795Z" },
+    { url = "https://files.pythonhosted.org/packages/5c/e1/d6f8c1e1680c0084201dbad8ba2be2d685d96aaf14c6dc91af26a37a3c8a/cyclopts-5.0.0a7-py3-none-any.whl", hash = "sha256:1409e7de686e1c6c4d8c6fb9742ae2503026d43e99c7709c09ffb5968172c1b6", size = 229854, upload-time = "2026-06-23T00:57:56.157Z" },
 ]
 
 [[package]]
@@ -3101,6 +3102,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/e9/67/cae617f1351490c25a4b8ac3b8b63a4dda609295d8222bad12242dfdc629/rich-14.3.4.tar.gz", hash = "sha256:817e02727f2b25b40ef56f5aa2217f400c8489f79ca8f46ea2b70dd5e14558a9", size = 230524, upload-time = "2026-04-11T02:57:45.419Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b3/76/6d163cfac87b632216f71879e6b2cf17163f773ff59c00b5ff4900a80fa3/rich-14.3.4-py3-none-any.whl", hash = "sha256:07e7adb4690f68864777b1450859253bed81a99a31ac321ac1817b2313558952", size = 310480, upload-time = "2026-04-11T02:57:47.484Z" },
+]
+
+[[package]]
+name = "rich-rst"
+version = "2.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pygments" },
+    { name = "rich" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/57/56/3191bae66b08ccc637ea8120426068bcb361cc323c96404c310886937067/rich_rst-2.0.1.tar.gz", hash = "sha256:cbe236ed0901d1ec8427cc6a50bf0a34353ba28ad014dc24def68bfe7f3b9e68", size = 300570, upload-time = "2026-05-16T00:47:57.362Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a0/3d/55c17d3ebdf3cd81356002afe5bef9bb8af631db2819785b6eac845b925b/rich_rst-2.0.1-py3-none-any.whl", hash = "sha256:7ee15f345ce25fa02b582c272a6cdbaf0c21243e38061cea273cff659bf3ef61", size = 272922, upload-time = "2026-05-16T00:47:55.508Z" },
 ]
 
 [[package]]
