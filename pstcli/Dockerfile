@@ -1,8 +1,9 @@
 FROM almalinux:10.2-minimal@sha256:bafd259fb7b0475eed28376ddddea19f209e24efafc9eb21f4e9d5ed9825d2ef
 # FROM rockylinux:9.3-minimal@sha256:305de618a5681ff75b1d608fd22b10f362867dff2f550a4f1d427d21cd7f42b4
 
+ARG FOLDER_VERSION
 ARG BUILD_VERSION
-ARG ARCHIVE_URL=https://dl.dell.com/FOLDER13576510M/1/pstcli-${BUILD_VERSION}.x86_64.release.rpm
+ARG ARCHIVE_URL=https://dl.dell.com/FOLDER13877768M/1/pstcli-${BUILD_VERSION}.x86_64.release.rpm
 
 # https://dl.dell.com/FOLDER12722122M/1/pstcli-4.1.0.0.1338.x86_64.release.rpm
 
