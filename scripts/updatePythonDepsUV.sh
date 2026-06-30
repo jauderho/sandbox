@@ -29,6 +29,7 @@ APP=(
   "greynoise" \
   "hdbcli" \
   "huggingface-cli" \
+  "ilab" \
   "internetarchive" \
   "jc" \
   "llama-cpp-agent" \
