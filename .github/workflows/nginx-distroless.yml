@@ -77,8 +77,6 @@ jobs:
           build-args: BUILD_VERSION
           sbom: true
           provenance: true
-          cache-from: type=gha, scope=${{ github.workflow }}
-          cache-to: type=gha, scope=${{ github.workflow }}
           labels: ${{ steps.docker_meta.outputs.labels }}
           tags: |
             ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}
@@ -96,8 +94,6 @@ jobs:
             BUILD_STABLE_VERSION
           sbom: true
           provenance: true
-          cache-from: type=gha, scope=${{ github.workflow }}
-          cache-to: type=gha, scope=${{ github.workflow }}
           labels: |
             org.opencontainers.image.version=${{ env.BUILD_STABLE_VERSION }}
             org.opencontainers.image.revision=${{ github.sha }}
