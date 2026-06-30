@@ -1353,7 +1353,7 @@ wheels = [
 
 [[package]]
 name = "langgraph"
-version = "1.2.6"
+version = "1.2.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "langchain-core" },
@@ -1363,9 +1363,9 @@ dependencies = [
     { name = "pydantic" },
     { name = "xxhash" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/02/7a/ea09b05bb0cbddfa43bd34fc581357e87fc3f21a751cc0d419688c3106da/langgraph-1.2.6.tar.gz", hash = "sha256:f9b45a34f13930c94d96cdb76277447ad2cc70ec2d18cd2764d7fdadb36cdc1b", size = 714400, upload-time = "2026-06-18T20:58:21.514Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/bf/11/c3961537ac7577125aabba68effc33ecc3dc0962e2d287d734dbd61caad7/langgraph-1.2.7.tar.gz", hash = "sha256:dcdf5b441bf8c7c7c154e603b302c9dbfbfd2d11e1b7ae7d93a5aba979dc87bd", size = 721385, upload-time = "2026-06-30T01:24:12.528Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/89/32/772db1b00a9fe42f50320d1aa20caefb76e621eff1f7218b9918093d631d/langgraph-1.2.6-py3-none-any.whl", hash = "sha256:1cf94d3ca124f84f77ce408fa1b06c3dee680a8aafffe364a8fd5d7d03eb8695", size = 246132, upload-time = "2026-06-18T20:58:20.335Z" },
+    { url = "https://files.pythonhosted.org/packages/16/5d/19de0c674cf2d8bc95b25cdb4c13ba3f4fbe0f35bf2224ef19cc46bbb4cd/langgraph-1.2.7-py3-none-any.whl", hash = "sha256:249349a5d6a32cb0aa2304a8fb6529bd0cf56db8780d21db9e086e5383668f89", size = 246930, upload-time = "2026-06-30T01:24:11.15Z" },
 ]
 
 [[package]]
@@ -1437,7 +1437,7 @@ wheels = [
 
 [[package]]
 name = "litellm"
-version = "1.90.0"
+version = "1.90.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
@@ -1453,9 +1453,9 @@ dependencies = [
     { name = "tiktoken" },
     { name = "tokenizers" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/24/c6/45b74e44f6605f91cffb2d6ad5463bc743f5636c66a2892c834d90b708e7/litellm-1.90.0.tar.gz", hash = "sha256:55f2be4adfc350ae2931bf369aebf1229aa54ea8ceaa1c13ee65a07724572dae", size = 14815671, upload-time = "2026-06-27T03:12:47.81Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/36/1e/b079ec9b840bac7573c33fa06c075414616c19ac0adde06ec4cb694cbc9f/litellm-1.90.1.tar.gz", hash = "sha256:a0c79d9efa1dbc031371348540466240216c898c68687d4c2de1343ca3ac3dd0", size = 14818439, upload-time = "2026-06-30T01:43:41.558Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c7/f7/0864ca487526ed478b857c704244255c7be4e13ed4dde7aeec13f679c904/litellm-1.90.0-py3-none-any.whl", hash = "sha256:3a0fec8405606e34f501544fb9cfe4261fe073bef340d3ca9a60d3fb31c639ee", size = 16607104, upload-time = "2026-06-27T03:12:44.493Z" },
+    { url = "https://files.pythonhosted.org/packages/d0/86/86063e003e0ca31f8304a5ba808d51d91b959512b33b6cab5e0c55e936e8/litellm-1.90.1-py3-none-any.whl", hash = "sha256:d90482c7f3a7dfa3f4d88b255cb4e1e60793d7452efcc0fe461a719df52c283e", size = 16611651, upload-time = "2026-06-30T01:43:38.154Z" },
 ]
 
 [[package]]
@@ -3402,7 +3402,7 @@ wheels = [
 
 [[package]]
 name = "weave"
-version = "0.52.43"
+version = "0.53.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cachetools" },
@@ -3413,7 +3413,6 @@ dependencies = [
     { name = "opentelemetry-api" },
     { name = "opentelemetry-exporter-otlp-proto-http" },
     { name = "opentelemetry-sdk" },
-    { name = "opentelemetry-semantic-conventions" },
     { name = "packaging" },
     { name = "polyfile-weave" },
     { name = "pydantic" },
@@ -3421,9 +3420,9 @@ dependencies = [
     { name = "tenacity" },
     { name = "tzdata", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/9d/df/dcb32bf366eca5e11d345a8e15238256396a9ff7346a29b3290a358b9cd8/weave-0.52.43.tar.gz", hash = "sha256:3c4abcb4da33e0db8a03bd52739503d99c90bdb1922b704ca2b2df8a0f6d561e", size = 977397, upload-time = "2026-06-15T21:29:23.062Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/9e/89/9a5d0befbb23bcb2c95299d37c7362169c46106a9bd77daf830c8f65b5cd/weave-0.53.0.tar.gz", hash = "sha256:eeecfe3bc54ac739c14a700dbf1e93885fd47c501f2984e0fa68969a4a35c10e", size = 1102133, upload-time = "2026-06-30T00:37:25.71Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c1/a0/e823f714e337c6342a831307d21d2a12c87bc6a6015fc0ac62be9dd8e01f/weave-0.52.43-py3-none-any.whl", hash = "sha256:d7fb10e893c9da57c7663c8c51a1a67eb59216f9da0e4056a244a41de63faf19", size = 1199217, upload-time = "2026-06-15T21:29:21.267Z" },
+    { url = "https://files.pythonhosted.org/packages/4a/e6/00c324cac3b53b3376c2beb6d76deaf4df1c5005c313009b73c58b66f78e/weave-0.53.0-py3-none-any.whl", hash = "sha256:1c4a9177e17ba5f7bf8618534fe9a6a4d62e6d60f2c9a21c9cd0154a7e0c3e5c", size = 1338818, upload-time = "2026-06-30T00:37:23.922Z" },
 ]
 
 [[package]]
