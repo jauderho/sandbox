@@ -564,7 +564,7 @@ wheels = [
 
 [[package]]
 name = "docling-parse"
-version = "7.2.0"
+version = "7.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "docling-core" },
@@ -572,12 +572,12 @@ dependencies = [
     { name = "pydantic" },
     { name = "pywin32", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f3/5d/73b88de7877f76066976919e773c75901339368a69e0a6c1adb97b32e494/docling_parse-7.2.0.tar.gz", hash = "sha256:b3ad556fd96986fd4dbf43cb24d38c3343e06d58d15af65003a806b502645419", size = 6706463, upload-time = "2026-06-29T11:08:14.572Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e5/7a/aa975c0bd35dee784e5be00f9c402bf5290112df2657b1521e72ac3ab11d/docling_parse-7.4.0.tar.gz", hash = "sha256:30297a61a8d09dc528adde853090fabe9d6b3f83de7e0a0ea6e9aafe01ec9b4a", size = 6708979, upload-time = "2026-07-01T07:34:55.125Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7f/7b/78410f87cb8451371644d93c6081286a874bd83c6f5000600f19598a5f7f/docling_parse-7.2.0-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:3211bc7b9098e0e7b7eda896b6caa9bacc86dbfcb4e74e3efa4010effc77def0", size = 9161968, upload-time = "2026-06-29T11:07:50.935Z" },
-    { url = "https://files.pythonhosted.org/packages/b5/90/b7b833b37478bc7176f3a33402ec985d694f52d6984fe9b2b380420bd8f0/docling_parse-7.2.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:033689d8326433540995b2a29d78d9e562d57706c5e01314b51f32f31bdf5119", size = 9832817, upload-time = "2026-06-29T11:07:52.823Z" },
-    { url = "https://files.pythonhosted.org/packages/ce/72/760e5edee90b22f0d987314ef2de1d979715f3989053e1f9eaa996c652ac/docling_parse-7.2.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:47898456f23e68d9bc8f1cc5244d01695ef80b8d010221a33f088f5063d1c591", size = 10218825, upload-time = "2026-06-29T11:07:55.153Z" },
-    { url = "https://files.pythonhosted.org/packages/6b/14/55732078b27803f768c888c761e7e48aa9b863eed9ddad511c693ec1c20a/docling_parse-7.2.0-cp312-cp312-win_amd64.whl", hash = "sha256:e2b2e3857094e2b76201e022f494184d67255a132f43c513943151cc2b390ce2", size = 10987208, upload-time = "2026-06-29T11:07:57.09Z" },
+    { url = "https://files.pythonhosted.org/packages/54/98/208fffeb9feef3b118b99b4cdbf00fdd265cb670172c147a57011379534c/docling_parse-7.4.0-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:7e3bd1cc431330e7f4c9fc114d8ef2daf5c0b580fdc553eccdd847fcf3219752", size = 9162532, upload-time = "2026-07-01T07:34:31.267Z" },
+    { url = "https://files.pythonhosted.org/packages/4c/2a/be8f91e859efad964ca86ae7b6babedec054ca5a175ddb650e2dc3b87b7d/docling_parse-7.4.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:4926d277e0e66aeeaf7c6946459fda0e31e2d5faef5a0566787cdff03c60c0c1", size = 9835254, upload-time = "2026-07-01T07:34:33.158Z" },
+    { url = "https://files.pythonhosted.org/packages/9d/d9/9dd6baa6ddfed91d81742c087e7b9cc0cfaa6e2cd422debfd9d575821482/docling_parse-7.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:3134fe552b0f20d9674217ee31c308aac2affe31266a2cdf89307a44b119cd00", size = 10220871, upload-time = "2026-07-01T07:34:34.998Z" },
+    { url = "https://files.pythonhosted.org/packages/89/23/5ed39e95e99d24fc806cfc0b1f15d9a9fb34ae7627211769bd892ded9e54/docling_parse-7.4.0-cp312-cp312-win_amd64.whl", hash = "sha256:8d343f0416db7339e150797e0512a97d2003543a05c4cf4043f598dd6e1d394b", size = 10991814, upload-time = "2026-07-01T07:34:36.994Z" },
 ]
 
 [[package]]
@@ -2253,7 +2253,7 @@ wheels = [
 
 [[package]]
 name = "posthog"
-version = "7.21.1"
+version = "7.21.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "backoff" },
@@ -2261,9 +2261,9 @@ dependencies = [
     { name = "requests" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/98/65/a2b08d16e7b3b6518762f67d0c51c17aa6d02b08e0fe4260257eada02ee7/posthog-7.21.1.tar.gz", hash = "sha256:c8f7cd3eb3704fcd944c31c887801bf263dff39505d3531ecd0113e059d33bf8", size = 309024, upload-time = "2026-06-29T09:48:35.69Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6f/d4/91b88c706264cba1c73cb761c319bc833240273b258c25de89208c5c33f4/posthog-7.21.2.tar.gz", hash = "sha256:26460ab3589445e969cef51074198685ea27439fc3def6612a9ce1841685acce", size = 309338, upload-time = "2026-07-01T07:44:21.271Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bf/15/69e03271c251a039f767e4f1ea5d77e16c986de4c7134aedcbdd836b2493/posthog-7.21.1-py3-none-any.whl", hash = "sha256:30764b751b111fcd3b7056ee84468832c2d6bf6b495b06f56aa5c09bb7cf23fc", size = 371198, upload-time = "2026-06-29T09:48:34.057Z" },
+    { url = "https://files.pythonhosted.org/packages/bc/d2/f7d062da696fd8cdfe2992f832547b2b2feb237a350785163f77d6230f6b/posthog-7.21.2-py3-none-any.whl", hash = "sha256:8672d5b6dd10713abbe31c58668a6094f2929ffc8618c6f52744a63f2f192623", size = 371320, upload-time = "2026-07-01T07:44:19.233Z" },
 ]
 
 [[package]]
