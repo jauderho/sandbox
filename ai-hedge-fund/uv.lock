@@ -9,7 +9,7 @@ resolution-markers = [
 [[package]]
 name = "ai-hedge-fund"
 version = "2026.6.17"
-source = { git = "https://github.com/virattt/ai-hedge-fund.git#7499d2ff92729830ec161bd890044f60639a5567" }
+source = { git = "https://github.com/virattt/ai-hedge-fund.git#65a0349ccc114ea936aa08c3a5f1c2b05faa1337" }
 dependencies = [
     { name = "alembic" },
     { name = "colorama" },
@@ -247,7 +247,7 @@ wheels = [
 
 [[package]]
 name = "anthropic"
-version = "0.113.0"
+version = "0.115.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -259,9 +259,9 @@ dependencies = [
     { name = "sniffio" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a0/2a/f856135e5b055bf8b6f34133b313810dfe1cb848e5ac5ea843e196daefdd/anthropic-0.113.0.tar.gz", hash = "sha256:1830e866430ebd351c4f277d20e4c9b0aa9ad71f6569a23772ae88b33e0abaf8", size = 939444, upload-time = "2026-06-29T14:57:22.257Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/01/52/b9022707a25fd263b8ff5e11f480dcc9cd6da0a380c486e5be053c01d995/anthropic-0.115.0.tar.gz", hash = "sha256:6bb25184441d51544f8bc9877a7efbddd9bc4a6207cce898536d84b233310f4a", size = 949136, upload-time = "2026-06-30T19:47:33.848Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3e/4d/ea001c0993b8f48153c5eb74eecf5a3ed120df07fe894757351e8308bbe6/anthropic-0.113.0-py3-none-any.whl", hash = "sha256:9a52ed7a4982e916fa878d1ed3eaec2dcdf98699a39d8fc45b54b3c50f1e7426", size = 937995, upload-time = "2026-06-29T14:57:23.721Z" },
+    { url = "https://files.pythonhosted.org/packages/69/89/cd08c2fb41f10fc902593579cb81717ce0ce5489fdf9dcb8e04ea9825fb2/anthropic-0.115.0-py3-none-any.whl", hash = "sha256:aa4bbea9272fa1cced6749728f18d0af9d7934b7268779e84d6f5a246f4b998d", size = 960664, upload-time = "2026-06-30T19:47:32.341Z" },
 ]
 
 [[package]]
@@ -1364,7 +1364,7 @@ wheels = [
 
 [[package]]
 name = "langsmith"
-version = "0.9.3"
+version = "0.9.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -1382,9 +1382,9 @@ dependencies = [
     { name = "xxhash" },
     { name = "zstandard" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7e/b7/43f80940a758ceb48714ccc10c7acb9564be4f0d4786e8ed5d46deb0be39/langsmith-0.9.3.tar.gz", hash = "sha256:868a007b3ecda002914b21212a953c77fcb1d71a8a09a94562c3b57941d3df3a", size = 4577380, upload-time = "2026-06-26T15:56:30.45Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/fe/a7/a78b4105d1c01ee8d404d122d9acc047b8b9f628f3733cb837a321b2f6c6/langsmith-0.9.4.tar.gz", hash = "sha256:36c15e5a692e7812ee927e43d777c6166c839eb02b1d482ba9a805b438b1d91c", size = 4576594, upload-time = "2026-06-30T10:20:43.373Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/9e/fb/dc9f70b5581371fba7b01ba0704fe859bfcd12c4dad82b42ec12bd4160b1/langsmith-0.9.3-py3-none-any.whl", hash = "sha256:aac85686868a7e61d77858b880230e510583c61ea48ac0a197e6ceff64ffb22b", size = 619927, upload-time = "2026-06-26T15:56:28.301Z" },
+    { url = "https://files.pythonhosted.org/packages/c3/15/79367a3d159141fe4fc138f41db4ef21eb4759cd64cf8f635f41d55ded67/langsmith-0.9.4-py3-none-any.whl", hash = "sha256:f10f07438c7c6f9f907e8c810d8f338268fe863a74c37ded3d8a90830bb25451", size = 603804, upload-time = "2026-06-30T10:20:41.052Z" },
 ]
 
 [[package]]
