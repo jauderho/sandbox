@@ -17,9 +17,9 @@ bcrypt==5.0.0
 build==1.5.0
 cachetools==7.1.4
 certifi==2026.6.17
-cffi==2.0.0 ; platform_python_implementation != 'PyPy'
+cffi==2.1.0 ; platform_python_implementation != 'PyPy'
 chardet==7.4.3
-charset-normalizer==3.4.7
+charset-normalizer==3.4.8
 chromadb==1.5.9
 cint==1.0.0
 click==8.4.2
@@ -35,7 +35,7 @@ durationpy==0.10
 fastapi==0.139.0
 fastuuid==0.14.0
 fickling==0.1.12
-filelock==3.29.5
+filelock==3.29.6
 filetype==1.2.0
 flatbuffers==25.12.19
 frozenlist==1.8.0
@@ -72,11 +72,11 @@ kubernetes==36.0.2
 langchain==1.3.11
 langchain-core==1.4.8
 langchain-protocol==0.0.18
-langgraph==1.2.7
+langgraph==1.2.8
 langgraph-checkpoint==4.1.1
 langgraph-prebuilt==1.1.0
 langgraph-sdk==0.4.2
-langsmith==0.9.7
+langsmith==0.9.8
 litellm==1.91.0
 llama-index==0.14.23
 llama-index-core==0.14.23
@@ -159,7 +159,7 @@ typing-inspection==0.4.2
 tzdata==2026.2 ; sys_platform == 'win32'
 urllib3==2.7.0
 uuid-utils==0.16.2
-uvicorn==0.50.1
+uvicorn==0.50.2
 uvloop==0.22.1 ; platform_python_implementation != 'PyPy' and sys_platform != 'cygwin' and sys_platform != 'win32'
 watchdog==6.0.0
 watchfiles==1.2.0
@@ -167,7 +167,7 @@ weave==0.53.1
 websocket-client==1.9.0
 websockets==15.0.1
 wrapt==1.17.3
-xxhash==3.8.0
+xxhash==3.8.1
 yarl==1.24.2
 zipp==4.1.0
 zstandard==0.25.0
