@@ -9,8 +9,8 @@ beancount==3.2.3
 beautifulsoup4==4.15.0
 bs4==0.0.2
 certifi==2026.6.17
-cffi==2.0.0 ; (implementation_name != 'pypy' and os_name == 'nt' and platform_python_implementation == 'PyPy') or (implementation_name != 'pypy' and os_name == 'nt' and sys_platform != 'linux') or (platform_python_implementation != 'PyPy' and sys_platform == 'linux')
-charset-normalizer==3.4.7
+cffi==2.1.0 ; (implementation_name != 'pypy' and os_name == 'nt' and platform_python_implementation == 'PyPy') or (implementation_name != 'pypy' and os_name == 'nt' and sys_platform != 'linux') or (platform_python_implementation != 'PyPy' and sys_platform == 'linux')
+charset-normalizer==3.4.8
 chromedriver-binary==152.0.7933.0.0
 click==8.4.2
 colorama==0.4.6 ; sys_platform == 'win32'
@@ -18,7 +18,7 @@ configargparse==1.7.5
 cryptography==49.0.0 ; sys_platform == 'linux'
 decorator==5.3.1
 executing==2.2.1
-filelock==3.29.5
+filelock==3.29.6
 finance-dl==1.3.4
 h11==0.16.0
 idna==3.18
