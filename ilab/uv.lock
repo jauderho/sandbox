@@ -560,7 +560,7 @@ wheels = [
 
 [[package]]
 name = "docling-parse"
-version = "7.6.0"
+version = "7.7.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "docling-core" },
@@ -568,12 +568,13 @@ dependencies = [
     { name = "pydantic" },
     { name = "pywin32", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e3/ea/e60ad5cb60ace5241b43b523f4edeba18d73eba13f6072e25b61e4c168db/docling_parse-7.6.0.tar.gz", hash = "sha256:0816d9758d0304478a8ec73372ca3b6fc1cfee88aa239ef9e66942ab7f22d720", size = 6750519, upload-time = "2026-07-06T16:05:05.184Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/76/8c/2c09ba43e4da19b40384200d5317a0ab210440acfc5c4198db488f143de3/docling_parse-7.7.0.tar.gz", hash = "sha256:681da07e5355cac3d76f2aa046513a2d0ff7fde32352da858f480c5c0feead41", size = 6748991, upload-time = "2026-07-08T05:58:24.315Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5e/25/a6cdf1e84f211c7ee211948b06b1815882a9a2967448701e4df88c1acf62/docling_parse-7.6.0-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:178700f4d9274f523eb6ea0bff7cbc18ea77ea4f3fd95832b0fbe0766fa2273f", size = 9570091, upload-time = "2026-07-06T16:04:38.129Z" },
-    { url = "https://files.pythonhosted.org/packages/2b/f5/16c8b3edb3aa3a48eb7369f760ab3e519e44651a291bc8cd595ec9868a89/docling_parse-7.6.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:7e21adb450e55846b4d2697e8b3078186b7bc1d1dd8f21a14fd14a6a9bee4abf", size = 10298225, upload-time = "2026-07-06T16:04:40.385Z" },
-    { url = "https://files.pythonhosted.org/packages/15/cb/1b201fbbfa9e621466445180ad839ee8a0d764c2a949340ca4a8e82f7e47/docling_parse-7.6.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:e7edc19c8c451fa078485f94a0f9c5ea02e8527c9b3b0eb7aedad845abb3ee8f", size = 10708360, upload-time = "2026-07-06T16:04:42.715Z" },
-    { url = "https://files.pythonhosted.org/packages/12/4d/0797e740ad485ffc415992264284a604ae513ce6c5518b7fbbb2a541d699/docling_parse-7.6.0-cp312-cp312-win_amd64.whl", hash = "sha256:96c113f07c8821c3f20b5b12626638d2c6ecb0c850361feee92a8ec55727e098", size = 11454321, upload-time = "2026-07-06T16:04:44.79Z" },
+    { url = "https://files.pythonhosted.org/packages/cf/2a/0129ab4a8951d0541cbb5bf56c968f85d0eee190af0f0268ba175918baf1/docling_parse-7.7.0-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:312fed9d5d5f9ce26112956f5981200f8f923a42383f2c2daa151ee1096e7e6f", size = 9570092, upload-time = "2026-07-08T05:57:53.823Z" },
+    { url = "https://files.pythonhosted.org/packages/f0/c7/1b4e95621dcfaeb53ddc320265d4832d78f22a8aad320442a86a5df550aa/docling_parse-7.7.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:bd36c9a881e48b0e2b9bc72f7973836ba057d39e46639e7e6fefc774c03bb7ad", size = 10298221, upload-time = "2026-07-08T05:57:55.741Z" },
+    { url = "https://files.pythonhosted.org/packages/b9/19/54fdb0f1a9447bd9dd97e222115032e4d0fd7f4aece2468d4b948664d331/docling_parse-7.7.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:47a4f35f7411c8197227c396a58a01b5e49ddbdf921ed4985dd102cef774c434", size = 10708358, upload-time = "2026-07-08T05:57:58.502Z" },
+    { url = "https://files.pythonhosted.org/packages/8f/b5/98017bf39acc89071533d115d18d356d5887b0546a8a243e128543e52a01/docling_parse-7.7.0-cp312-cp312-win_amd64.whl", hash = "sha256:513e32052113270edf453dd85a8acf723ae70103a4962ff592ca30d12e01b834", size = 11454323, upload-time = "2026-07-08T05:58:00.673Z" },
+    { url = "https://files.pythonhosted.org/packages/d8/2d/2927d2731dee3bc2ed2e908d6f509a298e734a85a206866e738b9778ebde/docling_parse-7.7.0-cp312-cp312-win_arm64.whl", hash = "sha256:5a694577da704c38da3a9ea3179cffc6d25b0b9da5846e93c0d8b0e18361a702", size = 8865170, upload-time = "2026-07-08T05:58:02.626Z" },
 ]
 
 [[package]]
@@ -701,11 +702,11 @@ wheels = [
 
 [[package]]
 name = "filelock"
-version = "3.29.6"
+version = "3.29.7"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/e0/c8/35bdf04fb30755e2ed758f877edf3eb4a243c2463d3a258cc28b18b7a6e2/filelock-3.29.6.tar.gz", hash = "sha256:895c532ef3f4ef04972b9446a8c4e2931a5c399ff3c4be4c9369f2639b80f793", size = 70301, upload-time = "2026-07-06T23:08:08.577Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/35/94/00f2059e4835eace3ae8fde680b932c496f8ec7bdc99168dfa53fb2e6b79/filelock-3.29.7.tar.gz", hash = "sha256:5b481979797ae69e72f0b389d89a80bdd585c260c5b3f1fb9c0a5ba9bb3f195d", size = 71521, upload-time = "2026-07-08T05:46:58.716Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bb/49/7467c2946ccd9617f7da38187071bdc45bb9a95df51f4d63d6622432ce4e/filelock-3.29.6-py3-none-any.whl", hash = "sha256:14d5f5597d2e0c4dbd774cfb6d8132da1db44da83732aab679d54f7dcf97ab65", size = 45478, upload-time = "2026-07-06T23:08:07.197Z" },
+    { url = "https://files.pythonhosted.org/packages/60/02/be4a57b60c7149b55b9e3b3c13f609cd8eb5307c751f22bd8fb8d262e75b/filelock-3.29.7-py3-none-any.whl", hash = "sha256:987db6f789a3a2a59f55081801b2b3697cb97e2a736b5f1a9e99b559285fbc51", size = 46036, upload-time = "2026-07-08T05:46:57.53Z" },
 ]
 
 [[package]]
@@ -1801,17 +1802,18 @@ wheels = [
 
 [[package]]
 name = "nltk"
-version = "3.9.4"
+version = "3.10.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
+    { name = "defusedxml" },
     { name = "joblib" },
     { name = "regex" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/74/a1/b3b4adf15585a5bc4c357adde150c01ebeeb642173ded4d871e89468767c/nltk-3.9.4.tar.gz", hash = "sha256:ed03bc098a40481310320808b2db712d95d13ca65b27372f8a403949c8b523d0", size = 2946864, upload-time = "2026-03-24T06:13:40.641Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/96/02/df4f105b28a7c16b0e41423bc09cf0f1b8a305df4ef0b10ca74a2e4c648c/nltk-3.10.0.tar.gz", hash = "sha256:4fbac1d98203cbcd1b5d94a2877fb822300072d80604a5e7fae49d2c5f84e8c1", size = 3089244, upload-time = "2026-07-08T02:39:13.562Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/9d/91/04e965f8e717ba0ab4bdca5c112deeab11c9e750d94c4d4602f050295d39/nltk-3.9.4-py3-none-any.whl", hash = "sha256:f2fa301c3a12718ce4a0e9305c5675299da5ad9e26068218b69d692fda84828f", size = 1552087, upload-time = "2026-03-24T06:13:38.47Z" },
+    { url = "https://files.pythonhosted.org/packages/6e/89/a0b0f35e2820d6a99d75ea1c11977ee6d5c9e6658eceb45b0c7620881faa/nltk-3.10.0-py3-none-any.whl", hash = "sha256:54ff84d4916d3ef127e8953bee0023f6a6b320b75d634a19e06ef056d3d244bf", size = 1716144, upload-time = "2026-07-08T02:39:09.753Z" },
 ]
 
 [[package]]
