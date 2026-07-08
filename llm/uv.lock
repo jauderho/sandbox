@@ -436,19 +436,19 @@ wheels = [
 
 [[package]]
 name = "sqlite-migrate"
-version = "0.1b1"
+version = "0.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "sqlite-utils" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/70/96/8444f991b9c41be7bd24cbfda794ba8a86475703246e53d907a4c998fc33/sqlite_migrate-0.1b1.tar.gz", hash = "sha256:7b346f1cefd21af862f415f0fc81228424fa91933ac555676d8115fc9e86a7c0", size = 10814, upload-time = "2026-07-05T20:06:35.356Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2c/be/cb7cfb197a864c1676cb5e7721169de4923f26fb4c25351e492cbdde8c22/sqlite_migrate-0.2.tar.gz", hash = "sha256:c6b78b5bb486b541a5c484c93a22079ad7fab8c142a26793830748586457b3c8", size = 1356, upload-time = "2026-07-07T16:34:52.24Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/69/2f/a6974af692f021e14bab34f7c1eb98d56eef4880278d86302f7c9de8fbe9/sqlite_migrate-0.1b1-py3-none-any.whl", hash = "sha256:256c8eff342f37a65006ee48027b874f2361e117a1e41f8471105b7aeb50bb81", size = 10022, upload-time = "2026-07-05T20:06:34.18Z" },
+    { url = "https://files.pythonhosted.org/packages/eb/4c/43998786555c4c8193a06cb06d03f3f96277b6e3f454c394265026232675/sqlite_migrate-0.2-py3-none-any.whl", hash = "sha256:3f68a39c87357451b2e5571d2dc6d53bd52d63647053979f6e5b586b4ca81938", size = 2135, upload-time = "2026-07-07T16:34:51.437Z" },
 ]
 
 [[package]]
 name = "sqlite-utils"
-version = "3.39"
+version = "4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -459,9 +459,9 @@ dependencies = [
     { name = "sqlite-fts4" },
     { name = "tabulate" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b3/e3/6b1106349e2576c18409b27bd3b16f193b1cf38220d98ad22aa454c5e075/sqlite_utils-3.39.tar.gz", hash = "sha256:bfa2eac29b3e3eb5c9647283797527febcf4efd4a9bbb31d979a14a11ef9dbcd", size = 215324, upload-time = "2025-11-24T18:45:49.91Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7d/8e/0e2fa87b197b3d0f8dd57856c07da77fa0c7130aaa894ee9d330c715f37c/sqlite_utils-4.0.tar.gz", hash = "sha256:cea711807c2bbc18829ed642ae19a23a80e853f4136c4d2a28078a6117ad9426", size = 280394, upload-time = "2026-07-07T15:46:44.851Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/51/33/7e01d2f6b8c778529dfae9045c4f46b33ba145c3d401fa95b07f599e7403/sqlite_utils-3.39-py3-none-any.whl", hash = "sha256:349c099c0cd60d4ee9139a24d5c9cb64af3906c3e90832fcbbd74da49333374d", size = 68451, upload-time = "2025-11-24T18:45:48.366Z" },
+    { url = "https://files.pythonhosted.org/packages/66/90/d2581a0be7810aac892858fd9cd06355af0a2a47fdcf386d40a4e8f050a3/sqlite_utils-4.0-py3-none-any.whl", hash = "sha256:7a57e16e75d82811375e67707ad9f6428c75bb3a382a77ed924db7627aef465b", size = 87529, upload-time = "2026-07-07T15:46:43.718Z" },
 ]
 
 [[package]]
@@ -475,14 +475,14 @@ wheels = [
 
 [[package]]
 name = "tqdm"
-version = "4.68.3"
+version = "4.68.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "colorama", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/87/d7/0535a28b1f5f24f6612fb3ff1e89fb1a8d160fee0f976e0aa6803862134b/tqdm-4.68.3.tar.gz", hash = "sha256:00dfa48452b6b6cfae3dd9885636c23d3422d1ec97c66d96818cbd5e0821d482", size = 170596, upload-time = "2026-06-17T07:36:52.105Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ae/5f/57ff8b434839e70dab45601284ea413e947a63799891b7553e5960a793a8/tqdm-4.68.4.tar.gz", hash = "sha256:19829c9673638f2a0b8617da4cdcb927e831cd88bcfcb6e78d42a4d1af131520", size = 792418, upload-time = "2026-07-07T09:58:18.369Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d8/8e/bb97bb0c71802080bfc8952937d174e49cfc50de5c951dd47b2496f0dcdb/tqdm-4.68.3-py3-none-any.whl", hash = "sha256:39832cc2def2789a6f29df83f172db7416cea70052c0907a57801c5f2fdccb03", size = 78337, upload-time = "2026-06-17T07:36:50.132Z" },
+    { url = "https://files.pythonhosted.org/packages/22/2a/5e5e750890ada51017d18d0d4c30da696e5b5bd3180947729927628fc3cb/tqdm-4.68.4-py3-none-any.whl", hash = "sha256:5168118b2368f48c561afda8020fd79195b1bdb0bdf8086b88442c267a315dc2", size = 676612, upload-time = "2026-07-07T09:58:16.256Z" },
 ]
 
 [[package]]
