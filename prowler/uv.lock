@@ -1292,16 +1292,17 @@ wheels = [
 
 [[package]]
 name = "darabonba-core"
-version = "1.0.7"
+version = "1.0.8"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
     { name = "alibabacloud-tea" },
     { name = "requests" },
+    { name = "websocket-client" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/06/d9/076bfec3ef28b39d04a9c5e48ef56f20f1a62ed9f684f857a7c503b362b6/darabonba_core-1.0.7.tar.gz", hash = "sha256:c2de2ee260682b4c08c9ec67793de66a2bdf316363b9165f152b9acaa16b4dc3", size = 21705, upload-time = "2026-06-22T12:41:36.562Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f5/83/9321ccdb7a800c2cb97d8fa34bead5f20141f27f804594fd1fd815c4cd07/darabonba_core-1.0.8.tar.gz", hash = "sha256:f1661960b368e342d3d36434be82d264b70a01c49e843921d8a4dacd217376ae", size = 27604, upload-time = "2026-07-13T02:07:34.093Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/47/01/34073c5e1742db3399d5837b44ac237e1001f092224a1a2addf30c5f9aaa/darabonba_core-1.0.7-py3-none-any.whl", hash = "sha256:d83ca9253f4bfb0ee8ac1075e23a3480fbd1133f5f96ec08f0e25d1612e299bd", size = 24852, upload-time = "2026-06-22T12:41:35.629Z" },
+    { url = "https://files.pythonhosted.org/packages/6d/88/38800ca22f39a31fdb75c7b2867c61d3af5e2792cee0b72942a639c88a79/darabonba_core-1.0.8-py3-none-any.whl", hash = "sha256:ac093fdd40f88f2f9dfbbbfd7bc143495a3cb031f35b397c98d24edfa6b69483", size = 30957, upload-time = "2026-07-13T02:07:33.138Z" },
 ]
 
 [[package]]
