@@ -197,9 +197,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/50/be/1813d7553e11e20a1
 
 [[package]]
 name = "alibabacloud-darabonba-encode-util"
-version = "0.0.2"
+version = "0.0.3"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/b6/d8/22543b2ade9aa68fef028a9f0c4154bfdb970926f918f63d7b85bae527a9/alibabacloud_darabonba_encode_util-0.0.2.tar.gz", hash = "sha256:f1c484f276d60450fa49b4b2987194e741fcb2f7faae7f287c0ae65abc85fd4d", size = 3990, upload-time = "2022-12-10T04:43:48.086Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a7/62/5ad776035482fddb8831459c7072f25463f2cb06e5b8b1e93eb537c2a43e/alibabacloud_darabonba_encode_util-0.0.3.tar.gz", hash = "sha256:f293ed5f5933e97061a51d80aeb4bdc4d38bc67f6e0aca6eda7c5d7814b21c46", size = 4193, upload-time = "2026-07-17T10:27:32.937Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c1/33/a2f254e5610b6b83b28c010c1c8e67c26d4ac0355f59f16cba25c9440567/alibabacloud_darabonba_encode_util-0.0.3-py3-none-any.whl", hash = "sha256:6a91c82f6cc4227091be39b65d1f6921d7330119bac7b911e5a26daf895cc9dc", size = 4295, upload-time = "2026-07-17T10:27:32Z" },
+]
 
 [[package]]
 name = "alibabacloud-darabonba-map"
@@ -464,14 +467,14 @@ wheels = [
 
 [[package]]
 name = "alibabacloud-tea-util"
-version = "0.3.14"
+version = "0.3.15"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "alibabacloud-tea" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e9/ee/ea90be94ad781a5055db29556744681fc71190ef444ae53adba45e1be5f3/alibabacloud_tea_util-0.3.14.tar.gz", hash = "sha256:708e7c9f64641a3c9e0e566365d2f23675f8d7c2a3e2971d9402ceede0408cdb", size = 7515, upload-time = "2025-11-19T06:01:08.504Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/01/22/d3ce00317d9ba963bcc48234210bd718c42425267ecb05881cbb189b1c76/alibabacloud_tea_util-0.3.15.tar.gz", hash = "sha256:79f78e596f6be03fb9565e34ac45420f3730e52888376cc9713bd07432a4c6cc", size = 7548, upload-time = "2026-07-17T10:15:04.213Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/72/9e/c394b4e2104766fb28a1e44e3ed36e4c7773b4d05c868e482be99d5635c9/alibabacloud_tea_util-0.3.14-py3-none-any.whl", hash = "sha256:10d3e5c340d8f7ec69dd27345eb2fc5a1dab07875742525edf07bbe86db93bfe", size = 6697, upload-time = "2025-11-19T06:01:07.355Z" },
+    { url = "https://files.pythonhosted.org/packages/6b/29/6d05604c74f3b1326c317727c532e9054f56dca5299ff5b645f73425680d/alibabacloud_tea_util-0.3.15-py3-none-any.whl", hash = "sha256:afb3dd8ad5cd2f93804258fbbac4360c050462100499269795ea055c1644e193", size = 6709, upload-time = "2026-07-17T10:15:03.317Z" },
 ]
 
 [[package]]
@@ -1460,11 +1463,11 @@ wheels = [
 
 [[package]]
 name = "filelock"
-version = "3.30.2"
+version = "3.30.3"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/02/f7/2165ef325da22d854b8f81ca4799395f2eb6afa55cdb52c7710f028b5336/filelock-3.30.2.tar.gz", hash = "sha256:1ea7c857465c897a4a6e64c1aace28ff6b83f5bc66c1c06ea148efa65bc2ec5d", size = 176823, upload-time = "2026-07-16T19:50:42.724Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d6/01/9256cbe36eb2a84501920adad7d0e86738ab0ad60e64f4f5c38d7dd94dc1/filelock-3.30.3.tar.gz", hash = "sha256:6575420cd497ed15fc43a7ac46c48f6b6371c733fc40cf5a4e216871397bc1e2", size = 177706, upload-time = "2026-07-17T15:17:45.342Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/02/df/05118016cad66cd0d7c9417b2d4fc245be35decc4c36810f3c8dbf729d88/filelock-3.30.2-py3-none-any.whl", hash = "sha256:a64b58f75048ec39589983e97f5117163f822261dcb6ba843e098f05aac9663f", size = 94092, upload-time = "2026-07-16T19:50:41.189Z" },
+    { url = "https://files.pythonhosted.org/packages/e7/20/b0d6da41a08b30faef4f20302f5d826a9d39073750cd9100b463eb840cf4/filelock-3.30.3-py3-none-any.whl", hash = "sha256:06e1c6d5e12277022172b7f8d090affe0e8f940f1a37ca45f548855ee51a6b86", size = 94544, upload-time = "2026-07-17T15:17:44.129Z" },
 ]
 
 [[package]]
@@ -2620,7 +2623,7 @@ wheels = [
 
 [[package]]
 name = "prowler"
-version = "5.34.0"
+version = "5.35.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "alibabacloud-actiontrail20200706" },
@@ -2706,9 +2709,9 @@ dependencies = [
     { name = "tzlocal" },
     { name = "uuid6" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/97/e9/db852cce671102e332ab3880f1c5dfaa78d9158b03f3d5dd9beef56e7f62/prowler-5.34.0.tar.gz", hash = "sha256:ad6e539580144cbbf0b03745b4340eb5964db4454875956c2f8eeaf3cb69645b", size = 8986622, upload-time = "2026-07-15T15:25:22.968Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d0/14/31390cf72aab411c6c0902de8e9188262ddb858dafeff34b5c2c8a8696ba/prowler-5.35.0.tar.gz", hash = "sha256:15171200da64305ba928ffebf746e6b473616f52a401412699b6a50a9232feda", size = 8989287, upload-time = "2026-07-17T10:45:09.287Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5b/72/e0f75193c511e859d80ce1d253742a7c75a0812ffc56f75a919aec8108fb/prowler-5.34.0-py3-none-any.whl", hash = "sha256:0e37b71714bf909dc8fb679f9fb823a40553f295ce77f6af51fd277fd285acc5", size = 10815781, upload-time = "2026-07-15T15:25:19.441Z" },
+    { url = "https://files.pythonhosted.org/packages/ad/e9/e9571b8ab315d4d621b76878b84765eaa910e08b2bb7f377b55a3808b5af/prowler-5.35.0-py3-none-any.whl", hash = "sha256:67eac7aeb5a0df85a1c8f3e6073f2dade37e0b46191b168b5ecc12868306d42a", size = 10818549, upload-time = "2026-07-17T10:45:06.521Z" },
 ]
 
 [[package]]
