@@ -11,6 +11,7 @@ ENV PIP_NO_CACHE_DIR=1
 # requirements.txt now generated from Pipfile
 # pipenv lock -r > requirements.txt
 COPY requirements.txt . 
+RUN groupadd dkimpy && useradd -ms /bin/bash -g dkimpy dkimpy
 
 RUN apt-get update && \
 	apt-get dist-upgrade -y && \
@@ -20,6 +21,9 @@ RUN apt-get update && \
 	apt-get autoremove -y --purge && \
 	rm -rf /var/lib/apt/lists/* && \
 	apt-get clean
+
+RUN mkdir /app && chown dkimpy:dkimpy /app
+WORKDIR /app
 
 #	apt-get purge -y python3-dev && \
 #RUN pip install sslyze==${BUILD_VERSION}
@@ -32,6 +36,7 @@ LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/dkimpy"
 LABEL org.opencontainers.image.description="dkimpy is a library that implements DKIM (DomainKeys Identified Mail) email signing and verification"
 
+USER dkimpy
 
 CMD ["dkimverify"]
 #CMD ["dknewkey"]
