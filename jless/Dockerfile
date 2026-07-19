@@ -27,6 +27,9 @@ WORKDIR /config
 #FROM scratch
 FROM alpine:3.24.1@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b
 
+# EXPOSE
+# ENV
+# STOPSIGNAL
 LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
@@ -49,4 +52,3 @@ HEALTHCHECK NONE
 
 ENTRYPOINT ["/usr/local/bin/jless"]
 #CMD ["--help"]
-
