@@ -71,10 +71,10 @@ nvidia-nccl-cu13==2.29.7 ; sys_platform == 'linux'
 nvidia-nvjitlink==13.3.33 ; (platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')
 nvidia-nvshmem-cu13==3.4.5 ; sys_platform == 'linux'
 nvidia-nvtx==13.0.85 ; (platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')
-openai==2.46.0
+openai==2.47.0
 packaging==26.2
 pandarallel==1.6.5
-pandas==3.0.3
+pandas==3.0.5
 parso==0.8.7
 pexpect==4.9.0 ; sys_platform != 'emscripten' and sys_platform != 'win32'
 pillow==12.3.0
