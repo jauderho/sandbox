@@ -3,7 +3,7 @@
 aiohappyeyeballs==2.7.1
 aiohttp==3.14.3
 aiosignal==1.4.0
-annotated-doc==0.0.4
+annotated-doc==0.0.5
 annotated-types==0.8.0
 anyio==4.14.2
 asttokens==3.0.2
@@ -17,17 +17,17 @@ cuda-bindings==13.3.1 ; python_full_version < '3.15' and sys_platform == 'linux'
 cuda-pathfinder==1.6.0 ; python_full_version < '3.15' and sys_platform == 'linux'
 cuda-toolkit==13.0.3.0 ; sys_platform == 'linux'
 cycler==0.12.1
-datasets==5.0.0
+datasets==5.0.1
 decorator==5.3.1
 dill==0.4.1
 distro==1.9.0
 executing==2.2.1
-fastapi==0.140.7
+fastapi==0.140.13
 fastuuid==0.14.0
 filelock==3.32.0
 fonttools==4.63.0
 frozenlist==1.8.0
-fsspec==2026.4.0
+fsspec==2026.6.0
 h11==0.16.0
 hf-xet==1.5.2 ; platform_machine == 'AMD64' or platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'arm64' or platform_machine == 'x86_64'
 httpcore==1.0.9
@@ -44,7 +44,7 @@ joblib==1.5.3
 jsonschema==4.26.0
 jsonschema-specifications==2025.9.1
 kiwisolver==1.5.0
-litellm==1.93.0
+litellm==1.94.0
 markdown-it-py==4.2.0
 markupsafe==3.0.3
 matplotlib==3.11.1
@@ -71,7 +71,7 @@ nvidia-nccl-cu13==2.29.7 ; sys_platform == 'linux'
 nvidia-nvjitlink==13.3.33 ; (platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')
 nvidia-nvshmem-cu13==3.4.5 ; sys_platform == 'linux'
 nvidia-nvtx==13.0.85 ; (platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')
-openai==2.49.0
+openai==2.50.0
 packaging==26.2
 pandarallel==1.6.5
 pandas==3.0.5
