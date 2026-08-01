@@ -126,7 +126,7 @@ wheels = [
 
 [[package]]
 name = "cryptodatahub"
-version = "1.4.0"
+version = "1.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "asn1crypto" },
@@ -134,14 +134,14 @@ dependencies = [
     { name = "python-dateutil" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/14/7b/76f6deebeda41e24e36a005196ede45aa029b22b0f8dfdf20484995eadb1/cryptodatahub-1.4.0.tar.gz", hash = "sha256:e950307b7133b557a3a9fe3a0730d72452cdd77ede7d25eac00993540845f8a9", size = 608955, upload-time = "2026-07-17T15:43:30.708Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/43/1d/49e4a637fec16c2e8e36dea020908a08c735c3ce4f75dbbd676b9617a6bb/cryptodatahub-1.5.0.tar.gz", hash = "sha256:c23c1b75d471ab765f301035b9f8885722e23488de36c3e4b437536b37a29ba9", size = 612576, upload-time = "2026-07-31T06:24:31.816Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/59/7c/e59c1218ed7dd5a96b86abef50094c3f8999a71c6dd71cc7695981188640/cryptodatahub-1.4.0-py3-none-any.whl", hash = "sha256:bf6db0132d7c600dcef315c0044de94564b9a1b84c3ba15bac66cc8ad76c90ba", size = 549654, upload-time = "2026-07-17T15:43:27.346Z" },
+    { url = "https://files.pythonhosted.org/packages/a7/2d/0e531cbdbaf6c842f3003cc4983f90cff9e4651d5dc3edae3955e15106ee/cryptodatahub-1.5.0-py3-none-any.whl", hash = "sha256:04157a9e3e92d978e937cd494d32f42e25b496ecd0716c1a37d747fac0fde11e", size = 554128, upload-time = "2026-07-31T06:24:28.899Z" },
 ]
 
 [[package]]
 name = "cryptolyzer"
-version = "1.4.0"
+version = "1.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
@@ -157,9 +157,9 @@ dependencies = [
     { name = "requests" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/56/ca/eab6b118855d0d59207c115c6c1e8c20e01ef5868c8f119abd90934a4cd0/cryptolyzer-1.4.0.tar.gz", hash = "sha256:e849c58cfbcf78a9fefa15c53b3011b96dbd3c4ad4791bca43b1d88f4de1992c", size = 297139, upload-time = "2026-07-18T18:29:38.828Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/26/ac/fbfd53a61093db636c8e771701b52a7cba59c3251e744c394a2c32100cbb/cryptolyzer-1.5.0.tar.gz", hash = "sha256:50154f9324df52f7bb201b70ddcd35bd2b4afa4dd903b426c52b0ca0c311e9fe", size = 375889, upload-time = "2026-07-31T09:16:11.164Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/19/7a/5e985bdc3ffc8a623c34287812da527256ca6823410b2da0cd9a7e8dad27/cryptolyzer-1.4.0-py3-none-any.whl", hash = "sha256:d441732268619a9c1e3233a961fa71e1fda88ebb184887a9e3dae649c4a27895", size = 159918, upload-time = "2026-07-18T18:29:37.005Z" },
+    { url = "https://files.pythonhosted.org/packages/e2/6c/6d600d649d6a2777c5e0400ac2f7e0c6e2968a475cce860d8eac6bea5e03/cryptolyzer-1.5.0-py3-none-any.whl", hash = "sha256:0e532a2a193e21afaaf40b61009f444cba0e3f7bbf0c863b719314533b10ae69", size = 197218, upload-time = "2026-07-31T09:16:03.23Z" },
 ]
 
 [[package]]
@@ -177,7 +177,7 @@ dev = []
 
 [[package]]
 name = "cryptoparser"
-version = "1.4.0"
+version = "1.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "asn1crypto" },
@@ -185,9 +185,9 @@ dependencies = [
     { name = "cryptodatahub" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/91/7f/2acab40ca5adc876537a922e54a9c6c0c45cbc280aeda4af32f7c8590d6e/cryptoparser-1.4.0.tar.gz", hash = "sha256:998cba1d112a0901d3482dc9c878ef0261f0a5fd5c16c101b906580035ea2008", size = 180713, upload-time = "2026-07-17T16:35:53.52Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ae/d5/ec3d6b27df6fa3477f6e927062fabd020d6e898ddb1a5ff940e1e8d41905/cryptoparser-1.5.0.tar.gz", hash = "sha256:1c35ba0cf90b77c31f9ba4130c66a025e347916fd3c60b0472beccb0b9b40a12", size = 193470, upload-time = "2026-07-31T07:09:36.545Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a6/e5/cd4f7028f0c2a27b41485743de248ef2de12a57fb474f40890824719623a/cryptoparser-1.4.0-py3-none-any.whl", hash = "sha256:ae856241ef5e1b8881b16f94c1612ededcdd674db1c3df0a323b7b8c1b2900ac", size = 209389, upload-time = "2026-07-17T16:35:49.315Z" },
+    { url = "https://files.pythonhosted.org/packages/41/d9/6151b9f0b77dfaed8d0ce20421bb0c5565dc0ae7c510b2620f2121d10109/cryptoparser-1.5.0-py3-none-any.whl", hash = "sha256:6b56047f7a1c5103752ee088895303204f6bc6a971d5e4417c53f9d41b01fd6b", size = 222185, upload-time = "2026-07-31T07:09:34.831Z" },
 ]
 
 [[package]]
