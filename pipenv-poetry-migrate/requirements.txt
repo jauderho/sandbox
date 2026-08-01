@@ -12,7 +12,7 @@ cleo==2.1.0
 click==8.4.2
 colorama==0.4.6 ; os_name == 'nt' or sys_platform == 'win32'
 crashtest==0.4.1
-cryptography==49.0.0 ; sys_platform == 'linux'
+cryptography==50.0.0 ; sys_platform == 'linux'
 distlib==0.4.3
 dulwich==1.2.12
 fastjsonschema==2.22.1
@@ -42,7 +42,7 @@ poetry-core==2.4.0
 pycparser==3.0 ; (implementation_name != 'PyPy' and platform_python_implementation != 'PyPy' and sys_platform == 'linux') or (implementation_name != 'PyPy' and sys_platform == 'darwin')
 pygments==2.20.0
 pyproject-hooks==1.2.0
-python-discovery==1.5.0
+python-discovery==1.5.1
 pywin32-ctypes==0.2.3 ; sys_platform == 'win32'
 rapidfuzz==3.14.5
 requests==2.34.2
