@@ -11,6 +11,11 @@ ENV PIP_NO_CACHE_DIR=1
 # pipenv lock -r > requirements.txt
 COPY requirements.txt . 
 
+# EXPOSE
+# ENV
+# STOPSIGNAL
+HEALTHCHECK NONE
+# USER
 RUN \
 	apk update && \
 	apk upgrade -a && \
