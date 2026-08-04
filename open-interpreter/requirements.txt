@@ -12,7 +12,7 @@ asttokens==3.0.2
 attrs==26.1.0
 blessed==1.47.0
 certifi==2026.7.22
-cffi==2.1.0 ; implementation_name == 'pypy' or platform_python_implementation != 'PyPy'
+cffi==2.1.1 ; implementation_name == 'pypy' or platform_python_implementation != 'PyPy'
 charset-normalizer==3.4.9
 click==8.4.2
 colorama==0.4.6 ; sys_platform == 'win32'
@@ -39,7 +39,7 @@ googleapis-common-protos==1.75.0
 grpcio==1.83.0
 grpcio-status==1.83.0
 h11==0.16.0
-hf-xet==1.5.2 ; platform_machine == 'AMD64' or platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'arm64' or platform_machine == 'x86_64'
+hf-xet==1.6.0 ; platform_machine == 'AMD64' or platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'arm64' or platform_machine == 'x86_64'
 html2image==2.0.7
 httpcore==1.0.9
 httpx==0.28.1
@@ -69,7 +69,7 @@ nest-asyncio==1.6.0
 nltk==3.10.1
 numpy==2.5.1
 open-interpreter==0.3.4
-openai==2.52.0
+openai==2.53.0
 packaging==26.2
 parso==0.8.7
 pexpect==4.9.0 ; sys_platform != 'emscripten' and sys_platform != 'win32'
