@@ -4,19 +4,20 @@ requires-python = ">=3.13"
 
 [[package]]
 name = "awscli"
-version = "1.45.64"
+version = "1.46.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "botocore" },
     { name = "colorama" },
     { name = "docutils" },
+    { name = "jmespath" },
+    { name = "python-dateutil" },
     { name = "pyyaml" },
     { name = "rsa" },
-    { name = "s3transfer" },
+    { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/be/af/a83d35fe817b60aacf973cce7578a755987e430c3ac352241846edc77bdb/awscli-1.45.64.tar.gz", hash = "sha256:ec8517a5e62eb1baefef77d3dbcfb67bb1e85b15c86e3f2a18939a7d31515b30", size = 1903081, upload-time = "2026-08-04T20:12:39.093Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d9/d7/74b718d668537d85ecef9f908f951827a95f7b1eb32f254bf3b1813edf9e/awscli-1.46.0.tar.gz", hash = "sha256:5c1bd660bd3f967f5754a2267fb54e81edf379374faa27973671561888d39bf6", size = 16777783, upload-time = "2026-08-05T05:23:24.302Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/9d/77/3282fae24e10501a5fb4db25208f7ac81b2b430c1d2127729bd2e3c4a5ec/awscli-1.45.64-py3-none-any.whl", hash = "sha256:9409c2e1d11f53f7a0d557d10a150818f93fb296e7f82c4bacb92e514822e5f7", size = 4667102, upload-time = "2026-08-04T20:12:35.961Z" },
+    { url = "https://files.pythonhosted.org/packages/e1/13/775b5b79cb686dc9f9133f1f73079102e312866500556c1b604f72e7b68b/awscli-1.46.0-py3-none-any.whl", hash = "sha256:0aa98754c23c7eff4c7d970cb619670dc9b0214ee451bb3fe88e74e4a9a03a90", size = 20231511, upload-time = "2026-08-05T05:23:20.803Z" },
 ]
 
 [[package]]
@@ -31,20 +32,6 @@ requires-dist = [{ name = "awscli" }]
 
 [package.metadata.requires-dev]
 dev = []
-
-[[package]]
-name = "botocore"
-version = "1.43.64"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "jmespath" },
-    { name = "python-dateutil" },
-    { name = "urllib3" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/3b/67/0e39203c5c67f750874478cf89124486044580ec5cb391eec8eb13cf25b8/botocore-1.43.64.tar.gz", hash = "sha256:a2bb131f48111094fae0a2c896b42593797e935d9c22abb2ebae4290c6dbb5ea", size = 15842274, upload-time = "2026-08-04T20:12:31.598Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/3d/d1/f27d1a4fb571e102828a4672cb3d19e0409275eb92c701b67a85879c0b04/botocore-1.43.64-py3-none-any.whl", hash = "sha256:f0a01c47d631ab95589c244566bca971294724b21862de1c12c7c3b0de236272", size = 15525459, upload-time = "2026-08-04T20:12:28.58Z" },
-]
 
 [[package]]
 name = "colorama"
@@ -140,18 +127,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/db/b5/475c45a58650b0580421746504b680cd2db4e81bc941e94ca53785250269/rsa-4.7.2.tar.gz", hash = "sha256:9d689e6ca1b3038bc82bf8d23e944b6b6037bc02301a574935b2dd946e0353b9", size = 39711, upload-time = "2021-02-24T10:55:05.846Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e9/93/0c0f002031f18b53af7a6166103c02b9c0667be528944137cc954ec921b3/rsa-4.7.2-py3-none-any.whl", hash = "sha256:78f9a9bf4e7be0c5ded4583326e7461e3a3c5aae24073648b4bdfa797d78c9d2", size = 34505, upload-time = "2021-02-24T10:55:03.55Z" },
-]
-
-[[package]]
-name = "s3transfer"
-version = "0.19.2"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "botocore" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/76/43/35e4d8aa320bffe8287fe8f65f578fa2d2db0a64212f0e710dce58267854/s3transfer-0.19.2.tar.gz", hash = "sha256:ba0309fd86be3c27dbf78cdd813c13c5e1df16e5874b99d2535ebbdfb9892993", size = 165592, upload-time = "2026-07-22T19:30:44.432Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/bc/e7/5c595c75e9f41a44f30e526eda465ea0b4eec93470e074e4a111b253f13a/s3transfer-0.19.2-py3-none-any.whl", hash = "sha256:d8168eccca828cbb2cd573675333f3bddd254313a9c42494b84c76b539e8ba25", size = 90216, upload-time = "2026-07-22T19:30:43.251Z" },
 ]
 
 [[package]]
