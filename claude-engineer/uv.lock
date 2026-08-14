@@ -115,7 +115,7 @@ wheels = [
 
 [[package]]
 name = "anthropic"
-version = "0.121.0"
+version = "0.122.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -127,9 +127,9 @@ dependencies = [
     { name = "sniffio" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0f/ca/3cb2c20ee729736fbd4546d5d8b67e818288529fe70cb7a80dbf80aef70b/anthropic-0.121.0.tar.gz", hash = "sha256:e79d6e08ab3376602fc9a70d4d5ea3540817c76cf7e16658bed790834e1833d6", size = 1013292, upload-time = "2026-08-07T17:11:07.241Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/fa/23/9987d70b74e3481d5bc5d2021d3e10fd5f60c1f7b54088ea86506d9b7f2b/anthropic-0.122.0.tar.gz", hash = "sha256:ffec56ae96657c8d19fa575ec96f140f380c353a07ab7d61b92eb18ee6536601", size = 1021535, upload-time = "2026-08-13T18:36:00.307Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fa/91/b3d41643f1f639927e8c5fb02c3bd8bffe6f1f29e219b3bd4c61e267b15c/anthropic-0.121.0-py3-none-any.whl", hash = "sha256:6048713fa441e59e1cba8363171cd2a86273b25bd213e9c7ac70a523af88b011", size = 1035493, upload-time = "2026-08-07T17:11:08.508Z" },
+    { url = "https://files.pythonhosted.org/packages/26/5b/f5c87e71097a9f89f1b414d1ef7ae8439051fae57d5e4ee90946082982b8/anthropic-0.122.0-py3-none-any.whl", hash = "sha256:45ec906452ffae6b5f7f0c53d01f50bfb7e4ce878d7ae8e4309d13171e557e67", size = 1041853, upload-time = "2026-08-13T18:36:01.831Z" },
 ]
 
 [[package]]
@@ -521,7 +521,7 @@ wheels = [
 
 [[package]]
 name = "e2b"
-version = "2.38.0"
+version = "2.39.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
@@ -537,23 +537,23 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "wcmatch" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e2/e2/1acb7bd6e16811a3affc89521304420410f97040a0a386497b101f898de3/e2b-2.38.0.tar.gz", hash = "sha256:b245976cc946d144baf77341b19fa537bfd7cbd9028dc8ef59bd6947f5e329c1", size = 205432, upload-time = "2026-08-10T17:57:07.643Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e4/89/6b07538ca727b027b1885fa87b614949a50dbb5744dc9ea2f1abcc3f5ae7/e2b-2.39.1.tar.gz", hash = "sha256:458ca8dc4c1ed39e66fed6dcefae02b4328b79c7f04b707622f259fcec392293", size = 210506, upload-time = "2026-08-13T16:56:07.332Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/03/fa/e6d50d307a9dcde63038589fce7c1cb32ce3efde3d70c20a6adb11eee3c6/e2b-2.38.0-py3-none-any.whl", hash = "sha256:9f43803aa23e9a33ed48c1c778d588f83c0390db21edf3098255137981541b67", size = 365646, upload-time = "2026-08-10T17:57:08.947Z" },
+    { url = "https://files.pythonhosted.org/packages/be/07/0e1706b38523cdeb09890687d4fbb48e2f7b75512e1bc5ff89ebcaf8ed1e/e2b-2.39.1-py3-none-any.whl", hash = "sha256:71595fc48ebb00c549cef28b0a93fefff83407d43d21d7daa63e940614696a95", size = 371626, upload-time = "2026-08-13T16:56:08.5Z" },
 ]
 
 [[package]]
 name = "e2b-code-interpreter"
-version = "2.9.0"
+version = "2.9.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
     { name = "e2b" },
     { name = "httpx" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/2c/5a/5e72da1b6c1692f2b79b286634e4cfeb114a796e6fdd64a37852a4b2800b/e2b_code_interpreter-2.9.0.tar.gz", hash = "sha256:5e5e5bbeaba49653a7a7782770a0aa2b5f801f3cd77e7e8e8b4f97eb3682f5e3", size = 11579, upload-time = "2026-07-23T16:43:00.152Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2b/8a/650c0e0ae520c8136ca16659c40d384f41f8af1cc40605b964b849d1eb31/e2b_code_interpreter-2.9.1.tar.gz", hash = "sha256:146c4254c11fd5f3341aee79ee2a39a2868a33420ef32f1d5983b77da504e2b3", size = 11614, upload-time = "2026-08-13T22:49:57.907Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7d/12/05c974ad1823fb1808432e87fda1675c6d0c2abb8d21cd23da91daaae684/e2b_code_interpreter-2.9.0-py3-none-any.whl", hash = "sha256:8e0520815bfb596ece0c730e430b970900adda6a174d56dc12dae5bd2b39e281", size = 15437, upload-time = "2026-07-23T16:42:59.034Z" },
+    { url = "https://files.pythonhosted.org/packages/d1/b9/4c6ffff8d6cd86c41d71d285b5f6eb98e89faca057ebd766ba5ba8ece125/e2b_code_interpreter-2.9.1-py3-none-any.whl", hash = "sha256:3aebfa3634791f1e155e28bc42d43042da14d9bea5c0e411f485604f140a63b3", size = 16055, upload-time = "2026-08-13T22:49:56.941Z" },
 ]
 
 [[package]]
