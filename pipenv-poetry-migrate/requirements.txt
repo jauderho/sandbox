@@ -2,12 +2,12 @@
 #    uv export --no-hashes --no-annotate --no-emit-workspace -o requirements.txt
 annotated-doc==0.0.5
 anyio==4.14.2
-backports-zstd==1.6.0 ; python_full_version < '3.14'
+backports-zstd==1.7.0 ; python_full_version < '3.14'
 build==1.5.0
 cachecontrol==0.14.4
 certifi==2026.7.22
 cffi==2.1.1 ; (platform_python_implementation != 'PyPy' and sys_platform == 'linux') or sys_platform == 'darwin'
-charset-normalizer==3.5.0
+charset-normalizer==3.5.1
 cleo==2.1.0
 click==8.4.2
 colorama==0.4.6 ; os_name == 'nt' or sys_platform == 'win32'
@@ -15,7 +15,7 @@ crashtest==0.4.1
 cryptography==50.0.0 ; sys_platform == 'linux'
 distlib==0.4.3
 dulwich==1.2.12
-fastjsonschema==2.22.1
+fastjsonschema==2.22.2
 filelock==3.32.3
 findpython==0.8.0
 h11==0.16.0
