@@ -51,7 +51,7 @@ jobs:
 
 #      - uses: chainguard-dev/actions/setup-gitsign@88f70f8cd86f2ab5e0dc1b40f94df0a56ba29db5
       - name: Install uv
-        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        uses: astral-sh/setup-uv@ae62891fec2bb8e7d6c99fc78c9fec3a63790f8d # v10.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           enable-cache: true
