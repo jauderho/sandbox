@@ -14,6 +14,8 @@ attrs==26.1.0
 backoff==2.2.1
 banks==2.5.0
 bcrypt==5.0.0
+boto3==1.43.78
+botocore==1.43.78
 build==1.5.0
 cachetools==7.1.7
 certifi==2026.7.22
@@ -63,6 +65,7 @@ importlib-resources==7.1.0
 intervaltree==3.2.1
 jinja2==3.1.6
 jiter==0.16.0
+jmespath==1.1.0
 joblib==1.5.3
 jsonpatch==1.33
 jsonpointer==3.1.1
@@ -78,13 +81,13 @@ langgraph-checkpoint==4.2.0
 langgraph-prebuilt==1.1.0
 langgraph-sdk==0.4.3
 langsmith==0.11.1
-litellm==1.97.0
+litellm==1.98.0
 llama-index==0.14.24
 llama-index-core==0.14.24
 llama-index-embeddings-openai==0.6.0
 llama-index-instrumentation==0.5.0
 llama-index-llms-openai==0.7.10
-llama-index-workflows==2.23.2
+llama-index-workflows==2.23.3
 markdown-it-py==4.2.0
 markupsafe==3.0.3
 marshmallow==3.26.2
@@ -139,6 +142,7 @@ requests-oauthlib==2.0.0
 requests-toolbelt==1.0.0
 rich==15.0.0
 rpds-py==2026.6.3
+s3transfer==0.19.2
 sentry-sdk==2.68.0
 setuptools==84.0.0
 shellingham==1.5.4
