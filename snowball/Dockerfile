@@ -7,7 +7,7 @@ RUN test -n "${BUILD_VERSION}" \
 	&& apt-get update \
 	&& apt-get dist-upgrade -y \
 	&& DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ca-certificates curl \
-	&& curl -L "${ARCHIVE_URL}" -o /tmp/snowball.tar.gz \
+	&& curl -L --proto '=https' --proto-redir '=https' "${ARCHIVE_URL}" -o /tmp/snowball.tar.gz \
 	&& tar xzf /tmp/snowball.tar.gz --strip 1 -C /usr/local \
 	&& rm -rf /tmp/snowball.tar.gz \
 	&& apt-get purge -y curl \

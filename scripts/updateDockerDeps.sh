@@ -28,7 +28,7 @@ do
 
 	if [ "$i" != "ansible/ansible" ]; then
 		#rver=$(curl -sL -u "$PAT" "https://api.github.com/repos/${i}/releases/latest" | grep tag_name | head -1 | cut -d \" -f 4)
-		rver=$(curl -sL -u "$PAT" "https://api.github.com/repos/${i}/releases/latest" | jq -r '.tag_name')
+		rver=$(curl -sL --proto '=https' --proto-redir '=https' -u "$PAT" "https://api.github.com/repos/${i}/releases/latest" | jq -r '.tag_name')
 		#rver=$(curl -sL "https://api.github.com/repos/${i}/releases/latest" | grep tag_name | head -1 | cut -d \" -f 4)
 		#rver="2021.02.04.1"
 
@@ -38,7 +38,7 @@ do
 		# ansible is a pain and does not put the release tag in the same repo (ansible/ansible) but ansible-community/ansible-build-data instead
 		# hence this insanity
 		# for some reason, https://api.github.com/repos/ansible-community/ansible-build-data/releases/latest is returning 404
-		rver=$(curl -sL https://pypi.org/pypi/ansible/json | jq -r '.info.version')
+		rver=$(curl -sL --proto '=https' --proto-redir '=https' https://pypi.org/pypi/ansible/json | jq -r '.info.version')
 	fi
 
 	echo "Checking repo ... $prog"
