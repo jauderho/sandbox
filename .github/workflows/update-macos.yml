@@ -21,14 +21,15 @@ concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: true
 
-permissions: read-all
+permissions:
+  contents: read
 
 jobs:
 
   update-python:
     runs-on: macos-26
     permissions:
-      id-token: write
+      contents: read
 
     steps:
 #      - uses: GitHubSecurityLab/actions-permissions/monitor@bf82d13b9b10051d224345ab9184f5ede0a94289 # v1.0

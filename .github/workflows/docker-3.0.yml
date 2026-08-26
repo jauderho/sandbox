@@ -18,7 +18,8 @@ env:
   #REPOSITORY: ${{ github.actor }}/${{ github.workflow }}
   REPOSITORY: ${{ github.actor }}/testssl.sh
 
-permissions: read-all
+permissions:
+  contents: read
 
 jobs:
   deploy:
