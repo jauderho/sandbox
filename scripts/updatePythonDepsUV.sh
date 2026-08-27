@@ -52,6 +52,7 @@ APP=(
   "routellm" \
   "scrapeghost" \
   "shodan" \
+  "ssh-mitm" \
   "wtfis" \
   "wolverine" \
 )
