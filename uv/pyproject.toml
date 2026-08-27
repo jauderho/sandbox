@@ -1,0 +1,35 @@
+[project]
+name = "uv-project"
+description = "An extremely fast Python package and project manager, written in Rust"
+authors = [{ name = "Astral", email = "hey@astral.sh" }]
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+dependencies = [
+  "uv"
+]
+dynamic = ["version"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+keywords = ["uv", "pip", "packaging", "dependency", "resolver"]
+
+[project.urls]
+Homepage = "https://github.com/astral-sh/uv"
+Repository = "https://github.com/astral-sh/uv"
+Issues = "https://github.com/astral-sh/uv/issues"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }
+]
+
+[tool.uv.sources]
+pypi = { url = "https://pypi.org/simple" }
