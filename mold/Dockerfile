@@ -8,7 +8,9 @@ FROM ubuntu:26.04@sha256:3131b4cc82a783df6c9df078f86e01819a13594b865c2cad47bd1bc
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
-  DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends software-properties-common build-essential git wget cmake libstdc++-11-dev zlib1g-dev clang-14 && \
+  # libstdc++-dev is virtual with no candidate; build-essential pulls the
+  # matching libstdc++-N-dev via g++, so there is nothing to pin here
+  DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends software-properties-common build-essential git wget cmake zlib1g-dev clang && \
   apt clean && \
   rm -rf /var/lib/apt/lists/* && \
   cd / && \
