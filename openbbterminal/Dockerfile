@@ -13,9 +13,9 @@ COPY requirements.txt .
 
 RUN apt-get update && \
 	apt-get dist-upgrade -y && \
-	DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends git python3-pip && \
-	python3 -m pip install --no-cache-dir --upgrade pip && \
-	pip3 install --no-cache-dir -r requirements.txt && \
+	DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends git python3-pip build-essential python3-dev gfortran && \
+	python3 -m pip install --no-cache-dir --upgrade pip --ignore-installed --break-system-packages && \
+	pip3 install --no-cache-dir -r requirements.txt --ignore-installed --break-system-packages && \
 	apt-get autoremove -y --purge && \
 	rm -rf /var/lib/apt/lists/* && \
 	apt-get clean
