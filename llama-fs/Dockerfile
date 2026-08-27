@@ -1,31 +1,26 @@
-FROM alpine:3.24.1@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b
-#FROM python:3.14.0-alpine3.22@sha256:0bf59161c735f604ea070af402d65b1a088ce3fd7fe4329f5983446148e84930
+# chromadb pulls in onnxruntime, which publishes manylinux wheels only - there is
+# no musl build for any arch - so this cannot sit on alpine.
+#FROM alpine:3.24.1@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b
+FROM ubuntu:26.04@sha256:3131b4cc82a783df6c9df078f86e01819a13594b865c2cad47bd1bca2b7063bb
 
 ARG BUILD_VERSION
+ARG DEBIAN_FRONTEND=noninteractive
 
 #ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 ENV PIP_NO_CACHE_DIR=1
 
 # requirements.txt now generated from Pipfile
 # pipenv lock -r > requirements.txt
-COPY requirements.txt . 
+COPY requirements.txt .
 
-RUN \
-	apk update && \
-	apk upgrade -a && \
-	build_pkgs="" && \
-	runtime_pkgs="ca-certificates openssl python3 py3-pip" && \
-	apk --no-cache add --virtual build-dependencies ${build_pkgs} && \
-	apk --no-cache add ${runtime_pkgs} && \
-	#python3 -m pip install --no-cache-dir --upgrade pip --break-system-packages && \
-	#pip3 install --no-cache-dir --upgrade wheel --break-system-packages && \
-	pip3 install --no-cache-dir -r requirements.txt --break-system-packages && \
-	apk del build-dependencies && \
-	rm -rf /var/cache/apk/* && \
-	rm -rf /root/.cache/pip && \
-	find /usr/lib/ -name '__pycache__' -print0 | xargs -0 -n1 rm -rf && \
-	find /usr/lib/ -name '*.pyc' -print0 | xargs -0 -n1 rm -rf && \
-	rm -rf /root/.cargo
+RUN apt-get update && \
+	apt-get dist-upgrade -y && \
+	DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends python3-pip && \
+	python3 -m pip install --no-cache-dir --upgrade pip --ignore-installed --break-system-packages && \
+	pip3 install --no-cache-dir -r requirements.txt --ignore-installed --break-system-packages && \
+	apt-get autoremove -y --purge && \
+	rm -rf /var/lib/apt/lists/* && \
+	apt-get clean
 
 LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
