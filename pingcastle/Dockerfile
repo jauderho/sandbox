@@ -1,4 +1,6 @@
-# For Windows images, the base os version has to match the container os version
+# For Windows images, the base os version has to match the container os version.
+# The workflow runs on the windows-2022 runner, so the base must stay on ltsc2022
+# (mcr.microsoft.com/powershell publishes no ltsc2025 variant).
 #
 ## Set the base image
 #FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1809 AS base
@@ -14,25 +16,31 @@ WORKDIR /app
 #EXPOSE 80
 
 ARG BUILD_VERSION
-ARG ARCHIVE_URL=https://github.com/vletoux/pingcastle/releases/download/
+ARG ARCHIVE_URL=https://github.com/netwrix/pingcastle/releases/download/
+
+LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
+LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
+LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
+LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
+LABEL org.opencontainers.image.title="jauderho/pingcastle"
+LABEL org.opencontainers.image.description="PingCastle is an Active Directory security assessment tool"
 
 # download
-#RUN wget -Uri https://github.com/vletoux/pingcastle/releases/download/2.10.1.0/PingCastle_2.10.1.0.zip -UseBasicParsing
-#RUN powershell -Command Invoke-WebRequest -Method Get -Uri ${ARCHIVE_URL}${BUILD_VERSION}/PingCastle_${BUILD_VERSION}.zip -OutFile c:\pingcastle.zip
 RUN powershell -Command \
-	Invoke-WebRequest -Method Get -Uri https://github.com/vletoux/pingcastle/releases/download/3.2.0.1/PingCastle_3.2.0.1.zip -OutFile c:\app\pingcastle.zip ; \
+	$ErrorActionPreference = 'Stop' ; \
+	if (-not $env:BUILD_VERSION) { throw 'BUILD_VERSION is required' } ; \
+	$url = $env:ARCHIVE_URL + $env:BUILD_VERSION + '/PingCastle_' + $env:BUILD_VERSION + '.zip' ; \
+	Invoke-WebRequest -Method Get -UseBasicParsing -Uri $url -OutFile c:\app\pingcastle.zip ; \
 	Expand-Archive -Path c:\app\pingcastle.zip -DestinationPath c:\app ; \
 	Remove-Item c:\app\pingcastle.zip -Force
 
 #RUN dir
 RUN dir c:\app
 
-# validation
-RUN c:\app\pingcastle.exe
-
-#RUN Expand-Archive -Path c:\pingcastle.zip -DestinationPath c:\
-#RUN Remove-Item c:\python-3.5.1.exe -Force
+# validation - --help exits cleanly; a bare invocation drops into the interactive
+# menu and would hang the build
+RUN c:\app\PingCastle.exe --help
 
 HEALTHCHECK NONE
 
-CMD ["c:\app\pingcastle.exe"]
+ENTRYPOINT ["c:\\app\\PingCastle.exe"]
