@@ -13,8 +13,9 @@ COPY requirements.txt .
 RUN \
 	apk update && \
 	apk upgrade -a && \
-	build_pkgs="" && \
-	runtime_pkgs="ca-certificates openssl python3 py3-pip" && \
+	# llama-cpp-python ships no wheels, so it is compiled from source here
+	build_pkgs="build-base cmake git linux-headers musl-dev ninja python3-dev" && \
+	runtime_pkgs="ca-certificates openssl libstdc++ python3 py3-pip" && \
 	apk --no-cache add --virtual build-dependencies ${build_pkgs} && \
 	apk --no-cache add ${runtime_pkgs} && \
 	#python3 -m pip install --no-cache-dir --upgrade pip --break-system-packages && \
