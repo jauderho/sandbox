@@ -3,7 +3,9 @@ name = "aider-chat-project"
 dynamic = ["version"]
 description = "AI Pair Programming in Your Terminal"
 readme = "README.md"
-requires-python = ">=3.14"
+# aider-chat caps out at Python 3.12 (Requires-Python >=3.10,<3.13); the image
+# base is pinned to python:3.12-alpine to match.
+requires-python = ">=3.12,<3.13"
 license = { text = "MIT" }
 
 authors = [
