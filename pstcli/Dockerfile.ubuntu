@@ -1,13 +1,16 @@
 FROM ubuntu:26.04@sha256:3131b4cc82a783df6c9df078f86e01819a13594b865c2cad47bd1bca2b7063bb
 
-ARG BUILD_VERSION
-ARG ARCHIVE_URL=https://dl.dell.com/FOLDER08713913M/1/pstcli-${BUILD_VERSION}.x86_64.release.rpm
+# See Dockerfile - the dl.dell.com folder id changes with every release, so bump
+# FOLDER_VERSION and BUILD_VERSION together.
+ARG BUILD_VERSION=4.3.0.0.1661
+ARG FOLDER_VERSION=FOLDER13877768M
+ARG ARCHIVE_URL=https://dl.dell.com/${FOLDER_VERSION}/1/pstcli-${BUILD_VERSION}.x86_64.release.rpm
 
 RUN test -n "${BUILD_VERSION}" \
 	&& apt-get update \
 	&& apt-get -y dist-upgrade \
 	&& DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends ca-certificates curl alien \
-	&& curl -O "${ARCHIVE_URL}" \
+	&& curl "${ARCHIVE_URL}" -H 'user-agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36' -fLso pstcli-${BUILD_VERSION}.x86_64.release.rpm \
 	&& alien -i pstcli-${BUILD_VERSION}.x86_64.release.rpm \
 	&& apt-get -y purge wget alien \
 	&& apt-get -y autoclean \
