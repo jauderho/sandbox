@@ -3,7 +3,9 @@ name = "open-interpreter-project"
 dynamic = ["version"]
 description = "Open Interpreter is a lightweight, open-source implementation of OpenAI's Code Interpreter."
 readme = "README.md"
-requires-python = ">=3.13"
+# open-interpreter caps tiktoken at <0.8.0, which has no cp313/cp314 wheels; the
+# image base is pinned to python:3.12-alpine to match.
+requires-python = ">=3.12,<3.13"
 license = { text = "MIT" }
 
 authors = [
@@ -15,7 +17,9 @@ maintainers = [
 ]
 
 dependencies = [
-  "open-interpreter",
+  # 0.3.4 caps tiktoken at 0.6.0, which has no musl wheels and whose pyo3 0.20
+  # cannot build against Python 3.14. 0.4.3+ resolves to tiktoken 0.7.0.
+  "open-interpreter>=0.4.3",
   "google-api-core[grpc]",
   "urllib3[socks]",
 ]
