@@ -13,12 +13,16 @@ COPY requirements.txt .
 
 RUN apk update && \
 	apk upgrade -a && \
-	build_pkgs="build-base git python3-dev py3-pip" && \
+	# NOTE: still incomplete. pywry -> pytauri-wheel -> glib-sys needs the full
+	# GTK/WebKit native stack (glib-dev gtk+3.0-dev webkit2gtk-dev libsoup-dev),
+	# because there is no musl wheel for pywry. Use the Ubuntu Dockerfile, which
+	# gets pywry from a manylinux wheel.
+	build_pkgs="build-base cargo cmake gfortran git openssl-dev python3-dev py3-pip rust" && \
 	runtime_pkgs="ca-certificates openssl python3" && \
   apk --no-cache add --virtual build-dependencies ${build_pkgs} && \
   apk --no-cache add ${runtime_pkgs} && \
-	python3 -m pip install --no-cache-dir --upgrade pip && \
-	pip3 install --no-cache-dir -r requirements.txt && \
+	python3 -m pip install --no-cache-dir --upgrade pip --ignore-installed --break-system-packages && \
+	pip3 install --no-cache-dir -r requirements.txt --break-system-packages && \
 	apk del build-dependencies && \
 	rm -rf /var/cache/apk/* && \
   rm -rf /root/.cache/pip && \
