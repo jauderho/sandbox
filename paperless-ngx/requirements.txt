@@ -23,7 +23,7 @@ cffi==2.1.1 ; platform_python_implementation != 'PyPy'
 channels==4.3.2
 channels-redis==4.3.0
 charset-normalizer==3.5.1
-click==8.4.2
+click==8.5.0
 click-didyoumean==0.3.1
 click-plugins==1.1.1.2
 click-repl==0.3.0
@@ -121,7 +121,7 @@ ocrmypdf==17.7.1
 ollama==0.6.2
 openai==2.54.0
 packaging==26.3
-paperless-ngx @ git+https://github.com/paperless-ngx/paperless-ngx.git@2e7cd149647601d84d40eb59c15ba93eae9f18af
+paperless-ngx @ git+https://github.com/paperless-ngx/paperless-ngx.git@406bc1a233c31d3bdbc489870358571b1ded3600
 pathvalidate==3.3.1
 pdf2image==1.17.0
 pdfminer-six==20260107
@@ -176,12 +176,12 @@ threadpoolctl==3.6.0
 tika-client==0.11.0
 tiktoken==0.14.0
 tinytag==2.3.0
-tokenizers==0.22.2
+tokenizers==0.23.1
 torch==2.13.0 ; sys_platform == 'darwin'
 torch==2.13.0+cpu ; sys_platform != 'darwin'
 tornado==6.5.8
 tqdm==4.70.0
-transformers==5.15.1
+transformers==5.16.1
 typer==0.27.1
 typing-extensions==4.16.0
 typing-inspect==0.9.0
