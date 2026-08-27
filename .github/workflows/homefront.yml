@@ -12,16 +12,19 @@ on:
     - cron: "0 8 * * 1"
 
 env:
-  BUILD_VERSION: "2.10.1.0"
+  # The image only carries SteamCMD + Wine; the game depot itself is fetched at
+  # container start, so this version tracks the image, not Homefront.
+  BUILD_VERSION: "1.0.0"
   DOCKER_CLI_EXPERIMENTAL: enabled
-  REPOSITORY: ${{ github.actor }}/${{ github.workflow }} 
+  REPOSITORY: ${{ github.actor }}/${{ github.workflow }}
 
 permissions:
   contents: read
 
 jobs:
   deploy:
-    runs-on: windows-2022
+    # amd64 only - SteamCMD and HFDedicated.exe are both 32-bit x86
+    runs-on: ubuntu-26.04
     permissions:
       packages: write
 
@@ -51,6 +54,6 @@ jobs:
 
       - name: Build and push
         run: |
-          docker build --file=${{ github.workflow }}/Dockerfile -t ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }} -t ghcr.io/${{ env.REPOSITORY }}:latest --build-arg "BUILD_VERSION=${{ env.BUILD_VERSION }}" .
+          docker build --file=${{ github.workflow }}/Dockerfile -t ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }} -t ghcr.io/${{ env.REPOSITORY }}:latest --build-arg "BUILD_VERSION=${{ env.BUILD_VERSION }}" ${{ github.workflow }}
           docker push ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}
           docker push ghcr.io/${{ env.REPOSITORY }}:latest
