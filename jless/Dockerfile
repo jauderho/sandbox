@@ -11,12 +11,16 @@ ARG GIT_URL=https://github.com/PaulJuliusMartinez/jless.git
 
 RUN test -n "${BUILD_VERSION}" \
 	&& apk update \
-	&& apk add --no-cache ca-certificates git lld g++ cargo musl-dev \
+	# xcb 0.8.2's build script shells out to python3. The X libs it links against
+	# ship no .a archives on alpine, so the musl target's default static link is
+	# turned off and jless is linked dynamically instead.
+	&& apk add --no-cache ca-certificates git lld g++ cargo musl-dev python3 libxcb-dev libxau-dev libxdmcp-dev \
 	&& git clone --depth 1 ${GIT_URL} /usr/src/github.com/PaulJuliusMartinez/jless \
 	&& cd /usr/src/github.com/PaulJuliusMartinez/jless \
-	&& RUSTFLAGS="-C link-arg=-fuse-ld=lld" cargo build --release 
+	&& RUSTFLAGS="-C link-arg=-fuse-ld=lld -C target-feature=-crt-static" cargo build --release
 
-RUN target/release/jless
+# smoke test - a bare invocation reads stdin, hits EOF and exits 1
+RUN target/release/jless --version
 
 WORKDIR /config
 
@@ -42,7 +46,11 @@ COPY --from=build /config /config
 #RUN apk update \
 #	&& apk add --no-cache dumb-init
 
-RUN /usr/local/bin/jless
+# jless is dynamically linked, so the X client libs and libgcc (for the
+# _Unwind_* symbols) have to be present at runtime
+RUN apk add --no-cache libxcb libxau libxdmcp libgcc
+
+RUN /usr/local/bin/jless --version
 
 USER 1000
 HEALTHCHECK NONE
