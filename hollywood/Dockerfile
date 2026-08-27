@@ -5,7 +5,7 @@ ENV TZ=Etc/UTC
 
 RUN \
   apt-get update -qq && \
-  apt-get install -qqy tzdata mlocate hollywood && \
+  apt-get install -qqy tzdata plocate hollywood && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* && \
   ln -sf /usr/share/zoneinfo/Etc/UTC /etc/localtime && \
