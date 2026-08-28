@@ -36,6 +36,10 @@ RUN \
 
 COPY --from=build /opt/venv /opt/venv
 
+# The old image set VIRTUAL_ENV=/usr/local, which had no interpreter, so
+# "uv pip install" inside the container failed. Point it at the real venv
+# so uv does not have to infer it from PATH.
+ENV VIRTUAL_ENV=/opt/venv
 ENV PATH="/opt/venv/bin:${PATH}"
 
 # smoke test, then drop the bytecode the test run just generated
