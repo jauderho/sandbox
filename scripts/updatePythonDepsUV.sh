@@ -39,7 +39,6 @@ APP=(
   "mlx" \
   "mlx-hub" \
   "notdiamond" \
-  "open-interpreter" \
   "openbbterminal" \
   "paperless-ngx" \
   "pip-audit" \
