@@ -28,11 +28,12 @@ RUN \
 FROM alpine:3.24.1@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b
 
 # the venv symlinks its interpreter, so python3 must be at the same path.
-# libstdc++ is needed by the compiled llama-cpp-python extension.
+# libstdc++ and libgomp are needed by the compiled llama-cpp-python extension.
+# Without libgomp, importing llama_cpp fails to load libllama.so.
 RUN \
 	apk update && \
 	apk upgrade -a && \
-	apk --no-cache add ca-certificates libstdc++ openssl python3 && \
+	apk --no-cache add ca-certificates libgomp libstdc++ openssl python3 && \
 	rm -rf /var/cache/apk/* && \
 	find /usr/lib/ -name '__pycache__' -print0 | xargs -0 -n1 rm -rf && \
 	find /usr/lib/ -name '*.pyc' -print0 | xargs -0 -n1 rm -rf
@@ -42,7 +43,7 @@ COPY --from=build /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:${PATH}"
 
 # smoke test, then drop the bytecode the test run just generated
-RUN python3 -c "import llama_cpp_agent" && \
+RUN python3 -c "import llama_cpp_agent, llama_cpp" && \
 	find /opt/venv -name '__pycache__' -print0 | xargs -0 -n1 rm -rf
 
 LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"

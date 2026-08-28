@@ -1,3 +1,9 @@
+FROM ghcr.io/astral-sh/uv:0.12.7@sha256:95f2aa1fe59274951cfe9b0cbc7972e879ff1004bc8945d130a32eb0dbd85945 AS uv
+
+
+# --------------------------------------------------------------------------
+
+
 #FROM debian:latest
 FROM ubuntu:26.04@sha256:2260313b31c8c011cd2eebe728008efac1b3982be73eb71348ea2648d2c0e09b
 
@@ -31,13 +37,15 @@ ENV PYTHON=/venv/bin/python \
     CC=gcc \
     CXX=g++
 
-RUN python3 -m venv /venv
+RUN --mount=from=uv,source=/uv,target=/usr/local/bin/uv uv venv --python /usr/bin/python3 /venv
 
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
 COPY requirements-test.txt requirements-extra.txt requirements-docs.txt /tmp/
 
-RUN $PYTHON -m pip install --no-cache-dir -U \
+# uv is bind mounted rather than COPYed so its binary never lands in a layer
+RUN --mount=from=uv,source=/uv,target=/usr/local/bin/uv \
+    uv pip install --python $PYTHON --no-cache -U \
     -r /tmp/requirements-extra.txt \
     -r /tmp/requirements-test.txt \
     -r /tmp/requirements-docs.txt \
