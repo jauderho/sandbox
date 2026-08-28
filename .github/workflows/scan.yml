@@ -31,7 +31,7 @@ jobs:
         uses: step-security/harden-runner@05e31511f85b41b11d1cf0ef85d0992719546e2c # v2.21.0
         with:
           egress-policy: block
-          disable-telemetry: true # TODO: change to 'egress-policy: block' after couple of runs
+          disable-telemetry: true
           allowed-endpoints: >
             api.github.com:443
             cdn.fwupd.org:443
