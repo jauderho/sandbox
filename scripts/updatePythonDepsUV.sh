@@ -7,7 +7,6 @@ IFS=$'\n\t'
 
 APP=(
   "ai-hedge-fund" \
-  "aider" \
   "aranet4" \
   "autoflake" \
   "awscli" \
