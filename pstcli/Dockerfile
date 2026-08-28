@@ -21,7 +21,11 @@ ARG ARCHIVE_URL=https://dl.dell.com/${FOLDER_VERSION}/1/pstcli-${BUILD_VERSION}.
 # dl.dell.com rejects a default curl user-agent with an Akamai "Access Denied"
 # page, so pretend to be a browser. -f makes curl fail loudly rather than saving
 # that HTML and handing it to rpm.
+# AlmaLinux ships a mirrorlist that hands out arbitrary third party mirrors
+# over plain http, which cannot be expressed as an egress allowlist. Pin dnf
+# to the canonical repo so the build only ever talks to repo.almalinux.org.
 RUN test -n "${BUILD_VERSION}" \
+  && sed -i -e 's|^mirrorlist=|#mirrorlist=|' -e 's|^# baseurl=|baseurl=|' /etc/yum.repos.d/*.repo \
   && microdnf -y upgrade --refresh \
   && microdnf -y install libxcrypt-compat \
   && curl --proto '=https' --proto-redir '=https' "${ARCHIVE_URL}" -H 'user-agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36' -fLso pstcli-${BUILD_VERSION}.x86_64.release.rpm \
