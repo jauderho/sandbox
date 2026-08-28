@@ -127,7 +127,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           enable-cache: true
           # Key the uv cache only on pyproject.toml (stable between runs). This
-          # workflow rewrites uv.lock/requirements.txt every run, so the default
+          # workflow rewrites uv.lock every run, so the default
           # glob churned a new ~440 MiB cache entry per run and pegged the 10 GiB cap.
           cache-dependency-glob: "**/pyproject.toml"
 #          python-version: 3.14

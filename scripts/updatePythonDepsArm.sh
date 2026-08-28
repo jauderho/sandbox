@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-# Script to check and update requirements for Python apps
+# Script to refresh the uv lock file for each Python app.
+# uv.lock is the source of truth; no requirements.txt is generated.
 #
 set -euo pipefail
 IFS=$'\n\t'
@@ -37,8 +38,7 @@ lock_app() {
 
 	if ! (
 		cd "${i}" || exit 1
-		#uv lock --prerelease=allow -U && uv pip compile pyproject.toml --python-platform aarch64-apple-darwin --no-annotate --prerelease=allow > requirements.txt
-		uv lock --prerelease=allow -U && uv export --no-hashes --no-annotate --no-emit-workspace -o requirements.txt
+		uv lock --prerelease=allow -U
 	); then
 		echo "FAILED to lock: ${i}" >&2
 		echo "${i}" >> "$FAILED"
@@ -53,7 +53,7 @@ git pull --no-edit
 
 for i in "${APP[@]}"
 do
-	git add "${i}/pyproject.toml" "${i}/uv.lock" "${i}/requirements.txt" 2>/dev/null || true
+	git add "${i}/pyproject.toml" "${i}/uv.lock" 2>/dev/null || true
 
 	if ! git diff --cached --quiet -- "${i}"; then
 		git commit -S -s -m "Update requirements for ${i} ..."
