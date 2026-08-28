@@ -5,11 +5,14 @@ FROM alpine:edge@sha256:020dfcbaaf4cc1078bf2d9c7ba31a8466e334061dcd2f248001d68f7
 ARG BUILD_VERSION
 
 #ENV PIP_DISABLE_PIP_VERSION_CHECK=1
-ENV PIP_NO_CACHE_DIR=1
+ENV UV_PROJECT_ENVIRONMENT=/opt/venv \
+	UV_NO_CACHE=1 \
+	UV_LINK_MODE=copy \
+	UV_PYTHON_DOWNLOADS=never
 
 # requirements.txt now generated from Pipfile
 # pipenv lock -r > requirements.txt
-COPY requirements.txt . 
+COPY pyproject.toml uv.lock ./
 
 RUN apk update && \
 	apk upgrade -a && \
@@ -17,22 +20,18 @@ RUN apk update && \
 	# GTK/WebKit native stack (glib-dev gtk+3.0-dev webkit2gtk-dev libsoup-dev),
 	# because there is no musl wheel for pywry. Use the Ubuntu Dockerfile, which
 	# gets pywry from a manylinux wheel.
-	build_pkgs="build-base cargo cmake gfortran git openssl-dev python3-dev py3-pip rust" && \
+	build_pkgs="build-base cargo cmake gfortran git openssl-dev python3-dev rust uv" && \
 	runtime_pkgs="ca-certificates openssl python3" && \
   apk --no-cache add --virtual build-dependencies ${build_pkgs} && \
   apk --no-cache add ${runtime_pkgs} && \
-	python3 -m pip install --no-cache-dir --upgrade pip --ignore-installed --break-system-packages && \
-	pip3 install --no-cache-dir -r requirements.txt --break-system-packages && \
+	uv sync --frozen --no-install-project --no-dev --python /usr/bin/python3 && \
 	apk del build-dependencies && \
 	rm -rf /var/cache/apk/* && \
-  rm -rf /root/.cache/pip && \
   find /usr/lib/ -name '__pycache__' -print0 | xargs -0 -n1 rm -rf && \
   find /usr/lib/ -name '*.pyc' -print0 | xargs -0 -n1 rm -rf && \
   rm -rf /root/.cargo
 
-#	apt-get purge -y python3-dev && \
-#RUN pip install sslyze==${BUILD_VERSION}
-#RUN pip3 install --no-cache-dir -r requirements.txt
+ENV PATH="/opt/venv/bin:${PATH}"
 
 LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"

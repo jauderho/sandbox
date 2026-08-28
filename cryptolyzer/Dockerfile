@@ -4,11 +4,12 @@ ARG BUILD_VERSION
 
 # uv resolves and installs into a venv, so PEP 668 never applies and
 # --break-system-packages is not needed. The venv is the only build output.
-ENV UV_NO_CACHE=1 \
+ENV UV_PROJECT_ENVIRONMENT=/opt/venv \
+	UV_NO_CACHE=1 \
 	UV_LINK_MODE=copy \
 	UV_PYTHON_DOWNLOADS=never
 
-COPY requirements.txt .
+COPY pyproject.toml uv.lock ./
 
 # uv comes from the alpine community repo rather than ghcr.io/astral-sh/uv
 # because that image only publishes amd64/arm64 and this builds 4 arches.
@@ -16,8 +17,7 @@ RUN \
 	apk update && \
 	apk upgrade -a && \
 	apk --no-cache add python3 uv && \
-	uv venv --python /usr/bin/python3 /opt/venv && \
-	uv pip install --python /opt/venv/bin/python -r requirements.txt && \
+	uv sync --frozen --no-install-project --no-dev --python /usr/bin/python3 && \
 	find /opt/venv -name '__pycache__' -print0 | xargs -0 -n1 rm -rf && \
 	find /opt/venv -name '*.pyc' -print0 | xargs -0 -n1 rm -rf
 

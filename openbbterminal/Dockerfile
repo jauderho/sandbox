@@ -12,19 +12,19 @@ ARG DEBIAN_FRONTEND=noninteractive
 # uv installs into a venv, so PEP 668 does not apply. That also removes the need
 # for --ignore-installed, which was only there to work around pip being unable
 # to uninstall the distro copies of pip and packaging.
-ENV UV_NO_CACHE=1 \
+ENV UV_PROJECT_ENVIRONMENT=/opt/venv \
+	UV_NO_CACHE=1 \
 	UV_LINK_MODE=copy \
 	UV_PYTHON_DOWNLOADS=never
 
 COPY --from=uv /uv /usr/local/bin/uv
-COPY requirements.txt .
+COPY pyproject.toml uv.lock ./
 
 RUN apt-get update && \
 	apt-get dist-upgrade -y && \
 	DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends \
 		git python3 python3-dev build-essential gfortran && \
-	uv venv --python /usr/bin/python3 /opt/venv && \
-	uv pip install --python /opt/venv/bin/python -r requirements.txt && \
+	uv sync --frozen --no-install-project --no-dev --python /usr/bin/python3 && \
 	find /opt/venv -name '__pycache__' -print0 | xargs -0 -n1 rm -rf
 
 
