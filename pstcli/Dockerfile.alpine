@@ -14,7 +14,7 @@ RUN test -n "${BUILD_VERSION}" \
 	&& runtime_pkgs="ca-certificates" \
 	&& apk --no-cache add --virtual build-dependencies ${build_pkgs} \
 	&& apk --no-cache add ${runtime_pkgs} \
-	&& curl "${ARCHIVE_URL}" -H 'user-agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36' -fLso pstcli-${BUILD_VERSION}.x86_64.release.rpm \
+	&& curl --proto '=https' --proto-redir '=https' "${ARCHIVE_URL}" -H 'user-agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36' -fLso pstcli-${BUILD_VERSION}.x86_64.release.rpm \
 	&& alien --target=all --scripts -i -v pstcli-${BUILD_VERSION}.x86_64.release.rpm \
 	&& rm -rf pstcli-${BUILD_VERSION}.x86_64.release.rpm \
 	&& apk del build-dependencies \

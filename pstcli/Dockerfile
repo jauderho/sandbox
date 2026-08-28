@@ -24,7 +24,7 @@ ARG ARCHIVE_URL=https://dl.dell.com/${FOLDER_VERSION}/1/pstcli-${BUILD_VERSION}.
 RUN test -n "${BUILD_VERSION}" \
   && microdnf -y upgrade --refresh \
   && microdnf -y install libxcrypt-compat \
-  && curl "${ARCHIVE_URL}" -H 'user-agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36' -fLso pstcli-${BUILD_VERSION}.x86_64.release.rpm \
+  && curl --proto '=https' --proto-redir '=https' "${ARCHIVE_URL}" -H 'user-agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36' -fLso pstcli-${BUILD_VERSION}.x86_64.release.rpm \
   && rpm -i pstcli-${BUILD_VERSION}.x86_64.release.rpm \
   && rm -rf pstcli-${BUILD_VERSION}.x86_64.release.rpm \ 
   && microdnf -y clean all

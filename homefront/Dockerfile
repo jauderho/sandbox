@@ -39,7 +39,7 @@ RUN dpkg --add-architecture i386 && \
 		xvfb \
 		xauth && \
 	mkdir -p /opt/steamcmd && \
-	curl -fsSL "${STEAMCMD_URL}" | tar xzf - -C /opt/steamcmd && \
+	curl -fsSL --proto '=https' --proto-redir '=https' "${STEAMCMD_URL}" | tar xzf - -C /opt/steamcmd && \
 	printf '#!/bin/sh\nexec /opt/steamcmd/steamcmd.sh "$@"\n' > /usr/local/bin/steamcmd && \
 	chmod 755 /usr/local/bin/steamcmd && \
 	apt-get autoremove -y --purge && \

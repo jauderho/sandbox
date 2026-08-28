@@ -14,7 +14,7 @@ RUN apt-get update && \
   apt clean && \
   rm -rf /var/lib/apt/lists/* && \
   cd / && \
-  wget -O- https://www.openssl.org/source/openssl-3.0.5.tar.gz | tar xzf - && \
+  wget --https-only -O- https://www.openssl.org/source/openssl-3.0.5.tar.gz | tar xzf - && \
   mv openssl-3.0.5 openssl && \
   cd openssl && \
   ./Configure --prefix=/openssl && \
