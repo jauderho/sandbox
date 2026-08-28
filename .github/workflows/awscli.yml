@@ -196,25 +196,25 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: GitLab login
-        uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
-        with:
-          registry: registry.gitlab.com
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITLAB_REGISTRY_TOKEN }}
+#      - name: GitLab login
+#        uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
+#        with:
+#          registry: registry.gitlab.com
+#          username: ${{ github.actor }}
+#          password: ${{ secrets.GITLAB_REGISTRY_TOKEN }}
 
       - name: Create and push manifest lists
         working-directory: /tmp/digests
-        env:
-          GITLAB_IMAGE: registry.gitlab.com/${{ github.repository }}/${{ github.workflow }}
+#        env:
+#          GITLAB_IMAGE: registry.gitlab.com/${{ github.repository }}/${{ github.workflow }}
         run: |
           digests=()
           for d in *; do digests+=("ghcr.io/${REPOSITORY}@sha256:${d}"); done
-          for image in "ghcr.io/${REPOSITORY}" "${GITLAB_IMAGE}"; do
-            docker buildx imagetools create \
-              -t "${image}:${BUILD_VERSION}" \
-              "${digests[@]}"
-          done
+          # gitlab push disabled - to restore it, uncomment GITLAB_IMAGE above and
+          # repeat the imagetools create below against "${GITLAB_IMAGE}"
+          docker buildx imagetools create \
+            -t "ghcr.io/${REPOSITORY}:${BUILD_VERSION}" \
+            "${digests[@]}"
 
       - name: Inspect image
         run: docker buildx imagetools inspect "ghcr.io/${REPOSITORY}:${BUILD_VERSION}"

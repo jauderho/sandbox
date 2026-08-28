@@ -88,13 +88,13 @@ jobs:
 #          username: ${{ secrets.DOCKERHUB_USERNAME }}
 #          password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-      - name: GitLab login
-        if: ${{ github.event_name != 'pull_request' }}
-        uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
-        with:
-          registry: registry.gitlab.com
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITLAB_REGISTRY_TOKEN }}
+#      - name: GitLab login
+#        if: ${{ github.event_name != 'pull_request' }}
+#        uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
+#        with:
+#          registry: registry.gitlab.com
+#          username: ${{ github.actor }}
+#          password: ${{ secrets.GITLAB_REGISTRY_TOKEN }}
 
       - name: Build and push
         id: push-step
@@ -112,8 +112,10 @@ jobs:
           sbom: true
           provenance: true
           labels: ${{ steps.docker_meta.outputs.labels }}
+          # gitlab tags are disabled. they cannot be commented in place because
+          # this is a block scalar, so a leading # would be read as a tag name:
+          #   registry.gitlab.com/${{ github.repository }}/${{ github.workflow }}:${{ env.BUILD_VERSION }}
+          #   registry.gitlab.com/${{ github.repository }}/${{ github.workflow }}:latest
           tags: |
             ghcr.io/${{ env.REPOSITORY }}:${{ env.BUILD_VERSION }}
             ghcr.io/${{ env.REPOSITORY }}:latest
-            registry.gitlab.com/${{ github.repository }}/${{ github.workflow }}:${{ env.BUILD_VERSION }}
-            registry.gitlab.com/${{ github.repository }}/${{ github.workflow }}:latest
