@@ -7,7 +7,7 @@ dependencies = [
   # shodan's __main__ imports pkg_resources at startup. That used to come from
   # the distro python3-pip and nothing provides it inside the venv. setuptools
   # dropped pkg_resources in 81.0.0, so it has to stay below that.
-  "setuptools<81",
+  "setuptools<84",
   "shodan"
 ]
 dynamic = ["version"]
