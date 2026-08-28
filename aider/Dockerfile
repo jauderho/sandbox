@@ -1,7 +1,7 @@
 # aider-chat declares Requires-Python >=3.10,<3.13, so this cannot use the plain
 # alpine base any more - Alpine 3.24 ships Python 3.14. Pin to Python 3.12.
 #FROM alpine:3.24.1@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b
-FROM python:3.12-alpine3.22@sha256:a190708a2dec1bd18b1decb539f8e8f5407abaa9bf39cacda583f7f8c11db322
+FROM python:3.14-alpine3.22@sha256:6b91e66ab2a880ce9ca5a1b91c70f45963ff71ff68268df056336e1a657d5efd
 
 ARG BUILD_VERSION
 

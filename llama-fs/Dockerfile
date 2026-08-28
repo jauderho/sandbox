@@ -1,7 +1,7 @@
 # chromadb pulls in onnxruntime, which publishes manylinux wheels only - there is
 # no musl build for any arch - so this cannot sit on alpine.
 #FROM alpine:3.24.1@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b
-FROM ubuntu:26.04@sha256:3131b4cc82a783df6c9df078f86e01819a13594b865c2cad47bd1bca2b7063bb
+FROM ubuntu:26.04@sha256:2260313b31c8c011cd2eebe728008efac1b3982be73eb71348ea2648d2c0e09b
 
 ARG BUILD_VERSION
 ARG DEBIAN_FRONTEND=noninteractive
