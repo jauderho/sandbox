@@ -36,6 +36,7 @@ APP=(
   "llama-fs" \
   "llm" \
   "memray" \
+  "mlx" \
   "mlx-hub" \
   "notdiamond" \
   "open-interpreter" \
@@ -46,15 +47,21 @@ APP=(
   "posting" \
   "prowler" \
   "pshtt" \
-  "pyaranet4" \
+  "puncia" \
   "pwnagotchi" \
+  "pyaranet4" \
+  "pyinfra" \
+  "python-matter-server" \
+  "pyupgrade" \
   "revchatgpt" \
   "routellm" \
   "scrapeghost" \
+  "sgpt" \
   "shodan" \
   "ssh-mitm" \
-  "wtfis" \
+  "uv" \
   "wolverine" \
+  "wtfis" \
 )
 
 #APP=(

@@ -6,6 +6,7 @@ resolution-markers = [
     "sys_platform == 'darwin'",
 ]
 
+
 [[package]]
 name = "aiohappyeyeballs"
 version = "2.7.1"
@@ -2321,7 +2322,7 @@ wheels = [
 [[package]]
 name = "paperless-ngx"
 version = "3.1.0"
-source = { git = "https://github.com/paperless-ngx/paperless-ngx.git#05917a04aaf1e968dc49ca6908511325fa2e35a2" }
+source = { git = "https://github.com/paperless-ngx/paperless-ngx.git#d30ee1d62016ee2f20736e315000e07cb9012a95" }
 dependencies = [
     { name = "azure-ai-documentintelligence" },
     { name = "babel" },
