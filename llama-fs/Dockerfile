@@ -1,26 +1,53 @@
-# chromadb pulls in onnxruntime, which publishes manylinux wheels only - there is
-# no musl build for any arch - so this cannot sit on alpine.
-#FROM alpine:3.24.1@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b
-FROM ubuntu:26.04@sha256:2260313b31c8c011cd2eebe728008efac1b3982be73eb71348ea2648d2c0e09b
+FROM ghcr.io/astral-sh/uv:0.12.7@sha256:95f2aa1fe59274951cfe9b0cbc7972e879ff1004bc8945d130a32eb0dbd85945 AS uv
+
+
+# --------------------------------------------------------------------------
+
+
+FROM ubuntu:26.04@sha256:2260313b31c8c011cd2eebe728008efac1b3982be73eb71348ea2648d2c0e09b AS build
 
 ARG BUILD_VERSION
 ARG DEBIAN_FRONTEND=noninteractive
 
-#ENV PIP_DISABLE_PIP_VERSION_CHECK=1
-ENV PIP_NO_CACHE_DIR=1
+# uv installs into a venv, so PEP 668 does not apply and neither
+# --break-system-packages nor --ignore-installed is needed any more.
+ENV UV_NO_CACHE=1 \
+	UV_LINK_MODE=copy \
+	UV_PYTHON_DOWNLOADS=never
 
-# requirements.txt now generated from Pipfile
-# pipenv lock -r > requirements.txt
+COPY --from=uv /uv /usr/local/bin/uv
 COPY requirements.txt .
 
 RUN apt-get update && \
 	apt-get dist-upgrade -y && \
-	DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends python3-pip && \
-	python3 -m pip install --no-cache-dir --upgrade pip --ignore-installed --break-system-packages && \
-	pip3 install --no-cache-dir -r requirements.txt --ignore-installed --break-system-packages && \
+	DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends python3 && \
+	uv venv --python /usr/bin/python3 /opt/venv && \
+	uv pip install --python /opt/venv/bin/python -r requirements.txt && \
+	find /opt/venv -name '__pycache__' -print0 | xargs -0 -n1 rm -rf
+
+
+# --------------------------------------------------------------------------
+
+
+FROM ubuntu:26.04@sha256:2260313b31c8c011cd2eebe728008efac1b3982be73eb71348ea2648d2c0e09b
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+# the venv symlinks its interpreter, so python3 must be at the same path
+RUN apt-get update && \
+	apt-get dist-upgrade -y && \
+	DEBIAN_FRONTEND=${DEBIAN_FRONTEND} apt-get install -y --no-install-recommends ca-certificates python3 && \
 	apt-get autoremove -y --purge && \
 	rm -rf /var/lib/apt/lists/* && \
 	apt-get clean
+
+COPY --from=build /opt/venv /opt/venv
+
+ENV PATH="/opt/venv/bin:${PATH}"
+
+# smoke test, then drop the bytecode the test run just generated
+RUN python3 -c 'import chromadb' && \
+	find /opt/venv -name '__pycache__' -print0 | xargs -0 -n1 rm -rf
 
 LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
@@ -33,4 +60,3 @@ WORKDIR /data
 
 ENTRYPOINT ["llama-fs"]
 CMD ["prompt","--help"]
-
