@@ -1,31 +1,48 @@
-FROM alpine:3.24.1@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b
-#FROM python:3.14.0-alpine3.22@sha256:0bf59161c735f604ea070af402d65b1a088ce3fd7fe4329f5983446148e84930
+FROM alpine:3.24.1@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b AS build
 
 ARG BUILD_VERSION
 
-#ENV PIP_DISABLE_PIP_VERSION_CHECK=1
-ENV PIP_NO_CACHE_DIR=1
+# uv resolves and installs into a venv, so PEP 668 never applies and
+# --break-system-packages is not needed. The venv is the only build output.
+ENV UV_NO_CACHE=1 \
+	UV_LINK_MODE=copy \
+	UV_PYTHON_DOWNLOADS=never
 
-# requirements.txt now generated from Pipfile
-# pipenv lock -r > requirements.txt
-COPY requirements.txt . 
+COPY requirements.txt .
 
+# uv comes from the alpine community repo rather than ghcr.io/astral-sh/uv
+# because that image only publishes amd64/arm64 and this builds 4 arches.
 RUN \
 	apk update && \
 	apk upgrade -a && \
-	build_pkgs="" && \
-	runtime_pkgs="ca-certificates openssl python3 py3-pip" && \
-	apk --no-cache add --virtual build-dependencies ${build_pkgs} && \
-	apk --no-cache add ${runtime_pkgs} && \
-	#python3 -m pip install --no-cache-dir --upgrade pip --break-system-packages && \
-	#pip3 install --no-cache-dir --upgrade wheel --break-system-packages && \
-	pip3 install --no-cache-dir -r requirements.txt --break-system-packages && \
-	apk del build-dependencies && \
+	apk --no-cache add python3 uv && \
+	uv venv --python /usr/bin/python3 /opt/venv && \
+	uv pip install --python /opt/venv/bin/python -r requirements.txt && \
+	find /opt/venv -name '__pycache__' -print0 | xargs -0 -n1 rm -rf && \
+	find /opt/venv -name '*.pyc' -print0 | xargs -0 -n1 rm -rf
+
+
+# ----------------------------------------------------------------------------
+
+
+FROM alpine:3.24.1@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b
+
+# the venv symlinks its interpreter, so python3 has to be at the same path here
+RUN \
+	apk update && \
+	apk upgrade -a && \
+	apk --no-cache add ca-certificates openssl python3 && \
 	rm -rf /var/cache/apk/* && \
-	rm -rf /root/.cache/pip && \
 	find /usr/lib/ -name '__pycache__' -print0 | xargs -0 -n1 rm -rf && \
-	find /usr/lib/ -name '*.pyc' -print0 | xargs -0 -n1 rm -rf && \
-	rm -rf /root/.cargo
+	find /usr/lib/ -name '*.pyc' -print0 | xargs -0 -n1 rm -rf
+
+COPY --from=build /opt/venv /opt/venv
+
+ENV PATH="/opt/venv/bin:${PATH}"
+
+# smoke test, then drop the bytecode the test run just generated
+RUN cryptolyze --version && \
+	find /opt/venv -name '__pycache__' -print0 | xargs -0 -n1 rm -rf
 
 LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
@@ -38,4 +55,3 @@ WORKDIR /data
 
 ENTRYPOINT ["cryptolyze"]
 CMD ["-h"]
-

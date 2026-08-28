@@ -1,31 +1,46 @@
-FROM ghcr.io/jauderho/alpine:3.24.1@sha256:f310f8a4fad676899731a97c5eaf004c9cb9e822018a2ad7d23c3aeda3a7d773
-#FROM python:3.14.0-alpine3.22@sha256:0bf59161c735f604ea070af402d65b1a088ce3fd7fe4329f5983446148e84930
+FROM ghcr.io/jauderho/alpine:3.24.1@sha256:f310f8a4fad676899731a97c5eaf004c9cb9e822018a2ad7d23c3aeda3a7d773 AS build
 
 ARG BUILD_VERSION
 
-#ENV PIP_DISABLE_PIP_VERSION_CHECK=1
-ENV PIP_NO_CACHE_DIR=1
+# uv installs into a venv, so PEP 668 does not apply and
+# --break-system-packages is no longer needed. uv comes from the alpine
+# community repo because ghcr.io/astral-sh/uv is amd64/arm64 only.
+ENV UV_NO_CACHE=1 \
+	UV_LINK_MODE=copy \
+	UV_PYTHON_DOWNLOADS=never
 
-# requirements.txt now generated from Pipfile
-# pipenv lock -r > requirements.txt
-COPY requirements.txt . 
+COPY requirements.txt .
 
 RUN \
 	apk update && \
 	apk upgrade -a && \
-	build_pkgs="" && \
-	runtime_pkgs="ca-certificates openssl python3 py3-pip" && \
-	apk --no-cache add --virtual build-dependencies ${build_pkgs} && \
-	apk --no-cache add ${runtime_pkgs} && \
-	#python3 -m pip install --no-cache-dir --upgrade pip --break-system-packages && \
-	#pip3 install --no-cache-dir --upgrade wheel --break-system-packages && \
-	pip3 install --no-cache-dir -r requirements.txt --break-system-packages && \
-	apk del build-dependencies && \
+	apk --no-cache add python3 uv && \
+	uv venv --python /usr/bin/python3 /opt/venv && \
+	uv pip install --python /opt/venv/bin/python -r requirements.txt && \
+	find /opt/venv -name '__pycache__' -print0 | xargs -0 -n1 rm -rf
+
+
+# --------------------------------------------------------------------------
+
+
+FROM ghcr.io/jauderho/alpine:3.24.1@sha256:f310f8a4fad676899731a97c5eaf004c9cb9e822018a2ad7d23c3aeda3a7d773
+
+# the venv symlinks its interpreter, so python3 must be at the same path
+RUN \
+	apk update && \
+	apk upgrade -a && \
+	apk --no-cache add ca-certificates openssl python3 && \
 	rm -rf /var/cache/apk/* && \
-	rm -rf /root/.cache/pip && \
 	find /usr/lib/ -name '__pycache__' -print0 | xargs -0 -n1 rm -rf && \
-	find /usr/lib/ -name '*.pyc' -print0 | xargs -0 -n1 rm -rf && \
-	rm -rf /root/.cargo
+	find /usr/lib/ -name '*.pyc' -print0 | xargs -0 -n1 rm -rf
+
+COPY --from=build /opt/venv /opt/venv
+
+ENV PATH="/opt/venv/bin:${PATH}"
+
+# smoke test, then drop the bytecode the test run just generated
+RUN pipenv-poetry-migrate --help > /dev/null && \
+	find /opt/venv -name '__pycache__' -print0 | xargs -0 -n1 rm -rf
 
 LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
@@ -38,4 +53,3 @@ WORKDIR /data
 
 ENTRYPOINT ["pipenv-poetry-migrate"]
 CMD ["-h"]
-
