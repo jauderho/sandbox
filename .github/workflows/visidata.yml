@@ -43,19 +43,23 @@ jobs:
         with:
           egress-policy: block
           disable-telemetry: true
-          allowed-endpoints:
+          allowed-endpoints: >
+            *.blob.core.windows.net:443
             95s5acprodeus1file6.blob.core.windows.net:443
             api.github.com:443
             archive.ubuntu.com:443
+            archive.ubuntu.com:80
             artifactcache.actions.githubusercontent.com:443
             auth.docker.io:443
             codeload.github.com:443
             dl-cdn.alpinelinux.org:443
+            dl-cdn.alpinelinux.org:80
             files.pythonhosted.org:443
             ghcr.io:443
             github.com:443
             pkg-containers.githubusercontent.com:443
             ports.ubuntu.com:443
+            ports.ubuntu.com:80
             production.cloudflare.docker.com:443
             production.cloudfront.docker.com:443
             proxy.golang.org:443
@@ -64,6 +68,7 @@ jobs:
             registry-1.docker.io:443
             registry.gitlab.com:443
             security.ubuntu.com:443
+            security.ubuntu.com:80
             storage.googleapis.com:443
 
       - name: Source checkout
@@ -146,7 +151,8 @@ jobs:
         with:
           egress-policy: block
           disable-telemetry: true
-          allowed-endpoints:
+          allowed-endpoints: >
+            *.blob.core.windows.net:443
             api.github.com:443
             auth.docker.io:443
             cdn.registry.gitlab-static.net:443

@@ -31,15 +31,16 @@ jobs:
           disable-sudo: true
           egress-policy: block
           disable-telemetry: true
-          allowed-endpoints:
+          allowed-endpoints: >
+            *.blob.core.windows.net:443
             api.github.com:443
             api.osv.dev:443
             api.scorecard.dev:443
             api.securityscorecards.dev:443
             bestpractices.coreinfrastructure.org:443
             codeload.github.com:443
-            github.com:443
             fulcio.sigstore.dev:443
+            github.com:443
             oauth2.sigstore.dev:443
             oss-fuzz-build-logs.storage.googleapis.com:443
             rekor.sigstore.dev:443

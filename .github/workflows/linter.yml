@@ -37,6 +37,7 @@ jobs:
           egress-policy: block
           disable-telemetry: true
           allowed-endpoints: >
+            *.blob.core.windows.net:443
             api.github.com:443
             api0.prismacloud.io:443
             files.pythonhosted.org:443

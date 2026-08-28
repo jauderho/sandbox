@@ -21,7 +21,8 @@ jobs:
       with:
         egress-policy: block
         disable-telemetry: true
-        allowed-endpoints: 
+        allowed-endpoints: >
+          *.blob.core.windows.net:443
           github.com:443
           gitlab.com:443
         

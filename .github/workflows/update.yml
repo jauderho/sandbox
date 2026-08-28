@@ -42,6 +42,7 @@ jobs:
           disable-sudo: false
           disable-telemetry: true
           allowed-endpoints: >
+            *.blob.core.windows.net:443
             api.github.com:443
             cdn.fwupd.org:443
             fulcio.sigstore.dev:443
@@ -99,10 +100,11 @@ jobs:
           disable-sudo: false
           disable-telemetry: true
           allowed-endpoints: >
+            *.blob.core.windows.net:443
             api.github.com:443
             azure.archive.ubuntu.com:80
-            download.pytorch.org:443
             download-r2.pytorch.org:443
+            download.pytorch.org:443
             files.pythonhosted.org:443
             github.com:443
             objects.githubusercontent.com:443
