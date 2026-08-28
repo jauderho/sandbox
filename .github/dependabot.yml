@@ -34,6 +34,12 @@ updates:
       python:
         patterns:
           - "*"
+    ignore:
+      # setuptools 81 removed pkg_resources, which shodan imports at startup.
+      # Bumping past 80.x makes "shodan --help" fail. Patch releases inside
+      # 80.x still come through.
+      - dependency-name: "setuptools"
+        versions: [">=81"]
 
   # Maintain dependencies for Docker
   - package-ecosystem: "docker"
