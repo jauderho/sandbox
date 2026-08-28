@@ -19,21 +19,8 @@ git config --local user.name "Jauder Ho Bot"
 git config --local user.email "jauderho-bot@users.noreply.github.com"
 git config --local pull.rebase false
 
-# setup pipenv and python
-PATH="/Users/runner/Library/Python/3.13/bin:$HOME/.local/bin:$PATH"
-#pipenv install --python 3.9
-#pipenv shell
-#DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.13
-
-#python3.13 -m pip install --no-cache-dir --upgrade pip --break-system-packages
-###python3.13 -m pip install --no-cache-dir --upgrade --user pipenv certifi wheel setuptools packaging --break-system-packages
-
-#python3.11 -m pip install --no-cache-dir --upgrade --user pipenv
-#python3.11 -m pip install --no-cache-dir --upgrade --user certifi
-#DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv 
-#python -m pip install --no-cache-dir --upgrade pip
-#python -m pip install --no-cache-dir --upgrade --user pipenv
-#python -m pip install --no-cache-dir --upgrade --user certifi
+# uv is installed by astral-sh/setup-uv, which puts it on PATH
+PATH="$HOME/.local/bin:$PATH"
 
 # Track lock failures so a single flaky app doesn't abort the whole run
 FAILED=$(mktemp)
@@ -50,7 +37,6 @@ lock_app() {
 
 	if ! (
 		cd "${i}" || exit 1
-		#pipenv --python 3.13 lock -v && pipenv --python 3.13 requirements --exclude-markers > requirements.txt
 		#uv lock --prerelease=allow -U && uv pip compile pyproject.toml --python-platform aarch64-apple-darwin --no-annotate --prerelease=allow > requirements.txt
 		uv lock --prerelease=allow -U && uv export --no-hashes --no-annotate --no-emit-workspace -o requirements.txt
 	); then
@@ -85,4 +71,3 @@ if [[ -s "$FAILED" ]]; then
 	exit 1
 fi
 rm -f "$FAILED"
-

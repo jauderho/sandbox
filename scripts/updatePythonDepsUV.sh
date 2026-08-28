@@ -72,21 +72,7 @@ git config --local user.name "Jauder Ho Bot"
 git config --local user.email "jauderho-bot@users.noreply.github.com"
 git config --local pull.rebase false
 
-# setup pipenv and python
 #PATH="$HOME/.local/bin:$PATH"
-#pipenv install --python 3.9
-#pipenv shell
-
-###DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv python3.12
-###python3.12 -m pip install --no-cache-dir --upgrade pip --break-system-packages
-###python3.12 -m pip install --no-cache-dir --upgrade --user pipenv certifi wheel setuptools packaging --break-system-packages
-
-#python3.11 -m pip install --no-cache-dir --upgrade --user pipenv
-#python3.11 -m pip install --no-cache-dir --upgrade --user certifi
-#DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends pipenv 
-#python -m pip install --no-cache-dir --upgrade pip
-#python -m pip install --no-cache-dir --upgrade --user pipenv
-#python -m pip install --no-cache-dir --upgrade --user certifi
 
 # Track lock failures so a single flaky app doesn't abort the whole run
 FAILED=$(mktemp)
@@ -141,4 +127,3 @@ if [[ -s "$FAILED" ]]; then
 	exit 1
 fi
 rm -f "$FAILED"
-
