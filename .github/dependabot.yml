@@ -20,11 +20,85 @@ updates:
         patterns:
           - "*"
 
-  # Maintain dependencies for Docker
+  # Python dependencies. uv.lock and pyproject.toml are the source of truth;
+  # dependabot has no way to filter by manifest type, so the few remaining
+  # requirements files (the awscli 1.16.14 variant and memray's upstream dev
+  # files) are still parsed.
+  #
+  # shodan is deliberately NOT in this list - it has its own entry below so its
+  # setuptools pin can be exempted without suppressing setuptools elsewhere.
+  # Any new app directory needs adding here.
   - package-ecosystem: "pip"
     directories:
-      #- "/"
-      - "/*"
+      - "/ai-hedge-fund"
+      - "/aranet4"
+      - "/autoflake"
+      - "/awscli"
+      - "/badkeys"
+      - "/bgperf2"
+      - "/cantools"
+      - "/claude-engineer"
+      - "/codespell"
+      - "/cryptolyzer"
+      - "/datasette"
+      - "/deepdiff"
+      - "/diagrams"
+      - "/dnsdiag"
+      - "/dnsrecon"
+      - "/dnstwist"
+      - "/dnsvalidator"
+      - "/finanace_dl"
+      - "/gallery-dl"
+      - "/greynoise"
+      - "/hdbcli"
+      - "/huggingface-cli"
+      - "/ilab"
+      - "/internetarchive"
+      - "/jc"
+      - "/llama-cpp-agent"
+      - "/llama-fs"
+      - "/llm"
+      - "/memray"
+      - "/mlx"
+      - "/mlx-hub"
+      - "/notdiamond"
+      - "/openbbterminal"
+      - "/paperless-ngx"
+      - "/pip-audit"
+      - "/pipenv-poetry-migrate"
+      - "/posting"
+      - "/prowler"
+      - "/pshtt"
+      - "/puncia"
+      - "/pwnagotchi"
+      - "/pyaranet4"
+      - "/pyinfra"
+      - "/python-matter-server"
+      - "/pyupgrade"
+      - "/revchatgpt"
+      - "/routellm"
+      - "/scrapeghost"
+      - "/sgpt"
+      - "/ssh-mitm"
+      - "/uv"
+      - "/wolverine"
+      - "/wtfis"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 7
+    groups:
+      python:
+        patterns:
+          - "*"
+
+  # shodan only: its __main__ imports pkg_resources, which setuptools removed in
+  # 81.0.0, so "shodan --help" breaks above 80.x. Upstream fix is in flight at
+  # https://github.com/achillean/shodan-python/pull/253 - drop this entry once
+  # that lands and the pin comes off shodan/pyproject.toml.
+  - package-ecosystem: "pip"
+    directory: "/shodan"
     open-pull-requests-limit: 50
     schedule:
       interval: "daily"
@@ -35,9 +109,6 @@ updates:
         patterns:
           - "*"
     ignore:
-      # setuptools 81 removed pkg_resources, which shodan imports at startup.
-      # Bumping past 80.x makes "shodan --help" fail. Patch releases inside
-      # 80.x still come through.
       - dependency-name: "setuptools"
         versions: [">=81"]
 
