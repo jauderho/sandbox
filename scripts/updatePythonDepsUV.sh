@@ -41,7 +41,6 @@ APP=(
   "openbbterminal" \
   "paperless-ngx" \
   "pip-audit" \
-  "pipenv-poetry-migrate" \
   "posting" \
   "prowler" \
   "pshtt" \
