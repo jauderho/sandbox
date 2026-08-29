@@ -61,8 +61,15 @@ RUN ln -f -s /usr/bin/ccache /bin/g++ \
 
 # smoke test. This image is a development environment for building memray from
 # source, so it used to carry the toolchain and the test deps but not memray
-# itself, and nothing here could be run.
-RUN memray --version
+# itself, and nothing here could be run. Profile a throwaway script rather than
+# only asking for the version, so the gate covers the way the image gets used:
+# memray run to capture, then a reporter to read the capture back.
+RUN memray --version \
+ && printf 'data = [object() for _ in range(200000)]\n' > /tmp/smoke.py \
+ && memray run -o /tmp/smoke.bin /tmp/smoke.py \
+ && memray summary /tmp/smoke.bin > /dev/null \
+ && memray flamegraph -o /tmp/smoke.html /tmp/smoke.bin \
+ && rm -f /tmp/smoke.py /tmp/smoke.bin /tmp/smoke.html
 
 WORKDIR /src
 
