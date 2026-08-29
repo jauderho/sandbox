@@ -15,7 +15,7 @@ WORKDIR /app
 COPY . /app
 
 # shell_gpt is pulled straight from git, so git has to be present at install time
-# uv is bind mounted rather than COPYed so its ~35MB never lands in a layer
+# uv is bind mounted rather than copied in, so its ~35MB never lands in a layer
 RUN --mount=from=uv,source=/uv,target=/usr/local/bin/uv \
     apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends git \

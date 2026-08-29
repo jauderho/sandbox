@@ -43,7 +43,7 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
 COPY requirements-test.txt requirements-extra.txt requirements-docs.txt /tmp/
 
-# uv is bind mounted rather than COPYed so its binary never lands in a layer
+# uv is bind mounted rather than copied in, so its binary never lands in a layer
 RUN --mount=from=uv,source=/uv,target=/usr/local/bin/uv \
     uv pip install --python $PYTHON --no-cache -U \
     -r /tmp/requirements-extra.txt \
