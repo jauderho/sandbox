@@ -110,7 +110,7 @@ updates:
           - "*"
     ignore:
       - dependency-name: "setuptools"
-        versions: [">=81"]
+        versions: [">=81.0.0"]
 
   # Maintain dependencies for Docker
   - package-ecosystem: "docker"
