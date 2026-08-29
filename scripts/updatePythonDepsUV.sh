@@ -66,6 +66,46 @@ APP=(
 #  "pwnagotchi" \
 #)
 
+# BUILD_VERSION in a workflow is only a label and an image tag - the version
+# that actually ships comes from uv.lock. Nothing kept the two in step, so the
+# labels drifted. Only apps that have a workflow need an entry here, and the
+# package is named because it is not always the directory name.
+WORKFLOW_PKG='autoflake:autoflake
+awscli:awscli
+badkeys:badkeys
+cryptolyzer:cryptolyzer
+greynoise:greynoise
+huggingface-cli:huggingface-hub
+jc:jc
+llama-fs:llama-index
+llm:llm
+memray:memray
+openbbterminal:openbb
+pyinfra:pyinfra
+sgpt:shell-gpt
+shodan:shodan
+ssh-mitm:ssh-mitm
+uv:uv'
+
+# Rewrite a workflow's BUILD_VERSION to the version its uv.lock resolved to.
+# sed -i.bak keeps this portable between GNU and BSD sed.
+sync_build_version() {
+	local dir="$1" pkg wf ver
+	pkg=$(printf '%s\n' "$WORKFLOW_PKG" | awk -F: -v d="${dir}" '$1==d{print $2; exit}')
+	wf=".github/workflows/${dir}.yml"
+
+	[[ -n "${pkg}" && -f "${wf}" && -f "${dir}/uv.lock" ]] || return 0
+
+	ver=$(awk -v pkg="${pkg}" '
+		/^name = / {n=$3}
+		/^version = / {if (n=="\""pkg"\"") {print $3; exit}}
+	' "${dir}/uv.lock" | tr -d '"')
+	[[ -n "${ver}" ]] || return 0
+
+	sed -i.bak -E "s|^  BUILD_VERSION: .*|  BUILD_VERSION: \"${ver}\"|" "${wf}"
+	rm -f "${wf}.bak"
+}
+
 # setup git
 git config --local user.name "Jauder Ho Bot"
 git config --local user.email "jauderho-bot@users.noreply.github.com"
@@ -107,9 +147,14 @@ git pull --no-edit
 
 for i in "${APP[@]}"
 do
-	git add "${i}/pyproject.toml" "${i}/uv.lock" 2>/dev/null || true
+	sync_build_version "${i}"
 
-	if ! git diff --cached --quiet -- "${i}"; then
+	PATHS=("${i}/pyproject.toml" "${i}/uv.lock")
+	[[ -f ".github/workflows/${i}.yml" ]] && PATHS+=(".github/workflows/${i}.yml")
+
+	git add "${PATHS[@]}" 2>/dev/null || true
+
+	if ! git diff --cached --quiet -- "${PATHS[@]}"; then
 		git commit -S -s -m "Update requirements for ${i} ..."
 	fi
 done
