@@ -56,5 +56,7 @@ LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/huggingface-cli"
 LABEL org.opencontainers.image.description="CLI for HuggingFace"
 
-ENTRYPOINT ["huggingface-cli"]
+# huggingface_hub 1.x keeps a huggingface-cli shim that only prints a
+# deprecation notice and exits 1. hf is the real command.
+ENTRYPOINT ["hf"]
 CMD ["--help"]

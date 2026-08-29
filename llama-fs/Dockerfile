@@ -54,9 +54,12 @@ LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/llama-fs"
-LABEL org.opencontainers.image.description="llama-fs is a CLI for interacting with Large Language Models"
+LABEL org.opencontainers.image.description="Runtime environment for llama-fs, a self-organizing file system"
 
 WORKDIR /data
 
-ENTRYPOINT ["llama-fs"]
-CMD ["prompt","--help"]
+# Upstream llama-fs ships no pyproject.toml or setup.py, so it cannot be
+# installed as a package and provides no console script. This image carries its
+# dependencies instead; mount the checkout and run server.py against it. The
+# image previously ran "llama-fs", which it does not contain.
+ENTRYPOINT ["python3"]

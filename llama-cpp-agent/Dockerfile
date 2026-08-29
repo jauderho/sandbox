@@ -50,10 +50,11 @@ LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.documentation="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
-LABEL org.opencontainers.image.title="jauderho/llm"
-LABEL org.opencontainers.image.description="llm is a CLI for interacting with Large Language Models"
+LABEL org.opencontainers.image.title="jauderho/llama-cpp-agent"
+LABEL org.opencontainers.image.description="llama-cpp-agent is a framework for building agents on top of llama.cpp"
 
 WORKDIR /data
 
-ENTRYPOINT ["llm"]
-CMD ["prompt","--help"]
+# llama-cpp-agent is a library and ships no console script, so the interpreter
+# is the entrypoint. The image previously ran "llm", which it does not contain.
+ENTRYPOINT ["python3"]

@@ -24,13 +24,29 @@ RUN --mount=from=uv,source=/uv,target=/usr/local/bin/uv \
  && apt-get autoremove -y --purge \
  && rm -rf /var/lib/apt/lists/* \
  && apt-get clean \
- && addgroup --system app && adduser --system --group app \
- && mkdir -p /home/app/.config/shell-gpt \
- && echo "api_key.txt should be here" > /home/app/.config/shell-gpt/readme.txt \
+ && addgroup --system app \
+ && adduser --system --group --home /home/app app \
+ && mkdir -p /home/app/.config/shell_gpt \
+ && echo "sgpt keeps its settings in .sgptrc here. Pass the key as OPENAI_API_KEY." \
+      > /home/app/.config/shell_gpt/readme.txt \
  && chown -R app:app /home/app
 
 USER app
 
-VOLUME /home/app/.config/shell-gpt
+# adduser --system defaults the home directory to /nonexistent, so sgpt used to
+# die trying to create $HOME/.config/shell_gpt. The folder name is shell_gpt
+# with an underscore, which is what sgpt/config.py builds its path from.
+ENV HOME=/home/app
+
+# shell_gpt writes .sgptrc on its first run, but that same first run then fails:
+# Config.get() reports DEFAULT_TEMPERATURE as missing because its default is the
+# float 0.0, which is falsy. It only works once the value has been read back from
+# the file as the string "0.0". So seed the config here and let the second run be
+# the smoke test. OPENAI_API_KEY only suppresses the interactive key prompt; it
+# is not part of DEFAULT_CONFIG and is never written to .sgptrc.
+RUN OPENAI_API_KEY=seed sgpt --version > /dev/null 2>&1; \
+    OPENAI_API_KEY=seed sgpt --version
+
+VOLUME /home/app/.config/shell_gpt
 ENTRYPOINT ["/usr/local/bin/sgpt"]
 

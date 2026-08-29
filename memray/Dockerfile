@@ -50,6 +50,7 @@ RUN --mount=from=uv,source=/uv,target=/usr/local/bin/uv \
     -r /tmp/requirements-test.txt \
     -r /tmp/requirements-docs.txt \
     cython \
+    memray \
     setuptools \
     wheel
 
@@ -58,4 +59,13 @@ RUN npm install -g prettier
 RUN ln -f -s /usr/bin/ccache /bin/g++ \
     && ln -f -s /usr/bin/ccache /bin/gcc
 
+# smoke test. This image is a development environment for building memray from
+# source, so it used to carry the toolchain and the test deps but not memray
+# itself, and nothing here could be run.
+RUN memray --version
+
 WORKDIR /src
+
+# No ENTRYPOINT, so the image still works as a shell for building memray from
+# source. CMD only makes a bare "docker run" say something useful.
+CMD ["memray", "--help"]
