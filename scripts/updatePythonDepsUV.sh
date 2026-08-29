@@ -32,7 +32,6 @@ APP=(
   "ilab" \
   "internetarchive" \
   "jc" \
-  "llama-cpp-agent" \
   "llama-fs" \
   "llm" \
   "memray" \
