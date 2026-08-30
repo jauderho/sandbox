@@ -20,15 +20,16 @@ updates:
         patterns:
           - "*"
 
-  # Python dependencies. uv.lock and pyproject.toml are the source of truth;
-  # dependabot has no way to filter by manifest type, so the few remaining
-  # requirements files (the awscli 1.16.14 variant and memray's upstream dev
-  # files) are still parsed.
+  # Python dependencies. The uv ecosystem reads pyproject.toml and uv.lock,
+  # which are the source of truth here. Unlike pip it does not parse
+  # requirements files, so the frozen awscli 1.16.14 pin and memray's upstream
+  # dev files are no longer updated. Both are meant to stay where they are, so
+  # that is the wanted behaviour rather than a gap.
   #
   # shodan is deliberately NOT in this list - it has its own entry below so its
   # setuptools pin can be exempted without suppressing setuptools elsewhere.
   # Any new app directory needs adding here.
-  - package-ecosystem: "pip"
+  - package-ecosystem: "uv"
     directories:
       - "/ai-hedge-fund"
       - "/aranet4"
@@ -63,7 +64,6 @@ updates:
       - "/notdiamond"
       - "/openbbterminal"
       - "/paperless-ngx"
-      - "/pip-audit"
       - "/posting"
       - "/prowler"
       - "/pshtt"
@@ -95,7 +95,7 @@ updates:
   # 81.0.0, so "shodan --help" breaks above 80.x. Upstream fix is in flight at
   # https://github.com/achillean/shodan-python/pull/253 - drop this entry once
   # that lands and the pin comes off shodan/pyproject.toml.
-  - package-ecosystem: "pip"
+  - package-ecosystem: "uv"
     directory: "/shodan"
     open-pull-requests-limit: 50
     schedule:

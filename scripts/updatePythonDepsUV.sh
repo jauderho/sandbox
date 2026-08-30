@@ -40,7 +40,6 @@ APP=(
   "notdiamond" \
   "openbbterminal" \
   "paperless-ngx" \
-  "pip-audit" \
   "posting" \
   "prowler" \
   "pshtt" \
