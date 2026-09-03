@@ -535,7 +535,7 @@ tesserocr = [
 
 [[package]]
 name = "docling-core"
-version = "2.93.0"
+version = "2.94.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "defusedxml" },
@@ -552,9 +552,9 @@ dependencies = [
     { name = "typer" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/10/33/e30a27d8da4ce3414cce522ec31fcbc842430141b60424c1ea99c903d3e2/docling_core-2.93.0.tar.gz", hash = "sha256:0bdf6f42b0c83ca4dcd3916e6d1fbcfdc87168d93f192e00a1d2b0c55d5357d4", size = 363160, upload-time = "2026-09-01T10:47:45.115Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2e/64/d27e4d16c98bbe3e501a84fac2a59ba64f0659bbd37d684540a9612de7cb/docling_core-2.94.0.tar.gz", hash = "sha256:c0f5729d0411258d290b15535a9236e150adf711ed676c731cfdce81dc63e557", size = 369423, upload-time = "2026-09-03T08:51:27.134Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/26/e2/3edceae55162002a8f9484436e0fbfc589bd26b2a98af677d4a9780a3134/docling_core-2.93.0-py3-none-any.whl", hash = "sha256:5c0b9df0d4f5a969928968484b4736a4201b61d41f5132ce9fbcba00a50be5e8", size = 296557, upload-time = "2026-09-01T10:47:43.65Z" },
+    { url = "https://files.pythonhosted.org/packages/4b/6b/0499bd6293df2defe6ecd10fb13cd7869e7d224e4f02e64ad3c3a6501bc3/docling_core-2.94.0-py3-none-any.whl", hash = "sha256:e51cb338428be5d3452d60cb2e203a79cbc80cad325369c43c29168c2e3f0b61", size = 299257, upload-time = "2026-09-03T08:51:25.523Z" },
 ]
 
 [package.optional-dependencies]
@@ -1008,7 +1008,7 @@ wheels = [
 
 [[package]]
 name = "huggingface-hub"
-version = "1.29.0"
+version = "1.30.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -1021,9 +1021,9 @@ dependencies = [
     { name = "tqdm" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/64/35/42316e8f6908b6d21bc8df017cc6efba94fb5edbf99b64e28dd142325e20/huggingface_hub-1.29.0.tar.gz", hash = "sha256:6ebb385a581435325cf6d5c5b233d5d4bc91175834d99fd65dae14379b36e9ad", size = 963121, upload-time = "2026-08-27T12:18:37.432Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/35/97/2eb4abaa5b969ed385066a0496a3823b3ff467fc1082e2202955f1867d60/huggingface_hub-1.30.0.tar.gz", hash = "sha256:e6a6120bc8c8e2723d03648434ee247088cceb55ba7067e7d34d692cad5fdb57", size = 964291, upload-time = "2026-09-03T10:05:14.053Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4e/a5/47c2ea9b228ccbcba8467e9a64823146e8ebbad29855e591d8f5eedcc9c7/huggingface_hub-1.29.0-py3-none-any.whl", hash = "sha256:b00f7782afc14db4bc6572763810a635bdfbab8623d957bfb553bd18e03852cd", size = 795768, upload-time = "2026-08-27T12:18:35.431Z" },
+    { url = "https://files.pythonhosted.org/packages/c3/0e/3e45bbe0dd48f4e56b1d46649d342de853cd1c7e815323472ab62687f153/huggingface_hub-1.30.0-py3-none-any.whl", hash = "sha256:96ae0a8e99a234374a6fe43e989ebd21c04640b91ab2927e7e5773ba1131ca59", size = 796795, upload-time = "2026-09-03T10:05:12.21Z" },
 ]
 
 [[package]]
@@ -3133,15 +3133,15 @@ sdist = { url = "https://files.pythonhosted.org/packages/12/9a/7620d1e9dcb02839e
 
 [[package]]
 name = "sse-starlette"
-version = "3.4.8"
+version = "3.4.10"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
     { name = "starlette" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f8/00/b42a44342a054d58cb1115d7c8aa9cb4290dd9442f9c1b91a4b8173dba22/sse_starlette-3.4.8.tar.gz", hash = "sha256:ed89ffbb75cbf78a5fe2f2109cd584792ee7f9dfac96f791db546df8f15f3f9c", size = 32548, upload-time = "2026-08-05T11:19:49.982Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/1e/e1/8a41e88e825ea26c44333897c7ffe35fe60153a2cfc097a5bd1d209ad281/sse_starlette-3.4.10.tar.gz", hash = "sha256:c6c87280d8feb4e55a8d79633782766b9cac6a26da5c79a145d00aa404117a86", size = 33720, upload-time = "2026-09-03T09:36:24.08Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/dd/3a/764912c58293d95b6dcdf4cc255f9d10de310580ced547b082eb9d72018c/sse_starlette-3.4.8-py3-none-any.whl", hash = "sha256:6e82314c786709a3cd9520f2285cf9fff90e181e598e8a357b0cf80f66afba0d", size = 16516, upload-time = "2026-08-05T11:19:48.748Z" },
+    { url = "https://files.pythonhosted.org/packages/ae/3c/96018a51c7301a64f7b0579d9ce8f9b69dd39ca8ed5aa100ba3feadee503/sse_starlette-3.4.10-py3-none-any.whl", hash = "sha256:710f5f5b0527409903a22a91699db02f76f4c2eb9204e882e4ee7cada76bdf75", size = 17120, upload-time = "2026-09-03T09:36:22.56Z" },
 ]
 
 [[package]]
