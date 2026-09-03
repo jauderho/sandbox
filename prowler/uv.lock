@@ -551,14 +551,15 @@ wheels = [
 
 [[package]]
 name = "anyio"
-version = "4.14.2"
+version = "4.15.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "idna" },
+    { name = "typing-extensions", marker = "python_full_version < '3.15'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/61/cc/a381afa6efea9f496eff839d4a6a1aed3bfafc7b3ab4b0d1b243a12573dd/anyio-4.14.2.tar.gz", hash = "sha256:cfa139f3ed1a23ee8f88a145ddb5ac7605b8bbfd8592baacd7ce3d8bb4313c7f", size = 260176, upload-time = "2026-07-12T20:29:07.082Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ea/9a/c15a60547004a3f3cea20296c934f827ddd7bdba225a2e7e9fcb5ec48c80/anyio-4.15.0.tar.gz", hash = "sha256:b5c620ed540725e2579c31b17bb995b3bf02c9281c9cace04c7d186380bab85e", size = 276504, upload-time = "2026-09-02T21:46:36.957Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/da/35/f2287558c17e29fafc8ef3daf819bb9834061cfa43bff8014f7df7f63bdc/anyio-4.14.2-py3-none-any.whl", hash = "sha256:9f505dda5ac9f0c8309b5e8bd445a8c2bf7246f3ce950121e45ea15bc41d1494", size = 125813, upload-time = "2026-07-12T20:29:05.763Z" },
+    { url = "https://files.pythonhosted.org/packages/21/a6/2b21ce5ebe4d8938a247c9b0dbb7271566ae559b01795c83ea4bb2660ed7/anyio-4.15.0-py3-none-any.whl", hash = "sha256:7ecd9937369ffce8bba0b5ccb9b3a9507b101b0ed50256aecfbab27e6c2acb99", size = 131908, upload-time = "2026-09-02T21:46:35.485Z" },
 ]
 
 [[package]]
@@ -2861,7 +2862,7 @@ wheels = [
 
 [[package]]
 name = "prowler"
-version = "5.40.0"
+version = "5.41.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "alibabacloud-actiontrail20200706" },
@@ -2961,9 +2962,9 @@ dependencies = [
     { name = "uuid6" },
     { name = "zstandard" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/05/18/1d4be0264c44306babf32a391eb3fcf74ec8c06eb80fd4470235dc1f01f9/prowler-5.40.0.tar.gz", hash = "sha256:f95796be4c929f2e70699e88e6e5d1cd0852cf96efa0c4a658cccb89e2ae865c", size = 9213433, upload-time = "2026-08-28T10:50:28.947Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/40/f4/b10023849bb49dd4e550bad4e7e1de88278615828da3f5ff8497536d2fb6/prowler-5.41.0.tar.gz", hash = "sha256:cbee5d84d4c665efc7d08c9bd1b0df99ce4202e1b4aa8966828974f805742dce", size = 9320671, upload-time = "2026-09-02T11:39:59.45Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/97/17/9121c6ae8c11aca2dd95bee948abd3a2fc1596b0f1be497f9936b05518d0/prowler-5.40.0-py3-none-any.whl", hash = "sha256:071dcc0f295fe319e9a6e183d3e404cca773839d75123a72272b6cf22502d3f1", size = 11238683, upload-time = "2026-08-28T10:50:25.327Z" },
+    { url = "https://files.pythonhosted.org/packages/b8/4e/a3accf9b7357e7f354d36125802a3c0d9e92200dd446998ebebe1408667f/prowler-5.41.0-py3-none-any.whl", hash = "sha256:9b4d5ba78d44479585da6eaaec0d066887f99400859e730df68116605e2b3232", size = 11377344, upload-time = "2026-09-02T11:39:56.271Z" },
 ]
 
 [[package]]
