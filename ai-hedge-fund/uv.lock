@@ -91,7 +91,7 @@ provides-extras = ["dev"]
 [[package]]
 name = "aihf"
 version = "2.2.0"
-source = { git = "https://github.com/virattt/ai-hedge-fund.git#eff8a7320fcf0b473b135690fa1a5b0d9b022a83" }
+source = { git = "https://github.com/virattt/ai-hedge-fund.git#fc1bf250ead209ae5f02c39c3d0062c4bb554505" }
 dependencies = [
     { name = "langchain-anthropic" },
     { name = "langchain-deepseek" },
@@ -1033,18 +1033,19 @@ wheels = [
 
 [[package]]
 name = "google-api-core"
-version = "2.34.0"
+version = "2.36.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "google-auth" },
     { name = "googleapis-common-protos" },
+    { name = "opentelemetry-api" },
     { name = "proto-plus" },
     { name = "protobuf" },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7b/7c/9be3903e3d45415e8ca493c75f8990a0f6f579d168015d44c379350d0ab0/google_api_core-2.34.0.tar.gz", hash = "sha256:98a779fe72de956eb1c9c2f47ff4c4432a668ece1a002ec38bed07ec2698ae59", size = 187953, upload-time = "2026-08-06T06:23:58.128Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/bf/d8/88c2f0e6b0dd46a7796cca64fad99c7adba2417916f5393e82b9b7d2548e/google_api_core-2.36.0.tar.gz", hash = "sha256:32779307b52e64c9a9592a3621de6281676ecaeea299fe8524e4637ab7ac2531", size = 196879, upload-time = "2026-09-03T22:30:51.216Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bc/c1/a8a92ae1bc4b1a8f804c776d7d3f0c771b78a62c3ad4df1be41b3fd8c767/google_api_core-2.34.0-py3-none-any.whl", hash = "sha256:cdf9c67e7ca2402d86ccbfde5f2503fc83e3cc3f58cc78456ae96cad24a6d2de", size = 180545, upload-time = "2026-08-06T06:22:47.502Z" },
+    { url = "https://files.pythonhosted.org/packages/44/56/30c91c61b8f70d4c09285a005b94798729aeaf4ec8b90c1c360da8207728/google_api_core-2.36.0-py3-none-any.whl", hash = "sha256:e4d0b179260727ea5c42222426d9199285214dbef7bf48f8b16600c7f9a78944", size = 184118, upload-time = "2026-09-03T22:30:06.662Z" },
 ]
 
 [package.optional-dependencies]
@@ -1068,14 +1069,14 @@ wheels = [
 
 [[package]]
 name = "googleapis-common-protos"
-version = "1.75.2"
+version = "1.75.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "protobuf" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c0/90/fb8f1c84537fbf210c1f53a53ae473a805f6599c5a40b93c1bbadd211f7a/googleapis_common_protos-1.75.2.tar.gz", hash = "sha256:8829a3d1e4508c5b7b9a6b9525f7fccff611f8531644579a76466c29295d4bb2", size = 154083, upload-time = "2026-08-25T19:19:13.028Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8a/c5/4353a188e2c335aee33269e8b654af228278cca8e5f0b4b5f11e5d0e9adb/googleapis_common_protos-1.75.3.tar.gz", hash = "sha256:57c435ac2c68b108999b6db075d9053e4d7a936ba57b4a3d45667b1346f1738a", size = 153905, upload-time = "2026-09-03T22:31:21.869Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/47/5b/1c9e55363c3b1890a98cae813de5b4ea327845756cd8fb7ee690140c7eac/googleapis_common_protos-1.75.2-py3-none-any.whl", hash = "sha256:6b83302f554ea93a0f48409c7fc2050f954bcbcddb7e3a9c76d4a823cb22920e", size = 307002, upload-time = "2026-08-25T19:18:08.927Z" },
+    { url = "https://files.pythonhosted.org/packages/1a/7a/7d79170c6ce6f12e109df2b3879d6b934010cf4f99aea8de8b7e5408c174/googleapis_common_protos-1.75.3-py3-none-any.whl", hash = "sha256:a018d2bf098ca9fb6faa08d5bb780e2a2c2f73c566f069761331386c9596d3f2", size = 306984, upload-time = "2026-09-03T22:30:45.133Z" },
 ]
 
 [[package]]
@@ -2054,6 +2055,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/50/9a/8c75e8c8a5b407a0586faeb2afac91674ff955c191ecc1d6d3b6669f6788/openai-2.54.0.tar.gz", hash = "sha256:e3e6f8bc1ba30ddf381ace1a14340eed381cb984a1a59bd0f34b5be3b5d49cfa", size = 1100285, upload-time = "2026-08-11T18:46:59.035Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/64/a8/bb76c7356de8ad57f59d5ff993d434df0607f07f08bcc9c9a5c275e399c0/openai-2.54.0-py3-none-any.whl", hash = "sha256:89089789197ccdb87f173a03145ed1598d00795220c93e96cf712b1cbf5e5f2b", size = 1660351, upload-time = "2026-08-11T18:46:56.684Z" },
+]
+
+[[package]]
+name = "opentelemetry-api"
+version = "1.44.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ee/8b/aa9e2d8b8dfa7c946f7dec5d1f8f6ba8eca062f43509a06bdb5ce93d26c0/opentelemetry_api-1.44.0.tar.gz", hash = "sha256:67647e5e9566edcf421166fdf022b3537f818635daa852b289e34604dc6fb33a", size = 72406, upload-time = "2026-07-16T15:25:32.678Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ca/6f/a04e900f465ff3221ccc395522503e2d10e79fa21f2723c8e177aae1e0d1/opentelemetry_api-1.44.0-py3-none-any.whl", hash = "sha256:94b98c893a91b88657eaac1e3ba89618cdb85be6918196705354f34728b2cdef", size = 60018, upload-time = "2026-07-16T15:25:11.657Z" },
 ]
 
 [[package]]
