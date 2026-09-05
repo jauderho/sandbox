@@ -706,18 +706,6 @@ wheels = [
 ]
 
 [[package]]
-name = "deprecation"
-version = "2.1.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "packaging" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/5a/d3/8ae2869247df154b64c1884d7346d412fed0c49df84db635aab2d1c40e62/deprecation-2.1.0.tar.gz", hash = "sha256:72b3bde64e5d778694b0cf68178aed03d15e15477116add3fb773e581f9518ff", size = 173788, upload-time = "2020-04-20T14:23:38.738Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/02/c3/253a89ee03fc9b9682f1541728eb66db7db22148cd94f89ab22528cd1e1b/deprecation-2.1.0-py2.py3-none-any.whl", hash = "sha256:a10811591210e1fb0e768a8c25517cabeabcba6f0bf96564f8ff45189f90b14a", size = 11178, upload-time = "2020-04-20T14:23:36.581Z" },
-]
-
-[[package]]
 name = "dirtyjson"
 version = "1.0.8"
 source = { registry = "https://pypi.org/simple" }
@@ -988,7 +976,7 @@ wheels = [
 
 [[package]]
 name = "flower"
-version = "2.0.1"
+version = "2.1.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "celery" },
@@ -997,9 +985,9 @@ dependencies = [
     { name = "pytz" },
     { name = "tornado" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/09/a1/357f1b5d8946deafdcfdd604f51baae9de10aafa2908d0b7322597155f92/flower-2.0.1.tar.gz", hash = "sha256:5ab717b979530770c16afb48b50d2a98d23c3e9fe39851dcf6bc4d01845a02a0", size = 3220408, upload-time = "2023-08-13T14:37:46.073Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/fd/9f/e3061a153ba1928a96cf1a431449411ff4a9411465d1554fdcd0feb8d239/flower-2.1.0.tar.gz", hash = "sha256:ece79fd190bfd198947e30470c4b26a6d5df1861d54309430dd926ed516302ff", size = 3486971, upload-time = "2026-08-16T07:36:18.882Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a6/ff/ee2f67c0ff146ec98b5df1df637b2bc2d17beeb05df9f427a67bd7a7d79c/flower-2.0.1-py2.py3-none-any.whl", hash = "sha256:9db2c621eeefbc844c8dd88be64aef61e84e2deb29b271e02ab2b5b9f01068e2", size = 383553, upload-time = "2023-08-13T14:37:41.552Z" },
+    { url = "https://files.pythonhosted.org/packages/67/87/cd70fe77cb5ad4a79eaebe7d86d15efd8b1d950f8d0ab99470a4fd21c9a8/flower-2.1.0-py2.py3-none-any.whl", hash = "sha256:2f433aaee3efeba5b844b2ab7371f16058d892de76156b77e6d09de03a4095bc", size = 404618, upload-time = "2026-08-16T07:36:16.627Z" },
 ]
 
 [[package]]
@@ -1149,14 +1137,16 @@ wheels = [
 
 [[package]]
 name = "gotenberg-client"
-version = "0.14.0"
+version = "1.0.0"
 source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "httpx", extra = ["http2"] },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/f5/34/8e3be3a6a1b654d2a3bfa3e5d201183aeff6d50c42199ac0b8ed912c01c5/gotenberg_client-0.14.0.tar.gz", hash = "sha256:a853700c6b01c3372871264c4eb9ae3375addafbcbbfd3341e411f4217a8088c", size = 1214438, upload-time = "2026-03-11T17:23:11.122Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/68/a3/48b438bded1a514289b8b92fa5f29077712702cda8c01f923b930f80cff8/gotenberg_client-1.0.0.tar.gz", hash = "sha256:871b339ed98911279f94f3aaa6403ca7c59aaa695d8663249be6314ccd46719c", size = 1274193, upload-time = "2026-08-07T04:22:11.962Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/55/1a/67ff4cca162ae4195bd6f1a107779898b6f2977cc33ae7e05a5178a395fa/gotenberg_client-0.14.0-py3-none-any.whl", hash = "sha256:868f1be46d1ed0f327ca3efeb1888b4fe35641c35bfa39684d23a59365703156", size = 50977, upload-time = "2026-03-11T17:23:09.397Z" },
+    { url = "https://files.pythonhosted.org/packages/7e/5f/8a2d984e3c45162124d57541a7ad6bf67cd9707a4e49ef9562abc58c3255/gotenberg_client-1.0.0-py3-none-any.whl", hash = "sha256:458669231d972f7328fa84fb3085fed8a8052d7d26263aa5bf8a0edd1d06cd0a", size = 67433, upload-time = "2026-08-07T04:22:10.349Z" },
+]
+
+[package.optional-dependencies]
+httpx = [
+    { name = "httpx", extra = ["http2"] },
 ]
 
 [[package]]
@@ -1218,37 +1208,37 @@ wheels = [
 
 [[package]]
 name = "griffe"
-version = "2.2.0"
+version = "2.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "griffecli" },
     { name = "griffelib" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/df/a0/927cf9416f527f623f4ccd9220337fca0cd85303b7e82adeab1e53669cd3/griffe-2.2.0.tar.gz", hash = "sha256:9c0dd9a7feda9e169d783507d777c6fb2f2fc2919b139747a5b4f5357517a611", size = 246229, upload-time = "2026-08-16T14:04:57.232Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d5/03/75ca4d08a7eff164292d42cf72c7c510423b3414e66205f0ba5b35ad3034/griffe-2.3.0.tar.gz", hash = "sha256:aa5634c0d7802583ecd29a7fe335c02d462ffdf5ce8f51426a3d326f374e6d93", size = 247493, upload-time = "2026-09-04T15:08:15.364Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/8d/51/c9f9cb144e2bd21cbcb6ebd7978ecb5b9f5a375e78313744158338c8039c/griffe-2.2.0-py3-none-any.whl", hash = "sha256:db20672b31c3de2a1af5a18a3b3d8c186ccc2425e10290486b4f0364d25929e9", size = 5070, upload-time = "2026-08-16T14:04:51.971Z" },
+    { url = "https://files.pythonhosted.org/packages/61/f9/8bfacdb992aed404a3a53694689759841635bce93b86ddb621c1d7f2558c/griffe-2.3.0-py3-none-any.whl", hash = "sha256:92a41ff72eb1eb316cdcb7248a608f1313f9fbc6e35d5cffa5cf7c813b7db70b", size = 5072, upload-time = "2026-09-04T15:08:14.074Z" },
 ]
 
 [[package]]
 name = "griffecli"
-version = "2.2.0"
+version = "2.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "colorama" },
     { name = "griffelib" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/de/75/3cf2fb1ae21fb55a3b917b45d24426a620ee916f4bdbd03f350c69d3d892/griffecli-2.2.0.tar.gz", hash = "sha256:b9e763131218eb19887ed52de20fe944252d811bfb4a3e339874908a588f0044", size = 58066, upload-time = "2026-08-16T14:04:55.984Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5c/15/f70539f7efb44f27d209b43e386b1a5397bd476879ff19a206b75454f58e/griffecli-2.3.0.tar.gz", hash = "sha256:916fdc851cf51d38e9b5ab82550305df45e5981d5dfe65d346544464abedb3ec", size = 59676, upload-time = "2026-09-04T15:08:16.426Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1f/83/04652213d82afeecc8e8a31231eeb87cc484dcc055fd96ecb0bfd9860405/griffecli-2.2.0-py3-none-any.whl", hash = "sha256:8ebb7ae1dcc2617f5d39f00e4c238dd6b5cd0b13157b0ce22c1ea4ca8b4c5d1d", size = 11480, upload-time = "2026-08-16T14:04:53.14Z" },
+    { url = "https://files.pythonhosted.org/packages/06/8c/8ffa4272d6bf85a0abe8898ef74ef41d505317bb4103e14a11d45d799dce/griffecli-2.3.0-py3-none-any.whl", hash = "sha256:f94653edcb52ebcac21eaeb3b7121b065a636174eddf2bd558b5935e72a553e8", size = 11593, upload-time = "2026-09-04T15:08:11.739Z" },
 ]
 
 [[package]]
 name = "griffelib"
-version = "2.2.0"
+version = "2.3.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/f0/b4/a767e91c606deefc447a96eaf59edd77397960b1d677dffd833ee8449831/griffelib-2.2.0.tar.gz", hash = "sha256:e1bc36fe9cd21d4b6b659b456346755e4cfdc5676c0a5214083126ee12612b3c", size = 227048, upload-time = "2026-08-16T14:04:58.383Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/27/af/018c10bc9edd42b6ef6db2e96b09542050d5253f9b195e74bc910b2d13ab/griffelib-2.3.0.tar.gz", hash = "sha256:7b0952caf5bca6afa4bb5ee8c6a2d183fe3f21b62efc5f6c7243cb2b26d2d115", size = 234534, upload-time = "2026-09-04T15:08:17.472Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f6/b6/f65ac785d4ac90dcf7c831ac6256f5dd4a19780f4e1575b2c0d6eeebe319/griffelib-2.2.0-py3-none-any.whl", hash = "sha256:d71c3bc2bbed9f958488634fe788b843a9f705d6d2838ca32cd6c25eeb64dfc4", size = 166779, upload-time = "2026-08-16T14:04:54.365Z" },
+    { url = "https://files.pythonhosted.org/packages/41/63/e876e789525063c840ccfa8857febdabd6523bcef9ce7eb979b9305ea895/griffelib-2.3.0-py3-none-any.whl", hash = "sha256:1b8f9cd525681c26b1d6d574faa1371651e8459ca51d209684f50b8096ae06e0", size = 169423, upload-time = "2026-09-04T15:08:12.956Z" },
 ]
 
 [[package]]
@@ -2284,10 +2274,9 @@ wheels = [
 
 [[package]]
 name = "ocrmypdf"
-version = "17.7.1"
+version = "17.10.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "deprecation" },
     { name = "fpdf2" },
     { name = "img2pdf" },
     { name = "packaging" },
@@ -2301,9 +2290,9 @@ dependencies = [
     { name = "rich" },
     { name = "uharfbuzz" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/15/ac/30171791db306c7b1c705957a0b9bed9df443b9465533dfc1945a654805b/ocrmypdf-17.7.1.tar.gz", hash = "sha256:d61184b84e3001ebe7c5acb265041bd8591f924b8616bbefc746a5bdafab3eca", size = 7438611, upload-time = "2026-06-27T08:50:06.824Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/20/2e/96c9912ad50fe3e186f0d3580d06d27ac2300fcc178d7457794f4bcaf3b8/ocrmypdf-17.10.0.tar.gz", hash = "sha256:3e80a22e7ca9a746034e990414c9f18791f168800f3ede92101504f45be6129c", size = 7499394, upload-time = "2026-08-05T00:25:50.595Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/03/9e/88bed373c0449dc3bd8772744788f89e6c9c4e6034f03703304b9d9c2d4c/ocrmypdf-17.7.1-py3-none-any.whl", hash = "sha256:3e69d11cc98f5019af61bc457b106365d67c791ec4f358e4f8e938f99d654492", size = 506631, upload-time = "2026-06-27T08:50:05.031Z" },
+    { url = "https://files.pythonhosted.org/packages/39/6b/29a4c5f4e67d16bff32f706bf338d443761fe4933b9be4067e958db04aaa/ocrmypdf-17.10.0-py3-none-any.whl", hash = "sha256:34ba1b595ecacc94b6dc3c9d4fa51953de63082cd16cf8595251bd72120b930a", size = 523170, upload-time = "2026-08-05T00:25:48.734Z" },
 ]
 
 [[package]]
@@ -2349,8 +2338,8 @@ wheels = [
 
 [[package]]
 name = "paperless-ngx"
-version = "3.1.2"
-source = { git = "https://github.com/paperless-ngx/paperless-ngx.git#a28a6fe23b89a8f3b73b1f3994f22cbd97d2d5f1" }
+version = "3.1.3"
+source = { git = "https://github.com/paperless-ngx/paperless-ngx.git#8e31d8f4d6c406faebd6b9ecb5060e4ead9472ef" }
 dependencies = [
     { name = "azure-ai-documentintelligence" },
     { name = "babel" },
@@ -2379,7 +2368,7 @@ dependencies = [
     { name = "drf-writable-nested" },
     { name = "filelock" },
     { name = "flower" },
-    { name = "gotenberg-client" },
+    { name = "gotenberg-client", extra = ["httpx"] },
     { name = "httpx-oauth" },
     { name = "ijson" },
     { name = "imap-tools" },
@@ -2409,7 +2398,7 @@ dependencies = [
     { name = "setproctitle" },
     { name = "sqlite-vec" },
     { name = "tantivy" },
-    { name = "tika-client" },
+    { name = "tika-client", extra = ["httpx"] },
     { name = "torch", version = "2.13.0", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "sys_platform == 'darwin'" },
     { name = "torch", version = "2.13.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "sys_platform != 'darwin'" },
     { name = "watchfiles" },
@@ -3059,11 +3048,11 @@ wheels = [
 
 [[package]]
 name = "redis"
-version = "5.2.1"
+version = "6.4.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/47/da/d283a37303a995cd36f8b92db85135153dc4f7a8e4441aa827721b442cfb/redis-5.2.1.tar.gz", hash = "sha256:16f2e22dff21d5125e8481515e386711a34cbec50f0e44413dd7d9c060a54e0f", size = 4608355, upload-time = "2024-12-06T09:50:41.956Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0d/d6/e8b92798a5bd67d659d51a18170e91c16ac3b59738d91894651ee255ed49/redis-6.4.0.tar.gz", hash = "sha256:b01bc7282b8444e28ec36b261df5375183bb47a07eb9c603f284e89cbc5ef010", size = 4647399, upload-time = "2025-08-07T08:10:11.441Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3c/5f/fa26b9b2672cbe30e07d9a5bdf39cf16e3b80b42916757c5f92bca88e4ba/redis-5.2.1-py3-none-any.whl", hash = "sha256:ee7e1056b9aea0f04c6c2ed59452947f34c4940ee025f5dd83e6a6418b6989e4", size = 261502, upload-time = "2024-12-06T09:50:39.656Z" },
+    { url = "https://files.pythonhosted.org/packages/e8/02/89e2ed7e85db6c93dfa9e8f691c5087df4e3551ab39081a4d7c6d1f90e05/redis-6.4.0-py3-none-any.whl", hash = "sha256:f0544fa9604264e9464cdf4814e7d4830f74b165d52f2a330a760a88dd248b7f", size = 279847, upload-time = "2025-08-07T08:10:09.84Z" },
 ]
 
 [package.optional-dependencies]
@@ -3613,15 +3602,19 @@ wheels = [
 
 [[package]]
 name = "tika-client"
-version = "0.11.0"
+version = "1.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
-    { name = "httpx" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/4d/d9/01f2049240dacf67c9be61d9c59e72b6827a862e8fd87e77e458e0a3b797/tika_client-0.11.0.tar.gz", hash = "sha256:c741caaca08bbd715a8db3fe6f0430a54d075fef3d59a441e8b8d810f58de4f0", size = 2178828, upload-time = "2026-03-11T16:50:25.865Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d2/54/7525db2491a1bdfbaf869a713d1492572161b24a145d3c8dec9688635ec3/tika_client-1.0.0.tar.gz", hash = "sha256:899c2fd08c717d8d590d46d76942103ef972fc37d43eadbfd6772a9961351ced", size = 2212108, upload-time = "2026-08-07T04:22:26.265Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/53/04/5a433d621ec559d1d216d200eea43b0ac63435beb5dd52bbc75f4aaef465/tika_client-0.11.0-py3-none-any.whl", hash = "sha256:461903ccbe705d84dd3e4a1ca83e04174776d4b06dc57b902f9281633a3836e6", size = 18470, upload-time = "2026-03-11T16:50:24.672Z" },
+    { url = "https://files.pythonhosted.org/packages/f5/9d/5b0815192600f338ee18f6c37bc61be28cd9618e3f46cc3311c4c1677abb/tika_client-1.0.0-py3-none-any.whl", hash = "sha256:f9d4c86b2cf037a71d8b6322aaace78c16c7f1fcca47e3726a442f87cee9a0b8", size = 25584, upload-time = "2026-08-07T04:22:25.106Z" },
+]
+
+[package.optional-dependencies]
+httpx = [
+    { name = "httpx" },
 ]
 
 [[package]]
