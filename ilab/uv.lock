@@ -535,7 +535,7 @@ tesserocr = [
 
 [[package]]
 name = "docling-core"
-version = "2.96.0"
+version = "2.96.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "defusedxml" },
@@ -548,13 +548,14 @@ dependencies = [
     { name = "pydantic" },
     { name = "pydantic-settings" },
     { name = "pyyaml" },
+    { name = "requests" },
     { name = "tabulate" },
     { name = "typer" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ed/eb/853a4bfe313dabcbcf0c9e86bb83498ca4d708674b7bc97b159333ae27fa/docling_core-2.96.0.tar.gz", hash = "sha256:6285b2a461a830a7b4da052fef5253a08a141be46ef8a1ce9b4b47b92323b700", size = 375865, upload-time = "2026-09-10T12:16:00.776Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/66/28/772135dd81a6e0d1a3ef8ebf28896a2e342d637e2374b8dced00a34369e0/docling_core-2.96.1.tar.gz", hash = "sha256:1d33be46d1a284585df0b8f57f5cd815d85126b5a81c3310e84238b6c8889ce7", size = 377852, upload-time = "2026-09-15T07:32:57.824Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/92/30/0819c61aeb96584a61101d06ecbe81226db1326c3097aa966411ddf86d4a/docling_core-2.96.0-py3-none-any.whl", hash = "sha256:c88c11452af805402df9477e35fb1ee8e289bdd9007969127dc1d43f760add96", size = 302135, upload-time = "2026-09-10T12:15:58.796Z" },
+    { url = "https://files.pythonhosted.org/packages/be/f0/ee691277477dbbf3e25a046a97a96bee1ea7cdddf0f4b9cb8cf0770a19dd/docling_core-2.96.1-py3-none-any.whl", hash = "sha256:17ed0c525a0c364ed6ff6cab09e817fcff5142dca9c113ed0f61b4f23a278852", size = 302945, upload-time = "2026-09-15T07:32:55.996Z" },
 ]
 
 [package.optional-dependencies]
@@ -1533,7 +1534,7 @@ wheels = [
 
 [[package]]
 name = "langsmith"
-version = "0.12.4"
+version = "0.12.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -1551,9 +1552,9 @@ dependencies = [
     { name = "xxhash" },
     { name = "zstandard" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1c/92/d15b73c1550b4e005b31a22b746043a7ac154bfab7bc179da7348061feb0/langsmith-0.12.4.tar.gz", hash = "sha256:f486435323eeb0c525087cc694f0b7cd92e255f340db08db643204c789f4f1c4", size = 4886419, upload-time = "2026-09-09T21:19:57.002Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/4c/07/0ba19a70e430efd56503aebb7e58f507b09120ed9bee8efe2589ff4dcfae/langsmith-0.12.5.tar.gz", hash = "sha256:0b0440a90ce155c99125f899242a27662182d20ebfd71b5d8fe45c960b96ca48", size = 4890567, upload-time = "2026-09-15T10:36:45.138Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d1/b1/d0c6f84cde25b2443bcdca81f9b30732fc3af602c46f5114fcbe5246b978/langsmith-0.12.4-py3-none-any.whl", hash = "sha256:b2edaa49baeec0c7347a84ca0f755039dcff9e9e52f0b9dc26423ec2a98a4dab", size = 767513, upload-time = "2026-09-09T21:19:55.283Z" },
+    { url = "https://files.pythonhosted.org/packages/3c/ff/aadc7eeb7be5257a4cfd023670d12e2a0ee4acbf5ed835320843157106f8/langsmith-0.12.5-py3-none-any.whl", hash = "sha256:ad9fa911c6a002d8bb53daf1064fd0484560f33ac86f334060789258c989e043", size = 768488, upload-time = "2026-09-15T10:36:42.676Z" },
 ]
 
 [[package]]
@@ -2405,7 +2406,7 @@ wheels = [
 
 [[package]]
 name = "posthog"
-version = "7.53.0"
+version = "7.54.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "backoff" },
@@ -2413,9 +2414,9 @@ dependencies = [
     { name = "requests" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f2/c4/17a2a764a63e061f768a56d50c245e3012da536b5a15ed2521616b8869b7/posthog-7.53.0.tar.gz", hash = "sha256:38223a8769b9db7ab906d32f5b87c4cde534cc91b30f1dcfa4443577819e068c", size = 565313, upload-time = "2026-09-11T17:51:16.199Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/89/ac/46a7e2cd44ae336decdd89b2eb898466352eeb215d68f0a62076d605621a/posthog-7.54.0.tar.gz", hash = "sha256:4df6751ebffdac3b0a356176f938574895c8f4e6e641b4818ca3317c9054c457", size = 567849, upload-time = "2026-09-15T08:02:12.247Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/03/9d/4af58450b986666c810dc1fbae04e41cdec62ab31ae1e0e51bb5a4b75f71/posthog-7.53.0-py3-none-any.whl", hash = "sha256:ca9176334cf0c7799fe5518f7b9dc02d3f2f709a859da4332f14b3586b9d4554", size = 662783, upload-time = "2026-09-11T17:51:14.275Z" },
+    { url = "https://files.pythonhosted.org/packages/45/47/5f22e8385976b1bf87d9016706b4407d55d6ad213591817c3f49dbed44dc/posthog-7.54.0-py3-none-any.whl", hash = "sha256:2ead673e6c4d3b72059f7921ebd8a9964bb4a2f20788d08345d572bbcb458fbb", size = 665738, upload-time = "2026-09-15T08:02:10.054Z" },
 ]
 
 [[package]]
