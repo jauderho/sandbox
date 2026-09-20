@@ -36,7 +36,6 @@ APP=(
   "llm" \
   "memray" \
   "mlx" \
-  "mlx-hub" \
   "notdiamond" \
   "openbbterminal" \
   "paperless-ngx" \
