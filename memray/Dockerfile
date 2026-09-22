@@ -5,7 +5,7 @@ FROM ghcr.io/astral-sh/uv:0.12.17@sha256:10787c682e4184e4f290de1171fd4703dc63de9
 
 
 #FROM debian:latest
-FROM ubuntu:26.10@sha256:6a2abc30a3e00fa62e756ddff3698def66314e29fab5fc851d7f298ffda17449
+FROM ubuntu:26.10@sha256:ee126c2fa0249079a7e24ae3a3d29b04783ef93ab33c868751c9a1289d3fffff
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
