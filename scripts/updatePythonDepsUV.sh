@@ -105,8 +105,8 @@ sync_build_version() {
 }
 
 # setup git
-git config --local user.name "Jauder Ho Bot"
-git config --local user.email "jauderho-bot@users.noreply.github.com"
+git config --local user.name "Gromit Bot"
+git config --local user.email "gromit-bot@users.noreply.github.com"
 git config --local pull.rebase false
 
 #PATH="$HOME/.local/bin:$PATH"
