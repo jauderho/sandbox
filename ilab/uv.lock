@@ -181,30 +181,30 @@ wheels = [
 
 [[package]]
 name = "boto3"
-version = "1.43.99"
+version = "1.43.100"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "botocore" },
     { name = "jmespath" },
     { name = "s3transfer" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/99/10/5e0c4c1a87443680194db582888e8e5e0a80e3e1ed224ca8111becf9e5ed/boto3-1.43.99.tar.gz", hash = "sha256:328c8640e7b7dbdaebc271e6eea0f7301218872d67d0661a7beda7d3a1799c07", size = 112659, upload-time = "2026-09-21T19:37:18.115Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ba/98/93754b03cb746202f216bdfa970d56d72c105b27187506336c443e4ffac3/boto3-1.43.100.tar.gz", hash = "sha256:ae8d81e1f14699959eb38757c2e0044f4e3a303a57a0335d0be4cd3c07529763", size = 112649, upload-time = "2026-09-22T19:21:21.906Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6f/37/d59247c882bc078b73cfa6f6bb247ac51bedc7637f6a8800def385dcfbba/boto3-1.43.99-py3-none-any.whl", hash = "sha256:3becba8d7bdf80ea0010c68bc6b0772adb8be344f06bdcea77629002be19beb7", size = 140029, upload-time = "2026-09-21T19:37:16.518Z" },
+    { url = "https://files.pythonhosted.org/packages/98/37/0ffe0ceb6227381f852f51777c9338115958d24d436bef990c73b6660bf4/boto3-1.43.100-py3-none-any.whl", hash = "sha256:49785c310057c2c650d62ca3ba28e88ad87c3827b490312711e81968a9d21fd8", size = 140042, upload-time = "2026-09-22T19:21:20.41Z" },
 ]
 
 [[package]]
 name = "botocore"
-version = "1.43.99"
+version = "1.43.100"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jmespath" },
     { name = "python-dateutil" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/26/9e/4d67cee13c7f3aa7b04e70cdb7b8f80663a3aa6f13ff570223eb76c0f391/botocore-1.43.99.tar.gz", hash = "sha256:fb8b6e9b193a7c2ac1a22832f7635fe44c452f405aab82eca1e1b629b81dabb7", size = 16129817, upload-time = "2026-09-21T19:37:13.447Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/93/b7/6ec11bf6b07c961ab2692cc082662f7279d7860921e2d0ed14f7f6cd6cfe/botocore-1.43.100.tar.gz", hash = "sha256:b6e64e38e3c03663a0c20d3d207afd97a0409dbc27e4e43384ac3f93cb61279f", size = 16166265, upload-time = "2026-09-22T19:21:16.93Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/49/9a/2a62da42bc8bd55d99e5b9599c112260dfe9872bedf335bdc5a10dbb653a/botocore-1.43.99-py3-none-any.whl", hash = "sha256:6c9d66621b31c9f9af2b85a0b4c0c208e17d59d7d49f91c9111baca6d41d0299", size = 15820432, upload-time = "2026-09-21T19:37:10.654Z" },
+    { url = "https://files.pythonhosted.org/packages/c4/f2/93ce07251665ed422d4ae175b65741d3c02495acbc183b84df6ca5a850c8/botocore-1.43.100-py3-none-any.whl", hash = "sha256:34c3232bc0f895091a15249903b3cab1148f5787f12389caa2d54a9175428d51", size = 15860706, upload-time = "2026-09-22T19:21:12.351Z" },
 ]
 
 [[package]]
@@ -518,14 +518,14 @@ wheels = [
 
 [[package]]
 name = "docling"
-version = "2.129.0"
+version = "2.130.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "docling-slim", extra = ["standard"] },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d6/54/564d64b522afbb63a9ac31fdd8b75c7720a667324ae18437f1f507cf23bf/docling-2.129.0.tar.gz", hash = "sha256:a64e2b07c59503809d2b9ca1f57452a9d100c7bb35082ed56fce2a60760557a3", size = 9091, upload-time = "2026-09-18T09:21:25.852Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/70/ff/9d68bae90e8ca663aa2e8b5ca9e25db50ad8bfd2a6852450b94de55be623/docling-2.130.0.tar.gz", hash = "sha256:f713849d7136511dff1079aeb7eed53bd68c20637c933a69728dbc8564340881", size = 9090, upload-time = "2026-09-22T15:38:15.518Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/54/7b/2d409a66f230f1d455646e9cf33363dd02a2153d2344cd4421743ba983f2/docling-2.129.0-py3-none-any.whl", hash = "sha256:9541a7dcd80f24cbe73033c9b72240d0760b392b18ce45ea8165014fc9f6cbcb", size = 5229, upload-time = "2026-09-18T09:21:24.642Z" },
+    { url = "https://files.pythonhosted.org/packages/16/35/422c785d51ddc42a4ba3aa07ac636dd8f593d794578d7017b533496307c3/docling-2.130.0-py3-none-any.whl", hash = "sha256:86f2052018a93c48810efecbd7a9ecb801dd407602c85c49a1006f252a7151ca", size = 5229, upload-time = "2026-09-22T15:38:13.986Z" },
 ]
 
 [package.optional-dependencies]
@@ -608,7 +608,7 @@ wheels = [
 
 [[package]]
 name = "docling-slim"
-version = "2.129.0"
+version = "2.130.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "certifi" },
@@ -621,9 +621,9 @@ dependencies = [
     { name = "requests" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/92/d4/d5dc387b244b00a281cdf35c77cca6d54229b344115338a2286d3b4419c9/docling_slim-2.129.0.tar.gz", hash = "sha256:78c79230c23100881370f58d86c8d4a885e5c899faf8a6b50a4f0fb693028e34", size = 700053, upload-time = "2026-09-18T09:20:05.322Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0e/d5/4db4fd7e756d40db15b07ad072294548b0f508fb35fdd3496fa191223822/docling_slim-2.130.0.tar.gz", hash = "sha256:d45b467d322cd15f03fcc1e792bd4a52aa2dc075dfee229b13ae43a8603f82a6", size = 708768, upload-time = "2026-09-22T15:36:53.243Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3e/8d/b0b1bd879c95364e61a5ba4a466835a054b375f53bd0e367f93fa1d9d94e/docling_slim-2.129.0-py3-none-any.whl", hash = "sha256:f072377cd9b567ae1763bbef75012e72faab5fc89c79b6d934ce05796abb5313", size = 866102, upload-time = "2026-09-18T09:20:03.13Z" },
+    { url = "https://files.pythonhosted.org/packages/db/57/9e21add9ec842b314d4d193db8c4186354b872529ef3a17f8aeedbd0c515/docling_slim-2.130.0-py3-none-any.whl", hash = "sha256:913043ee069eb4f107d47ebfca8bdbfbfd7ec84160a7193b7260777e3adbea19", size = 876695, upload-time = "2026-09-22T15:36:51.06Z" },
 ]
 
 [package.optional-dependencies]
@@ -2406,7 +2406,7 @@ wheels = [
 
 [[package]]
 name = "posthog"
-version = "7.58.0"
+version = "7.59.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "backoff" },
@@ -2414,9 +2414,9 @@ dependencies = [
     { name = "requests" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ef/d9/6e351a6c739fec6e78c1be494f4d39512271167d3eb5905ccafa783c3234/posthog-7.58.0.tar.gz", hash = "sha256:43dcdeea3af4dbdece3322c5e37864cbdad6d0e507c20182bb33a960900bb077", size = 668207, upload-time = "2026-09-18T15:00:06.96Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c7/25/308b6a180886bd1f389ed84cb8b00329f9ff82b6d8e6549febdfa588159b/posthog-7.59.0.tar.gz", hash = "sha256:a4019044630fe0323add005c95648ae22daf4ff7acf8e997802864cea56075f0", size = 684130, upload-time = "2026-09-22T14:48:57.1Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/24/60/997629e929e96641d297f7bf67543026eeaf5f8a3de66363f1cbe366c0ee/posthog-7.58.0-py3-none-any.whl", hash = "sha256:2ac581ce52c63acb3a551c9066652c3d29e1de1ea06e70655ebe8b866e80f334", size = 781569, upload-time = "2026-09-18T15:00:04.587Z" },
+    { url = "https://files.pythonhosted.org/packages/f6/59/86ee81e8e0483ca0e5ac38ed37ccb0623aea10cfe9e3b942b3dab00a69df/posthog-7.59.0-py3-none-any.whl", hash = "sha256:6234efb9820cdec8b3ef17de045fcc1ad8def88ad484652b0ea55e04c37bef93", size = 800045, upload-time = "2026-09-22T14:48:54.986Z" },
 ]
 
 [[package]]
