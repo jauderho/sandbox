@@ -540,7 +540,7 @@ wheels = [
 
 [[package]]
 name = "e2b"
-version = "2.52.1"
+version = "2.53.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
@@ -556,23 +556,23 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "wcmatch" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/8a/bc/584e72a33b6455500fc69baca1c4e5f251dcb4bc901f20e60e7c581a7f9a/e2b-2.52.1.tar.gz", hash = "sha256:3af5c037b971ebc89a1ef0e5ced0e1c9ecbf3d65f2c23df5db7ad9faef8f68fa", size = 236049, upload-time = "2026-10-05T12:40:53.031Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ff/84/a5798cbcd7e8a3d4d4b913b9caebd7ffcfd07f92e7ddef36c6972ce21f9c/e2b-2.53.1.tar.gz", hash = "sha256:c58fce7de1104f82b5402d1ec347b28535bfe34f5461ad677a0a752303f8d24b", size = 238284, upload-time = "2026-10-06T20:17:48.483Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c1/3a/907a39fd871304f3739f3207e412d8bef74ad9fd7854e341da9cfc04c5d2/e2b-2.52.1-py3-none-any.whl", hash = "sha256:708583a37c9b797b0044bd92fa407c21aec65f101f2fd4c4a0ccd842dbe33de1", size = 396796, upload-time = "2026-10-05T12:40:54.778Z" },
+    { url = "https://files.pythonhosted.org/packages/52/71/25fe260524bf9a7754781099ae7e30321e298d92f116373ef2e5d9e6d689/e2b-2.53.1-py3-none-any.whl", hash = "sha256:12ee0324aef2b6f064fe9037db52ddc3fcc6bec0e9c2064766b5e4a2b7c46d51", size = 400012, upload-time = "2026-10-06T20:17:46.254Z" },
 ]
 
 [[package]]
 name = "e2b-code-interpreter"
-version = "2.10.1"
+version = "2.10.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
     { name = "e2b" },
     { name = "httpx" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/38/e6/b01e60524e7e4d2e8ce634b3be6d00fe09c606f3d24a448b4a5c087d3bda/e2b_code_interpreter-2.10.1.tar.gz", hash = "sha256:94e504667788c6cbb175e5deaf1f68e8df474b670343fe1d72e2496b49d5a666", size = 12169, upload-time = "2026-10-01T10:44:01.192Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5a/35/826f53650685644ace4c73900b3d86bfda104b639098ce95bca6b8d03b94/e2b_code_interpreter-2.10.3.tar.gz", hash = "sha256:dfba20d42823f0df89e330cb1789dff245e272b07574dbb3947fb8b774f8fd3e", size = 11934, upload-time = "2026-10-06T20:17:47.358Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/27/1f/0f9a4c4d9669afd5389e91bd96099a8eb1d1a32f9c67871cc56c4a8556b7/e2b_code_interpreter-2.10.1-py3-none-any.whl", hash = "sha256:f4c9732699ee4b1c289acedac8bff66fccecc6ab374bf0b4ef88d5ad063e333d", size = 17803, upload-time = "2026-10-01T10:44:00.173Z" },
+    { url = "https://files.pythonhosted.org/packages/56/e2/58af3ab0373651544310789928b49f67f5bdb085477b58030f8bd3db87bd/e2b_code_interpreter-2.10.3-py3-none-any.whl", hash = "sha256:c376d962942dd3d3ddc8339e8eae2ee4c4bcad0c7a1fedbc2074d7b60debae97", size = 17429, upload-time = "2026-10-06T20:17:46.2Z" },
 ]
 
 [[package]]
@@ -1507,14 +1507,14 @@ wheels = [
 
 [[package]]
 name = "opentelemetry-api"
-version = "1.45.0"
+version = "1.45.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1f/dc/e12c1fe1ed8a7b7149777127b1a0e12ce5bd5a81d97408bedc2128c260f5/opentelemetry_api-1.45.0.tar.gz", hash = "sha256:711ede81773c8025c2c03dac0450bc89f3d30aea6eabcc815c570d4e35a963f7", size = 72115, upload-time = "2026-09-25T12:32:28.399Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2e/02/6e0ae9cc61bd3169d401077b507b3ebc344745171e1051ab430be012dcd9/opentelemetry_api-1.45.1.tar.gz", hash = "sha256:aa38ed19bcc084ba42782a73255b3582283eced7ad6dddbd6695189e69adfb75", size = 72804, upload-time = "2026-10-06T17:32:58.133Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/44/b9/040d1a1c7836922828e6480cd2366bb8fe0ebf75b413d2bb51a9b0e7f78f/opentelemetry_api-1.45.0-py3-none-any.whl", hash = "sha256:80e068aba7cd56c8b58512d6a36f8d25cb1dfaa0c0a4cc1c938ccf9f362d9cb3", size = 60020, upload-time = "2026-09-25T12:32:03.192Z" },
+    { url = "https://files.pythonhosted.org/packages/1e/41/f7dcf80b81ee8e71c1a2b59f14208bc723edbd89ed027a73b175abf6348e/opentelemetry_api-1.45.1-py3-none-any.whl", hash = "sha256:b31553efa588ae44bc306f863c785c5333a9ecc091248c6ee68b4b6c87fdedfb", size = 60256, upload-time = "2026-10-06T17:32:33.506Z" },
 ]
 
 [[package]]
@@ -2178,16 +2178,16 @@ wheels = [
 
 [[package]]
 name = "tavily-python"
-version = "0.8.4"
+version = "0.8.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
     { name = "requests" },
     { name = "tiktoken" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ba/15/832a4340267f16cc1cf683b5c5036850db3c07a4bf4b0cae6e5d200628c6/tavily_python-0.8.4.tar.gz", hash = "sha256:8031fd435e1c9580b7846044f456fc1d14b9c42b715740b3f0643a6e483abf83", size = 35530, upload-time = "2026-09-18T15:37:29.768Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2f/39/3aff85cb3b45cab3ef9578560364b893baa34e79744e99567a825dbadf57/tavily_python-0.8.5.tar.gz", hash = "sha256:1795965c3ffe5654856244d637daa816a4ee947aca57d0588b731c69e75e71fe", size = 35634, upload-time = "2026-10-06T15:11:34.827Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b2/fb/bb477351532705f83c1d2643099901a1f3fc6328e79b57dfc4dd67a6efd0/tavily_python-0.8.4-py3-none-any.whl", hash = "sha256:1cbbb6d59ff22e3655586a1c8a1edf28d6abfa29d14da71dcd2922955da2033f", size = 24623, upload-time = "2026-09-18T15:37:28.765Z" },
+    { url = "https://files.pythonhosted.org/packages/2f/c5/fc13567e2a1d3671f51252d44f580bf3ab3c0a6ec90a6553f5c67ba87208/tavily_python-0.8.5-py3-none-any.whl", hash = "sha256:f8d2880f5aa67cf3ee2eb1f7c9336ea50dc331eb1e406688391badb0140599a7", size = 24629, upload-time = "2026-10-06T15:11:33.854Z" },
 ]
 
 [[package]]
