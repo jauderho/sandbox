@@ -521,15 +521,6 @@ wheels = [
 ]
 
 [[package]]
-name = "dockerfile-parse"
-version = "2.0.1"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/92/df/929ee0b5d2c8bd8d713c45e71b94ab57c7e11e322130724d54f469b2cd48/dockerfile-parse-2.0.1.tar.gz", hash = "sha256:3184ccdc513221983e503ac00e1aa504a2aa8f84e5de673c46b0b6eee99ec7bc", size = 24556, upload-time = "2023-07-18T13:36:07.897Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/7a/6c/79cd5bc1b880d8c1a9a5550aa8dacd57353fa3bb2457227e1fb47383eb49/dockerfile_parse-2.0.1-py2.py3-none-any.whl", hash = "sha256:bdffd126d2eb26acf1066acb54cb2e336682e1d72b974a40894fac76a4df17f6", size = 14845, upload-time = "2023-07-18T13:36:06.052Z" },
-]
-
-[[package]]
 name = "docstring-parser"
 version = "0.18.0"
 source = { registry = "https://pypi.org/simple" }
@@ -540,12 +531,12 @@ wheels = [
 
 [[package]]
 name = "e2b"
-version = "2.53.1"
+version = "2.55.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
     { name = "connectrpc" },
-    { name = "dockerfile-parse" },
+    { name = "e2b-dockerfile-utils" },
     { name = "h2" },
     { name = "httpx" },
     { name = "packaging" },
@@ -556,9 +547,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "wcmatch" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ff/84/a5798cbcd7e8a3d4d4b913b9caebd7ffcfd07f92e7ddef36c6972ce21f9c/e2b-2.53.1.tar.gz", hash = "sha256:c58fce7de1104f82b5402d1ec347b28535bfe34f5461ad677a0a752303f8d24b", size = 238284, upload-time = "2026-10-06T20:17:48.483Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/72/93/a06604b44411e9d2cc70a230d8cb2f87f36f8068c7d7fb5e1cb23461fe8d/e2b-2.55.0.tar.gz", hash = "sha256:abecb2644e959e7da257af49fb5f42a90b77b755c33f32f7292b2398762eec09", size = 241575, upload-time = "2026-10-09T10:00:43.665Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/52/71/25fe260524bf9a7754781099ae7e30321e298d92f116373ef2e5d9e6d689/e2b-2.53.1-py3-none-any.whl", hash = "sha256:12ee0324aef2b6f064fe9037db52ddc3fcc6bec0e9c2064766b5e4a2b7c46d51", size = 400012, upload-time = "2026-10-06T20:17:46.254Z" },
+    { url = "https://files.pythonhosted.org/packages/ae/9d/155fec12ba3332b6a843ec15dacf5d96fcd176a968f144c1c83e30155f39/e2b-2.55.0-py3-none-any.whl", hash = "sha256:f993f8c0c55827e3d0865ceb04c01da897594df20e21b474639bc02a9e543537", size = 402829, upload-time = "2026-10-09T10:00:45.079Z" },
 ]
 
 [[package]]
@@ -573,6 +564,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/5a/35/826f53650685644ace4c73900b3d86bfda104b639098ce95bca6b8d03b94/e2b_code_interpreter-2.10.3.tar.gz", hash = "sha256:dfba20d42823f0df89e330cb1789dff245e272b07574dbb3947fb8b774f8fd3e", size = 11934, upload-time = "2026-10-06T20:17:47.358Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/56/e2/58af3ab0373651544310789928b49f67f5bdb085477b58030f8bd3db87bd/e2b_code_interpreter-2.10.3-py3-none-any.whl", hash = "sha256:c376d962942dd3d3ddc8339e8eae2ee4c4bcad0c7a1fedbc2074d7b60debae97", size = 17429, upload-time = "2026-10-06T20:17:46.2Z" },
+]
+
+[[package]]
+name = "e2b-dockerfile-utils"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/17/82/204eaae693bf5c55c85879e055fbfe86941bccbe41e3d6d502319bb0a17d/e2b_dockerfile_utils-0.1.0.tar.gz", hash = "sha256:f840a3e30b2e4140ef4ebb67013a399b568ce4bf62de9f9c1d069d3e47ac9992", size = 16843, upload-time = "2026-10-09T10:00:42.208Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4b/a3/2851fb65169f6724ac6befeb8f593e465ad4479d2a630d3b281ec36f73aa/e2b_dockerfile_utils-0.1.0-py3-none-any.whl", hash = "sha256:fedc7d036d8a23cb962c01b90882ebec154520ec1bed064e1fe92796a7971553", size = 19901, upload-time = "2026-10-09T10:00:41.384Z" },
 ]
 
 [[package]]
