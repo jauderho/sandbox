@@ -511,14 +511,14 @@ wheels = [
 
 [[package]]
 name = "docling"
-version = "2.137.0"
+version = "2.138.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "docling-slim", extra = ["standard"] },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0a/fc/73af263d5f6e266ef562e06442444843af0cc51bf19d40756c40f381235e/docling-2.137.0.tar.gz", hash = "sha256:41f86acc83d08d3ed4d39534134780bef350006538e8519d71413ee4e9b1813f", size = 9102, upload-time = "2026-10-09T14:15:03.456Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/34/1e/01685cd6513f7862f1ced40fc458a684ad9c9860a9e219b65ed977c0dabf/docling-2.138.0.tar.gz", hash = "sha256:7c2bad610ec8744e17819a0b1250f2edb6762999b5bf85d4a10550e059d409d1", size = 9102, upload-time = "2026-10-12T06:17:47.721Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b7/ae/acbc55d3d2887534e507bd31e59a371171b4ae4ba090c554c28052cd6abf/docling-2.137.0-py3-none-any.whl", hash = "sha256:284a99bcaf4d960037860457967fead4077cb3b503e33519bff6c123e587b864", size = 5241, upload-time = "2026-10-09T14:15:02.216Z" },
+    { url = "https://files.pythonhosted.org/packages/05/b9/82ae827d992aa48382da138da44ab3fd29a51eb9e32853df61791cb2e06d/docling-2.138.0-py3-none-any.whl", hash = "sha256:94b5f0c4076da25fdf2a2f1f636eb42c674c6d357f330771f2c5c4e4bcfa3510", size = 5241, upload-time = "2026-10-12T06:17:46.227Z" },
 ]
 
 [package.optional-dependencies]
@@ -601,7 +601,7 @@ wheels = [
 
 [[package]]
 name = "docling-slim"
-version = "2.137.0"
+version = "2.138.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "certifi" },
@@ -614,9 +614,9 @@ dependencies = [
     { name = "requests" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0f/0e/8e7ba3f3243e868b1ecd1881d479ff45c3749c612c479996df775b2ecc4e/docling_slim-2.137.0.tar.gz", hash = "sha256:829276d726aee118e08f3d84da138d34070310f0d92359fa31c148a4d42bfd24", size = 812940, upload-time = "2026-10-09T14:13:42.003Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/99/8d/f1bc0fd27c2d19fa4cba07fcaa9ce67094d51275f84153e6471a91cbc28b/docling_slim-2.138.0.tar.gz", hash = "sha256:1294949bd3ab1c9ef41eebf5c39549e2a845bef360a6dcf7001676644d24bcc6", size = 815599, upload-time = "2026-10-12T06:16:20.226Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a3/8d/700dca5ecaec630e544b8fe61d4d756eb0f8bada79f08c0ac8bf2633a104/docling_slim-2.137.0-py3-none-any.whl", hash = "sha256:7f3ddecb7b1e8c5bfc7e2da1311bef238ed11c2e6b973e5714b5ae88177df789", size = 992949, upload-time = "2026-10-09T14:13:39.739Z" },
+    { url = "https://files.pythonhosted.org/packages/fe/47/237cbeaa6724ac2275a7f5fbd0ed5484e8cda20a5521de9ffea0463e9386/docling_slim-2.138.0-py3-none-any.whl", hash = "sha256:35f709532563f43b004faab02e974ae95c4fc05455cee2e038af9e0abeaaff6e", size = 995749, upload-time = "2026-10-12T06:16:17.925Z" },
 ]
 
 [package.optional-dependencies]
@@ -3206,11 +3206,11 @@ wheels = [
 
 [[package]]
 name = "soupsieve"
-version = "3.0.1"
+version = "3.0.3"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/0e/b9/014459776d0be4dd5f0c196fd2c8dc523a4b817a561667fae4f330b04b48/soupsieve-3.0.1.tar.gz", hash = "sha256:713d5c69f90ef84deffec0b9c6244796575e3c9fc9081cefb96091ce1200a308", size = 115438, upload-time = "2026-10-10T17:10:25.848Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5e/77/2dcfa996b01702ab8fd0763d84098f6a640d6162a328f1c04c2697579a1a/soupsieve-3.0.3.tar.gz", hash = "sha256:7dcf6022eed0399eb9934a75e020148f7a2024c37b7dfcd3cf2c5505d69c364e", size = 115923, upload-time = "2026-10-12T13:21:17.696Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3a/cd/8092ac4e9009b4a480ba212f5cdfd26dabfc97990b176bbc70c7662d6f05/soupsieve-3.0.1-py3-none-any.whl", hash = "sha256:dd1d6bd1ba7cd39866edd704321c11b4df5e7ae98620174a9071a9af3a9c05cd", size = 41679, upload-time = "2026-10-10T17:10:24.546Z" },
+    { url = "https://files.pythonhosted.org/packages/49/ca/f639c80449997b88aba7bc9705d25dd76cc0844f45f187862fd8f8bb18fa/soupsieve-3.0.3-py3-none-any.whl", hash = "sha256:fa30e3ba4809cb81ce1f3209f2fbe3e779fc445f0439bc147a0d7c4601743f21", size = 41705, upload-time = "2026-10-12T13:21:16.474Z" },
 ]
 
 [[package]]
