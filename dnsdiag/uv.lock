@@ -4,7 +4,7 @@ requires-python = ">=3.13"
 
 [[package]]
 name = "aioquic"
-version = "1.5.0"
+version = "1.6.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "certifi" },
@@ -13,19 +13,19 @@ dependencies = [
     { name = "pyopenssl" },
     { name = "service-identity" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/61/95/71087f0d4a79560572744a513a7a59da9ba71edf8136d020428fe8d1605a/aioquic-1.5.0.tar.gz", hash = "sha256:f765bd3c0792110f94cd945e9cac67255d0250875efb4eb4995305d9c55336af", size = 189228, upload-time = "2026-10-11T17:02:38.827Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a9/48/41aa1b07fc52b2225a611ff35240bd7a2c70cc909e4329b413e0aa4593fc/aioquic-1.6.0.tar.gz", hash = "sha256:d8fcd66abcfeb431e8dbfad16d3324b268606138a67440e3173912be73c80aeb", size = 201845, upload-time = "2026-10-12T17:55:02.516Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/54/1d/8c0599f8a68aab199ee19012bf681b812a081426d1ce2d8e38bd06621daa/aioquic-1.5.0-cp311-abi3-macosx_10_9_x86_64.whl", hash = "sha256:2bfcd9b815c365dfdf7a9aa8633ae249ff424ff1987f1fbf68a5bd0a68ba2924", size = 100896, upload-time = "2026-10-11T17:02:26.954Z" },
-    { url = "https://files.pythonhosted.org/packages/53/f1/ec77ba1f51a761596e98e7ed3f36fbe9d2bef1f1d390ce87b28b4beac068/aioquic-1.5.0-cp311-abi3-macosx_11_0_arm64.whl", hash = "sha256:741c590883b5d2b2569e6502d3ddef4106710b74e2cfa2e85b56541d48511ac0", size = 101350, upload-time = "2026-10-11T17:02:28.41Z" },
-    { url = "https://files.pythonhosted.org/packages/44/8d/3ccba0acb5ca754e0301bc3a2b558d1659efa29a8ca897e9f1ed4beebab5/aioquic-1.5.0-cp311-abi3-manylinux1_i686.manylinux_2_28_i686.manylinux_2_5_i686.whl", hash = "sha256:532b6d830d4cbdcab5c99af8ac1286d052108dd415f2d4e037dfd5e3a4ecbc48", size = 108355, upload-time = "2026-10-11T17:02:29.537Z" },
-    { url = "https://files.pythonhosted.org/packages/09/1e/a259bb8a6be618fbd03b3e6f5395964d310e350e55d796b4670e440d3c0b/aioquic-1.5.0-cp311-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:ea010b9443f3ed2aa0a208fc7b4f39220b2a8cef976f40ff5edb51affe8acef2", size = 110838, upload-time = "2026-10-11T17:02:30.515Z" },
-    { url = "https://files.pythonhosted.org/packages/6f/82/cf1c6a0d2f5605d6128480f0214e30db2fcaa4847d768c857ce5f1e39f1d/aioquic-1.5.0-cp311-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:1ec919fd627c8a65452b1cb4d7a2cf6308b4ce561f1c99749cd11833fad687fd", size = 109356, upload-time = "2026-10-11T17:02:31.699Z" },
-    { url = "https://files.pythonhosted.org/packages/cd/05/ff038d9ec9b36cf258687b6e0f176d953d5d33e7013cde182a98ab044893/aioquic-1.5.0-cp311-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:6966e6a356578217d1b55b5ad894b14d2689d6461761ad5cd8286059440d64bf", size = 110535, upload-time = "2026-10-11T17:02:32.635Z" },
-    { url = "https://files.pythonhosted.org/packages/f3/2f/8b770abf8c90cf07b9918ee9f3a638784b4894df9c79f4225d47305b3807/aioquic-1.5.0-cp311-abi3-musllinux_1_2_i686.whl", hash = "sha256:a97c43bac1f13b6278ab255efb953ffd946cac1bcf4d9eb5d0a1b5d0fc3201a3", size = 108944, upload-time = "2026-10-11T17:02:33.626Z" },
-    { url = "https://files.pythonhosted.org/packages/25/36/7a63ecf08ad6c25473f33db2e549b8677538c8a559fdc69297375c7bffa3/aioquic-1.5.0-cp311-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:6c9aa0ed7bbeb4c8343ebb8f7f6d40a3f7b030e8632b3ecd72dac9ced2885930", size = 109655, upload-time = "2026-10-11T17:02:34.757Z" },
-    { url = "https://files.pythonhosted.org/packages/b7/34/eb6f7847a17855d580c5bf5ddb49c4c479b1440bcac8d6da62b9b4e36c3b/aioquic-1.5.0-cp311-abi3-win32.whl", hash = "sha256:ee71e14066ddcce8b42db9212f2fa1e10920ba4e3ed5f2bf49261f73a1ef2f80", size = 102938, upload-time = "2026-10-11T17:02:35.763Z" },
-    { url = "https://files.pythonhosted.org/packages/50/de/1819e14afe1610c7a636a0b2861db6696aa4f5d4b40ac2192f225509d31e/aioquic-1.5.0-cp311-abi3-win_amd64.whl", hash = "sha256:8b795713356a9485e2614c058400cf8488a5533e82b12d53fb08076c2a112a7f", size = 103453, upload-time = "2026-10-11T17:02:36.857Z" },
-    { url = "https://files.pythonhosted.org/packages/ed/f3/3419a5ca74e8ac05ae1ee35bcdc94d13446f410f210b30340bd3d4c83517/aioquic-1.5.0-cp311-abi3-win_arm64.whl", hash = "sha256:c502f6d6a7f6d77f2ac675b767fd986e922a8af61cc17475903573bdde01f809", size = 103152, upload-time = "2026-10-11T17:02:37.876Z" },
+    { url = "https://files.pythonhosted.org/packages/cf/08/8045f83193516fb283e7f77c914b99cda7f0a1848e97205a4d6b968fe8ed/aioquic-1.6.0-cp311-abi3-macosx_10_9_x86_64.whl", hash = "sha256:e11001124b811d829371d2e8d618787140622e310db60398a9f98c6196633043", size = 104879, upload-time = "2026-10-12T17:54:49.683Z" },
+    { url = "https://files.pythonhosted.org/packages/a0/a1/6328bf3308d2cd1422a39fdae588336eefdcfe99b9d785467aa594ea8076/aioquic-1.6.0-cp311-abi3-macosx_11_0_arm64.whl", hash = "sha256:9b0184858978952031f4720a9010a26ad5e44ea194cb999fd8c2e3f192749f20", size = 105342, upload-time = "2026-10-12T17:54:51.274Z" },
+    { url = "https://files.pythonhosted.org/packages/d9/84/115cc188df4742cf90a78893455b2c553c462db345c2d06b8f6746698da7/aioquic-1.6.0-cp311-abi3-manylinux1_i686.manylinux_2_28_i686.manylinux_2_5_i686.whl", hash = "sha256:00e44fbe19c2d4bf5d62d597f8079c18232db9568cbb27085ab76670377827a7", size = 112436, upload-time = "2026-10-12T17:54:52.227Z" },
+    { url = "https://files.pythonhosted.org/packages/e4/d5/93a8f598c23f073e2ad42fc4c031b246db4c8afec37b6c0dc33ae1c811ac/aioquic-1.6.0-cp311-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:74578e4c269731253e97de6748f5107a8cca3efa9db25b928ff09ee42db66e37", size = 114902, upload-time = "2026-10-12T17:54:53.264Z" },
+    { url = "https://files.pythonhosted.org/packages/aa/ee/c66590c778563b7016bab2e3298b56221d99ee52ec215ad72b1a21069106/aioquic-1.6.0-cp311-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:3cb1a99ee55524166ba7b9a41a44819e254c7bc83d9507b91ee5286024f53148", size = 113488, upload-time = "2026-10-12T17:54:54.351Z" },
+    { url = "https://files.pythonhosted.org/packages/f4/62/9e8501a8133a2bdc3c6fc0328e8e0d5a1381805dd7b67d1a6fe8c92c3293/aioquic-1.6.0-cp311-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:536391f4fd4f42025bfcb6e150e14a63c8778763a0a7a3a8709cc1349760bad6", size = 114600, upload-time = "2026-10-12T17:54:55.407Z" },
+    { url = "https://files.pythonhosted.org/packages/47/88/34a867ed620d9e85d3d038cbe3ec4d86e8e4a69269e7a397e8372e5d3cb6/aioquic-1.6.0-cp311-abi3-musllinux_1_2_i686.whl", hash = "sha256:ef4928c1bfe14be8d6a12746aa41d8ae96f619ff4e14b12e097252fb94723e35", size = 113033, upload-time = "2026-10-12T17:54:56.56Z" },
+    { url = "https://files.pythonhosted.org/packages/db/8b/192505a2cdf07394691ac8d62e517cb8c0f58744b3ad23a5dbd8e0b6e2c8/aioquic-1.6.0-cp311-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:7a519d2c1871b9dfc8bfa115a31ebcd9785f35ddfdd9c64a87c588441279f775", size = 113719, upload-time = "2026-10-12T17:54:57.686Z" },
+    { url = "https://files.pythonhosted.org/packages/20/bb/3bf705331093bffb9b855b2e7676b5af908143c6ac812bbc8cb2747c245c/aioquic-1.6.0-cp311-abi3-win32.whl", hash = "sha256:26735b3c5c9c66da480521d3f89bee847e9e5c55e16e0d73d2477b060e8de0b5", size = 106960, upload-time = "2026-10-12T17:54:59.333Z" },
+    { url = "https://files.pythonhosted.org/packages/a7/aa/2817ab910b39d73acd9c646ba07d85c2c3f6bd2bbb1dbd9f7f4a00e692cf/aioquic-1.6.0-cp311-abi3-win_amd64.whl", hash = "sha256:b730f64d8800deb9d0d7f7436bcc5c9cb4122a4d7bef12d4381dd88fe5a95a41", size = 107443, upload-time = "2026-10-12T17:55:00.442Z" },
+    { url = "https://files.pythonhosted.org/packages/72/fe/a9e425f296172fca5a099e0cc0ad32c8cdb0bd76b0c5f74e84c8d1d80928/aioquic-1.6.0-cp311-abi3-win_arm64.whl", hash = "sha256:d69cd23805a10b0ca76423de22595d924a07c1e95ae1ff80d3d6755afa7ddef1", size = 107155, upload-time = "2026-10-12T17:55:01.482Z" },
 ]
 
 [[package]]
