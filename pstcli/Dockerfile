@@ -1,4 +1,4 @@
-FROM almalinux:10.2-minimal@sha256:77aeeeef6889af731a91d83f65b08ef9930bde10332ae2e3fd6e0f0c47066a7b
+FROM almalinux:10.2-minimal@sha256:7127d3a958a0ba8bb673d7b4cd378c11052404ce1897940c32f1dd944448f7ab
 # FROM rockylinux:9.3-minimal@sha256:305de618a5681ff75b1d608fd22b10f362867dff2f550a4f1d427d21cd7f42b4
 
 # Dell gives each release its own opaque dl.dell.com folder id, and there is no
