@@ -22,14 +22,21 @@ RUN test -n "${BUILD_VERSION}" \
 # smoke test - a bare invocation reads stdin, hits EOF and exits 1
 RUN target/release/jless --version
 
+# scratch has no loader or package manager, so gather jless plus every shared
+# object it needs (musl loader, libxcb, libXau, libXdmcp, libgcc_s) into a
+# rootfs. ldd resolves the right paths on both amd64 and arm64.
+RUN mkdir -p /rootfs/usr/local/bin \
+	&& cp target/release/jless /rootfs/usr/local/bin/jless \
+	&& ldd target/release/jless | awk '$3 ~ /^\// { print $3 } $1 ~ /^\// { print $1 }' | sort -u \
+	| while read -r lib; do cp --parents -L "$lib" /rootfs; done
+
 WORKDIR /config
 
 
 # ----------------------------------------------------------------------------
 
 
-#FROM scratch
-FROM alpine:3.24.2@sha256:294b683cb724975bec92580e1e685676bd4b50bda910ddb8c51d4cabeaec77e6
+FROM scratch
 
 LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
@@ -40,17 +47,8 @@ LABEL org.opencontainers.image.description="JLess is a command-line JSON viewer 
 
 COPY --from=build /etc/ssl/certs /etc/ssl/certs
 
-COPY --from=build /usr/src/github.com/PaulJuliusMartinez/jless/target/release/jless /usr/local/bin/jless
+COPY --from=build /rootfs/ /
 COPY --from=build /config /config
-
-#RUN apk update \
-#	&& apk add --no-cache dumb-init
-
-# jless is dynamically linked, so the X client libs and libgcc (for the
-# _Unwind_* symbols) have to be present at runtime
-RUN apk add --no-cache libxcb libxau libxdmcp libgcc
-
-RUN /usr/local/bin/jless --version
 
 USER 1000
 HEALTHCHECK NONE
