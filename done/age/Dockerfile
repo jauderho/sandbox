@@ -9,7 +9,7 @@ ENV CGO_ENABLED=0
 
 RUN test -n "${BUILD_VERSION}" \
 	&& apk update \
-	&& apk add --no-cache ca-certificates curl gcc musl-dev \
+	&& apk add --no-cache --upgrade ca-certificates ca-certificates-bundle curl gcc musl-dev \
 	&& update-ca-certificates \
 	&& curl -L --proto '=https' --proto-redir '=https' "${ARCHIVE_URL}${BUILD_VERSION}.tar.gz" -o /tmp/age.tar.gz \
 	&& tar xzf /tmp/age.tar.gz --strip 1 -C /go/src/github.com/FiloSottile/age \
@@ -31,7 +31,7 @@ LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/age"
 LABEL org.opencontainers.image.description="age is a simple, modern and secure file encryption tool, format, and Go library"
 
-COPY --from=build /etc/ssl/certs /etc/ssl/certs
+COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 
 COPY --from=build /go/src/github.com/FiloSottile/age/age /usr/local/bin/age
 COPY --from=build /go/src/github.com/FiloSottile/age/age-keygen /usr/local/bin/age-keygen

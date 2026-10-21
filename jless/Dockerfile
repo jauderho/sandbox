@@ -1,3 +1,13 @@
+# The build image is Alpine 3.18, whose repo stopped getting ca-certificates
+# updates, so pull the latest bundle from a current Alpine for the final image.
+FROM alpine:3.24.2@sha256:294b683cb724975bec92580e1e685676bd4b50bda910ddb8c51d4cabeaec77e6 AS certs
+
+RUN apk add --no-cache --upgrade ca-certificates-bundle
+
+
+# ----------------------------------------------------------------------------
+
+
 #FROM ghcr.io/jauderho/alpine:3.21.0@sha256:f1c32703dfc24d994cb29a14dba612df8cd56ef5c4df8e443803d11cacadd150 AS build
 FROM rust:1.78.0-alpine3.18@sha256:34f1c35f62e192f39cd0c809982bf90c354f7e5746682a2f4c9e4c43bd516dbc AS build
 #FROM rust:1.58.0-alpine3.15
@@ -45,7 +55,7 @@ LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/jless"
 LABEL org.opencontainers.image.description="JLess is a command-line JSON viewer designed for reading, exploring, and searching through JSON data"
 
-COPY --from=build /etc/ssl/certs /etc/ssl/certs
+COPY --from=certs /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 
 COPY --from=build /rootfs/ /
 COPY --from=build /config /config

@@ -10,7 +10,8 @@ ENV CGO_ENABLED=0
 
 RUN test -n "${BUILD_VERSION}" \
 	&& apk update \
-	&& apk add --no-cache curl \
+	&& apk add --no-cache --upgrade ca-certificates ca-certificates-bundle curl \
+	&& update-ca-certificates \
 	&& curl -L --proto '=https' --proto-redir '=https' "${ARCHIVE_URL}${BUILD_VERSION}.tar.gz" -o /tmp/dive.tar.gz \
 	&& tar xzf /tmp/dive.tar.gz --strip 1 -C /go/src/github.com/wagoodman/dive \
 	&& go build -o dive-bin -v -ldflags="-s -w" \
@@ -33,7 +34,7 @@ LABEL org.opencontainers.image.source="https://github.com/jauderho/dockerfiles"
 LABEL org.opencontainers.image.title="jauderho/dive"
 LABEL org.opencontainers.image.description="A tool for exploring a docker image, layer contents, and discovering ways to shrink your image size"
 
-COPY --from=build /etc/ssl/certs /etc/ssl/certs
+COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 
 # static docker CLI that dive shells out to
 COPY --from=build /usr/local/bin/docker /usr/local/bin/docker
