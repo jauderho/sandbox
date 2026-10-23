@@ -367,7 +367,7 @@ wheels = [
 [[package]]
 name = "pshtt"
 version = "0.7.1"
-source = { git = "https://github.com/jauderho/pshtt.git#e55ea72f78073b00db1902a55b1e094b7b2001cf" }
+source = { git = "https://github.com/jauderho/pshtt.git?rev=e55ea72f78073b00db1902a55b1e094b7b2001cf#e55ea72f78073b00db1902a55b1e094b7b2001cf" }
 dependencies = [
     { name = "docopt" },
     { name = "publicsuffixlist", extra = ["update"] },
@@ -394,7 +394,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "cryptography" },
-    { name = "pshtt", git = "https://github.com/jauderho/pshtt.git" },
+    { name = "pshtt", git = "https://github.com/jauderho/pshtt.git?rev=e55ea72f78073b00db1902a55b1e094b7b2001cf" },
     { name = "typepy", extras = ["datetime"] },
 ]
 
