@@ -2,7 +2,7 @@
 name = "shodan-project"
 description = "Python library and command-line utility for accessing Shodan, the search engine for Internet-connected devices."
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 dependencies = [
   # shodan's __main__ imports pkg_resources at startup. That used to come from
   # the distro python3-pip and nothing provides it inside the venv. setuptools
