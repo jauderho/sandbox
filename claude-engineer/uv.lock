@@ -476,7 +476,7 @@ wheels = [
 
 [[package]]
 name = "e2b"
-version = "2.59.0"
+version = "2.61.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
@@ -492,23 +492,23 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "wcmatch" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d2/81/77e4e8d4c6fd4f524d6bd47fc2b98763ba8bcccdcab6938707404001e41a/e2b-2.59.0.tar.gz", hash = "sha256:5af63206e30a540bfb351edd60e65fdbd1d61d7eb9dfb28e2899eb9d8ad8dda0", size = 250790, upload-time = "2026-10-22T16:19:50.077Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/07/33/417b3e66646fd3265faee18a0b992caca523f59ab41890ea7eefcfac5ee0/e2b-2.61.0.tar.gz", hash = "sha256:a58d8f2f2c67afad29c5bfc849e786db80c03f35ce724d41e74d7421bc8ed8b8", size = 266180, upload-time = "2026-10-26T16:23:11.343Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bd/29/8859a85e7b45c234319ba83b3b9a5cd0a24d0b48f6b956a7fabed1aa9fa3/e2b-2.59.0-py3-none-any.whl", hash = "sha256:14ad76ce259b0e9f1ba45201e128e31dd6bf045f5e2bc2387c70b022cb690f67", size = 423694, upload-time = "2026-10-22T16:19:48.391Z" },
+    { url = "https://files.pythonhosted.org/packages/59/d7/881e740424a0fca3dade73600a7ecb0624de3996d4e871d354759d961878/e2b-2.61.0-py3-none-any.whl", hash = "sha256:8851b9d62e844f52fbcea14150ed13d567c8c3e4bebb8f3d353e2d95e8c913de", size = 423256, upload-time = "2026-10-26T16:23:09.999Z" },
 ]
 
 [[package]]
 name = "e2b-code-interpreter"
-version = "2.11.3"
+version = "2.11.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
     { name = "e2b" },
     { name = "httpx" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/72/0a/988db2cc985b8b7440a7c3b616c026ecc3aecca317d1596cec7455816d36/e2b_code_interpreter-2.11.3.tar.gz", hash = "sha256:e98655d8f591305322ffd9fcdeb641e8eb8f8ec5f02064ad545332753d5d41a5", size = 11825, upload-time = "2026-10-22T16:19:52.144Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/33/22/e900fb8835ac476aafe2899a2eb88a792ff434d33d0cbf14353e27305d4e/e2b_code_interpreter-2.11.5.tar.gz", hash = "sha256:0c68c0bd33899f54c181637df6b96ab587212e6c1c17d584853f6ce6f29b4675", size = 12379, upload-time = "2026-10-26T16:23:14.382Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/69/fa/f252cf4b5313fa1453621645163480042f191d8c2686ee52e70929b32bb6/e2b_code_interpreter-2.11.3-py3-none-any.whl", hash = "sha256:69fd00e6c4f7b5c701b9a2af9af643ce84c724b6d602bd3d34192ecfa15aea4d", size = 17205, upload-time = "2026-10-22T16:19:53.428Z" },
+    { url = "https://files.pythonhosted.org/packages/1b/ad/599d3dade1ba5cd06f4a88ae94c5b44110228935a50de0f426a55ae5df9e/e2b_code_interpreter-2.11.5-py3-none-any.whl", hash = "sha256:7bcedf078079535285d5398427f112e1a053b66f29dd5287c9f528de7eacd277", size = 17192, upload-time = "2026-10-26T16:23:13.345Z" },
 ]
 
 [[package]]
@@ -973,14 +973,14 @@ html-clean = [
 
 [[package]]
 name = "lxml-html-clean"
-version = "0.4.5"
+version = "0.4.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "lxml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0a/63/195dfdde380a84df309e3bccf4384b034b745dba43426886f7ae623b4fba/lxml_html_clean-0.4.5.tar.gz", hash = "sha256:e2a4c7d5beedd17cd7b484d848a0571e54baa239a4f9df5546e3acba7f990560", size = 24142, upload-time = "2026-05-20T12:17:53.574Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ac/7e/2b7118b28d5bb69dfc4f349e1ca92334cf986601d3c809caa62cfa3bfab6/lxml_html_clean-0.4.6.tar.gz", hash = "sha256:ea9db067c3053854fd87f8d5a1cf01221dc893b54dbf6019c689052e05c64f22", size = 26385, upload-time = "2026-10-26T11:14:45.978Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6a/bd/6e2b76a6c5dee10397db9c929f0c5066766ec1036046f0335b7ca7ca08b8/lxml_html_clean-0.4.5-py3-none-any.whl", hash = "sha256:c76fcadd1e5bfb9b8bafc2200d51e4e78eb0dad67f56881c21dfb6484c7e7746", size = 14573, upload-time = "2026-05-20T12:17:52.215Z" },
+    { url = "https://files.pythonhosted.org/packages/f5/36/4898b5e3951635846ed0e445e042fadf02b7c5e811a9e43da5b3557bc8d2/lxml_html_clean-0.4.6-py3-none-any.whl", hash = "sha256:cc037270ba500a65e7235409dcddcae8ef37300f26dea826b61d917bf0236880", size = 14952, upload-time = "2026-10-26T11:14:44.73Z" },
 ]
 
 [[package]]
