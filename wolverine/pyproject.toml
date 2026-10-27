@@ -17,7 +17,7 @@ dependencies = [
   "aiosignal",
   "async-timeout",
   "attrs",
-  "certifi",
+  "certifi>=2026.10.23",
   "charset-normalizer",
   "fire",
   "flake8",
@@ -38,6 +38,7 @@ dependencies = [
 ]
 
 [tool.uv]
+constraint-dependencies = ["certifi>=2026.10.23"]
 cache-keys = [{ file = "pyproject.toml" }, { git = { commit = true, tags = true } }]
 
 [tool.uv.sources]

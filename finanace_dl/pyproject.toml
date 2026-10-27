@@ -36,6 +36,7 @@ Repository = "https://github.com/andrew-d/finance-dl"
 Issues = "https://github.com/andrew-d/finance-dl/issues"
 
 [tool.uv]
+constraint-dependencies = ["certifi>=2026.10.23"]
 index-url = "https://pypi.org/simple"
 
 [tool.uv.sources]

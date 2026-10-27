@@ -20,7 +20,7 @@ dependencies = [
   "pyperclip",
   "colorama",
   "requests",
-  "certifi",
+  "certifi>=2026.10.23",
   "chardet",
   "idna",
   "urllib3"
@@ -45,6 +45,7 @@ classifiers = [
 dynamic = ["version"]
 
 [tool.uv]
+constraint-dependencies = ["certifi>=2026.10.23"]
 index-url = "https://pypi.org/simple"
 cache-keys = [
   { file = "pyproject.toml" },

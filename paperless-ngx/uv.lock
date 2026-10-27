@@ -6,6 +6,9 @@ resolution-markers = [
     "sys_platform == 'darwin'",
 ]
 
+[manifest]
+constraints = [{ name = "certifi", specifier = ">=2026.10.23" }]
+
 [[package]]
 name = "aiohappyeyeballs"
 version = "2.7.1"

@@ -20,6 +20,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.uv]
+constraint-dependencies = ["certifi>=2026.10.23"]
 cache-keys = [
   { file = "pyproject.toml" },
   { git = { commit = true, tags = true } }
