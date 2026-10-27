@@ -28,58 +28,147 @@ updates:
   #
   # shodan is deliberately NOT in this list - it has its own entry below so its
   # setuptools pin can be exempted without suppressing setuptools elsewhere.
-  # Any new app directory needs adding here.
+  # Any new app directory needs adding to one of the batches.
+  #
+  # The directories are split into batches because Dependabot checks every
+  # locked package one by one, and a single job over all of them ran past the
+  # roughly 55 minute limit and was cancelled every day. Each batch is sized to
+  # finish in about 30 minutes, at roughly 3.5 minutes per directory plus 5
+  # seconds per locked package.
   - package-ecosystem: "uv"
     directories:
       - "/ai-hedge-fund"
+      - "/finanace_dl"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 1
+    groups:
+      python-1:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "uv"
+    directories:
       - "/aranet4"
+      - "/cantools"
+      - "/cryptolyzer"
+      - "/greynoise"
+      - "/pyaranet4"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 1
+    groups:
+      python-2:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "uv"
+    directories:
       - "/autoflake"
+      - "/codespell"
+      - "/hdbcli"
+      - "/mlx"
+      - "/pyupgrade"
+      - "/uv"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 1
+    groups:
+      python-3:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "uv"
+    directories:
       - "/awscli"
       - "/badkeys"
-      - "/bgperf2"
-      - "/cantools"
-      - "/claude-engineer"
-      - "/codespell"
-      - "/cryptolyzer"
-      - "/datasette"
-      - "/deepdiff"
-      - "/diagrams"
-      - "/dnsdiag"
-      - "/dnsrecon"
-      - "/dnstwist"
-      - "/dnsvalidator"
-      - "/finanace_dl"
-      - "/gallery-dl"
-      - "/greynoise"
-      - "/hdbcli"
-      - "/huggingface-cli"
-      - "/ilab"
       - "/internetarchive"
       - "/jc"
-      - "/llama-fs"
-      - "/llm"
-      - "/memray"
-      - "/mlx"
-      - "/mlx-hub"
       - "/notdiamond"
-      - "/openbbterminal"
-      - "/paperless-ngx"
-      - "/posting"
-      - "/prowler"
-      - "/pshtt"
       - "/puncia"
-      - "/pwnagotchi"
-      - "/pyaranet4"
-      - "/pyinfra"
-      - "/python-matter-server"
-      - "/pyupgrade"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 1
+    groups:
+      python-4:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "uv"
+    directories:
+      - "/bgperf2"
       - "/revchatgpt"
-      - "/routellm"
       - "/scrapeghost"
-      - "/sgpt"
       - "/ssh-mitm"
-      - "/uv"
-      - "/wolverine"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 1
+    groups:
+      python-5:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "uv"
+    directories:
+      - "/claude-engineer"
+      - "/routellm"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 1
+    groups:
+      python-6:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "uv"
+    directories:
+      - "/datasette"
+      - "/dnsrecon"
+      - "/posting"
+      - "/pshtt"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 1
+    groups:
+      python-7:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "uv"
+    directories:
+      - "/deepdiff"
+      - "/openbbterminal"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 1
+    groups:
+      python-8:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "uv"
+    directories:
+      - "/diagrams"
+      - "/dnsvalidator"
+      - "/huggingface-cli"
+      - "/memray"
+      - "/python-matter-server"
       - "/wtfis"
     open-pull-requests-limit: 50
     schedule:
@@ -87,7 +176,79 @@ updates:
     cooldown:
       default-days: 1
     groups:
-      python:
+      python-9:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "uv"
+    directories:
+      - "/dnsdiag"
+      - "/dnstwist"
+      - "/llm"
+      - "/pyinfra"
+      - "/sgpt"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 1
+    groups:
+      python-10:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "uv"
+    directories:
+      - "/gallery-dl"
+      - "/prowler"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 1
+    groups:
+      python-11:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "uv"
+    directories:
+      - "/ilab"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 1
+    groups:
+      python-12:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "uv"
+    directories:
+      - "/llama-fs"
+      - "/pwnagotchi"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 1
+    groups:
+      python-13:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "uv"
+    directories:
+      - "/paperless-ngx"
+      - "/wolverine"
+    open-pull-requests-limit: 50
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 1
+    groups:
+      python-14:
         patterns:
           - "*"
 
