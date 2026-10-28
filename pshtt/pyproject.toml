@@ -6,9 +6,7 @@ requires-python = ">=3.14"
 dependencies = [
   "cryptography",
   "typepy[datetime]",
-  # Pinned: later fork commits require sslyze<5, whose nassl and pydantic-core
-  # releases have no wheels or builds for Python 3.13+, so "uv lock -U" fails.
-  "pshtt @ git+https://github.com/jauderho/pshtt.git@e55ea72f78073b00db1902a55b1e094b7b2001cf"
+  "pshtt @ git+https://github.com/jauderho/pshtt.git@c177be66d82c148d1f550bf4cc9bac87cfd27fbb"
 ]
 dynamic = ["version"]
 

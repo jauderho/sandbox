@@ -369,9 +369,10 @@ wheels = [
 
 [[package]]
 name = "pshtt"
-version = "0.7.1"
-source = { git = "https://github.com/jauderho/pshtt.git?rev=e55ea72f78073b00db1902a55b1e094b7b2001cf#e55ea72f78073b00db1902a55b1e094b7b2001cf" }
+version = "0.7.6"
+source = { git = "https://github.com/jauderho/pshtt.git?rev=c177be66d82c148d1f550bf4cc9bac87cfd27fbb#c177be66d82c148d1f550bf4cc9bac87cfd27fbb" }
 dependencies = [
+    { name = "cryptography" },
     { name = "docopt" },
     { name = "publicsuffixlist", extra = ["update"] },
     { name = "pyopenssl" },
@@ -380,7 +381,6 @@ dependencies = [
     { name = "python-dateutil" },
     { name = "pytz" },
     { name = "requests" },
-    { name = "setuptools" },
     { name = "sslyze" },
     { name = "wget" },
 ]
@@ -397,7 +397,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "cryptography" },
-    { name = "pshtt", git = "https://github.com/jauderho/pshtt.git?rev=e55ea72f78073b00db1902a55b1e094b7b2001cf" },
+    { name = "pshtt", git = "https://github.com/jauderho/pshtt.git?rev=c177be66d82c148d1f550bf4cc9bac87cfd27fbb" },
     { name = "typepy", extras = ["datetime"] },
 ]
 
