@@ -26,8 +26,8 @@ updates:
   # dev files are no longer updated. Both are meant to stay where they are, so
   # that is the wanted behaviour rather than a gap.
   #
-  # shodan is deliberately NOT in this list - it has its own entry below so its
-  # setuptools pin can be exempted without suppressing setuptools elsewhere.
+  # shodan, awscli, pshtt and sgpt are deliberately NOT in these batches - they
+  # share the entry below, which carries the ignore rules they need.
   # Any new app directory needs adding to one of the batches.
   #
   # ai-hedge-fund, ilab and python-matter-server are deliberately absent. Their
@@ -122,21 +122,30 @@ updates:
         patterns:
           - "*"
 
-  # Directories whose dependencies are held back by a git-sourced package, so
-  # Dependabot cannot bump them, plus awscli. Each ignored name below failed in
-  # the 2026-10-27 run; the weekly scripts/updatePythonDepsUV.sh still updates
-  # them, and Dependabot security updates run separately from this file.
+  # Directories whose dependencies cannot all be bumped, so each gets ignore
+  # rules. The weekly scripts/updatePythonDepsUV.sh still updates the ignored
+  # packages, and Dependabot security updates run separately from this file.
+  # Ignore rules apply to every directory in an entry, so the names below are
+  # only ones that no other directory here needs updated.
   #   awscli: Dependabot reads 1.46.0, "updates" to 1.46.2 and finds the
   #           lock already there ("Expected lockfile to change!").
   #   pshtt:  direct git URL, Dependabot looks for pshtt==0.7.6 on PyPI.
   #   cryptography (pshtt only): resolved against a newer pshtt that needs
   #           sslyze<5, which pins cryptography<42.
   #   rich (sgpt only): shell_gpt pins rich<14.
+  #   setuptools >=81 (shodan): shodan's __main__ imports pkg_resources, which
+  #           setuptools removed in 81.0.0, so "shodan --help" breaks above
+  #           80.x. Upstream fix is in flight at
+  #           https://github.com/achillean/shodan-python/pull/253 - drop this
+  #           rule once that lands and the pin comes off shodan/pyproject.toml.
+  #           It also stops setuptools bumps in pshtt, which weekly locking
+  #           still does.
   - package-ecosystem: "uv"
     directories:
       - "/awscli"
       - "/pshtt"
       - "/sgpt"
+      - "/shodan"
     open-pull-requests-limit: 50
     schedule:
       interval: "daily"
@@ -151,23 +160,6 @@ updates:
       - dependency-name: "pshtt"
       - dependency-name: "cryptography"
       - dependency-name: "rich"
-
-  # shodan only: its __main__ imports pkg_resources, which setuptools removed in
-  # 81.0.0, so "shodan --help" breaks above 80.x. Upstream fix is in flight at
-  # https://github.com/achillean/shodan-python/pull/253 - drop this entry once
-  # that lands and the pin comes off shodan/pyproject.toml.
-  - package-ecosystem: "uv"
-    directory: "/shodan"
-    open-pull-requests-limit: 50
-    schedule:
-      interval: "daily"
-    cooldown:
-      default-days: 1
-    groups:
-      python:
-        patterns:
-          - "*"
-    ignore:
       - dependency-name: "setuptools"
         versions: [">=81.0.0"]
 
