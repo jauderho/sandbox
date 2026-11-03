@@ -1467,17 +1467,18 @@ wheels = [
 
 [[package]]
 name = "darabonba-core"
-version = "1.0.9"
+version = "1.0.10"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
     { name = "alibabacloud-tea" },
     { name = "requests" },
+    { name = "urllib3" },
     { name = "websocket-client" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/49/72/a1ae02a243be50e48aeedcaa089c153227300ed419880b99ac68bc4a259f/darabonba_core-1.0.9.tar.gz", hash = "sha256:1026c965b4c2b48f89995eadad7ab780a03959812c8f8de4670eb44c48e5b179", size = 28077, upload-time = "2026-08-31T08:23:42.304Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e8/0c/3ae5e188672868b2535eda3e73a64dfb139c99517ba9bb5b634c5a5c9a11/darabonba_core-1.0.10.tar.gz", hash = "sha256:cef11108817e340e04bcfa299d502ca4f7fc922175a45ad122c9581dc8043c54", size = 30068, upload-time = "2026-11-03T09:46:50.549Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7a/da/756ee6c61192057c0140d67614e4db3b038c30c0ee8f7b3f3200d2c49bff/darabonba_core-1.0.9-py3-none-any.whl", hash = "sha256:dafe9bc93639ddd9954322df72382b27f51078dbb41c045274a70e59dce57d80", size = 31336, upload-time = "2026-08-31T08:23:41.283Z" },
+    { url = "https://files.pythonhosted.org/packages/05/0c/87c16b66d4749a566f5b5abc5d259470cccd9965cd765e8c11b76f7df936/darabonba_core-1.0.10-py3-none-any.whl", hash = "sha256:89692f239e6297493fe35968f55d269f576f57f4afc7a4ace202f4a70f758f90", size = 33184, upload-time = "2026-11-03T09:46:49.366Z" },
 ]
 
 [[package]]
@@ -1763,15 +1764,15 @@ wheels = [
 
 [[package]]
 name = "google-auth"
-version = "2.62.0"
+version = "2.62.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cryptography" },
     { name = "pyasn1-modules" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f5/b9/4b2528f30114b106e3c3a7298ba38d85e682fd1f83fe7c4a5b77c7677082/google_auth-2.62.0.tar.gz", hash = "sha256:0bef0ce54bdf9ce226c5d66e4264413bd918141c31bbe49fb52eac882f513d69", size = 398180, upload-time = "2026-10-12T19:20:48.328Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c4/38/d79ab09dcfc1e1638d887c8f65657619d3ebc454165c558ef79355971ce3/google_auth-2.62.1.tar.gz", hash = "sha256:3c8e1ce2553784ae17fd220e6f88df3281d86ab98019278f436d06dffab17a9e", size = 398519, upload-time = "2026-11-03T03:06:03.008Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/eb/a3/87fe9b7203ec2e56ea6a57c75e6d632eaf9487c7f7978cdad1d801bee0af/google_auth-2.62.0-py3-none-any.whl", hash = "sha256:4ff4319aeb4ad128409759d397a9fcafad126d0031d241cc0dd6b9a00b43e3f3", size = 267911, upload-time = "2026-10-12T19:20:46.355Z" },
+    { url = "https://files.pythonhosted.org/packages/14/dd/2e11f0976ecb3ce48ef3f324837460e9ea50071fa4eb01f1e49df87d3cee/google_auth-2.62.1-py3-none-any.whl", hash = "sha256:015399a5abde39033c69404cc1c079e6d4c2de2993e164c9f4eac6e5376ad72b", size = 267975, upload-time = "2026-11-03T03:06:01.422Z" },
 ]
 
 [[package]]
@@ -2034,11 +2035,11 @@ wheels = [
 
 [[package]]
 name = "iamdata"
-version = "0.1.202611021"
+version = "0.1.202611031"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/6d/d6/7b415511898d156fea9ac84b80f65f040f1352ee30d3e29cb0fd3598f031/iamdata-0.1.202611021.tar.gz", hash = "sha256:c40601d48f9a3e0be52e38d07bb9ea641871756e876c6f204a5d27f827b33b6b", size = 853620, upload-time = "2026-11-02T04:42:11.844Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/42/68/06b550c4df14e03c927e68951e7007e9f2437265f541cf4b187efb974403/iamdata-0.1.202611031.tar.gz", hash = "sha256:eb19eca8fd1fb96e5c66b3015f4f582ea05da99563644428b23ef956a6d8ca22", size = 853641, upload-time = "2026-11-03T04:42:26.17Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a4/64/07c5760362ca7616e016df6c4a9efd4266804858cda6189e5cbf13a1f5bb/iamdata-0.1.202611021-py3-none-any.whl", hash = "sha256:e9bb8a96c6da9a7fe78f3a0a1b44531f8fc9e314be6e09f52fd33b0bb301e4a4", size = 1311725, upload-time = "2026-11-02T04:42:10.152Z" },
+    { url = "https://files.pythonhosted.org/packages/3d/22/e8f45ada677b46a59934056ea08f2edc44acbb945944d8f675ba90a2783d/iamdata-0.1.202611031-py3-none-any.whl", hash = "sha256:4a832d47cbd5ab6f53466845b83f0893ecb9a6d708c8aceac3d26e71b7b1d662", size = 1312061, upload-time = "2026-11-03T04:42:24.528Z" },
 ]
 
 [[package]]
