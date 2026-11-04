@@ -200,11 +200,11 @@ wheels = [
 
 [[package]]
 name = "bracex"
-version = "3.2"
+version = "3.2.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/fb/37/adf8dd2cde958c2d086bdd87fc36b532fd824bf38f10be6348d65da0c8f9/bracex-3.2.tar.gz", hash = "sha256:0a3d40bfae4caae4d3bfd0ea715874799fab711c38fd4012cc35343e815405cd", size = 29771, upload-time = "2026-10-22T00:28:49.508Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/4d/fc/137095eb2f24ccf0b4db196abd9f5cfe74398a834af51d4bc4876e0beaf0/bracex-3.2.1.tar.gz", hash = "sha256:07a9b2100ceecc0c24afa1a1714bf8d4a6abb43d592939455f662b682ac9baa4", size = 32694, upload-time = "2026-11-03T14:13:43.53Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/42/65/8030b03de8137d1aab7dd6ecfecdba2fc22fc849fa35959b024f62293a99/bracex-3.2-py3-none-any.whl", hash = "sha256:8f3e908a452f66707e1d6d91b3d7d7d4c649d248df18537c0dc710aeb9c30d87", size = 12019, upload-time = "2026-10-22T00:28:48.233Z" },
+    { url = "https://files.pythonhosted.org/packages/47/ae/30dd8b027b4032b27e81364de5b74bfbef50b3c84c6aa0ead351bbb3749c/bracex-3.2.1-py3-none-any.whl", hash = "sha256:e8622d46b60ef6062b4091033f97a304e1b205e70c0285743c5038b73886a47e", size = 12527, upload-time = "2026-11-03T14:13:42.032Z" },
 ]
 
 [[package]]
@@ -479,7 +479,7 @@ wheels = [
 
 [[package]]
 name = "e2b"
-version = "2.62.0"
+version = "2.62.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
@@ -495,23 +495,23 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "wcmatch" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/05/2b/c8a6dccf865a092cc817a8d0de87cd91b5a218d72d59a06b8d7dca8e4641/e2b-2.62.0.tar.gz", hash = "sha256:480c447f26c8a3bd6340eef9f3cdbcf78764fddff574aa3270db84e3891ee6a9", size = 270189, upload-time = "2026-10-28T20:24:00.246Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/cb/60/985e4d6c213f9b5af974276b0bbb39b368c14d097666ca4b65290cfd2fae/e2b-2.62.1.tar.gz", hash = "sha256:dd471a6142690fc469620d69fd2176b3dbabfe055f97b3b81e45e74bb724e10f", size = 270860, upload-time = "2026-11-03T19:42:58.847Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d7/93/a6e540a6b4a96dd0af69dff089f6e6806b78c359d11367e82b7eeea42337/e2b-2.62.0-py3-none-any.whl", hash = "sha256:8773c829f2537c7543fbcc83610f5b7f295f5db1e02805d92036186880585158", size = 426444, upload-time = "2026-10-28T20:23:58.63Z" },
+    { url = "https://files.pythonhosted.org/packages/f9/3a/a8c82052b69d46b798a7c742b5cdb7077a6920b9911d486976d87ea4a1e3/e2b-2.62.1-py3-none-any.whl", hash = "sha256:67f43430ae8ba323e3196a46a53a332dec08172ecd2c12d6dd4b64700dfc77df", size = 427206, upload-time = "2026-11-03T19:42:57.038Z" },
 ]
 
 [[package]]
 name = "e2b-code-interpreter"
-version = "2.11.7"
+version = "2.11.8"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
     { name = "e2b" },
     { name = "httpx" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/84/6b/48a48544ffc7d1ef3dade2640d808936923519516363daa6042bb0b36913/e2b_code_interpreter-2.11.7.tar.gz", hash = "sha256:945082255058c763c0cac92b7341e1d1f33e4f57a5a0fce45344544b02afbc5a", size = 12547, upload-time = "2026-11-02T19:02:03.691Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d6/a9/710ace4530c5d27e26a0335ca5db874402b96acb18a9ec2fd271cb967319/e2b_code_interpreter-2.11.8.tar.gz", hash = "sha256:ffb09541b3db2e4d678de986cd514fddfb8a9d779a22709e676f2998a3d916f7", size = 12547, upload-time = "2026-11-03T19:43:02.043Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/70/59/0d8aaf9f9607bb3b1db437389ad012e77f3c00d4a3dd6f2badd2d10c42af/e2b_code_interpreter-2.11.7-py3-none-any.whl", hash = "sha256:4e57bdadc61722274d3bb8af537d072d31e4796ad0719db5f0c0273a4c70f085", size = 17361, upload-time = "2026-11-02T19:02:02.376Z" },
+    { url = "https://files.pythonhosted.org/packages/71/5f/60aaf8d85f4cf857e73f0ac18952f13548710d130f101faa0ad0181fc84b/e2b_code_interpreter-2.11.8-py3-none-any.whl", hash = "sha256:a6bf174809b5b3df5994b16ae70e5f8092fe59eb52b344a544c91c6f4d966d84", size = 17361, upload-time = "2026-11-03T19:43:00.931Z" },
 ]
 
 [[package]]
@@ -1943,11 +1943,11 @@ wheels = [
 
 [[package]]
 name = "soupsieve"
-version = "3.0.4"
+version = "4.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/19/63/0b6bae54546aed98d72f12d09df57b19a287f01c84d22047fa2e23772ab9/soupsieve-3.0.4.tar.gz", hash = "sha256:924fab84ae21604c19e175e1f39815eb6fa83ba23836e09e9de180925e5bc4c0", size = 119017, upload-time = "2026-10-22T00:45:26.362Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7d/5e/19b7c5d20bc2f226c44f33a9d9aab9740efed7555b96e656231fd564e514/soupsieve-4.0.tar.gz", hash = "sha256:ccd6470b256394ac44b08b86fd94b30a17d335a5335c8a3d15565f7b03d3c8cf", size = 151929, upload-time = "2026-11-03T14:28:55.388Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/07/66/473f7ca0be0b06e38ee8c85ee2db184e3981bd769fac2e7c19c8a8865211/soupsieve-3.0.4-py3-none-any.whl", hash = "sha256:8412826614f9c632227067d0985aeb9f584bd15efc852955430e097a9fe7afbf", size = 42458, upload-time = "2026-10-22T00:45:24.843Z" },
+    { url = "https://files.pythonhosted.org/packages/4f/18/d24df2f733ee0655c58717d51add4118a70e64692d0e47d403b9aac4cf98/soupsieve-4.0-py3-none-any.whl", hash = "sha256:5e7494bfce90e06676cfb4c5c2cf22243e98e5cf24646bb1ecdda46d318550a0", size = 50158, upload-time = "2026-11-03T14:28:53.988Z" },
 ]
 
 [[package]]
