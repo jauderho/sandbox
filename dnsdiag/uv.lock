@@ -195,17 +195,16 @@ wheels = [
 
 [[package]]
 name = "dnsdiag"
-version = "2.10.0"
+version = "2.10.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "cryptography" },
     { name = "cymruwhois" },
     { name = "dnspython", extra = ["doh", "doq"] },
     { name = "httpx2" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/9a/7f/cacf717d56f52b3e9a31b07d0ca7bbcbb42b4550e95ec5bdb296fde38de9/dnsdiag-2.10.0.tar.gz", hash = "sha256:05ee0a8f297c2104ffce6ede5de21fd01b51ed9f7e9bd3a3e9e3e2e4e287668a", size = 55764, upload-time = "2026-10-14T09:57:28.611Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0f/a8/3f3debaac49f3016781fb7b709651c3efebe9a409c1014191ddfb49d84ed/dnsdiag-2.10.1.tar.gz", hash = "sha256:4ec9ad4ee8d9474f63a42d456209f6275d221774f61800d6daa46d34455ad51e", size = 61637, upload-time = "2026-11-05T09:19:26.14Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/85/ba/9e1c6eba38a3e5f3a71d1a3d4c91078ba10e2df6bc00ec5a157d3b9837ce/dnsdiag-2.10.0-py3-none-any.whl", hash = "sha256:aa68977183d27d9f751b1e723a1755cc5c25de1ed5fda5e1a93ef5a01bcf3723", size = 35034, upload-time = "2026-10-14T10:01:53.713Z" },
+    { url = "https://files.pythonhosted.org/packages/6b/02/15aeae31b494b4be0c026b4afb0230dd957737bb5b39ceddb2d7f0fedf83/dnsdiag-2.10.1-py3-none-any.whl", hash = "sha256:5b10fd8b14d50448a696fbc355c0088ad662f6703c0a6cbbf7249884da655c2a", size = 35518, upload-time = "2026-11-05T09:19:24.978Z" },
 ]
 
 [[package]]
