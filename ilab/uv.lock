@@ -1254,23 +1254,23 @@ wheels = [
 
 [[package]]
 name = "jsonpatch"
-version = "1.43"
+version = "1.44"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jsonpointer" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/63/d2/b8e85a5c18344f2885dffa0eef881617540000bb10212939e7b5e4b9e650/jsonpatch-1.43.tar.gz", hash = "sha256:0dbd831e9853e4ec9a3897a9cca87716533d2c05f8b5ca0f6cde70d83e5758b6", size = 66374, upload-time = "2026-11-05T21:10:01.312Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/94/e0/5fff51896a5556c44890b4d211278284d6a4c847e509b4e585e5f4616060/jsonpatch-1.44.tar.gz", hash = "sha256:88fc1d9728168b4a9be27bb00de469dfb3cd28e8e5b568b24efb2ac583cba7b9", size = 66776, upload-time = "2026-11-06T11:42:33.614Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/10/dc/9296033289168d0d0be2e474be25daa6f50a24ca31a1f71c9883493826ee/jsonpatch-1.43-py3-none-any.whl", hash = "sha256:18a4a6e439d08a77ca8db4f0596f13511036a38c005fdf7b0c98fba2c148e5c4", size = 23165, upload-time = "2026-11-05T21:10:00.043Z" },
+    { url = "https://files.pythonhosted.org/packages/6f/56/890cb3357504efa2f9848ffa7df18e9e2583402aeeccbba2dc1c9318f5bb/jsonpatch-1.44-py3-none-any.whl", hash = "sha256:801f9238740d19eb101f9f7cea9c1c4810dbc4746f3edc89f7751d1798b917ff", size = 23283, upload-time = "2026-11-06T11:42:31.234Z" },
 ]
 
 [[package]]
 name = "jsonpointer"
-version = "3.9"
+version = "3.10"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/43/a1/33557aa08bb76a1d639db700b65b1aeb3ff10bece6da7bf034edf0262fc2/jsonpointer-3.9.tar.gz", hash = "sha256:b4c52dd58837669881f9677c0e83d73fa0b369feb67563ec4a8b1c13eb3c5a23", size = 19594, upload-time = "2026-11-05T21:05:37.833Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/93/f6/d1109cbb2c7cb692b432071802028052ba8d275c613c1a1cce427bc62c97/jsonpointer-3.10.tar.gz", hash = "sha256:69349c0e738c93e9efa501397091f49ad302ae686293effd05d7755c06f88ef0", size = 19950, upload-time = "2026-11-06T11:39:07.229Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fa/ab/476598b87ea0b15c6ed8bdc75c162f52667cfc9df36a15a35f166a0e4cae/jsonpointer-3.9-py3-none-any.whl", hash = "sha256:a2768328a37c58749b58a3fffd36843e161eeef4c7064832911c865f80bcaded", size = 10255, upload-time = "2026-11-05T21:05:36.673Z" },
+    { url = "https://files.pythonhosted.org/packages/2e/66/25cbb926e981a849d1cfcd36817fba6bfa5e9b6a2944c41230fe83ff25d2/jsonpointer-3.10-py3-none-any.whl", hash = "sha256:3b08b9e5239f1b683e31c9561c350d75ce3fa8cdd407130ca8491fdb0c9e56f3", size = 10376, upload-time = "2026-11-06T11:39:06.069Z" },
 ]
 
 [[package]]
@@ -1503,7 +1503,7 @@ wheels = [
 
 [[package]]
 name = "langgraph-sdk"
-version = "0.4.13"
+version = "0.4.14"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
@@ -1512,9 +1512,9 @@ dependencies = [
     { name = "orjson" },
     { name = "websockets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e0/30/ec5e936828dc1d0cdbd7b20fd3094feb79381fcc8470867cf69b82f3652a/langgraph_sdk-0.4.13.tar.gz", hash = "sha256:66586aab29426cfeab4f003f4215ec1cbcb88e08f437ec7c5d3f852b03826e6e", size = 370662, upload-time = "2026-11-05T02:15:54.291Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/28/4d/d26d0393fa9a305199ebc4fbc2550b9b5b4fd33603bd8bd149ad6b84616f/langgraph_sdk-0.4.14.tar.gz", hash = "sha256:13eb1fee92504d87c1f0f43c8e213e7ba0a46bd23a07e3198e413d48efac5833", size = 371481, upload-time = "2026-11-06T03:03:23.191Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c7/1d/8a8fc610fd5cc58a74f148c830d06c7e36770c59de018f9c7a9dd5b3f1e9/langgraph_sdk-0.4.13-py3-none-any.whl", hash = "sha256:c1c7e586653989c37cc0eb4d016b3154d69386d5fc31208224477f560657455f", size = 170894, upload-time = "2026-11-05T02:15:53.104Z" },
+    { url = "https://files.pythonhosted.org/packages/14/f1/3db4776fb3673dbae57b0ad2e9f14d9a2c44bde8932df7df0f7671572ed3/langgraph_sdk-0.4.14-py3-none-any.whl", hash = "sha256:d47a6755890ae537aa80613a3138680ac77f5d256a2d3953af95a96328e6964d", size = 171310, upload-time = "2026-11-06T03:03:21.723Z" },
 ]
 
 [[package]]
@@ -2433,7 +2433,7 @@ wheels = [
 
 [[package]]
 name = "posthog"
-version = "7.84.1"
+version = "7.84.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "backoff" },
@@ -2441,9 +2441,9 @@ dependencies = [
     { name = "requests" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/df/70/b2c3beb4a17e60bfdd6bcecedd4fd8d9a3519ccc8e5045a96622f497baa5/posthog-7.84.1.tar.gz", hash = "sha256:9222502d1a2d30abb5559590a4952bb18bd2dffdc5efa774ca2c5ddd066681a7", size = 904209, upload-time = "2026-11-05T23:48:54.767Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/29/bc/cfe9298758f358e30940ca6c353f1073b384f322c6bda50493d910093628/posthog-7.84.2.tar.gz", hash = "sha256:48080116094c12423c50b2d916d15a000b584b0bd2595649d7caacdfbe41db51", size = 904946, upload-time = "2026-11-06T08:17:58.573Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b5/ff/e78583912a6c6b21de3098ac4b187967ef82cfb40eb7556f596abad5d6f5/posthog-7.84.1-py3-none-any.whl", hash = "sha256:c8f5f66413e9aa09a7330d45bd00e4c3418dfd45a0d0d830df39d077226b1e5d", size = 1047101, upload-time = "2026-11-05T23:48:52.068Z" },
+    { url = "https://files.pythonhosted.org/packages/34/bb/36d1a6180a2ca8b09a6a0b654ab8b1cc54c489fa374b5c2fb162c1899059/posthog-7.84.2-py3-none-any.whl", hash = "sha256:a3765d4f3078bb3e1eba755885bb7b284353c8d02599cf906f4072c22a5759cc", size = 1047790, upload-time = "2026-11-06T08:17:56.326Z" },
 ]
 
 [[package]]
