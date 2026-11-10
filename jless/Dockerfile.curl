@@ -1,6 +1,6 @@
 # The build image is Alpine 3.18, whose repo stopped getting ca-certificates
 # updates, so pull the latest bundle from a current Alpine for the final image.
-FROM alpine:3.24.3@sha256:be2656061b536c1883c4034790e21d0a09c5aaaf51968b89368a3c0371ea2c9a AS certs
+FROM alpine:3.24.4@sha256:f59abe656b692d901e184be3445e084786602108599d2a51d229c0f5a48c71bf AS certs
 
 RUN apk add --no-cache --upgrade ca-certificates-bundle
 
