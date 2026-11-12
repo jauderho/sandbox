@@ -710,15 +710,6 @@ wheels = [
 ]
 
 [[package]]
-name = "distro"
-version = "1.9.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/fc/f8/98eea607f65de6527f8a2e8885fc8015d3e6f5775df186e443e0964a11c3/distro-1.9.0.tar.gz", hash = "sha256:2fa77c6fd8940f116ee1d6b94a2f90b13b5ea8d019b98bc8bafdcabcdd9bdbed", size = 60722, upload-time = "2023-12-24T09:54:32.31Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/12/b3/231ffd4ab1fc9d679809f356cebee130ac7daa00d6d6f3206dd4fd137e9e/distro-1.9.0-py3-none-any.whl", hash = "sha256:7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2", size = 20277, upload-time = "2023-12-24T09:54:30.421Z" },
-]
-
-[[package]]
 name = "django"
 version = "5.2.19"
 source = { registry = "https://pypi.org/simple" }
@@ -1797,15 +1788,15 @@ wheels = [
 
 [[package]]
 name = "llama-index-llms-openai"
-version = "0.8.3"
+version = "0.8.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "llama-index-core" },
     { name = "openai" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/4e/f3/32798fca5abd745bdce5bc43246eb3ce8346c2a2f905c90ad19ed51b49e9/llama_index_llms_openai-0.8.3.tar.gz", hash = "sha256:a27c174fb8670209581513cb592291508043f10b5afea5198454501921808ba6", size = 27976, upload-time = "2026-10-12T19:29:01.214Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/47/ad/25d42643d8bd9168729327d78e7c765044cb2611da20d0e55981235c4a3c/llama_index_llms_openai-0.8.4.tar.gz", hash = "sha256:7ce28b074f177baa19990a0f8935cb4f379766cd9d2de82dc426a9e0b9578bc1", size = 27964, upload-time = "2026-11-11T14:38:13.566Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/07/91/149b84210eb39e205bfbe01d85a3e76495fe0c536f4aa9167eb6d80b61a3/llama_index_llms_openai-0.8.3-py3-none-any.whl", hash = "sha256:b86deb1a9d296ca8a66cd2fa1e039e8752a529232cebaf0c7c1d0626c039a29a", size = 28995, upload-time = "2026-10-12T19:29:00.312Z" },
+    { url = "https://files.pythonhosted.org/packages/1b/26/707f8e892a9a3ef986966861c22ae26631bb6012746085dc5c35598fcd81/llama_index_llms_openai-0.8.4-py3-none-any.whl", hash = "sha256:7f154bbe4d0ccf75e9f6dfc66f7219b5009868e175602f8aa62c6007dc5436c2", size = 28987, upload-time = "2026-11-11T14:38:12.479Z" },
 ]
 
 [[package]]
@@ -2332,21 +2323,19 @@ wheels = [
 
 [[package]]
 name = "openai"
-version = "2.54.0"
+version = "3.49.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
-    { name = "distro" },
-    { name = "httpx" },
+    { name = "httpx2" },
     { name = "jiter" },
     { name = "pydantic" },
     { name = "sniffio" },
-    { name = "tqdm" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/50/9a/8c75e8c8a5b407a0586faeb2afac91674ff955c191ecc1d6d3b6669f6788/openai-2.54.0.tar.gz", hash = "sha256:e3e6f8bc1ba30ddf381ace1a14340eed381cb984a1a59bd0f34b5be3b5d49cfa", size = 1100285, upload-time = "2026-08-11T18:46:59.035Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/83/8f/adc3e9f7077c16a2417eebb219df2f5933f4fa532fab143c6bbb1c287c67/openai-3.49.0.tar.gz", hash = "sha256:44badf2bea9bcd643dafa0bc4d5a109a14395889219fd68b8560322288196e96", size = 2410883, upload-time = "2026-11-10T06:47:55.206Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/64/a8/bb76c7356de8ad57f59d5ff993d434df0607f07f08bcc9c9a5c275e399c0/openai-2.54.0-py3-none-any.whl", hash = "sha256:89089789197ccdb87f173a03145ed1598d00795220c93e96cf712b1cbf5e5f2b", size = 1660351, upload-time = "2026-08-11T18:46:56.684Z" },
+    { url = "https://files.pythonhosted.org/packages/fe/45/de8fbd25a1ca0a46f9641604a7cb991123daa7f292c27625223d685d9bac/openai-3.49.0-py3-none-any.whl", hash = "sha256:3977754792115027ba80ae16996ba3366478b5b228e1ab58e2660bd7ac8c3d78", size = 2442112, upload-time = "2026-11-10T06:47:52.422Z" },
 ]
 
 [[package]]
@@ -2361,7 +2350,7 @@ wheels = [
 [[package]]
 name = "paperless-ngx"
 version = "3.4.2"
-source = { git = "https://github.com/paperless-ngx/paperless-ngx.git#d05e96cda26449cf46c6fcaaf5d1f8941dc7276f" }
+source = { git = "https://github.com/paperless-ngx/paperless-ngx.git#f5ca9bbcb654216d48ace1186070313cbdd16755" }
 dependencies = [
     { name = "azure-ai-documentintelligence" },
     { name = "babel" },
@@ -3363,7 +3352,7 @@ wheels = [
 
 [[package]]
 name = "sentence-transformers"
-version = "6.2.0"
+version = "6.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "huggingface-hub" },
@@ -3377,9 +3366,9 @@ dependencies = [
     { name = "transformers" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7f/66/635443b9b1d7ea618c4699c8ad4c43b022ceac0c0a1dc4404b7597b38754/sentence_transformers-6.2.0.tar.gz", hash = "sha256:1e3cd8796ab7bcad4cfa2f51e2083d8b37b15d6b68e6fa6b91a147c67380574d", size = 600810, upload-time = "2026-10-21T12:26:50.404Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f0/8a/c3183ff50acb741b3ba56cee8f8c2537f438e318d149fb95fc2cb9e74095/sentence_transformers-6.3.0.tar.gz", hash = "sha256:a19acbf76a958817136ee4e89f90b483255d77f3dc9a7309814f7600592c450e", size = 625203, upload-time = "2026-11-11T14:34:59.986Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/66/ae/aac4fcaf7aa27daee96aa15d74770b38bb5ff50b1d31ccf12becd68c6e8b/sentence_transformers-6.2.0-py3-none-any.whl", hash = "sha256:ffb51ccfef65427cfa61776d0eeeb257600b0099cf0c7533ae9a6856d31e4665", size = 760709, upload-time = "2026-10-21T12:26:49.022Z" },
+    { url = "https://files.pythonhosted.org/packages/81/33/efddeeec49af6ddae162e2824c77f8b1136c2ad43ec8d8fec53fb70c93ef/sentence_transformers-6.3.0-py3-none-any.whl", hash = "sha256:fb89d876edb6cb3a82b7a90f74bd7eb1118412ffabe56b249bd1884d35e705db", size = 780346, upload-time = "2026-11-11T14:34:58.244Z" },
 ]
 
 [[package]]
