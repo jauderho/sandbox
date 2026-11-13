@@ -6,7 +6,7 @@
 #
 # Alpine is not usable: its wine package is 64-bit only, and HFDedicated.exe is a
 # 32-bit binary. Ubuntu with i386 multiarch gives us wine32.
-FROM ubuntu:26.10@sha256:262df65c0ec6bf8d9dcc87454f4330a05fae4b97825f45854af3b136666584c2
+FROM ubuntu:26.10@sha256:b5194b8e58989da0865ebc80078bf9f5f8742ec6a867c53f6ae699f6036756f7
 
 ARG BUILD_VERSION
 ARG DEBIAN_FRONTEND=noninteractive
