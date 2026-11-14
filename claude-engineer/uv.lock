@@ -479,7 +479,7 @@ wheels = [
 
 [[package]]
 name = "e2b"
-version = "2.63.0"
+version = "2.64.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
@@ -495,32 +495,32 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "wcmatch" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/9a/f7/4d317f3c22992152a934e1f47ec5c6eea61350635a1de628f2c8f4e34987/e2b-2.63.0.tar.gz", hash = "sha256:01c9aa7c8565e9730c6cfa075a10a67a7560db9e11f67458fb1bce21e0e2e0cc", size = 273466, upload-time = "2026-11-04T16:41:31.849Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a6/09/54b9afeb22f8af273c53bbdf10111f9e7f0ed98024c5b3926b386ddaa795/e2b-2.64.0.tar.gz", hash = "sha256:dbf6d9f673a0869dc34b1c73307dad1f7eedbd28101b4a25a8efd02f94b0b073", size = 279229, upload-time = "2026-11-13T19:10:37.087Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0a/24/4777775082b058be6c531bbeadf22d97897953320b24323b8dd45e902231/e2b-2.63.0-py3-none-any.whl", hash = "sha256:fae437d0de051c633e6854260d94c178d7155711387375b5a447b326efdda065", size = 430158, upload-time = "2026-11-04T16:41:30.173Z" },
+    { url = "https://files.pythonhosted.org/packages/7f/9b/ba5ea8c1e0c4884448d37c3aad6281ed2bd3edea2ca164784cf8bad8397b/e2b-2.64.0-py3-none-any.whl", hash = "sha256:a5fff266802661796539574878d82dbb8a17823be3013a6aeff1460b4cff1682", size = 438428, upload-time = "2026-11-13T19:10:35.601Z" },
 ]
 
 [[package]]
 name = "e2b-code-interpreter"
-version = "2.11.9"
+version = "2.11.10"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
     { name = "e2b" },
     { name = "httpx" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f2/40/e5d1b3efb7b6f370e10c1f848dfcba05eecc87da2dfb621604dcd1c6c1fd/e2b_code_interpreter-2.11.9.tar.gz", hash = "sha256:c9507b5bc5f4eac5f848f666fedbd0feafa7f89e4fc0e6fde6618e3744dad996", size = 12550, upload-time = "2026-11-04T16:41:34.545Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d9/b0/5c4792429f5d9782cbb77ec3ca3afa5371feb71fff2acee3ca38872668d1/e2b_code_interpreter-2.11.10.tar.gz", hash = "sha256:5f1d179e82be980c6459b9053e8d869a2c549aa9f303962b5b1e52e20847b65f", size = 12558, upload-time = "2026-11-13T19:10:39.446Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/07/ff/776c87730f0bd945a9aae61e11ecd3bc5b79116a1ae344163b566ad3e369/e2b_code_interpreter-2.11.9-py3-none-any.whl", hash = "sha256:cc1886209b1db5f23d8d4aaaec830da55959e309d3d5d720a62f2ff8ed798dd8", size = 17362, upload-time = "2026-11-04T16:41:33.352Z" },
+    { url = "https://files.pythonhosted.org/packages/26/d6/0896a58f9a4077b397badebcdfc2b2cc48f4f1ebbf85b2ed4e1a476fc4ed/e2b_code_interpreter-2.11.10-py3-none-any.whl", hash = "sha256:b5bd03df58db497fe046528a66a885b6029c25c91fd217f55e6750a54d1d6023", size = 17370, upload-time = "2026-11-13T19:10:38.419Z" },
 ]
 
 [[package]]
 name = "e2b-dockerfile-utils"
-version = "0.1.1"
+version = "0.1.2"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/5b/fc/15b2752ff08fcbb7c6b97451581e02dd189ddc9b6eb107bb17c35b04427f/e2b_dockerfile_utils-0.1.1.tar.gz", hash = "sha256:c1d4179bae6f3131fe0bbb1e6787ffb07c6c6dca8bdb3399abb3de9056b2a08f", size = 16844, upload-time = "2026-10-13T15:01:50.959Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/38/a1/a9ed52edfccca5bf234eb59a41b13f91d2bd34017a23ab1b32d5bb95eed7/e2b_dockerfile_utils-0.1.2.tar.gz", hash = "sha256:11cefef300ff4ef3a641d65b0e0be4dab3dc1dc988842c2104809b0385dc52a2", size = 17431, upload-time = "2026-11-13T19:10:34.238Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/23/39/8d3f59a073dd1637fccca4c921665935d9591cc1726b452f06ef7cdadabc/e2b_dockerfile_utils-0.1.1-py3-none-any.whl", hash = "sha256:c648ecf56b3ffdb6d91469580850f4691f019cb2c925405e776ad36b761204f1", size = 19901, upload-time = "2026-10-13T15:01:49.942Z" },
+    { url = "https://files.pythonhosted.org/packages/79/ec/973456753f7ad91b707124be6cb401dc358c8b71638e4f698ba903ce6c31/e2b_dockerfile_utils-0.1.2-py3-none-any.whl", hash = "sha256:5991ec2e4282372464ad39178580e9bb9a3efba7f396b8859b954b0d81050d40", size = 19900, upload-time = "2026-11-13T19:10:33.282Z" },
 ]
 
 [[package]]
