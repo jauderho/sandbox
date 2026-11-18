@@ -49,6 +49,7 @@ jobs:
             archive.ubuntu.com:80
             artifactcache.actions.githubusercontent.com:443
             auth.docker.io:443
+            docker-images-prod.s3.dualstack.us-east-1.amazonaws.com:443
             files.pythonhosted.org:443
             ghcr.io:443
             github.com:443
@@ -145,6 +146,7 @@ jobs:
             *.githubusercontent.com:443
             api.github.com:443
             auth.docker.io:443
+            docker-images-prod.s3.dualstack.us-east-1.amazonaws.com:443
             ghcr.io:443
             github.com:443
             objects.githubusercontent.com:443
