@@ -2175,7 +2175,7 @@ wheels = [
 
 [[package]]
 name = "keystoneauth1"
-version = "5.18.1"
+version = "5.19.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "iso8601" },
@@ -2184,9 +2184,9 @@ dependencies = [
     { name = "stevedore" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/04/af/268e14554c6bd4a2614872fb2b8431e466ce01415a9783b260ce7fb7ae5c/keystoneauth1-5.18.1.tar.gz", hash = "sha256:8970f9d103f335c39151366d70c001d1bb99b00d73845f03d47825e8dc35ff78", size = 319181, upload-time = "2026-10-12T09:04:48.166Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/75/b4/71d5bf07636cd038dd70375e3616748c41665dd15fba492cd86d6b47cabf/keystoneauth1-5.19.0.tar.gz", hash = "sha256:c344dbe0d096a01b37e2c282f4ece5c6e96d50811da791c676ef8ef967f45133", size = 325914, upload-time = "2026-11-19T12:08:45.705Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/78/24/38ccf4476c81435c834d4791804099f305b91087fad171ac17d18fc84ca9/keystoneauth1-5.18.1-py3-none-any.whl", hash = "sha256:2440f1f29e4aaaaf771893e8da7c098ca27548210dc13e964b53fd2aaaedd6b0", size = 367402, upload-time = "2026-10-12T09:04:46.753Z" },
+    { url = "https://files.pythonhosted.org/packages/72/81/2086e102524e5a3635b79b1f618c0fbea8281c0eb70867c65f057de4447d/keystoneauth1-5.19.0-py3-none-any.whl", hash = "sha256:4dcfa141e63836d2d16edd086494cb5cb3aa92fc7f57c9ff33086e180557f638", size = 369722, upload-time = "2026-11-19T12:08:44.473Z" },
 ]
 
 [[package]]
@@ -3044,7 +3044,7 @@ wheels = [
 
 [[package]]
 name = "prowler"
-version = "5.50.0"
+version = "5.51.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "alibabacloud-actiontrail20200706" },
@@ -3124,6 +3124,7 @@ dependencies = [
     { name = "oci" },
     { name = "okta" },
     { name = "openstacksdk" },
+    { name = "opentelemetry-api" },
     { name = "pandas" },
     { name = "py-iam-expand" },
     { name = "py-ocsf-models" },
@@ -3147,9 +3148,9 @@ dependencies = [
     { name = "uuid6" },
     { name = "zstandard" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e9/05/e6b08989b53821114d1bb0d0a01a26b873d27998a656e9ddb63325529dca/prowler-5.50.0.tar.gz", hash = "sha256:a99c2d9d5785fc854394e07c6b4f94db24c7ca3254d999d8c520ae1ee3ede852", size = 10399902, upload-time = "2026-11-16T16:31:07.109Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0f/79/a23266b1e3723c426967722d696191018a57df0cac717f364b389ea82b2f/prowler-5.51.0.tar.gz", hash = "sha256:2ad9662abc7974960dfeb65938d796c7744f32f5df07461c28baa0e330f4669b", size = 10417205, upload-time = "2026-11-19T11:15:15.824Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/41/9a/560abbae026397a8386b29c788f49131f4ea1c155d3e9336dceef7696da2/prowler-5.50.0-py3-none-any.whl", hash = "sha256:9308b0cb7fb92faf3ca503d249035047f175a9b4ad4474178c918f0bafa24edc", size = 12591182, upload-time = "2026-11-16T16:31:03.498Z" },
+    { url = "https://files.pythonhosted.org/packages/e6/47/aed7dbf554d2e1c9017f0c9c64655b7741fddb1a161c089c817cdc15d449/prowler-5.51.0-py3-none-any.whl", hash = "sha256:0b1f4f38124f9ffc95aabbaf44cf0a24a77c7bdce7fec368ad358aa10992ac55", size = 12615460, upload-time = "2026-11-19T11:15:12.466Z" },
 ]
 
 [[package]]
