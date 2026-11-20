@@ -1635,7 +1635,7 @@ wheels = [
 
 [[package]]
 name = "langsmith"
-version = "0.15.0"
+version = "0.15.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -1653,9 +1653,9 @@ dependencies = [
     { name = "xxhash" },
     { name = "zstandard" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/90/e9/a1828d873c6ccc2bc40afd9afeceee6a15a39ce49488790e026aba74495b/langsmith-0.15.0.tar.gz", hash = "sha256:74e9524c65e7acb7db907f04dee703bb81f0d8529509f9438057cee5fd62209f", size = 5109402, upload-time = "2026-11-17T12:37:20.59Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2d/c0/65952c5d22c20653edf3dc6581241ec570797b506aef9afde767772f9bae/langsmith-0.15.1.tar.gz", hash = "sha256:8257beb14033ed94550a37e24b836d204b57b79f91bf6620491b66600d26b546", size = 5119400, upload-time = "2026-11-20T01:59:24.486Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/52/9e/f263c4a2516698dec716fbdd80eee963bac3a88dfba2a1aa29e0b15c3d6b/langsmith-0.15.0-py3-none-any.whl", hash = "sha256:d6f7aa67e4c984ce7c7b6a1bdb7fc50ce3caaca032b42805f0f6a2d6458f42be", size = 1006779, upload-time = "2026-11-17T12:37:17.954Z" },
+    { url = "https://files.pythonhosted.org/packages/7a/7f/1ab9fe2a0fc733784fb37d29a5e54e514581ee955d68a57f1d2b377256d4/langsmith-0.15.1-py3-none-any.whl", hash = "sha256:9d8ddba87cd4812cbbf10f90aea63f82280a1df7cd8f6bfc446f83b23b62c246", size = 1033242, upload-time = "2026-11-20T01:59:22.304Z" },
 ]
 
 [[package]]
@@ -2262,11 +2262,11 @@ wheels = [
 
 [[package]]
 name = "platformdirs"
-version = "4.14.7"
+version = "4.14.8"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/a6/2c/ec57eede0db493e61443c76ac7b4d24e94a24050afb3d598bf3678487f75/platformdirs-4.14.7.tar.gz", hash = "sha256:5472257c1cf97a14658af52997011c7e59e4aebf3a24950b973c11b579e1b074", size = 75132, upload-time = "2026-11-17T20:03:32.656Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/71/18/0b0d99f5bf164f04a7a9534c3dbdbe4d5fd2b382667685ad40c192c4d3d1/platformdirs-4.14.8.tar.gz", hash = "sha256:96893d686e84e9e6f358a9ea41a8de544df66dbf2ba6cda250e7dc73acf85b9b", size = 87203, upload-time = "2026-11-20T08:14:52.63Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f8/46/3737af9f971f3934794103256d7f1ed6200a62be0c7b7ff09ac4cf6b3422/platformdirs-4.14.7-py3-none-any.whl", hash = "sha256:391513b74707c42335fff3ea17eaac657a7ee9ffcadd809634d34ea594d0122c", size = 89658, upload-time = "2026-11-17T20:03:31.16Z" },
+    { url = "https://files.pythonhosted.org/packages/5b/be/373cc7341f53bfd3acba3e5db62433fd960a45fcf73ad64a5f4d27e74910/platformdirs-4.14.8-py3-none-any.whl", hash = "sha256:1e34af590de4d978631b751eb2202f2fee4497537a17c1720b12fcf57b331392", size = 94267, upload-time = "2026-11-20T08:14:51.306Z" },
 ]
 
 [[package]]
@@ -2460,6 +2460,7 @@ source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "typing-extensions" },
 ]
+sdist = { url = "https://files.pythonhosted.org/packages/fb/63/0ceb815a7762576027ce388544c573d440574f95afb1302a2496b96db548/pydantic_core-2.50.5.tar.gz", hash = "sha256:1e740886083ff95530d694e6a3f09ed914bcf92a496d16acd307c6c3484fc36d", size = 523285, upload-time = "2026-11-19T12:56:38.067Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/91/86/570c4fedb8eeab9062032bc45875490090477fddce932328a20b9cb834ff/pydantic_core-2.50.5-cp314-cp314-macosx_10_12_x86_64.whl", hash = "sha256:00598ae680c6e4a17cda01910e49c0da8ce15610505e6c57cec3f15d83daef88", size = 2239820, upload-time = "2026-11-19T12:54:47.806Z" },
     { url = "https://files.pythonhosted.org/packages/5b/a6/5bc38ad74a5705bcfdf1fd4e2009a62638a45dc246e3b0fc8a86e8c9ff4b/pydantic_core-2.50.5-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:e8fe516a4b3b06e4ff83b9adee4a786d28a617e5fb5fe90bda49fb6f52a5ac19", size = 2111039, upload-time = "2026-11-19T12:54:49.244Z" },
