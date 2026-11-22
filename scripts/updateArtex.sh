@@ -27,6 +27,8 @@ IFS=$'\n\t'
 WORKFLOW=".github/workflows/artex.yml"
 UPSTREAM="BaaRai/ARTEX"
 BBOT_REPO="blacklanternsecurity/bbot"
+BOT_NAME="Gromit Bot"
+BOT_EMAIL="gromit-bot@users.noreply.github.com"
 
 # ---------------------------------------------------------------------------
 # Argument parsing
@@ -224,7 +226,11 @@ else
 		echo "[dryrun] Would update ${#changes[@]} value(s) in ${WORKFLOW}."
 	else
 		git add "$WORKFLOW"
-		git commit -S -s -m "Updated artex to ${TAG}" \
+		# Committed as Gromit Bot, like the other update scripts; set per command
+		# so the repo's own identity is left alone. Still signed (-S) with the
+		# configured signing key.
+		git -c user.name="$BOT_NAME" -c user.email="$BOT_EMAIL" \
+			commit -S -s -m "Updated artex to ${TAG}" \
 			-m "Synced with upstream's pins: $(printf '%s ' "${changes[@]}")"
 		git push
 		echo "Committed and pushed."
