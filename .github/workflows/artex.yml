@@ -13,7 +13,7 @@ on:
     - cron: "0 8 * * 1"
 
 env:
-  # Versions, one per line. scripts/updateArtex.sh keeps these in step with
+  # Versions, one per line. scripts/updateDockerDeps.sh keeps these in step with
   # upstream ARTEX's own pins; every *_VERSION, *_SHA256_* and *_COMMIT key
   # here is passed to the build as a build-arg (see "Collect build args").
   #
