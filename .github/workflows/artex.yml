@@ -5,25 +5,34 @@ on:
     branches:
       - main
     paths:
-      - artex/*
+      - artex/Dockerfile
+      - artex/bbot-deps.py
       - .github/workflows/artex.yml
   workflow_dispatch:
   schedule:
     - cron: "0 8 * * 1"
 
 env:
+  # Versions, one per line. scripts/updateArtex.sh keeps these in step with
+  # upstream ARTEX's own pins; every *_VERSION, *_SHA256_* and *_COMMIT key
+  # here is passed to the build as a build-arg (see "Collect build args").
+  #
+  # ARTEX release (git tag)
   BUILD_VERSION: "v0.7.0"
-  # 3.15: bbot deps (zstandard) publish no cp315 wheels yet
+  #
+  # Ours, not upstream's: uv's CPython (3.15 blocked: zstandard has no cp315 wheels)
   PYTHON_VERSION: "3.14"
+  #
+  # From upstream's Dockerfile
   BBOT_VERSION: "3.0.2"
   PLAYWRIGHT_MCP_VERSION: "0.0.83"
   PLAYWRIGHT_CLI_VERSION: "0.1.22"
-  # Overrides MCP/CLI's playwright-core prerelease pin (upstream's playwright
-  # version), so one Chromium revision serves MCP, CLI and the test runner.
+  # Also overrides MCP/CLI's playwright-core prerelease pin, so one Chromium
+  # revision serves MCP, CLI and the test runner.
   PLAYWRIGHT_VERSION: "1.64.1"
-  # api-recon's runtime harvester (skills/api-recon/scripts/package-lock.json)
-  PUPPETEER_CORE_VERSION: "23.11.1"
-  # Recon toolbox: a version bump is the version plus both per-arch digests.
+  SQLMAP_VERSION: "1.9.9"
+  SQLMAP_COMMIT: "cceda39208b5aad478de2c3f731df4239d9881f6"
+  # Release binaries: version plus the SHA-256 of each arch's asset
   NUCLEI_VERSION: "v3.11.1"
   NUCLEI_SHA256_AMD64: "ea63d4ae232808cd7c6bc00d0142428e231fab59dae01042246097d195835ab6"
   NUCLEI_SHA256_ARM64: "8044e3d9768ba0a744b2872c1a87e813006f013da97ca9f50f7661a4203bec07"
@@ -42,13 +51,15 @@ env:
   DALFOX_VERSION: "v3.2.4"
   DALFOX_SHA256_AMD64: "c11cfd2f8261973f0a2a2a1eba5a147ce77712a29acfa6343f9847fb8bb7eca2"
   DALFOX_SHA256_ARM64: "fd56b0b7da2d06868cd73b504f41d21314629feffcd5bdc97718db1c9dd2fa70"
-  # legba: bbot's module pins it, but bbot fetches a non-existent asset on amd64
+  #
+  # Derived: the versions bbot and api-recon pin
+  # legba: bbot's legba module pin (bbot cannot fetch the amd64 asset itself)
   LEGBA_VERSION: "1.1.1"
   LEGBA_SHA256_AMD64: "7a01c975e5329e8f819ca552b9b734102ffbd30f1b6f7739b1cf1108a22eb096"
   LEGBA_SHA256_ARM64: "dd50d37f1d6d7c4e64460816b46d5790223c6a4583fa2230da7bd506f272d9e0"
-  SQLMAP_VERSION: "1.9.9"
-  SQLMAP_COMMIT: "cceda39208b5aad478de2c3f731df4239d9881f6"
-  DOCKER_CLI_EXPERIMENTAL: enabled
+  # skills/api-recon/scripts/package-lock.json
+  PUPPETEER_CORE_VERSION: "23.11.1"
+  #
   REPOSITORY: ${{ github.actor }}/${{ github.workflow }}
 
 concurrency:
@@ -122,6 +133,19 @@ jobs:
           platform="${{ matrix.platform }}"
           echo "PLATFORM_PAIR=${platform//\//-}" >> "$GITHUB_ENV"
 
+      - name: Collect build args
+        id: args
+        env:
+          VARS: ${{ toJSON(env) }}
+        run: |
+          {
+            echo 'list<<EOF'
+            jq -r 'to_entries[]
+              | select(.key | test("^(BUILD_VERSION|[A-Z0-9_]+_(VERSION|SHA256_AMD64|SHA256_ARM64|COMMIT))$"))
+              | "\(.key)=\(.value)"' <<< "$VARS"
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+
       - name: Setup Buildx
         id: buildx
         uses: docker/setup-buildx-action@594f3bf4285d9ea8dc53c9a0c9c4092420091003 # v4.4.0
@@ -137,7 +161,6 @@ jobs:
             org.opencontainers.image.title=${{ env.REPOSITORY }}
 
       - name: GitHub login
-        if: ${{ github.event_name != 'pull_request' }}
         uses: docker/login-action@8aa5831fb8d48d8f76594c7ddde61ae58019f550 # v4.8.0
         with:
           registry: ghcr.io
@@ -151,53 +174,21 @@ jobs:
           context: ${{ github.workflow }}
           file: ${{ github.workflow }}/Dockerfile
           platforms: ${{ matrix.platform }}
-          build-args: |
-            BUILD_VERSION
-            PYTHON_VERSION
-            BBOT_VERSION
-            PLAYWRIGHT_MCP_VERSION
-            PLAYWRIGHT_CLI_VERSION
-            PLAYWRIGHT_VERSION
-            PUPPETEER_CORE_VERSION
-            NUCLEI_VERSION
-            NUCLEI_SHA256_AMD64
-            NUCLEI_SHA256_ARM64
-            HTTPX_VERSION
-            HTTPX_SHA256_AMD64
-            HTTPX_SHA256_ARM64
-            SUBFINDER_VERSION
-            SUBFINDER_SHA256_AMD64
-            SUBFINDER_SHA256_ARM64
-            KATANA_VERSION
-            KATANA_SHA256_AMD64
-            KATANA_SHA256_ARM64
-            FFUF_VERSION
-            FFUF_SHA256_AMD64
-            FFUF_SHA256_ARM64
-            DALFOX_VERSION
-            DALFOX_SHA256_AMD64
-            DALFOX_SHA256_ARM64
-            LEGBA_VERSION
-            LEGBA_SHA256_AMD64
-            LEGBA_SHA256_ARM64
-            SQLMAP_VERSION
-            SQLMAP_COMMIT
+          build-args: ${{ steps.args.outputs.list }}
           sbom: true
           provenance: true
           labels: ${{ steps.docker_meta.outputs.labels }}
           # Push untagged by digest; the merge job stitches the digests into the
           # tagged manifest lists so :latest is never overwritten per-platform.
-          outputs: type=image,name=ghcr.io/${{ env.REPOSITORY }},push-by-digest=true,name-canonical=true,push=${{ github.event_name != 'pull_request' }}
+          outputs: type=image,name=ghcr.io/${{ env.REPOSITORY }},push-by-digest=true,name-canonical=true,push=true
 
       - name: Export digest
-        if: ${{ github.event_name != 'pull_request' }}
         run: |
           mkdir -p /tmp/digests
           digest="${{ steps.build.outputs.digest }}"
           touch "/tmp/digests/${digest#sha256:}"
 
       - name: Upload digest
-        if: ${{ github.event_name != 'pull_request' }}
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: digests-${{ env.PLATFORM_PAIR }}
@@ -207,7 +198,6 @@ jobs:
 
   merge:
     needs: build
-    if: ${{ github.event_name != 'pull_request' }}
     runs-on: ubuntu-26.04
     permissions:
       packages: write
