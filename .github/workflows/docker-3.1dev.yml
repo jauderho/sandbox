@@ -15,8 +15,8 @@ on:
 env:
   BUILD_VERSION: "3.1dev"
   DOCKER_CLI_EXPERIMENTAL: enabled
-  #REPOSITORY: ${{ github.actor }}/${{ github.workflow }}
-  REPOSITORY: ${{ github.actor }}/testssl.sh
+  #REPOSITORY: ${{ github.repository_owner }}/${{ github.workflow }}
+  REPOSITORY: ${{ github.repository_owner }}/testssl.sh
 
 permissions:
   contents: read

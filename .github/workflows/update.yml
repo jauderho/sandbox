@@ -14,7 +14,7 @@ on:
 
 env:
   DOCKER_CLI_EXPERIMENTAL: enabled
-  REPOSITORY: ${{ github.actor }}/${{ github.workflow }} 
+  REPOSITORY: ${{ github.repository_owner }}/${{ github.workflow }} 
 
 concurrency:
   group: ${{ github.workflow }}
@@ -79,7 +79,7 @@ jobs:
           git config --global user.signingkey ~/.ssh/id_ed25519.pub
           git config --global gpg.format ssh
           git config --global commit.gpgsign true
-          PAT="${{ github.actor }}/${{ secrets.UPDATE_SECRET }}" scripts/updateDockerDeps.sh
+          PAT="${{ github.repository_owner }}/${{ secrets.UPDATE_SECRET }}" scripts/updateDockerDeps.sh
           rm -rf ~/.ssh
 
   update-python-uv:

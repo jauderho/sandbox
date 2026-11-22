@@ -16,7 +16,7 @@ env:
   # container start, so this version tracks the image, not Homefront.
   BUILD_VERSION: "1.0.0"
   DOCKER_CLI_EXPERIMENTAL: enabled
-  REPOSITORY: ${{ github.actor }}/${{ github.workflow }}
+  REPOSITORY: ${{ github.repository_owner }}/${{ github.workflow }}
 
 permissions:
   contents: read

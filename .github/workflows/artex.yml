@@ -60,7 +60,7 @@ env:
   # skills/api-recon/scripts/package-lock.json
   PUPPETEER_CORE_VERSION: "23.11.1"
   #
-  REPOSITORY: ${{ github.actor }}/${{ github.workflow }}
+  REPOSITORY: ${{ github.repository_owner }}/${{ github.workflow }}
 
 concurrency:
   group: ${{ github.workflow }}

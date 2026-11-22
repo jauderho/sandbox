@@ -17,7 +17,7 @@ env:
   OPENSSL_VERSION: "3.0.0"
   PCRE_VERSION: "8.45"
   DOCKER_CLI_EXPERIMENTAL: enabled
-  REPOSITORY: ${{ github.actor }}/${{ github.workflow }} 
+  REPOSITORY: ${{ github.repository_owner }}/${{ github.workflow }} 
 
 permissions:
   contents: read
