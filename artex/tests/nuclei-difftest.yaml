@@ -1,0 +1,20 @@
+id: artex-difftest-title
+
+info:
+  name: ARTEX differential test title match
+  author: difftest
+  severity: info
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/"
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "<title>DIFF OK</title>"
+      - type: status
+        status:
+          - 200

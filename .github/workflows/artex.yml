@@ -18,6 +18,11 @@ env:
   BBOT_VERSION: "3.0.2"
   PLAYWRIGHT_MCP_VERSION: "0.0.83"
   PLAYWRIGHT_CLI_VERSION: "0.1.22"
+  # Overrides MCP/CLI's playwright-core prerelease pin (upstream's playwright
+  # version), so one Chromium revision serves MCP, CLI and the test runner.
+  PLAYWRIGHT_VERSION: "1.64.1"
+  # api-recon's runtime harvester (skills/api-recon/scripts/package-lock.json)
+  PUPPETEER_CORE_VERSION: "23.11.1"
   # Recon toolbox: a version bump is the version plus both per-arch digests.
   NUCLEI_VERSION: "v3.11.1"
   NUCLEI_SHA256_AMD64: "ea63d4ae232808cd7c6bc00d0142428e231fab59dae01042246097d195835ab6"
@@ -152,6 +157,8 @@ jobs:
             BBOT_VERSION
             PLAYWRIGHT_MCP_VERSION
             PLAYWRIGHT_CLI_VERSION
+            PLAYWRIGHT_VERSION
+            PUPPETEER_CORE_VERSION
             NUCLEI_VERSION
             NUCLEI_SHA256_AMD64
             NUCLEI_SHA256_ARM64

@@ -238,8 +238,14 @@ RUN --mount=from=uv,source=/uv,target=/usr/local/bin/uv \
 
 # ----------------------------------------------------------------------------
 # Playwright MCP + CLI, installed with bun, plus the one browser they drive.
-# Both pin the same playwright-core (checked below), so a single Chromium
-# revision serves both. ARTEX runs MCP with --headless --browser chromium,
+# MCP and CLI pin a playwright-core prerelease while upstream also ships
+# playwright@PLAYWRIGHT_VERSION, which wants a different Chromium revision, so
+# upstream carries two. An override pins everything to PLAYWRIGHT_VERSION
+# (checked below: exactly one playwright-core), so one Chromium revision serves
+# MCP, CLI and the test runner. Drop the override once MCP/CLI pin it too.
+# @playwright/test and puppeteer-core (api-recon's harvester, version from its
+# package-lock.json) are prebuilt here and found through NODE_PATH, so agents
+# need no registry access for them. ARTEX runs MCP with --headless --browser chromium,
 # which still launches full Chromium (new headless mode, verified), so the
 # separate headless shell is not installed (--no-shell). Node runs the
 # download here and the packages at runtime: Playwright does not run reliably
@@ -251,6 +257,8 @@ FROM ubuntu:26.10@sha256:c4ca31b6e93261c5dd773826f789738a49e414ca04fc094b1ccd0f9
 ARG DEBIAN_FRONTEND=noninteractive
 ARG PLAYWRIGHT_MCP_VERSION
 ARG PLAYWRIGHT_CLI_VERSION
+ARG PLAYWRIGHT_VERSION
+ARG PUPPETEER_CORE_VERSION
 
 ENV PLAYWRIGHT_BROWSERS_PATH=/opt/ms-playwright
 
@@ -258,14 +266,16 @@ WORKDIR /opt/playwright
 
 RUN --mount=from=bun,source=/usr/local/bin/bun,target=/usr/local/bin/bun \
 	set -eux; \
-	test -n "${PLAYWRIGHT_MCP_VERSION}" -a -n "${PLAYWRIGHT_CLI_VERSION}"; \
+	test -n "${PLAYWRIGHT_MCP_VERSION}" -a -n "${PLAYWRIGHT_CLI_VERSION}" -a -n "${PLAYWRIGHT_VERSION}" -a -n "${PUPPETEER_CORE_VERSION}"; \
 	apt-get update; \
 	apt-get install -y --no-install-recommends ca-certificates nodejs; \
-	bun add --exact "@playwright/mcp@${PLAYWRIGHT_MCP_VERSION}" "@playwright/cli@${PLAYWRIGHT_CLI_VERSION}"; \
-	core() { (cd "node_modules/$1" && node -p "require('path').dirname(require.resolve('playwright-core/package.json'))"); }; \
-	mcp_core="$(core @playwright/mcp)"; cli_core="$(core @playwright/cli)"; \
-	[ "$mcp_core" = "$cli_core" ] || { echo "mcp and cli resolve different playwright-core: $mcp_core vs $cli_core" >&2; exit 1; }; \
-	node "$mcp_core/cli.js" install --no-shell chromium; \
+	printf '{"overrides":{"playwright":"%s","playwright-core":"%s"}}\n' "${PLAYWRIGHT_VERSION}" "${PLAYWRIGHT_VERSION}" > package.json; \
+	bun add --exact "@playwright/mcp@${PLAYWRIGHT_MCP_VERSION}" "@playwright/cli@${PLAYWRIGHT_CLI_VERSION}" \
+		"playwright@${PLAYWRIGHT_VERSION}" "@playwright/test@${PLAYWRIGHT_VERSION}" "puppeteer-core@${PUPPETEER_CORE_VERSION}"; \
+	cores="$(find node_modules -path '*/playwright-core/package.json' | wc -l)"; \
+	[ "$cores" -eq 1 ] || { echo "expected one playwright-core, found $cores" >&2; exit 1; }; \
+	[ "$(node -p "require('playwright-core/package.json').version")" = "${PLAYWRIGHT_VERSION}" ]; \
+	node node_modules/playwright-core/cli.js install --no-shell chromium; \
 	chrome_dir="$(dirname "$(find "${PLAYWRIGHT_BROWSERS_PATH}" -path '*/chromium-*' -type f -name chrome)")"; \
 	test -f "$chrome_dir/locales/en-US.pak"; \
 	rm -rf "$chrome_dir/WidevineCdm"; \
@@ -305,6 +315,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 # bbot also leaves an empty .<random> probe file in each dir per run; the
 # build removes its own.
 ENV PLAYWRIGHT_BROWSERS_PATH=/opt/ms-playwright \
+	NODE_PATH=/opt/playwright/node_modules \
 	PATH="/opt/playwright/node_modules/.bin:${PATH}"
 
 COPY --from=python /opt/python /opt/python
@@ -347,6 +358,8 @@ RUN set -eux; \
 	test "$(echo "$chrome" | wc -l)" -eq 1 -a -x "$chrome"; \
 	mkdir /opt/bbot-home/tools/chrome-linux; \
 	ln -s "$chrome" /opt/bbot-home/tools/chrome-linux/chrome; \
+	ln -s "$chrome" /usr/bin/chromium; \
+	node -e "require('@playwright/test'); require('puppeteer-core')"; \
 	cd /opt/bbot-home; \
 	mkdir -p temp scans logs tools/nuclei-state; \
 	chmod 1777 cache cache/depsinstaller cache/depsinstaller/command_status lib temp scans logs tools tools/nuclei-state; \

@@ -1,0 +1,18 @@
+# check	class	reason
+meta.size_mb	info	image size (upstream ~5.6 GB, ours ~2 GB)
+meta.env.PLAYWRIGHT_BROWSERS_PATH	delta	browsers in /opt instead of /root/.cache; same Chromium revision, same MCP/CLI results
+ver.python	delta	Python 3.14 via uv (upstream python:3.12-slim)
+ver.node	delta	Ubuntu 26.10 nodejs (upstream nodejs.org 22 tarball); Playwright needs >=20
+ver.nmap	delta	Ubuntu 26.10 package (upstream Debian bookworm)
+ver.rg	delta	Ubuntu 26.10 package (upstream Debian bookworm)
+ver.jq	delta	Ubuntu 26.10 package (upstream Debian bookworm)
+ver.curl	delta	Ubuntu 26.10 package (upstream Debian bookworm)
+ver.git	delta	Ubuntu 26.10 package (upstream Debian bookworm)
+ver.vim	delta	Ubuntu 26.10 package (upstream Debian bookworm)
+ver.wget	delta	Ubuntu 26.10 package (upstream Debian bookworm)
+bin.bzip2	delta	extracted bbot archives need it; harmless extra
+bin.npm	delta	no npm by design (bun used at build time); ARTEX launches playwright-mcp directly, never npx
+bin.npx	delta	no npx by design; ARTEX migrates npx browser MCP rows to the playwright-mcp binary
+ver.legba	fixed	bbot's legba download uses the wrong arch name, so upstream never installs it
+live.legba	fixed	legba absent upstream
+bbot.live.screenshot	fixed	upstream installs bbot tools under /root/.bbot, invisible to the executor uid; gowitness fails

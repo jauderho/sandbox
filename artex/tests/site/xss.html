@@ -1,0 +1,5 @@
+<html><head><title>XSS</title></head><body><div id=out></div><script>
+const q=new URLSearchParams(location.search).get('q')||'';document.getElementById('out').innerHTML=q;
+document.cookie='sid=abc123; path=/';
+fetch('/p2.html').then(r=>document.title='XSS fetched '+r.status);
+</script><iframe src="/p2.html"></iframe><form action="/p2.html"><input name=user id=user><button id=go>go</button></form></body></html>
