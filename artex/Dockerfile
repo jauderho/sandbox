@@ -161,6 +161,8 @@ RUN set -eux; \
 # Everything lives under /opt at the same paths as in the runtime stage, so
 # the venv's interpreter link resolves after the copy. Bytecode is compiled
 # here: the executor uid cannot write __pycache__ under /opt at runtime.
+# CPython's GUI parts (tkinter, Tcl/Tk, IDLE, turtle) are dropped: nothing in
+# a headless image can use them.
 # ----------------------------------------------------------------------------
 FROM ubuntu:26.10@sha256:c4ca31b6e93261c5dd773826f789738a49e414ca04fc094b1ccd0f91e07329a2 AS python
 
@@ -208,6 +210,11 @@ RUN --mount=from=uv,source=/uv,target=/usr/local/bin/uv \
 	apt-get install -y --no-install-recommends build-essential zlib1g-dev git ca-certificates; \
 	uv python install "${PYTHON_VERSION}"; \
 	ln -s "$(uv python find "${PYTHON_VERSION}")" /opt/python/python3; \
+	py_home="$(dirname "$(dirname "$(readlink -f /opt/python/python3)")")"; \
+	rm -rf "$py_home"/lib/python3*/tkinter "$py_home"/lib/python3*/idlelib "$py_home"/lib/python3*/turtledemo \
+		"$py_home"/lib/python3*/turtle.py "$py_home"/lib/python3*/lib-dynload/_tkinter* \
+		"$py_home"/lib/libtcl* "$py_home"/lib/libtk* "$py_home"/lib/tcl* "$py_home"/lib/tk* "$py_home"/bin/idle*; \
+	! /opt/python/python3 -c 'import tkinter' 2>/dev/null; \
 	uv venv --seed --python "${PYTHON_VERSION}" /opt/bbot; \
 	uv pip install --python /opt/bbot/bin/python "bbot==${BBOT_VERSION}"; \
 	bbot_pkg="$(/opt/bbot/bin/python -c 'import bbot, os; print(os.path.dirname(bbot.__file__))')"; \
@@ -236,7 +243,8 @@ RUN --mount=from=uv,source=/uv,target=/usr/local/bin/uv \
 # which still launches full Chromium (new headless mode, verified), so the
 # separate headless shell is not installed (--no-shell). Node runs the
 # download here and the packages at runtime: Playwright does not run reliably
-# on bun.
+# on bun. Headless browsing needs neither the Widevine DRM module nor UI
+# translations, so those go (Chromium falls back to en-US).
 # ----------------------------------------------------------------------------
 FROM ubuntu:26.10@sha256:c4ca31b6e93261c5dd773826f789738a49e414ca04fc094b1ccd0f91e07329a2 AS playwright
 
@@ -258,6 +266,10 @@ RUN --mount=from=bun,source=/usr/local/bin/bun,target=/usr/local/bin/bun \
 	mcp_core="$(core @playwright/mcp)"; cli_core="$(core @playwright/cli)"; \
 	[ "$mcp_core" = "$cli_core" ] || { echo "mcp and cli resolve different playwright-core: $mcp_core vs $cli_core" >&2; exit 1; }; \
 	node "$mcp_core/cli.js" install --no-shell chromium; \
+	chrome_dir="$(dirname "$(find "${PLAYWRIGHT_BROWSERS_PATH}" -path '*/chromium-*' -type f -name chrome)")"; \
+	test -f "$chrome_dir/locales/en-US.pak"; \
+	rm -rf "$chrome_dir/WidevineCdm"; \
+	find "$chrome_dir/locales" -type f ! -name en-US.pak -delete; \
 	rm -rf /root/.bun
 
 
@@ -310,7 +322,9 @@ COPY --from=tools /opt/sqlmap /opt/sqlmap
 #   libpcap0.8t64: masscan dlopen()s libpcap.so.0.8 (its libibverbs1 needs
 #     systemd-sysusers; the standalone package satisfies that without systemd);
 #   libssl4, libzstd1, zlib1g: linked by medusa;
-#   Chromium's shared libraries (playwright install-deps).
+#   Chromium's shared libraries and fonts (playwright install-deps), minus
+#     fonts-unifont, a 33 MB bitmap fallback for rare scripts (the CJK, Thai,
+#     Latin and emoji fonts stay).
 # uv's CPython is linked as python/python3 ahead of Ubuntu's own; sqlmap and
 # agent scripts run on it.
 RUN set -eux; \
@@ -321,6 +335,7 @@ RUN set -eux; \
 		dnsutils iputils-ping netcat-openbsd inetutils-telnet whois nmap \
 		nodejs 7zip bzip2 libpcap0.8t64 systemd-standalone-sysusers libssl4 libzstd1 zlib1g; \
 	playwright install-deps chromium; \
+	apt-get purge -y fonts-unifont; \
 	apt-get autoremove -y --purge; \
 	apt-get clean; \
 	rm -rf /var/lib/apt/lists/*; \
@@ -354,17 +369,16 @@ RUN set -eux; \
 
 WORKDIR /app
 
-COPY --from=build /out/artex /app/artex
+COPY --from=build --chmod=0755 /out/artex /app/artex
 # start.sh relaunches artex after a crash and forwards SIGTERM to it (docker
 # stop signals PID 1 only).
-COPY --from=src /src/start.sh /app/start.sh
+COPY --from=src --chmod=0755 /src/start.sh /app/start.sh
 COPY --from=src /src/skills/ /app/skills/
 
 # ARTEX runs as root by design: it drops every agent process to a separate
 # executor uid itself, which needs root. In exchange: no setuid/setgid
 # programs, so an agent process cannot regain root through one.
-RUN chmod 0755 /app/artex /app/start.sh \
-	&& mkdir -p -m 0700 /app/keys \
+RUN mkdir -p -m 0700 /app/keys \
 	&& find / -xdev -perm /6000 -type f -exec chmod a-s {} +
 
 # data/: traffic index, task files, transcripts. keys/: jwt.key, secret.key.
