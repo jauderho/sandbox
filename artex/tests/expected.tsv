@@ -16,3 +16,20 @@ bin.npx	delta	no npx by design; ARTEX migrates npx browser MCP rows to the playw
 ver.legba	fixed	bbot's legba download uses the wrong arch name, so upstream never installs it
 live.legba	fixed	legba absent upstream
 bbot.live.screenshot	fixed	upstream installs bbot tools under /root/.bbot, invisible to the executor uid; gowitness fails
+eco.npm	delta	no npm by design; packages skills need are prebuilt (see eco.pre.*)
+eco.npx	delta	no npx by design; playwright, playwright-cli and playwright-mcp are on PATH
+eco.npx.noinstall.playwright	delta	no npx; `playwright --version` gives the same 1.64.1 (eco.playwright)
+eco.apirecon.install	delta	no npm; puppeteer-core is prebuilt and the harvest still succeeds (eco.apirecon.harvest)
+eco.pwtest.install	delta	no npm; @playwright/test 1.64.1 is prebuilt (eco.pre.pwtest.channel)
+eco.pwtest.run	delta	needs the npm install above; the prebuilt runner passes (eco.pre.pwtest.channel)
+eco.pre.pwtest.default	delta	headless shell not shipped; configs set channel chromium (one Chromium for everything)
+eco.browsers	delta	one Chromium revision via the playwright override; upstream carries two plus two headless shells
+eco.pre.apirecon.api	fixed	harvester works without npm install (prebuilt puppeteer-core via NODE_PATH)
+eco.pre.pwtest.channel	fixed	test runner works without npm install (prebuilt @playwright/test via NODE_PATH)
+eco.chromium.bin	fixed	upstream installs /usr/bin/chromium on arm64 only; ours links Playwright Chromium on both arches
+eco.apirecon.harvest	fixed	needs /usr/bin/chromium, which upstream amd64 lacks
+eco.apirecon.api	fixed	needs /usr/bin/chromium, which upstream amd64 lacks
+bbot.live.retirejs	fixed	upstream retire binary sits under /root/.bbot, invisible to the executor uid; retirejs errors and finds nothing
+bbot.dry.errors	fixed	upstream amd64: gowitness hard-fails setup as the executor (Chrome under /root/.bbot); ours only the expected portscan/interactsh errors
+bbot.dry.firsterr	fixed	upstream amd64: gowitness cannot find Chrome as the executor
+bbot.live.url	fixed	upstream amd64: the live scan aborts on gowitness setup, no output

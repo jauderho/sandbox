@@ -89,12 +89,15 @@ r bbot.dry.failed "$(grep -oE 'Failed to (set up|load)[^:]*: ?[a-z0-9_, ]*|modul
 r bbot.dry.errors "$(grep -cE '\[(ERRR|CRIT)\]' "$W/bbot-dry.log")"
 r bbot.dry.firsterr "$(grep -E '\[(ERRR|CRIT)\]' "$W/bbot-dry.log" | grep -vE 'generic_ssrf|host_header|portscan|interactsh' | head -1 | cut -c1-140)"
 # live scan of the local site: http + robots + retirejs + gowitness (Chromium)
-r bbot.live.exit "$(T=420 st bbot-live bbot -t "$B/" -m http,robots,retirejs,gowitness -om json --no-deps -y --no-color -n live -o "$W/scans")"
+r bbot.live.exit "$(T=420 st bbot-live bbot -t "$B/" -m http,robots,retirejs,gowitness -c web.spider_distance=1 web.spider_depth=2 -om json --no-deps -y --no-color -n live -o "$W/scans")"
 j="$W/scans/live/output.json"
 cnt() { [ -f "$j" ] && grep -c "\"type\": *\"$1\"" "$j" || echo nojson; }
-r bbot.live.url "$(cnt URL)"
-r bbot.live.retirejs "$( [ -f "$j" ] && grep -qiE 'jquery.*1\.8\.1|retirejs' "$j" && echo finding || echo none)"
-r bbot.live.screenshot "$(cnt WEBSCREENSHOT)"
+# Page URLs only: with gowitness running, bbot races on the .js URL (seen
+# 4 or 5 URLs run to run in the same image), so it is not counted here.
+urls() { for p in / /p2.html /r /item; do grep -q "\"type\": *\"URL\".*\"url\": *\"$B$p\"," "$j" 2>/dev/null && printf '%s ' "$p"; done; }
+r bbot.live.url "$([ -f "$j" ] && urls || echo nojson)"
+r bbot.live.retirejs "$([ -f "$j" ] && grep -c '"type": *"FINDING".*Vulnerable JavaScript library detected: jquery v1.8.1' "$j" || echo nojson)"
+r bbot.live.screenshot "$(n=$(cnt WEBSCREENSHOT); [ "$n" != nojson ] && [ "$n" -gt 0 ] && echo taken || echo "none:$n")"
 r bbot.live.robots "$( [ -f "$j" ] && grep -q 'secret-admin' "$j" && echo found || echo none)"
 
 kill %1 2>/dev/null

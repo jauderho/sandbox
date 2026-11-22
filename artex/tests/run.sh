@@ -50,7 +50,7 @@ docker run --rm -e MODS="$MODS" --entrypoint sh "$img" -c \
 # ---- server boot against PostgreSQL ------------------------------------------
 echo "[$label] server"
 n="artex-dt-$label"
-docker rm -f "$n-app" "$n-pg" >/dev/null 2>&1; docker network rm "$n" >/dev/null 2>&1
+docker rm -f -v "$n-app" "$n-pg" >/dev/null 2>&1; docker network rm "$n" >/dev/null 2>&1
 docker network create "$n" >/dev/null
 docker run -d --name "$n-pg" --network "$n" -e POSTGRES_USER=artex -e POSTGRES_PASSWORD=difftest \
   -e POSTGRES_DB=artex postgres:16-alpine >/dev/null
@@ -78,6 +78,6 @@ t0=$(date +%s); docker stop -t 15 "$n-app" >/dev/null; dt=$(($(date +%s) - t0))
 docker logs "$n-app" >"$logs/server.log" 2>&1
 r server.stop "$([ $dt -lt 10 ] && echo graceful || echo "slow")"
 r server.stop.msg "$(grep -c '\[artex\] stopped' "$logs/server.log")"
-docker rm -f "$n-app" "$n-pg" >/dev/null 2>&1; docker network rm "$n" >/dev/null 2>&1
+docker rm -f -v "$n-app" "$n-pg" >/dev/null 2>&1; docker network rm "$n" >/dev/null 2>&1
 
 echo "[$label] done: $(wc -l <"$out" | tr -d ' ') checks -> $out"
