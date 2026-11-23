@@ -27,7 +27,7 @@ FROM oven/bun:1.4.5@sha256:3aa040e5445efa09d75bb428a64ba50db13e2b3ac9b6b0c7f1456
 # ----------------------------------------------------------------------------
 # Source: one shallow clone of the pinned tag, shared by the web and Go stages.
 # ----------------------------------------------------------------------------
-FROM --platform=$BUILDPLATFORM ghcr.io/jauderho/golang:1.27.4-alpine3.24@sha256:9feef5080ab24dd809529a9d1b0a99283174f849f08ec38d6d6985f36e0362b3 AS src
+FROM --platform=$BUILDPLATFORM ghcr.io/jauderho/golang:1.27.4-alpine3.24@sha256:3639a8b3e4cc482b070661c2b0e342ed633fd4a982c083b92738f168d9a9b273 AS src
 
 ARG BUILD_VERSION
 ARG GIT_URL=https://github.com/BaaRai/ARTEX.git
@@ -60,7 +60,7 @@ RUN bun install --ignore-scripts \
 # Go binary with the UI embedded (-tags embedui), same flags as upstream's
 # build.sh. CGO-free, so it cross-compiles to $TARGETARCH without QEMU.
 # ----------------------------------------------------------------------------
-FROM --platform=$BUILDPLATFORM ghcr.io/jauderho/golang:1.27.4-alpine3.24@sha256:9feef5080ab24dd809529a9d1b0a99283174f849f08ec38d6d6985f36e0362b3 AS build
+FROM --platform=$BUILDPLATFORM ghcr.io/jauderho/golang:1.27.4-alpine3.24@sha256:3639a8b3e4cc482b070661c2b0e342ed633fd4a982c083b92738f168d9a9b273 AS build
 
 ARG BUILD_VERSION
 ARG TARGETOS
@@ -87,7 +87,7 @@ RUN go build -v -tags embedui -trimpath \
 # tag, checked against the expected commit. legba is not upstream's: bbot's
 # legba module needs it and cannot fetch it itself on amd64 (see below).
 # ----------------------------------------------------------------------------
-FROM --platform=$BUILDPLATFORM ubuntu:26.10@sha256:c4ca31b6e93261c5dd773826f789738a49e414ca04fc094b1ccd0f91e07329a2 AS tools
+FROM --platform=$BUILDPLATFORM ubuntu:26.10@sha256:1c2a84ae3f2a24aeb97cded5b41f0211b441662f1a188cbd2e139e7625f6f1d6 AS tools
 
 ARG TARGETARCH
 ARG DEBIAN_FRONTEND=noninteractive
@@ -164,7 +164,7 @@ RUN set -eux; \
 # CPython's GUI parts (tkinter, Tcl/Tk, IDLE, turtle) are dropped: nothing in
 # a headless image can use them.
 # ----------------------------------------------------------------------------
-FROM ubuntu:26.10@sha256:c4ca31b6e93261c5dd773826f789738a49e414ca04fc094b1ccd0f91e07329a2 AS python
+FROM ubuntu:26.10@sha256:1c2a84ae3f2a24aeb97cded5b41f0211b441662f1a188cbd2e139e7625f6f1d6 AS python
 
 ARG PYTHON_VERSION
 ARG BBOT_VERSION
@@ -252,7 +252,7 @@ RUN --mount=from=uv,source=/uv,target=/usr/local/bin/uv \
 # on bun. Headless browsing needs neither the Widevine DRM module nor UI
 # translations, so those go (Chromium falls back to en-US).
 # ----------------------------------------------------------------------------
-FROM ubuntu:26.10@sha256:c4ca31b6e93261c5dd773826f789738a49e414ca04fc094b1ccd0f91e07329a2 AS playwright
+FROM ubuntu:26.10@sha256:1c2a84ae3f2a24aeb97cded5b41f0211b441662f1a188cbd2e139e7625f6f1d6 AS playwright
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG PLAYWRIGHT_MCP_VERSION
@@ -286,7 +286,7 @@ RUN --mount=from=bun,source=/usr/local/bin/bun,target=/usr/local/bin/bun \
 # ----------------------------------------------------------------------------
 # Runtime
 # ----------------------------------------------------------------------------
-FROM ubuntu:26.10@sha256:c4ca31b6e93261c5dd773826f789738a49e414ca04fc094b1ccd0f91e07329a2
+FROM ubuntu:26.10@sha256:1c2a84ae3f2a24aeb97cded5b41f0211b441662f1a188cbd2e139e7625f6f1d6
 
 LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
