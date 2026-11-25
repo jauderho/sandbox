@@ -19,7 +19,7 @@
 # uv and bun publish linux/amd64 and linux/arm64 only, which caps this image
 # at those two platforms.
 # ---------------------------------------------------------------------------
-FROM ghcr.io/astral-sh/uv:0.13.9@sha256:d3b601f0c7b118bc1753febf7c41cc80981df678445e0254284eecf84db79a7d AS uv
+FROM ghcr.io/astral-sh/uv:0.13.10@sha256:a3ea1357342c1a4bf9a0c53a3deb1b55379aefa037338d8113d5771efa01774f AS uv
 
 FROM oven/bun:1.4.5@sha256:3aa040e5445efa09d75bb428a64ba50db13e2b3ac9b6b0c7f145615f62b2ee18 AS bun
 
@@ -87,7 +87,7 @@ RUN go build -v -tags embedui -trimpath \
 # tag, checked against the expected commit. legba is not upstream's: bbot's
 # legba module needs it and cannot fetch it itself on amd64 (see below).
 # ----------------------------------------------------------------------------
-FROM --platform=$BUILDPLATFORM ubuntu:26.10@sha256:1c2a84ae3f2a24aeb97cded5b41f0211b441662f1a188cbd2e139e7625f6f1d6 AS tools
+FROM --platform=$BUILDPLATFORM ubuntu:26.10@sha256:29ac5e68db830ab61b7d77c1ffdb78c73f0631de88a5d77bf4399868f64f38dd AS tools
 
 ARG TARGETARCH
 ARG DEBIAN_FRONTEND=noninteractive
@@ -164,7 +164,7 @@ RUN set -eux; \
 # CPython's GUI parts (tkinter, Tcl/Tk, IDLE, turtle) are dropped: nothing in
 # a headless image can use them.
 # ----------------------------------------------------------------------------
-FROM ubuntu:26.10@sha256:1c2a84ae3f2a24aeb97cded5b41f0211b441662f1a188cbd2e139e7625f6f1d6 AS python
+FROM ubuntu:26.10@sha256:29ac5e68db830ab61b7d77c1ffdb78c73f0631de88a5d77bf4399868f64f38dd AS python
 
 ARG PYTHON_VERSION
 ARG BBOT_VERSION
@@ -252,7 +252,7 @@ RUN --mount=from=uv,source=/uv,target=/usr/local/bin/uv \
 # on bun. Headless browsing needs neither the Widevine DRM module nor UI
 # translations, so those go (Chromium falls back to en-US).
 # ----------------------------------------------------------------------------
-FROM ubuntu:26.10@sha256:1c2a84ae3f2a24aeb97cded5b41f0211b441662f1a188cbd2e139e7625f6f1d6 AS playwright
+FROM ubuntu:26.10@sha256:29ac5e68db830ab61b7d77c1ffdb78c73f0631de88a5d77bf4399868f64f38dd AS playwright
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG PLAYWRIGHT_MCP_VERSION
@@ -286,7 +286,7 @@ RUN --mount=from=bun,source=/usr/local/bin/bun,target=/usr/local/bin/bun \
 # ----------------------------------------------------------------------------
 # Runtime
 # ----------------------------------------------------------------------------
-FROM ubuntu:26.10@sha256:1c2a84ae3f2a24aeb97cded5b41f0211b441662f1a188cbd2e139e7625f6f1d6
+FROM ubuntu:26.10@sha256:29ac5e68db830ab61b7d77c1ffdb78c73f0631de88a5d77bf4399868f64f38dd
 
 LABEL org.opencontainers.image.authors="Jauder Ho <jauderho@users.noreply.github.com>"
 LABEL org.opencontainers.image.url="https://github.com/jauderho/dockerfiles"
